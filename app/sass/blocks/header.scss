@@ -1,0 +1,144 @@
+.header {
+    margin-top: 2.8rem;
+    margin-bottom: 3rem;
+
+    &__burger {
+        display: none;
+    }
+    &__wrapper {
+        display: flex;
+    }
+
+    &__wrap-logo {
+        width: 30rem;
+        height: 9.4rem;
+        background: #fff;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+
+    }
+
+    &__logo {
+        width: 22.4rem;
+        height: 4rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__nav {
+        width: 107.4rem;
+        height: 9.4rem;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10rem;
+        margin-right: 1rem;
+    }
+
+    &__lists {
+        display: flex;
+    }
+
+    &__item {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.02em;
+        margin-right: 5rem;
+    }
+
+    &__item--slide {
+        position: relative;
+        padding-right: 1.4rem;
+
+    }
+
+    &__item--slide::before {
+        position: absolute;
+        content: '';
+        width: 1.2rem;
+        height: 0.9rem;
+        background-image: url(../img/icon/Polygon.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        right: 0;
+        top: 40%;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__search {
+        width: 9.4rem;
+        height: 9.4rem;
+        border-radius: 50%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+
+        img {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+
+    &__user {
+        width: 9.4rem;
+        height: 9.4rem;
+        border-radius: 50%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+
+        img {
+            width: 1.7rem;
+            height: 2.3rem;
+        }
+    }
+
+    &__like {
+        width: 9.4rem;
+        height: 9.4rem;
+        border-radius: 50%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+
+        img {
+            width: 2.7rem;
+            height: 2.3rem;
+        }
+    }
+
+    &__bag {
+        width: 9.4rem;
+        height: 9.4rem;
+        border-radius: 50%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+
+        img {
+            width: 2.8rem;
+            height: 2.8rem;
+        }
+    }
+}
