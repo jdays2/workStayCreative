@@ -29,6 +29,98 @@
 }
 
 
+.checkbox {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 2.4rem;
+	letter-spacing: 0.02em;
+	user-select: none;
+	padding-left: 5.6rem;
+	padding-top: 0.55rem;
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+
+	a {
+		color:#DE755E;
+	}
+	
+  }
+  
+  .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4rem;
+	height: 4rem;
+	background: #E0E1E7;
+	border-radius: 1rem;
+	
+  }
+ 
+  
+
+  
+  .checkbox:hover input ~ .checkmark {
+	background: #E0E1E7;
+  }
+  
+  .checkbox input:checked ~ .checkmark {
+	
+	box-shadow: 8.59504px 8.59504px 20px rgba(56, 55, 66, 0.11);
+  }
+  
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  .checkbox input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  .checkbox .checkmark:after {
+	position: absolute;
+	content:'';
+	background-image: url(../img/icon/check.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	top: 50%;
+	right: 0;
+	transform: translate(-80%, -50%);
+	
+	width: 1.5rem;
+	height: 1.5rem;
+  }
+
+.red-btn {
+	width: auto;
+	height: 7.7rem;
+	padding:2.5rem 7.5rem ;
+	background: #DE755E;
+	border-radius: 10rem;
+	display: flex;
+    justify-content: center;
+    align-items:center;
+	span {
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 2.5rem;
+		color:#fff;
+		text-align: center;
+		letter-spacing: 0.02em;
+	}
+}
+
+
 .title {
 	display: flex;
 	justify-content: space-between;
@@ -210,4 +302,111 @@
 
 .swiper-wrapper {
 	height: auto;
+}
+
+
+.select {
+	
+	position: relative;
+	width: 40.5rem;
+	height: 4.8rem;
+	background: #EAEBEF;
+	border-radius: 1rem;
+	padding: 1.4rem 2.4rem;
+	&:hover {
+	   
+
+		.header__select-head {
+			color: #242424;
+			transition: 0.2s
+		}
+	}
+	
+}
+
+.select-head {
+	width: 100%;
+	max-width: 100%;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 125%;
+	color: #000000;
+	cursor: pointer;
+   
+}
+
+
+
+.select-head::after {
+	width: 1rem;
+	height: 1rem;
+	background-image: url(../img/icon/tringle.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 2.4rem;
+	transform: translateY(50%);
+	content: '';
+	display: block;
+	transition: .2s ease-in;
+	top: 1.6rem;
+}
+
+.select-head.open::after {
+	transform: translateY(50%) rotate(180deg);
+}
+
+.select-list {
+	border-radius: 1rem;
+	
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	max-height: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 2;
+	margin: 0;
+	padding: 0;
+	background: #EAECED;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 125%;
+	color: #000000;
+
+	overscroll-behavior: contain;
+}
+
+
+
+.select-list .select-item {
+	position: relative;
+	padding: 1rem 1.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	
+	cursor: pointer;
+	list-style-type: none;
+	border-bottom: 0.1rem solid rgba(189, 191, 197, 0.4);
+	&::before {
+		position: absolute;
+		content:'';
+		width: 2.4rem;
+		height: 1rem;
+		right: 2rem;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+}
+
+.select-list .select-item:last-child {
+	border-bottom: none;
+	text-transform: uppercase;
+}
+
+.select-list .select-item:hover {
+	background-color: rgba(224, 229, 231, 0.5);
 }

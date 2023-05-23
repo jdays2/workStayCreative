@@ -177,6 +177,26 @@ const adviceSwiper = new Swiper('.advice__swiper', {
 
 
 
+// const lkSwiper = new Swiper('.lk-m__start-swiper', {
+ 
+//   slidesPerView: 1,
+//   effect: 'fade',
+//   fadeEffect: {
+//     crossFade: true
+//   },
+//   wrapperClass: 'lk-m__start-swiper-wrapper',
+//   slideClass: 'lk-m__start-slide',
+//   speed: 500,
+//   navigation: {
+//     prevEl: '.lk-m__start-prev',
+//     nextEl: '.lk-m__start-next',
+//   },
+
+
+// });
+
+
+
 function addZero(num) {
   return (num > 9) ? num : '0' + num;
 }

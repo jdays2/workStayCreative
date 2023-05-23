@@ -1,0 +1,16 @@
+<svg width="352" height="494" viewBox="0 0 352 494" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M210.733 13.9636C220.24 23.462 231.514 33 244.953 33H322C338.569 33 352 46.4315 352 63V464C352 480.569 338.569 494 322 494H32C15.4315 494 2 480.569 2 464V63C2 46.4315 15.4315 33 32 33H109.047C122.486 33 133.76 23.462 143.267 13.9636C151.903 5.33573 163.828 0 177 0C190.172 0 202.097 5.33573 210.733 13.9636Z" fill="#DE755E"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M210.733 13.9636C220.24 23.462 231.514 33 244.953 33H322C338.569 33 352 46.4315 352 63V464C352 480.569 338.569 494 322 494H32C15.4315 494 2 480.569 2 464V63C2 46.4315 15.4315 33 32 33H109.047C122.486 33 133.76 23.462 143.267 13.9636C151.903 5.33573 163.828 0 177 0C190.172 0 202.097 5.33573 210.733 13.9636Z" fill="url(#paint0_radial_1698_44177)" fill-opacity="0.6"/>
+<mask id="mask0_1698_44177" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="352" height="494">
+<path d="M0 30C0 13.4315 13.4315 0 30 0H322C338.569 0 352 13.4315 352 30V464C352 480.569 338.569 494 322 494H30C13.4315 494 0 480.569 0 464V30Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_1698_44177)">
+</g>
+<defs>
+<radialGradient id="paint0_radial_1698_44177" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2) rotate(58.099) scale(581.887 512.692)">
+<stop stop-color="#F7E440"/>
+<stop offset="0.727486" stop-color="#F6E440" stop-opacity="0.054857"/>
+<stop offset="1" stop-color="#F6E440" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

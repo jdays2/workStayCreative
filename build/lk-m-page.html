@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU" type="text/javascript"> </script>
+	<link rel="stylesheet" href="./css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+</head>
+
+<body>
+	<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="header__wrap-logo">
+                <a href="#" class="header__logo">
+                    <img src="./img/header/logo.svg" alt="">
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__lists">
+                    <li class="header__item header__item--slide"><a href="#">Категории</a></li>
+                    <li class="header__item"><a href="">Векторы</a></li>
+                    <li class="header__item"><a href="">Шрифты</a></li>
+                    <li class="header__item"><a href="">Фото</a></li>
+                    <li class="header__item"><a href="">Коллекции</a></li>
+                    <li class="header__item"><a href="">Стоимость</a></li>
+                    <li class="header__item"><a href="">О нас</a></li>
+                </ul>
+            </nav>
+            <button class="header__search">
+                <img src="./img/header/search.svg" alt="">
+            </button>
+            <button class="header__user">
+                <img src="./img/header/user.svg" alt="">
+            </button>
+            <button class="header__like">
+                <img src="./img/header/heart.svg" alt="">
+            </button>
+            <button class="header__bag">
+                <img src="./img/header/bag.svg" alt="">
+            </button>
+        </div>
+    
+    </div>
+</header>
+	
+	
+	<main>
+		<section class="lk-m">
+            <div class="container">
+				<div class="lk-m__mob-title">
+					Профиль магазина
+				</div>
+                <div class="lk-m__wrapper">
+					<div class="lk-m__left">
+						<div class="m-sidebar">
+    <div class="m-sidebar__top">
+        <div class="m-sidebar__top-avatar">
+            <div class="m-sidebar__top-avatar-image">
+                <img src="./img/lk-m/ava.png" alt="">
+            </div>
+            <div class="m-sidebar__top-avatar-star">
+                <img src="./img/lk-m/star.svg" alt="">
+            </div>
+        </div>
+        <!-- ava -->
+        <div class="m-sidebar__top-inner">
+            <div class="m-sidebar__top-name">Название магазина</div>
+            <div class="m-sidebar__top-mail">Infooooooo@gmail.com</div>
+        </div>
+    </div>
+    <div class="m-sidebar__bottom">
+        <ul class="m-sidebar__lists">
+            <li class="m-sidebar__item active" data-tab="1">
+                <div class="icon">
+                    <svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5ZM12 21.5C15.866 21.5 19 19.7091 19 17.5C19 15.2909 15.866 13.5 12 13.5C8.13401 13.5 5 15.2909 5 17.5C5 19.7091 8.13401 21.5 12 21.5Z" />
+                    </svg>
+                </div>
+                <div class="text">Профиль магазина</div>
+            </li>
+            <!-- li -->
+            <li class="m-sidebar__item" data-tab="2">
+                <div class="icon">
+                    <svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 10.5H7C9 10.5 10 9.5 10 7.5V5.5C10 3.5 9 2.5 7 2.5H5C3 2.5 2 3.5 2 5.5V7.5C2 9.5 3 10.5 5 10.5Z" />
+                        <path d="M17 10.5H19C21 10.5 22 9.5 22 7.5V5.5C22 3.5 21 2.5 19 2.5H17C15 2.5 14 3.5 14 5.5V7.5C14 9.5 15 10.5 17 10.5Z" />
+                        <path d="M17 22.5H19C21 22.5 22 21.5 22 19.5V17.5C22 15.5 21 14.5 19 14.5H17C15 14.5 14 15.5 14 17.5V19.5C14 21.5 15 22.5 17 22.5Z"/>
+                        <path d="M5 22.5H7C9 22.5 10 21.5 10 19.5V17.5C10 15.5 9 14.5 7 14.5H5C3 14.5 2 15.5 2 17.5V19.5C2 21.5 3 22.5 5 22.5Z" />
+                    </svg>
+                </div>
+                <div class="text">Панель управления</div>
+            </li>
+            <!-- li -->
+            <li class="m-sidebar__item" data-tab="3">
+                <div class="icon">
+                    <svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 6.5V8.92C22 10.5 21 11.5 19.42 11.5H16V4.51C16 3.4 16.91 2.5 18.02 2.5C19.11 2.51 20.11 2.95 20.83 3.67C21.55 4.4 22 5.4 22 6.5Z" fill="#A0A1A4" stroke="#A0A1A4" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 7.5V21.5C2 22.33 2.94001 22.8 3.60001 22.3L5.31 21.02C5.71 20.72 6.27 20.76 6.63 21.12L8.28999 22.79C8.67999 23.18 9.32001 23.18 9.71001 22.79L11.39 21.11C11.74 20.76 12.3 20.72 12.69 21.02L14.4 22.3C15.06 22.79 16 22.32 16 21.5V4.5C16 3.4 16.9 2.5 18 2.5H7H6C3 2.5 2 4.29 2 6.5V7.5Z" fill="#A0A1A4" stroke="#A0A1A4" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.25 10.5H11.75" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 13.25V7.75" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                        
+                </div>
+                <div class="text">Продажи</div>
+            </li>
+            <!-- li -->
+            <li class="m-sidebar__item" data-tab="4">
+                <div class="icon">
+                    <svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2.5H3.74001C4.82001 2.5 5.67 3.43 5.58 4.5L4.75 14.46C4.61 16.09 5.89999 17.49 7.53999 17.49H18.19C19.63 17.49 20.89 16.31 21 14.88L21.54 7.38C21.66 5.72 20.4 4.37 18.73 4.37H5.82001" />
+                        <path d="M2 2.5H3.74001C4.82001 2.5 5.67 3.43 5.58 4.5L4.75 14.46C4.61 16.09 5.89999 17.49 7.53999 17.49H18.19C19.63 17.49 20.89 16.31 21 14.88L21.54 7.38C21.66 5.72 20.4 4.37 18.73 4.37H5.82001" stroke="#A0A1A4" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.25 22.5C16.9404 22.5 17.5 21.9404 17.5 21.25C17.5 20.5596 16.9404 20 16.25 20C15.5596 20 15 20.5596 15 21.25C15 21.9404 15.5596 22.5 16.25 22.5Z" fill="#A0A1A4" stroke="#A0A1A4" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.25 22.5C8.94036 22.5 9.5 21.9404 9.5 21.25C9.5 20.5596 8.94036 20 8.25 20C7.55964 20 7 20.5596 7 21.25C7 21.9404 7.55964 22.5 8.25 22.5Z" fill="#A0A1A4" stroke="#A0A1A4" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 8.5H21" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </div>
+                <div class="text">Продукты</div>
+            </li>
+            <!-- li -->
+            <li class="m-sidebar__item" data-tab="5">
+                <div class="icon">
+                    <svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 19.5H8C4 19.5 2 18.5 2 13.5V8.5C2 4.5 4 2.5 8 2.5H16C20 2.5 22 4.5 22 8.5V13.5C22 17.5 20 19.5 16 19.5H15.5C15.19 19.5 14.89 19.65 14.7 19.9L13.2 21.9C12.54 22.78 11.46 22.78 10.8 21.9L9.3 19.9C9.14 19.68 8.77 19.5 8.5 19.5Z" />
+                        <path d="M15.9965 11.5H16.0054" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.9955 11.5H12.0045" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.99451 11.5H8.00349" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </div>
+                <div class="text">Реклама магазина</div>
+            </li>
+            <!-- li -->
+            <li class="m-sidebar__item" data-tab="6">
+                <div class="icon">
+                    <svg  viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16.5V4.5C0 2.29086 1.79086 0.5 4 0.5H14C16.2091 0.5 18 2.29086 18 4.5V10.8431C18 11.1509 17.9645 11.455 17.8959 11.75H14C11.3766 11.75 9.25 13.8766 9.25 16.5V20.3959C8.95502 20.4645 8.65091 20.5 8.34315 20.5H4C1.79086 20.5 0 18.7091 0 16.5ZM10.75 19.6949C10.898 19.5833 11.039 19.461 11.1716 19.3284L16.8284 13.6716C16.961 13.539 17.0833 13.398 17.1949 13.25H14C12.2051 13.25 10.75 14.7051 10.75 16.5V19.6949ZM4.25 5.5C4.25 5.08579 4.58579 4.75 5 4.75H13C13.4142 4.75 13.75 5.08579 13.75 5.5C13.75 5.91421 13.4142 6.25 13 6.25H5C4.58579 6.25 4.25 5.91421 4.25 5.5ZM5 8.75C4.58579 8.75 4.25 9.08579 4.25 9.5C4.25 9.91421 4.58579 10.25 5 10.25H9C9.41421 10.25 9.75 9.91421 9.75 9.5C9.75 9.08579 9.41421 8.75 9 8.75H5Z" />
+                    </svg>
+                </div>
+                <div class="text">Начисления и документы</div>
+            </li>
+            <!-- li -->
+        </ul>
+        <a href="" class="m-sidebar__cab-link">Личный кабинет</a>
+        <button class="m-sidebar__exit">
+            Выйти
+        </button>
+    </div>
+</div>
+					</div>
+                    
+					<div class="lk-m__right">
+						<div class="lk-m__content active" data-tab="1">
+    <div class="lk-m__title">Профиль магазина</div>
+    <div class="lk-m__box" style="display: none;">
+        <div class="lk-m__star" >
+            
+                
+                    
+                        <div class="lk-m__start-content lk-m__start-content--one active">
+                            <div class="lk-m__numbers">
+                                <div class="lk-m__numbers-box active--mobile">
+                                    <div class="lk-m__numbers-box-number"><span>1</span></div>
+                                    <div class="lk-m__numbers-box-text">Данные магазина</div>
+                                </div>
+                                <div class="lk-m__numbers-box no-active--mobile">
+                                    <div class="lk-m__numbers-box-number non-active no-active--mobile"><span>2</span></div>
+                                    <div class="lk-m__numbers-box-text non-active no-active--mobile">Паспортные данные</div>
+                                </div>
+                                <div class="lk-m__numbers-box ">
+                                    <div class="lk-m__numbers-box-number non-active no-active--mobile"><span>3</span></div>
+                                    <div class="lk-m__numbers-box-text non-active no-active--mobile">Адрес регистрации</div>
+                                </div>
+                                <div class="lk-m__numbers-box ">
+                                    <div class="lk-m__numbers-box-number non-active non no-active--mobile"><span>4</span></div>
+                                    <div class="lk-m__numbers-box-text non-active non no-active--mobile">Банковские реквизиты</div>
+                                </div>
+                            </div>
+                            <!-- numbers -->
+                            <div class="lk-m__start-wrap">
+                                <div class="lk-m__start-left">
+                                   <div class="lk-m__start-content-left">
+                                        <div class="lk-m__start-title">
+                                            Укажите реквизиты
+                                        </div>
+                                        <form action="" class="lk-m__start-form">
+                                            <div class="lk-m__start-inner lk-m__start-inner-sel">
+                                                <label for="">Тип организации</label>
+                                                <div class="select">
+                                                    <input class="select-input" type="hidden" name="">
+                                                    <div class="select-head">Самозанятый</div>
+                                                    <ul class="select-list">
+                                                        <li class="select-item">ИП</li>
+                                                        <li class="select-item">ООО</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="lk-m__start-sel-text">Самозанятые могут работать на Stay Creative, если они граждане РФ и продают товары только собственного производства.</div>
+                                            </div>
+                                            <div class="lk-m__start-wrap">
+                                                <div class="lk-m__start-inner">
+                                                    <label for="">ИНН</label>
+                                                    <input type="text" placeholder="209093802209">
+                                                </div>
+                                                <div class="lk-m__start-inner">
+                                                    <label for="">Фамилия</label>
+                                                    <input type="text" placeholder="Васильев">
+                                                </div>
+                                            </div>
+                                            <div class="lk-m__start-wrap">
+                                                <div class="lk-m__start-inner">
+                                                    <label for="">Имя</label>
+                                                    <input type="text" placeholder="Василий">
+                                                </div>
+                                                <div class="lk-m__start-inner">
+                                                    <label for="">Отчество</label>
+                                                    <input type="text" placeholder="Васильевич">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <button class="red-btn lk-m__start-two"><span>Продолжить</span></button>
+                                   </div>
+                                </div>
+                                <div class="lk-m__start-right">
+                                    <aside class="progress-table">
+                                        <div class="progress-table__image">
+                                            <img src="./img/lk-m/avap.png" alt="">
+                                        </div>
+                                        <div class="progress-table__points">
+                                            <div class="progress-table__point active">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M15.034 11.2923C14.684 11.634 14.484 12.1256 14.534 12.6506C14.609 13.5506 15.434 14.209 16.334 14.209H17.9173V15.2006C17.9173 16.9256 16.509 18.334 14.784 18.334H6.35899C6.61732 18.1173 6.84232 17.8506 7.01732 17.5506C7.32565 17.0506 7.50065 16.459 7.50065 15.834C7.50065 13.9923 6.00898 12.5007 4.16732 12.5007C3.38398 12.5007 2.65898 12.7757 2.08398 13.234V9.59233C2.08398 7.86733 3.49231 6.45898 5.21731 6.45898H14.784C16.509 6.45898 17.9173 7.86733 17.9173 9.59233V10.7923H16.234C15.7673 10.7923 15.3423 10.9756 15.034 11.2923Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M2.08398 10.3421V6.53379C2.08398 5.54212 2.69231 4.65875 3.61731 4.30875L10.234 1.80875C11.2673 1.41708 12.3757 2.18377 12.3757 3.29211V6.45876" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M18.7997 11.6429V13.3596C18.7997 13.818 18.433 14.1929 17.9663 14.2096H16.333C15.433 14.2096 14.608 13.5513 14.533 12.6513C14.483 12.1263 14.683 11.6346 15.033 11.2929C15.3413 10.9763 15.7663 10.793 16.233 10.793H17.9663C18.433 10.8096 18.7997 11.1846 18.7997 11.6429Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M5.83398 10H11.6673" stroke="#E9AB4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M7.50065 15.8333C7.50065 16.4583 7.32565 17.05 7.01732 17.55C6.84232 17.85 6.61732 18.1167 6.35899 18.3333C5.77566 18.8583 5.00898 19.1667 4.16732 19.1667C2.95065 19.1667 1.89232 18.5167 1.31732 17.55C1.00899 17.05 0.833984 16.4583 0.833984 15.8333C0.833984 14.7833 1.31732 13.8417 2.08398 13.2333C2.65898 12.775 3.38398 12.5 4.16732 12.5C6.00898 12.5 7.50065 13.9917 7.50065 15.8333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M2.86914 15.8323L3.69413 16.6573L5.46914 15.0156" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                        
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Укажите реквизиты
+                                                </div>
+                                            </div>
+                                            <div class="progress-table__point ">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.08268 15.8346H6.66602C3.33268 15.8346 1.66602 15.0013 1.66602 10.8346V6.66797C1.66602 3.33464 3.33268 1.66797 6.66602 1.66797H13.3327C16.666 1.66797 18.3327 3.33464 18.3327 6.66797V10.8346C18.3327 14.168 16.666 15.8346 13.3327 15.8346H12.916C12.6577 15.8346 12.4077 15.9596 12.2493 16.168L10.9993 17.8346C10.4493 18.568 9.54935 18.568 8.99935 17.8346L7.74935 16.168C7.61602 15.9846 7.30768 15.8346 7.08268 15.8346Z" fill="white"/>
+                                                        <path d="M13.3301 9.16667H13.3375" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M9.99607 9.16667H10.0036" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M6.66209 9.16667H6.66957" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Дождитесь проверки
+                                                </div>
+                                            </div>
+                                            <div class="progress-table__point ">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.90039 0.625C7.24557 0.625 7.52539 0.904822 7.52539 1.25V2.5H12.9434V1.25C12.9434 0.904822 13.2232 0.625 13.5684 0.625C13.9135 0.625 14.1934 0.904822 14.1934 1.25V2.52605C16.1863 2.75372 17.7344 4.44608 17.7344 6.5V6.66912C17.7344 6.93434 17.629 7.18869 17.4415 7.37623L7.17751 17.6402C7.00049 17.8172 6.7604 17.9167 6.51006 17.9167C4.42481 17.9167 2.73438 16.2262 2.73438 14.141V6.5C2.73438 4.44608 4.28242 2.75372 6.27539 2.52605V1.25C6.27539 0.904822 6.55521 0.625 6.90039 0.625ZM12.7337 7.70801C13.0789 7.70801 13.3587 7.42819 13.3587 7.08301C13.3587 6.73783 13.0789 6.45801 12.7337 6.45801H6.90039C6.55521 6.45801 6.27539 6.73783 6.27539 7.08301C6.27539 7.42819 6.55521 7.70801 6.90039 7.70801H12.7337ZM10.2337 11.0413C10.5789 11.0413 10.8587 10.7615 10.8587 10.4163C10.8587 10.0712 10.5789 9.79134 10.2337 9.79134H6.90039C6.55521 9.79134 6.27539 10.0712 6.27539 10.4163C6.27539 10.7615 6.55521 11.0413 6.90039 11.0413H10.2337ZM8.35872 13.7497C8.35872 14.0949 8.0789 14.3747 7.73372 14.3747H6.90039C6.55521 14.3747 6.27539 14.0949 6.27539 13.7497C6.27539 13.4045 6.55521 13.1247 6.90039 13.1247H7.73372C8.0789 13.1247 8.35872 13.4045 8.35872 13.7497ZM17.3258 10.8255C16.7811 10.2808 15.898 10.2808 15.3533 10.8255L11.1743 15.0045C11.0737 15.1051 11.0005 15.2296 10.9615 15.3664L10.4808 17.0527C10.3733 17.4297 10.7217 17.7781 11.0987 17.6706L12.785 17.1898C12.9218 17.1509 13.0463 17.0776 13.1468 16.9771L17.3258 12.7981C17.8706 12.2534 17.8706 11.3702 17.3258 10.8255Z" fill="white"/>
+                                                        </svg>
+                                                        
+                                                        
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Заключение договора
+                                                </div>
+                                            </div>
+                                            <div class="progress-table__point end">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33398 11.25V15.8333C3.33398 17.214 4.45327 18.3333 5.83398 18.3333H14.1673C15.548 18.3333 16.6673 17.214 16.6673 15.8333V11.25H12.9172C12.2615 11.25 11.644 10.9413 11.2506 10.4167L10.0006 8.75L8.75057 10.4167C8.35712 10.9413 7.73965 11.25 7.0839 11.25H3.33398Z" fill="white"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.37565 3.49242L8.77593 2.89269C8.53185 2.64862 8.13612 2.64862 7.89204 2.89269C7.64797 3.13677 7.64797 3.5325 7.89204 3.77658L8.96945 4.85399C9.53897 5.4235 10.4623 5.4235 11.0318 4.85399L12.1093 3.77658C12.3533 3.5325 12.3533 3.13677 12.1093 2.89269C11.8652 2.64862 11.4695 2.64862 11.2254 2.89269L10.6257 3.49242V1.66797C10.6257 1.32279 10.3458 1.04297 10.0007 1.04297C9.65547 1.04297 9.37565 1.32279 9.37565 1.66797V3.49242Z" fill="white"/>
+                                                        <path d="M3.79159 6.69922H10.0042H16.2192C16.4802 6.69922 16.7261 6.8215 16.8836 7.02961L18.0971 8.63281C18.5126 9.18171 18.1211 9.96909 17.4327 9.96909H12.9417C12.6838 9.96909 12.4403 9.8496 12.2825 9.64552L10.0042 6.69922L7.73153 9.64481C7.57375 9.84931 7.33005 9.96909 7.07175 9.96909H2.53605C1.84131 9.96909 1.45161 9.16892 1.87997 8.62195L3.1355 7.01874C3.29346 6.81705 3.53541 6.69922 3.79159 6.69922Z" fill="white"/>
+                                                    </svg>  
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Загрузите товары
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                 
+                    
+                        <div class="lk-m__start-content lk-m__start-content--two">
+                            <div class="lk-m__numbers">
+                                <div class="lk-m__numbers-box active--mobile lk-m__numbers-box--ready">
+                                    <div class="lk-m__numbers-box-number ready"><span><img src="./img/icon/galkawhite.svg" alt=""></span></div>
+                                    <div class="lk-m__numbers-box-text">Данные магазина</div>
+                                </div>
+                                <div class="lk-m__numbers-box active--mobile">
+                                    <div class="lk-m__numbers-box-number "><span>2</span></div>
+                                    <div class="lk-m__numbers-box-text ">Паспортные данные</div>
+                                </div>
+                                <div class="lk-m__numbers-box no-active--mobile">
+                                    <div class="lk-m__numbers-box-number non-active no-active--mobile"><span>3</span></div>
+                                    <div class="lk-m__numbers-box-text non-active no-active--mobile">Адрес регистрации</div>
+                                </div>
+                                <div class="lk-m__numbers-box ">
+                                    <div class="lk-m__numbers-box-number non-active non no-active--mobile"><span>4</span></div>
+                                    <div class="lk-m__numbers-box-text non-active non no-active--mobile">Банковские реквизиты</div>
+                                </div>
+                            </div>
+                            <!-- numbers -->
+                            <div class="lk-m__start-wrap">
+                                <div class="lk-m__start-left">
+                                   <div class="lk-m__start-content-left">
+                                        <div class="lk-m__start-title">
+                                            Добавьте паспортные данные
+                                        </div>
+                                        <form action="" class="lk-m__start-form">
+                                            <div class="lk-m__start-inner lk-m__start-inner--sel">
+                                                    <label for="">Серия и номер паспорта</label>
+                                                    <input type="text" >
+                                            </div>
+                                            
+                                        </form>
+                                        <div class="lk-m__start-description">Скан-копия разворота главной страницы с фото и разворота с регистрацией</div>
+                                        <form method="post" enctype="multipart/form-data">
+                                            <div class="input-file-row">
+                                                <label class="input-file">
+                                                       <input type="file" name="file[]" multiple>		
+                                                       <span></span>
+                                                 </label>
+                                                <div class="input-file-list"></div>  
+                                            </div>  
+                                        </form>
+                                        <button class="red-btn lk-m__start-three"><span>Продолжить</span></button>
+                                   </div>
+                                </div>
+                                <div class="lk-m__start-right">
+                                    <aside class="progress-table">
+                                        <div class="progress-table__image">
+                                            <img src="./img/lk-m/avap.png" alt="">
+                                        </div>
+                                        <div class="progress-table__points">
+                                            <div class="progress-table__point active">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M15.034 11.2923C14.684 11.634 14.484 12.1256 14.534 12.6506C14.609 13.5506 15.434 14.209 16.334 14.209H17.9173V15.2006C17.9173 16.9256 16.509 18.334 14.784 18.334H6.35899C6.61732 18.1173 6.84232 17.8506 7.01732 17.5506C7.32565 17.0506 7.50065 16.459 7.50065 15.834C7.50065 13.9923 6.00898 12.5007 4.16732 12.5007C3.38398 12.5007 2.65898 12.7757 2.08398 13.234V9.59233C2.08398 7.86733 3.49231 6.45898 5.21731 6.45898H14.784C16.509 6.45898 17.9173 7.86733 17.9173 9.59233V10.7923H16.234C15.7673 10.7923 15.3423 10.9756 15.034 11.2923Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M2.08398 10.3421V6.53379C2.08398 5.54212 2.69231 4.65875 3.61731 4.30875L10.234 1.80875C11.2673 1.41708 12.3757 2.18377 12.3757 3.29211V6.45876" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M18.7997 11.6429V13.3596C18.7997 13.818 18.433 14.1929 17.9663 14.2096H16.333C15.433 14.2096 14.608 13.5513 14.533 12.6513C14.483 12.1263 14.683 11.6346 15.033 11.2929C15.3413 10.9763 15.7663 10.793 16.233 10.793H17.9663C18.433 10.8096 18.7997 11.1846 18.7997 11.6429Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M5.83398 10H11.6673" stroke="#E9AB4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M7.50065 15.8333C7.50065 16.4583 7.32565 17.05 7.01732 17.55C6.84232 17.85 6.61732 18.1167 6.35899 18.3333C5.77566 18.8583 5.00898 19.1667 4.16732 19.1667C2.95065 19.1667 1.89232 18.5167 1.31732 17.55C1.00899 17.05 0.833984 16.4583 0.833984 15.8333C0.833984 14.7833 1.31732 13.8417 2.08398 13.2333C2.65898 12.775 3.38398 12.5 4.16732 12.5C6.00898 12.5 7.50065 13.9917 7.50065 15.8333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M2.86914 15.8323L3.69413 16.6573L5.46914 15.0156" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                        
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Укажите реквизиты
+                                                </div>
+                                            </div>
+                                            <div class="progress-table__point ">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.08268 15.8346H6.66602C3.33268 15.8346 1.66602 15.0013 1.66602 10.8346V6.66797C1.66602 3.33464 3.33268 1.66797 6.66602 1.66797H13.3327C16.666 1.66797 18.3327 3.33464 18.3327 6.66797V10.8346C18.3327 14.168 16.666 15.8346 13.3327 15.8346H12.916C12.6577 15.8346 12.4077 15.9596 12.2493 16.168L10.9993 17.8346C10.4493 18.568 9.54935 18.568 8.99935 17.8346L7.74935 16.168C7.61602 15.9846 7.30768 15.8346 7.08268 15.8346Z" fill="white"/>
+                                                        <path d="M13.3301 9.16667H13.3375" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M9.99607 9.16667H10.0036" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M6.66209 9.16667H6.66957" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Дождитесь проверки
+                                                </div>
+                                            </div>
+                                            <div class="progress-table__point ">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.90039 0.625C7.24557 0.625 7.52539 0.904822 7.52539 1.25V2.5H12.9434V1.25C12.9434 0.904822 13.2232 0.625 13.5684 0.625C13.9135 0.625 14.1934 0.904822 14.1934 1.25V2.52605C16.1863 2.75372 17.7344 4.44608 17.7344 6.5V6.66912C17.7344 6.93434 17.629 7.18869 17.4415 7.37623L7.17751 17.6402C7.00049 17.8172 6.7604 17.9167 6.51006 17.9167C4.42481 17.9167 2.73438 16.2262 2.73438 14.141V6.5C2.73438 4.44608 4.28242 2.75372 6.27539 2.52605V1.25C6.27539 0.904822 6.55521 0.625 6.90039 0.625ZM12.7337 7.70801C13.0789 7.70801 13.3587 7.42819 13.3587 7.08301C13.3587 6.73783 13.0789 6.45801 12.7337 6.45801H6.90039C6.55521 6.45801 6.27539 6.73783 6.27539 7.08301C6.27539 7.42819 6.55521 7.70801 6.90039 7.70801H12.7337ZM10.2337 11.0413C10.5789 11.0413 10.8587 10.7615 10.8587 10.4163C10.8587 10.0712 10.5789 9.79134 10.2337 9.79134H6.90039C6.55521 9.79134 6.27539 10.0712 6.27539 10.4163C6.27539 10.7615 6.55521 11.0413 6.90039 11.0413H10.2337ZM8.35872 13.7497C8.35872 14.0949 8.0789 14.3747 7.73372 14.3747H6.90039C6.55521 14.3747 6.27539 14.0949 6.27539 13.7497C6.27539 13.4045 6.55521 13.1247 6.90039 13.1247H7.73372C8.0789 13.1247 8.35872 13.4045 8.35872 13.7497ZM17.3258 10.8255C16.7811 10.2808 15.898 10.2808 15.3533 10.8255L11.1743 15.0045C11.0737 15.1051 11.0005 15.2296 10.9615 15.3664L10.4808 17.0527C10.3733 17.4297 10.7217 17.7781 11.0987 17.6706L12.785 17.1898C12.9218 17.1509 13.0463 17.0776 13.1468 16.9771L17.3258 12.7981C17.8706 12.2534 17.8706 11.3702 17.3258 10.8255Z" fill="white"/>
+                                                        </svg>
+                                                        
+                                                        
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Заключение договора
+                                                </div>
+                                            </div>
+                                            <div class="progress-table__point end">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33398 11.25V15.8333C3.33398 17.214 4.45327 18.3333 5.83398 18.3333H14.1673C15.548 18.3333 16.6673 17.214 16.6673 15.8333V11.25H12.9172C12.2615 11.25 11.644 10.9413 11.2506 10.4167L10.0006 8.75L8.75057 10.4167C8.35712 10.9413 7.73965 11.25 7.0839 11.25H3.33398Z" fill="white"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.37565 3.49242L8.77593 2.89269C8.53185 2.64862 8.13612 2.64862 7.89204 2.89269C7.64797 3.13677 7.64797 3.5325 7.89204 3.77658L8.96945 4.85399C9.53897 5.4235 10.4623 5.4235 11.0318 4.85399L12.1093 3.77658C12.3533 3.5325 12.3533 3.13677 12.1093 2.89269C11.8652 2.64862 11.4695 2.64862 11.2254 2.89269L10.6257 3.49242V1.66797C10.6257 1.32279 10.3458 1.04297 10.0007 1.04297C9.65547 1.04297 9.37565 1.32279 9.37565 1.66797V3.49242Z" fill="white"/>
+                                                        <path d="M3.79159 6.69922H10.0042H16.2192C16.4802 6.69922 16.7261 6.8215 16.8836 7.02961L18.0971 8.63281C18.5126 9.18171 18.1211 9.96909 17.4327 9.96909H12.9417C12.6838 9.96909 12.4403 9.8496 12.2825 9.64552L10.0042 6.69922L7.73153 9.64481C7.57375 9.84931 7.33005 9.96909 7.07175 9.96909H2.53605C1.84131 9.96909 1.45161 9.16892 1.87997 8.62195L3.1355 7.01874C3.29346 6.81705 3.53541 6.69922 3.79159 6.69922Z" fill="white"/>
+                                                    </svg>  
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Загрузите товары
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk-m__start-content lk-m__start-content--three">
+                            <div class="lk-m__numbers">
+                                <div class="lk-m__numbers-box lk-m__numbers-box--ready">
+                                    <div class="lk-m__numbers-box-number ready"><span><img src="./img/icon/galkawhite.svg" alt=""></span></div>
+                                    <div class="lk-m__numbers-box-text">Данные магазина</div>
+                                </div>
+                                <div class="lk-m__numbers-box lk-m__numbers-box--ready">
+                                    <div class="lk-m__numbers-box-number ready"><span><img src="./img/icon/galkawhite.svg" alt=""></span></div>
+                                    <div class="lk-m__numbers-box-text ">Паспортные данные</div>
+                                </div>
+                                <div class="lk-m__numbers-box ">
+                                    <div class="lk-m__numbers-box-number "><span>3</span></div>
+                                    <div class="lk-m__numbers-box-text ">Адрес регистрации</div>
+                                </div>
+                                <div class="lk-m__numbers-box no-active--mobile">
+                                    <div class="lk-m__numbers-box-number non-active non no-active--mobile"><span>4</span></div>
+                                    <div class="lk-m__numbers-box-text non-active non no-active--mobile">Банковские реквизиты</div>
+                                </div>
+                            </div>
+                            <!-- numbers -->
+                            <div class="lk-m__start-wrap">
+                                <div class="lk-m__start-left">
+                                   <div class="lk-m__start-content-left">
+                                        <div class="lk-m__start-title">
+                                            Добавьте адрес регистрации
+                                        </div>
+                                        <form action="" class="lk-m__start-form">
+                                            <div class="lk-m__start-inner">
+                                                <label >Область/республика/край</label>
+                                                <div class="lk-m__start-search">
+                                                    <input type="text">
+                                                    <button class="lk-m__start-search-btn">
+                                                        <svg  viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9.88907 18.7781C14.7984 18.7781 18.7781 14.7984 18.7781 9.88907C18.7781 4.97977 14.7984 1 9.88907 1C4.97977 1 1 4.97977 1 9.88907C1 14.7984 4.97977 18.7781 9.88907 18.7781Z" stroke="#A0A1A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M20.9999 20.9994L16.1665 16.166" stroke="#A0A1A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div> 
+                                            <div class="lk-m__start-wrap">
+                                                <div class="lk-m__start-inner">
+                                                    <label for="">Город</label>
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                                <div class="lk-m__start-inner">
+                                                    <label for="">Улица</label>
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="lk-m__start-wrap">
+                                                <div class="lk-m__start-inner lk-m__start-inner--small">
+                                                    <label for="">Дом</label>
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                                <div class="lk-m__start-inner lk-m__start-inner--small">
+                                                    <label for="">Корпус</label>
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                                <div class="lk-m__start-inner lk-m__start-inner--small">
+                                                    <label for="">Помещение</label>
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="lk-m__start-wrap">
+                                                <div class="lk-m__start-inner lk-m__start-inner--big">
+                                                    <label for="">Индекс</label>
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                               
+                                            </div>
+                                            <label class="checkbox lk-m__checkbox">Почтовый адрес отличается от адреса регистрации
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </form>
+                                        
+                                        
+                                        <button class="red-btn lk-m__start-four"><span>Продолжить</span></button>
+                                   </div>
+                                </div>
+                                <div class="lk-m__start-right">
+                                    <aside class="progress-table">
+                                        <div class="progress-table__image">
+                                            <img src="./img/lk-m/avap.png" alt="">
+                                        </div>
+                                        <div class="progress-table__points">
+                                            <div class="progress-table__point active">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M15.034 11.2923C14.684 11.634 14.484 12.1256 14.534 12.6506C14.609 13.5506 15.434 14.209 16.334 14.209H17.9173V15.2006C17.9173 16.9256 16.509 18.334 14.784 18.334H6.35899C6.61732 18.1173 6.84232 17.8506 7.01732 17.5506C7.32565 17.0506 7.50065 16.459 7.50065 15.834C7.50065 13.9923 6.00898 12.5007 4.16732 12.5007C3.38398 12.5007 2.65898 12.7757 2.08398 13.234V9.59233C2.08398 7.86733 3.49231 6.45898 5.21731 6.45898H14.784C16.509 6.45898 17.9173 7.86733 17.9173 9.59233V10.7923H16.234C15.7673 10.7923 15.3423 10.9756 15.034 11.2923Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M2.08398 10.3421V6.53379C2.08398 5.54212 2.69231 4.65875 3.61731 4.30875L10.234 1.80875C11.2673 1.41708 12.3757 2.18377 12.3757 3.29211V6.45876" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M18.7997 11.6429V13.3596C18.7997 13.818 18.433 14.1929 17.9663 14.2096H16.333C15.433 14.2096 14.608 13.5513 14.533 12.6513C14.483 12.1263 14.683 11.6346 15.033 11.2929C15.3413 10.9763 15.7663 10.793 16.233 10.793H17.9663C18.433 10.8096 18.7997 11.1846 18.7997 11.6429Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M5.83398 10H11.6673" stroke="#E9AB4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M7.50065 15.8333C7.50065 16.4583 7.32565 17.05 7.01732 17.55C6.84232 17.85 6.61732 18.1167 6.35899 18.3333C5.77566 18.8583 5.00898 19.1667 4.16732 19.1667C2.95065 19.1667 1.89232 18.5167 1.31732 17.55C1.00899 17.05 0.833984 16.4583 0.833984 15.8333C0.833984 14.7833 1.31732 13.8417 2.08398 13.2333C2.65898 12.775 3.38398 12.5 4.16732 12.5C6.00898 12.5 7.50065 13.9917 7.50065 15.8333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M2.86914 15.8323L3.69413 16.6573L5.46914 15.0156" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                        
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Укажите реквизиты
+                                                </div>
+                                            </div>
+                                            <div class="progress-table__point ">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.08268 15.8346H6.66602C3.33268 15.8346 1.66602 15.0013 1.66602 10.8346V6.66797C1.66602 3.33464 3.33268 1.66797 6.66602 1.66797H13.3327C16.666 1.66797 18.3327 3.33464 18.3327 6.66797V10.8346C18.3327 14.168 16.666 15.8346 13.3327 15.8346H12.916C12.6577 15.8346 12.4077 15.9596 12.2493 16.168L10.9993 17.8346C10.4493 18.568 9.54935 18.568 8.99935 17.8346L7.74935 16.168C7.61602 15.9846 7.30768 15.8346 7.08268 15.8346Z" fill="white"/>
+                                                        <path d="M13.3301 9.16667H13.3375" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M9.99607 9.16667H10.0036" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M6.66209 9.16667H6.66957" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Дождитесь проверки
+                                                </div>
+                                            </div>
+                                            <div class="progress-table__point ">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.90039 0.625C7.24557 0.625 7.52539 0.904822 7.52539 1.25V2.5H12.9434V1.25C12.9434 0.904822 13.2232 0.625 13.5684 0.625C13.9135 0.625 14.1934 0.904822 14.1934 1.25V2.52605C16.1863 2.75372 17.7344 4.44608 17.7344 6.5V6.66912C17.7344 6.93434 17.629 7.18869 17.4415 7.37623L7.17751 17.6402C7.00049 17.8172 6.7604 17.9167 6.51006 17.9167C4.42481 17.9167 2.73438 16.2262 2.73438 14.141V6.5C2.73438 4.44608 4.28242 2.75372 6.27539 2.52605V1.25C6.27539 0.904822 6.55521 0.625 6.90039 0.625ZM12.7337 7.70801C13.0789 7.70801 13.3587 7.42819 13.3587 7.08301C13.3587 6.73783 13.0789 6.45801 12.7337 6.45801H6.90039C6.55521 6.45801 6.27539 6.73783 6.27539 7.08301C6.27539 7.42819 6.55521 7.70801 6.90039 7.70801H12.7337ZM10.2337 11.0413C10.5789 11.0413 10.8587 10.7615 10.8587 10.4163C10.8587 10.0712 10.5789 9.79134 10.2337 9.79134H6.90039C6.55521 9.79134 6.27539 10.0712 6.27539 10.4163C6.27539 10.7615 6.55521 11.0413 6.90039 11.0413H10.2337ZM8.35872 13.7497C8.35872 14.0949 8.0789 14.3747 7.73372 14.3747H6.90039C6.55521 14.3747 6.27539 14.0949 6.27539 13.7497C6.27539 13.4045 6.55521 13.1247 6.90039 13.1247H7.73372C8.0789 13.1247 8.35872 13.4045 8.35872 13.7497ZM17.3258 10.8255C16.7811 10.2808 15.898 10.2808 15.3533 10.8255L11.1743 15.0045C11.0737 15.1051 11.0005 15.2296 10.9615 15.3664L10.4808 17.0527C10.3733 17.4297 10.7217 17.7781 11.0987 17.6706L12.785 17.1898C12.9218 17.1509 13.0463 17.0776 13.1468 16.9771L17.3258 12.7981C17.8706 12.2534 17.8706 11.3702 17.3258 10.8255Z" fill="white"/>
+                                                        </svg>
+                                                        
+                                                        
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Заключение договора
+                                                </div>
+                                            </div>
+                                            <div class="progress-table__point end">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33398 11.25V15.8333C3.33398 17.214 4.45327 18.3333 5.83398 18.3333H14.1673C15.548 18.3333 16.6673 17.214 16.6673 15.8333V11.25H12.9172C12.2615 11.25 11.644 10.9413 11.2506 10.4167L10.0006 8.75L8.75057 10.4167C8.35712 10.9413 7.73965 11.25 7.0839 11.25H3.33398Z" fill="white"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.37565 3.49242L8.77593 2.89269C8.53185 2.64862 8.13612 2.64862 7.89204 2.89269C7.64797 3.13677 7.64797 3.5325 7.89204 3.77658L8.96945 4.85399C9.53897 5.4235 10.4623 5.4235 11.0318 4.85399L12.1093 3.77658C12.3533 3.5325 12.3533 3.13677 12.1093 2.89269C11.8652 2.64862 11.4695 2.64862 11.2254 2.89269L10.6257 3.49242V1.66797C10.6257 1.32279 10.3458 1.04297 10.0007 1.04297C9.65547 1.04297 9.37565 1.32279 9.37565 1.66797V3.49242Z" fill="white"/>
+                                                        <path d="M3.79159 6.69922H10.0042H16.2192C16.4802 6.69922 16.7261 6.8215 16.8836 7.02961L18.0971 8.63281C18.5126 9.18171 18.1211 9.96909 17.4327 9.96909H12.9417C12.6838 9.96909 12.4403 9.8496 12.2825 9.64552L10.0042 6.69922L7.73153 9.64481C7.57375 9.84931 7.33005 9.96909 7.07175 9.96909H2.53605C1.84131 9.96909 1.45161 9.16892 1.87997 8.62195L3.1355 7.01874C3.29346 6.81705 3.53541 6.69922 3.79159 6.69922Z" fill="white"/>
+                                                    </svg>  
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Загрузите товары
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk-m__start-content lk-m__start-content--four">
+                            <div class="lk-m__numbers">
+                                <div class="lk-m__numbers-box lk-m__numbers-box--ready">
+                                    <div class="lk-m__numbers-box-number ready"><span><img src="./img/icon/galkawhite.svg" alt=""></span></div>
+                                    <div class="lk-m__numbers-box-text">Данные магазина</div>
+                                </div>
+                                <div class="lk-m__numbers-box lk-m__numbers-box--ready">
+                                    <div class="lk-m__numbers-box-number ready"><span><img src="./img/icon/galkawhite.svg" alt=""></span></div>
+                                    <div class="lk-m__numbers-box-text ">Паспортные данные</div>
+                                </div>
+                                <div class="lk-m__numbers-box lk-m__numbers-box--ready">
+                                    <div class="lk-m__numbers-box-number ready"><span><img src="./img/icon/galkawhite.svg" alt=""></span></div>
+                                    <div class="lk-m__numbers-box-text ">Адрес регистрации</div>
+                                </div>
+                                <div class="lk-m__numbers-box ">
+                                    <div class="lk-m__numbers-box-number non non-mobile"><span>4</span></div>
+                                    <div class="lk-m__numbers-box-text non non-mobile">Банковские реквизиты</div>
+                                </div>
+                            </div>
+                            <!-- numbers -->
+                            <div class="lk-m__start-wrap">
+                                <div class="lk-m__start-left">
+                                   <div class="lk-m__start-content-left">
+                                        <div class="lk-m__start-title">
+                                            Добавьте банковские реквизиты
+                                        </div>
+                                        <form action="" class="lk-m__start-form">
+                                           
+                                            <div class="lk-m__start-wrap">
+                                                <div class="lk-m__start-inner lk-m__start-inner--big">
+                                                    <label for="">Расчетный счет</label>
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                               
+                                            </div>
+                                            <div class="lk-m__start-wrap">
+                                                <div class="lk-m__start-inner lk-m__start-inner--big">
+                                                    <label for="">БИК</label>
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                               
+                                            </div>
+                                            <label class="checkbox lk-m__checkbox">В соответствии с <a href="#">Условиями обработки персональных данных</a>, я Иванов Иван Иванович, даю <strong>ООО «Стей Креатив»</strong> согласие на распространение моих персональных данных на сайте <strong>https://www.staycreative.ru</strong>, в том числе на любых его страницах и поддоменах («Stay Creative»), с целью доведения до потребителей информации обо мне как о продавце, на следующих условиях:
+                                                <a href="#">Посмотреть согласие</a>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </form>
+                                        
+                                        
+                                        <button class="red-btn lk-m__start-four"><span>Продолжить</span></button>
+                                   </div>
+                                </div>
+                                <div class="lk-m__start-right">
+                                    <aside class="progress-table">
+                                        <div class="progress-table__image">
+                                            <img src="./img/lk-m/avap.png" alt="">
+                                        </div>
+                                        <div class="progress-table__points">
+                                            <div class="progress-table__point active">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M15.034 11.2923C14.684 11.634 14.484 12.1256 14.534 12.6506C14.609 13.5506 15.434 14.209 16.334 14.209H17.9173V15.2006C17.9173 16.9256 16.509 18.334 14.784 18.334H6.35899C6.61732 18.1173 6.84232 17.8506 7.01732 17.5506C7.32565 17.0506 7.50065 16.459 7.50065 15.834C7.50065 13.9923 6.00898 12.5007 4.16732 12.5007C3.38398 12.5007 2.65898 12.7757 2.08398 13.234V9.59233C2.08398 7.86733 3.49231 6.45898 5.21731 6.45898H14.784C16.509 6.45898 17.9173 7.86733 17.9173 9.59233V10.7923H16.234C15.7673 10.7923 15.3423 10.9756 15.034 11.2923Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M2.08398 10.3421V6.53379C2.08398 5.54212 2.69231 4.65875 3.61731 4.30875L10.234 1.80875C11.2673 1.41708 12.3757 2.18377 12.3757 3.29211V6.45876" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M18.7997 11.6429V13.3596C18.7997 13.818 18.433 14.1929 17.9663 14.2096H16.333C15.433 14.2096 14.608 13.5513 14.533 12.6513C14.483 12.1263 14.683 11.6346 15.033 11.2929C15.3413 10.9763 15.7663 10.793 16.233 10.793H17.9663C18.433 10.8096 18.7997 11.1846 18.7997 11.6429Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M5.83398 10H11.6673" stroke="#E9AB4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M7.50065 15.8333C7.50065 16.4583 7.32565 17.05 7.01732 17.55C6.84232 17.85 6.61732 18.1167 6.35899 18.3333C5.77566 18.8583 5.00898 19.1667 4.16732 19.1667C2.95065 19.1667 1.89232 18.5167 1.31732 17.55C1.00899 17.05 0.833984 16.4583 0.833984 15.8333C0.833984 14.7833 1.31732 13.8417 2.08398 13.2333C2.65898 12.775 3.38398 12.5 4.16732 12.5C6.00898 12.5 7.50065 13.9917 7.50065 15.8333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M2.86914 15.8323L3.69413 16.6573L5.46914 15.0156" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                        
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Укажите реквизиты
+                                                </div>
+                                            </div>
+                                            <div class="progress-table__point ">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.08268 15.8346H6.66602C3.33268 15.8346 1.66602 15.0013 1.66602 10.8346V6.66797C1.66602 3.33464 3.33268 1.66797 6.66602 1.66797H13.3327C16.666 1.66797 18.3327 3.33464 18.3327 6.66797V10.8346C18.3327 14.168 16.666 15.8346 13.3327 15.8346H12.916C12.6577 15.8346 12.4077 15.9596 12.2493 16.168L10.9993 17.8346C10.4493 18.568 9.54935 18.568 8.99935 17.8346L7.74935 16.168C7.61602 15.9846 7.30768 15.8346 7.08268 15.8346Z" fill="white"/>
+                                                        <path d="M13.3301 9.16667H13.3375" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M9.99607 9.16667H10.0036" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M6.66209 9.16667H6.66957" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Дождитесь проверки
+                                                </div>
+                                            </div>
+                                            <div class="progress-table__point ">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.90039 0.625C7.24557 0.625 7.52539 0.904822 7.52539 1.25V2.5H12.9434V1.25C12.9434 0.904822 13.2232 0.625 13.5684 0.625C13.9135 0.625 14.1934 0.904822 14.1934 1.25V2.52605C16.1863 2.75372 17.7344 4.44608 17.7344 6.5V6.66912C17.7344 6.93434 17.629 7.18869 17.4415 7.37623L7.17751 17.6402C7.00049 17.8172 6.7604 17.9167 6.51006 17.9167C4.42481 17.9167 2.73438 16.2262 2.73438 14.141V6.5C2.73438 4.44608 4.28242 2.75372 6.27539 2.52605V1.25C6.27539 0.904822 6.55521 0.625 6.90039 0.625ZM12.7337 7.70801C13.0789 7.70801 13.3587 7.42819 13.3587 7.08301C13.3587 6.73783 13.0789 6.45801 12.7337 6.45801H6.90039C6.55521 6.45801 6.27539 6.73783 6.27539 7.08301C6.27539 7.42819 6.55521 7.70801 6.90039 7.70801H12.7337ZM10.2337 11.0413C10.5789 11.0413 10.8587 10.7615 10.8587 10.4163C10.8587 10.0712 10.5789 9.79134 10.2337 9.79134H6.90039C6.55521 9.79134 6.27539 10.0712 6.27539 10.4163C6.27539 10.7615 6.55521 11.0413 6.90039 11.0413H10.2337ZM8.35872 13.7497C8.35872 14.0949 8.0789 14.3747 7.73372 14.3747H6.90039C6.55521 14.3747 6.27539 14.0949 6.27539 13.7497C6.27539 13.4045 6.55521 13.1247 6.90039 13.1247H7.73372C8.0789 13.1247 8.35872 13.4045 8.35872 13.7497ZM17.3258 10.8255C16.7811 10.2808 15.898 10.2808 15.3533 10.8255L11.1743 15.0045C11.0737 15.1051 11.0005 15.2296 10.9615 15.3664L10.4808 17.0527C10.3733 17.4297 10.7217 17.7781 11.0987 17.6706L12.785 17.1898C12.9218 17.1509 13.0463 17.0776 13.1468 16.9771L17.3258 12.7981C17.8706 12.2534 17.8706 11.3702 17.3258 10.8255Z" fill="white"/>
+                                                        </svg>
+                                                        
+                                                        
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Заключение договора
+                                                </div>
+                                            </div>
+                                            <div class="progress-table__point end">
+                                                <div class="progress-table__point-icon">
+                                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33398 11.25V15.8333C3.33398 17.214 4.45327 18.3333 5.83398 18.3333H14.1673C15.548 18.3333 16.6673 17.214 16.6673 15.8333V11.25H12.9172C12.2615 11.25 11.644 10.9413 11.2506 10.4167L10.0006 8.75L8.75057 10.4167C8.35712 10.9413 7.73965 11.25 7.0839 11.25H3.33398Z" fill="white"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.37565 3.49242L8.77593 2.89269C8.53185 2.64862 8.13612 2.64862 7.89204 2.89269C7.64797 3.13677 7.64797 3.5325 7.89204 3.77658L8.96945 4.85399C9.53897 5.4235 10.4623 5.4235 11.0318 4.85399L12.1093 3.77658C12.3533 3.5325 12.3533 3.13677 12.1093 2.89269C11.8652 2.64862 11.4695 2.64862 11.2254 2.89269L10.6257 3.49242V1.66797C10.6257 1.32279 10.3458 1.04297 10.0007 1.04297C9.65547 1.04297 9.37565 1.32279 9.37565 1.66797V3.49242Z" fill="white"/>
+                                                        <path d="M3.79159 6.69922H10.0042H16.2192C16.4802 6.69922 16.7261 6.8215 16.8836 7.02961L18.0971 8.63281C18.5126 9.18171 18.1211 9.96909 17.4327 9.96909H12.9417C12.6838 9.96909 12.4403 9.8496 12.2825 9.64552L10.0042 6.69922L7.73153 9.64481C7.57375 9.84931 7.33005 9.96909 7.07175 9.96909H2.53605C1.84131 9.96909 1.45161 9.16892 1.87997 8.62195L3.1355 7.01874C3.29346 6.81705 3.53541 6.69922 3.79159 6.69922Z" fill="white"/>
+                                                    </svg>  
+                                                </div>
+                                                <div class="progress-table__point-text">
+                                                    Загрузите товары
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+            
+        </div>
+        <div class="lk-m__examination" style="display: none;">
+            <div class="lk-m__examination-wrapper">
+                <div class="lk-m__examination-left">
+                    <div class="data-checking">
+                        <div class="data-checking__icon">
+                            <img src="./img/lk-m/time.svg" alt="">
+                        </div>
+                        <div class="data-checking__title">Проверяем ваши данные</div>
+                        <div class="data-checking__text">
+                            Обычно это занимает не более 1 рабочего дня.<br>
+                            Результат проверки покажем здесь и пришлем на почту.
+                        </div>
+                    </div>
+                </div>
+                <div class="lk-m__examination-right">
+                    <aside class="progress-table">
+                        <div class="progress-table__image">
+                            <img src="./img/lk-m/avap.png" alt="">
+                        </div>
+                        <div class="progress-table__points">
+                            <div class="progress-table__point active active-end">
+                                <div class="progress-table__point-icon">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.3333 4L4.91667 10.875L2 7.75" stroke="#DE755E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Укажите реквизиты
+                                </div>
+                            </div>
+                            <div class="progress-table__point ">
+                                <div class="progress-table__point-icon">
+                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.08268 15.8346H6.66602C3.33268 15.8346 1.66602 15.0013 1.66602 10.8346V6.66797C1.66602 3.33464 3.33268 1.66797 6.66602 1.66797H13.3327C16.666 1.66797 18.3327 3.33464 18.3327 6.66797V10.8346C18.3327 14.168 16.666 15.8346 13.3327 15.8346H12.916C12.6577 15.8346 12.4077 15.9596 12.2493 16.168L10.9993 17.8346C10.4493 18.568 9.54935 18.568 8.99935 17.8346L7.74935 16.168C7.61602 15.9846 7.30768 15.8346 7.08268 15.8346Z" fill="white"/>
+                                        <path d="M13.3301 9.16667H13.3375" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.99607 9.16667H10.0036" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66209 9.16667H6.66957" stroke="#E79D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Дождитесь проверки
+                                </div>
+                            </div>
+                            <div class="progress-table__point ">
+                                <div class="progress-table__point-icon">
+                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.90039 0.625C7.24557 0.625 7.52539 0.904822 7.52539 1.25V2.5H12.9434V1.25C12.9434 0.904822 13.2232 0.625 13.5684 0.625C13.9135 0.625 14.1934 0.904822 14.1934 1.25V2.52605C16.1863 2.75372 17.7344 4.44608 17.7344 6.5V6.66912C17.7344 6.93434 17.629 7.18869 17.4415 7.37623L7.17751 17.6402C7.00049 17.8172 6.7604 17.9167 6.51006 17.9167C4.42481 17.9167 2.73438 16.2262 2.73438 14.141V6.5C2.73438 4.44608 4.28242 2.75372 6.27539 2.52605V1.25C6.27539 0.904822 6.55521 0.625 6.90039 0.625ZM12.7337 7.70801C13.0789 7.70801 13.3587 7.42819 13.3587 7.08301C13.3587 6.73783 13.0789 6.45801 12.7337 6.45801H6.90039C6.55521 6.45801 6.27539 6.73783 6.27539 7.08301C6.27539 7.42819 6.55521 7.70801 6.90039 7.70801H12.7337ZM10.2337 11.0413C10.5789 11.0413 10.8587 10.7615 10.8587 10.4163C10.8587 10.0712 10.5789 9.79134 10.2337 9.79134H6.90039C6.55521 9.79134 6.27539 10.0712 6.27539 10.4163C6.27539 10.7615 6.55521 11.0413 6.90039 11.0413H10.2337ZM8.35872 13.7497C8.35872 14.0949 8.0789 14.3747 7.73372 14.3747H6.90039C6.55521 14.3747 6.27539 14.0949 6.27539 13.7497C6.27539 13.4045 6.55521 13.1247 6.90039 13.1247H7.73372C8.0789 13.1247 8.35872 13.4045 8.35872 13.7497ZM17.3258 10.8255C16.7811 10.2808 15.898 10.2808 15.3533 10.8255L11.1743 15.0045C11.0737 15.1051 11.0005 15.2296 10.9615 15.3664L10.4808 17.0527C10.3733 17.4297 10.7217 17.7781 11.0987 17.6706L12.785 17.1898C12.9218 17.1509 13.0463 17.0776 13.1468 16.9771L17.3258 12.7981C17.8706 12.2534 17.8706 11.3702 17.3258 10.8255Z" fill="white"/>
+                                        </svg>
+                                        
+                                        
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Заключение договора
+                                </div>
+                            </div>
+                            <div class="progress-table__point end">
+                                <div class="progress-table__point-icon">
+                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33398 11.25V15.8333C3.33398 17.214 4.45327 18.3333 5.83398 18.3333H14.1673C15.548 18.3333 16.6673 17.214 16.6673 15.8333V11.25H12.9172C12.2615 11.25 11.644 10.9413 11.2506 10.4167L10.0006 8.75L8.75057 10.4167C8.35712 10.9413 7.73965 11.25 7.0839 11.25H3.33398Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.37565 3.49242L8.77593 2.89269C8.53185 2.64862 8.13612 2.64862 7.89204 2.89269C7.64797 3.13677 7.64797 3.5325 7.89204 3.77658L8.96945 4.85399C9.53897 5.4235 10.4623 5.4235 11.0318 4.85399L12.1093 3.77658C12.3533 3.5325 12.3533 3.13677 12.1093 2.89269C11.8652 2.64862 11.4695 2.64862 11.2254 2.89269L10.6257 3.49242V1.66797C10.6257 1.32279 10.3458 1.04297 10.0007 1.04297C9.65547 1.04297 9.37565 1.32279 9.37565 1.66797V3.49242Z" fill="white"/>
+                                        <path d="M3.79159 6.69922H10.0042H16.2192C16.4802 6.69922 16.7261 6.8215 16.8836 7.02961L18.0971 8.63281C18.5126 9.18171 18.1211 9.96909 17.4327 9.96909H12.9417C12.6838 9.96909 12.4403 9.8496 12.2825 9.64552L10.0042 6.69922L7.73153 9.64481C7.57375 9.84931 7.33005 9.96909 7.07175 9.96909H2.53605C1.84131 9.96909 1.45161 9.16892 1.87997 8.62195L3.1355 7.01874C3.29346 6.81705 3.53541 6.69922 3.79159 6.69922Z" fill="white"/>
+                                    </svg>  
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Загрузите товары
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="lk-m__examination" style="display: none;"  >
+            <div class="lk-m__examination-wrapper">
+                <div class="lk-m__examination-left">
+                    <div class="data-checking">
+                        <div class="data-checking__icon">
+                            <img src="./img/lk-m/galkacircle.svg" alt="">
+                        </div>
+                        <div class="data-checking__win">Проверка данных прошла успешно!</div>
+                        <div class="data-checking__text">
+                            Поздравляем! Вы успешно прошли проверку.<br>
+                            Следующий этап - заключение договора.
+                        </div>
+                    </div>
+                    <button class="red-btn"><span>Продолжить</span></button>
+                </div>
+                <div class="lk-m__examination-right">
+                    <aside class="progress-table">
+                        <div class="progress-table__image">
+                            <img src="./img/lk-m/avap.png" alt="">
+                        </div>
+                        <div class="progress-table__points">
+                            <div class="progress-table__point active active-end">
+                                <div class="progress-table__point-icon">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.3333 4L4.91667 10.875L2 7.75" stroke="#DE755E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Укажите реквизиты
+                                </div>
+                            </div>
+                            <div class="progress-table__point active active-end">
+                                <div class="progress-table__point-icon">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.3333 4L4.91667 10.875L2 7.75" stroke="#DE755E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Дождитесь проверки
+                                </div>
+                            </div>
+                            <div class="progress-table__point active">
+                                <div class="progress-table__point-icon">
+                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.90039 0.625C7.24557 0.625 7.52539 0.904822 7.52539 1.25V2.5H12.9434V1.25C12.9434 0.904822 13.2232 0.625 13.5684 0.625C13.9135 0.625 14.1934 0.904822 14.1934 1.25V2.52605C16.1863 2.75372 17.7344 4.44608 17.7344 6.5V6.66912C17.7344 6.93434 17.629 7.18869 17.4415 7.37623L7.17751 17.6402C7.00049 17.8172 6.7604 17.9167 6.51006 17.9167C4.42481 17.9167 2.73438 16.2262 2.73438 14.141V6.5C2.73438 4.44608 4.28242 2.75372 6.27539 2.52605V1.25C6.27539 0.904822 6.55521 0.625 6.90039 0.625ZM12.7337 7.70801C13.0789 7.70801 13.3587 7.42819 13.3587 7.08301C13.3587 6.73783 13.0789 6.45801 12.7337 6.45801H6.90039C6.55521 6.45801 6.27539 6.73783 6.27539 7.08301C6.27539 7.42819 6.55521 7.70801 6.90039 7.70801H12.7337ZM10.2337 11.0413C10.5789 11.0413 10.8587 10.7615 10.8587 10.4163C10.8587 10.0712 10.5789 9.79134 10.2337 9.79134H6.90039C6.55521 9.79134 6.27539 10.0712 6.27539 10.4163C6.27539 10.7615 6.55521 11.0413 6.90039 11.0413H10.2337ZM8.35872 13.7497C8.35872 14.0949 8.0789 14.3747 7.73372 14.3747H6.90039C6.55521 14.3747 6.27539 14.0949 6.27539 13.7497C6.27539 13.4045 6.55521 13.1247 6.90039 13.1247H7.73372C8.0789 13.1247 8.35872 13.4045 8.35872 13.7497ZM17.3258 10.8255C16.7811 10.2808 15.898 10.2808 15.3533 10.8255L11.1743 15.0045C11.0737 15.1051 11.0005 15.2296 10.9615 15.3664L10.4808 17.0527C10.3733 17.4297 10.7217 17.7781 11.0987 17.6706L12.785 17.1898C12.9218 17.1509 13.0463 17.0776 13.1468 16.9771L17.3258 12.7981C17.8706 12.2534 17.8706 11.3702 17.3258 10.8255Z" fill="white"/>
+                                        </svg>
+                                        
+                                        
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Заключение договора
+                                </div>
+                            </div>
+                            <div class="progress-table__point end">
+                                <div class="progress-table__point-icon">
+                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33398 11.25V15.8333C3.33398 17.214 4.45327 18.3333 5.83398 18.3333H14.1673C15.548 18.3333 16.6673 17.214 16.6673 15.8333V11.25H12.9172C12.2615 11.25 11.644 10.9413 11.2506 10.4167L10.0006 8.75L8.75057 10.4167C8.35712 10.9413 7.73965 11.25 7.0839 11.25H3.33398Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.37565 3.49242L8.77593 2.89269C8.53185 2.64862 8.13612 2.64862 7.89204 2.89269C7.64797 3.13677 7.64797 3.5325 7.89204 3.77658L8.96945 4.85399C9.53897 5.4235 10.4623 5.4235 11.0318 4.85399L12.1093 3.77658C12.3533 3.5325 12.3533 3.13677 12.1093 2.89269C11.8652 2.64862 11.4695 2.64862 11.2254 2.89269L10.6257 3.49242V1.66797C10.6257 1.32279 10.3458 1.04297 10.0007 1.04297C9.65547 1.04297 9.37565 1.32279 9.37565 1.66797V3.49242Z" fill="white"/>
+                                        <path d="M3.79159 6.69922H10.0042H16.2192C16.4802 6.69922 16.7261 6.8215 16.8836 7.02961L18.0971 8.63281C18.5126 9.18171 18.1211 9.96909 17.4327 9.96909H12.9417C12.6838 9.96909 12.4403 9.8496 12.2825 9.64552L10.0042 6.69922L7.73153 9.64481C7.57375 9.84931 7.33005 9.96909 7.07175 9.96909H2.53605C1.84131 9.96909 1.45161 9.16892 1.87997 8.62195L3.1355 7.01874C3.29346 6.81705 3.53541 6.69922 3.79159 6.69922Z" fill="white"/>
+                                    </svg>  
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Загрузите товары
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="lk-m__examination" style="display: none;" >
+            <div class="lk-m__examination-wrapper">
+                <div class="lk-m__examination-left">
+                    <div class="data-checking">
+                        <div class="data-checking__icon">
+                            <img src="./img/lk-m/doccircle.svg" alt="">
+                        </div>
+                        <div class="data-checking__title">Заключение договора</div>
+                        <div class="data-checking__text">
+                            Ознакомьтесь с текстом <a href="#">Договора</a> и нажмите Подписать.
+                        </div>
+                    </div>
+                    <button class="red-btn"><span>Подписать</span></button>
+                </div>
+                <div class="lk-m__examination-right">
+                    <aside class="progress-table">
+                        <div class="progress-table__image">
+                            <img src="./img/lk-m/avap.png" alt="">
+                        </div>
+                        <div class="progress-table__points">
+                            <div class="progress-table__point active active-end">
+                                <div class="progress-table__point-icon">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.3333 4L4.91667 10.875L2 7.75" stroke="#DE755E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Укажите реквизиты
+                                </div>
+                            </div>
+                            <div class="progress-table__point active active-end">
+                                <div class="progress-table__point-icon">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.3333 4L4.91667 10.875L2 7.75" stroke="#DE755E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Дождитесь проверки
+                                </div>
+                            </div>
+                            <div class="progress-table__point active">
+                                <div class="progress-table__point-icon">
+                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.90039 0.625C7.24557 0.625 7.52539 0.904822 7.52539 1.25V2.5H12.9434V1.25C12.9434 0.904822 13.2232 0.625 13.5684 0.625C13.9135 0.625 14.1934 0.904822 14.1934 1.25V2.52605C16.1863 2.75372 17.7344 4.44608 17.7344 6.5V6.66912C17.7344 6.93434 17.629 7.18869 17.4415 7.37623L7.17751 17.6402C7.00049 17.8172 6.7604 17.9167 6.51006 17.9167C4.42481 17.9167 2.73438 16.2262 2.73438 14.141V6.5C2.73438 4.44608 4.28242 2.75372 6.27539 2.52605V1.25C6.27539 0.904822 6.55521 0.625 6.90039 0.625ZM12.7337 7.70801C13.0789 7.70801 13.3587 7.42819 13.3587 7.08301C13.3587 6.73783 13.0789 6.45801 12.7337 6.45801H6.90039C6.55521 6.45801 6.27539 6.73783 6.27539 7.08301C6.27539 7.42819 6.55521 7.70801 6.90039 7.70801H12.7337ZM10.2337 11.0413C10.5789 11.0413 10.8587 10.7615 10.8587 10.4163C10.8587 10.0712 10.5789 9.79134 10.2337 9.79134H6.90039C6.55521 9.79134 6.27539 10.0712 6.27539 10.4163C6.27539 10.7615 6.55521 11.0413 6.90039 11.0413H10.2337ZM8.35872 13.7497C8.35872 14.0949 8.0789 14.3747 7.73372 14.3747H6.90039C6.55521 14.3747 6.27539 14.0949 6.27539 13.7497C6.27539 13.4045 6.55521 13.1247 6.90039 13.1247H7.73372C8.0789 13.1247 8.35872 13.4045 8.35872 13.7497ZM17.3258 10.8255C16.7811 10.2808 15.898 10.2808 15.3533 10.8255L11.1743 15.0045C11.0737 15.1051 11.0005 15.2296 10.9615 15.3664L10.4808 17.0527C10.3733 17.4297 10.7217 17.7781 11.0987 17.6706L12.785 17.1898C12.9218 17.1509 13.0463 17.0776 13.1468 16.9771L17.3258 12.7981C17.8706 12.2534 17.8706 11.3702 17.3258 10.8255Z" fill="white"/>
+                                        </svg>
+                                        
+                                        
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Заключение договора
+                                </div>
+                            </div>
+                            <div class="progress-table__point end">
+                                <div class="progress-table__point-icon">
+                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33398 11.25V15.8333C3.33398 17.214 4.45327 18.3333 5.83398 18.3333H14.1673C15.548 18.3333 16.6673 17.214 16.6673 15.8333V11.25H12.9172C12.2615 11.25 11.644 10.9413 11.2506 10.4167L10.0006 8.75L8.75057 10.4167C8.35712 10.9413 7.73965 11.25 7.0839 11.25H3.33398Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.37565 3.49242L8.77593 2.89269C8.53185 2.64862 8.13612 2.64862 7.89204 2.89269C7.64797 3.13677 7.64797 3.5325 7.89204 3.77658L8.96945 4.85399C9.53897 5.4235 10.4623 5.4235 11.0318 4.85399L12.1093 3.77658C12.3533 3.5325 12.3533 3.13677 12.1093 2.89269C11.8652 2.64862 11.4695 2.64862 11.2254 2.89269L10.6257 3.49242V1.66797C10.6257 1.32279 10.3458 1.04297 10.0007 1.04297C9.65547 1.04297 9.37565 1.32279 9.37565 1.66797V3.49242Z" fill="white"/>
+                                        <path d="M3.79159 6.69922H10.0042H16.2192C16.4802 6.69922 16.7261 6.8215 16.8836 7.02961L18.0971 8.63281C18.5126 9.18171 18.1211 9.96909 17.4327 9.96909H12.9417C12.6838 9.96909 12.4403 9.8496 12.2825 9.64552L10.0042 6.69922L7.73153 9.64481C7.57375 9.84931 7.33005 9.96909 7.07175 9.96909H2.53605C1.84131 9.96909 1.45161 9.16892 1.87997 8.62195L3.1355 7.01874C3.29346 6.81705 3.53541 6.69922 3.79159 6.69922Z" fill="white"/>
+                                    </svg>  
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Загрузите товары
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="lk-m__examination"  style="display: none;">
+            <div class="lk-m__examination-wrapper">
+                <div class="lk-m__examination-left">
+                    <div class="data-checking">
+                        <div class="data-checking__icon">
+                            <img src="./img/lk-m/galkacircle.svg" alt="">
+                        </div>
+                        <div class="data-checking__title">Договор подписан!</div>
+                        <div class="data-checking__text">
+                            Поздравляем! Теперь вы можете загрузить товар<br> 
+                            на Stay Creative Market.
+                        </div>
+                    </div>
+                    <button class="red-btn"><span>Загрузить товар</span></button>
+                </div>
+                <div class="lk-m__examination-right">
+                    <aside class="progress-table">
+                        <div class="progress-table__image">
+                            <img src="./img/lk-m/avap.png" alt="">
+                        </div>
+                        <div class="progress-table__points">
+                            <div class="progress-table__point active active-end">
+                                <div class="progress-table__point-icon">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.3333 4L4.91667 10.875L2 7.75" stroke="#DE755E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Укажите реквизиты
+                                </div>
+                            </div>
+                            <div class="progress-table__point active active-end">
+                                <div class="progress-table__point-icon">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.3333 4L4.91667 10.875L2 7.75" stroke="#DE755E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Дождитесь проверки
+                                </div>
+                            </div>
+                            <div class="progress-table__point active active-end">
+                                <div class="progress-table__point-icon">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.3333 4L4.91667 10.875L2 7.75" stroke="#DE755E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                        
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Заключение договора
+                                </div>
+                            </div>
+                            <div class="progress-table__point end">
+                                <div class="progress-table__point-icon">
+                                    <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33398 11.25V15.8333C3.33398 17.214 4.45327 18.3333 5.83398 18.3333H14.1673C15.548 18.3333 16.6673 17.214 16.6673 15.8333V11.25H12.9172C12.2615 11.25 11.644 10.9413 11.2506 10.4167L10.0006 8.75L8.75057 10.4167C8.35712 10.9413 7.73965 11.25 7.0839 11.25H3.33398Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.37565 3.49242L8.77593 2.89269C8.53185 2.64862 8.13612 2.64862 7.89204 2.89269C7.64797 3.13677 7.64797 3.5325 7.89204 3.77658L8.96945 4.85399C9.53897 5.4235 10.4623 5.4235 11.0318 4.85399L12.1093 3.77658C12.3533 3.5325 12.3533 3.13677 12.1093 2.89269C11.8652 2.64862 11.4695 2.64862 11.2254 2.89269L10.6257 3.49242V1.66797C10.6257 1.32279 10.3458 1.04297 10.0007 1.04297C9.65547 1.04297 9.37565 1.32279 9.37565 1.66797V3.49242Z" fill="white"/>
+                                        <path d="M3.79159 6.69922H10.0042H16.2192C16.4802 6.69922 16.7261 6.8215 16.8836 7.02961L18.0971 8.63281C18.5126 9.18171 18.1211 9.96909 17.4327 9.96909H12.9417C12.6838 9.96909 12.4403 9.8496 12.2825 9.64552L10.0042 6.69922L7.73153 9.64481C7.57375 9.84931 7.33005 9.96909 7.07175 9.96909H2.53605C1.84131 9.96909 1.45161 9.16892 1.87997 8.62195L3.1355 7.01874C3.29346 6.81705 3.53541 6.69922 3.79159 6.69922Z" fill="white"/>
+                                    </svg>  
+                                </div>
+                                <div class="progress-table__point-text">
+                                    Загрузите товары
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="profile">
+        <div class="profile__content">
+            <div class="profile__title">
+                Данные магазина
+            </div>
+            <div class="profile-header">
+                <div class="profile-header__image">
+                    <img src="./img/profile-header/bg.png" alt="">
+                </div>
+                <button class="profile-header__btn"><span>Изменить</span></button>
+                <ul class="profile-header__lists">
+                    <div class="profile-header__item profile-header__item--replace">Заменить изображение</div>
+                    <div class="profile-header__item profile-header__item--del">Удалить</div>
+                </ul>
+            </div>
+        </div>
+     
+    </div>
+</div>
+						<div class="lk-m__content active" data-tab="2">
+    
+</div>
+					</div>
+                </div>
+            </div>
+        </section>
+		
+	</main>
+	
+<div class="modal thanks-reg">
+    <div class="modal__container">
+        <button class="modal__close thanks-reg__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box thanks-reg__box">
+            <div class="thanks-reg__box-icon">
+                <img src="./img/icon/galkawhite.svg" alt="">
+            </div>
+            <div class="thanks-reg__box-title">
+                <strong>Спасибо за регистрацию!</strong>
+                <span>Письмо с подтверждением отправлено<br>
+                    на электронную почту</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal art-modal">
+    <div class="modal__container art-modal__container">
+        <button class="modal__close art-modal__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box art-modal__box">
+            <div class="art-modal__title">
+                <strong>Как получить одобрение, чтобы стать владельцем магазина ArtLovers</strong>
+                <span>Креативный рынок известен уникальными высококачественными активами. Хотя мы не можем
+                    гарантировать, что каждая заявка будет принята, вот некоторые квалификации, которые ищет
+                    наша команда, которые могут улучшить вашу.</span>
+            </div>
+            <div class="art-modal__inner">
+                <div class="art-modal__image">
+                    <img src="./img/artmodal/bro.svg" alt="">
+                </div>
+                <div class="art-modal__text">
+                    <strong>Уникальность
+                    </strong>
+                    <span>Мы ищем дизайнеров, которые понимают, что уже есть, и создают выразительные,
+                        непроизводные работы, которые выделяются.</span>
+                </div>
+            </div>
+            <div class="art-modal__inner">
+                <div class="art-modal__image">
+                    <img src="./img/artmodal/bro2.svg" alt="">
+                </div>
+                <div class="art-modal__text">
+                    <strong>Качество</strong>
+                    <span>Мы можем сказать, что вы потратили время, чтобы сделать свою работу превосходной,
+                        вплоть до мельчайших деталей и завершающих штрихов. Наши клиенты требуют
+                        качественных активов, а не запасов.</span>
+                </div>
+            </div>
+            <div class="art-modal__inner">
+                <div class="art-modal__image">
+                    <img src="./img/artmodal/bro3.svg" alt="">
+                </div>
+                <div class="art-modal__text">
+                    <strong>Портфолио</strong>
+                    <span>Давайте посмотрим несколько примеров того, что вы планируете продавать на Stay Creative! Пожалуйста, сделайте адрес электронной почты, связанный с вашей учетной
+                        записью Сгеануе Маке", видимым где-нибудь на сайте.</span>
+                </div>
+            </div>
+            <div class="art-modal__inner">
+                <div class="art-modal__image">
+                    <img src="./img/artmodal/bro4.svg" alt="">
+                </div>
+                <div class="art-modal__text">
+                    <strong>Полезность
+
+                    </strong>
+                    <span>Ваши продукты помогут клиентам завершить свои дизайнерские проекты, работу с
+                        клиентами или конечные продукты для продажи.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./js/swiper-bundle.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.15/autosize.min.js'></script>
+<script src="./js/Jq-script.js"></script>
+<script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>

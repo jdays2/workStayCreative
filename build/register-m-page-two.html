@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU" type="text/javascript"> </script>
+	<link rel="stylesheet" href="./css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+</head>
+
+<body>
+	<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="header__wrap-logo">
+                <a href="#" class="header__logo">
+                    <img src="./img/header/logo.svg" alt="">
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__lists">
+                    <li class="header__item header__item--slide"><a href="#">Категории</a></li>
+                    <li class="header__item"><a href="">Векторы</a></li>
+                    <li class="header__item"><a href="">Шрифты</a></li>
+                    <li class="header__item"><a href="">Фото</a></li>
+                    <li class="header__item"><a href="">Коллекции</a></li>
+                    <li class="header__item"><a href="">Стоимость</a></li>
+                    <li class="header__item"><a href="">О нас</a></li>
+                </ul>
+            </nav>
+            <button class="header__search">
+                <img src="./img/header/search.svg" alt="">
+            </button>
+            <button class="header__user">
+                <img src="./img/header/user.svg" alt="">
+            </button>
+            <button class="header__like">
+                <img src="./img/header/heart.svg" alt="">
+            </button>
+            <button class="header__bag">
+                <img src="./img/header/bag.svg" alt="">
+            </button>
+        </div>
+    
+    </div>
+</header>
+	
+	
+	<main>
+		<section class="register-m">
+            <div class="container">
+                <div class="register-m__wrapper">
+                    <div class="register-m__left">
+                        <div class="register-m__image">
+                            <img src="./img/willkommensfenster/img1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="register-m__right">
+                        <div class="register-m__numbers register-m__numbers--two">
+                            <div class="register-m__numbers-box register-m__numbers-box--end">
+                                <div class="register-m__numbers-box-number no-before"><span><img src="./img/icon/galkawhite.svg" alt=""></span></div>
+                                <div class="register-m__numbers-box-text no-before">Данные магазина</div>
+                            </div>
+                            <div class="register-m__numbers-box register-m__numbers-box--end">
+                                <div class="register-m__numbers-box-number no-after"><span>2</span></div>
+                                <div class="register-m__numbers-box-text no-afer">Информация о магазине</div>
+                            </div>
+                        </div>
+                        <!-- numbers -->
+                        
+                        <div class="register-m__content">
+                            <div class="register-m__title">
+                                <strong>Открыть магазин</strong>
+                                
+                            </div>
+                            <form action="" class="register-m__form">
+                                <div class="register-m__form-wrap">
+                                    <div class="register-m__form-inner">
+                                        <label for="">Название магазина</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="register-m__form-inner">
+                                        <label for="">Категория товаров (основная)</label>
+                                        <div class="select">
+                                            <input class="select-input" type="hidden" name="">
+                                            <div class="select-head"> <br></div>
+                                            <ul class="select-list">
+                                                <li class="select-item">Узбекистан</li>
+                                                <li class="select-item">Кыргызстан </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                               
+                            </form>
+                            <div class="register-m__btns">
+                                <button class="red-btn thanks-reg-open"><span>Продолжить</span></button>
+                                
+                            </div>
+                            <div class="register-m__two-text">
+                                Нажимая «Продолжить», я даю согласие на <a href="#">обработку персональных данных</a> и подтверждаю, что ознакомлен с <a href="#">условиями Договора</a>. 
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+	</main>
+	
+<div class="modal thanks-reg">
+    <div class="modal__container">
+        <button class="modal__close thanks-reg__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box thanks-reg__box">
+            <div class="thanks-reg__box-icon">
+                <img src="./img/icon/galkawhite.svg" alt="">
+            </div>
+            <div class="thanks-reg__box-title">
+                <strong>Спасибо за регистрацию!</strong>
+                <span>Письмо с подтверждением отправлено<br>
+                    на электронную почту</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal art-modal">
+    <div class="modal__container art-modal__container">
+        <button class="modal__close art-modal__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box art-modal__box">
+            <div class="art-modal__title">
+                <strong>Как получить одобрение, чтобы стать владельцем магазина ArtLovers</strong>
+                <span>Креативный рынок известен уникальными высококачественными активами. Хотя мы не можем
+                    гарантировать, что каждая заявка будет принята, вот некоторые квалификации, которые ищет
+                    наша команда, которые могут улучшить вашу.</span>
+            </div>
+            <div class="art-modal__inner">
+                <div class="art-modal__image">
+                    <img src="./img/artmodal/bro.svg" alt="">
+                </div>
+                <div class="art-modal__text">
+                    <strong>Уникальность
+                    </strong>
+                    <span>Мы ищем дизайнеров, которые понимают, что уже есть, и создают выразительные,
+                        непроизводные работы, которые выделяются.</span>
+                </div>
+            </div>
+            <div class="art-modal__inner">
+                <div class="art-modal__image">
+                    <img src="./img/artmodal/bro2.svg" alt="">
+                </div>
+                <div class="art-modal__text">
+                    <strong>Качество</strong>
+                    <span>Мы можем сказать, что вы потратили время, чтобы сделать свою работу превосходной,
+                        вплоть до мельчайших деталей и завершающих штрихов. Наши клиенты требуют
+                        качественных активов, а не запасов.</span>
+                </div>
+            </div>
+            <div class="art-modal__inner">
+                <div class="art-modal__image">
+                    <img src="./img/artmodal/bro3.svg" alt="">
+                </div>
+                <div class="art-modal__text">
+                    <strong>Портфолио</strong>
+                    <span>Давайте посмотрим несколько примеров того, что вы планируете продавать на Stay Creative! Пожалуйста, сделайте адрес электронной почты, связанный с вашей учетной
+                        записью Сгеануе Маке", видимым где-нибудь на сайте.</span>
+                </div>
+            </div>
+            <div class="art-modal__inner">
+                <div class="art-modal__image">
+                    <img src="./img/artmodal/bro4.svg" alt="">
+                </div>
+                <div class="art-modal__text">
+                    <strong>Полезность
+
+                    </strong>
+                    <span>Ваши продукты помогут клиентам завершить свои дизайнерские проекты, работу с
+                        клиентами или конечные продукты для продажи.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./js/swiper-bundle.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.15/autosize.min.js'></script>
+<script src="./js/Jq-script.js"></script>
+<script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>

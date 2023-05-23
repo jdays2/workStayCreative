@@ -1,0 +1,71 @@
+.willkommensfenster {
+    margin-bottom: 11.5rem;
+    &__wrapper {
+        display: flex;
+    }
+
+    &__left {
+        width: 104rem;
+        overflow: hidden;
+        z-index: 1;
+        position: absolute;
+        
+    }
+
+    &__right {
+        width: 107rem;
+        height: 104rem;
+        z-index: 2;
+        background: #FFFFFF;
+        border-radius: 5.5rem;
+        right: 1rem;
+        position: relative;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5.5rem;
+        img {
+            border-radius: 5.5rem;
+        }
+        
+    }
+
+    &__content {
+        width: 78.4rem;
+    }
+
+    &__text {
+        margin-bottom: 5.2rem;
+        strong {
+            display: block;
+            font-family: 'Austin Cyr';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 3.7rem;
+            line-height: 100% ;
+            letter-spacing: 0.02em;
+            margin-bottom: 3.2rem;
+            color: #1B1818;
+
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            letter-spacing: 0.02em;
+            color: #A0A1A4;
+            margin-bottom: 2rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

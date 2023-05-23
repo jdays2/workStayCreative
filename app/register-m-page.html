@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU" type="text/javascript"> </script>
+	<link rel="stylesheet" href="./css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+</head>
+
+<body>
+	@@include('./template/header.html')
+	
+	
+	<main>
+		<section class="register-m">
+            <div class="container">
+                <div class="register-m__wrapper">
+                    <div class="register-m__left">
+                        <div class="register-m__image">
+                            <img src="./img/willkommensfenster/img1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="register-m__right">
+                        <div class="register-m__numbers">
+                            <div class="register-m__numbers-box ">
+                                <div class="register-m__numbers-box-number"><span>1</span></div>
+                                <div class="register-m__numbers-box-text">Данные магазина</div>
+                            </div>
+                            <div class="register-m__numbers-box no-active--mobile ">
+                                <div class="register-m__numbers-box-number no-active no-active--mobile"><span>2</span></div>
+                                <div class="register-m__numbers-box-text no-active no-active--mobile">Информация о магазине</div>
+                            </div>
+                        </div>
+                        <!-- numbers -->
+                        
+                        <div class="register-m__content">
+                            <div class="register-m__title">
+                                <strong>Открыть магазин</strong>
+                                <span>Чтобы открыть магазин, пожалуйста заполните заявку ниже.</span>
+                            </div>
+                            <form action="" class="register-m__form">
+                                <div class="register-m__form-wrap">
+                                    <div class="register-m__form-inner">
+                                        <label for="">Страна регистрации</label>
+                                        <div class="select">
+                                            <input class="select-input" type="hidden" name="">
+                                            <div class="select-head"> <br></div>
+                                            <ul class="select-list">
+                                                <li class="select-item">Узбекистан</li>
+                                                <li class="select-item">Кыргызстан </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="register-m__form-inner">
+                                        <label for="">Название профиля (канала)</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="register-m__form-wrap register-m__form-wrap--type">
+                                    <div class="register-m__form-inner register-m__form-inner--type">
+                                        <label for="">Тип организации</label>
+                                        <div class="select">
+                                            <input class="select-input" type="hidden" name="">
+                                            <div class="select-head"> <br></div>
+                                            <ul class="select-list">
+                                                <li class="select-item">Узбекистан</li>
+                                                <li class="select-item">Кыргызстан </li>
+                                            </ul>
+                                        </div>
+                                        <div class="register-m__form-inner-text">Самозанятые могут работать на Stay Creative, если они граждане РФ и продают товары только собственного производства.</div>
+                                    </div>
+                                </div>
+                                <div class="register-m__form-wrap">
+                                    <div class="register-m__form-inner">
+                                        <label for="">Фамилия</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="register-m__form-inner">
+                                        <label for="">Имя</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="register-m__form-wrap">
+                                    <div class="register-m__form-inner">
+                                        <label for="">Отчество</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="register-m__form-inner">
+                                        <label for="">E-mail для уведомлений</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="register-m__btns">
+                                <a href="#" class="red-btn"><span>Продолжить</span></a>
+                                <div class="register-m__faq">Узнайте <a href="#">как стать продавцом</a><br> на Stay Creative</div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+	</main>
+	@@include('./template/footer.html')
+
+</body>
+
+</html>
