@@ -1,25 +1,26 @@
 .header {
 	margin-bottom: 3rem;
 	background-color: #fff;
-    border-radius: 0 0 3rem 3rem;
-    position: fixed;
-    width: 100%;
-    z-index: 20;
+	border-radius: 0 0 3rem 3rem;
+	position: fixed;
+	width: 100%;
+	z-index: 20;
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0 1.1rem rgba(103, 110, 133, 0.2);
 
 	&__burger {
 		display: none;
 	}
 
-    &__head {
-        z-index: 35;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+	&__head {
+		z-index: 35;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
 		align-items: center;
-        padding: 2.1rem 0;
-        background-color: white;
-        border-bottom: 0.1rem solid #EAEBEF;
-    }
+		padding: 2.1rem 0;
+		background-color: white;
+		border-bottom: 0.1rem solid #eaebef;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -30,7 +31,8 @@
 	&__logo {
 		width: 19.276rem;
 		height: 3.209rem;
-        margin-right: 1rem;
+		margin-right: 1rem;
+        transition: 0.6s ease;
 		img {
 			width: 100%;
 			height: 100%;
@@ -40,34 +42,38 @@
 
 	&__nav {
 		width: 100%;
-        align-items: center;
+		align-items: center;
+        z-index: 20;
+        background-color: #fff;
 	}
 
 	&__lists {
-        height: 7.5rem;;
-        display: flex;
+        position: relative;
+		height: 7.5rem;
+		display: flex;
 		justify-content: space-between;
 		align-items: center;
-        margin-top: 1rem;
-        margin-bottom: 1.4rem;
+		margin-top: 1rem;
+		margin-bottom: 1.4rem;
+        z-index: 15;
 	}
 
 	&__item {
-        position: relative;
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 2.5rem;
-        
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        
-        color: #383742;
+		position: relative;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 2.5rem;
+
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+
+		color: #383742;
 	}
 
 	&__item--slide {
-        padding-right: 1.9rem;
+		padding-right: 1.9rem;
 		position: relative;
 	}
 
@@ -80,15 +86,15 @@
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		right: 0;
-		top: 45%
+		top: 45%;
 	}
 
-    &__search-category--slide {
-        position: relative;
+	&__search-category--slide {
+		position: relative;
 		padding-right: 2.4rem;
-    }
+	}
 
-    &__search-category--slide::before {
+	&__search-category--slide::before {
 		position: absolute;
 		content: '';
 		width: 1.2rem;
@@ -119,30 +125,29 @@
 		}
 	}
 
-    &__store {
+	&__store {
 		background: #eaebef;
-		width: 7.5rem;;
-		height: 7.5rem;;
+		width: 7.5rem;
+		height: 7.5rem;
 		border-radius: 50%;
 		background: #eaebef;
-        display: none;
+		display: none;
 		justify-content: center;
 		align-items: center;
 
 		img {
-            width: 2.3rem;
-            height: 2.3rem;
+			width: 2.3rem;
+			height: 2.3rem;
 		}
 	}
 
-    &__store--show {
-        display: flex;
-    }
-
+	&__store--show {
+		display: flex;
+	}
 
 	&__like {
-		width: 7.5rem;;
-		height: 7.5rem;;
+		width: 7.5rem;
+		height: 7.5rem;
 		border-radius: 50%;
 		background: #eaebef;
 		display: flex;
@@ -156,8 +161,8 @@
 	}
 
 	&__bag {
-		width: 7.5rem;;
-		height: 7.5rem;;
+		width: 7.5rem;
+		height: 7.5rem;
 		border-radius: 50%;
 		background: #eaebef;
 		display: flex;
@@ -171,7 +176,7 @@
 	}
 
 	&__shop-button {
-        display: block;
+		display: block;
 		background: #de755e;
 		border-radius: 100rem;
 		padding: 2.5rem 2.8rem;
@@ -187,31 +192,36 @@
 		}
 	}
 
-    &__shop-button--remove {
-        display: none;
-    }
+	&__shop-button--remove {
+		display: none;
+	}
 
 	&__buttons-bar {
 		display: flex;
 		gap: 1rem;
+        transition: 0.6s ease;
 	}
+
+    &__buttons-bar--reg {
+        margin-right: 7.65rem;
+    }
 
 	&__search {
 		display: flex;
 		align-items: center;
-        background-color: #EAEBEF;
-        border-radius: 100rem;
-        padding: 1.2rem 2.5rem
+		background-color: #eaebef;
+		border-radius: 100rem;
+		padding: 1.2rem 2.5rem;
 	}
 
 	&__search-button-wrapper {
 		display: flex;
 		gap: 2.4rem;
-        height: 5.1rem;
-        align-items: center;
-        padding-right: 2rem;
-        margin-right: 2rem;
-        border-right: 0.1rem solid #A5A5A999;
+		height: 5.1rem;
+		align-items: center;
+		padding-right: 2rem;
+		margin-right: 2rem;
+		border-right: 0.1rem solid #a5a5a999;
 
 		img {
 			width: 2.5rem;
@@ -219,144 +229,205 @@
 		}
 	}
 
-    &__search-button {
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1.8rem;
-        line-height: 2.2rem;
-        letter-spacing: 0.02em;
+	&__search-button {
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+		letter-spacing: 0.02em;
 
-        color: #383742;
-    }
+		color: #383742;
+	}
 
-    &__search-input {
+	&__search-input {
+		width: 38rem;
+		padding: 1.5rem 0;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+		letter-spacing: 0.02em;
+		border: 0;
+		background-color: transparent;
+        transition: 0.6s ease;
+
+		color: #a5a5a9;
+	}
+
+    &__search-input--reg {
         width: 38rem;
-        padding: 1.5rem 0;
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1.8rem;
-        line-height: 2.1rem;
-        letter-spacing: 0.02em;
-        border: 0;
-        background-color: transparent;
-
-        color: #A5A5A9;
     }
 
-    &__register-alert {
+	&__register-alert {
+		position: absolute;
+		top: -20.2rem;
+		right: 6rem;
+		z-index: 30;
+		padding: 3.2rem 2.6rem;
+		background-color: white;
+		border-radius: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2.4rem;
+		transition: 0.6s ease;
+
+		p {
+			width: 40.6rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 2rem;
+			line-height: 2.4rem;
+			letter-spacing: 0.02em;
+
+			color: #383742;
+		}
+	}
+
+	&__register-alert--show {
+		top: 11.8rem;
+        box-shadow: 1rem 1rem 3.1rem rgba(160, 161, 164, 0.19);
+	}
+
+	&__register-alert-button {
+		padding: 2.6rem 4.9rem;
+		background-color: #de755e;
+		border-radius: 100rem;
+
+		span {
+			text-align: center;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 2rem;
+			line-height: 2.5rem;
+			letter-spacing: 0.02em;
+			color: #ffffff;
+		}
+	}
+
+	&__profile-bar {
+		position: absolute;
+		right: 6.5rem;
+		top: -20rem;
+		padding: 2rem 2.4rem;
+		background-color: white;
+		border-radius: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 3.2rem;
+		transition: 0.6s ease;
+		z-index: 30;
+	}
+
+	&__profile-bar--show {
+		top: 11.8rem;
+        box-shadow: 1rem 1rem 3.1rem rgba(160, 161, 164, 0.19);
+	}
+
+	&__profile-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		gap: 1.2rem;
+
+		img {
+			width: 2.1rem;
+			height: 2rem;
+		}
+
+		span {
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 2rem;
+			line-height: 2.4rem;
+			letter-spacing: 0.02em;
+
+			color: #383742;
+		}
+	}
+
+	&__profile-bar-button {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		gap: 1.2rem;
+
+		img {
+			width: 2.1rem;
+			height: 2rem;
+		}
+
+		span {
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 2rem;
+			line-height: 2.4rem;
+			letter-spacing: 0.02em;
+
+			color: #383742;
+		}
+	}
+
+	&__info {
+        top: -60rem;
+        left: 0;
         position: absolute;
-        top: -20.2rem;
-        right: 6rem;
-        z-index: 30;
-        padding: 3.2rem 2.6rem;
-        background-color: white;
-        border-radius: 2rem;
+        background-color: #fff;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 10rem;
+        border-radius: 0 0 3rem 3rem;
+        z-index: 10;
+        transition: 0.6s ease;
+	}
+
+    &__info--show {
+        top: 11.7rem;
+        box-shadow: 1rem 1rem 3.1rem rgba(160, 161, 164, 0.19);
+    }
+
+    &__info-wrapper {
+        padding: 3rem 6rem 3.2rem;
+        border-top: 0.1rem solid #eaebef;
         display: flex;
-        flex-direction: column;
-        gap: 2.4rem;
-        transition: 1s;
-
-        p {
-            width: 40.6rem;
-            font-family: 'Gilroy';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 2rem;
-            line-height: 2.4rem;
-            letter-spacing: 0.02em;
-
-            color: #383742;
-        }
-    }
-
-    &__register-alert--show {
-        top: 11.8rem;
-    }
-
-    &__register-alert-button {
-        padding: 2.6rem 4.9rem;
-        background-color: #DE755E;
-        border-radius: 100rem;
-
-        span {
-            text-align: center;
-            font-family: 'Gilroy';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 2rem;
-            line-height: 2.5rem;
-            letter-spacing: 0.02em;
-            color: #FFFFFF;
-        }
-    }
-
-    &__profile-bar {
-        position: absolute;
-        right: 6.5rem;
-        top: -20rem;
-        padding: 2rem 2.4rem;
-        background-color: white;
-        border-radius: 2rem;
-        display: flex;
-        flex-direction: column;
-        gap: 3.2rem;
-        transition: 1s;
-        z-index: 30;
-    }
-
-    &__profile-bar--show {
-        top: 11.8rem;
-    }
-
-    &__profile-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 100%;
-        gap: 1.2rem;
-
-        img {
-            width: 2.1rem;
-            height: 2rem;
-        }
-
-        span {
-            font-family: 'Gilroy';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 2rem;
-            line-height: 2.4rem;
-            letter-spacing: 0.02em;
-
-            color: #383742;
-        }
-    }
-
-    &__profile-bar-button {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        gap: 1.2rem;
-
-        
-        img {
-            width: 2.1rem;
-            height: 2rem;
-        }
-
-        span {
-            font-family: 'Gilroy';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 2rem;
-            line-height: 2.4rem;
-            letter-spacing: 0.02em;
-
-            color: #383742;
-        }
+		justify-content: space-between;
     }
 
 
+	&__info-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 6rem;
+
+		a {
+			margin: 0;
+            z-index: 10;
+		}
+	}
+
+	&__info-list {
+        margin-top: 0.7rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&__info-item {
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 2.5rem;
+		letter-spacing: 0.02em;
+		color: #383742;
+	}
 }
