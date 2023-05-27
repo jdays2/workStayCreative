@@ -15,6 +15,21 @@
 
     }
 
+    &__del {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.02em;
+        color: #A0A1A4;
+        margin-top: 5.2rem;
+        padding-left: 1.5rem;
+        button {
+            font-weight: 700;
+            color: #DE755E;
+            padding-left: 0.8rem;
+        }
+    }
+
 }
 
 

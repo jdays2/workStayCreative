@@ -2959,6 +2959,314 @@ input[type="number"] {
 .art-modal::-webkit-scrollbar {
   display: none; }
 
+.profile-market-modal__box {
+  padding: 6rem 8rem; }
+
+.profile-market-modal__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4rem; }
+
+.profile-market-modal__wrap:last-child {
+  margin-bottom: 3.2rem; }
+
+.profile-market-modal__title {
+  font-family: 'Austin Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 3.2rem; }
+
+.profile-market-modal__inner {
+  margin-right: 2.9rem; }
+  .profile-market-modal__inner label {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.02em;
+    display: block;
+    margin-bottom: 1.2rem;
+    color: #383742; }
+  .profile-market-modal__inner input {
+    position: relative;
+    width: 40rem;
+    height: 4.8rem;
+    background: #EAEBEF;
+    border-radius: 1rem;
+    padding: 1.4rem 2.4rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 125%;
+    color: #000000;
+    border: none; }
+
+.profile-market-modal__inner:last-child {
+  margin-right: 0; }
+
+.profile-market-modal .red-btn {
+  margin-left: auto; }
+
+.profile-market-modal.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.profile-user-modal {
+  display: none; }
+  .profile-user-modal__box {
+    padding: 6rem 8rem; }
+  .profile-user-modal__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 4rem; }
+  .profile-user-modal__wrap:last-child {
+    margin-bottom: 3.2rem; }
+  .profile-user-modal__title {
+    font-family: 'Austin Cyr';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.7rem;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 3.2rem; }
+  .profile-user-modal__inner {
+    margin-right: 2.9rem; }
+    .profile-user-modal__inner label {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.02em;
+      display: block;
+      margin-bottom: 1.2rem;
+      color: #383742; }
+    .profile-user-modal__inner input {
+      position: relative;
+      width: 40rem;
+      height: 4.8rem;
+      background: #EAEBEF;
+      border-radius: 1rem;
+      padding: 1.4rem 2.4rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 125%;
+      color: #000000;
+      border: none; }
+  .profile-user-modal__inner:last-child {
+    margin-right: 0; }
+  .profile-user-modal__search {
+    position: relative; }
+    .profile-user-modal__search input {
+      width: 40rem; }
+  .profile-user-modal__search-btn {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 2.4rem;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
+  .profile-user-modal .red-btn {
+    margin-left: auto; }
+  .profile-user-modal__wrap-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .profile-user-modal__wrap-block .profile-user-modal__inner {
+      margin-right: 3.2rem; }
+      .profile-user-modal__wrap-block .profile-user-modal__inner input {
+        width: 11.2rem; }
+    .profile-user-modal__wrap-block .profile-user-modal__inner:last-child {
+      margin-right: 0; }
+  .profile-user-modal__checkbox {
+    width: 40rem;
+    padding-top: 0;
+    margin-top: 3.5rem; }
+
+.profile-user-modal.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.profile-description-modal {
+  display: none; }
+  .profile-description-modal__box {
+    padding: 6rem 8rem; }
+  .profile-description-modal__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 4rem; }
+  .profile-description-modal__wrap:last-child {
+    margin-bottom: 3.2rem; }
+  .profile-description-modal__title {
+    font-family: 'Austin Cyr';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.7rem;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 3.2rem; }
+  .profile-description-modal__inner {
+    margin-right: 0;
+    width: 100%; }
+    .profile-description-modal__inner label {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.02em;
+      display: block;
+      margin-bottom: 1.2rem;
+      color: #383742; }
+    .profile-description-modal__inner textarea {
+      overflow: hidden;
+      position: relative;
+      width: 83rem;
+      height: 15.8rem;
+      background: #EAEBEF;
+      border-radius: 1rem;
+      padding: 1.4rem 2.4rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 125%;
+      color: #000000;
+      border: none;
+      resize: none; }
+  .profile-description-modal .red-btn {
+    margin: 0 auto; }
+
+.profile-description-modal.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.profile-market-thanks__box {
+  padding: 6rem 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.profile-market-thanks__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem; }
+
+.profile-market-thanks__title {
+  font-family: 'Austin Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em; }
+
+.profile-market-thanks.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.profile-user-thanks__box {
+  padding: 6rem 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.profile-user-thanks__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem; }
+
+.profile-user-thanks__title {
+  font-family: 'Austin Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em; }
+
+.profile-user-thanks.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.del-modal__box {
+  padding: 6rem 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.del-modal__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem; }
+
+.del-modal__title {
+  font-family: 'Austin Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 3.2rem; }
+
+.del-modal__text {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #A0A1A4;
+  margin-bottom: 3.2rem; }
+
+.del-modal.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .lk-register {
   margin-bottom: 11.5rem; }
   .lk-register__wrapper {
@@ -3681,6 +3989,19 @@ input[type="number"] {
   margin-bottom: 6rem;
   letter-spacing: 0.02em; }
 
+.profile__del {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  color: #A0A1A4;
+  margin-top: 5.2rem;
+  padding-left: 1.5rem; }
+  .profile__del button {
+    font-weight: 700;
+    color: #DE755E;
+    padding-left: 0.8rem; }
+
 .profile-header {
   width: 100%;
   height: 20.6rem;
@@ -3763,6 +4084,435 @@ input[type="number"] {
     background-image: url(../img/profile-header/image.svg); }
   .profile-header__item--del::before {
     background-image: url(../img/profile-header/trash.svg); }
+
+.profile-user {
+  border: 0.1rem solid #EAEBEF;
+  border-radius: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.8rem;
+  margin-bottom: 2.3rem; }
+  .profile-user__avatar {
+    width: 14.4rem;
+    height: 14.4rem;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 2.8rem; }
+    .profile-user__avatar:hover {
+      -webkit-transition: 2s;
+      transition: 2s; }
+      .profile-user__avatar:hover .profile-user__avatar-btn {
+        opacity: 1;
+        -webkit-transition: 2s;
+        transition: 2s; }
+  .profile-user__avatar-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2; }
+    .profile-user__avatar-image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; }
+  .profile-user__avatar-btn {
+    width: 4.8rem;
+    height: 4.8rem;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: 2s;
+    transition: 2s; }
+  .profile-user__name {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.6rem;
+    font-weight: 700; }
+  .profile-user__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .profile-user__follower {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 130%;
+    color: #DE755E;
+    padding-left: 3.6rem;
+    position: relative;
+    margin-right: 2rem; }
+    .profile-user__follower::before {
+      position: absolute;
+      content: '';
+      width: 2.4rem;
+      height: 2.4rem;
+      background-image: url(../img/profile-user/user.svg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      left: 0; }
+  .profile-user__follows {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 130%;
+    color: #DE755E;
+    padding-left: 3.6rem;
+    position: relative;
+    margin-right: 2rem; }
+    .profile-user__follows::before {
+      position: absolute;
+      content: '';
+      width: 2.4rem;
+      height: 2.4rem;
+      background-image: url(../img/profile-user/user-add.svg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      left: 0; }
+  .profile-user__date {
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #A0A1A4; }
+
+.profile-market {
+  border: 0.1rem solid #EAEBEF;
+  border-radius: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2.8rem;
+  margin-bottom: 2.3rem;
+  position: relative; }
+  .profile-market__title {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 4rem; }
+  .profile-market__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 87.6rem; }
+  .profile-market__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 4rem; }
+    .profile-market__info span {
+      display: block;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.02em;
+      color: #A0A1A4;
+      margin-bottom: 0.8rem; }
+    .profile-market__info span:last-child {
+      margin-bottom: 0; }
+    .profile-market__info strong {
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.02em; }
+  .profile-market__info:nth-last-child(-n+2) {
+    margin-bottom: 0; }
+  .profile-market__btn {
+    position: absolute;
+    width: 22.7rem;
+    height: 7.8rem;
+    background: #EAEBEF;
+    border-radius: 100rem;
+    top: 2.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    right: 2.8rem; }
+    .profile-market__btn span {
+      position: relative;
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      letter-spacing: 0.02em;
+      color: #383742;
+      padding-right: 6.4rem; }
+      .profile-market__btn span::before {
+        position: absolute;
+        content: '';
+        width: 2.4rem;
+        height: 2.4rem;
+        background-image: url(../img/profile-user/editblack.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        right: 0; }
+
+.profile-salesman {
+  border: 0.1rem solid #EAEBEF;
+  border-radius: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2.8rem;
+  margin-bottom: 2.3rem;
+  position: relative; }
+  .profile-salesman__title {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 4rem; }
+  .profile-salesman__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 87.6rem; }
+  .profile-salesman__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 4rem; }
+    .profile-salesman__info span {
+      display: block;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.02em;
+      color: #A0A1A4;
+      margin-bottom: 0.8rem; }
+    .profile-salesman__info span:last-child {
+      margin-bottom: 0; }
+    .profile-salesman__info strong {
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.02em; }
+  .profile-salesman__info:nth-last-child(-n+2) {
+    margin-bottom: 0; }
+  .profile-salesman__btn {
+    position: absolute;
+    width: 22.7rem;
+    height: 7.8rem;
+    background: #EAEBEF;
+    border-radius: 100rem;
+    top: 2.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    right: 2.8rem; }
+    .profile-salesman__btn span {
+      position: relative;
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      letter-spacing: 0.02em;
+      color: #383742;
+      padding-right: 6.4rem; }
+      .profile-salesman__btn span::before {
+        position: absolute;
+        content: '';
+        width: 2.4rem;
+        height: 2.4rem;
+        background-image: url(../img/profile-user/editblack.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        right: 0; }
+  .profile-salesman__text {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.02em;
+    margin-top: 4rem;
+    color: #A0A1A4; }
+
+.profile-description {
+  border: 0.1rem solid #EAEBEF;
+  border-radius: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2.8rem;
+  margin-bottom: 2.3rem;
+  position: relative; }
+  .profile-description__title {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 4rem; }
+  .profile-description__text {
+    width: 90.9rem; }
+    .profile-description__text span {
+      display: block;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.02em;
+      color: #A0A1A4;
+      margin-bottom: 0.8rem; }
+    .profile-description__text p {
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.02em; }
+  .profile-description__btn {
+    position: absolute;
+    width: 22.7rem;
+    height: 7.8rem;
+    background: #EAEBEF;
+    border-radius: 100rem;
+    top: 2.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    right: 2.8rem; }
+    .profile-description__btn span {
+      position: relative;
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      letter-spacing: 0.02em;
+      color: #383742;
+      padding-right: 6.4rem; }
+      .profile-description__btn span::before {
+        position: absolute;
+        content: '';
+        width: 2.4rem;
+        height: 2.4rem;
+        background-image: url(../img/profile-user/editblack.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        right: 0; }
+
+.cover-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .cover-modal__content {
+    padding: 6rem;
+    background: #FFFFFF;
+    border-radius: 5.5rem; }
+  .cover-modal .content {
+    z-index: 1;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .cover-modal .content input {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0; }
+  .cover-modal__center-one-image {
+    width: 31.4rem;
+    height: 23.4rem;
+    margin: 0 auto;
+    margin-bottom: 3.2rem; }
+    .cover-modal__center-one-image img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .cover-modal__upload-btn {
+    background-image: url(../img/lk-m/dow.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 82.7rem;
+    height: 20.2rem;
+    border-radius: 5.5rem;
+    display: block; }
+  .cover-modal__center-one-title {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Austin Cyr';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.7rem;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #383742;
+    margin-bottom: 5.2rem; }
+  .cover-modal__center {
+    display: none; }
+  .cover-modal__center-title {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Austin Cyr';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.7rem;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #383742;
+    margin-bottom: 5.2rem; }
+  .cover-modal #canvas {
+    width: 83.7rem;
+    height: 28.2rem;
+    overflow: hidden; }
 
 @media only all and (max-width: 48em) {
   .header {

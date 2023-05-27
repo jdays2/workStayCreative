@@ -134,8 +134,7 @@
         </section>
 		
 	</main>
-	
-<div class="modal thanks-reg">
+	<div class="modal thanks-reg">
     <div class="modal__container">
         <button class="modal__close thanks-reg__close">
             <img src="./img/icon/close.svg" alt="">
@@ -194,7 +193,8 @@
                 </div>
                 <div class="art-modal__text">
                     <strong>Портфолио</strong>
-                    <span>Давайте посмотрим несколько примеров того, что вы планируете продавать на Stay Creative! Пожалуйста, сделайте адрес электронной почты, связанный с вашей учетной
+                    <span>Давайте посмотрим несколько примеров того, что вы планируете продавать на Stay Creative!
+                        Пожалуйста, сделайте адрес электронной почты, связанный с вашей учетной
                         записью Сгеануе Маке", видимым где-нибудь на сайте.</span>
                 </div>
             </div>
@@ -214,14 +214,225 @@
     </div>
 </div>
 
+<div class="modal profile-market-thanks">
+    <div class="modal__container profile-market-thanks__container">
+        <button class="modal__close profile-market-thanks__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box profile-market-thanks__box">
+            <div class="profile-market-thanks__icon">
+                <img src="./img/lk-m/galkacircle.svg" alt="">
+            </div>
+            <div class="profile-market-thanks__title">Данные магазина изменены успешно</div>
+        </div>
+    </div>
+</div>
+
+<div class="modal profile-description-modal">
+    <div class="modal__container profile-description-modal__container">
+        <button class="modal__close profile-description-modal__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box profile-description-modal__box">
+            <div class="profile-description-modal__title">Описание магазина</div>
+            <div class="profile-description-modal__wrap">
+                <div class="profile-description-modal__inner">
+                    <label for="">Описание </label>
+
+                    <textarea class="profile-market-modal__textarea"
+                        placeholder="Я UI/UX веб-дизайнер с опытом работы более 8 лет. Разрабатываю дизайн сайтов для малого, среднего и крупного бизнеса. Работал в Яндекс. Практикум на факультете «Дизайнер интерфейсов». Веду блог, пишу статьи о дизайне, интернет маркетинге."></textarea>
+                </div>
+
+            </div>
+
+            <button class="red-btn profile-description-modal__save"><span>Сахранить изменения</span></button>
+        </div>
+    </div>
+</div>
+
+<div class="modal profile-market-modal">
+    <div class="modal__container profile-market-modal__container">
+        <button class="modal__close profile-market-modal__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box profile-market-modal__box">
+            <div class="profile-market-modal__title">Данные магазина</div>
+            <div class="profile-market-modal__wrap">
+                <div class="profile-market-modal__inner">
+                    <label for="">Название магазина</label>
+                    <input type="text">
+                </div>
+                <div class="profile-market-modal__inner">
+                    <label for="">Электронная почта</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="profile-market-modal__wrap">
+                <div class="profile-market-modal__inner">
+                    <label for="">Расчетный счет</label>
+                    <input type="text">
+                </div>
+                <div class="profile-market-modal__inner">
+                    <label for="">БИК</label>
+                    <input type="text">
+                </div>
+            </div>
+            <button class="red-btn profile-market-modal__save"><span>Сахранить изменения</span></button>
+        </div>
+    </div>
+</div>
+
+<div class="modal profile-user-modal">
+    <div class="modal__container profile-user-modal__container">
+        <button class="modal__close profile-user-modal__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box profile-user-modal__box">
+            <div class="profile-user-modal__title">Данные продавца</div>
+            <div class="profile-user-modal__wrap">
+                <div class="profile-user-modal__inner">
+                    <label for="">ФИО</label>
+                    <input type="text">
+                </div>
+                <div class="profile-user-modal__inner">
+                    <label for="">Серия и номер паспорта</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="profile-user-modal__wrap">
+                <div class="profile-user-modal__inner profile-user-modal__inner--search">
+                    <label for="">Область/Республика/Край</label>
+                    <div class="profile-user-modal__search">
+                        <input type="text">
+                        <button class="profile-user-modal__search-btn">
+                            <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.88907 18.7781C14.7984 18.7781 18.7781 14.7984 18.7781 9.88907C18.7781 4.97977 14.7984 1 9.88907 1C4.97977 1 1 4.97977 1 9.88907C1 14.7984 4.97977 18.7781 9.88907 18.7781Z"
+                                    stroke="#A0A1A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M20.9999 20.9994L16.1665 16.166" stroke="#A0A1A4" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="profile-user-modal__inner">
+                    <label for="">Город</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="profile-user-modal__wrap">
+                <div class="profile-user-modal__inner">
+                    <label for="">Улица</label>
+                    <input type="text">
+                </div>
+                <div class="profile-user-modal__wrap-block">
+                    <div class="profile-user-modal__inner">
+                        <label for="">Дом</label>
+                        <input type="text">
+                    </div>
+                    <div class="profile-user-modal__inner">
+                        <label for="">Помещение</label>
+                        <input type="text">
+                    </div>
+                    <div class="profile-user-modal__inner">
+                        <label for="">Корпус</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+            </div>
+            <div class="profile-user-modal__wrap">
+                <div class="profile-user-modal__inner">
+                    <label for="">Индекс</label>
+                    <input type="text">
+                </div>
+                <label class="checkbox profile-user-modal__checkbox">Почтовый адрес отличается от адреса регистрации
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+            <button class="red-btn profile-user-modal__save"><span>Сахранить изменения</span></button>
+        </div>
+    </div>
+</div>
+
+<div class="modal profile-user-thanks">
+    <div class="modal__container profile-user-thanks__container">
+        <button class="modal__close profile-user-thanks__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box profile-user-thanks__box">
+            <div class="profile-user-thanks__icon">
+                <img src="./img/lk-m/galkacircle.svg" alt="">
+            </div>
+            <div class="profile-user-thanks__title">Описание магазина изменено успешно</div>
+        </div>
+    </div>
+</div>
+
+<div class="modal del-modal">
+    <div class="modal__container del-modal__container">
+        <button class="modal__close del-modal__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box del-modal__box">
+            <div class="del-modal__icon">
+                <img src="./img/profile-user/znak.svg" alt="">
+            </div>
+            <div class="del-modal__title">Вы уверены, что хотите удалить магазин?</div>
+            <div class="del-modal__text">Восстановление данных будет невозможно
+            </div>
+            <button class="red-btn"><span>Удалить</span></button>
+        </div>
+    </div>
+</div>
+
+<modal class="modal cover-modal">
+    <div class="modal__container cover-modal__container">
+        <button class="modal__close cover-modal__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="cover-modal__content">
+            
+                
+                    <div class="cover-modal__center-one">
+                        <div class="cover-modal__center-one-image">
+                            <img src="./img/cover-modal/rafiki.svg" alt="">
+                        </div>
+                        <div class="cover-modal__center-one-title">
+                            Обложка профиля
+                        </div>
+                        
+                        <div class="dropzone">
+                            <div class="content">
+                                <input type="file" class="cover-modal__custom-file-input" id="cover-modal__upload-file">
+                                <label for="cover-modal__upload-file"></label>
+                                <label class="cover-modal__upload-btn" for="cover-modal__upload-file">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cover-modal__center">
+                        <div class="cover-modal__center-title">Выберите область для обложки профиля</div>
+                        
+                        <canvas id="canvas" style="max-width: 100%;"></canvas>
+                        <button class="red-btn"><span>Сохронить</span></button>
+                    </div>
+                    
+                
+            
+        </div>
+    </div>
+</modal>
 
 <script src="./js/jquery-3.5.1.min.js"></script>
-<script src="./js/swiper-bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.15/autosize.min.js'></script>
+<script src="./js/swiper-bundle.js"></script>
 <script src="./js/Jq-script.js"></script>
 <script src="./js/main.js"></script>
-
-
 
 </body>
 

@@ -200,3 +200,26 @@ const adviceSwiper = new Swiper('.advice__swiper', {
 function addZero(num) {
   return (num > 9) ? num : '0' + num;
 }
+
+
+$(document).ready(function () {
+
+
+
+  
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

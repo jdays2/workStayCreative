@@ -4,7 +4,10 @@
   "description": "Bear-Shop",
   "main": "index.js",
   "dependencies": {
+    "@cropper/element-canvas": "^2.0.0-beta",
     "air-datepicker": "^3.3.3",
+    "canvas": "^2.11.2",
+    "cropperjs": "^2.0.0-beta.2",
     "gulp": "^4.0.2",
     "jquery-zoom": "^1.7.21"
   },
