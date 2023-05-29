@@ -27,7 +27,7 @@ const profilePopUpClass = 'header__profile-bar--show';
 const infoPopupClass = 'header__info--show';
 const inputClass = 'header__search-input--reg';
 const buttonBarClass = 'header__buttons-bar--reg';
-const activeInpunClass = 'header__search--active';
+const activeInputClass = 'header__search--active';
 const parentListClass = 'header__categorys-list';
 const showParentListClass = 'header__categorys-list--show';
 const categorysPopUpClass = 'header__categorys--show';
@@ -84,13 +84,34 @@ infoBtn.addEventListener('click', () => {
 });
 
 //добавлять active-status на Input
-input.addEventListener('focus', () => {
-	inputWrapper.classList.add(activeInpunClass);
+let currentWidth = window.innerWidth;
+let isInputHandlersAdded = false;
+
+window.addEventListener('resize', () => {
+  const newWidth = window.innerWidth;
+  if (currentWidth > 768 && newWidth <= 768 && isInputHandlersAdded) {
+    input.removeEventListener('focus', focusHandler);
+    input.removeEventListener('blur', blurHandler);
+    isInputHandlersAdded = false;
+  }
+  currentWidth = newWidth;
 });
 
-input.addEventListener('blur', () => {
-	inputWrapper.classList.remove(activeInpunClass);
-});
+function focusHandler() {
+  inputWrapper.classList.add(activeInputClass);
+}
+
+function blurHandler() {
+  inputWrapper.classList.remove(activeInputClass);
+}
+
+if (currentWidth > 768) {
+  if (input) {
+    input.addEventListener('focus', focusHandler);
+    input.addEventListener('blur', blurHandler);
+    isInputHandlersAdded = true;
+  }
+}
 
 //показать, закрыть категории popup
 categorysPopUpBnt.addEventListener('click', () => {

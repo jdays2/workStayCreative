@@ -1,0 +1,81 @@
+.footer {
+	background-color: #de755e;
+	color: white;
+
+	.container {
+		padding-top: 6.6rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__nav-wrapper {
+    display: flex;
+    padding-bottom: 8.1rem;
+    border-bottom: 0.1rem solid white;
+	}
+
+  &__nav {
+    width: 100%;
+    display: flex;
+		justify-content: space-between;
+  }
+
+	&__socials-wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+    margin-right: 30rem;
+	}
+
+	&__logo {
+		img {
+			width: 16.4rem;
+			height: 4.6rem;
+		}
+	}
+
+	&__socials {
+		display: flex;
+		gap: 1.6rem;
+  }
+
+  &__socials-item {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 2.4rem
+    }
+
+    &:last-child {
+      margin-right: 9.6rem
+    }
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+
+    li {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 2rem;
+      max-width: 30.8rem;
+    }
+  }
+}
