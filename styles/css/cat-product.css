@@ -1,0 +1,151 @@
+.cat-product {
+  width: 40.5rem;
+  height: 56.6rem;
+  position: relative;
+  display: block;
+  padding-top: 2.5rem;
+}
+.cat-product__block {
+  width: 40.4rem;
+  height: 44.4rem;
+  background: #FFFFFF;
+  border-radius: 4rem;
+  margin-bottom: 2rem;
+  padding-top: 5rem;
+}
+.cat-product__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 12rem;
+  height: 5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 0.2rem solid #FFFFFF;
+  box-shadow: 10px 15px 55px rgba(92, 97, 114, 0.3);
+  backdrop-filter: blur(3px);
+  border-radius: 10rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  right: 3.5rem;
+  top: 0;
+  color: #DE755E;
+}
+.cat-product__image-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30rem;
+  width: 30rem;
+  height: 24.2rem;
+  margin: 0 auto;
+  margin-bottom: 3.7rem;
+}
+.cat-product__image {
+  width: 100%;
+  height: 100%;
+}
+.cat-product__image img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.cat-product__title {
+  text-align: center;
+}
+.cat-product__title strong {
+  display: block;
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  margin-bottom: 1.7rem;
+  letter-spacing: 0.02em;
+  color: #383742;
+}
+.cat-product__title span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+}
+.cat-product__inner {
+  display: flex;
+}
+.cat-product__like {
+  width: 12.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7.7rem;
+  background: #E0E1E7;
+  border-radius: 3rem;
+  margin-right: 1rem;
+}
+.cat-product__like span {
+  position: relative;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  padding-left: 3.4rem;
+}
+.cat-product__like span::before {
+  position: absolute;
+  content: "";
+  width: 2.4rem;
+  height: 1.774rem;
+  background-image: url(../img/catproduct/heat.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+}
+.cat-product__views {
+  width: 12.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7.7rem;
+  background: #E0E1E7;
+  border-radius: 3rem;
+  margin-right: 1rem;
+}
+.cat-product__views span {
+  position: relative;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  padding-left: 3.4rem;
+}
+.cat-product__views span::before {
+  position: absolute;
+  content: "";
+  width: 2.4rem;
+  height: 2rem;
+  background-image: url(../img/catproduct/look.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+}
+.cat-product__arrow {
+  width: 12.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7.7rem;
+  background: #E0E1E7;
+  border-radius: 3rem;
+}
+.cat-product__arrow img {
+  width: 3.2rem;
+  height: 2rem;
+}/*# sourceMappingURL=cat-product.css.map */
