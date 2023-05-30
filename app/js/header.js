@@ -21,6 +21,9 @@ const categorysPopUpBnt = document.querySelector('#categorys-btn');
 const categorysPopUp = document.querySelector('.header__categorys');
 const burgerBtn = document.querySelector('.header__burger');
 const burgerNav = document.querySelector('.header__nav');
+const burgerCategoryBtn = document.querySelector('#burger-categ-btn');
+const mobileInfoPopUp = document.querySelector('#mobile-info');
+const burgerPopUpBtn = document.querySelectorAll('.burger__categ-item-btn')
 // const header = document.querySelector('.header');
 
 const registerPopUpClass = 'header__register-alert--show';
@@ -38,6 +41,9 @@ const itemClass = 'header__item--slide';
 const activeItemClass = 'header__item--open';
 const activeBurgerClass = 'header__burger--active';
 const showBurgerClass = 'header__nav--show'
+const burgerCategoryPopUpClass = 'burger__categ-item--show'
+
+
 
 //добавляем показ register-popup
 shopBtn.addEventListener('click', () => {
@@ -73,19 +79,26 @@ profilePopUpCloseBtn.addEventListener('click', () => {
 	profilePopUp.classList.remove(profilePopUpClass);
 });
 
-//открыть, закрыть информация popup
+//открыть, закрыть информация popup, desktop and mobile
 infoBtn.addEventListener('click', () => {
-	if (categorysPopUp.classList.contains(categorysPopUpClass)) {
-		categorysPopUp.classList.remove(categorysPopUpClass);
-
-		const otherWrapper = categorysPopUpBnt.parentNode;
-		otherWrapper.classList.toggle(itemClass);
-		otherWrapper.classList.toggle(activeItemClass);
-	}
-	const wrapper = infoBtn.parentNode;
-	wrapper.classList.toggle(itemClass);
-	wrapper.classList.toggle(activeItemClass);
-	infoPopUp.classList.toggle(infoPopupClass);
+  const currentWidth = window.innerWidth;
+  console.log(currentWidth)
+  if(currentWidth > 768) {
+    if (categorysPopUp.classList.contains(categorysPopUpClass)) {
+      categorysPopUp.classList.remove(categorysPopUpClass);
+  
+      const otherWrapper = categorysPopUpBnt.parentNode;
+      otherWrapper.classList.toggle(itemClass);
+      otherWrapper.classList.toggle(activeItemClass);
+    }
+    const wrapper = infoBtn.parentNode;
+    wrapper.classList.toggle(itemClass);
+    wrapper.classList.toggle(activeItemClass);
+    infoPopUp.classList.toggle(infoPopupClass);
+    return
+  }
+    mobileInfoPopUp.classList.add(burgerCategoryPopUpClass)
+  
 });
 
 //добавлять active-status на Input
@@ -144,5 +157,15 @@ categorysTitle.forEach((element) => {
 //открыть, закрыть бургер-меню
 burgerBtn.addEventListener('click', () => {
 	burgerBtn.classList.toggle(activeBurgerClass);
-  // header.classList.toggle(activeHeader);
+  burgerNav.classList.toggle(showBurgerClass);
 });
+
+//закрыть попап бургер-меню
+burgerPopUpBtn.forEach((element) => {
+  element.addEventListener('click', () => {
+    const parent = element.closest('.burger__categ-item--show')
+    console.log(parent)
+    parent.classList.remove(burgerCategoryPopUpClass)
+  })
+})
+

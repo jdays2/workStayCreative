@@ -5006,7 +5006,7 @@ input[type=number] {
   }
   .header .burger__item div {
     background-color: white;
-    width: 9.6rem;
+    width: 11.6rem;
     height: 9.6rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5034,6 +5034,70 @@ input[type=number] {
     text-align: left;
     width: 100%;
     color: #383742;
+  }
+  .header .burger__categ-item-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 5rem;
+    padding-top: 1rem;
+  }
+  .header .burger__categ-item-title div {
+    background-color: #de755e;
+    color: white;
+    width: 55rem;
+    height: 11rem;
+    border-radius: 100rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 3rem;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    letter-spacing: 0.02em;
+    color: #FFF;
+  }
+  .header .burger__categ-item-btn {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 11rem;
+    height: 11rem;
+    margin-right: 2rem;
+    border-radius: 100rem;
+  }
+  .header .burger__categ-item-btn img {
+    width: 4.63rem;
+  }
+  .header .burger__categ-item {
+    position: absolute;
+    top: 18rem;
+    left: -100rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+    background-color: #EAEBEF;
+    padding-bottom: 100rem;
+    -webkit-transition: 0.65s ease-out;
+    transition: 0.65s ease-out;
+    z-index: 40;
+  }
+  .header .burger__categ-item--show {
+    left: 0rem;
+    right: 0rem;
   }
   .header__shop-button--burger {
     display: -webkit-box;
