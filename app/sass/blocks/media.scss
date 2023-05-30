@@ -1,16 +1,24 @@
 @media only all and (max-width: 48em) {
+	html {
+		font-size: 1.3333333333vw;
+		-webkit-text-size-adjust: none;
+	}
+
 	.header {
 		&__head {
       width: 100%;
 			padding: 4rem 3rem;
 			background-color: #eaebef;
 			display: flex;
-			gap: 1rem
+			gap: 1rem;
+		}
+
+		&__wrapper {
+			overflow: visible;
 		}
 
 		&__search,
 		&__like,
-    &__lists,
     &__shop-button {
 			display: none;
 		}
@@ -43,6 +51,7 @@
       align-items: center;
       
       span {
+				transition: transform 0.25s ease-in;
         background: #383742;
         width: 2.75rem;
         height: 0.2rem;
@@ -54,9 +63,27 @@
       }
 
       span:first-child{
-        margin-bottom: 0.7rem;
+        margin-bottom: 0.8rem;
       }
     }
+
+		&__burger--active {
+			span:nth-child(2) {
+				opacity: 0;
+			}
+
+			span:nth-child(1) {
+				transform: rotate(45deg);
+				top: 1rem;
+				position: relative;
+			}
+
+			span:nth-child(3) {
+				top: -0.9rem;
+				position: relative;
+				transform: rotate(-45deg);
+			}
+		}
 
     &__logo {
       margin: 0;
@@ -89,6 +116,192 @@
 			img {
 				width: 4rem;
 				height: 4rem;
+			}
+		}
+
+		&__nav {
+			top: -500rem;
+			position: absolute;
+			background-color: #EAEBEF;
+			padding-left: 3rem;
+			padding-right: 3rem;
+			padding-bottom: 100rem;
+			transition: 0.65s ease-out
+		}
+
+		&__nav--show {
+			top: 18rem;
+		}
+
+
+		&__lists {
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			background-color: #EAEBEF;
+			align-items: flex-start;
+			height: 100%;
+			margin-bottom: 4.2rem;
+			
+			li {
+				width: 100%
+			}
+		}
+
+		&__item {
+			padding: 3rem;
+			border-bottom: 0.2rem solid #E0E1E7;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 3.2rem;
+			line-height: 3.8rem;
+			letter-spacing: 0.02em;
+			color: #383742;
+			text-transform: capitalize;
+		}
+
+		.burger{
+			&__mobile-bar {
+				display: flex;
+				flex-direction: column;
+			}
+	
+			&__item {
+				width: 100%;
+				background-color: #E0E1E7;
+				border-radius: 100rem;
+				align-items: flex-start;
+				padding: 1.6rem;
+				margin-bottom: 1.6rem;
+				display: flex;
+				align-items: center;
+
+				div {
+					background-color: white;
+					width: 9.6rem;
+					height: 9.6rem;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 100rem;
+					margin-right: 2.4rem
+				}
+
+				img {
+					width: 3.6rem;
+					height: 3.6rem;
+				}
+
+				span {
+					font-family: 'Gilroy';
+					font-style: normal;
+					font-weight: 500;
+					font-size: 3.2rem;
+					line-height: 3.8rem;
+					letter-spacing: 0.02em;
+					text-align: left;
+					width: 100%;
+					color: #383742;
+				}
+			}
+		}
+
+		&__shop-button--burger {
+			display: flex;
+			width: 100%;
+			height: 11rem;
+			justify-content: center;
+			align-items: center;
+			margin-top: 4.2rem;
+
+			span {
+				font-weight: 700;
+				font-size: 2.8rem;
+				line-height: 3.4rem;
+				text-align: center;
+			}
+		}
+	}
+
+	.footer {
+		border-radius: 6rem 6rem 0 0;
+		position: relative;
+
+		.container {
+			padding-top: 9.6rem;
+		}
+
+		&__socials-wrapper {
+			position: absolute;
+			height: 63%;
+    	top: 6.6rem;
+		}
+
+		&__nav {
+			width: 100%;
+			flex-wrap: wrap;
+			margin-top: 5rem;
+			gap: 6rem 3rem ;
+		}
+
+		&__col {
+			width: 33rem;
+			margin: 0;
+			p {
+				font-weight: 700;
+				font-size: 2.8rem;
+				line-height: 3.4rem;
+				margin-bottom: 3rem;
+			}
+		}
+
+		&__col:last-child {
+			margin: 0
+		}
+
+		&__list {
+			li {
+				font-weight: 400;
+				font-size: 2.8rem;
+				line-height: 4rem;
+				margin: 0;
+				margin-bottom: 2rem;
+			}
+
+			a {
+				display: block;
+				width: 33rem;
+			}
+		}
+
+		&__request {
+			margin-top: 6rem;
+			align-items: flex-start;
+			flex-direction: column;
+		}
+
+		&__message {
+			margin-bottom: 6rem;
+
+			span {
+				font-size: 2.8rem;
+				line-height: 3.4rem
+			}
+
+			img {
+				width: 3.4rem;
+				height: 2.8rem;
+				margin-bottom: 0.4rem
+			}
+		}
+
+		&__links {
+			gap: 3rem;
+			
+			a {
+				width: 8rem;
+				height: 8rem;
 			}
 		}
 	}

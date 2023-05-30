@@ -4,10 +4,10 @@ $(document).ready(function () {
 
     // Активация Бургера
 
-    $(".header__burger").on('click', function() {
-        $(".header__burger").toggleClass("open");
-        // $("main").toggleClass("main-none")
-    });
+    // $(".header__burger").on('click', function() {
+    //     $(".header__burger").toggleClass("open");
+    //     // $("main").toggleClass("main-none")
+    // });
 
 
     // Кастомный селект 

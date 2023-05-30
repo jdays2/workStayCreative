@@ -1,11 +1,11 @@
 <header class="header">
 	<div class="header__wrapper">
 		<div class="header__head">
-			<div class="header__burger">
+			<button class="header__burger">
 				<span></span>
 				<span></span>
 				<span></span>
-			</div>
+			</button>
 			<div class="header__search">
 				<div class="header__search-button-wrapper">
 					<img
@@ -94,16 +94,36 @@
 		<nav class="header__nav">
 			<ul class="header__lists">
 				<li class="header__item header__item--slide">
-					<button id="categorys-btn">ВСЕ КАТЕГОРИИ</button>
+					<button id="categorys-btn">Все категории</button>
 				</li>
 				<li class="header__item"><a href="">Шрифты</a></li>
 				<li class="header__item"><a href="">Фотографии</a></li>
 				<li class="header__item"><a href="">Векторы</a></li>
 				<li class="header__item"><a href="">Мокапы</a></li>
 				<li class="header__item header__item--slide">
-					<button id="info-btn">БОЛЬШЕ ИНФОРМАЦИИ</button>
+					<button id="info-btn">Больше информации</button>
 				</li>
 			</ul>
+			<div class="burger__mobile-bar">
+				<a class="burger__item">
+					<div>
+						<img src="./img/header/bag.svg" alt="">
+					</div>
+					<span>Корзина</span>
+				</a>
+
+				<a class="burger__item">
+					<div>
+						<img src="./img/header/heart.svg" alt="">
+					</div>
+					<span>Избранное</span>
+				</a>
+				
+				<a class="header__shop-button header__shop-button--burger">
+					<span>Открыть магазин</span>
+				</a>
+
+			</div>
 		</nav>
 	</div>
 

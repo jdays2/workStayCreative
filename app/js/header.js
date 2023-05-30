@@ -19,6 +19,9 @@ const buttonsBar = document.querySelector('.header__buttons-bar');
 const categorysTitle = document.querySelectorAll('.header__categorys-title');
 const categorysPopUpBnt = document.querySelector('#categorys-btn');
 const categorysPopUp = document.querySelector('.header__categorys');
+const burgerBtn = document.querySelector('.header__burger');
+const burgerNav = document.querySelector('.header__nav');
+// const header = document.querySelector('.header');
 
 const registerPopUpClass = 'header__register-alert--show';
 const shopBtnClass = 'header__store--show';
@@ -33,6 +36,8 @@ const showParentListClass = 'header__categorys-list--show';
 const categorysPopUpClass = 'header__categorys--show';
 const itemClass = 'header__item--slide';
 const activeItemClass = 'header__item--open';
+const activeBurgerClass = 'header__burger--active';
+const showBurgerClass = 'header__nav--show'
 
 //добавляем показ register-popup
 shopBtn.addEventListener('click', () => {
@@ -73,13 +78,13 @@ infoBtn.addEventListener('click', () => {
 	if (categorysPopUp.classList.contains(categorysPopUpClass)) {
 		categorysPopUp.classList.remove(categorysPopUpClass);
 
-    const otherWrapper = categorysPopUpBnt.parentNode;
-    otherWrapper.classList.toggle(itemClass);
-    otherWrapper.classList.toggle(activeItemClass);
+		const otherWrapper = categorysPopUpBnt.parentNode;
+		otherWrapper.classList.toggle(itemClass);
+		otherWrapper.classList.toggle(activeItemClass);
 	}
-  const wrapper = infoBtn.parentNode;
-  wrapper.classList.toggle(itemClass);
-  wrapper.classList.toggle(activeItemClass);
+	const wrapper = infoBtn.parentNode;
+	wrapper.classList.toggle(itemClass);
+	wrapper.classList.toggle(activeItemClass);
 	infoPopUp.classList.toggle(infoPopupClass);
 });
 
@@ -88,29 +93,29 @@ let currentWidth = window.innerWidth;
 let isInputHandlersAdded = false;
 
 window.addEventListener('resize', () => {
-  const newWidth = window.innerWidth;
-  if (currentWidth > 768 && newWidth <= 768 && isInputHandlersAdded) {
-    input.removeEventListener('focus', focusHandler);
-    input.removeEventListener('blur', blurHandler);
-    isInputHandlersAdded = false;
-  }
-  currentWidth = newWidth;
+	const newWidth = window.innerWidth;
+	if (currentWidth > 768 && newWidth <= 768 && isInputHandlersAdded) {
+		input.removeEventListener('focus', focusHandler);
+		input.removeEventListener('blur', blurHandler);
+		isInputHandlersAdded = false;
+	}
+	currentWidth = newWidth;
 });
 
 function focusHandler() {
-  inputWrapper.classList.add(activeInputClass);
+	inputWrapper.classList.add(activeInputClass);
 }
 
 function blurHandler() {
-  inputWrapper.classList.remove(activeInputClass);
+	inputWrapper.classList.remove(activeInputClass);
 }
 
 if (currentWidth > 768) {
-  if (input) {
-    input.addEventListener('focus', focusHandler);
-    input.addEventListener('blur', blurHandler);
-    isInputHandlersAdded = true;
-  }
+	if (input) {
+		input.addEventListener('focus', focusHandler);
+		input.addEventListener('blur', blurHandler);
+		isInputHandlersAdded = true;
+	}
 }
 
 //показать, закрыть категории popup
@@ -118,13 +123,13 @@ categorysPopUpBnt.addEventListener('click', () => {
 	if (infoPopUp.classList.contains(infoPopupClass)) {
 		infoPopUp.classList.remove(infoPopupClass);
 
-    const otherWrapper = infoBtn.parentNode;
-    otherWrapper.classList.toggle(itemClass);
-    otherWrapper.classList.toggle(activeItemClass);
+		const otherWrapper = infoBtn.parentNode;
+		otherWrapper.classList.toggle(itemClass);
+		otherWrapper.classList.toggle(activeItemClass);
 	}
-  const wrapper = categorysPopUpBnt.parentNode;
-  wrapper.classList.toggle(itemClass);
-  wrapper.classList.toggle(activeItemClass);
+	const wrapper = categorysPopUpBnt.parentNode;
+	wrapper.classList.toggle(itemClass);
+	wrapper.classList.toggle(activeItemClass);
 	categorysPopUp.classList.toggle(categorysPopUpClass);
 });
 
@@ -134,4 +139,10 @@ categorysTitle.forEach((element) => {
 		const list = element.nextElementSibling;
 		list.classList.toggle(showParentListClass);
 	});
+});
+
+//открыть, закрыть бургер-меню
+burgerBtn.addEventListener('click', () => {
+	burgerBtn.classList.toggle(activeBurgerClass);
+  // header.classList.toggle(activeHeader);
 });
