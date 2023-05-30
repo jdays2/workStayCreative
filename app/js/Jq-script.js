@@ -141,6 +141,22 @@ $(document).ready(function () {
     });
 
 
+    // изменить описание магазина два
+
+    $(".profile-info-p__btn").click(function () {
+        $(".profile-description-modal-two").addClass("active");
+
+    });
+
+
+    $(".profile-description-modal-two__close").click(function () {
+        $(".profile-description-modal-two").removeClass("active");
+
+    });
+
+    
+
+
 
     //  удалить магазин 
     $(".profile__del > button").click(function () {
@@ -156,6 +172,72 @@ $(document).ready(function () {
 
 
     // 
+
+    // смена шапки
+
+    $(".profile-header__item--replace").click(function () {
+        $(".cover-modal").addClass("active");
+
+    });
+
+
+    $(".cover-modal__close").click(function () {
+        $(".cover-modal").removeClass("active");
+
+    });
+
+    
+
+
+    // Ошибка изображения шапки 
+
+
+    // $(".profile__del > button").click(function () {
+    //     $(".del-modal").addClass("active");
+
+    // });
+
+    $(".cover-modal-error__prev").click(function () {
+        $(".cover-modal").addClass("active");
+        $(".cover-modal-error").removeClass("active");
+        
+    });
+
+
+    $(".cover-modal-error__close").click(function () {
+        $(".cover-modal-error").removeClass("active");
+
+    });
+
+
+    // Успешно изменена картинка в пашпке
+
+
+    $(".cover-modal-thanks__close").click(function () {
+            $(".cover-modal-thanks").removeClass("active");
+
+    });
+
+    // удалить шапку 
+
+    $(".profile-header__item--del").click(function () {
+        $(".cover-modal-del").addClass("active");
+       
+        
+    });
+
+    $(".cover-modal-del__close").click(function () {
+        $(".cover-modal-del").removeClass("active");
+       
+        
+    });
+
+    $(".cover-modal-del__btn").click(function () {
+        $(".cover-modal-del").removeClass("active");
+       
+        
+    });
+
 
 
     $(".profile-header").each(function () {
@@ -177,6 +259,19 @@ $(document).ready(function () {
 
     //  табы в лк магазин
 
+
+    $('.profile__nav-lists-item').click(function () {
+        var id = $(this).attr('data-tab'),
+            content = $('.profile[data-tab="' + id + '"]');
+
+        $('.profile__nav-lists-item.active').removeClass('active'); // 1
+        $(this).addClass('active'); // 2
+
+        $('.profile.active').removeClass('active'); // 3
+        content.addClass('active'); // 4
+    });
+
+    //  табы лк профиля
 
     $('.m-sidebar__item').click(function () {
         var id = $(this).attr('data-tab'),
@@ -253,21 +348,12 @@ $(document).ready(function () {
 
 
 const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
 
-let x = 0;
-let degrees = 0;
-let img = new Image();
 let fileName = '';
-let rotate = false;
-let wrh = 0;
-let newWidth = 0;
-let newHeight = 0;
 let cropper = '';
 let caman;
 let url;
-let i = 0;
-let j = 0;
+
 
 
 const uploadFile = document.getElementById('cover-modal__upload-file');
@@ -287,7 +373,7 @@ uploadFile.addEventListener('change', (e) => {
 
     reader.addEventListener('load', () => {
         url = URL.createObjectURL(file);
-        console.log(url)
+        console.log(url);
         caman = Caman(canvas, url, function () {
 
             //alert('file url: ' + url);
@@ -317,6 +403,60 @@ uploadFile.addEventListener('change', (e) => {
 
 
 
+
+
+const canvasAvatar = document.getElementById('canvas-avatar');
+
+let fileNameAvatar = '';
+let cropperAvatar = '';
+let camanAvatar;
+let urlAvatar;
+
+
+
+const uploadFileAvatar = document.getElementById('avatar-modal__upload-file');
+
+
+
+uploadFileAvatar.addEventListener('change', (e) => {
+
+    const fileAvatar = document.getElementById('avatar-modal__upload-file').files[0];
+    console.log(fileAvatar)
+    const readerAvatar = new FileReader();
+
+    if (fileAvatar) {
+        fileNameAvatar = fileAvatar.name;
+        readerAvatar.readAsDataURL(fileAvatar);
+    }
+
+    readerAvatar.addEventListener('load', () => {
+        urlAvatar = URL.createObjectURL(fileAvatar);
+        console.log(urlAvatar);
+        camanAvatar = Caman(canvasAvatar, urlAvatar, function () {
+
+            //alert('file url: ' + url);
+
+            URL.revokeObjectURL(urlAvatar);
+            cropperAvatar = new Cropper(canvasAvatar, {
+
+                  zoomable: false,
+                  viewMode: 0,
+                  background: false,
+                  rotatable: true,
+
+                  
+
+                
+            });
+
+
+            document.getElementsByClassName('avatar-modal__center')[0].style.display = "block";
+            document.getElementsByClassName('avatar-modal__center-one')[0].style.display = "none";
+        });
+        var uploadedImageURLAvatar = URL.createObjectURL(fileAvatar);
+
+    });
+});
 
 
 

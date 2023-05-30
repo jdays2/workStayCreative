@@ -202,13 +202,67 @@ function addZero(num) {
 }
 
 
-$(document).ready(function () {
+
+// const canvas = document.getElementById('canvas-avatar');
+
+
+// let x = 0;
+// let degrees = 0;
+// let img = new Image();
+// let fileName = '';
+// let wrh = 0;
+// let newWidth = 0;
+// let newHeight = 0;
+// let cropper = '';
+// let caman;
+// let url;
+// let i = 0;
+// let j = 0;
+
+
+// const uploadFile = document.getElementById('avatar-modal__upload-file');
 
 
 
-  
-});
+// uploadFile.addEventListener('change', (e) => {
 
+//     const file = document.getElementById('avatar__upload-file').files[0];
+//     console.log(file)
+//     const reader = new FileReader();
+
+//     if (file) {
+//         fileName = file.name;
+//         reader.readAsDataURL(file);
+//     }
+
+//     reader.addEventListener('load', () => {
+//         url = URL.createObjectURL(file);
+//         console.log(url);
+//         caman = Caman(canvas, url, function () {
+
+//             //alert('file url: ' + url);
+
+//             URL.revokeObjectURL(url);
+//             cropper = new Cropper(canvas, {
+
+//                   zoomable: false,
+//                   viewMode: 0,
+//                   background: false,
+//                   rotatable: true,
+
+                  
+
+                
+//             });
+
+
+//             document.getElementsByClassName('avatar__center')[0].style.display = "block";
+//             document.getElementsByClassName('avatar__center-one')[0].style.display = "none";
+//         });
+//         var uploadedImageURL = URL.createObjectURL(file);
+
+//     });
+// });
 
 
 

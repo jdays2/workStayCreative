@@ -448,6 +448,80 @@
 }
 
 
+.profile-description-modal-two {
+    display: none;
+    &__box {
+        padding: 6rem 8rem;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+    }
+
+    &__wrap:last-child {
+        margin-bottom: 3.2rem;
+    }
+
+    &__title {
+        font-family: 'Austin Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.7rem;
+        line-height: 100%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        margin-bottom: 3.2rem;
+    }
+
+  
+
+    &__inner {
+        margin-right: 0;
+        width: 100%;
+        label {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            letter-spacing: 0.02em;
+            display: block;
+            margin-bottom: 1.2rem;
+            color: #383742;
+
+        }
+
+        textarea {
+            overflow: hidden;
+            position: relative;
+            width: 83rem;
+            height: 15.8rem;
+            background: #EAEBEF;
+            border-radius: 1rem;
+            padding: 1.4rem 2.4rem;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 125%;
+            color: #000000;
+            border: none;
+            resize: none;
+
+        }
+    }
+
+   
+
+   
+
+    .red-btn {
+       margin: 0 auto;
+    }
+}
+
+.profile-description-modal-two.active {
+    display: flex;
+}
+
+
 .profile-market-thanks {
     
 
@@ -553,5 +627,143 @@
 }
 
 .del-modal.active {
+    display: flex;
+}
+
+.cover-modal-error {
+   
+
+
+
+    &__box {
+        padding: 6rem 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+       
+    }
+
+    &__icon {
+        width: 7.7rem;
+        height: 7.7rem;
+        margin-bottom: 3.3rem;
+    }
+
+    &__title {
+        font-family: 'Austin Cyr';
+        display: block;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.7rem;
+        line-height:  100% ;
+        text-align: center;
+        letter-spacing: 0.02em;
+        margin-bottom: 3.2rem;
+
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #A0A1A4;
+        margin-bottom: 3.2rem;
+        display: block;
+        width: 63.5rem;
+    }
+
+    &__prev {
+        width: 7.7rem;
+        height: 7.7rem;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        background: #FFFFFF;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        position: absolute;
+        right: 9rem;
+        svg {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+    }
+}
+
+.cover-modal-error.active {
+    display: flex;
+}
+
+.cover-modal-thanks {
+    &__box {
+        padding: 6rem 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
+    &__icon {
+        width: 7.7rem;
+        height: 7.7rem;
+        margin-bottom: 3.3rem;
+    }
+
+    &__title {
+        font-family: 'Austin Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.7rem;
+        line-height:  100% ;
+        text-align: center;
+        letter-spacing: 0.02em;
+
+    }
+}
+
+.cover-modal-thanks.active {
+    display: flex;
+}
+
+.cover-modal-del {
+    &__box {
+        padding: 6rem 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+       
+    }
+
+    &__icon {
+        width: 7.7rem;
+        height: 7.7rem;
+        margin-bottom: 3.3rem;
+    }
+
+    &__title {
+        font-family: 'Austin Cyr';
+        display: block;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.7rem;
+        line-height:  100% ;
+        text-align: center;
+        letter-spacing: 0.02em;
+        margin-bottom: 3.2rem;
+
+    }
+
+  
+
+   
+}
+
+
+.cover-modal-del.active {
     display: flex;
 }

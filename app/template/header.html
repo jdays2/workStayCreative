@@ -1,40 +1,309 @@
 <header class="header">
-    <div class="container">
-        <div class="header__wrapper">
-            <div class="header__burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="header__wrap-logo">
-                <a href="#" class="header__logo">
-                    <img src="./img/header/logo.svg" alt="">
-                </a>
-            </div>
-            <nav class="header__nav">
-                <ul class="header__lists">
-                    <li class="header__item header__item--slide"><a href="#">Категории</a></li>
-                    <li class="header__item"><a href="">Векторы</a></li>
-                    <li class="header__item"><a href="">Шрифты</a></li>
-                    <li class="header__item"><a href="">Фото</a></li>
-                    <li class="header__item"><a href="">Коллекции</a></li>
-                    <li class="header__item"><a href="">Стоимость</a></li>
-                    <li class="header__item"><a href="">О нас</a></li>
-                </ul>
-            </nav>
-            <button class="header__search">
-                <img src="./img/header/search.svg" alt="">
-            </button>
-            <button class="header__user">
-                <img src="./img/header/user.svg" alt="">
-            </button>
-            <button class="header__like">
-                <img src="./img/header/heart.svg" alt="">
-            </button>
-            <button class="header__bag">
-                <img src="./img/header/bag.svg" alt="">
-            </button>
-        </div>
-    
-    </div>
+	<div class="header__wrapper">
+		<div class="header__head">
+			<button class="header__burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<div class="header__search">
+				<div class="header__search-button-wrapper">
+					<img
+						src="./img/header/search.svg"
+						alt="" />
+					<button class="header__search-button">
+						<span
+							class="header__search-category header__search-category--slide">
+							Все категории
+						</span>
+					</button>
+				</div>
+				<input
+					class="header__search-input"
+					placeholder="Поиск"
+					type="text" />
+			</div>
+
+			<a
+				href="#"
+				class="header__logo">
+				<img
+					src="./img/header/new-logo.svg"
+					alt="" />
+			</a>
+
+			<div class="header__buttons-bar">
+				<button class="header__search-bar-icon">
+					<img
+						src="./img/header/search.svg"
+						alt="" />
+				</button>
+				<a class="header__shop-button">
+					<span>Открыть магазин</span>
+				</a>
+				<button class="header__user">
+					<img
+						src="./img/header/user.svg"
+						alt="" />
+				</button>
+				<button class="header__store">
+					<img
+						src="./img/header/store.svg"
+						alt="" />
+				</button>
+				<button class="header__like">
+					<img
+						src="./img/header/heart.svg"
+						alt="" />
+				</button>
+				<button class="header__bag">
+					<img
+						src="./img/header/bag.svg"
+						alt="" />
+				</button>
+			</div>
+		</div>
+
+		<div class="header__register-alert">
+			<p>
+				Войдите, чтобы делать покупки, создавать персональные коллекции и
+				следить за обновлениями магазинов.
+			</p>
+			<a class="header__register-alert-button">
+				<span>Войти или зарегистрироваться</span>
+			</a>
+		</div>
+
+		<div class="header__profile-bar">
+			<a
+				href=""
+				class="header__profile-link">
+				<img
+					src="./img/header/user-orange.svg"
+					alt="" />
+				<span>Личный кабиент</span>
+			</a>
+			<button class="header__profile-bar-button">
+				<img
+					src="./img/header/log-out.svg"
+					alt="" />
+				<span>Выйти</span>
+			</button>
+		</div>
+
+		<nav class="header__nav">
+			<ul class="header__lists">
+				<li class="header__item header__item--slide">
+					<button id="categorys-btn">ВСЕ КАТЕГОРИИ</button>
+				</li>
+				<li class="header__item"><a href="">Шрифты</a></li>
+				<li class="header__item"><a href="">Фотографии</a></li>
+				<li class="header__item"><a href="">Векторы</a></li>
+				<li class="header__item"><a href="">Мокапы</a></li>
+				<li class="header__item header__item--slide">
+					<button id="info-btn">БОЛЬШЕ ИНФОРМАЦИИ</button>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="header__info">
+		<div class="header__info-wrapper">
+			<nav class="header__info-list">
+				<a
+					href=""
+					class="header__info-item">
+					О нас
+				</a>
+				<a
+					href=""
+					class="header__info-item">
+					Лицензирование
+				</a>
+				<a
+					href=""
+					class="header__info-item">
+					Тематические коллекции
+				</a>
+				<a
+					href=""
+					class="header__info-item">
+					Выбор команды
+				</a>
+				<a
+					href=""
+					class="header__info-item">
+					Блог
+				</a>
+			</nav>
+			<div class="header__info-content">
+				<a
+					href="#"
+					class="collections__two">
+					<div class="collections__two-image">
+						<img
+							src="./img/collections/image2.png"
+							alt="" />
+					</div>
+					<div class="collections__two-title">
+						<span>Фотографии, векторы</span>
+						<strong>Сюрреализм</strong>
+					</div>
+				</a>
+
+				<a
+					href="#"
+					class="collections__four">
+					<div class="collections__four-image">
+						<img
+							src="./img/collections/image4.png"
+							alt="" />
+					</div>
+					<div class="collections__four-rub">
+						<span>Популярное</span>
+					</div>
+					<div class="collections__four-title">
+						<span>Фотографии, векторы</span>
+						<strong>Спортивная тематика</strong>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__categorys">
+		<div class="header__categorys-wrapper">
+			<div class="header__categorys-lists">
+				<div class="header__categorys-col">
+					<div class="header__box">
+						<p class="header__categorys-title">Категория 1</p>
+						<ul class="header__categorys-list header__categorys-list--show">
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 1</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 2</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 3</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="header__box">
+						<p class="header__categorys-title">Категория 2</p>
+						<ul class="header__categorys-list">
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 1</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 2</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 3</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="header__box">
+						<p class="header__categorys-title">Категория 3</p>
+						<ul class="header__categorys-list">
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 1</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 2</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 3</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="header__categorys-col">
+					<div class="header__box">
+						<p class="header__categorys-title">Категория 4</p>
+						<ul class="header__categorys-list header__categorys-list--show">
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 1</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 2</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 3</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="header__box">
+						<p class="header__categorys-title">Категория N</p>
+						<ul class="header__categorys-list">
+							<li class="header__categorys-item">
+								<a href="">Подкатегория N + 1</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория N + 2</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория N + 3</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория N + 4</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="header__box">
+						<p class="header__categorys-title">Все категории</p>
+						<ul class="header__categorys-list">
+							<li class="header__categorys-item">
+								<a href="">Категория 1</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Категория 2</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Категория 3</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="header__categorys-col">
+					<div class="header__box">
+						<p class="header__categorys-title">Бренды</p>
+						<ul class="header__categorys-list header__categorys-list--show">
+							<li class="header__categorys-item">
+								<a href="">Бренд 1</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Бренд 2</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Бренд 3</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__categorys-card">
+				<a
+					href="#"
+					class="collections__three">
+					<div class="collections__three-image">
+						<img
+							src="./img/collections/image3.png"
+							alt="" />
+					</div>
+					<div class="collections__three-title">
+						<span>Фотографии, векторы</span>
+						<strong>Лица разнообразия</strong>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
 </header>
