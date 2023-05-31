@@ -5,7 +5,10 @@
 	}
 
 	.header {
-		// position:absolute;
+		// &--active {
+		// 	box-shadow: 0rem 0.8rem 0.8rem rgba(0, 0, 0, 0.25), 0rem 0rem 2.2rem rgba(103, 110, 133, 0.2);
+		// 	border-radius: 0rem 0rem 2rem 2rem;
+		// }
 		&__head {
 			width: 100%;
 			padding: 4rem 3rem;
@@ -15,7 +18,13 @@
 		}
 
 		&__wrapper {
-			overflow: visible;
+			overflow: hidden;
+			box-shadow: none;
+		}
+
+		&__wrapper--scroll {
+			box-shadow: 0rem 0.8rem 0.8rem rgba(0, 0, 0, 0.25), 0rem 0rem 2.2rem rgba(103, 110, 133, 0.2);
+			border-radius: 0rem 0rem 2rem 2rem;
 		}
 
 		&__search,
@@ -131,7 +140,8 @@
 		}
 
 		&__nav--show {
-			top: 18rem;
+			padding-top: 2rem;
+			top: 16rem;
 		}
 
 		&__lists {
