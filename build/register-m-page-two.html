@@ -47,7 +47,7 @@
 			</a>
 
 			<div class="header__buttons-bar">
-				<button class="header__search-bar-icon">
+				<button class="header__search-bar-icon" id="mobile-search">
 					<img
 						src="./img/header/search.svg"
 						alt="" />
@@ -105,33 +105,76 @@
 			</button>
 		</div>
 
-		<div class="burger__categ-item" id="mobile-categorys">
+		<div class="burger__search">
+			<button class="burger__close-btn" id="mobile-search-close">
+				<span></span>
+				<span></span>
+			</button>
+
+			<form class="header__search--burger">
+				<button type="submit">
+					<img
+						src="./img/header/search.svg"
+						alt="" />
+				</button>
+				<input
+					class="header__search-input header__search-input--burger"
+					placeholder="Поиск"
+					type="text" />
+			</form>
+
+			<button class="header__item header__item--burger">
+				<span class="header__item--slide">Все категории</span></button>
+
+			<img src="./img/header/search-backgraund-mobile.svg" alt="" class="burger__serch-backgraund-img">
+
+			<p class="burger__search-title">
+				Добро пожаловать в Stay Creative Marketplace!
+			</p>
+
+			<p class="burger__search-subtitle">
+				Введите свой запрос в поле Поиска
+			</p>
+		</div>
+
+		<div
+			class="burger__categ-item"
+			id="mobile-categorys">
 			<div class="burger__categ-item-title">
-				<button class="burger__categ-item-btn" id="burger-categ-btn">
-					<img src="./img/header/arrow-icon.svg" alt="">
+				<button
+					class="burger__categ-item-btn"
+					id="burger-categ-btn">
+					<img
+						src="./img/header/arrow-icon.svg"
+						alt="" />
 				</button>
 
 				<div>Все категории</div>
 			</div>
 
-			<ul class="header__lists" >
+			<ul class="header__lists">
 				<li class="header__item"><a>Подкатегория 1</a></li>
 				<li class="header__item"><a>Подкатегория 2</a></li>
 				<li class="header__item"><a>Подкатегория N</a></li>
-				
 			</ul>
 		</div>
 
-		<div class="burger__categ-item" id="mobile-info">
+		<div
+			class="burger__categ-item"
+			id="mobile-info">
 			<div class="burger__categ-item-title">
-				<button class="burger__categ-item-btn" id="burger-categ-btn">
-					<img src="./img/header/arrow-icon.svg" alt="">
+				<button
+					class="burger__categ-item-btn"
+					id="burger-categ-btn">
+					<img
+						src="./img/header/arrow-icon.svg"
+						alt="" />
 				</button>
 
 				<div>Все категории</div>
 			</div>
 
-			<ul class="header__lists" >
+			<ul class="header__lists">
 				<li class="header__item"><a>О нас</a></li>
 				<li class="header__item"><a>Лицензирование</a></li>
 				<li class="header__item"><a>Тематические коллекции</a></li>
@@ -141,7 +184,9 @@
 		</div>
 
 		<nav class="header__nav">
-			<ul class="header__lists" id="mobile__lists">
+			<ul
+				class="header__lists"
+				id="mobile__lists">
 				<li class="header__item header__item--slide">
 					<button id="categorys-btn">Все категории</button>
 				</li>
@@ -157,31 +202,35 @@
 			<div class="burger__mobile-bar">
 				<a class="burger__item">
 					<div>
-						<img src="./img/header/bag.svg" alt="">
+						<img
+							src="./img/header/bag.svg"
+							alt="" />
 					</div>
 					<span>Корзина</span>
 				</a>
 
 				<a class="burger__item">
 					<div>
-						<img src="./img/header/heart.svg" alt="">
+						<img
+							src="./img/header/heart.svg"
+							alt="" />
 					</div>
 					<span>Избранное</span>
 				</a>
 
 				<a class="burger__item">
 					<div>
-						<img src="./img/header/store.svg" alt="">
+						<img
+							src="./img/header/store.svg"
+							alt="" />
 					</div>
 					<span>Мой магазин</span>
 				</a>
-				
+
 				<a class="header__shop-button header__shop-button--burger">
 					<span>Открыть магазин</span>
 				</a>
-
 			</div>
-
 		</nav>
 	</div>
 

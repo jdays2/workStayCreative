@@ -1118,6 +1118,9 @@ input[type=number] {
 .header__burger {
   display: none;
 }
+.header .burger__categ-item, .header .burger__mobile-bar, .header .burger__search {
+  display: none;
+}
 .header__search-bar-icon {
   display: none;
 }
@@ -4847,7 +4850,7 @@ input[type=number] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: #FFF;
+    background: #fff;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -4876,10 +4879,10 @@ input[type=number] {
             align-items: center;
   }
   .header__burger span {
-    -webkit-transition: -webkit-transform 0.25s ease-in;
-    transition: -webkit-transform 0.25s ease-in;
-    transition: transform 0.25s ease-in;
-    transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in;
+    -webkit-transition: -webkit-transform 0.4s ease-in;
+    transition: -webkit-transform 0.4s ease-in;
+    transition: transform 0.4s ease-in;
+    transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
     background: #383742;
     width: 2.75rem;
     height: 0.2rem;
@@ -4910,7 +4913,7 @@ input[type=number] {
     margin: 0;
     width: 25rem;
     height: 10rem;
-    background: #FFF;
+    background: #fff;
     border-radius: 100rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4938,12 +4941,12 @@ input[type=number] {
   .header__nav {
     top: -500rem;
     position: absolute;
-    background-color: #EAEBEF;
+    background-color: #eaebef;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 100rem;
-    -webkit-transition: 0.65s ease-out;
-    transition: 0.65s ease-out;
+    -webkit-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
   .header__nav--show {
     top: 18rem;
@@ -4957,19 +4960,19 @@ input[type=number] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #EAEBEF;
+    background-color: #eaebef;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     height: 100%;
-    margin-bottom: 4.2rem;
+    margin-bottom: 5.4rem;
   }
   .header__lists li {
     width: 100%;
   }
   .header__item {
     padding: 3rem;
-    border-bottom: 0.2rem solid #E0E1E7;
+    border-bottom: 0.2rem solid #e0e1e7;
     font-family: "Gilroy";
     font-style: normal;
     font-weight: 500;
@@ -4979,10 +4982,141 @@ input[type=number] {
     color: #383742;
     text-transform: capitalize;
   }
-  .header .burger__mobile-bar {
+  .header__item--burger {
+    width: 100%;
+    height: 11rem;
+    background-color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 100rem;
+    margin-bottom: 8rem;
+  }
+  .header__item--burger span {
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.02em;
+    color: #383742;
+  }
+  .header__search--burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 11rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #fff;
+    border-radius: 100rem;
+    margin-bottom: 2.8rem;
+  }
+  .header__search--burger img {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-left: 4rem;
+  }
+  .header__search-input--burger {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.02em;
+    color: #383742;
+    padding: 2rem;
+  }
+  .header .burger__categ-item, .header .burger__mobile-bar, .header .burger__search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .burger__close-btn {
+    width: 10rem;
+    height: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+    border-radius: 100rem;
+    margin-bottom: 6rem;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+  .header .burger__close-btn span {
+    position: relative;
+    width: 2.82rem;
+    height: 0.2rem;
+    background-color: #383742;
+  }
+  .header .burger__close-btn span:first-child {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    left: 1.41rem;
+  }
+  .header .burger__close-btn span:last-child {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    right: 1.41rem;
+  }
+  .header .burger__search {
+    padding: 4rem 3rem 100rem;
+    position: absolute;
+    top: -250rem;
+    z-index: 50;
+    width: 100%;
+    background-color: #eaebef;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+  }
+  .header .burger__search--show {
+    top: 0rem;
+  }
+  .header .burger__serch-backgraund-img {
+    margin: 0 auto;
+    width: 44.268rem;
+    height: 32.2rem;
+    margin-bottom: 6.2rem;
+  }
+  .header .burger__search-title {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #383742;
+    margin-bottom: 2.8rem;
+    max-width: 67rem;
+  }
+  .header .burger__search-subtitle {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 4.4rem;
+    text-align: center;
+    color: #999999;
+  }
+  .header .burger__mobile-bar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -4990,7 +5124,7 @@ input[type=number] {
   }
   .header .burger__item {
     width: 100%;
-    background-color: #E0E1E7;
+    background-color: #e0e1e7;
     border-radius: 100rem;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -5061,7 +5195,7 @@ input[type=number] {
     font-size: 3.2rem;
     line-height: 3.8rem;
     letter-spacing: 0.02em;
-    color: #FFF;
+    color: #fff;
   }
   .header .burger__categ-item-btn {
     background-color: white;
@@ -5089,11 +5223,12 @@ input[type=number] {
     padding-left: 3rem;
     padding-right: 3rem;
     width: 100%;
-    background-color: #EAEBEF;
+    background-color: #eaebef;
     padding-bottom: 100rem;
-    -webkit-transition: 0.65s ease-out;
-    transition: 0.65s ease-out;
+    -webkit-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
     z-index: 40;
+    display: block;
   }
   .header .burger__categ-item--show {
     left: 0rem;
@@ -5111,7 +5246,7 @@ input[type=number] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 4.2rem;
+    margin-top: 3rem;
   }
   .header__shop-button--burger span {
     font-weight: 700;
@@ -5237,18 +5372,14 @@ input[type=number] {
   .pagination__prev svg, .pagination__next svg {
     width: 5rem;
     height: 2rem;
-    -webkit-transition: -webkit-transform 0.5s ease;
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
   .pagination__prev:hover > svg, .pagination__next:hover > svg {
     -webkit-transform: translateX(0.2rem);
             transform: translateX(0.2rem);
-    -webkit-transition: -webkit-transform 0.5s ease;
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
   .pagination__prev {
     margin-right: 3rem;
@@ -6363,8 +6494,8 @@ input[type=number] {
             transform: translateY(50%);
     content: "";
     display: block;
-    -webkit-transition: 0.2s ease-in;
-    transition: 0.2s ease-in;
+    -webkit-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
     top: 3rem;
   }
   .select-head.open::after {

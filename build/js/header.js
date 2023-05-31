@@ -23,7 +23,11 @@ const burgerBtn = document.querySelector('.header__burger');
 const burgerNav = document.querySelector('.header__nav');
 const burgerCategoryBtn = document.querySelector('#burger-categ-btn');
 const mobileInfoPopUp = document.querySelector('#mobile-info');
-const burgerPopUpBtn = document.querySelectorAll('.burger__categ-item-btn')
+const mobileCategPopUp = document.querySelector('#mobile-categorys');
+const burgerPopUpBtn = document.querySelectorAll('.burger__categ-item-btn');
+const mobileSearchBtn = document.querySelector('#mobile-search');
+const mobileSearchPopUp = document.querySelector('.burger__search');
+const mobileSearchPopUpCloseBtn = document.querySelector('#mobile-search-close');
 // const header = document.querySelector('.header');
 
 const registerPopUpClass = 'header__register-alert--show';
@@ -40,10 +44,9 @@ const categorysPopUpClass = 'header__categorys--show';
 const itemClass = 'header__item--slide';
 const activeItemClass = 'header__item--open';
 const activeBurgerClass = 'header__burger--active';
-const showBurgerClass = 'header__nav--show'
-const burgerCategoryPopUpClass = 'burger__categ-item--show'
-
-
+const showBurgerClass = 'header__nav--show';
+const burgerCategoryPopUpClass = 'burger__categ-item--show';
+const mobileSerchPopUpClass = 'burger__search--show'
 
 //добавляем показ register-popup
 shopBtn.addEventListener('click', () => {
@@ -81,24 +84,22 @@ profilePopUpCloseBtn.addEventListener('click', () => {
 
 //открыть, закрыть информация popup, desktop and mobile
 infoBtn.addEventListener('click', () => {
-  const currentWidth = window.innerWidth;
-  console.log(currentWidth)
-  if(currentWidth > 768) {
-    if (categorysPopUp.classList.contains(categorysPopUpClass)) {
-      categorysPopUp.classList.remove(categorysPopUpClass);
-  
-      const otherWrapper = categorysPopUpBnt.parentNode;
-      otherWrapper.classList.toggle(itemClass);
-      otherWrapper.classList.toggle(activeItemClass);
-    }
-    const wrapper = infoBtn.parentNode;
-    wrapper.classList.toggle(itemClass);
-    wrapper.classList.toggle(activeItemClass);
-    infoPopUp.classList.toggle(infoPopupClass);
-    return
-  }
-    mobileInfoPopUp.classList.add(burgerCategoryPopUpClass)
-  
+	const currentWidth = window.innerWidth;
+	if (currentWidth > 768) {
+		if (categorysPopUp.classList.contains(categorysPopUpClass)) {
+			categorysPopUp.classList.remove(categorysPopUpClass);
+
+			const otherWrapper = categorysPopUpBnt.parentNode;
+			otherWrapper.classList.toggle(itemClass);
+			otherWrapper.classList.toggle(activeItemClass);
+		}
+		const wrapper = infoBtn.parentNode;
+		wrapper.classList.toggle(itemClass);
+		wrapper.classList.toggle(activeItemClass);
+		infoPopUp.classList.toggle(infoPopupClass);
+		return;
+	}
+	mobileInfoPopUp.classList.add(burgerCategoryPopUpClass);
 });
 
 //добавлять active-status на Input
@@ -133,17 +134,23 @@ if (currentWidth > 768) {
 
 //показать, закрыть категории popup
 categorysPopUpBnt.addEventListener('click', () => {
-	if (infoPopUp.classList.contains(infoPopupClass)) {
-		infoPopUp.classList.remove(infoPopupClass);
+	const currentWidth = window.innerWidth;
+	if (currentWidth > 768) {
+		if (infoPopUp.classList.contains(infoPopupClass)) {
+			infoPopUp.classList.remove(infoPopupClass);
 
-		const otherWrapper = infoBtn.parentNode;
-		otherWrapper.classList.toggle(itemClass);
-		otherWrapper.classList.toggle(activeItemClass);
+			const otherWrapper = infoBtn.parentNode;
+			otherWrapper.classList.toggle(itemClass);
+			otherWrapper.classList.toggle(activeItemClass);
+		}
+		const wrapper = categorysPopUpBnt.parentNode;
+		wrapper.classList.toggle(itemClass);
+		wrapper.classList.toggle(activeItemClass);
+		categorysPopUp.classList.toggle(categorysPopUpClass);
+		return;
+	} else {
+		mobileCategPopUp.classList.add(burgerCategoryPopUpClass);
 	}
-	const wrapper = categorysPopUpBnt.parentNode;
-	wrapper.classList.toggle(itemClass);
-	wrapper.classList.toggle(activeItemClass);
-	categorysPopUp.classList.toggle(categorysPopUpClass);
 });
 
 //расскрыть, закрыть список категорий в popup
@@ -156,16 +163,31 @@ categorysTitle.forEach((element) => {
 
 //открыть, закрыть бургер-меню
 burgerBtn.addEventListener('click', () => {
+	const openPopUps = document.querySelectorAll('.burger__categ-item--show')
+	if(openPopUps) {
+		openPopUps.forEach((popup) => {
+			popup.classList.remove(burgerCategoryPopUpClass)
+		})
+	}
+
 	burgerBtn.classList.toggle(activeBurgerClass);
-  burgerNav.classList.toggle(showBurgerClass);
+	burgerNav.classList.toggle(showBurgerClass);
 });
 
 //закрыть попап бургер-меню
 burgerPopUpBtn.forEach((element) => {
-  element.addEventListener('click', () => {
-    const parent = element.closest('.burger__categ-item--show')
-    console.log(parent)
-    parent.classList.remove(burgerCategoryPopUpClass)
-  })
+	element.addEventListener('click', () => {
+		const parent = element.closest('.burger__categ-item--show');
+		console.log(parent);
+		parent.classList.remove(burgerCategoryPopUpClass);
+	});
+});
+
+//открыть, закрыть search попап бургер-меню
+mobileSearchBtn.addEventListener('click', () => {
+	mobileSearchPopUp.classList.add(mobileSerchPopUpClass);
 })
 
+mobileSearchPopUpCloseBtn.addEventListener('click', () => {
+	mobileSearchPopUp.classList.remove(mobileSerchPopUpClass);
+})

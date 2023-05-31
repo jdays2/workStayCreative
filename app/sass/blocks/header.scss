@@ -10,6 +10,14 @@
 		display: none;
 	}
 
+	.burger {
+		&__categ-item,
+		&__mobile-bar,
+		&__search {
+			display: none;
+		}
+	}
+
 	&__search-bar-icon{
 		display: none;
 	}
