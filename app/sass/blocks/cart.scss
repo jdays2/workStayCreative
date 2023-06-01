@@ -1,0 +1,155 @@
+.cart {
+	padding: 28.6rem 6rem 18.285rem;
+	background-color: #eaebef;
+	width: 100%;
+
+	&__title {
+		font-family: 'Austin Cyr';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 7.3rem;
+		line-height: 7rem;
+		letter-spacing: 0.02em;
+		color: #181818;
+		display: flex;
+		margin-bottom: 6rem;
+	}
+	&__counter {
+		display: block;
+		font-family: 'Austin Cyr';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 3.7rem;
+		line-height: 3.7rem;
+		letter-spacing: 0.02em;
+		color: #a0a1a4;
+		margin-bottom: 3.3rem;
+		margin-left: 1rem;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		margin-right: 6rem;
+	}
+
+	&__item {
+		background-color: #fff;
+		display: flex;
+		padding: 3.2rem 4rem;
+		align-items: center;
+		border-radius: 3rem;
+	}
+
+	&__item-remove {
+		padding: 0.25rem;
+		margin-right: 4.345rem;
+
+		img {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+	}
+
+	&__item-img {
+		width: 24.6rem;
+		height: 17.5rem;
+		margin-right: 4rem;
+	}
+
+	&__item-description {
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2.4rem;
+		letter-spacing: 0.02em;
+		color: #383742;
+		width: 41.2rem;
+		margin-right: 13.3rem;
+
+		span {
+			display: block;
+			color: #999;
+			margin-top: 1rem;
+		}
+	}
+
+	&__item-license {
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2.4rem;
+		letter-spacing: 0.02em;
+		color: #de755e;
+		width: 22.8rem;
+		margin-right: 7rem;
+		cursor: pointer;
+	}
+
+	&__order-info {
+		background: #de755e;
+		border-radius: 4rem;
+		padding: 5rem 4rem;
+    width: 40.5rem;
+	}
+
+	&__order-title {
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 3.7rem;
+		line-height: 4.5rem;
+		letter-spacing: 0.02em;
+		color: #fff;
+    margin-bottom: 0.8rem;
+	}
+
+  &__order-subtitle {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 3rem;
+	}
+
+  &__order-list {
+    background-color: #fff;
+    padding: 3.2rem;
+    gap: 1.2rem;
+  }
+
+  &__order-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__order-item-name {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #9BA8A8;
+  }
+
+  &__order-item-price {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #383742;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU"
+			type="text/javascript"></script>
+		<link
+			rel="stylesheet"
+			href="./css/style.min.css" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Корзина</title>
+	</head>
+
+	<body>
+		@@include('./template/header.html')
+
+		<main>
+			<section class="cart">
+				<p class="cart__title">
+					Корзина
+					<span class="cart__counter">3</span>
+				</p>
+				<div class="cart__order">
+					<ul class="cart__list">
+						<li class="cart__item">
+							<button class="cart__item-remove">
+								<img
+									src="./img/cart/remove-icon.svg"
+									alt="" />
+							</button>
+							<img
+								src="./img/cart/item-img.png"
+								alt=""
+								class="cart__item-img" />
+							<p class="cart__item-description">
+								Семейство шрифтов с засечками Seasons
+								<span>Продавец Vasiliy123</span>
+							</p>
+
+							<p class="cart__item-license">Digital Ads-лицензия</p>
+
+							<span class="cart__item-price basic-card__price">
+								4500
+								<span>₽</span>
+							</span>
+						</li>
+
+						<li class="cart__item">
+							<button class="cart__item-remove">
+								<img
+									src="./img/cart/remove-icon.svg"
+									alt="" />
+							</button>
+							<img
+								src="./img/cart/item-img-2.png"
+								alt=""
+								class="cart__item-img" />
+							<p class="cart__item-description">
+								Семейство шрифтов с засечками Seasons
+								<span>Продавец Vasiliy123</span>
+							</p>
+
+							<p class="cart__item-license">Digital Ads-лицензия</p>
+
+							<span class="cart__item-price basic-card__price">
+								4500
+								<span>₽</span>
+							</span>
+						</li>
+
+						<li class="cart__item">
+							<button class="cart__item-remove">
+								<img
+									src="./img/cart/remove-icon.svg"
+									alt="" />
+							</button>
+							<img
+								src="./img/cart/item-img-3.png"
+								alt=""
+								class="cart__item-img" />
+							<p class="cart__item-description">
+								Семейство шрифтов с засечками Seasons
+								<span>Продавец Vasiliy123</span>
+							</p>
+
+							<p class="cart__item-license">Digital Ads-лицензия</p>
+
+							<span class="cart__item-price basic-card__price">
+								4500
+								<span>₽</span>
+							</span>
+						</li>
+					</ul>
+
+					<div class="cart__order-info">
+						<p class="cart__order-title">Итог</p>
+						<p class="cart__order-subtitle">В корзине три товара</p>
+						<div class="cart__order-list">
+							<ul>
+								<li class="cart__order-item">
+									<span class="cart__order-item-name">Seasons</span>
+									<span class="cart__order-item-price basic-card__price">
+										4500
+										<span>₽</span>
+									</span>
+								</li>
+
+								<li class="cart__order-item">
+									<span class="cart__order-item-name">Seasons</span>
+									<span class="cart__order-item-price basic-card__price">
+										4500
+										<span>₽</span>
+									</span>
+								</li>
+
+								<li class="cart__order-item">
+									<span class="cart__order-item-name">Seasons</span>
+									<span class="cart__order-item-price basic-card__price">
+										4500
+										<span>₽</span>
+									</span>
+								</li>
+							</ul>
+
+							<div class="card__order-summary">
+								<span class="card__order-summary-title">Сумма к оплате</span>
+
+								<span class="cart__order-list-price basic-card__price">
+									13000₽
+									<span>₽</span>
+								</span>
+							</div>
+						</div>
+
+						<div class="cart__order-link">
+							<a href="#">Оформить заказ</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('./template/footer.html')
+
+		<script src="./js/header.js"></script>
+	</body>
+</html>
