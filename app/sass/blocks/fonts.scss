@@ -1,5 +1,5 @@
 .fonts {
-	padding-top: 28.6rem;
+	padding-top: 28.9rem;
 	width: 180rem;
 	margin: 0 auto;
 
@@ -21,7 +21,7 @@
 		line-height: 7rem;
 		letter-spacing: 0.02em;
 		color: #383742;
-		margin-right: 4.8rem;
+		margin-right: 4.65rem;
 	}
 
 	&__prod-count {
@@ -34,6 +34,7 @@
 		margin-right: 64.8rem;
 		width: 29.7rem;
 		white-space: nowrap;
+    margin-top: 1.8rem;
 
 		span {
 			color: #383742;
@@ -61,8 +62,26 @@
 		}
 	}
 
+  &__filter {
+    display: flex;
+    gap: 4rem;
+    width: 23rem;
+    
+    img {
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+  }
+
 	&__sort {
-		margin-right: 2rem;
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+    
+    img {
+      width: 1.6rem;
+      height: 1.2rem;
+    }
 	}
 
 	&__list {
