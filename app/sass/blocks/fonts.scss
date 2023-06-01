@@ -1,0 +1,79 @@
+.fonts {
+	padding-top: 28.6rem;
+	width: 180rem;
+	margin: 0 auto;
+
+	li {
+		list-style-type: none;
+	}
+
+	&__head {
+		display: flex;
+		align-items: center;
+		margin-bottom: 5.7rem;
+	}
+
+	&__title {
+		font-family: 'Austin Cyr';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 7.3rem;
+		line-height: 7rem;
+		letter-spacing: 0.02em;
+		color: #383742;
+		margin-right: 4.8rem;
+	}
+
+	&__prod-count {
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2rem;
+		color: #a0a1a4;
+		margin-right: 64.8rem;
+		width: 29.7rem;
+		white-space: nowrap;
+
+		span {
+			color: #383742;
+		}
+	}
+
+	&__sort,
+	&__filter {
+		width: 25.1rem;
+		height: 7.9rem;
+		background-color: #fff;
+		border-radius: 10rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		span {
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 2rem;
+			line-height: 2.5rem;
+			letter-spacing: 0.02em;
+			color: #383742;
+		}
+	}
+
+	&__sort {
+		margin-right: 2rem;
+	}
+
+	&__list {
+    display: flex;
+    flex-direction: column;
+		ul {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 6rem;
+			margin-bottom: 5.9rem;
+		}
+	}
+}
