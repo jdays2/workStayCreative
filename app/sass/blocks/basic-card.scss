@@ -105,9 +105,10 @@
     position: relative;
 
     span {
-      position: absolute;
+      position: relative;
       font-size: 1.4rem;
       top: -0.5rem;
+      left: -0.6rem
     };
   }
   &__price-wrapper {
