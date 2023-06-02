@@ -95,4 +95,18 @@
 			margin-bottom: 5.9rem;
 		}
 	}
+
+	.basic-card__price span {
+    position: relative;
+    font-size: 1.4rem;
+    top: -0.5rem;
+    left: 0rem;
+	}
+
+	&__pagination {
+		margin-top: 6rem;
+		margin-bottom: 5.86rem;
+		padding-left:1rem;
+		padding-right: 1rem;
+	}
 }

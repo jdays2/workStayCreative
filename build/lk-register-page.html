@@ -12,14 +12,16 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header header--active">
 	<div class="header__wrapper">
 		<div class="header__head">
+
 			<button class="header__burger">
 				<span></span>
 				<span></span>
 				<span></span>
 			</button>
+
 			<div class="header__search">
 				<div class="header__search-button-wrapper">
 					<img
@@ -39,7 +41,7 @@
 			</div>
 
 			<a
-				href="#"
+				href="/"
 				class="header__logo">
 				<img
 					src="./img/header/new-logo.svg"
@@ -52,29 +54,35 @@
 						src="./img/header/search.svg"
 						alt="" />
 				</button>
+
 				<a class="header__shop-button">
 					<span>Открыть магазин</span>
 				</a>
+
 				<button class="header__user">
 					<img
 						src="./img/header/user.svg"
 						alt="" />
 				</button>
+
 				<button class="header__store">
 					<img
 						src="./img/header/store.svg"
 						alt="" />
 				</button>
+
 				<button class="header__like">
 					<img
 						src="./img/header/heart.svg"
 						alt="" />
 				</button>
-				<button class="header__bag">
+
+				<a class="header__bag" href="/cart.html">
 					<img
 						src="./img/header/bag.svg"
 						alt="" />
-				</button>
+				</a>
+
 			</div>
 		</div>
 
@@ -190,7 +198,7 @@
 				<li class="header__item header__item--slide">
 					<button id="categorys-btn">Все категории</button>
 				</li>
-				<li class="header__item"><a href="">Шрифты</a></li>
+				<li class="header__item"><a href="/fonts.html">Шрифты</a></li>
 				<li class="header__item"><a href="">Фотографии</a></li>
 				<li class="header__item"><a href="">Векторы</a></li>
 				<li class="header__item"><a href="">Мокапы</a></li>
@@ -200,7 +208,7 @@
 			</ul>
 
 			<div class="burger__mobile-bar">
-				<a class="burger__item">
+				<a class="burger__item" href="/cart.html">
 					<div>
 						<img
 							src="./img/header/bag.svg"

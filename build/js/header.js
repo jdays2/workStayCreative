@@ -27,7 +27,10 @@ const mobileCategPopUp = document.querySelector('#mobile-categorys');
 const burgerPopUpBtn = document.querySelectorAll('.burger__categ-item-btn');
 const mobileSearchBtn = document.querySelector('#mobile-search');
 const mobileSearchPopUp = document.querySelector('.burger__search');
-const mobileSearchPopUpCloseBtn = document.querySelector('#mobile-search-close');
+const mobileSearchPopUpCloseBtn = document.querySelector(
+	'#mobile-search-close',
+);
+const headerWrapper = document.querySelector('.header__wrapper');
 // const header = document.querySelector('.header');
 
 const registerPopUpClass = 'header__register-alert--show';
@@ -46,7 +49,18 @@ const activeItemClass = 'header__item--open';
 const activeBurgerClass = 'header__burger--active';
 const showBurgerClass = 'header__nav--show';
 const burgerCategoryPopUpClass = 'burger__categ-item--show';
-const mobileSerchPopUpClass = 'burger__search--show'
+const mobileSerchPopUpClass = 'burger__search--show';
+const headerShadowClass = 'header__wrapper--scroll';
+
+//функция по блокировке скрола
+
+const toggleScroll = () => {
+	if (document.body.style.overflow === 'hidden') {
+		document.body.style.overflow = 'auto';
+	} else {
+		document.body.style.overflow = 'hidden';
+	}
+};
 
 //добавляем показ register-popup
 shopBtn.addEventListener('click', () => {
@@ -163,15 +177,17 @@ categorysTitle.forEach((element) => {
 
 //открыть, закрыть бургер-меню
 burgerBtn.addEventListener('click', () => {
-	const openPopUps = document.querySelectorAll('.burger__categ-item--show')
-	if(openPopUps) {
+	const openPopUps = document.querySelectorAll('.burger__categ-item--show');
+	if (openPopUps) {
 		openPopUps.forEach((popup) => {
-			popup.classList.remove(burgerCategoryPopUpClass)
-		})
+			popup.classList.remove(burgerCategoryPopUpClass);
+		});
 	}
 
 	burgerBtn.classList.toggle(activeBurgerClass);
 	burgerNav.classList.toggle(showBurgerClass);
+
+	toggleScroll();
 });
 
 //закрыть попап бургер-меню
@@ -184,10 +200,32 @@ burgerPopUpBtn.forEach((element) => {
 });
 
 //открыть, закрыть search попап бургер-меню
+
 mobileSearchBtn.addEventListener('click', () => {
 	mobileSearchPopUp.classList.add(mobileSerchPopUpClass);
-})
+
+	//обработка блокировки скрола
+	const isBurgerOpen = document.querySelector('.header__nav--show');
+	if (!isBurgerOpen) {
+		document.body.style.overflow = 'hidden';
+	}
+});
 
 mobileSearchPopUpCloseBtn.addEventListener('click', () => {
 	mobileSearchPopUp.classList.remove(mobileSerchPopUpClass);
-})
+
+	//обработка блокировки скрола
+	const isBurgerOpen = document.querySelector('.header__nav--show');
+	if (!isBurgerOpen) {
+		document.body.style.overflow = 'auto';
+	}
+});
+
+//добавление тени для header при скроле
+window.addEventListener('scroll', () => {
+	if (window.pageYOffset > 0) {
+		headerWrapper.classList.add(headerShadowClass);
+	} else {
+		headerWrapper.classList.remove(headerShadowClass);
+	}
+});
