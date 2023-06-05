@@ -1426,6 +1426,9 @@ input[type=number] {
   top: -0.5rem;
   left: 0;
 }
+.basic-card__price--pink-backgraund .basic-card__price-ruble {
+  left: 0rem;
+}
 
 .fonts {
   padding-top: 28.9rem;
@@ -1443,6 +1446,7 @@ input[type=number] {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 5.7rem;
+  position: relative;
 }
 .fonts__title {
   font-family: "Austin Cyr";
@@ -1545,6 +1549,10 @@ input[type=number] {
   margin-bottom: 5.86rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.fonts .sort-popup {
+  right: 23.2rem;
+  top: 9.2rem;
 }
 
 .header {
@@ -5431,6 +5439,72 @@ input[type=number] {
 .footer__links a {
   width: 4rem;
   height: 4rem;
+}
+
+.sort-popup {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #fff;
+  border-radius: 2rem;
+  padding: 3.2rem;
+  z-index: 10;
+  position: absolute;
+}
+.sort-popup--show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sort-popup__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #383742;
+}
+.sort-popup__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  cursor: pointer;
+}
+.sort-popup__checker {
+  width: 4rem;
+  height: 4rem;
+  background: #E0E1E7;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sort-popup__checker img {
+  display: none;
+  width: 0.933rem;
+  height: 0.688rem;
+}
+.sort-popup__checker--active img {
+  display: block;
 }
 
 @media only all and (max-width: 48em) {
