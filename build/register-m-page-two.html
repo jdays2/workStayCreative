@@ -736,6 +736,11 @@
         <button class="modal__close cover-modal__close">
             <img src="./img/icon/close.svg" alt="">
         </button>
+        <button class="cover-modal__block-prev">
+            <svg  viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z" fill="#383742"/>
+            </svg>    
+        </button>
         <div class="cover-modal__content">
             
                 
@@ -854,12 +859,57 @@
 </div>
 
 
+
+<div class="modal avatar-modal-error">
+    <div class="modal__container avatar-modal-error__container">
+        <button class="avatar-modal-error__prev">
+            <svg  viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z" fill="#383742"/>
+            </svg>    
+        </button>
+        <button class="modal__close avatar-modal-error__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box avatar-modal-error__box">
+            
+                <div class="avatar-modal-error__icon">
+                    <img src="./img/profile-user/znak.svg" alt="">
+                </div>
+                <div class="avatar-modal-error__title">Произошла ошибка</div>
+                <div class="avatar-modal-error__text">Фотография должна иметь размер не больше 8192 точек в ширину и не больше 8192 точек в высоту</div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal avatar-modal-thanks">
+    <div class="modal__container avatar-modal-thanks__container">
+        <button class="modal__close avatar-modal-thanks__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box avatar-modal-thanks__box">
+            <div class="avatar-modal-thanks__icon">
+                <img src="./img/lk-m/galkacircle.svg" alt="">
+            </div>
+            <div class="avatar-modal-thanks__title">Обложка профиля успешно изменена </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- аватао -->
 
-<div class="modal avatar-modal " style="display: none;"  >
+<div class="modal avatar-modal "  >
     <div class="modal__container avatar-modal__container">
         <button class="modal__close avatar-modal__close">
             <img src="./img/icon/close.svg" alt="">
+        </button>
+        <button class="avatar-modal__block-prev">
+            <svg  viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z" fill="#383742"/>
+            </svg>    
         </button>
         <div class="avatar-modal__content">
             
@@ -886,12 +936,38 @@
                     <div class="avatar-modal__center" >
                         <div class="avatar-modal__center-title">Выберите область для обложки профиля</div>
                         
-                        <canvas id="canvas-avatar" style="max-width: 100%;"></canvas>
-                        <button class="red-btn"><span>Сохронить</span></button>
+
+                        <div class="avatar-modal__center-block">
+                            <canvas id="canvas-avatar" style="max-width: 100%; max-height: 100%; "></canvas>
+                            <div class="avatar-modal__center-inner">
+                                <img class="preImg" id="preImg">
+                                <img class="preImgTwo" id="preImgTwo">
+                            </div>
+                        </div>
+                        
+
+                        
+                        <button class="red-btn avatar-modal__save-btn"><span>Сахранить изменения</span></button>
                     </div>
                     
                 
             
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal modal-thanks-r ">
+    <div class="modal__container modal-thanks-r__container">
+        <button class="modal__close modal-thanks-r__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box modal-thanks-r__box">
+            <div class="modal-thanks-r__icon">
+                <img src="./img/lk-m/galkacircle.svg" alt="">
+            </div>
+            <div class="modal-thanks-r__title">Регистрация прошла успешно!</div>
         </div>
     </div>
 </div>

@@ -13,6 +13,26 @@
 
   }
 
+  &__block-prev {
+    display: none;
+    width: 7.7rem;
+    height: 7.7rem;
+    
+    justify-content: center;
+    align-items:center;
+    background: #FFFFFF;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    position: absolute;
+    right: 9rem;
+    top: 0;
+    svg {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+  }
+
 
   .content {
     z-index: 1;
@@ -105,9 +125,12 @@
 
 
 
-.cropper-container {
-
+.cropper-drag-box {
+  border-radius: 5.5rem;
 }
+
+
+
 
 
 

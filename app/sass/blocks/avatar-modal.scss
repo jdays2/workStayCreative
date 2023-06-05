@@ -1,5 +1,5 @@
 .avatar-modal {
-    display: flex;
+   
 
 
     &__content {
@@ -9,6 +9,27 @@
         
       
   
+    }
+
+
+    &__block-prev {
+      display: none;
+      width: 7.7rem;
+      height: 7.7rem;
+      
+      justify-content: center;
+      align-items:center;
+      background: #FFFFFF;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+      margin-left: auto;
+      position: absolute;
+      right: 9rem;
+      top: 0;
+      svg {
+          width: 2.2rem;
+          height: 2.2rem;
+      }
     }
   
   
@@ -105,16 +126,65 @@
   
   #canvas-avatar{
    
-    width: 83.7rem;
-    height: 28.2rem;
+    width: 30.5rem!important;;
+    max-width: 30.5rem!important;
+    max-height: 30.5rem!important;
+    height: 30.5rem!important;
     overflow: hidden;
+    
   }
+
+
+  .cropper-container {
+   
+  }
+
+  
+
+
+
+  &__center-block {
+    display: flex;
+  }
+
+  .preImg {
+    display: block;
+    width: 14.4rem;
+    height: 14.4rem;
+    border-radius: 50%;
+    margin-left: 7.3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .preImgTwo {
+    display: block;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    margin-left: 3.55rem;
+  }
+  
   
   
   
   .cropper-container {
-  
+   
+  }
+
+  &__save-btn {
+   margin: auto;
+    margin-top: 3.2rem;
+  }
+
+
+  .cropper-view-box,
+  .cropper-face {
+    border-radius: 50%;
   }
   
   
+}
+
+.avatar-modal.active {
+  display: flex;
 }

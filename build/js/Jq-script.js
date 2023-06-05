@@ -83,10 +83,7 @@ $(document).ready(function () {
     ////////////////////////////////////////////////
 
 
-    $(".profile-market-modal__save").click(function () {
-        $(".profile-market-modal").removeClass("active");
-        $(".profile-market-thanks").addClass("active");
-    });
+  
 
 
     $(".profile-market-thanks__close").click(function () {
@@ -115,10 +112,7 @@ $(document).ready(function () {
     // /////////////////////////////////////////////////
 
 
-    $(".profile-user-modal__save").click(function () {
-        $(".profile-user-modal").removeClass("active");
-        $(".profile-user-thanks").addClass("active");
-    });
+   
 
 
     $(".profile-user-thanks__close").click(function () {
@@ -186,7 +180,67 @@ $(document).ready(function () {
 
     });
 
+
+    // cтрелка назад в модальном окне смены шапки 
+
+    $(".cover-modal__block-prev").click(function () {
+        $(".cover-modal__block-prev").css("display", "none");
+        $(".cover-modal__center").css("display", "none");
+        $(".cover-modal__center-one").css("display", "block");
+    });
+
+
+    // смена аватарки
+
+    $(".profile-user__item--replace").click(function () {
+        $(".avatar-modal").addClass("active");
+
+    });
+
+
+    $(".avatar-modal__close").click(function () {
+        $(".avatar-modal").removeClass("active");
+
+    });
+
+    // cтрелка назад в модальном окне аватарки
+
+    $(".avatar-modal__block-prev").click(function () {
+        $(".avatar-modal__block-prev").css("display", "none");
+        $(".avatar-modal__center").css("display", "none");
+        $(".avatar-modal__center-one").css("display", "block");
+    });
+
+
+    $(".avatar-modal-error__prev").click(function () {
+        $(".avatar-modal").addClass("active");
+        $(".avatar-modal-error").removeClass("active");
+        
+    });
+
+
+    $(".avatar-modal-error__close").click(function () {
+        $(".avatar-modal-error").removeClass("active");
+
+    });
+
+
+
+
+    // выйти из моадлки спасибо за регистрацию
+    $(".modal-thanks-r__close").click(function () {
+        $(".modal-thanks-r").removeClass("active");
+
+    });
+
+
     
+
+
+
+  
+
+           
 
 
     // Ошибка изображения шапки 
@@ -252,12 +306,23 @@ $(document).ready(function () {
 
     });
 
+    $(".profile-user").each(function () {
+
+        let more = $(this).find(".profile-user__avatar-btn");
+        let hide = $(this).find(".profile-user__lists");
+        hide.hide(300);
+        more.click(function () {
+            hide.slideToggle(300);
+            more.toggleClass('active');
+        });
+
+    });
 
 
 
 
 
-    //  табы в лк магазин
+     //  табы лк профиля
 
 
     $('.profile__nav-lists-item').click(function () {
@@ -271,18 +336,9 @@ $(document).ready(function () {
         content.addClass('active'); // 4
     });
 
-    //  табы лк профиля
+   
 
-    $('.m-sidebar__item').click(function () {
-        var id = $(this).attr('data-tab'),
-            content = $('.lk-m__content[data-tab="' + id + '"]');
-
-        $('.m-sidebar__item.active').removeClass('active'); // 1
-        $(this).addClass('active'); // 2
-
-        $('.lk-m__content.active').removeClass('active'); // 3
-        content.addClass('active'); // 4
-    });
+  
 
 
     // переходы по нажатию кнопки 
@@ -391,9 +447,11 @@ uploadFile.addEventListener('change', (e) => {
                 
             });
 
-
+            
             document.getElementsByClassName('cover-modal__center')[0].style.display = "block";
+            
             document.getElementsByClassName('cover-modal__center-one')[0].style.display = "none";
+            document.getElementsByClassName('cover-modal__block-prev')[0].style.display = "flex";
         });
         var uploadedImageURL = URL.createObjectURL(file);
 
@@ -415,8 +473,8 @@ let urlAvatar;
 
 
 const uploadFileAvatar = document.getElementById('avatar-modal__upload-file');
-
-
+let imgPreview = document.querySelector('#preImg');
+let imgPreviewTwo = document.querySelector('#preImgTwo');
 
 uploadFileAvatar.addEventListener('change', (e) => {
 
@@ -432,26 +490,61 @@ uploadFileAvatar.addEventListener('change', (e) => {
     readerAvatar.addEventListener('load', () => {
         urlAvatar = URL.createObjectURL(fileAvatar);
         console.log(urlAvatar);
+        let img = document.getElementById('canvas-avatar');
+        img.id = 'image';
+        img.src = event.target.result;
+        img.width = 330;
+        img.height = 330;
         camanAvatar = Caman(canvasAvatar, urlAvatar, function () {
 
             //alert('file url: ' + url);
 
             URL.revokeObjectURL(urlAvatar);
             cropperAvatar = new Cropper(canvasAvatar, {
+                viewMode: 1,
+                dragMode: 'move',
+                aspectRatio: 1,
+                autoCropArea: 0.68,
+                center: false,
+                zoomOnWheel: false,
+                zoomOnTouch: false,
+                cropBoxMovable: false,
+                cropBoxResizable: false,
+                guides: false,
+                minContainerWidth: 305,
+                minContainerHeight: 305,
+                minCropBoxWidth: 266,
+                minCropBoxHeight: 266,
+                ready: function() {
+                    croppable = true;
+                },
+                
+                ready: function(event) {
+                 this.cropperAvatar = cropperAvatar;
+                },
+               
+                crop: function(event) {
+                  
+                  let imgSrc = this.cropperAvatar.getCroppedCanvas({
+                 
 
-                  zoomable: false,
-                  viewMode: 0,
-                  background: false,
-                  rotatable: true,
+                 }).toDataURL("image/png");
+                       imgPreview.src = imgSrc;
+                       imgPreviewTwo.src = imgSrc;
+                }
+            
 
                   
 
                 
             });
 
+           
+
 
             document.getElementsByClassName('avatar-modal__center')[0].style.display = "block";
             document.getElementsByClassName('avatar-modal__center-one')[0].style.display = "none";
+            document.getElementsByClassName('avatar-modal__block-prev')[0].style.display = "flex";
         });
         var uploadedImageURLAvatar = URL.createObjectURL(fileAvatar);
 

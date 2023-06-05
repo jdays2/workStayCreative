@@ -59,14 +59,59 @@
         }
     }
 
-    &__nav-lists-item:first-child {
-        margin-right: 11.7rem;
+    &__nav-lists-item {
+        margin-right: 9rem;
+    }
+
+    &__nav-lists-item:last-child {
+        margin-right: 0;
     }
 
     &__nav-lists-item.active {
         color: #383742;
         &::before {
             background:#DE755E;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+
+        .profile__del {
+            margin-top: 0;
+        }
+    }
+
+    &__btn-market {
+        width: 31.4rem;
+        height: 7.8rem;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        background: #E0E1E7;
+        border-radius: 11rem;
+
+        span {
+            position: relative;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            letter-spacing: 0.02em;
+            color: #383742;
+            padding-right: 6.4rem;
+            &::before {
+                position: absolute;
+                content:'';
+                width: 2.4rem;
+                height: 2.4rem;
+                background-image: url(../img/lk-m/basketblack.svg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                right: 0;
+            }
         }
     }
 

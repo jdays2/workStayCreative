@@ -23,6 +23,27 @@
         width: 87.6rem;
     }
 
+    &__text-desk {
+        width: 90.9rem;
+        margin-top: 4rem;
+        span {
+            display: block;
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            letter-spacing: 0.02em;
+            color: #A0A1A4;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            letter-spacing: 0.02em;
+        }
+    }
+
     &__info {
         display: flex;
         flex-direction: column;

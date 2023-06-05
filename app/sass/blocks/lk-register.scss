@@ -103,11 +103,16 @@
         }
     }
 
+
+    
+
     &__form-inner--type {
         input {
             width: 84rem;
         }
     }
+
+  
 
     &__form-inner-text {
         font-weight: 400;
@@ -233,6 +238,152 @@
         }
 
         
+    }
+
+    &__ready-title {
+        font-family: 'Austin Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.7rem;
+        line-height: 100%;
+        letter-spacing: 0.02em;
+        color: #383742;
+        margin-bottom: 2rem;
+
+    }
+
+    &__ready-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.02em;
+        color: #A0A1A4;
+        margin-bottom: 4rem;
+    }
+
+    &__ready-email {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.02em;
+        color: #A0A1A4;
+        margin-bottom: 5.3rem;
+        strong {
+            font-weight: 700;
+            color: #383742;
+            padding-left: 0.5rem;
+        }
+
+    }
+
+    &__block {
+        span {
+            display: block;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2rem;;
+            line-height: 2.4rem;
+            letter-spacing: 0.02em;
+            color: #A0A1A4;
+            margin-bottom: 0.8rem;
+        }
+
+        a {
+            display: block;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            letter-spacing: 0.02em;
+            color: #DE755E;
+
+        }
+    }
+
+    &__content--flex {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        height: 100%;
+        padding: 0;
+    }
+
+    &__email {
+        width: 83rem;
+        padding-left: 5.8rem;
+        
+    }
+
+
+
+    &__email-prev {
+        margin-bottom: 18.7rem;
+        background: #EAEBEF;
+        border-radius: 50%;
+        width: 7.7rem;
+        height: 7.7rem;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        svg {
+            width: 3rem;
+            height: 1rem;
+        }
+    }
+
+
+    &__email-title {
+        font-family: 'Austin Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.7rem;
+        line-height: 100%;
+        letter-spacing: 0.02em;
+        color: #383742;
+        margin-bottom: 2rem;
+
+    }
+
+    &__email-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.02em;
+        color: #A0A1A4;
+        margin-bottom: 5.2rem;
+        width: 62.4rem;
+    }
+
+    &__email-form {
+        display: flex;
+        flex-direction: column;
+        label {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            letter-spacing: 0.02em;
+            margin-bottom: 1.4rem;
+        }
+
+        input {
+            background: #FFFFFF;
+            border: 0.1rem solid #DE755E;
+            box-shadow: 8.59504px 8.59504px 20px rgba(222, 117, 94, 0.11);
+            border-radius: 1rem;
+            padding: 1.4rem 2.4rem;
+
+        }
+        .red-btn {
+            width: 53.7rem;
+            margin-top: 5.2rem;
+        }
+    }
+
+    &__right--m {
+        padding-left: 5.2rem;
     }
 
    

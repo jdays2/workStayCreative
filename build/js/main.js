@@ -176,6 +176,29 @@ const adviceSwiper = new Swiper('.advice__swiper', {
 });
 
 
+const controlAdviceSwiper = new Swiper('.control-panel__advice-swiper', {
+  spaceBetween: rem(2),
+  slidesPerView: 1,
+  wrapperClass: 'control-panel__advice-swiper-wrapper',
+  slideClass: 'control-panel__advice-slide',
+  speed: 500,
+  breakpoints: {
+
+    748: {
+     
+      slidesPerView: 3,
+      spaceBetween: rem(0),
+
+
+    },
+
+  },
+
+
+});
+
+
+
 
 // const lkSwiper = new Swiper('.lk-m__start-swiper', {
  
