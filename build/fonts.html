@@ -8,9 +8,10 @@
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-		<script
-			src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU"
-			type="text/javascript"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
 		<link
 			rel="stylesheet"
 			href="./css/style.min.css" />
@@ -554,12 +555,15 @@
 					<div class="filter-popup">
 						<div class="filter-popup__slider-wrapper">
 							<p class="filter-popup__title">Ценовой диапазон</p>
+							<div id="price-slider"></div>
 							<input
-								type="range"
-								min="0"
-								max="100"
-								value="50"
-								class="filter-popup__slider" />
+								type="hidden"
+								id="min-price"
+								name="min-price" />
+							<input
+								type="hidden"
+								id="max-price"
+								name="max-price" />
 						</div>
 
 						<div class="filter-popup__type-list">
