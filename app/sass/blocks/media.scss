@@ -19,7 +19,8 @@
 		}
 
 		&__wrapper--scroll {
-			box-shadow: 0rem 0.8rem 0.8rem rgba(0, 0, 0, 0.25), 0rem 0rem 2.2rem rgba(103, 110, 133, 0.2);
+			box-shadow: 0rem 0.8rem 0.8rem rgba(0, 0, 0, 0.25),
+				0rem 0rem 2.2rem rgba(103, 110, 133, 0.2);
 			border-radius: 0rem 0rem 2rem 2rem;
 		}
 
@@ -81,12 +82,12 @@
 			span:nth-child(2) {
 				transform: scaleX(0);
 			}
-			
+
 			span:first-child {
 				transform: rotate(45deg);
 				top: 1.05rem;
 			}
-			
+
 			span:last-child {
 				transform: rotate(-45deg);
 				bottom: 1.05rem;
@@ -264,7 +265,7 @@
 			}
 
 			&__search--show {
-				top: 0rem
+				top: 0rem;
 			}
 
 			&__serch-backgraund-img {
@@ -383,7 +384,7 @@
 			&__categ-item {
 				position: absolute;
 				top: 18rem;
-				left: -100rem;
+				left: -1000rem;
 				padding-left: 3rem;
 				padding-right: 3rem;
 				width: 100%;
@@ -2275,5 +2276,162 @@
 			line-height: 173%;
 			margin-bottom: 2.4rem;
 		}
+	}
+
+	.fonts {
+		padding-left: 3rem;
+		padding-right: 3rem;
+		&__head {
+			flex-wrap: wrap;
+		}
+
+		&__slide {
+			width: -webkit-fit-content !important;
+			width: -moz-fit-content !important;
+			width: fit-content !important;
+		}
+
+		&__title {
+			font-weight: 700;
+			font-size: 6rem;
+			line-height: 7.2rem;
+			letter-spacing: 0.02em;
+			margin-bottom: 2rem;
+			margin-right: 100%;
+		}
+
+		&__prod-count {
+			margin-top: 0;
+			font-weight: 400;
+			font-size: 2.8rem;
+			line-height: 3.4rem;
+			letter-spacing: 0.02em;
+			margin-bottom: 4.8rem;
+			margin-right: 100%;
+		}
+
+		&__sort {
+			width: 57rem;
+			height: 11rem;
+			margin-right: 1.2rem;
+
+			img {
+				width: 2.6rem;
+				height: 2rem;
+			}
+
+			span {
+				font-weight: 700;
+				font-size: 2.8rem;
+				line-height: 3.4rem;
+				letter-spacing: 0.02em;
+			}
+		}
+
+		&__filter {
+			width: 11rem;
+			height: 11rem;
+			gap: 0;
+
+			img {
+				width: 4.6rem;
+				height: 4.6rem;
+			}
+			
+			span {
+				display: none;
+			}
+		}
+	}
+
+	.filter-popup {
+	}
+
+	.sort-popup {
+	}
+
+	.basic-card {
+		width: 69rem;
+		height: 79.4rem;
+
+		&__img {
+			margin-top: 15.03rem
+		}
+
+		&__type {
+			width: 32.4rem;
+			height: 13rem;
+			font-weight: 400;
+			font-size: 2.8rem;
+			line-height: 3.4rem;
+			border-radius: 6rem;
+		}
+
+		&__favor, &__like, &__share {
+			width: 10.2rem;
+			height: 13rem;
+			border-radius: 6rem;
+		}
+
+		&__favor {
+			img {
+				width: 3.492rem;
+				height: 3.492rem;
+			}
+		}
+
+		&__like {
+			img {
+				width: 3.408rem;
+				height: 3.032rem;
+			}
+		}
+
+		&__share {
+			img {
+				width: 3.846rem;
+				height: 4.052rem;
+			}
+		}
+
+		&__info {
+			padding: 4rem 3rem;
+		}
+
+		&__title {
+			font-weight: 500;
+			font-size: 2.8rem;
+			line-height: 3.2rem;
+			margin-right: 2rem
+		}
+
+		&__link {
+			gap: 1rem;
+
+			img {
+				width: 4rem;
+				height: 4rem;
+				display: block;
+			}
+
+			span {
+				font-weight: 500;
+				font-size: 2.8rem;
+				line-height: 3.2rem;
+			}
+		}
+
+		&__price {
+			min-width: 14.4rem;
+			height: 7.8rem;
+
+			font-weight: 700;
+			font-size: 3rem;
+			line-height: 3.8rem;
+		}
+	}
+
+	.pagination {
+		width: 69rem;
 	}
 }

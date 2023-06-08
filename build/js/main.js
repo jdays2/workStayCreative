@@ -127,12 +127,6 @@ const fontsSwiper = new Swiper('.fonts__swiper', {
   wrapperClass: 'fonts__swiper-wrapper',
   slideClass: 'fonts__slide',
   speed: 500,
-  slidesPerView: 4,
-  // slidesPerGroup: 9, 
-  grid: {
-    fill: 'row',
-    rows: 4
-  },
   navigation: {
     prevEl: '.fonts__prev',
     nextEl: '.fonts__next',
@@ -143,7 +137,17 @@ const fontsSwiper = new Swiper('.fonts__swiper', {
     formatFractionCurrent: addZero,
     formatFractionTotal: addZero,
   },
-  // breakpoints: {}
+	breakpoints: {
+		769: {
+      slidesPerView: 4,
+      spaceBetween: rem(6),
+      grid: {
+        fill: 'row',
+        rows: 4,
+      }
+    },
+
+  }
 });
 
 // const lkSwiper = new Swiper('.lk-m__start-swiper', {

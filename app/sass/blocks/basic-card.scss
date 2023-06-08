@@ -164,7 +164,20 @@
     transition: 0.55s ease-in-out;
   }
 
+}
 
- 
-
+@media (hover:hover){
+  .basic-card {
+    &:hover {
+      .basic-card__img {
+        margin-top: 9.7rem
+      }
+  
+      .basic-card__link {
+        img {
+          display: block;
+        }
+      }
+    }
+  }
 }
