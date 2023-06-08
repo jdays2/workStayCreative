@@ -10,7 +10,7 @@
 	padding: 3.2rem;
   z-index: 10;
   position: absolute;
-  
+
   &--show {
     display: flex;
   }
@@ -32,26 +32,27 @@
 		cursor: pointer;
 	}
 
-	&__checker {
-		width: 4rem;
-		height: 4rem;
-		background: #E0E1E7;
-		border-radius: 1rem;
+}
 
-		display: flex;
-		justify-content: center;
-		align-items: center;
+.checker {
+	width: 4rem;
+	height: 4rem;
+	background: #E0E1E7;
+	border-radius: 1rem;
 
-		img {
-      display: none;
-			width: 0.933rem;
-			height: 0.688rem;
-		}
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		display: none;
+		width: 1.5rem;
+		height: 1.5rem;
 	}
+}
 
-  &__checker--active {
-    img {
-      display: block;
-    }
-  }
+.checker--active {
+	img {
+		display: block;
+	}
 }

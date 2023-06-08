@@ -63,6 +63,18 @@
 		}
 	}
 
+	&__filter-img--hidden {
+		display: none;
+	}
+
+	&__sort-btn-icon {
+		transition: transform 0.35s;
+	}
+	&__sort-btn-icon--flip {
+		
+		transform: rotate(180deg);
+	}
+
   &__filter {
     display: flex;
     gap: 4rem;
@@ -83,7 +95,13 @@
       width: 1.6rem;
       height: 1.2rem;
     }
+
+		&--hidden {
+			visibility: hidden;
+		}
 	}
+
+
 
 	&__list {
     display: flex;
