@@ -44,12 +44,21 @@
 		margin-right: 5rem;
 	}
 
+	&__item-wrapper {
+		position: relative;
+		display: flex;
+	}
+
 	&__item {
 		background-color: #fff;
 		display: flex;
 		padding: 3.2rem 4rem;
 		align-items: center;
 		border-radius: 3rem;
+	}
+
+	&__item-mob-close-btn {
+		display: none;
 	}
 
 	&__item-remove {
@@ -282,6 +291,10 @@
 		top: 0rem;
 		position: absolute;
 		border-bottom: 0.1rem dashed rgba(160, 161, 164, 0.3);
+	}
+
+	&__item-content-wrapper {
+		display: flex;
 	}
 }
 

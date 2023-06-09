@@ -1,16 +1,17 @@
 const sortBtn = document.querySelector('.fonts__sort');
 const filterBtn = document.querySelector('#filter-btn');
 const sortPopUp = document.querySelector('.sort-popup');
-const filterPopUp = document.querySelector('.filter-popup');
+const filterPopUp = document.querySelector('.filter-popup__wrapper');
 const filterResetBtn = document.querySelector('.filter-popup__reset-btn');
 const filterApplyBtn = document.querySelector('.filter-popup__apply-btn');
 const filterBtnIcon = document.querySelector('.fonts__filter-img');
 const filterBtnActiveIcon = document.querySelector('.fonts__filter-img--alter');
 const sortBtnIcon = document.querySelector('.fonts__sort-btn-icon');
+const filterCloseBtn = document.querySelector('.filter-popup__close-btn');
 
 const activeCheckerClass = 'checker--active';
 const activeSortPopUpClass = 'sort-popup--show';
-const activeFilterPopUpClass = 'filter-popup--show';
+const activeFilterPopUpClass = 'filter-popup__wrapper--show';
 const sortBtnHideClass = 	'fonts__sort--hidden';
 const sortBtnIconFlipClass = 'fonts__sort-btn-icon--flip';
 const filterBtnHiddenIcon = 'fonts__filter-img--hidden';
@@ -87,7 +88,8 @@ priceSlider.noUiSlider.on('update', updatePriceOutput);
 //показать, скрыть popUp filter
 filterBtn.addEventListener('click', () => {
 	changeIcon(filterBtnIcon, filterBtnActiveIcon)
-	filterPopUp.classList.toggle(activeSortPopUpClass);
+
+	filterPopUp.classList.toggle(activeFilterPopUpClass);
 	sortBtn.classList.toggle(sortBtnHideClass)
 	if(sortPopUp.classList.contains(activeSortPopUpClass)){
 		sortPopUp.classList.remove(activeSortPopUpClass);
@@ -109,7 +111,16 @@ filterResetBtn.addEventListener('click', () => {
 //закрытие и 'применение' параметров
 filterApplyBtn.addEventListener('click', () => {
 	changeIcon(filterBtnIcon, filterBtnActiveIcon)
-	filterPopUp.classList.remove(activeSortPopUpClass);
+	filterPopUp.classList.remove(activeFilterPopUpClass);
+	sortBtn.classList.toggle(sortBtnHideClass);
+	if(sortPopUp.classList.contains(activeSortPopUpClass)){
+		sortPopUp.classList.remove(activeSortPopUpClass);
+	}
+})
+
+filterCloseBtn.addEventListener('click', () => {
+	changeIcon(filterBtnIcon, filterBtnActiveIcon)
+	filterPopUp.classList.remove(activeFilterPopUpClass);
 	sortBtn.classList.toggle(sortBtnHideClass);
 	if(sortPopUp.classList.contains(activeSortPopUpClass)){
 		sortPopUp.classList.remove(activeSortPopUpClass);

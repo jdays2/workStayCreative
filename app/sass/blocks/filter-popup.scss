@@ -1,15 +1,24 @@
 .filter-popup {
-	display: none;
+	margin: 0 auto;
+	display: flex;
 	flex-wrap: wrap;
-	position: absolute;
-	z-index: 11;
-	background: #ffffff;
+	background: #fff;
 	box-shadow: 3.7rem 3.5rem 8rem rgba(103, 110, 133, 0.2);
 	border-radius: 4rem;
-	width: 100%;
-	top: 9.7rem;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	width: 180rem;
 	padding: 6.1rem 6rem;
-
+	top: 9.7rem;
+	&__wrapper {
+		display: none;
+		position: absolute;
+		top: 9.7rem;
+		left: 0rem;
+		z-index: 10;
+	}
+	
 	&__settings {
 		display: flex;
 		justify-content: space-between;
@@ -17,7 +26,7 @@
 		margin-bottom: 3.2rem;
 	}
 
-	&--show {
+	&__wrapper--show {
 		display: flex;
 	}
 
@@ -201,7 +210,7 @@
 		border-radius: 100rem;
 
 		background-color: #de755e;
-		
+
 		span {
 			color: #fff;
 			font-family: 'Gilroy';
@@ -225,6 +234,10 @@
 		line-height: 2.4rem;
 		text-align: center;
 		letter-spacing: 0.02em;
-		color: #DE755E;
+		color: #de755e;
+	}
+
+	&__close-btn {
+		display: none;
 	}
 }

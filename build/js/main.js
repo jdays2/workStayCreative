@@ -146,7 +146,14 @@ const fontsSwiper = new Swiper('.fonts__swiper', {
         rows: 4,
       }
     },
-
+    320: {
+      slidesPerView: 1,
+      spaceBetween: rem(3.5),
+      grid: {
+        fill: 'row',
+        rows: 6
+      }
+    }
   }
 });
 
