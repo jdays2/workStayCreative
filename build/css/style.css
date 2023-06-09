@@ -1214,9 +1214,26 @@ input[type=number] {
   line-height: 2.4rem;
   letter-spacing: 0.02em;
   color: #de755e;
-  width: 22.8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-right: 7rem;
   cursor: pointer;
+  position: relative;
+}
+.cart__item-license::after {
+  position: absolute;
+  right: -2.5rem;
+  top: 0.8rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  content: "";
+  width: 1.2rem;
+  display: block;
+  height: 0.9rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/icon/active-item-icon.svg);
 }
 .cart__favorites {
   width: 180rem;
@@ -5805,7 +5822,7 @@ input[type=number] {
   }
   .header__head {
     width: 100%;
-    padding: 4rem 3rem;
+    padding: 2rem 3rem;
     background-color: #eaebef;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8235,10 +8252,13 @@ input[type=number] {
   }
   .cart__item {
     padding: 2rem;
+    width: 100%;
     border-radius: 6rem;
     position: relative;
-    -webkit-transition: 0.65s ease-in;
-    transition: 0.65s ease-in;
+    z-index: 15;
+    right: 0rem;
+    -webkit-transition: 0.45s ease-in;
+    transition: 0.45s ease-in;
   }
   .cart__item--move {
     right: 15.8rem;
@@ -8274,7 +8294,24 @@ input[type=number] {
     line-height: 3.6rem;
     margin: 0;
     margin-top: 2.6rem;
-    width: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+  }
+  .cart__item-license::after {
+    position: absolute;
+    right: -2rem;
+    top: 0.6rem;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    content: "";
+    width: 1.5rem;
+    display: block;
+    height: 1.8rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/icon/active-item-icon.svg);
   }
   .cart .basic-card__price {
     font-weight: 700;
@@ -8307,7 +8344,7 @@ input[type=number] {
         -ms-flex-align: center;
             align-items: center;
     background-color: #de755e;
-    border-radius: 5rem;
+    border-radius: 6rem;
     width: 13.8rem;
     height: 22rem;
     position: absolute;
@@ -8317,5 +8354,93 @@ input[type=number] {
   .cart__item-mob-close-btn img {
     width: 2.4rem;
     height: 2.4rem;
+  }
+  .cart__order {
+    margin-bottom: 12rem;
+  }
+  .cart__order-info {
+    width: 100%;
+    border-radius: 6rem;
+    padding: 8.6rem 5.4rem;
+  }
+  .cart__order-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 7.4rem;
+    line-height: 7rem;
+  }
+  .cart__order-list {
+    border-radius: 5rem;
+    padding: 5.4rem 5.4rem 4.2rem;
+  }
+  .cart__order-list ul {
+    gap: 4.2rem;
+    margin-bottom: 5rem;
+  }
+  .cart__order-list .basic-card__price {
+    min-width: 0;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+  }
+  .cart__order-subtitle {
+    margin: 0;
+    margin-bottom: 4rem;
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 7.2rem;
+  }
+  .cart__order-summary-title {
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+  .cart__order-item-name {
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+  .cart__order-item-price {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.02em;
+  }
+  .cart__order-link {
+    padding: 3rem 5.4rem 3.4rem;
+    border-radius: 5rem;
+  }
+  .cart__order-link a {
+    height: 11rem;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+  }
+  .cart__break-line {
+    width: 50rem;
+    border-bottom: 0.2rem dashed rgba(160, 161, 164, 0.3);
+  }
+  .cart__order-summary .basic-card__price {
+    font-weight: 700;
+  }
+  .cart__favorites {
+    width: 100%;
+  }
+  .cart__favorites ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 7rem;
+  }
+  .cart__favorites-btn {
+    width: 100%;
+    height: 11rem;
+    margin-top: 3rem;
+  }
+  .cart__favorites-btn span {
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
   }
 }
