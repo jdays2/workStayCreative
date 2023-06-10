@@ -52,15 +52,6 @@ const burgerCategoryPopUpClass = 'burger__categ-item--show';
 const mobileSerchPopUpClass = 'burger__search--show';
 const headerShadowClass = 'header__wrapper--scroll';
 
-//функция по блокировке скрола
-
-const toggleScroll = () => {
-	if (document.body.style.overflow === 'hidden') {
-		document.body.style.overflow = 'auto';
-	} else {
-		document.body.style.overflow = 'hidden';
-	}
-};
 
 //добавляем показ register-popup
 shopBtn.addEventListener('click', () => {
@@ -186,8 +177,6 @@ burgerBtn.addEventListener('click', () => {
 
 	burgerBtn.classList.toggle(activeBurgerClass);
 	burgerNav.classList.toggle(showBurgerClass);
-
-	toggleScroll();
 });
 
 //закрыть попап бургер-меню
@@ -203,27 +192,15 @@ burgerPopUpBtn.forEach((element) => {
 
 mobileSearchBtn.addEventListener('click', () => {
 	mobileSearchPopUp.classList.add(mobileSerchPopUpClass);
-
-	//обработка блокировки скрола
-	const isBurgerOpen = document.querySelector('.header__nav--show');
-	if (!isBurgerOpen) {
-		document.body.style.overflow = 'hidden';
-	}
 });
 
 mobileSearchPopUpCloseBtn.addEventListener('click', () => {
 	mobileSearchPopUp.classList.remove(mobileSerchPopUpClass);
-
-	//обработка блокировки скрола
-	const isBurgerOpen = document.querySelector('.header__nav--show');
-	if (!isBurgerOpen) {
-		document.body.style.overflow = 'auto';
-	}
 });
 
 //добавление тени для header при скроле
 window.addEventListener('scroll', () => {
-	if (window.pageYOffset > 0) {
+	if (window.scrollY > 0) {
 		headerWrapper.classList.add(headerShadowClass);
 	} else {
 		headerWrapper.classList.remove(headerShadowClass);
