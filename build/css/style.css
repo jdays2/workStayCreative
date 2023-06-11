@@ -5826,6 +5826,21 @@ input[type=number] {
   visibility: hidden;
 }
 
+.blog {
+  padding: 28.6rem 6rem 18.285rem;
+}
+.blog .header-block__sort {
+  margin: 0;
+  margin-left: auto;
+}
+.blog .sort-popup--show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 9.2rem;
+  right: -1.9rem;
+}
+
 @media only all and (max-width: 48em) {
   html {
     font-size: 1.3333333333vw;

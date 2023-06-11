@@ -122,41 +122,6 @@ const adviceSwiper = new Swiper('.advice__swiper', {
 	},
 });
 
-const fontsSwiper = new Swiper('.fonts__swiper', {
-  spaceBetween: rem(6),
-  wrapperClass: 'fonts__swiper-wrapper',
-  slideClass: 'fonts__slide',
-  speed: 500,
-  navigation: {
-    prevEl: '.fonts__prev',
-    nextEl: '.fonts__next',
-  },
-  pagination: {
-    el: '.fonts__fraction',
-    type: 'fraction',
-    formatFractionCurrent: addZero,
-    formatFractionTotal: addZero,
-  },
-	breakpoints: {
-		769: {
-      slidesPerView: 4,
-      spaceBetween: rem(6),
-      grid: {
-        fill: 'row',
-        rows: 4,
-      }
-    },
-    320: {
-      slidesPerView: 1,
-      spaceBetween: rem(3.5),
-      grid: {
-        fill: 'row',
-        rows: 6
-      }
-    }
-  }
-});
-
 // const lkSwiper = new Swiper('.lk-m__start-swiper', {
 
 //   slidesPerView: 1,
