@@ -1,20 +1,20 @@
-const sortBtn = document.querySelector('.fonts__sort');
+const sortBtn = document.querySelector('.header-block__sort');
 const filterBtn = document.querySelector('#filter-btn');
 const sortPopUp = document.querySelector('.sort-popup');
 const filterPopUp = document.querySelector('.filter-popup__wrapper');
 const filterResetBtn = document.querySelector('.filter-popup__reset-btn');
 const filterApplyBtn = document.querySelector('.filter-popup__apply-btn');
-const filterBtnIcon = document.querySelector('.fonts__filter-img');
-const filterBtnActiveIcon = document.querySelector('.fonts__filter-img--alter');
-const sortBtnIcon = document.querySelector('.fonts__sort-btn-icon');
+const filterBtnIcon = document.querySelector('.header-block__filter-img');
+const filterBtnActiveIcon = document.querySelector('.header-block__filter-img--alter');
+const sortBtnIcon = document.querySelector('.header-block__sort-btn-icon');
 const filterCloseBtn = document.querySelector('.filter-popup__close-btn');
 
 const activeCheckerClass = 'checker--active';
 const activeSortPopUpClass = 'sort-popup--show';
 const activeFilterPopUpClass = 'filter-popup__wrapper--show';
-const sortBtnHideClass = 	'fonts__sort--hidden';
-const sortBtnIconFlipClass = 'fonts__sort-btn-icon--flip';
-const filterBtnHiddenIcon = 'fonts__filter-img--hidden';
+const sortBtnHideClass = 	'header-block__sort--hidden';
+const sortBtnIconFlipClass = 'header-block__sort-btn-icon--flip';
+const filterBtnHiddenIcon = 'header-block__filter-img--hidden';
 
 
 //функция по перевороту индикатора/icon sort popup

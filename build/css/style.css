@@ -1469,103 +1469,6 @@ input[type=number] {
 .fonts li {
   list-style-type: none;
 }
-.fonts__head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 5.7rem;
-  position: relative;
-}
-.fonts__title {
-  font-family: "Austin Cyr";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 7.3rem;
-  line-height: 7rem;
-  letter-spacing: 0.02em;
-  color: #383742;
-  margin-right: 4.65rem;
-}
-.fonts__prod-count {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 2rem;
-  color: #a0a1a4;
-  margin-right: 64.8rem;
-  width: 29.7rem;
-  white-space: nowrap;
-  margin-top: 1.8rem;
-}
-.fonts__prod-count span {
-  color: #383742;
-}
-.fonts__sort, .fonts__filter {
-  width: 25.1rem;
-  height: 7.9rem;
-  background-color: #fff;
-  border-radius: 10rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.fonts__sort span, .fonts__filter span {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.02em;
-  color: #383742;
-}
-.fonts__filter-img--hidden {
-  display: none;
-}
-.fonts__sort-btn-icon {
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-}
-.fonts__sort-btn-icon--flip {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-.fonts__filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 4rem;
-  width: 23rem;
-}
-.fonts__filter img {
-  width: 2.3rem;
-  height: 2.3rem;
-}
-.fonts__sort {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 2rem;
-  margin-right: 2rem;
-}
-.fonts__sort img {
-  width: 1.6rem;
-  height: 1.2rem;
-}
-.fonts__sort--hidden {
-  visibility: hidden;
-}
 .fonts__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5815,6 +5718,114 @@ input[type=number] {
   display: block;
 }
 
+.header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5.7rem;
+  position: relative;
+}
+
+.header-block__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7.3rem;
+  line-height: 7rem;
+  letter-spacing: 0.02em;
+  color: #383742;
+  margin-right: 4.65rem;
+}
+
+.header-block__prod-count {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #a0a1a4;
+  margin-right: 64.8rem;
+  width: 29.7rem;
+  white-space: nowrap;
+  margin-top: 1.8rem;
+}
+.header-block__prod-count span {
+  color: #383742;
+}
+
+.header-block__sort,
+.header-block__filter {
+  width: 25.1rem;
+  height: 7.9rem;
+  background-color: #fff;
+  border-radius: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-block__sort span,
+.header-block__filter span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.02em;
+  color: #383742;
+}
+
+.header-block__filter-img--hidden {
+  display: none;
+}
+
+.header-block__sort-btn-icon {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+
+.header-block__sort-btn-icon--flip {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.header-block__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+  width: 23rem;
+}
+.header-block__filter img {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.header-block__sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+.header-block__sort img {
+  width: 1.6rem;
+  height: 1.2rem;
+}
+.header-block__sort--hidden {
+  visibility: hidden;
+}
+
 @media only all and (max-width: 48em) {
   html {
     font-size: 1.3333333333vw;
@@ -7931,12 +7942,12 @@ input[type=number] {
     padding-right: 3rem;
     width: auto;
   }
-  .fonts__head {
+  .fonts .header-block {
     width: 70rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .fonts__title {
+  .fonts .header-block__title {
     font-weight: 700;
     font-size: 6rem;
     line-height: 7.2rem;
@@ -7944,7 +7955,7 @@ input[type=number] {
     margin-bottom: 2rem;
     margin-right: 100%;
   }
-  .fonts__prod-count {
+  .fonts .header-block__prod-count {
     margin-top: 0;
     font-weight: 400;
     font-size: 2.8rem;
@@ -7953,31 +7964,31 @@ input[type=number] {
     margin-bottom: 4.8rem;
     margin-right: 100%;
   }
-  .fonts__sort {
+  .fonts .header-block__sort {
     width: 57rem;
     height: 11rem;
     margin-right: 1.2rem;
   }
-  .fonts__sort img {
+  .fonts .header-block__sort img {
     width: 2.6rem;
     height: 2rem;
   }
-  .fonts__sort span {
+  .fonts .header-block__sort span {
     font-weight: 700;
     font-size: 2.8rem;
     line-height: 3.4rem;
     letter-spacing: 0.02em;
   }
-  .fonts__filter {
+  .fonts .header-block__filter {
     width: 11rem;
     height: 11rem;
     gap: 0;
   }
-  .fonts__filter img {
+  .fonts .header-block__filter img {
     width: 4.6rem;
     height: 4.6rem;
   }
-  .fonts__filter span {
+  .fonts .header-block__filter span {
     display: none;
   }
   .checker img {

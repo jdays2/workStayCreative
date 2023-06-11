@@ -2283,12 +2283,12 @@
 		padding-left: 3rem;
 		padding-right: 3rem;
 		width: auto;
-		&__head {
+		.header-block {
 			width: 70rem;
 			flex-wrap: wrap;
 		}
 
-		&__title {
+		.header-block__title {
 			font-weight: 700;
 			font-size: 6rem;
 			line-height: 7.2rem;
@@ -2297,7 +2297,7 @@
 			margin-right: 100%;
 		}
 
-		&__prod-count {
+		.header-block__prod-count {
 			margin-top: 0;
 			font-weight: 400;
 			font-size: 2.8rem;
@@ -2307,7 +2307,7 @@
 			margin-right: 100%;
 		}
 
-		&__sort {
+		.header-block__sort {
 			width: 57rem;
 			height: 11rem;
 			margin-right: 1.2rem;
@@ -2325,7 +2325,7 @@
 			}
 		}
 
-		&__filter {
+		.header-block__filter {
 			width: 11rem;
 			height: 11rem;
 			gap: 0;

@@ -1,0 +1,95 @@
+.header-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5.7rem;
+  position: relative;
+}
+
+.header-block__title {
+  font-family: 'Austin Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7.3rem;
+  line-height: 7rem;
+  letter-spacing: 0.02em;
+  color: #383742;
+  margin-right: 4.65rem;
+}
+
+.header-block__prod-count {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #a0a1a4;
+  margin-right: 64.8rem;
+  width: 29.7rem;
+  white-space: nowrap;
+  margin-top: 1.8rem;
+
+  span {
+    color: #383742;
+  }
+}
+
+.header-block__sort,
+.header-block__filter {
+  width: 25.1rem;
+  height: 7.9rem;
+  background-color: #fff;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.02em;
+    color: #383742;
+  }
+}
+
+.header-block__filter-img--hidden {
+  display: none;
+}
+
+.header-block__sort-btn-icon {
+  transition: transform 0.35s;
+}
+.header-block__sort-btn-icon--flip {
+  
+  transform: rotate(180deg);
+}
+
+.header-block__filter {
+  display: flex;
+  gap: 4rem;
+  width: 23rem;
+  
+  img {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+}
+
+.header-block__sort {
+  display: flex;
+  gap: 2rem;
+  margin-right: 2rem;
+  
+  img {
+    width: 1.6rem;
+    height: 1.2rem;
+  }
+
+  &--hidden {
+    visibility: hidden;
+  }
+}
+
+
