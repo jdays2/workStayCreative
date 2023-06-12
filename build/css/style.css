@@ -1156,6 +1156,7 @@ input[type=number] {
           flex-direction: column;
   gap: 3rem;
   margin-right: 5rem;
+  width: 133.5rem;
 }
 .cart__item-wrapper {
   position: relative;
@@ -1164,6 +1165,7 @@ input[type=number] {
   display: flex;
 }
 .cart__item {
+  width: 100%;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1173,6 +1175,9 @@ input[type=number] {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 3rem;
+}
+.cart__item .basic-card__price {
+  margin-left: auto;
 }
 .cart__item-mob-close-btn {
   display: none;
@@ -1210,6 +1215,9 @@ input[type=number] {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   font-size: 2rem;
   line-height: 2.4rem;
   letter-spacing: 0.02em;
@@ -1379,6 +1387,20 @@ input[type=number] {
 .cart__order-item-price span {
   font-weight: 500;
 }
+.cart__item-price-wrapper {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.2rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
 .cart__item-price {
   white-space: nowrap;
   font-weight: 700;
@@ -1388,6 +1410,13 @@ input[type=number] {
 .cart__item-price span {
   font-size: 1.3rem;
   top: -1rem;
+}
+.cart__item-info-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: auto;
+  margin-left: 0.8rem;
+  cursor: pointer;
 }
 .cart__order-link {
   background-color: #fff;
@@ -1433,6 +1462,27 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+}
+.cart__item-info {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #383742;
+  padding: 1rem 1.4rem;
+  background-color: #ffdbd4;
+  -webkit-box-shadow: 0.86rem 0.56rem 2.8rem rgba(234, 235, 239, 0.3);
+          box-shadow: 0.86rem 0.56rem 2.8rem rgba(234, 235, 239, 0.3);
+  border-radius: 2.5rem;
+  position: absolute;
+  top: 3.9rem;
+  right: 4rem;
+  display: none;
+}
+.cart__item-info--show {
+  display: block;
 }
 
 .basic-card__price--pink-backgraund {
@@ -3922,7 +3972,7 @@ input[type=number] {
 .modal {
   background: rgba(56, 55, 66, 0.25);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   display: none;
   position: fixed;
   top: 0;
@@ -3936,11 +3986,163 @@ input[type=number] {
       -ms-flex-align: center;
           align-items: center;
 }
+.modal__open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .modal__container {
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+.modal__wrapper {
+  padding: 6.4rem 19rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 4rem;
+  position: relative;
+}
+.modal__title {
+  margin-bottom: 3.2rem;
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 3.7rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.modal__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 46.2rem;
+  margin-bottom: 5.7rem;
+}
+.modal__item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal__item .basic-card__price {
+  color: #a0a1a4;
+}
+.modal__item:not(:last-child) {
+  padding-bottom: 1.7rem;
+  margin-bottom: 2rem;
+  border-bottom: 0.1rem solid rgba(160, 161, 164, 0.3);
+}
+.modal__item--active .modal__circle {
+  background-color: #de755e;
+  -webkit-box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.2);
+          box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.2);
+}
+.modal__item--active .basic-card__price {
+  color: #383742;
+}
+.modal__item--active .modal__item-title {
+  color: #383742;
+}
+.modal__close-btn {
+  width: 7.7rem;
+  height: 7.7rem;
+  position: absolute;
+  top: -9.7rem;
+  right: 0rem;
+  border-radius: 100rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal__close-btn img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.modal__close-btn--unknown {
+  width: 7.7rem;
+  height: 7.7rem;
+  position: absolute;
+  top: -9.7rem;
+  right: 10.1rem;
+  border-radius: 100rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal__close-btn--unknown img {
+  width: 3.2rem;
+}
+.modal .basic-card__price {
+  margin: 0;
+  margin-left: auto;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.modal .basic-card__price span {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.modal__item-title {
+  margin-left: 1.2rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #a0a1a4;
+  cursor: pointer;
+}
+.modal__circle {
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 0.4rem solid #ffffff;
+  -webkit-box-shadow: 0.86rem 0.86rem 2rem rgba(160, 161, 164, 0.2);
+          box-shadow: 0.86rem 0.86rem 2rem rgba(160, 161, 164, 0.2);
+  border-radius: 100rem;
+  background: #e0e1e7;
+  cursor: pointer;
 }
 .modal__close {
   width: 7.7rem;
@@ -3954,7 +4156,7 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
   margin-bottom: 2rem;
   margin-left: auto;
@@ -3964,10 +4166,44 @@ input[type=number] {
   height: 1.8rem;
 }
 .modal__box {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 5.5rem;
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+.modal__button {
+  margin: 0 auto;
+  width: 28.5rem;
+  height: 7.7rem;
+  background-color: #de755e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100rem;
+}
+.modal__button span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.modal--order-alert .modal__button {
+  width: 21.2rem;
+}
+.modal--order-alert .modal__image {
+  margin: 0 auto;
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.2rem;
 }
 
 .thanks-reg.active {
@@ -4006,7 +4242,7 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #DE755E;
+  background: #de755e;
   margin-bottom: 3.3rem;
 }
 .thanks-reg__box-icon img {
@@ -4025,7 +4261,7 @@ input[type=number] {
   font-size: 3.7rem;
   line-height: 100%;
   letter-spacing: 0.02em;
-  color: #1B1818;
+  color: #1b1818;
 }
 .thanks-reg__box-title span {
   font-weight: 500;
@@ -4033,7 +4269,7 @@ input[type=number] {
   line-height: 2.4rem;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #A0A1A4;
+  color: #a0a1a4;
 }
 
 .art-modal {
@@ -4080,7 +4316,7 @@ input[type=number] {
   font-size: 2rem;
   line-height: 2.4rem;
   letter-spacing: 0.02em;
-  color: #A0A1A4;
+  color: #a0a1a4;
 }
 .art-modal__inner {
   display: -webkit-box;
@@ -5107,7 +5343,7 @@ input[type=number] {
   padding-left: 3.1rem;
   padding-right: 3.1rem;
   border-radius: 3rem;
-  background-color: #E0E1E7;
+  background-color: #e0e1e7;
   height: 7.7rem;
   width: 17.1rem;
   display: -webkit-box;
@@ -5132,7 +5368,7 @@ input[type=number] {
           align-items: center;
   width: 6rem;
   height: 7.7rem;
-  background-color: #E0E1E7;
+  background-color: #e0e1e7;
   border-radius: 3rem;
 }
 .basic-card__favor img {
@@ -5192,7 +5428,7 @@ input[type=number] {
   min-width: 11.5rem;
   height: 6rem;
   border-radius: 3rem;
-  background-color: #FFDBD4;
+  background-color: #ffdbd4;
 }
 .basic-card__title {
   font-family: "Gilroy";
@@ -5236,6 +5472,28 @@ input[type=number] {
   z-index: 2;
   -webkit-transition: 0.55s ease-in-out;
   transition: 0.55s ease-in-out;
+}
+.basic-card__price--crossed {
+  right: 1.4rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #999999;
+  -webkit-text-decoration-line: line-through;
+  text-decoration-line: line-through;
+  text-decoration-thickness: 0.1rem;
+  position: relative;
+}
+.basic-card__price--crossed span {
+  font-size: 1rem;
+  top: -0.5rem;
+  left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  right: -0.65rem;
+  position: absolute;
+  text-decoration: none;
 }
 
 @media (hover: hover) {
@@ -8255,7 +8513,7 @@ input[type=number] {
     font-weight: 700;
     font-size: 6rem;
     line-height: 7.2rem;
-    margin-bottom: 7.2rem;
+    margin-bottom: 6rem;
   }
   .cart__counter {
     font-weight: 700;
@@ -8266,6 +8524,7 @@ input[type=number] {
   }
   .cart__list {
     margin: 0;
+    width: 100%;
     margin-bottom: 6rem;
   }
   .cart__order {
@@ -8284,8 +8543,20 @@ input[type=number] {
     position: relative;
     z-index: 15;
     right: 0rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-transition: 0.45s ease-in;
     transition: 0.45s ease-in;
+  }
+  .cart__item-price-wrapper {
+    position: relative;
+  }
+  .cart__item-info-icon {
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-top: 2.6rem;
+    margin-left: 0rem;
   }
   .cart__item--move {
     right: 15.8rem;
@@ -8373,7 +8644,7 @@ input[type=number] {
     background-color: #de755e;
     border-radius: 6rem;
     width: 13.8rem;
-    height: 22rem;
+    height: 100%;
     position: absolute;
     right: 0;
     z-index: 10;
@@ -8470,6 +8741,53 @@ input[type=number] {
     font-size: 2.8rem;
     line-height: 3.4rem;
   }
+  .cart__item-price-wrapper--discount {
+    position: absolute;
+    bottom: 0rem;
+    right: 20.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1.6rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+  }
+  .cart__item-price-wrapper--discount .basic-card__price {
+    position: static;
+    right: auto;
+    bottom: auto;
+    min-width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .cart__item-price-wrapper--discount .basic-card__price span {
+    left: 0;
+  }
+  .cart__item-price-wrapper--discount .basic-card__price--crossed {
+    position: relative;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    letter-spacing: 0.05em;
+  }
+  .cart__item-price-wrapper--discount .basic-card__price--crossed span {
+    left: auto;
+    right: -1.5rem;
+  }
   .blog {
     padding: 21rem 3rem 9.8rem;
   }
@@ -8479,5 +8797,100 @@ input[type=number] {
   .blog .header-block__sort {
     width: 100%;
     margin: 0;
+  }
+  .modal__wrapper {
+    padding: 6rem 3rem;
+    border-radius: 6rem;
+  }
+  .modal--order-alert .modale__image {
+    width: 11rem;
+    height: 11rem;
+    margin-bottom: 3rem;
+  }
+  .modal--order-alert .modal__button {
+    width: 100%;
+  }
+  .modal--order-alert .modal__title {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .modal__title {
+    margin: 0 auto;
+    width: 54rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 7.2rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #383742;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  .modal__list {
+    width: 63rem;
+    margin-bottom: 5rem;
+  }
+  .modal__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 2rem;
+    margin-bottom: 2.4rem;
+  }
+  .modal__item:not(:last-child) {
+    padding-bottom: 2rem;
+    margin-bottom: 2.4rem;
+  }
+  .modal__circle {
+    width: 4.4rem;
+    height: 4.4rem;
+    border: 0.8rem solid #ffffff;
+  }
+  .modal__item-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-left: 2.4rem;
+  }
+  .modal__close-btn {
+    width: 11rem;
+    height: 11rem;
+    top: -14rem;
+  }
+  .modal__close-btn img {
+    width: 2.572rem;
+    height: 2.572rem;
+  }
+  .modal__close-btn--unknown {
+    width: 11rem;
+    height: 11rem;
+    top: -14rem;
+    right: 14rem;
+  }
+  .modal__close-btn--unknown img {
+    width: 5rem;
+  }
+  .modal__button {
+    width: 100%;
+    height: 11rem;
+  }
+  .modal__button span {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+  }
+  .modal .basic-card__price {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+  }
+  .modal .basic-card__price span {
+    position: static;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    margin-left: -0.7rem;
   }
 }

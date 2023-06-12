@@ -485,19 +485,35 @@
 										Семейство шрифтов с засечками Seasons
 										<span>Продавец Vasiliy123</span>
 									</p>
-									<p class="cart__item-license">Digital Ads-лицензия</p>
-									<span class="cart__item-price basic-card__price">
-										4500
-										<span>₽</span>
-									</span>
+									<button class="cart__item-license">App лицензия</button>
+									<div class="cart__item-price-wrapper cart__item-price-wrapper--discount">
+										<span class="cart__item-price basic-card__price">
+											4500
+											<span>₽</span>
+										</span>
+
+										<span
+											class="cart__item-price basic-card__price basic-card__price--crossed">
+											15000
+											<span>₽</span>
+										</span>
+									</div>
+									<img
+										src="./img/cart/question-mark-icon.svg"
+										class="cart__item-info-icon"
+										alt="" />
 								</div>
 							</div>
-								<button class="cart__item-mob-close-btn">
-									<img
-										src="./img/icon/close-icon-white.svg"
-										alt="" />
-								</button>
-							
+							<button class="cart__item-mob-close-btn">
+								<img
+									src="./img/icon/close-icon-white.svg"
+									alt="" />
+							</button>
+
+							<p class="cart__item-info">
+								Вами ранее была куплена Digital Ads-лицензия. Цена App лицензии
+								изменена
+							</p>
 						</li>
 
 						<li class="cart__item-wrapper">
@@ -516,19 +532,22 @@
 										Семейство шрифтов с засечками Seasons
 										<span>Продавец Vasiliy123</span>
 									</p>
-									<p class="cart__item-license">Digital Ads-лицензия</p>
-									<span class="cart__item-price basic-card__price">
-										4500
-										<span>₽</span>
-									</span>
+									<button class="cart__item-license">
+										Digital Ads-лицензия
+									</button>
+									<div class="cart__item-price-wrapper">
+										<span class="cart__item-price basic-card__price">
+											4500
+											<span>₽</span>
+										</span>
+									</div>
 								</div>
 							</div>
-								<button class="cart__item-mob-close-btn">
-									<img
-										src="./img/icon/close-icon-white.svg"
-										alt="" />
-								</button>
-							
+							<button class="cart__item-mob-close-btn">
+								<img
+									src="./img/icon/close-icon-white.svg"
+									alt="" />
+							</button>
 						</li>
 
 						<li class="cart__item-wrapper">
@@ -548,12 +567,15 @@
 										<span>Продавец Vasiliy123</span>
 									</p>
 
-									<p class="cart__item-license">Digital Ads-лицензия</p>
-
-									<span class="cart__item-price basic-card__price">
-										4500
-										<span>₽</span>
-									</span>
+									<button class="cart__item-license">
+										Digital Ads-лицензия
+									</button>
+									<div class="cart__item-price-wrapper">
+										<span class="cart__item-price basic-card__price">
+											4500
+											<span>₽</span>
+										</span>
+									</div>
 								</div>
 							</div>
 							<button class="cart__item-mob-close-btn">
@@ -825,6 +847,85 @@
 				</div>
 			</section>
 		</main>
+
+		<div class="modal">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn">
+					<img
+						src="./img/icon/close.svg"
+						alt="" />
+				</button>
+
+				<button class="modal__close-btn modal__close-btn--unknown">
+					<img
+						src="./img/icon/left-arrow-black-icon.svg"
+						alt="" />
+				</button>
+				<p class="modal__title">Изменение лицензии товара</p>
+				<ul class="modal__list">
+					<li class="modal__item">
+						<span class="modal__circle"></span>
+						<p class="modal__item-title">Веб-лицензия</p>
+						<span class="cart__order-item-price basic-card__price">
+							2000
+							<span>₽</span>
+						</span>
+					</li>
+
+					<li class="modal__item">
+						<span class="modal__circle"></span>
+						<p class="modal__item-title">Digital Ads-лицензия</p>
+						<span class="cart__order-item-price basic-card__price">
+							2000
+							<span>₽</span>
+						</span>
+					</li>
+
+					<li class="modal__item">
+						<span class="modal__circle"></span>
+						<p class="modal__item-title">App-лицензия</p>
+						<span class="cart__order-item-price basic-card__price">
+							2000
+							<span>₽</span>
+						</span>
+					</li>
+
+					<li class="modal__item modal__item--active">
+						<span class="modal__circle"></span>
+						<p class="modal__item-title">ePub-лицензия</p>
+						<span class="cart__order-item-price basic-card__price">
+							2000
+							<span>₽</span>
+						</span>
+					</li>
+				</ul>
+				<button class="modal__button">
+					<span>Выбрать лицензию</span>
+				</button>
+			</div>
+	</div> 
+
+		<!-- <div class="modal modal--order-alert">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn">
+					<img
+						src="./img/icon/close.svg"
+						alt="" />
+				</button>
+
+				<button class="modal__close-btn modal__close-btn--unknown">
+					<img
+						src="./img/icon/left-arrow-black-icon.svg"
+						alt="" />
+				</button>
+				<img src="./img/icon/exclamation-icon.svg" class="modal__image" alt="">
+				<p class="modal__title">Лицензия Digital ADS  была куплена ранее</p>
+			
+				<button class="modal__button">
+					<span>Мои покупки</span>
+				</button>
+			</div>
+		</div>  -->
 		<div class="modal thanks-reg">
 	<div class="modal__container">
 		<button class="modal__close thanks-reg__close">
