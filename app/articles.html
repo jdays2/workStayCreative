@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./css/style.min.css" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Статьи</title>
+	</head>
+
+	<body>
+		@@include('./template/header.html')
+
+		<main>
+			<section class="articles">
+        <div class="articles__head">
+          <div class="articles__title-wrapper">
+            <span class="articles__date">Январь 14, 2023</span>
+            <p class="articles__title">Как превратить дизайн 
+              в потрясающий продукт</p>
+          </div>
+          <div class="articles__brief-wrapper">
+            <p class="articles__brief">Каким он должен быть, можно понять, только ответив вместе с клиентом на вопросы: хотим ли мы отличаться от конкурентов? Может ли в этом нам помочь дизайн? Будет ли у нашего продукта добавленная ценность, которую приносит хороший дизайн?</p>
+            <div class="articles__author-info">
+              <a href="" class="articles__author-img">
+                <img src="./img/advice/face.png" alt="">
+              </a>
+              <p class="articles__author">
+                <span>Статья написана</span>
+                <span>by Laura Busche</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+		</main>
+		@@include('./template/footer.html')
+
+		<script src="./js/header.js"></script>
+	</body>
+</html>

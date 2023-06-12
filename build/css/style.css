@@ -6099,6 +6099,116 @@ input[type=number] {
   right: -1.9rem;
 }
 
+.articles {
+  padding: 28.6rem 6rem 18.285rem;
+  background-color: #eaebef;
+  width: 100%;
+}
+.articles__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5.5rem;
+}
+.articles__brief-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 71.5rem;
+}
+.articles__brief {
+  margin-bottom: 2rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #383742;
+}
+.articles__author-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.articles__author-img {
+  width: 8.1rem;
+  height: 8.1rem;
+  padding: 1rem;
+  margin-right: 1.2rem;
+  border-radius: 100rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 0.2rem solid #FFFFFF;
+  -webkit-box-shadow: 1rem -1.5rem 8rem rgba(142, 146, 156, 0.2);
+          box-shadow: 1rem -1.5rem 8rem rgba(142, 146, 156, 0.2);
+}
+.articles__author-img img {
+  width: 100%;
+  height: 100%;
+}
+.articles__author {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  color: #383742;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.articles__title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.articles__date {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.05em;
+  color: #383742;
+  margin-bottom: 1.5rem;
+}
+.articles__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7.3rem;
+  line-height: 7.5rem;
+  letter-spacing: 0.02em;
+  color: #383742;
+}
+
 @media only all and (max-width: 48em) {
   html {
     font-size: 1.3333333333vw;
