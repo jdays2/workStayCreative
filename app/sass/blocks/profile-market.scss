@@ -20,13 +20,13 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         flex-wrap: wrap;
-        width: 87.6rem;
+        width: 106.6rem;
     }
 
     &__info {
         display: flex;
         flex-direction: column;
-        margin-bottom: 4rem;
+        margin-bottom: 3.9rem;
         span {
             display: block;
             font-weight: 500;

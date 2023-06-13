@@ -1,28 +1,29 @@
 .lk-register {
-    margin-bottom: 11.5rem;
+    margin-bottom: 15rem;
     &__wrapper {
         display: flex;
     }
 
     &__left {
         width: 104rem;
-        height: 104rem;
+        height: 100.5rem;
         overflow: hidden;
         z-index: 1;
         position: absolute;
+        border-radius: 5.5rem;
         
     }
 
     &__right {
         width: 107rem;
-        height: 104rem;
+        height: 100.5rem;
         z-index: 2;
         background: #FFFFFF;
         border-radius: 5.5rem;
-        right: 1rem;
+        right: 0rem;
         position: relative;
         margin-left: auto;
-       padding: 7.2rem 12rem;
+        padding: 9.2rem 12rem;
     }
 
     &__image {
@@ -108,7 +109,7 @@
 
     &__form-inner--type {
         input {
-            width: 84rem;
+            width: 83rem;
         }
     }
 
@@ -140,7 +141,12 @@
         color: #A0A1A4;
         a {
             color:#DE755E;
+            display: block;
         }
+    }
+
+    &__faq.active {
+        display: flex;
     }
 
     &__two-text {
@@ -164,12 +170,13 @@
         line-height: 125% ;
         margin-top: 1.2rem;
         color: #A0A1A4;
-        margin-bottom: 5.7rem;
+        margin-bottom: 4.8rem;
 
     }
 
     .red-btn {
-        width: 56rem;
+        margin-right: 1.8rem;
+        width: 65rem;
     }
 
     &__policy {
@@ -220,6 +227,14 @@
             
         }
 
+    }
+
+    &__content-title.active {
+        display: block;
+    }
+
+    &__social.active {
+        display: flex;
     }
 
     &__social {
@@ -309,14 +324,132 @@
         padding: 0;
     }
 
-    &__email {
-        width: 83rem;
-        padding-left: 5.8rem;
-        
+   
+
+  
+
+
+
+    &__right--pas {
+        padding-left: 12rem;
+        padding-top: 31.6rem;
+    }
+
+    &__forgot-password-prev {
+        position: absolute;
+        background: #EAEBEF;
+        border-radius: 50%;
+        width: 7.7rem;
+        height: 7.7rem;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        top: 5.2rem;
+        left: 5.2rem;
+        svg {
+            width: 3rem;
+            height: 1.5rem;
+        }
+    }
+
+    &__forgot-password {
+       width: 83rem;
+    }
+
+    &__forgot-password-form {
+        display: flex;
+        flex-direction: column;
+        label {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            letter-spacing: 0.02em;
+            margin-bottom: 1.2rem;
+            display: block;
+        }
+
+        input {
+            border:none;
+            background: #EAEBEF;
+            border-radius: 1rem;
+            padding: 1.4rem 2.4rem;
+            width: 83rem;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 125%;
+            color: #000000;
+
+        }
+        .red-btn {
+            width: 40.4rem;
+            margin-right: 3.8rem;
+        }
+    }
+
+    &__forgot-password-form-btns {
+        display: flex;
+        justify-content: initial;
+        margin-top: 5.2rem;
+        margin-bottom: 5.2rem;
+        align-items:center;
     }
 
 
+    &__forgot-password-title {
+        width: 62.4rem;
+        margin-bottom: 5.2rem;
+        strong {
+            display: block;
+            font-family: 'Austin Cyr';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 3.7rem;
+            line-height: 100%;
+            letter-spacing: 0.02em;
+            color: #383742;
+            margin-bottom: 2.5rem;
+        }
 
+        span {
+            font-weight: 500;
+            font-size: 2.2rem;
+            line-height: 118%;
+            color: #A0A1A4;
+
+        }
+
+    }
+
+    &__forgot-password-form-wrap {
+        display: flex;
+        justify-content: space-between;
+
+
+        .lk-register__forgot-password-form-inner {
+            width: 40.5rem;
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    &__forgot-password-form-wrap-text {
+        margin-top: 1.2rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 125% ;
+        color: #A0A1A4;
+    }
+
+  
+
+    &__email {
+        width: 83rem;
+        padding-left: 6.8rem;
+        
+    }
     &__email-prev {
         margin-bottom: 18.7rem;
         background: #EAEBEF;
@@ -328,7 +461,7 @@
         align-items:center;
         svg {
             width: 3rem;
-            height: 1rem;
+            height: 1.5rem;
         }
     }
 
@@ -341,7 +474,7 @@
         line-height: 100%;
         letter-spacing: 0.02em;
         color: #383742;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
 
     }
 
@@ -353,7 +486,7 @@
         letter-spacing: 0.02em;
         color: #A0A1A4;
         margin-bottom: 5.2rem;
-        width: 62.4rem;
+        width: 56.4rem;
     }
 
     &__email-form {
@@ -365,7 +498,8 @@
             font-size: 2rem;
             line-height: 2.4rem;
             letter-spacing: 0.02em;
-            margin-bottom: 1.4rem;
+            margin-bottom: 1.8rem;
+            display: block;
         }
 
         input {
@@ -374,17 +508,29 @@
             box-shadow: 8.59504px 8.59504px 20px rgba(222, 117, 94, 0.11);
             border-radius: 1rem;
             padding: 1.4rem 2.4rem;
+            width: 83rem;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 125%;
+            color: #000000;
 
         }
         .red-btn {
             width: 53.7rem;
-            margin-top: 5.2rem;
+            margin-top: 5.7rem;
         }
     }
 
     &__right--m {
         padding-left: 5.2rem;
+        padding: 5.2rem 5.2rem;
     }
+
+
+
+
+
+
 
    
 

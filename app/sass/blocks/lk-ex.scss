@@ -1,12 +1,13 @@
 .lk-ex {
-    margin-bottom: 11.5rem;
+    margin-bottom: 14.5rem;
     &__wrapper {
         display: flex;
     }
 
     &__left {
         width: 104rem;
-        height: 104rem;
+        height: 100.6rem;
+        border-radius: 5.5rem;
         overflow: hidden;
         z-index: 1;
         position: absolute;
@@ -15,11 +16,11 @@
 
     &__right {
         width: 107rem;
-        height: 104rem;
+        height: 101rem;
         z-index: 2;
         background: #FFFFFF;
         border-radius: 5.5rem;
-        right: 1rem;
+        right: 0rem;
         position: relative;
         margin-left: auto;
         display: flex;

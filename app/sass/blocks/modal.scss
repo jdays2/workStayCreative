@@ -630,6 +630,106 @@
     display: flex;
 }
 
+
+.del-modal-user {
+    
+    &__box {
+        padding: 6rem 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
+    &__icon {
+        width: 7.7rem;
+        height: 7.7rem;
+        margin-bottom: 3.3rem;
+    }
+
+    &__title {
+        font-family: 'Austin Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.7rem;
+        line-height:  100% ;
+        text-align: center;
+        letter-spacing: 0.02em;
+        margin-bottom: 3.2rem;
+
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #A0A1A4;
+        margin-bottom: 3.2rem;
+    }
+
+    &__alert {
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            text-align: center;
+            letter-spacing: 0.02em;
+            margin-bottom: 3.2rem;
+        span {
+            display: block;
+            color: #A0A1A4;
+
+        }
+
+        p {
+            color:rgba(222, 117, 94, 1);
+        }
+    }
+
+    &__form {
+        width: 100%;
+        label {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            letter-spacing: 0.02em;
+            display: block;
+            margin-bottom: 1.2rem;
+            color: #383742;
+
+        }
+
+        input {
+         
+            position: relative;
+            width: 100%;
+            background: #EAEBEF;
+            border-radius: 1rem;
+            padding: 1.4rem 2.4rem;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 125%;
+            color: #000000;
+            border: none;
+        
+
+        }
+
+       
+    }
+
+    .red-btn {
+        margin: 0 auto;
+        margin-top: 3.2rem;
+    }
+}
+
+.del-modal-user.active {
+    display: flex;
+}
+
 .cover-modal-error {
    
 
@@ -898,3 +998,5 @@
 .modal-thanks-r.active {
     display: flex;
 }
+
+

@@ -341,11 +341,13 @@
                             <form action="" class="lk-ex__form">
                                 <div class="lk-ex__form-inner">
                                     <label for="">Электронная почта</label>
-                                    <input type="text">
+                                    <input  type="text">
+                                    <div class="input-error">*Отсутствует заглавная буква</div>
                                 </div>
                                 <div class="lk-ex__form-inner">
                                     <label for="">Пароль</label>
                                     <input type="text">
+
                                     <button class="lk-ex__see">
                                         <svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M21.2496 9.14906C20.7596 8.36906 20.1996 7.66906 19.6196 7.03906L15.8496 10.8091C15.9696 11.1791 16.0396 11.5791 16.0396 11.9991C16.0396 14.2391 14.2296 16.0391 11.9996 16.0391C11.5796 16.0391 11.1796 15.9691 10.8096 15.8491L7.34961 19.3091C8.80961 20.1291 10.3896 20.5591 11.9996 20.5591C13.7796 20.5591 15.5096 20.0391 17.0896 19.0691C18.6696 18.0891 20.0896 16.6591 21.2496 14.8391C22.2496 13.2791 22.2496 10.7191 21.2496 9.14906Z" fill="#A0A1A4"/>
@@ -356,6 +358,7 @@
                                         </svg>
                                             
                                     </button>
+                                    <div class="input-error">*Отсутствует заглавная буква</div>
                                 </div>
                             </form>
                             <div class="lk-ex__content-btns">
@@ -982,6 +985,174 @@
         </div>
     </div>
 </div>
+
+
+
+<div class="modal del-modal-user">
+    <div class="modal__container del-modal-user__container">
+        <button class="modal__close del-modal-user__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box del-modal-user__box">
+            <div class="del-modal-user__icon">
+                <img src="./img/profile-user/znak.svg" alt="">
+            </div>
+            <div class="del-modal-user__title">Вы уверены, что хотите удалить профиль?</div>
+            <div class="del-modal-user__alert">
+                <span>Восстановление данных будет невозможно </span>
+                <p>(открытый вами магазин также будет удален)</p>
+            </div>
+            <form action="" class="del-modal-user__form">
+                <label for="">Введите пароль</label>
+                <input type="text">
+                <button class="red-btn"><span>Удалить</span></button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="modal personal-information-modal">
+    <div class="modal__container personal-information-modal__container">
+        <button class="modal__close personal-information-modal__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box personal-information-modal__box">
+           
+            <div class="personal-information-modal__title">Персональная информация</div>
+            
+            <form action="" class="personal-information-modal__form">
+                <div class="personal-information-modal__form-wrap">
+                    <div class="personal-information-modal__form-inner">
+                        <label for="">Имя Фамилия</label>
+                        <input type="text" placeholder="Алина Петрова">
+                    </div>
+                    <div class="personal-information-modal__form-inner">
+                        <label for="">Название профиля (канала)</label>
+                        <input type="text" placeholder="Света">
+                    </div>
+                </div>
+                <div class="personal-information-modal__form-wrap personal-information-modal__form-wrap--type">
+                    <div class="personal-information-modal__form-inner">
+                        <label for="">Электронная почта</label>
+                        <input type="text" placeholder="mailto:Infooooooo@gmail.com">
+                    </div>
+                </div>
+                <div class="personal-information-modal__form-wrap personal-information-modal__form-wrap--type">
+                    <div class="personal-information-modal__form-inner">
+                        <label for="">Описание профиля</label>
+                        <textarea class="personal-information-modal__textarea"
+                        placeholder=""></textarea>
+                    </div>
+                </div>
+                <button class="red-btn"><span>Сахранить изменения</span></button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="modal personal-information-thanks ">
+    <div class="modal__container personal-information-thanks__container">
+        <button class="modal__close personal-information-thanks__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box personal-information-thanks__box">
+            <div class="personal-information-thanks__icon">
+                <img src="./img/lk-m/galkacircle.svg" alt="">
+            </div>
+            <div class="personal-information-thanks__title">Персональная информация успешно изменена </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal modal-follow">
+    <div class="modal__container  modal-follow__container">
+        <button class="modal__close  modal-follow__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <div class="modal__box  modal-follow__box">
+            <div class="modal-follow__icon">
+                <img src="./img/icon/user-icon.svg" alt="">
+            </div>
+            <ul class="modal-follow__lists">
+                <li class="modal-follow__item">Подписчики (4)</li>
+                <li class="modal-follow__item">подписки (10)</li>
+            </ul>
+            <div class="modal-follow__inner">
+                <div class="modal-follow__table">
+                    <div class="modal-follow__table-avatar">
+                        <img src="./img/modal-follow/ava.png" alt="">
+                        <div class="modal-follow__table-avatar-star">
+                            <img src="./img/modal-follow/star.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-follow__table-inner">
+                        <div class="modal-follow__table-name">Vasiliy123</div>
+                        <div class="modal-follow__table-block">
+                            <div class="modal-follow__table-follows">5 Подписчиков</div>
+                            <div class="modal-follow__table-follow">10 Подписок</div>
+                        </div>
+                    </div>
+                    <button class="modal-follow__table-btn">Подписаться</button>
+                </div>
+                <div class="modal-follow__table">
+                    <div class="modal-follow__table-avatar">
+                        <img src="./img/modal-follow/ava.png" alt="">
+                        <div class="modal-follow__table-avatar-star">
+                            <img src="./img/modal-follow/star.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-follow__table-inner">
+                        <div class="modal-follow__table-name">Vasiliy123</div>
+                        <div class="modal-follow__table-block">
+                            <div class="modal-follow__table-follows">5 Подписчиков</div>
+                            <div class="modal-follow__table-follow">10 Подписок</div>
+                        </div>
+                    </div>
+                    <button class="modal-follow__table-btn">Подписаться</button>
+                </div>
+                <div class="modal-follow__table">
+                    <div class="modal-follow__table-avatar">
+                        <img src="./img/modal-follow/ava.png" alt="">
+                        <div class="modal-follow__table-avatar-star">
+                            <img src="./img/modal-follow/star.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-follow__table-inner">
+                        <div class="modal-follow__table-name">Vasiliy123</div>
+                        <div class="modal-follow__table-block">
+                            <div class="modal-follow__table-follows">5 Подписчиков</div>
+                            <div class="modal-follow__table-follow">10 Подписок</div>
+                        </div>
+                    </div>
+                    <button class="modal-follow__table-btn">Подписаться</button>
+                </div>
+                <div class="modal-follow__table">
+                    <div class="modal-follow__table-avatar">
+                        <img src="./img/modal-follow/ava.png" alt="">
+                        <div class="modal-follow__table-avatar-star">
+                            <img src="./img/modal-follow/star.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-follow__table-inner">
+                        <div class="modal-follow__table-name">Vasiliy123</div>
+                        <div class="modal-follow__table-block">
+                            <div class="modal-follow__table-follows">5 Подписчиков</div>
+                            <div class="modal-follow__table-follow">10 Подписок</div>
+                        </div>
+                    </div>
+                    <button class="modal-follow__table-btn">Подписаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <script src="./js/jquery-3.5.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.js"></script>

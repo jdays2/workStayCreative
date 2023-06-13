@@ -1,10 +1,7 @@
 <div class="lk-m__content">
     <div class="lk-m__title">Профиль магазина</div>
     <div class="lk-m__box" style="display: none;">
-        <div class="lk-m__star" >
-            
-                
-                    
+        <div class="lk-m__star" style="display: none;">
                         <div class="lk-m__start-content lk-m__start-content--one active">
                             <div class="lk-m__numbers">
                                 <div class="lk-m__numbers-box active--mobile">
@@ -32,7 +29,7 @@
                                             Укажите реквизиты
                                         </div>
                                         <form action="" class="lk-m__start-form">
-                                            <div class="lk-m__start-inner lk-m__start-inner-sel">
+                                            <div class="lk-m__start-inner lk-m__start-inner--sel">
                                                 <label for="">Тип организации</label>
                                                 <div class="select">
                                                     <input class="select-input" type="hidden" name="">
@@ -48,20 +45,24 @@
                                                 <div class="lk-m__start-inner">
                                                     <label for="">ИНН</label>
                                                     <input type="text" placeholder="209093802209">
+                                                    <div class="input-error">*Отсутствует заглавная буква</div>
                                                 </div>
                                                 <div class="lk-m__start-inner">
                                                     <label for="">Фамилия</label>
                                                     <input type="text" placeholder="Васильев">
+                                                    <div class="input-error">*Отсутствует заглавная буква</div>
                                                 </div>
                                             </div>
                                             <div class="lk-m__start-wrap">
                                                 <div class="lk-m__start-inner">
                                                     <label for="">Имя</label>
                                                     <input type="text" placeholder="Василий">
+                                                    <div class="input-error">*Отсутствует заглавная буква</div>
                                                 </div>
                                                 <div class="lk-m__start-inner">
                                                     <label for="">Отчество</label>
                                                     <input type="text" placeholder="Васильевич">
+                                                    <div class="input-error">*Отсутствует заглавная буква</div>
                                                 </div>
                                             </div>
                                         </form>
@@ -133,10 +134,13 @@
                                 </div>
                             </div>
                         </div>
-                 
-                    
                         <div class="lk-m__start-content lk-m__start-content--two">
-                            <div class="lk-m__numbers">
+                            <button href="" class="lk-m__prev lk-register__prev--two">
+                                <svg  viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z" fill="#383742"/>
+                                </svg>
+                            </button>
+                            <div class="lk-m__numbers lk-m__numbers--two">
                                 <div class="lk-m__numbers-box active--mobile lk-m__numbers-box--ready">
                                     <div class="lk-m__numbers-box-number ready"><span><img src="./img/icon/galkawhite.svg" alt=""></span></div>
                                     <div class="lk-m__numbers-box-text">Данные магазина</div>
@@ -165,6 +169,7 @@
                                             <div class="lk-m__start-inner lk-m__start-inner--sel">
                                                     <label for="">Серия и номер паспорта</label>
                                                     <input type="text" >
+                                                    <div class="input-error">*Отсутствует заглавная буква</div>
                                             </div>
                                             
                                         </form>
@@ -247,7 +252,12 @@
                             </div>
                         </div>
                         <div class="lk-m__start-content lk-m__start-content--three">
-                            <div class="lk-m__numbers">
+                            <button href="" class="lk-m__prev lk-register__prev--three">
+                                <svg  viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z" fill="#383742"/>
+                                </svg>
+                            </button>
+                            <div class="lk-m__numbers lk-m__numbers--two">
                                 <div class="lk-m__numbers-box lk-m__numbers-box--ready">
                                     <div class="lk-m__numbers-box-number ready"><span><img src="./img/icon/galkawhite.svg" alt=""></span></div>
                                     <div class="lk-m__numbers-box-text">Данные магазина</div>
@@ -273,16 +283,22 @@
                                             Добавьте адрес регистрации
                                         </div>
                                         <form action="" class="lk-m__start-form">
-                                            <div class="lk-m__start-inner">
+                                            <div class="lk-m__start-inner lk-m__start-inner--search">
                                                 <label >Область/республика/край</label>
                                                 <div class="lk-m__start-search">
-                                                    <input type="text">
-                                                    <button class="lk-m__start-search-btn">
+                                                    <input class="lk-m__search-input" type="text">
+                                                    <div class="lk-m__start-search-btn">
                                                         <svg  viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M9.88907 18.7781C14.7984 18.7781 18.7781 14.7984 18.7781 9.88907C18.7781 4.97977 14.7984 1 9.88907 1C4.97977 1 1 4.97977 1 9.88907C1 14.7984 4.97977 18.7781 9.88907 18.7781Z" stroke="#A0A1A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                                             <path d="M20.9999 20.9994L16.1665 16.166" stroke="#A0A1A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                                         </svg>
-                                                    </button>
+                                                    </div>
+                                                    <ul class="lk-m__search-show">
+                                                        <li><a href="">Москва</a></li>
+                                                        <li><a href="">Питер</a></li>
+                                                        <li><a href="">Казань</a></li>
+                                                        <li><a href="">Уфа</a></li>
+                                                    </ul>
                                                 </div>
                                             </div> 
                                             <div class="lk-m__start-wrap">
@@ -801,7 +817,7 @@
             </div>
         </div> 
     </div>
-    <nav class="profile__nav-lists-nav">
+    <nav class="profile__nav-lists-nav" >
         <ul class="profile__nav-lists">
             <li class="profile__nav-lists-item active" data-tab="1">Данные магазина</li>
             <li class="profile__nav-lists-item" data-tab="2">Информация для покупателей</li>
@@ -924,12 +940,12 @@
                 </button>
             </div>
             <div class="profile__del">
-                Вы можете<button>удалить магазин</button>
+                Вы можете<button class="button--m">удалить магазин</button>
             </div>
         </div>
      
     </div>
-    <div class="profile " data-tab="2">
+    <div class="profile " data-tab="2" >
         <div class="profile__content">
             <div class="profile__title">
                 Информация для покупателей

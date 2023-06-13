@@ -42,10 +42,7 @@ $(document).ready(function () {
     // форма спасибо за регу
 
 
-    $(".thanks-reg-open").click(function () {
-        $(".thanks-reg").addClass("active");
-
-    });
+  
 
 
     $(".thanks-reg__close").click(function () {
@@ -112,7 +109,31 @@ $(document).ready(function () {
     // /////////////////////////////////////////////////
 
 
-   
+     // редактировние профиля пользователя 2
+
+
+     $(".profile-salesman__btn-two").click(function () {
+        $(".personal-information-modal").addClass("active");
+
+    });
+
+
+    $(".personal-information-modal__close").click(function () {
+        $(".personal-information-modal").removeClass("active");
+
+    });
+
+    // /////////////////////////////////////////////////
+
+
+    
+    // убрать модалку спасибо после изменения данных профиля пользователя
+
+
+    $(".personal-information-thanks__close").click(function () {
+        $(".personal-information-thanks").removeClass("active");
+
+    });
 
 
     $(".profile-user-thanks__close").click(function () {
@@ -153,7 +174,7 @@ $(document).ready(function () {
 
 
     //  удалить магазин 
-    $(".profile__del > button").click(function () {
+    $(".button--m").click(function () {
         $(".del-modal").addClass("active");
 
     });
@@ -166,6 +187,18 @@ $(document).ready(function () {
 
 
     // 
+
+
+    $(".button--user").click(function () {
+        $(".del-modal-user").addClass("active");
+
+    });
+
+
+    $(".del-modal-user__close").click(function () {
+        $(".del-modal-user").removeClass("active");
+
+    });
 
     // смена шапки
 
@@ -317,6 +350,21 @@ $(document).ready(function () {
         });
 
     });
+
+
+
+    $(".lk-m__search-input").keyup(function () {
+        if ($(this).val()) {
+           $(".lk-m__search-show").show(300);
+        }
+        else {
+           $(".lk-m__search-show").hide(300);
+        }
+     });
+    //  $("button").click(function () {
+    //     $(".lk-m__search-input").val('');
+    //     $(this).hide(300).slideToggle(300);
+    //  });
 
 
 
@@ -554,7 +602,17 @@ uploadFileAvatar.addEventListener('change', (e) => {
 
 
 
+  $(".modal-follow__table").each(function () {
 
+        let btnFollow = $(this).find(".modal-follow__table-btn");
+        btnFollow.click(function () {
+            $(this).text(function(i, text){
+                return text === "Подписаться" ? "Подписки" : "Подписаться";
+            });
+            btnFollow.toggleClass('active');
+        });
+
+  });
 
 
 
