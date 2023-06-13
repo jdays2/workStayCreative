@@ -27,363 +27,99 @@
 			<section class="blog">
 				<div class="header-block">
 					<p class="header-block__title">Блог</p>
-					<p class="header-block__prod-count">
-						Представлено:
-						<span>6 457 продуктов</span>
-					</p>
-					<button
-						class="header-block__sort"
-						id="sort-btn">
-						<span>Сначала новые</span>
-						<img
-							src="./img/fonts/list-icon.svg"
-							alt=""
-							class="header-block__sort-btn-icon" />
-					</button>
 
-					<ul class="sort-popup">
-						<li
-							class="sort-popup__item"
-							id="checker">
-							<button class="checker">
+					<div class="header-block__wrapper">
+						<p class="header-block__prod-count">
+							Представлено:
+							<span>6 457 продуктов</span>
+						</p>
+
+						<div class="header-block__buttons-wrapper">
+							<button
+								class="header-block__sort"
+								id="sort-btn">
+								<span>Сначала новые</span>
 								<img
-									src="./img/icon/checker-icon-black.svg"
-									alt="" />
+									src="./img/fonts/list-icon.svg"
+									alt=""
+									class="header-block__sort-btn-icon" />
 							</button>
 
-							<p class="sort-popup__title">Сначала новые</p>
-						</li>
-
-						<li
-							class="sort-popup__item"
-							id="checker">
-							<button class="checker">
-								<img
-									src="./img/icon/checker-icon-black.svg"
-									alt="" />
-							</button>
-
-							<p class="sort-popup__title">Самые популярные</p>
-						</li>
-
-						<li
-							class="sort-popup__item"
-							id="checker">
-							<button class="checker">
-								<img
-									src="./img/icon/checker-icon-black.svg"
-									alt="" />
-							</button>
-
-							<p class="sort-popup__title">Последние 7 дней</p>
-						</li>
-
-						<li
-							class="sort-popup__item"
-							id="checker">
-							<button class="checker">
-								<img
-									src="./img/icon/checker-icon-black.svg"
-									alt="" />
-							</button>
-
-							<p class="sort-popup__title">Последние 30 дней</p>
-						</li>
-
-						<li
-							class="sort-popup__item"
-							id="checker">
-							<button class="checker">
-								<img
-									src="./img/icon/checker-icon-black.svg"
-									alt="" />
-							</button>
-
-							<p class="sort-popup__title">Последние 365 дней</p>
-						</li>
-
-						<li
-							class="sort-popup__item"
-							id="checker">
-							<button class="checker">
-								<img
-									src="./img/icon/checker-icon-black.svg"
-									alt="" />
-							</button>
-
-							<p class="sort-popup__title">Все время</p>
-						</li>
-					</ul>
-
-					<div class="filter-popup__wrapper">
-						<div class="filter-popup">
-							<div class="filter-popup__settings">
-								<div class="filter-popup__slider-wrapper">
-									<p class="filter-popup__title">Ценовой диапазон</p>
-									<div id="price-slider"></div>
-									<input
-										type="hidden"
-										id="min-price"
-										name="min-price" />
-									<input
-										type="hidden"
-										id="max-price"
-										name="max-price" />
-
-									<div class="filter-popup__price-value-wrapper">
-										<p
-											class="filter-popup__price-value"
-											id="min-price-value"></p>
-										<p
-											class="filter-popup__price-value"
-											id="max-price-value"></p>
-									</div>
-								</div>
-
-								<div class="filter-popup__type-list">
-									<p class="filter-popup__title">Тип файла</p>
-									<ul>
-										<li
-											class="filter-popup__type-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>.3DM</span>
-										</li>
-
-										<li
-											class="filter-popup__type-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>.3DC</span>
-										</li>
-
-										<li
-											class="filter-popup__type-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>.ABR</span>
-										</li>
-
-										<li
-											class="filter-popup__type-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>тип</span>
-										</li>
-
-										<li
-											class="filter-popup__type-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>тип</span>
-										</li>
-
-										<li
-											class="filter-popup__type-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>тип</span>
-										</li>
-
-										<li
-											class="filter-popup__type-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>тип</span>
-										</li>
-
-										<li
-											class="filter-popup__type-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>тип</span>
-										</li>
-
-										<li
-											class="filter-popup__type-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>тип</span>
-										</li>
-
-										<li
-											class="filter-popup__type-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>тип</span>
-										</li>
-
-										<li
-											class="filter-popup__type-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>тип</span>
-										</li>
-
-										<li
-											class="filter-popup__type-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>тип</span>
-										</li>
-									</ul>
-								</div>
-
-								<div class="filter-popup__features-list">
-									<p class="filter-popup__title">Характеристики</p>
-									<ul>
-										<li
-											class="filter-popup__features-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>Вектор</span>
-										</li>
-
-										<li
-											class="filter-popup__features-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>Растр</span>
-										</li>
-
-										<li
-											class="filter-popup__features-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>Веб-шрифт</span>
-										</li>
-
-										<li
-											class="filter-popup__features-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>Мозаичное</span>
-										</li>
-
-										<li
-											class="filter-popup__features-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>тип</span>
-										</li>
-
-										<li
-											class="filter-popup__features-item"
-											id="checker">
-											<button class="checker">
-												<img
-													src="./img/icon/checker-icon.svg"
-													alt="" />
-											</button>
-
-											<span>тип</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="filter-popup__buttons">
-								<button class="filter-popup__close-btn">
-									<img
-										src="./img/icon/close.svg"
-										alt="" />
-								</button>
-								<button class="filter-popup__apply-btn">
-									<span>Применить</span>
-									<img
-										src="./img/icon/right-arrow-icon-white.svg"
-										alt="" />
-								</button>
-
-								<button class="filter-popup__reset-btn">
-									<span>Очистить</span>
-								</button>
-							</div>
+							<ul class="sort-popup">
+								<li
+									class="sort-popup__item"
+									id="checker">
+									<button class="checker">
+										<img
+											src="./img/icon/checker-icon-black.svg"
+											alt="" />
+									</button>
+	
+									<p class="sort-popup__title">Сначала новые</p>
+								</li>
+	
+								<li
+									class="sort-popup__item"
+									id="checker">
+									<button class="checker">
+										<img
+											src="./img/icon/checker-icon-black.svg"
+											alt="" />
+									</button>
+	
+									<p class="sort-popup__title">Самые популярные</p>
+								</li>
+	
+								<li
+									class="sort-popup__item"
+									id="checker">
+									<button class="checker">
+										<img
+											src="./img/icon/checker-icon-black.svg"
+											alt="" />
+									</button>
+	
+									<p class="sort-popup__title">Последние 7 дней</p>
+								</li>
+	
+								<li
+									class="sort-popup__item"
+									id="checker">
+									<button class="checker">
+										<img
+											src="./img/icon/checker-icon-black.svg"
+											alt="" />
+									</button>
+	
+									<p class="sort-popup__title">Последние 30 дней</p>
+								</li>
+	
+								<li
+									class="sort-popup__item"
+									id="checker">
+									<button class="checker">
+										<img
+											src="./img/icon/checker-icon-black.svg"
+											alt="" />
+									</button>
+	
+									<p class="sort-popup__title">Последние 365 дней</p>
+								</li>
+	
+								<li
+									class="sort-popup__item"
+									id="checker">
+									<button class="checker">
+										<img
+											src="./img/icon/checker-icon-black.svg"
+											alt="" />
+									</button>
+	
+									<p class="sort-popup__title">Все время</p>
+								</li>
+							</ul>
 						</div>
+
 					</div>
 				</div>
 
