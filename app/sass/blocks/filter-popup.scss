@@ -9,8 +9,11 @@
 	height: -moz-fit-content;
 	height: fit-content;
 	width: 180rem;
+	position: absolute;
 	padding: 6.1rem 6rem;
-	top: 9.7rem;
+	bottom: -63rem;
+	right: -52rem;
+	justify-content: space-between;
 	&__wrapper {
 		display: none;
 		position: absolute;
@@ -36,6 +39,7 @@
 		background: rgba(224, 225, 231, 0.3);
 		border-radius: 3rem;
 		padding: 4rem 6rem;
+		height: 100%;
 	}
 
 	&__title {

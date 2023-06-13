@@ -2279,7 +2279,19 @@
 	}
 
 	.header-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
 		width: 70rem;
+		flex-wrap: wrap;
+	}
+
+	.header-block__buttons-wrapper {
+		gap: 1rem;
+	}
+
+	.header-block__wrapper {
 		flex-wrap: wrap;
 	}
 
@@ -2351,6 +2363,7 @@
 	.filter-popup {
 		z-index: 20;
 		width: 69rem;
+		position: static;
 		border-radius: 6rem;
 		padding: 6rem 3rem 5rem;
 
@@ -2906,7 +2919,8 @@
 
 				span {
 					left: 0;
-				}}
+				}
+			}
 
 			.basic-card__price--crossed {
 				position: relative;
@@ -3049,5 +3063,25 @@
 				margin-left: -0.7rem;
 			}
 		}
+	}
+
+	.header-block__swiper {
+		overflow: visible;
+		margin-left: 0;
+	}
+
+	.fonts {
+		overflow: hidden;
+	}
+
+	.header-block__item {
+		height: 48.8rem;
+	}
+
+	.header-block__item-title {
+		font-weight: 700;
+		font-size: 7.4rem;
+		line-height: 7.4rem;
+		bottom: 4.4rem;
 	}
 }
