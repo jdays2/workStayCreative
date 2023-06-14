@@ -3100,6 +3100,7 @@
 			line-height: 7.2rem;
 			letter-spacing: 0.02em;
 			color: #383742;
+			width: auto;
 		}
 
 		&__date {
@@ -3110,21 +3111,77 @@
 			margin-bottom: 2rem;
 		}
 
+		&__navigation {
+			display: none;
+		}
+
 		&__brief {
 			font-weight: 500;
 			font-size: 2.8rem;
 			line-height: 4.4rem;
+
+			margin-bottom: 4rem;
 		}
 
 		&__author-img {
 			width: 9.038rem;
 			height: 9.038rem;
+			padding: 1.482rem;
+			
+			margin-right: 2.4rem;
 		}
 
 		&__author {
 			font-weight: 500;
 			font-size: 2.8rem;
 			line-height: 3.2rem;
+		}
+
+		&__hero-img {
+			margin: 0 auto;
+			width: 69rem;
+
+			margin-bottom: 6rem;
+		}
+
+		&__content {
+			width: 100%;
+			
+			margin-bottom: 12rem;
+		}
+
+		&__content-title {
+			font-weight: 600;
+			font-size: 4rem;
+			line-height: 4.8rem;
+
+			margin-bottom: 2rem;
+		}
+
+		&__content-part {
+			font-weight: 500;
+			font-size: 2.8rem;
+			line-height: 4.4rem;
+		}
+
+		&__content-spetial {
+			padding: 4rem;
+			font-weight: 500;
+			font-size: 2.8rem;
+			line-height: 4.4rem;
+		}
+
+		&__content-sub {
+			font-weight: 500;
+			font-size: 2.8rem;
+			line-height: 5.2rem;
+
+			img {
+				width: 5rem;
+				height: 5rem;
+
+				margin-right: 2rem;
+			}
 		}
 	}
 }

@@ -1,0 +1,116 @@
+.categories {
+	padding: 28.6rem 6rem 0rem;
+
+  &__title {
+    font-family: 'Austin Cyr';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7.3rem;
+    line-height: 7rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #383742;
+    max-width: 156rem;
+    text-align: center;
+    
+    margin-bottom: 6rem;
+  }
+
+  &__hero {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__hero-img {
+    width: 71.6rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__hero-sub {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 7.8rem;
+  }
+
+  &__product-stats {
+    font-family: 'Austin Cyr';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7.3rem;
+    line-height: 7rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #383742;
+
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    span {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: #383742;
+
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__profile-img {
+    width: 12.3rem;
+    height: 12.3rem;
+    border-radius: 100rem;
+    background-color: #EAEBEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      border-radius: 100rem;
+      width: 11.3rem;
+      height: 11.3rem;
+    }
+
+    &:not(:first-child) {
+      margin-left: -2.8rem;
+    }
+  }
+
+  &__people {
+    display: flex;
+    gap: 2.3rem;
+    align-items: center;
+  }
+
+  &__people-container {
+    display: flex;
+  }
+
+  &__people-title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.02em;
+    color: #383742;
+  }
+}

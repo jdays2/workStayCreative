@@ -1,8 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .articles {
 	padding: 31.7rem 6rem 0rem;
 	background-color: #eaebef;
 	width: 100%;
-
 	.advice-c {
 		width: 100%;
 	}
@@ -110,6 +113,48 @@
 		margin-right: 2rem;
 	}
 
+	&__navigation {
+		display: flex;
+		flex-direction: column;
+		gap: 5.5rem;
+		position: absolute;
+
+		border-left: 0.15rem solid rgba(160, 161, 164, 0.3);
+	}
+
+	&__navigation-item {
+		padding-left: 3rem;
+		position: relative;
+		display: flex;
+		max-width: 22rem;
+		align-items: center;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2.6rem;
+		color: #a0a1a4;
+	}
+	
+	&__navigation-item::before {
+		content: '';
+		position: absolute;
+		left: -0.1rem;
+		top: 0;
+		bottom: 0;
+		width: 0.3rem;
+		background-color: #de755e00;
+		border-radius: 1rem;
+	}
+	
+	&__navigation-item--active {
+		color: #383742;
+	}
+	
+	&__navigation-item--active::before {
+		background-color: #de755e;
+	}
+
 	&__content {
 		width: 118rem;
 		margin: 0 auto;
@@ -164,7 +209,7 @@
 
 	&__content-spetial {
 		padding: 5.5rem 5rem;
-    margin-bottom: 1.6rem;
+		margin-bottom: 1.6rem;
 
 		border-radius: 5.5rem;
 		background-color: #de755e;
