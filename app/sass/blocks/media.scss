@@ -2939,7 +2939,7 @@
 	}
 
 	.blog {
-		padding: 21rem 3rem 9.8rem;
+		padding: 21rem 3rem 0rem;
 
 		.header-block {
 			width: 100%;
@@ -3084,5 +3084,47 @@
 		font-size: 7.4rem;
 		line-height: 7.4rem;
 		bottom: 4.4rem;
+	}
+
+	.articles {
+		padding: 21rem 3rem 0rem;
+	
+		&__head {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__title {
+			font-weight: 700;
+			font-size: 6rem;
+			line-height: 7.2rem;
+			letter-spacing: 0.02em;
+			color: #383742;
+		}
+
+		&__date {
+			font-weight: 500;
+			font-size: 2.8rem;
+			line-height: 3.2rem;
+
+			margin-bottom: 2rem;
+		}
+
+		&__brief {
+			font-weight: 500;
+			font-size: 2.8rem;
+			line-height: 4.4rem;
+		}
+
+		&__author-img {
+			width: 9.038rem;
+			height: 9.038rem;
+		}
+
+		&__author {
+			font-weight: 500;
+			font-size: 2.8rem;
+			line-height: 3.2rem;
+		}
 	}
 }
