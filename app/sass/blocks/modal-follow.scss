@@ -1,12 +1,24 @@
 .modal-follow {
-    display: flex;
+   
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 
+    &__container {
+        margin: 0 auto;
+    }
     &__box {
         padding: 6rem 8rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items:center;
+        
     }
 
     &__icon {
@@ -140,6 +152,71 @@
         
     }
 
+    &__lists {
+        display: flex;
+        padding-bottom: 1.4rem;
+        margin-bottom: 3.2rem;
+        border-bottom: 0.15rem solid rgba(160, 161, 164, 0.3);
+    }
+
+    &__item {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #A0A1A4;
+        cursor: pointer;
+        position: relative;
+        &::before {
+            position: absolute;
+            content:'';
+            width: 100%;
+            height: 0.3rem;
+            bottom: -1.6rem;
+        }
+    }
+
+    &__item--follows {
+        margin-right: 3.1rem;
+    }
+
+    &__item--follows.active {
+        color: #383742;
+        &::before {
+            background: #DE755E;
+        }
+    }
+
+    &__item--follow.active {
+        color: #383742;
+        &::before {
+            background: #DE755E;
+        }
+    }
+
+    &__inner {
+        display: none;
+    }
 
     
+    &__inner--one.active {
+        display: block;
+    }
+    &__inner--two.active {
+        display: block;
+    }
+    
+}
+
+
+
+.modal-follow::-webkit-scrollbar{
+    display: none;
+}
+
+
+.modal-follow.active {
+    display: block;
 }

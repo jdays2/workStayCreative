@@ -601,8 +601,9 @@ uploadFileAvatar.addEventListener('change', (e) => {
 
 
 
+// кнопки в модальном окне подписчика
 
-  $(".modal-follow__table").each(function () {
+$(".modal-follow__table").each(function () {
 
         let btnFollow = $(this).find(".modal-follow__table-btn");
         btnFollow.click(function () {
@@ -612,19 +613,69 @@ uploadFileAvatar.addEventListener('change', (e) => {
             btnFollow.toggleClass('active');
         });
 
-  });
+});
+
+
+
+//  модальное окно для с подписчиками 
+
+$(".profile-user__follower").click(function () {
+    $(".modal-follow").addClass("active");
+    $(".modal-follow__item--follows").addClass("active");
+    $(".modal-follow__inner--one").addClass("active");
+});
+
+
+$(".profile-user__follows").click(function () {
+    $(".modal-follow").addClass("active");
+    $(".modal-follow__item--follow").addClass("active");
+    $(".modal-follow__inner--two").addClass("active");
+});
+
+
+$(".modal-follow__item--follows").click(function () {
+    $(".modal-follow__item--follows").addClass("active");
+    $(".modal-follow__item--follow").removeClass("active");
+    $(".modal-follow__inner--one").addClass("active");
+    $(".modal-follow__inner--two").removeClass("active");
+});
+
+
+$(".modal-follow__item--follow").click(function () {
+    $(".modal-follow__item--follow").addClass("active");
+    $(".modal-follow__item--follows").removeClass("active");
+    $(".modal-follow__inner--two").addClass("active");
+    $(".modal-follow__inner--one").removeClass("active");
+});
+
+
+$(".modal-follow__close").click(function () {
+    $(".modal-follow__inner--one").removeClass("active");
+    $(".modal-follow__inner--two").removeClass("active");
+    $(".modal-follow").removeClass("active");
+    $(".modal-follow__item--follow").removeClass("active");
+    $(".modal-follow__item--follows").removeClass("active");
+});
 
 
 
 
-
-
-
-
-
-
-
-
+$(document).on('change', '.profile-password__checkbox > input[type=checkbox]', function () {
+    var $this = $(this), $chks = $(document.getElementsByName(this.name)), $all = $chks.filter(".chk-all");
+    
+    if ($this.hasClass('chk-all')) {
+      $chks.prop('checked', $this.prop('checked'));
+    } else switch ($chks.filter(":checked").length) {
+      case +$all.prop('checked'):
+        $all.prop('checked', false).prop('indeterminate', false);
+        break;
+      case $chks.length - !!$this.prop('checked'):
+        $all.prop('checked', true).prop('indeterminate', false);
+        break;
+      default:
+        $all.prop('indeterminate', true);
+    }
+});
 
 
 

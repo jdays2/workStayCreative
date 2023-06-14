@@ -1362,10 +1362,12 @@
                 <div class="profile-user-modal__inner">
                     <label for="">ФИО</label>
                     <input type="text">
+                    <div class="input-error">*Отсутствует заглавная буква</div>
                 </div>
                 <div class="profile-user-modal__inner">
                     <label for="">Серия и номер паспорта</label>
                     <input type="text">
+                    <div class="input-error">*Отсутствует заглавная буква</div>
                 </div>
             </div>
             <div class="profile-user-modal__wrap">
@@ -1387,17 +1389,20 @@
                 <div class="profile-user-modal__inner">
                     <label for="">Город</label>
                     <input type="text">
+                    <div class="input-error">*Отсутствует заглавная буква</div>
                 </div>
             </div>
             <div class="profile-user-modal__wrap">
                 <div class="profile-user-modal__inner">
                     <label for="">Улица</label>
                     <input type="text">
+                    <div class="input-error">*Отсутствует заглавная буква</div>
                 </div>
                 <div class="profile-user-modal__wrap-block">
                     <div class="profile-user-modal__inner">
                         <label for="">Дом</label>
                         <input type="text">
+                        <div class="input-error">*Отсутствует заглавная буква</div>
                     </div>
                     <div class="profile-user-modal__inner">
                         <label for="">Помещение</label>
@@ -1406,6 +1411,7 @@
                     <div class="profile-user-modal__inner">
                         <label for="">Корпус</label>
                         <input type="text">
+                        <div class="input-error">*Отсутствует заглавная буква</div>
                     </div>
                 </div>
 
@@ -1414,6 +1420,7 @@
                 <div class="profile-user-modal__inner">
                     <label for="">Индекс</label>
                     <input type="text">
+                    <div class="input-error">*Отсутствует заглавная буква</div>
                 </div>
                 <label class="checkbox profile-user-modal__checkbox">Почтовый адрес отличается от адреса регистрации
                     <input type="checkbox" checked="checked">
@@ -1717,6 +1724,7 @@
             <form action="" class="del-modal-user__form">
                 <label for="">Введите пароль</label>
                 <input type="text">
+                <div class="input-error">*Отсутствует заглавная буква</div>
                 <button class="red-btn"><span>Удалить</span></button>
             </form>
             
@@ -1739,16 +1747,19 @@
                     <div class="personal-information-modal__form-inner">
                         <label for="">Имя Фамилия</label>
                         <input type="text" placeholder="Алина Петрова">
+                        <div class="input-error">*Отсутствует заглавная буква</div>
                     </div>
                     <div class="personal-information-modal__form-inner">
                         <label for="">Название профиля (канала)</label>
                         <input type="text" placeholder="Света">
+                        <div class="input-error">*Отсутствует заглавная буква</div>
                     </div>
                 </div>
                 <div class="personal-information-modal__form-wrap personal-information-modal__form-wrap--type">
                     <div class="personal-information-modal__form-inner">
                         <label for="">Электронная почта</label>
                         <input type="text" placeholder="mailto:Infooooooo@gmail.com">
+                        <div class="input-error">*Отсутствует заглавная буква</div>
                     </div>
                 </div>
                 <div class="personal-information-modal__form-wrap personal-information-modal__form-wrap--type">
@@ -1756,6 +1767,7 @@
                         <label for="">Описание профиля</label>
                         <textarea class="personal-information-modal__textarea"
                         placeholder=""></textarea>
+                        <div class="input-error">*Отсутствует заглавная буква</div>
                     </div>
                 </div>
                 <button class="red-btn"><span>Сахранить изменения</span></button>
@@ -1791,10 +1803,10 @@
                 <img src="./img/icon/user-icon.svg" alt="">
             </div>
             <ul class="modal-follow__lists">
-                <li class="modal-follow__item">Подписчики (4)</li>
-                <li class="modal-follow__item">подписки (10)</li>
+                <li class="modal-follow__item modal-follow__item--follows">Подписчики (4)</li>
+                <li class="modal-follow__item modal-follow__item--follow">подписки (10)</li>
             </ul>
-            <div class="modal-follow__inner">
+            <div class="modal-follow__inner modal-follow__inner--one">
                 <div class="modal-follow__table">
                     <div class="modal-follow__table-avatar">
                         <img src="./img/modal-follow/ava.png" alt="">
@@ -1859,6 +1871,57 @@
                     </div>
                     <button class="modal-follow__table-btn">Подписаться</button>
                 </div>
+            </div>
+            <div class="modal-follow__inner modal-follow__inner--two">
+                <div class="modal-follow__table">
+                    <div class="modal-follow__table-avatar">
+                        <img src="./img/modal-follow/ava.png" alt="">
+                        <div class="modal-follow__table-avatar-star">
+                            <img src="./img/modal-follow/star.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-follow__table-inner">
+                        <div class="modal-follow__table-name">Vasiliy123</div>
+                        <div class="modal-follow__table-block">
+                            <div class="modal-follow__table-follows">5 Подписчиков</div>
+                            <div class="modal-follow__table-follow">10 Подписок</div>
+                        </div>
+                    </div>
+                    <button class="modal-follow__table-btn">Подписаться</button>
+                </div>
+                <div class="modal-follow__table">
+                    <div class="modal-follow__table-avatar">
+                        <img src="./img/modal-follow/ava.png" alt="">
+                        <div class="modal-follow__table-avatar-star">
+                            <img src="./img/modal-follow/star.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-follow__table-inner">
+                        <div class="modal-follow__table-name">Vasiliy123</div>
+                        <div class="modal-follow__table-block">
+                            <div class="modal-follow__table-follows">5 Подписчиков</div>
+                            <div class="modal-follow__table-follow">10 Подписок</div>
+                        </div>
+                    </div>
+                    <button class="modal-follow__table-btn">Подписаться</button>
+                </div>
+                <div class="modal-follow__table">
+                    <div class="modal-follow__table-avatar">
+                        <img src="./img/modal-follow/ava.png" alt="">
+                        <div class="modal-follow__table-avatar-star">
+                            <img src="./img/modal-follow/star.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-follow__table-inner">
+                        <div class="modal-follow__table-name">Vasiliy123</div>
+                        <div class="modal-follow__table-block">
+                            <div class="modal-follow__table-follows">5 Подписчиков</div>
+                            <div class="modal-follow__table-follow">10 Подписок</div>
+                        </div>
+                    </div>
+                    <button class="modal-follow__table-btn">Подписаться</button>
+                </div>
+                
             </div>
         </div>
     </div>

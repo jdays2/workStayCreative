@@ -5527,7 +5527,8 @@ main {
     color: #DE755E;
     padding-left: 3.6rem;
     position: relative;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    cursor: pointer; }
     .profile-user__follower::before {
       position: absolute;
       content: '';
@@ -5547,7 +5548,8 @@ main {
     color: #DE755E;
     padding-left: 3.6rem;
     position: relative;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    cursor: pointer; }
     .profile-user__follows::before {
       position: absolute;
       content: '';
@@ -6690,9 +6692,16 @@ main {
   display: flex; }
 
 .modal-follow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
+  .modal-follow__container {
+    margin: 0 auto; }
   .modal-follow__box {
     padding: 6rem 8rem;
     display: -webkit-box;
@@ -6818,6 +6827,203 @@ main {
   .modal-follow__table-btn.active {
     background: #FFFFFF;
     color: #383742; }
+  .modal-follow__lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 1.4rem;
+    margin-bottom: 3.2rem;
+    border-bottom: 0.15rem solid rgba(160, 161, 164, 0.3); }
+  .modal-follow__item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #A0A1A4;
+    cursor: pointer;
+    position: relative; }
+    .modal-follow__item::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 0.3rem;
+      bottom: -1.6rem; }
+  .modal-follow__item--follows {
+    margin-right: 3.1rem; }
+  .modal-follow__item--follows.active {
+    color: #383742; }
+    .modal-follow__item--follows.active::before {
+      background: #DE755E; }
+  .modal-follow__item--follow.active {
+    color: #383742; }
+    .modal-follow__item--follow.active::before {
+      background: #DE755E; }
+  .modal-follow__inner {
+    display: none; }
+  .modal-follow__inner--one.active {
+    display: block; }
+  .modal-follow__inner--two.active {
+    display: block; }
+
+.modal-follow::-webkit-scrollbar {
+  display: none; }
+
+.modal-follow.active {
+  display: block; }
+
+.profile-password {
+  background: #FFFFFF;
+  border-radius: 5.5rem;
+  width: 100%;
+  padding: 6rem; }
+  .profile-password__title {
+    margin-bottom: 6rem; }
+    .profile-password__title strong {
+      display: block;
+      font-family: 'Austin Cyr';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.7rem;
+      line-height: 100%;
+      letter-spacing: 0.02em;
+      color: #383742; }
+    .profile-password__title span {
+      display: block;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.02em;
+      margin-top: 1.2rem;
+      color: #A0A1A4; }
+  .profile-password__form-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 59.3rem; }
+    .profile-password__form-inner label {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.02em;
+      display: block;
+      margin-bottom: 1.2rem;
+      color: #383742; }
+    .profile-password__form-inner input {
+      position: relative;
+      width: 100%;
+      background: #EAEBEF;
+      border-radius: 1rem;
+      padding: 1.4rem 2.4rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 125%;
+      color: #000000;
+      border: none; }
+  .profile-password__form-wrap {
+    margin-bottom: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .profile-password__form-wrap--two {
+    margin-bottom: 0; }
+  .profile-password__text {
+    margin-top: 1.2rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 125%;
+    color: #A0A1A4;
+    width: 82.9rem;
+    margin-bottom: 5.2rem; }
+  .profile-password__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .profile-password__btns .red-btn {
+      width: 28.2rem;
+      margin-right: 5.2rem;
+      padding: 2.6rem 4.9rem; }
+    .profile-password__btns a {
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      display: block;
+      letter-spacing: 0.02em;
+      color: #DE755E; }
+  .profile-password__inner {
+    margin-bottom: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .profile-password__inner-left {
+    margin-right: 11.5rem; }
+  .profile-password__checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.02em;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    padding-left: 5.6rem;
+    padding-top: 0.55rem;
+    margin-bottom: 1.6rem; }
+    .profile-password__checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0; }
+  .profile-password__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 4rem;
+    background: #E0E1E7;
+    border-radius: 1rem; }
+  .profile-password__checkbox:hover input ~ .profile-password__checkmark {
+    background: #E0E1E7; }
+  .profile-password__checkbox input:checked ~ .profile-password__checkmark {
+    -webkit-box-shadow: 8.59504px 8.59504px 20px rgba(56, 55, 66, 0.11);
+            box-shadow: 8.59504px 8.59504px 20px rgba(56, 55, 66, 0.11); }
+  .profile-password__checkbox input:checked ~ .profile-password__span {
+    color: #DE755E; }
+  .profile-password__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none; }
+  .profile-password__checkbox input:checked ~ .profile-password__checkmark:after {
+    display: block; }
+  .profile-password__checkbox .profile-password__checkmark:after {
+    position: absolute;
+    content: '';
+    background-image: url(../img/icon/check.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(-80%, -50%);
+            transform: translate(-80%, -50%);
+    width: 1.5rem;
+    height: 1.5rem; }
 
 @media only all and (max-width: 48em) {
   html {
@@ -8638,4 +8844,88 @@ main {
     margin-bottom: 6rem; }
   .personal-information-thanks__title {
     font-size: 6rem;
-    line-height: 7.2rem; } }
+    line-height: 7.2rem; }
+  .modal-follow {
+    padding: 2rem 3rem; }
+    .modal-follow__box {
+      padding: 6rem 3rem; }
+    .modal-follow__icon {
+      width: 11rem;
+      height: 11rem;
+      margin-bottom: 5rem; }
+    .modal-follow__lists {
+      padding-bottom: 2.8rem;
+      border-bottom: 0.3rem solid rgba(160, 161, 164, 0.3);
+      margin-bottom: 5rem; }
+    .modal-follow__item {
+      font-size: 2.8rem;
+      line-height: 3.4rem; }
+      .modal-follow__item::before {
+        height: 0.6rem;
+        bottom: -3.1rem; }
+    .modal-follow__inner {
+      width: 100%; }
+    .modal-follow__table-avatar {
+      width: 11rem;
+      height: 11rem; }
+    .modal-follow__item--follows {
+      margin-right: 8rem; }
+    .modal-follow__table {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 2rem;
+      border-radius: 5rem; }
+    .modal-follow__table-avatar {
+      margin-right: 0;
+      margin-bottom: 1.6rem; }
+    .modal-follow__table-btn {
+      position: initial; }
+    .modal-follow__table-avatar-star {
+      width: 3.2rem;
+      height: 3.2rem; }
+    .modal-follow__table-inner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .modal-follow__table-name {
+      font-size: 2.8rem;
+      line-height: 3.4rem;
+      margin-bottom: 0.8rem; }
+    .modal-follow__table-block {
+      margin-bottom: 4rem; }
+    .modal-follow__table-follow {
+      font-size: 2.8rem;
+      line-height: 3.4rem;
+      padding-left: 4rem; }
+      .modal-follow__table-follow::before {
+        width: 3rem;
+        height: 3rem; }
+    .modal-follow__table-follows {
+      font-size: 2.8rem;
+      line-height: 3.4rem;
+      padding-left: 4rem;
+      position: relative;
+      margin-right: 2rem; }
+      .modal-follow__table-follows::before {
+        width: 3rem;
+        height: 3rem; }
+    .modal-follow__table-btn {
+      width: 100%;
+      height: 11rem;
+      font-size: 2.8rem;
+      line-height: 120%; }
+  main {
+    overflow: hidden; } }
