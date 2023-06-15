@@ -18,13 +18,13 @@
 	</head>
 
 	<body>
-		<header class="header header--active">
+		<header class="header">
 	<div class="header__wrapper">
 		<div class="header__head">
 			<button class="header__burger">
-				<span></span>
-				<span></span>
-				<span></span>
+				<div class="header__burger-content">
+					<span class="header__burger-item"></span>
+				</div>
 			</button>
 
 			<div class="header__search">
@@ -121,64 +121,6 @@
 			</button>
 		</div>
 
-		<div class="burger__search">
-			<button
-				class="burger__close-btn"
-				id="mobile-search-close">
-				<span></span>
-				<span></span>
-			</button>
-
-			<form class="header__search--burger">
-				<button type="submit">
-					<img
-						src="./img/header/search.svg"
-						alt="" />
-				</button>
-				<input
-					class="header__search-input header__search-input--burger"
-					placeholder="Поиск"
-					type="text" />
-			</form>
-
-			<button class="header__item header__item--burger">
-				<span class="header__item--slide">Все категории</span>
-			</button>
-
-			<img
-				src="./img/header/search-backgraund-mobile.svg"
-				alt=""
-				class="burger__serch-backgraund-img" />
-
-			<p class="burger__search-title">
-				Добро пожаловать в Stay Creative Marketplace!
-			</p>
-
-			<p class="burger__search-subtitle">Введите свой запрос в поле Поиска</p>
-		</div>
-
-		<div
-			class="burger__categ-item"
-			id="mobile-categorys">
-			<div class="burger__categ-item-title">
-				<button
-					class="burger__categ-item-btn"
-					id="burger-categ-btn">
-					<img
-						src="./img/header/arrow-icon.svg"
-						alt="" />
-				</button>
-
-				<div>Все категории</div>
-			</div>
-
-			<ul class="header__lists">
-				<li class="header__item"><a>Подкатегория 1</a></li>
-				<li class="header__item"><a>Подкатегория 2</a></li>
-				<li class="header__item"><a>Подкатегория N</a></li>
-			</ul>
-		</div>
-
 		<div
 			class="burger__categ-item"
 			id="mobile-info">
@@ -202,59 +144,80 @@
 				<li class="header__item"><a href="/blog.html">Блог</a></li>
 			</ul>
 		</div>
-
-		<nav class="header__nav">
-			<ul
-				class="header__lists"
-				id="mobile__lists">
-				<li class="header__item header__item--slide">
-					<button id="categorys-btn">Все категории</button>
-				</li>
-				<li class="header__item"><a href="/fonts.html">Шрифты</a></li>
-				<li class="header__item"><a href="">Фотографии</a></li>
-				<li class="header__item"><a href="/vectors.html">Векторы</a></li>
-				<li class="header__item"><a href="">Мокапы</a></li>
-				<li class="header__item header__item--slide">
-					<button id="info-btn">Больше информации</button>
-				</li>
-			</ul>
-
-			<div class="burger__mobile-bar">
-				<a
-					class="burger__item"
-					href="/cart.html">
-					<div>
-						<img
-							src="./img/header/bag.svg"
-							alt="" />
-					</div>
-					<span>Корзина</span>
-				</a>
-
-				<a class="burger__item">
-					<div>
-						<img
-							src="./img/header/heart.svg"
-							alt="" />
-					</div>
-					<span>Избранное</span>
-				</a>
-
-				<a class="burger__item">
-					<div>
-						<img
-							src="./img/header/store.svg"
-							alt="" />
-					</div>
-					<span>Мой магазин</span>
-				</a>
-
-				<a class="header__shop-button header__shop-button--burger">
-					<span>Открыть магазин</span>
-				</a>
-			</div>
-		</nav>
 	</div>
+
+	<div class="burger__categ-item header__modal"
+	id="mobile-categorys">
+	<div class="burger__categ-item-title">
+		<button
+			class="burger__categ-item-btn"
+			id="burger-categ-btn">
+			<img
+				src="./img/header/arrow-icon.svg"
+				alt="" />
+		</button>
+
+		<div>Все категории</div>
+	</div>
+
+	<ul class="header__lists">
+		<li class="header__item"><a>Подкатегория 1</a></li>
+		<li class="header__item"><a>Подкатегория 2</a></li>
+		<li class="header__item"><a>Подкатегория N</a></li>
+	</ul>
+</div>
+
+	<nav class="header__nav header__modal">
+		<ul
+			class="header__lists"
+			id="mobile__lists">
+			<li class="header__item header__item--slide">
+				<button id="categorys-btn">Все категории</button>
+			</li>
+			<li class="header__item"><a href="/fonts.html">Шрифты</a></li>
+			<li class="header__item"><a href="">Фотографии</a></li>
+			<li class="header__item"><a href="/vectors.html">Векторы</a></li>
+			<li class="header__item"><a href="">Мокапы</a></li>
+			<li class="header__item header__item--slide">
+				<button id="info-btn">Больше информации</button>
+			</li>
+		</ul>
+
+		<div class="burger__mobile-bar">
+			<a
+				class="burger__item"
+				href="/cart.html">
+				<div>
+					<img
+						src="./img/header/bag.svg"
+						alt="" />
+				</div>
+				<span>Корзина</span>
+			</a>
+
+			<a class="burger__item">
+				<div>
+					<img
+						src="./img/header/heart.svg"
+						alt="" />
+				</div>
+				<span>Избранное</span>
+			</a>
+
+			<a class="burger__item">
+				<div>
+					<img
+						src="./img/header/store.svg"
+						alt="" />
+				</div>
+				<span>Мой магазин</span>
+			</a>
+
+			<a class="header__shop-button header__shop-button--burger">
+				<span>Открыть магазин</span>
+			</a>
+		</div>
+	</nav>
 
 	<div class="header__info">
 		<div class="header__info-wrapper">
@@ -455,71 +418,126 @@
 			</div>
 		</div>
 	</div>
-</header>
 
+	<div class="burger__search header__modal">
+		<button
+			class="burger__close-btn"
+			id="mobile-search-close">
+			<span></span>
+			<span></span>
+		</button>
+
+		<form class="header__search--burger">
+			<button type="submit">
+				<img
+					src="./img/header/search.svg"
+					alt="" />
+			</button>
+			<input
+				class="header__search-input header__search-input--burger"
+				placeholder="Поиск"
+				type="text" />
+		</form>
+
+		<button class="header__item header__item--burger">
+			<span class="header__item--slide">Все категории</span>
+		</button>
+
+		<img
+			src="./img/header/search-backgraund-mobile.svg"
+			alt=""
+			class="burger__serch-backgraund-img" />
+
+		<p class="burger__search-title">
+			Добро пожаловать в Stay Creative Marketplace!
+		</p>
+
+		<p class="burger__search-subtitle">Введите свой запрос в поле Поиска</p>
+	</div>
+</header>
 
 		<main>
 			<section class="categories">
-        <p class="categories__title">Познакомьтесь с проектами художников креативного рынка ArtLovers</p>
+				<p class="categories__title">
+					Познакомьтесь с проектами художников креативного рынка ArtLovers
+				</p>
 
-        <div class="categories__hero">
-          <div class="categories__hero-left-side">
-            <p class="categories__hero-sub">
-              Великолепный дизайн за короткое время. Объедините усилия с талантливыми дизайнерами, чтобы сделать ваши проекты выдающимися. 
-            </p>
+				<div class="categories__hero">
+					<div class="categories__hero-left-side">
+						<p class="categories__hero-sub">
+							Великолепный дизайн за короткое время. Объедините усилия с
+							талантливыми дизайнерами, чтобы сделать ваши проекты выдающимися.
+						</p>
 
-            <div class="categories__people">
-              <div class="categories__people-container">
-                <a href="" class="categories__profile-img">
-                  <img src="./img/categories/profile-sample-img-1.png" alt="">
-                </a>
+						<div class="categories__people">
+							<div class="categories__people-container">
+								<a
+									href=""
+									class="categories__profile-img">
+									<img
+										src="./img/categories/profile-sample-img-1.png"
+										alt="" />
+								</a>
 
-                <a href="" class="categories__profile-img">
-                  <img src="./img/categories/profile-sample-img-2.png" alt="">
-                </a>
+								<a
+									href=""
+									class="categories__profile-img">
+									<img
+										src="./img/categories/profile-sample-img-2.png"
+										alt="" />
+								</a>
 
-                <a href="" class="categories__profile-img">
-                  <img src="./img/categories/profile-sample-img-3.png" alt="">
-                </a>
-              </div>
+								<a
+									href=""
+									class="categories__profile-img">
+									<img
+										src="./img/categories/profile-sample-img-3.png"
+										alt="" />
+								</a>
+							</div>
 
-              <p class="categories__people-title">Популярные 
-                авторы недели</p>
-            </div>
-          </div>
+							<p class="categories__people-title">Популярные авторы недели</p>
+						</div>
+					</div>
 
-          <div class="categories__hero-img">
-            <img src="./img/categories/hero-image.png" alt="">
-          </div>
+					<div class="categories__hero-img">
+						<img
+							src="./img/categories/hero-image.png"
+							alt="" />
+					</div>
 
-          <div class="categories__hero-right-side">
-            <div class="categories__product-stats-wrapper">
-              <p class="categories__product-stats">
-                100%
-                <span>Креативность</span>
-              </p>
+					<div class="categories__hero-right-side">
+						<div class="categories__product-stats-wrapper">
+							<p class="categories__product-stats">
+								100%
+								<span>Креативность</span>
+							</p>
 
-              <p class="categories__product-stats">
-                1050
-                <span>Товаров</span>
-              </p>
-            </div>
+							<p class="categories__product-stats">
+								1050
+								<span>Товаров</span>
+							</p>
+						</div>
 
-            <a href="" class="categories__hero-link">
-              <span class="categories__hero-year">/2022</span>
+						<a
+							href=""
+							class="categories__hero-link">
+							<span class="categories__hero-year">/2022</span>
 
-              <div class="categories__product-info">
-                <div class="categories__product-img">
-                  <img src="./img/categories/profile-sample-img-4.png" alt="">
-                </div>
+							<div class="categories__product-info">
+								<div class="categories__product-img">
+									<img
+										src="./img/categories/profile-sample-img-4.png"
+										alt="" />
+								</div>
 
-                <span>ArtLovers-современный портал</span>
-              </div>
-            </a>
-          </div>
-        </div>
+								<span>ArtLovers-современный портал</span>
+							</div>
+						</a>
+					</div>
+				</div>
 
-        <section class="popular-fonts">
+				<section class="popular-fonts">
     <div class="container">
         <div class="title">
             <div class="title__words">
@@ -599,7 +617,7 @@
         </div>
     </div>
 </section>
-        <section class="popular-graph">
+				<section class="popular-graph">
     <div class="container">
         <div class="title">
             <div class="title__words">
@@ -679,7 +697,7 @@
         </div>
     </div>
 </section>
-        <section class="popular-fonts">
+				<section class="popular-photo">
   <div class="container">
       <div class="title">
           <div class="title__words">
@@ -688,10 +706,10 @@
           </div>
           <a href="#" class="link">Смотреть все</a>
       </div>
-      <div class="popular-fonts__wrapper">
-          <div class="popular-fonts__swiper swiper">
-              <div class="popular-fonts__swiper-wrapper swiper-wrapper">
-                  <div class="popular-fonts__slide swiper-slide">
+      <div class="popular-photo__wrapper">
+          <div class="popular-photo__swiper swiper">
+              <div class="popular-photo__swiper-wrapper swiper-wrapper">
+                  <div class="popular-photo__slide swiper-slide">
                      <article class="c-font">
                           <div class="c-font__block">
                               <div class="c-font__image">
@@ -710,7 +728,7 @@
                           </div>
                      </article>
                   </div>
-                  <div class="popular-fonts__slide swiper-slide">
+                  <div class="popular-photo__slide swiper-slide">
                       <article class="c-font">
                            <div class="c-font__block">
                                <div class="c-font__image">
@@ -729,7 +747,7 @@
                            </div>
                       </article>
                    </div>
-                   <div class="popular-fonts__slide swiper-slide">
+                   <div class="popular-photo__slide swiper-slide">
                       <article class="c-font">
                            <div class="c-font__block">
                                <div class="c-font__image">
@@ -751,15 +769,15 @@
               </div>
           </div>
       </div>
-      <div class="pagination popular-fonts__pagination">
-          <div class="pagination__bullets popular-fonts__bullets">
+      <div class="pagination popular-photo__pagination">
+          <div class="pagination__bullets popular-photo__bullets">
 
           </div>
           
       </div>
   </div>
 </section>
-        <section class="popular-graph">
+				<section class="popular-vector">
   <div class="container">
       <div class="title">
           <div class="title__words">
@@ -768,10 +786,10 @@
           </div>
           <a href="#" class="link">Смотреть все</a>
       </div>
-      <div class="popular-graph__wrapper">
-          <div class="popular-graph__swiper swiper">
-              <div class="popular-graph__swiper-wrapper swiper-wrapper">
-                  <div class="popular-graph__slide swiper-slide">
+      <div class="popular-vector__wrapper">
+          <div class="popular-vector__swiper swiper">
+              <div class="popular-vector__swiper-wrapper swiper-wrapper">
+                  <div class="popular-vector__slide swiper-slide">
                      <article class="c-graph">
                           <div class="c-graph__block">
                               <div class="c-graph__image">
@@ -790,7 +808,7 @@
                           </div>
                      </article>
                   </div>
-                  <div class="popular-graph__slide swiper-slide">
+                  <div class="popular-vector__slide swiper-slide">
                       <article class="c-graph">
                            <div class="c-graph__block">
                                <div class="c-graph__image">
@@ -809,7 +827,7 @@
                            </div>
                       </article>
                    </div>
-                   <div class="popular-graph__slide swiper-slide">
+                   <div class="popular-vector__slide swiper-slide">
                       <article class="c-graph">
                            <div class="c-graph__block">
                                <div class="c-graph__image">
@@ -831,15 +849,15 @@
               </div>
           </div>
       </div>
-      <div class="pagination popular-graph__pagination">
-          <div class="pagination__bullets popular-graph__bullets">
+      <div class="pagination popular-vector__pagination">
+          <div class="pagination__bullets popular-vector__bullets">
 
           </div>
           
       </div>
   </div>
 </section>
-        <section class="popular-graph">
+				<section class="popular-mocaps">
   <div class="container">
       <div class="title">
           <div class="title__words">
@@ -848,10 +866,10 @@
           </div>
           <a href="#" class="link">Смотреть все</a>
       </div>
-      <div class="popular-graph__wrapper">
-          <div class="popular-graph__swiper swiper">
-              <div class="popular-graph__swiper-wrapper swiper-wrapper">
-                  <div class="popular-graph__slide swiper-slide">
+      <div class="popular-mocaps__wrapper">
+          <div class="popular-mocaps__swiper swiper">
+              <div class="popular-mocaps__swiper-wrapper swiper-wrapper">
+                  <div class="popular-mocaps__slide swiper-slide">
                      <article class="c-graph">
                           <div class="c-graph__block">
                               <div class="c-graph__image">
@@ -870,7 +888,7 @@
                           </div>
                      </article>
                   </div>
-                  <div class="popular-graph__slide swiper-slide">
+                  <div class="popular-mocaps__slide swiper-slide">
                       <article class="c-graph">
                            <div class="c-graph__block">
                                <div class="c-graph__image">
@@ -889,7 +907,7 @@
                            </div>
                       </article>
                    </div>
-                   <div class="popular-graph__slide swiper-slide">
+                   <div class="popular-mocaps__slide swiper-slide">
                       <article class="c-graph">
                            <div class="c-graph__block">
                                <div class="c-graph__image">
@@ -911,15 +929,15 @@
               </div>
           </div>
       </div>
-      <div class="pagination popular-graph__pagination">
-          <div class="pagination__bullets popular-graph__bullets">
+      <div class="pagination popular-mocaps__pagination">
+          <div class="pagination__bullets popular-mocaps__bullets">
 
           </div>
           
       </div>
   </div>
 </section>
-        <section class="author">
+				<section class="author">
     <div class="container">
         <div class="author__wrapper">
             <div class="author__image">
@@ -936,7 +954,7 @@
         </div>
     </div>
 </section>
-      </section>
+			</section>
 		</main>
 		<div class="modal thanks-reg">
 	<div class="modal__container">

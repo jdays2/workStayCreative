@@ -4,8 +4,10 @@
 	border-radius: 0 0 3rem 3rem;
 	position: fixed;
 	width: 100%;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
 	z-index: 20;
-
 	&__burger {
 		display: none;
 	}
@@ -20,6 +22,12 @@
 
 	&__search-bar-icon{
 		display: none;
+	}
+
+	&__modal {
+		position: fixed;
+		overflow: scroll;
+		height: 100%;
 	}
 
 	&__head {
@@ -38,10 +46,6 @@
 		flex-direction: column;
 		align-items: center;
 		z-index: 100;
-		border-radius: 0 0 3rem 3rem;
-		box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25),
-		0 0 1.1rem rgba(103, 110, 133, 0.2);
-		overflow: hidden;
 	}
 
 	&__logo {
@@ -239,6 +243,14 @@
 
 	&__buttons-bar--reg {
 		margin-right: 7.65rem;
+	}
+
+	&__modal {
+		position: fixed;
+		overflow: auto;
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
 	}
 
 	&__search {

@@ -11,7 +11,6 @@ const rem = function (rem) {
 const mainSwiper = new Swiper('.main__swiper', {
 	effect: 'coverflow',
 	grabCursor: true,
-
 	slidesPerView: 1,
 	coverflowEffect: {
 		rotate: -2,
@@ -19,6 +18,18 @@ const mainSwiper = new Swiper('.main__swiper', {
 		depth: 300,
 		modifier: -1,
 		slideShadows: false,
+	},
+	breakpoints: {
+		769: {
+			coverflowEffect: {
+				stretch: '-80%', 
+			},
+		},
+		320: {
+			coverflowEffect: {
+				stretch: '-82.3%', 
+			},
+		},
 	},
 });
 
@@ -44,6 +55,90 @@ const cleansingSlider = new Swiper('.popular-users__swiper', {
       `;
 		},
 		el: '.popular-users__bullets',
+	},
+});
+
+const popularPhotoSlider = new Swiper('.popular-photo__swiper', {
+	slidesPerView: 3,
+	speed: 500,
+	spaceBetween: rem(2),
+	wrapperClass: 'popular-photo__swiper-wrapper',
+	slideClass: 'popular-photo__slide',
+	breakpoints: {
+		769: {
+			slidesPerView: 3,
+		},
+		320: {
+			slidesPerView: 1,
+		},
+	},
+
+	pagination: {
+		clickable: true,
+		renderBullet: function (index, className) {
+			return `
+        <span class="${className}">
+         
+        </span>
+      `;
+		},
+		el: '.popular-photo__bullets',
+	},
+});
+
+const popularVectorSlider = new Swiper('.popular-vector__swiper', {
+	slidesPerView: 3,
+	speed: 500,
+	spaceBetween: rem(2),
+	wrapperClass: 'popular-vector__swiper-wrapper',
+	slideClass: 'popular-vector__slide',
+	breakpoints: {
+		769: {
+			slidesPerView: 3,
+		},
+		320: {
+			slidesPerView: 1,
+		},
+	},
+
+	pagination: {
+		clickable: true,
+		renderBullet: function (index, className) {
+			return `
+        <span class="${className}">
+         
+        </span>
+      `;
+		},
+		el: '.popular-vector__bullets',
+	},
+});
+
+const popularMocapsSlider = new Swiper('.popular-mocaps__swiper', {
+	slidesPerView: 3,
+	speed: 500,
+	spaceBetween: rem(2),
+	wrapperClass: 'popular-mocaps__swiper-wrapper',
+	slideClass: 'popular-mocaps__slide',
+	breakpoints: {
+		769: {
+			slidesPerView: 3,
+		},
+		320: {
+			slidesPerView: 1,
+		},
+	},
+
+	pagination: {
+		clickable: true,
+		renderBullet: function (index, className) {
+			return `
+        <span class="${className}">
+         
+        </span>
+      `;
+		},
+		el: '.popular-mocaps__bullets',
 	},
 });
 

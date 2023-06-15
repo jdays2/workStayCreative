@@ -22,13 +22,13 @@
 	</head>
 
 	<body>
-		<header class="header header--active">
+		<header class="header">
 	<div class="header__wrapper">
 		<div class="header__head">
 			<button class="header__burger">
-				<span></span>
-				<span></span>
-				<span></span>
+				<div class="header__burger-content">
+					<span class="header__burger-item"></span>
+				</div>
 			</button>
 
 			<div class="header__search">
@@ -125,64 +125,6 @@
 			</button>
 		</div>
 
-		<div class="burger__search">
-			<button
-				class="burger__close-btn"
-				id="mobile-search-close">
-				<span></span>
-				<span></span>
-			</button>
-
-			<form class="header__search--burger">
-				<button type="submit">
-					<img
-						src="./img/header/search.svg"
-						alt="" />
-				</button>
-				<input
-					class="header__search-input header__search-input--burger"
-					placeholder="Поиск"
-					type="text" />
-			</form>
-
-			<button class="header__item header__item--burger">
-				<span class="header__item--slide">Все категории</span>
-			</button>
-
-			<img
-				src="./img/header/search-backgraund-mobile.svg"
-				alt=""
-				class="burger__serch-backgraund-img" />
-
-			<p class="burger__search-title">
-				Добро пожаловать в Stay Creative Marketplace!
-			</p>
-
-			<p class="burger__search-subtitle">Введите свой запрос в поле Поиска</p>
-		</div>
-
-		<div
-			class="burger__categ-item"
-			id="mobile-categorys">
-			<div class="burger__categ-item-title">
-				<button
-					class="burger__categ-item-btn"
-					id="burger-categ-btn">
-					<img
-						src="./img/header/arrow-icon.svg"
-						alt="" />
-				</button>
-
-				<div>Все категории</div>
-			</div>
-
-			<ul class="header__lists">
-				<li class="header__item"><a>Подкатегория 1</a></li>
-				<li class="header__item"><a>Подкатегория 2</a></li>
-				<li class="header__item"><a>Подкатегория N</a></li>
-			</ul>
-		</div>
-
 		<div
 			class="burger__categ-item"
 			id="mobile-info">
@@ -206,59 +148,80 @@
 				<li class="header__item"><a href="/blog.html">Блог</a></li>
 			</ul>
 		</div>
-
-		<nav class="header__nav">
-			<ul
-				class="header__lists"
-				id="mobile__lists">
-				<li class="header__item header__item--slide">
-					<button id="categorys-btn">Все категории</button>
-				</li>
-				<li class="header__item"><a href="/fonts.html">Шрифты</a></li>
-				<li class="header__item"><a href="">Фотографии</a></li>
-				<li class="header__item"><a href="/vectors.html">Векторы</a></li>
-				<li class="header__item"><a href="">Мокапы</a></li>
-				<li class="header__item header__item--slide">
-					<button id="info-btn">Больше информации</button>
-				</li>
-			</ul>
-
-			<div class="burger__mobile-bar">
-				<a
-					class="burger__item"
-					href="/cart.html">
-					<div>
-						<img
-							src="./img/header/bag.svg"
-							alt="" />
-					</div>
-					<span>Корзина</span>
-				</a>
-
-				<a class="burger__item">
-					<div>
-						<img
-							src="./img/header/heart.svg"
-							alt="" />
-					</div>
-					<span>Избранное</span>
-				</a>
-
-				<a class="burger__item">
-					<div>
-						<img
-							src="./img/header/store.svg"
-							alt="" />
-					</div>
-					<span>Мой магазин</span>
-				</a>
-
-				<a class="header__shop-button header__shop-button--burger">
-					<span>Открыть магазин</span>
-				</a>
-			</div>
-		</nav>
 	</div>
+
+	<div class="burger__categ-item header__modal"
+	id="mobile-categorys">
+	<div class="burger__categ-item-title">
+		<button
+			class="burger__categ-item-btn"
+			id="burger-categ-btn">
+			<img
+				src="./img/header/arrow-icon.svg"
+				alt="" />
+		</button>
+
+		<div>Все категории</div>
+	</div>
+
+	<ul class="header__lists">
+		<li class="header__item"><a>Подкатегория 1</a></li>
+		<li class="header__item"><a>Подкатегория 2</a></li>
+		<li class="header__item"><a>Подкатегория N</a></li>
+	</ul>
+</div>
+
+	<nav class="header__nav header__modal">
+		<ul
+			class="header__lists"
+			id="mobile__lists">
+			<li class="header__item header__item--slide">
+				<button id="categorys-btn">Все категории</button>
+			</li>
+			<li class="header__item"><a href="/fonts.html">Шрифты</a></li>
+			<li class="header__item"><a href="">Фотографии</a></li>
+			<li class="header__item"><a href="/vectors.html">Векторы</a></li>
+			<li class="header__item"><a href="">Мокапы</a></li>
+			<li class="header__item header__item--slide">
+				<button id="info-btn">Больше информации</button>
+			</li>
+		</ul>
+
+		<div class="burger__mobile-bar">
+			<a
+				class="burger__item"
+				href="/cart.html">
+				<div>
+					<img
+						src="./img/header/bag.svg"
+						alt="" />
+				</div>
+				<span>Корзина</span>
+			</a>
+
+			<a class="burger__item">
+				<div>
+					<img
+						src="./img/header/heart.svg"
+						alt="" />
+				</div>
+				<span>Избранное</span>
+			</a>
+
+			<a class="burger__item">
+				<div>
+					<img
+						src="./img/header/store.svg"
+						alt="" />
+				</div>
+				<span>Мой магазин</span>
+			</a>
+
+			<a class="header__shop-button header__shop-button--burger">
+				<span>Открыть магазин</span>
+			</a>
+		</div>
+	</nav>
 
 	<div class="header__info">
 		<div class="header__info-wrapper">
@@ -459,8 +422,43 @@
 			</div>
 		</div>
 	</div>
-</header>
 
+	<div class="burger__search header__modal">
+		<button
+			class="burger__close-btn"
+			id="mobile-search-close">
+			<span></span>
+			<span></span>
+		</button>
+
+		<form class="header__search--burger">
+			<button type="submit">
+				<img
+					src="./img/header/search.svg"
+					alt="" />
+			</button>
+			<input
+				class="header__search-input header__search-input--burger"
+				placeholder="Поиск"
+				type="text" />
+		</form>
+
+		<button class="header__item header__item--burger">
+			<span class="header__item--slide">Все категории</span>
+		</button>
+
+		<img
+			src="./img/header/search-backgraund-mobile.svg"
+			alt=""
+			class="burger__serch-backgraund-img" />
+
+		<p class="burger__search-title">
+			Добро пожаловать в Stay Creative Marketplace!
+		</p>
+
+		<p class="burger__search-subtitle">Введите свой запрос в поле Поиска</p>
+	</div>
+</header>
 
 		<main>
 			<section class="fonts">

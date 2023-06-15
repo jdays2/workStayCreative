@@ -31,7 +31,7 @@ const mobileSearchPopUpCloseBtn = document.querySelector(
 	'#mobile-search-close',
 );
 const headerWrapper = document.querySelector('.header__wrapper');
-// const header = document.querySelector('.header');
+const header = document.querySelector('.header');
 
 const registerPopUpClass = 'header__register-alert--show';
 const shopBtnClass = 'header__store--show';
@@ -168,6 +168,7 @@ categorysTitle.forEach((element) => {
 
 //открыть, закрыть бургер-меню
 burgerBtn.addEventListener('click', () => {
+	header.classList.toggle('header--active')
 	const openPopUps = document.querySelectorAll('.burger__categ-item--show');
 	if (openPopUps) {
 		openPopUps.forEach((popup) => {
