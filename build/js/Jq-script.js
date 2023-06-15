@@ -616,6 +616,30 @@ $(".modal-follow__table").each(function () {
 });
 
 
+// глобальное модальное окно с успешной регистрацией итд
+
+
+$(".global-thanks__close").click(function () {
+    $(".global-thanks").removeClass("active");
+  
+});
+
+// модальное окно жалоб
+
+
+complaint-modal
+
+$(".complaint-modal-open").click(function () {
+    $(".complaint-modal").addClass("active");
+  
+});
+
+$(".complaint-modal__close").click(function () {
+    $(".complaint-modal").removeClass("active");
+  
+});
+
+
 
 //  модальное окно для с подписчиками 
 

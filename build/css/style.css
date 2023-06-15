@@ -7025,6 +7025,178 @@ main {
     width: 1.5rem;
     height: 1.5rem; }
 
+.global-thanks__box {
+  padding: 6rem 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.global-thanks__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem; }
+
+.global-thanks__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .global-thanks__title strong {
+    display: block;
+    font-family: 'Austin Cyr';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.7rem;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1B1818; }
+  .global-thanks__title span {
+    display: block;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #A0A1A4;
+    margin-top: 2rem; }
+
+.complaint-modal {
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 7rem;
+  padding-bottom: 7rem; }
+  .complaint-modal__container {
+    margin: 0 auto; }
+  .complaint-modal__box {
+    padding: 6rem 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .complaint-modal__icon {
+    width: 7.7rem;
+    height: 7.7rem;
+    margin-bottom: 3.3rem; }
+  .complaint-modal__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3.2rem; }
+    .complaint-modal__title strong {
+      display: block;
+      font-family: 'Austin Cyr';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.7rem;
+      line-height: 100%;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: #1B1818; }
+  .complaint-modal__user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: rgba(224, 225, 231, 0.5);
+    border-radius: 1rem;
+    width: 82.9rem;
+    padding: 1.5rem;
+    margin-bottom: 3.2rem; }
+  .complaint-modal__user-avatar {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    margin-right: 1.6rem; }
+  .complaint-modal__avatar-star {
+    width: 2.6rem;
+    height: 2.6rem;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .complaint-modal__user-name {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-bottom: 0.6rem; }
+  .complaint-modal__user-text {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.02em;
+    color: #A0A1A4; }
+  .complaint-modal__form-inner {
+    width: 82.9rem;
+    margin-bottom: 3.2rem; }
+    .complaint-modal__form-inner label {
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 1.2rem;
+      display: block; }
+    .complaint-modal__form-inner .select {
+      width: 100%; }
+    .complaint-modal__form-inner textarea {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 16.2rem;
+      background: #EAEBEF;
+      border-radius: 1rem;
+      padding: 1.4rem 2.4rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 125%;
+      color: #000000;
+      border: none;
+      resize: none; }
+  .complaint-modal .red-btn {
+    margin-left: auto; }
+
+.complaint-modal::-webkit-scrollbar {
+  display: none; }
+
+.complaint-modal.active {
+  display: block; }
+
 @media only all and (max-width: 48em) {
   html {
     font-size: 1.3333333333vw;
@@ -8845,6 +9017,21 @@ main {
   .personal-information-thanks__title {
     font-size: 6rem;
     line-height: 7.2rem; }
+  .global-thanks__box {
+    width: 100%;
+    padding: 6rem 3rem; }
+  .global-thanks__icon {
+    width: 11rem;
+    height: 11rem;
+    margin-bottom: 6rem; }
+  .global-thanks__title strong {
+    font-size: 6rem;
+    line-height: 7.2rem; }
+  .global-thanks__title span {
+    font-size: 2.8rem;
+    line-height: 3.4rem; }
+    .global-thanks__title span br {
+      display: none; }
   .modal-follow {
     padding: 2rem 3rem; }
     .modal-follow__box {
@@ -8928,4 +9115,174 @@ main {
       font-size: 2.8rem;
       line-height: 120%; }
   main {
-    overflow: hidden; } }
+    overflow: hidden; }
+  .profile-password {
+    padding: 6rem 3rem; }
+    .profile-password__inner {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: initial;
+          -ms-flex-align: initial;
+              align-items: initial; }
+    .profile-password__inner-left {
+      margin-right: 0; }
+    .profile-password__checkbox {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 2.8rem;
+      line-height: 3.4rem;
+      letter-spacing: 0.02em;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      margin-bottom: 5.2rem; }
+      .profile-password__checkbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0; }
+    .profile-password__checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 8rem;
+      height: 8rem;
+      background: #e0e1e7;
+      border-radius: 2rem; }
+    .profile-password__checkbox:hover input ~ .profile-password__checkmark {
+      background: #e0e1e7; }
+    .profile-password__checkbox input:checked ~ .profile-password__checkmark {
+      -webkit-box-shadow: 8.59504px 8.59504px 20px rgba(56, 55, 66, 0.11);
+              box-shadow: 8.59504px 8.59504px 20px rgba(56, 55, 66, 0.11); }
+    .profile-password__checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    .profile-password__checkbox input:checked ~ .profile-password__checkmark:after {
+      display: block; }
+    .profile-password__checkbox .profile-password__checkmark:after {
+      position: absolute;
+      content: "";
+      background-image: url(../img/icon/check.svg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      top: 50%;
+      right: 0;
+      -webkit-transform: translate(-80%, -50%);
+              transform: translate(-80%, -50%);
+      width: 3rem;
+      height: 3rem; }
+    .profile-password__span {
+      height: 4rem;
+      display: block;
+      padding-top: 1.6rem;
+      padding-left: 4rem; }
+    .profile-password__title {
+      margin-bottom: 6rem; }
+      .profile-password__title strong {
+        font-weight: 700;
+        font-size: 5rem;
+        line-height: 6rem;
+        margin-bottom: 1rem; }
+      .profile-password__title span {
+        font-size: 2.8rem;
+        line-height: 3.4rem; }
+    .profile-password__inner {
+      margin-bottom: 6rem; }
+    .profile-password__form-inner {
+      width: 100%;
+      margin-bottom: 5rem; }
+      .profile-password__form-inner label {
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 3.4rem;
+        margin-bottom: 1.8rem; }
+      .profile-password__form-inner input {
+        width: 100%;
+        border-radius: 2rem;
+        padding: 2.8rem 4.8rem;
+        font-size: 2.8rem;
+        line-height: 143%; }
+    .profile-password__form-wrap {
+      margin-bottom: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .profile-password__text {
+      width: 100%;
+      font-size: 2.4rem;
+      line-height: 167%;
+      margin-top: -2.8rem; }
+    .profile-password__btns {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .profile-password__btns .red-btn {
+        width: 100%;
+        margin-right: 0; }
+      .profile-password__btns a {
+        margin-top: 6rem;
+        font-weight: 700;
+        font-size: 2.8rem;
+        line-height: 3.4rem; }
+  .complaint-modal {
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
+    .complaint-modal__box {
+      padding: 6rem 3rem; }
+    .complaint-modal__title {
+      font-weight: 700;
+      font-size: 5rem;
+      line-height: 6rem;
+      margin-bottom: 6rem; }
+    .complaint-modal__form {
+      width: 100%; }
+    .complaint-modal__user {
+      width: 100%;
+      border-radius: 2rem;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 3rem 2rem; }
+    .complaint-modal__form-inner {
+      width: 100%; }
+    .complaint-modal__user-avatar {
+      width: 11rem;
+      height: 11rem;
+      margin-right: 0;
+      margin-bottom: 1.6rem; }
+    .complaint-modal__avatar-star {
+      width: 3.2rem;
+      height: 3.2rem; }
+    .complaint-modal__user-name {
+      text-align: center;
+      font-size: 2.8rem;
+      line-height: 3.4rem;
+      margin-bottom: 0.6rem; }
+    .complaint-modal__user-text {
+      font-size: 2.8rem;
+      line-height: 3.4rem; }
+    .complaint-modal__form-inner label {
+      font-weight: 500;
+      font-size: 2.8rem;
+      line-height: 3.4rem;
+      margin-bottom: 1.8rem; }
+    .complaint-modal__form-inner textarea {
+      width: 100%;
+      height: 27rem;
+      border-radius: 2rem;
+      padding: 2.8rem 4.8rem;
+      font-size: 2.8rem;
+      line-height: 143%; }
+  .red-btn {
+    margin: 0 auto;
+    width: 100%; } }
