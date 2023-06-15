@@ -32,17 +32,17 @@
 
             <div class="categories__people">
               <div class="categories__people-container">
-                <div class="categories__profile-img">
+                <a href="" class="categories__profile-img">
                   <img src="./img/categories/profile-sample-img-1.png" alt="">
-                </div>
+                </a>
 
-                <div class="categories__profile-img">
+                <a href="" class="categories__profile-img">
                   <img src="./img/categories/profile-sample-img-2.png" alt="">
-                </div>
+                </a>
 
-                <div class="categories__profile-img">
+                <a href="" class="categories__profile-img">
                   <img src="./img/categories/profile-sample-img-3.png" alt="">
-                </div>
+                </a>
               </div>
 
               <p class="categories__people-title">Популярные 
@@ -67,7 +67,7 @@
               </p>
             </div>
 
-            <a href="" class="catefories__hero-link">
+            <a href="" class="categories__hero-link">
               <span class="categories__hero-year">/2022</span>
 
               <div class="categories__product-info">
@@ -80,6 +80,13 @@
             </a>
           </div>
         </div>
+
+        @@include('./template/popular-fonts.html')
+        @@include('./template/popular-graph.html')
+        @@include('./template/popular-photo.html')
+        @@include('./template/popular-vectors.html')
+        @@include('./template/popular-mocaps.html')
+        @@include('./template/author.html')
       </section>
 		</main>
 		@@include('./template/footer.html')

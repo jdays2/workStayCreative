@@ -29,7 +29,7 @@ const cleansingSlider = new Swiper('.popular-users__swiper', {
 	wrapperClass: 'popular-users__swiper-wrapper',
 	slideClass: 'popular-users__slide',
 	breakpoints: {
-		748: {
+		769: {
 			slidesPerView: 4,
 		},
 	},
@@ -54,7 +54,7 @@ const popularFontSwiper = new Swiper('.popular-fonts__swiper', {
 	wrapperClass: 'popular-fonts__swiper-wrapper',
 	slideClass: 'popular-fonts__slide',
 	breakpoints: {
-		748: {
+		769: {
 			slidesPerView: 3,
 		},
 	},
@@ -72,6 +72,7 @@ const popularFontSwiper = new Swiper('.popular-fonts__swiper', {
 	},
 });
 
+
 const popularGraphSwiper = new Swiper('.popular-graph__swiper', {
 	slidesPerView: 1,
 	speed: 500,
@@ -79,7 +80,7 @@ const popularGraphSwiper = new Swiper('.popular-graph__swiper', {
 	wrapperClass: 'popular-graph__swiper-wrapper',
 	slideClass: 'popular-graph__slide',
 	breakpoints: {
-		748: {
+		769: {
 			slidesPerView: 3,
 		},
 	},
@@ -116,7 +117,7 @@ const adviceSwiper = new Swiper('.advice__swiper', {
 	},
 
 	breakpoints: {
-		748: {
+		769: {
 			slidesPerView: 4,
 		},
 	},

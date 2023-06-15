@@ -661,6 +661,11 @@
 
 	.main {
 		margin-bottom: 12rem;
+
+		.container {
+			overflow: hidden;
+		} 
+
 		&__wrapper {
 			flex-direction: column;
 		}
@@ -778,6 +783,11 @@
 				width: 100%;
 				height: 100%;
 			}
+		}
+
+		&__swiper {
+			width: 100%;
+			overflow: visible;
 		}
 	}
 
@@ -3088,7 +3098,7 @@
 
 	.articles {
 		padding: 21rem 3rem 0rem;
-	
+
 		&__head {
 			display: flex;
 			flex-direction: column;
@@ -3127,7 +3137,7 @@
 			width: 9.038rem;
 			height: 9.038rem;
 			padding: 1.482rem;
-			
+
 			margin-right: 2.4rem;
 		}
 
@@ -3146,7 +3156,7 @@
 
 		&__content {
 			width: 100%;
-			
+
 			margin-bottom: 12rem;
 		}
 
@@ -3182,6 +3192,118 @@
 
 				margin-right: 2rem;
 			}
+		}
+	}
+
+	.categories {
+		padding: 21rem 3rem 0rem;
+
+		.container {
+			padding: 0;
+		}
+
+		&__hero {
+			align-items: center;
+			flex-direction: column;
+			align-items: center;
+			gap: 6rem;
+			margin-bottom: 6rem;
+		}
+
+		&__hero-img {
+			height: 33.3rem;
+		}
+
+		&__title {
+			font-weight: 700;
+			font-size: 6rem;
+			line-height: 7.2rem;
+			width: 100%;
+			margin-bottom: 6rem;
+		}
+
+		&__hero-sub {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 3.2rem;
+			line-height: 4rem;
+			letter-spacing: 0.02em;
+		}
+
+		&__hero-left-side {
+			gap: 5rem;
+		}
+
+		&__profile-img {
+			width: 16.6rem;
+			height: 16.6rem;
+
+			img {
+				width: 15.8rem;
+				height: 15.8rem;
+			}
+		}
+
+		&__profile-img:not(:first-child) {
+			margin-left: -3.9rem;
+		}
+
+		&__people {
+			gap: 3rem;
+		}
+
+		&__people-title {
+			font-size: 3.2rem;
+			line-height: 4rem;
+		}
+
+		&__product-stats {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 6rem;
+			line-height: 7.2rem;
+
+			align-items: flex-start;
+
+			span {
+				margin-top: 0.8rem;
+				font-weight: 700;
+				font-size: 3.2rem;
+				line-height: 4rem;
+			}
+		}
+
+		&__hero-right-side {
+			gap: 5.3rem;
+		}
+
+		&__hero-left-side,
+		&__hero-right-side,
+		&__hero-img {
+			width: 100%;
+		}
+
+		&__product-img {
+			width: 24.6rem;
+		}
+
+		&__hero-link {
+			padding: 3rem 4rem;
+			justify-content: normal;
+		}
+
+		&__product-info {
+			gap: 3rem;
+			span {
+				font-size: 3.2rem;
+				line-height: 4rem;
+			}
+		}
+
+		&__hero-year {
+			font-size: 3.2rem;
+			line-height: 4rem;
+			margin-right: 5.8rem;
 		}
 	}
 }

@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./css/style.min.css" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Все категории</title>
+	</head>
+
+	<body>
+		<header class="header header--active">
+	<div class="header__wrapper">
+		<div class="header__head">
+			<button class="header__burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+
+			<div class="header__search">
+				<div class="header__search-button-wrapper">
+					<img
+						src="./img/header/search.svg"
+						alt="" />
+					<button class="header__search-button">
+						<span
+							class="header__search-category header__search-category--slide">
+							Все категории
+						</span>
+					</button>
+				</div>
+				<input
+					class="header__search-input"
+					placeholder="Поиск"
+					type="text" />
+			</div>
+
+			<a
+				href="/"
+				class="header__logo">
+				<img
+					src="./img/header/new-logo.svg"
+					alt="" />
+			</a>
+
+			<div class="header__buttons-bar">
+				<button
+					class="header__search-bar-icon"
+					id="mobile-search">
+					<img
+						src="./img/header/search.svg"
+						alt="" />
+				</button>
+
+				<a class="header__shop-button">
+					<span>Открыть магазин</span>
+				</a>
+
+				<button class="header__user">
+					<img
+						src="./img/header/user.svg"
+						alt="" />
+				</button>
+
+				<button class="header__store">
+					<img
+						src="./img/header/store.svg"
+						alt="" />
+				</button>
+
+				<button class="header__like">
+					<img
+						src="./img/header/heart.svg"
+						alt="" />
+				</button>
+
+				<a
+					class="header__bag"
+					href="/cart.html">
+					<img
+						src="./img/header/bag.svg"
+						alt="" />
+				</a>
+			</div>
+		</div>
+
+		<div class="header__register-alert">
+			<p>
+				Войдите, чтобы делать покупки, создавать персональные коллекции и
+				следить за обновлениями магазинов.
+			</p>
+			<a class="header__register-alert-button">
+				<span>Войти или зарегистрироваться</span>
+			</a>
+		</div>
+
+		<div class="header__profile-bar">
+			<a
+				href=""
+				class="header__profile-link">
+				<img
+					src="./img/header/user-orange.svg"
+					alt="" />
+				<span>Личный кабиент</span>
+			</a>
+			<button class="header__profile-bar-button">
+				<img
+					src="./img/header/log-out.svg"
+					alt="" />
+				<span>Выйти</span>
+			</button>
+		</div>
+
+		<div class="burger__search">
+			<button
+				class="burger__close-btn"
+				id="mobile-search-close">
+				<span></span>
+				<span></span>
+			</button>
+
+			<form class="header__search--burger">
+				<button type="submit">
+					<img
+						src="./img/header/search.svg"
+						alt="" />
+				</button>
+				<input
+					class="header__search-input header__search-input--burger"
+					placeholder="Поиск"
+					type="text" />
+			</form>
+
+			<button class="header__item header__item--burger">
+				<span class="header__item--slide">Все категории</span>
+			</button>
+
+			<img
+				src="./img/header/search-backgraund-mobile.svg"
+				alt=""
+				class="burger__serch-backgraund-img" />
+
+			<p class="burger__search-title">
+				Добро пожаловать в Stay Creative Marketplace!
+			</p>
+
+			<p class="burger__search-subtitle">Введите свой запрос в поле Поиска</p>
+		</div>
+
+		<div
+			class="burger__categ-item"
+			id="mobile-categorys">
+			<div class="burger__categ-item-title">
+				<button
+					class="burger__categ-item-btn"
+					id="burger-categ-btn">
+					<img
+						src="./img/header/arrow-icon.svg"
+						alt="" />
+				</button>
+
+				<div>Все категории</div>
+			</div>
+
+			<ul class="header__lists">
+				<li class="header__item"><a>Подкатегория 1</a></li>
+				<li class="header__item"><a>Подкатегория 2</a></li>
+				<li class="header__item"><a>Подкатегория N</a></li>
+			</ul>
+		</div>
+
+		<div
+			class="burger__categ-item"
+			id="mobile-info">
+			<div class="burger__categ-item-title">
+				<button
+					class="burger__categ-item-btn"
+					id="burger-categ-btn">
+					<img
+						src="./img/header/arrow-icon.svg"
+						alt="" />
+				</button>
+
+				<div>Все категории</div>
+			</div>
+
+			<ul class="header__lists">
+				<li class="header__item"><a>О нас</a></li>
+				<li class="header__item"><a>Лицензирование</a></li>
+				<li class="header__item"><a>Тематические коллекции</a></li>
+				<li class="header__item"><a>Выбор команды</a></li>
+				<li class="header__item"><a href="/blog.html">Блог</a></li>
+			</ul>
+		</div>
+
+		<nav class="header__nav">
+			<ul
+				class="header__lists"
+				id="mobile__lists">
+				<li class="header__item header__item--slide">
+					<button id="categorys-btn">Все категории</button>
+				</li>
+				<li class="header__item"><a href="/fonts.html">Шрифты</a></li>
+				<li class="header__item"><a href="">Фотографии</a></li>
+				<li class="header__item"><a href="/vectors.html">Векторы</a></li>
+				<li class="header__item"><a href="">Мокапы</a></li>
+				<li class="header__item header__item--slide">
+					<button id="info-btn">Больше информации</button>
+				</li>
+			</ul>
+
+			<div class="burger__mobile-bar">
+				<a
+					class="burger__item"
+					href="/cart.html">
+					<div>
+						<img
+							src="./img/header/bag.svg"
+							alt="" />
+					</div>
+					<span>Корзина</span>
+				</a>
+
+				<a class="burger__item">
+					<div>
+						<img
+							src="./img/header/heart.svg"
+							alt="" />
+					</div>
+					<span>Избранное</span>
+				</a>
+
+				<a class="burger__item">
+					<div>
+						<img
+							src="./img/header/store.svg"
+							alt="" />
+					</div>
+					<span>Мой магазин</span>
+				</a>
+
+				<a class="header__shop-button header__shop-button--burger">
+					<span>Открыть магазин</span>
+				</a>
+			</div>
+		</nav>
+	</div>
+
+	<div class="header__info">
+		<div class="header__info-wrapper">
+			<nav class="header__info-list">
+				<a
+					href=""
+					class="header__info-item">
+					О нас
+				</a>
+				<a
+					href=""
+					class="header__info-item">
+					Лицензирование
+				</a>
+				<a
+					href=""
+					class="header__info-item">
+					Тематические коллекции
+				</a>
+				<a
+					href=""
+					class="header__info-item">
+					Выбор команды
+				</a>
+				<a
+					href="/blog.html"
+					class="header__info-item">
+					Блог
+				</a>
+			</nav>
+			<div class="header__info-content">
+				<a
+					href="#"
+					class="collections__two">
+					<div class="collections__two-image">
+						<img
+							src="./img/collections/image2.png"
+							alt="" />
+					</div>
+					<div class="collections__two-title">
+						<span>Фотографии, векторы</span>
+						<strong>Сюрреализм</strong>
+					</div>
+				</a>
+
+				<a
+					href="#"
+					class="collections__four">
+					<div class="collections__four-image">
+						<img
+							src="./img/collections/image4.png"
+							alt="" />
+					</div>
+					<div class="collections__four-rub">
+						<span>Популярное</span>
+					</div>
+					<div class="collections__four-title">
+						<span>Фотографии, векторы</span>
+						<strong>Спортивная тематика</strong>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__categorys">
+		<div class="header__categorys-wrapper">
+			<div class="header__categorys-lists">
+				<div class="header__categorys-col">
+					<div class="header__box">
+						<p class="header__categorys-title">Категория 1</p>
+						<ul class="header__categorys-list header__categorys-list--show">
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 1</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 2</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 3</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="header__box">
+						<p class="header__categorys-title">Категория 2</p>
+						<ul class="header__categorys-list">
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 1</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 2</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 3</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="header__box">
+						<p class="header__categorys-title">Категория 3</p>
+						<ul class="header__categorys-list">
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 1</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 2</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 3</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="header__categorys-col">
+					<div class="header__box">
+						<p class="header__categorys-title">Категория 4</p>
+						<ul class="header__categorys-list header__categorys-list--show">
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 1</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 2</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория 3</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="header__box">
+						<p class="header__categorys-title">Категория N</p>
+						<ul class="header__categorys-list">
+							<li class="header__categorys-item">
+								<a href="">Подкатегория N + 1</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория N + 2</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория N + 3</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Подкатегория N + 4</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="header__box">
+						<p class="header__categorys-title">Все категории</p>
+						<ul class="header__categorys-list">
+							<li class="header__categorys-item">
+								<a href="">Категория 1</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Категория 2</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Категория 3</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="header__categorys-col">
+					<div class="header__box">
+						<p class="header__categorys-title">Бренды</p>
+						<ul class="header__categorys-list header__categorys-list--show">
+							<li class="header__categorys-item">
+								<a href="">Бренд 1</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Бренд 2</a>
+							</li>
+							<li class="header__categorys-item">
+								<a href="">Бренд 3</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__categorys-card">
+				<a
+					href="#"
+					class="collections__three">
+					<div class="collections__three-image">
+						<img
+							src="./img/collections/image3.png"
+							alt="" />
+					</div>
+					<div class="collections__three-title">
+						<span>Фотографии, векторы</span>
+						<strong>Лица разнообразия</strong>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+		<main>
+			<section class="categories">
+        <p class="categories__title">Познакомьтесь с проектами художников креативного рынка ArtLovers</p>
+
+        <div class="categories__hero">
+          <div class="categories__hero-left-side">
+            <p class="categories__hero-sub">
+              Великолепный дизайн за короткое время. Объедините усилия с талантливыми дизайнерами, чтобы сделать ваши проекты выдающимися. 
+            </p>
+
+            <div class="categories__people">
+              <div class="categories__people-container">
+                <a href="" class="categories__profile-img">
+                  <img src="./img/categories/profile-sample-img-1.png" alt="">
+                </a>
+
+                <a href="" class="categories__profile-img">
+                  <img src="./img/categories/profile-sample-img-2.png" alt="">
+                </a>
+
+                <a href="" class="categories__profile-img">
+                  <img src="./img/categories/profile-sample-img-3.png" alt="">
+                </a>
+              </div>
+
+              <p class="categories__people-title">Популярные 
+                авторы недели</p>
+            </div>
+          </div>
+
+          <div class="categories__hero-img">
+            <img src="./img/categories/hero-image.png" alt="">
+          </div>
+
+          <div class="categories__hero-right-side">
+            <div class="categories__product-stats-wrapper">
+              <p class="categories__product-stats">
+                100%
+                <span>Креативность</span>
+              </p>
+
+              <p class="categories__product-stats">
+                1050
+                <span>Товаров</span>
+              </p>
+            </div>
+
+            <a href="" class="categories__hero-link">
+              <span class="categories__hero-year">/2022</span>
+
+              <div class="categories__product-info">
+                <div class="categories__product-img">
+                  <img src="./img/categories/profile-sample-img-4.png" alt="">
+                </div>
+
+                <span>ArtLovers-современный портал</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <section class="popular-fonts">
+    <div class="container">
+        <div class="title">
+            <div class="title__words">
+                
+                <strong>Популярные шрифты</strong>
+            </div>
+            <a href="#" class="link">Смотреть все</a>
+        </div>
+        <div class="popular-fonts__wrapper">
+            <div class="popular-fonts__swiper swiper">
+                <div class="popular-fonts__swiper-wrapper swiper-wrapper">
+                    <div class="popular-fonts__slide swiper-slide">
+                       <article class="c-font">
+                            <div class="c-font__block">
+                                <div class="c-font__image">
+                                    <img src="./img/cfont/img1.png" alt="">
+                                </div>
+                                <div class="c-font__rhombus">01</div>
+                            </div>
+                            <div class="c-font__inner">
+                                <div class="c-font__title">
+                                    <strong>Wild Mango | Modern Serif</strong>
+                                    <span>by KA Designs</span>
+                                </div>
+                                <div class="c-font__price">
+                                    <span>1200</span>
+                                </div>
+                            </div>
+                       </article>
+                    </div>
+                    <div class="popular-fonts__slide swiper-slide">
+                        <article class="c-font">
+                             <div class="c-font__block">
+                                 <div class="c-font__image">
+                                     <img src="./img/cfont/img2.png" alt="">
+                                 </div>
+                                 <div class="c-font__rhombus">02</div>
+                             </div>
+                             <div class="c-font__inner">
+                                 <div class="c-font__title">
+                                     <strong>Wild Mango | Modern Serif</strong>
+                                     <span>by KA Designs</span>
+                                 </div>
+                                 <div class="c-font__price">
+                                     <span>1200</span>
+                                 </div>
+                             </div>
+                        </article>
+                     </div>
+                     <div class="popular-fonts__slide swiper-slide">
+                        <article class="c-font">
+                             <div class="c-font__block">
+                                 <div class="c-font__image">
+                                     <img src="./img/cfont/img3.png" alt="">
+                                 </div>
+                                 <div class="c-font__rhombus">03</div>
+                             </div>
+                             <div class="c-font__inner">
+                                 <div class="c-font__title">
+                                     <strong>The Awesome Serif Family</strong>
+                                     <span>by Nicky Laatz</span>
+                                 </div>
+                                 <div class="c-font__price">
+                                     <span>1200</span>
+                                 </div>
+                             </div>
+                        </article>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination popular-fonts__pagination">
+            <div class="pagination__bullets popular-fonts__bullets">
+
+            </div>
+            
+        </div>
+    </div>
+</section>
+        <section class="popular-graph">
+    <div class="container">
+        <div class="title">
+            <div class="title__words">
+                
+                <strong>Популярная графика</strong>
+            </div>
+            <a href="#" class="link">Смотреть все</a>
+        </div>
+        <div class="popular-graph__wrapper">
+            <div class="popular-graph__swiper swiper">
+                <div class="popular-graph__swiper-wrapper swiper-wrapper">
+                    <div class="popular-graph__slide swiper-slide">
+                       <article class="c-graph">
+                            <div class="c-graph__block">
+                                <div class="c-graph__image">
+                                    <img src="./img/cgraph/img1.png" alt="">
+                                </div>
+                                <div class="c-graph__rhombus">01</div>
+                            </div>
+                            <div class="c-graph__inner">
+                                <div class="c-graph__title">
+                                    <strong>Wild Mango | Modern Serif</strong>
+                                    <span>by KA Designs</span>
+                                </div>
+                                <div class="c-graph__price">
+                                    <span>1200</span>
+                                </div>
+                            </div>
+                       </article>
+                    </div>
+                    <div class="popular-graph__slide swiper-slide">
+                        <article class="c-graph">
+                             <div class="c-graph__block">
+                                 <div class="c-graph__image">
+                                     <img src="./img/cgraph/img2.png" alt="">
+                                 </div>
+                                 <div class="c-graph__rhombus">02</div>
+                             </div>
+                             <div class="c-graph__inner">
+                                 <div class="c-graph__title">
+                                     <strong>Wild Mango | Modern Serif</strong>
+                                     <span>by KA Designs</span>
+                                 </div>
+                                 <div class="c-graph__price">
+                                     <span>1200</span>
+                                 </div>
+                             </div>
+                        </article>
+                     </div>
+                     <div class="popular-graph__slide swiper-slide">
+                        <article class="c-graph">
+                             <div class="c-graph__block">
+                                 <div class="c-graph__image">
+                                     <img src="./img/cgraph/img3.png" alt="">
+                                 </div>
+                                 <div class="c-graph__rhombus">03</div>
+                             </div>
+                             <div class="c-font__inner">
+                                 <div class="c-graph__title">
+                                     <strong>The Awesome Serif Family</strong>
+                                     <span>by Nicky Laatz</span>
+                                 </div>
+                                 <div class="c-graph__price">
+                                     <span>1200</span>
+                                 </div>
+                             </div>
+                        </article>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination popular-graph__pagination">
+            <div class="pagination__bullets popular-graph__bullets">
+
+            </div>
+            
+        </div>
+    </div>
+</section>
+        <section class="popular-fonts">
+  <div class="container">
+      <div class="title">
+          <div class="title__words">
+              
+              <strong>Популярные фотографии</strong>
+          </div>
+          <a href="#" class="link">Смотреть все</a>
+      </div>
+      <div class="popular-fonts__wrapper">
+          <div class="popular-fonts__swiper swiper">
+              <div class="popular-fonts__swiper-wrapper swiper-wrapper">
+                  <div class="popular-fonts__slide swiper-slide">
+                     <article class="c-font">
+                          <div class="c-font__block">
+                              <div class="c-font__image">
+                                  <img src="./img/cfont/img1.png" alt="">
+                              </div>
+                              <div class="c-font__rhombus">01</div>
+                          </div>
+                          <div class="c-font__inner">
+                              <div class="c-font__title">
+                                  <strong>Wild Mango | Modern Serif</strong>
+                                  <span>by KA Designs</span>
+                              </div>
+                              <div class="c-font__price">
+                                  <span>1200</span>
+                              </div>
+                          </div>
+                     </article>
+                  </div>
+                  <div class="popular-fonts__slide swiper-slide">
+                      <article class="c-font">
+                           <div class="c-font__block">
+                               <div class="c-font__image">
+                                   <img src="./img/cfont/img2.png" alt="">
+                               </div>
+                               <div class="c-font__rhombus">02</div>
+                           </div>
+                           <div class="c-font__inner">
+                               <div class="c-font__title">
+                                   <strong>Wild Mango | Modern Serif</strong>
+                                   <span>by KA Designs</span>
+                               </div>
+                               <div class="c-font__price">
+                                   <span>1200</span>
+                               </div>
+                           </div>
+                      </article>
+                   </div>
+                   <div class="popular-fonts__slide swiper-slide">
+                      <article class="c-font">
+                           <div class="c-font__block">
+                               <div class="c-font__image">
+                                   <img src="./img/cfont/img3.png" alt="">
+                               </div>
+                               <div class="c-font__rhombus">03</div>
+                           </div>
+                           <div class="c-font__inner">
+                               <div class="c-font__title">
+                                   <strong>The Awesome Serif Family</strong>
+                                   <span>by Nicky Laatz</span>
+                               </div>
+                               <div class="c-font__price">
+                                   <span>1200</span>
+                               </div>
+                           </div>
+                      </article>
+                   </div>
+              </div>
+          </div>
+      </div>
+      <div class="pagination popular-fonts__pagination">
+          <div class="pagination__bullets popular-fonts__bullets">
+
+          </div>
+          
+      </div>
+  </div>
+</section>
+        <section class="popular-graph">
+  <div class="container">
+      <div class="title">
+          <div class="title__words">
+              
+              <strong>Популярные векторы</strong>
+          </div>
+          <a href="#" class="link">Смотреть все</a>
+      </div>
+      <div class="popular-graph__wrapper">
+          <div class="popular-graph__swiper swiper">
+              <div class="popular-graph__swiper-wrapper swiper-wrapper">
+                  <div class="popular-graph__slide swiper-slide">
+                     <article class="c-graph">
+                          <div class="c-graph__block">
+                              <div class="c-graph__image">
+                                  <img src="./img/cgraph/img1.png" alt="">
+                              </div>
+                              <div class="c-graph__rhombus">01</div>
+                          </div>
+                          <div class="c-graph__inner">
+                              <div class="c-graph__title">
+                                  <strong>Wild Mango | Modern Serif</strong>
+                                  <span>by KA Designs</span>
+                              </div>
+                              <div class="c-graph__price">
+                                  <span>1200</span>
+                              </div>
+                          </div>
+                     </article>
+                  </div>
+                  <div class="popular-graph__slide swiper-slide">
+                      <article class="c-graph">
+                           <div class="c-graph__block">
+                               <div class="c-graph__image">
+                                   <img src="./img/cgraph/img2.png" alt="">
+                               </div>
+                               <div class="c-graph__rhombus">02</div>
+                           </div>
+                           <div class="c-graph__inner">
+                               <div class="c-graph__title">
+                                   <strong>Wild Mango | Modern Serif</strong>
+                                   <span>by KA Designs</span>
+                               </div>
+                               <div class="c-graph__price">
+                                   <span>1200</span>
+                               </div>
+                           </div>
+                      </article>
+                   </div>
+                   <div class="popular-graph__slide swiper-slide">
+                      <article class="c-graph">
+                           <div class="c-graph__block">
+                               <div class="c-graph__image">
+                                   <img src="./img/cgraph/img3.png" alt="">
+                               </div>
+                               <div class="c-graph__rhombus">03</div>
+                           </div>
+                           <div class="c-font__inner">
+                               <div class="c-graph__title">
+                                   <strong>The Awesome Serif Family</strong>
+                                   <span>by Nicky Laatz</span>
+                               </div>
+                               <div class="c-graph__price">
+                                   <span>1200</span>
+                               </div>
+                           </div>
+                      </article>
+                   </div>
+              </div>
+          </div>
+      </div>
+      <div class="pagination popular-graph__pagination">
+          <div class="pagination__bullets popular-graph__bullets">
+
+          </div>
+          
+      </div>
+  </div>
+</section>
+        <section class="popular-graph">
+  <div class="container">
+      <div class="title">
+          <div class="title__words">
+              
+              <strong>Популярные мокапы</strong>
+          </div>
+          <a href="#" class="link">Смотреть все</a>
+      </div>
+      <div class="popular-graph__wrapper">
+          <div class="popular-graph__swiper swiper">
+              <div class="popular-graph__swiper-wrapper swiper-wrapper">
+                  <div class="popular-graph__slide swiper-slide">
+                     <article class="c-graph">
+                          <div class="c-graph__block">
+                              <div class="c-graph__image">
+                                  <img src="./img/cgraph/img1.png" alt="">
+                              </div>
+                              <div class="c-graph__rhombus">01</div>
+                          </div>
+                          <div class="c-graph__inner">
+                              <div class="c-graph__title">
+                                  <strong>Wild Mango | Modern Serif</strong>
+                                  <span>by KA Designs</span>
+                              </div>
+                              <div class="c-graph__price">
+                                  <span>1200</span>
+                              </div>
+                          </div>
+                     </article>
+                  </div>
+                  <div class="popular-graph__slide swiper-slide">
+                      <article class="c-graph">
+                           <div class="c-graph__block">
+                               <div class="c-graph__image">
+                                   <img src="./img/cgraph/img2.png" alt="">
+                               </div>
+                               <div class="c-graph__rhombus">02</div>
+                           </div>
+                           <div class="c-graph__inner">
+                               <div class="c-graph__title">
+                                   <strong>Wild Mango | Modern Serif</strong>
+                                   <span>by KA Designs</span>
+                               </div>
+                               <div class="c-graph__price">
+                                   <span>1200</span>
+                               </div>
+                           </div>
+                      </article>
+                   </div>
+                   <div class="popular-graph__slide swiper-slide">
+                      <article class="c-graph">
+                           <div class="c-graph__block">
+                               <div class="c-graph__image">
+                                   <img src="./img/cgraph/img3.png" alt="">
+                               </div>
+                               <div class="c-graph__rhombus">03</div>
+                           </div>
+                           <div class="c-font__inner">
+                               <div class="c-graph__title">
+                                   <strong>The Awesome Serif Family</strong>
+                                   <span>by Nicky Laatz</span>
+                               </div>
+                               <div class="c-graph__price">
+                                   <span>1200</span>
+                               </div>
+                           </div>
+                      </article>
+                   </div>
+              </div>
+          </div>
+      </div>
+      <div class="pagination popular-graph__pagination">
+          <div class="pagination__bullets popular-graph__bullets">
+
+          </div>
+          
+      </div>
+  </div>
+</section>
+        <section class="author">
+    <div class="container">
+        <div class="author__wrapper">
+            <div class="author__image">
+                <img src="./img/author/img.png" alt="">
+            </div>
+            <div class="author__image-mob">
+                <img src="./img/author/pic.png" alt="">
+            </div>
+            <div class="author__title">
+                <strong>Станьте автором и начните зарабатывать с ArtLovers!</strong>
+                <span>Продавайте свои проекты и привлекайте миллионы покупателей или продвигайте других художников на креативном рынке, чтобы заработать деньги!</span>
+            </div>
+            <button class="all-btn"><span>Зарегистрироваться</span></button>
+        </div>
+    </div>
+</section>
+      </section>
+		</main>
+		<div class="modal thanks-reg">
+	<div class="modal__container">
+		<button class="modal__close thanks-reg__close">
+			<img
+				src="./img/icon/close.svg"
+				alt="" />
+		</button>
+		<div class="modal__box thanks-reg__box">
+			<div class="thanks-reg__box-icon">
+				<img
+					src="./img/icon/galkawhite.svg"
+					alt="" />
+			</div>
+			<div class="thanks-reg__box-title">
+				<strong>Спасибо за регистрацию!</strong>
+				<span>
+					Письмо с подтверждением отправлено
+					<br />
+					на электронную почту
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal art-modal">
+	<div class="modal__container art-modal__container">
+		<button class="modal__close art-modal__close">
+			<img
+				src="./img/icon/close.svg"
+				alt="" />
+		</button>
+		<div class="modal__box art-modal__box">
+			<div class="art-modal__title">
+				<strong>
+					Как получить одобрение, чтобы стать владельцем магазина ArtLovers
+				</strong>
+				<span>
+					Креативный рынок известен уникальными высококачественными активами.
+					Хотя мы не можем гарантировать, что каждая заявка будет принята, вот
+					некоторые квалификации, которые ищет наша команда, которые могут
+					улучшить вашу.
+				</span>
+			</div>
+			<div class="art-modal__inner">
+				<div class="art-modal__image">
+					<img
+						src="./img/artmodal/bro.svg"
+						alt="" />
+				</div>
+				<div class="art-modal__text">
+					<strong>Уникальность</strong>
+					<span>
+						Мы ищем дизайнеров, которые понимают, что уже есть, и создают
+						выразительные, непроизводные работы, которые выделяются.
+					</span>
+				</div>
+			</div>
+			<div class="art-modal__inner">
+				<div class="art-modal__image">
+					<img
+						src="./img/artmodal/bro2.svg"
+						alt="" />
+				</div>
+				<div class="art-modal__text">
+					<strong>Качество</strong>
+					<span>
+						Мы можем сказать, что вы потратили время, чтобы сделать свою работу
+						превосходной, вплоть до мельчайших деталей и завершающих штрихов.
+						Наши клиенты требуют качественных активов, а не запасов.
+					</span>
+				</div>
+			</div>
+			<div class="art-modal__inner">
+				<div class="art-modal__image">
+					<img
+						src="./img/artmodal/bro3.svg"
+						alt="" />
+				</div>
+				<div class="art-modal__text">
+					<strong>Портфолио</strong>
+					<span>
+						Давайте посмотрим несколько примеров того, что вы планируете
+						продавать на Stay Creative! Пожалуйста, сделайте адрес электронной
+						почты, связанный с вашей учетной записью Сгеануе Маке", видимым
+						где-нибудь на сайте.
+					</span>
+				</div>
+			</div>
+			<div class="art-modal__inner">
+				<div class="art-modal__image">
+					<img
+						src="./img/artmodal/bro4.svg"
+						alt="" />
+				</div>
+				<div class="art-modal__text">
+					<strong>Полезность</strong>
+					<span>
+						Ваши продукты помогут клиентам завершить свои дизайнерские проекты,
+						работу с клиентами или конечные продукты для продажи.
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer__nav-wrapper">
+			<div class="footer__socials-wrapper">
+				<a
+					class="footer__logo"
+					href="#">
+					<img
+						src="./img/footer/logo-white-version.svg"
+						alt="" />
+				</a>
+
+				<div class="footer__socials">
+					<a
+						href=""
+						class="footer__socials-item">
+						<img
+							src="./img/icon/vk-white.svg"
+							alt="" />
+					</a>
+					<a
+						href=""
+						class="footer__socials-item">
+						<img
+							src="./img/icon/telegram-icon.svg"
+							alt="" />
+					</a>
+				</div>
+			</div>
+
+			<nav class="footer__nav">
+
+				<div class="footer__col">
+					<p>Добрая школа</p>
+					<ul class="footer__list">
+						<li><a>Блог</a></li>
+						<li><a>Бесплатно</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__col">
+					<p>Маркетплейс</p>
+					<ul class="footer__list">
+						<li><a>О нас</a></li>
+						<li><a>Контакты</a></li>
+						<li><a>Блог</a></li>
+						<li><a>Преимущества</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__col">
+					<p>Поддержка</p>
+					<ul class="footer__list">
+						<li><a>FAQ</a></li>
+						<li><a>Написать в поддержку</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__col">
+					<p>Документация</p>
+					<ul class="footer__list">
+						<li><a>Политика конфиденциальности</a></li>
+						<li><a>Договор оферты</a></li>
+						<li><a>Согласие на обработку персональных данных</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<div class="footer__request">
+			<p class="footer__message">
+				<span>Сделано с</span>
+				<img
+					src="./img/footer/white-heart.svg"
+					alt="" />
+				<span>от RequestDesign</span>
+			</p>
+			<div class="footer__links">
+                <a>
+                    <img src="./img/footer/a-icon.svg" alt="">
+                </a>
+                <a>
+                    <img src="./img/footer/playmarket-icon.svg" alt="">
+                </a>
+            </div>
+		</div>
+	</div>
+</footer>
+
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./js/swiper-bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.15/autosize.min.js"></script>
+<script src="./js/Jq-script.js"></script>
+<script src="./js/main.js"></script>
+
+
+		<script src="./js/header.js"></script>
+	</body>
+</html>
