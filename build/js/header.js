@@ -33,6 +33,17 @@ const mobileSearchPopUpCloseBtn = document.querySelector(
 const headerWrapper = document.querySelector('.header__wrapper');
 const header = document.querySelector('.header');
 
+const searchInputPopUp = document.querySelector('.header__search-popup');
+const mobileSearchInputPopUp = document.querySelector('#mobile-search-popup');
+const searchInputItemsPupUp = document.querySelectorAll(
+	'.header__search-popup-item',
+);
+const searchInputBtn = document.querySelector('.header__search-button');
+const headerSearchBtn = document.querySelector('.header__search-category ');
+const mobileSearchInputPopUpBtn = document.querySelector(
+	'.header__item--burger',
+);
+
 const registerPopUpClass = 'header__register-alert--show';
 const shopBtnClass = 'header__store--show';
 const removeShopBtnClass = 'header__shop-button--remove';
@@ -51,31 +62,34 @@ const showBurgerClass = 'header__nav--show';
 const burgerCategoryPopUpClass = 'burger__categ-item--show';
 const mobileSerchPopUpClass = 'burger__search--show';
 const headerShadowClass = 'header__wrapper--scroll';
+const searchItemPupUpActiveClass = 'header__search-popup-item--active';
+const searchPupUpShowClass = 'header__search-popup--show';
 
+//показ serch-popup & переключение активной категории
+searchInputItemsPupUp.forEach((element) => {
+	element.addEventListener('click', () => {
+		if (!element.classList.contains(searchItemPupUpActiveClass)) {
+			const currentItem = document.querySelectorAll(
+				'.' + searchItemPupUpActiveClass,
+			);
+			currentItem.forEach((el) => {
+				el.classList.remove(searchItemPupUpActiveClass);
+			});
+			element.classList.add(searchItemPupUpActiveClass);
+		}
+	});
+});
+
+headerSearchBtn.addEventListener('click', () => {
+	searchInputPopUp.classList.toggle(searchPupUpShowClass);
+});
+mobileSearchInputPopUpBtn.addEventListener('click', () => {
+	mobileSearchInputPopUp.classList.toggle(searchPupUpShowClass);
+});
 
 //добавляем показ register-popup
 shopBtn.addEventListener('click', () => {
-	registerPopUp.classList.toggle(registerPopUpClass);
-});
-
-//закрытие register-alert, смена блоков, 'login'
-
-const updateHeaderStyles = () => {
-	storeBtn.classList.toggle(shopBtnClass);
-	shopBtn.classList.toggle(removeShopBtnClass);
-	input.classList.toggle(inputClass);
-	buttonsBar.classList.toggle(buttonBarClass);
-};
-
-registerCloseBtn.addEventListener('click', () => {
-	registerPopUp.classList.remove(registerPopUpClass);
-	updateHeaderStyles();
-});
-
-//'logout'
-logOut.addEventListener('click', () => {
-	registerPopUp.classList.remove(registerPopUpClass);
-	updateHeaderStyles();
+	searchInputPopUp.classList.toggle(registerPopUpClass);
 });
 
 //показ profile-popup
@@ -168,7 +182,7 @@ categorysTitle.forEach((element) => {
 
 //открыть, закрыть бургер-меню
 burgerBtn.addEventListener('click', () => {
-	header.classList.toggle('header--active')
+	header.classList.toggle('header--active');
 	const openPopUps = document.querySelectorAll('.burger__categ-item--show');
 	if (openPopUps) {
 		openPopUps.forEach((popup) => {
