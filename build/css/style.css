@@ -6814,6 +6814,7 @@ img {
   }
   .header__profile-wrapper {
     height: 100%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6823,7 +6824,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: relative;
+    padding-bottom: 10rem;
   }
   .header__profile-content {
     padding: 3rem;
@@ -6843,13 +6844,13 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 4.272rem;
-    margin-bottom: 8rem;
+    gap: 3.272rem;
+    margin-bottom: 4rem;
   }
   .header__profile-img {
     border-radius: 100rem;
-    width: 14.12rem;
-    height: 14.12rem;
+    width: 15.12rem;
+    height: 15.12rem;
   }
   .header__profile-img img {
     height: 100%;
@@ -6903,7 +6904,8 @@ img {
     border-top: 0.2rem solid #EAEBEF;
     border-bottom: 0.2rem solid #EAEBEF;
     padding-top: 4rem;
-    padding-bottom: 7.2rem;
+    padding-bottom: 4.2rem;
+    margin-bottom: 7.2rem;
   }
   .header__profile-link {
     display: -webkit-box;
@@ -6928,6 +6930,38 @@ img {
     top: 0px;
     background: rgba(222, 117, 94, 0);
     border-radius: 4rem;
+  }
+  .header__profile-btn-link {
+    margin-left: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2.8rem;
+    margin-bottom: 10.4rem;
+  }
+  .header__profile-btn-link span {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    letter-spacing: 0.02em;
+    color: #DE755E;
+  }
+  .header__profile-btn-link--log-out {
+    gap: 2rem;
+  }
+  .header__profile-btn-link--log-out span {
+    color: #383742;
+  }
+  .header__profile-btn-link--log-out img {
+    width: 4rem;
+  }
+  .header__profile-btn-img {
+    width: 5rem;
   }
   .header__profile-link--active {
     background: -webkit-gradient(linear, left top, right top, color-stop(-9.71%, #ffdbd4), color-stop(108.84%, rgba(255, 219, 212, 0)));
