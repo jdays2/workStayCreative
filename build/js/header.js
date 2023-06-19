@@ -43,6 +43,11 @@ const headerSearchBtn = document.querySelector('.header__search-category ');
 const mobileSearchInputPopUpBtn = document.querySelector(
 	'.header__item--burger',
 );
+const profileMobilePopUpCloseBtn = document.querySelector(
+	'.header__profile-close-btn',
+);
+const profileMobilePopUp = document.querySelector('.header__profile-wrapper');
+const profileMobilePopUpList = document.querySelector('.header__profile-links');
 
 const registerPopUpClass = 'header__register-alert--show';
 const shopBtnClass = 'header__store--show';
@@ -64,6 +69,8 @@ const mobileSerchPopUpClass = 'burger__search--show';
 const headerShadowClass = 'header__wrapper--scroll';
 const searchItemPupUpActiveClass = 'header__search-popup-item--active';
 const searchPupUpShowClass = 'header__search-popup--show';
+const profileMobilePopUpShowClass = 'header__profile-wrapper--show';
+const profileMobilePopUpActiveItem = 'header__profile-link--active';
 
 //показ serch-popup & переключение активной категории
 searchInputItemsPupUp.forEach((element) => {
@@ -94,7 +101,11 @@ shopBtn.addEventListener('click', () => {
 
 //показ profile-popup
 userBtn.addEventListener('click', () => {
-	profilePopUp.classList.toggle(profilePopUpClass);
+	if (window.innerWidth > 768) {
+		profilePopUp.classList.toggle(profilePopUpClass);
+	} else {
+		profileMobilePopUp.classList.toggle(profileMobilePopUpShowClass);
+	}
 });
 
 profilePopUpCloseBtn.addEventListener('click', () => {
@@ -220,4 +231,25 @@ window.addEventListener('scroll', () => {
 	} else {
 		headerWrapper.classList.remove(headerShadowClass);
 	}
+});
+
+//переключение активной вкладки
+profileMobilePopUpCloseBtn.addEventListener('click', () => {
+	profileMobilePopUp.classList.toggle(profileMobilePopUpShowClass);
+});
+
+const items = profileMobilePopUpList.querySelectorAll('.header__profile-link');
+
+items.forEach((element) => {
+	element.addEventListener('click', () => {
+		if (!element.classList.contains(profileMobilePopUpActiveItem)) {
+			const currentItem = document.querySelectorAll(
+				'.' + profileMobilePopUpActiveItem,
+			);
+			currentItem.forEach((el) => {
+				el.classList.remove(profileMobilePopUpActiveItem);
+			});
+			element.classList.add(profileMobilePopUpActiveItem);
+		}
+	});
 });

@@ -17,14 +17,47 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			padding-bottom: 10rem;
+			background: #fff;
+			z-index: 100;
+			top: 0rem;
+			transform: translateY(-297%);
+			transition: 0.8s;
+		}
+
+		&__profile-wrapper--show {
+			transform: translateY(0);
 		}
 
 		&__profile-content {
-			padding: 3rem;
+			padding: 20.1rem 3rem 20rem;
 			width: 100%;
+			height: 100%;
 			display: flex;
 			flex-direction: column;
+			z-index: 200;
+			background: #fff;
+			overflow: scroll;
+			position: relative;
+		}
+
+		&__profile-close-btn {
+			position: absolute;
+			width: 11rem;
+			height: 11rem;
+			border-radius: 100rem;
+			background: #eaebef;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				width: 2.2rem;
+				height: 2.2rem;
+			}
+
+			top: 4rem;
+			right: 3rem;
+			z-index: 200;
 		}
 
 		&__profile-data {
@@ -81,8 +114,8 @@
 			align-items: flex-start;
 			gap: 1rem;
 
-			border-top: 0.2rem solid #EAEBEF;
-			border-bottom: 0.2rem solid #EAEBEF;
+			border-top: 0.2rem solid #eaebef;
+			border-bottom: 0.2rem solid #eaebef;
 			padding-top: 4rem;
 			padding-bottom: 4.2rem;
 			margin-bottom: 7.2rem;
@@ -121,13 +154,14 @@
 				font-size: 3.2rem;
 				line-height: 4rem;
 				letter-spacing: 0.02em;
-				color: #DE755E;
+				color: #de755e;
 			}
 		}
 
 		&__profile-btn-link--log-out {
-			gap: 2rem; 
-			
+			gap: 2rem;
+			padding-bottom: 10rem;
+
 			span {
 				color: #383742;
 			}
@@ -139,6 +173,95 @@
 
 		&__profile-btn-img {
 			width: 5rem;
+		}
+
+		&__profile-wrapper--seller {
+			.header__profile-link--active {
+				background: linear-gradient(
+					90deg,
+					rgba(255, 180, 47, 0.7) -47.25%,
+					rgba(255, 255, 255, 0) 112.46%
+				);
+
+				span {
+					background-color: #ffb42f;
+				}
+
+				.header__profile-link-img {
+					path {
+						fill: #ffb42f;
+						stroke: transparent;
+					}
+				}
+
+				.header__profile-link-title {
+					color: #ffb42f;
+				}
+			}
+
+			.header__profile-btn-link {
+				span {
+					color: #ffb42f;
+				}
+			}
+
+			.header__profile-btn-link--log-out {
+				span {
+					color: #383742;
+				}
+			}
+		}
+
+		&__profile-unauthorized {
+			width: 100%;
+			margin-top: 39rem;
+			p {
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 4rem;
+				line-height: 4.8rem;
+				text-align: center;
+				letter-spacing: 0.02em;
+				color: #383742;
+				margin-bottom: 5rem;
+			}
+
+			a {
+				width: 100%;
+				height: 11rem;
+				background-color: #de755e;
+				border-radius: 100rem;
+
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 2.8rem;
+				line-height: 3.4rem;
+				text-align: center;
+				letter-spacing: 0.02em;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: #ffffff;
+			}
+		}
+
+		&__profile-unauthorized {
+			display: none;
+		}
+
+		&__profile-wrapper--unauthorized {
+			.header__profile-data,
+			.header__profile-links,
+			.header__profile-btn-link {
+				display: none;
+			}
+
+			.header__profile-unauthorized {
+				display: block;
+			}
 		}
 
 		&__profile-link--active {
@@ -935,11 +1058,16 @@
 	}
 
 	.main {
+		padding-top: 18.7rem;
 		margin-bottom: 12rem;
+		&__big {
+			padding: 6.5rem 3rem;
+		}
 
 		.container {
 			width: 100%;
 			padding: 0 3rem;
+			overflow: hidden;
 		}
 
 		&__wrapper {
@@ -953,6 +1081,7 @@
 		&__big {
 			width: 100%;
 			height: 67.4rem;
+			margin-bottom: 4rem;
 		}
 
 		&__swiper {
@@ -981,14 +1110,14 @@
 		}
 
 		&__big-image {
-			width: 16rem;
-			height: 16rem;
-			top: 27.1rem;
-			right: 1rem;
+			width: 19rem;
+			height: 19rem;
+			top: 27.3rem;
+			right: -3.2rem;
 		}
 
 		&__small {
-			height: 32rem;
+			height: 30rem;
 			width: 100%;
 			flex-direction: column-reverse;
 			border-radius: 5rem;
@@ -997,10 +1126,10 @@
 
 		&__small-inner {
 			width: 100%;
-			height: 11rem;
-			background-size: cover;
-			padding-left: 3.6rem;
-			padding-top: 4.2rem;
+			height: 10rem;
+			// background-size: cover;
+			padding-left: 2.5rem;
+			padding-top: 3.7rem;
 		}
 
 		&__small-svg,
@@ -1021,11 +1150,11 @@
 		}
 
 		&__small-svg {
-			margin-right: 9rem;
+			margin-right: 6.2rem;
 		}
 
-		&__small-photo {
-			margin-right: 9rem;
+		&__small-photo{
+			margin-right: 2.8rem;
 		}
 
 		&__slide-content-text {
@@ -1072,13 +1201,12 @@
 			height: 47rem;
 		}
 	}
-
 	.cat-product {
-		width: 36.4rem;
+		width: 32.5rem;
 		height: 61.4rem;
 		&__block {
 			width: 100%;
-			height: 47rem;
+			height: 45rem;
 			padding: 3rem;
 		}
 
@@ -1094,6 +1222,7 @@
 			font-size: 2.8rem;
 			line-height: 3.4rem;
 			top: 0;
+			box-shadow: none;
 		}
 
 		&__arrow {
@@ -1118,9 +1247,10 @@
 		}
 
 		&__like {
-			width: 17.4rem;
+			width: 15.8rem;
 			height: 9.4rem;
 			margin-right: 0;
+			border-radius: 4rem;
 
 			span {
 				font-size: 2.8rem;
@@ -1135,8 +1265,9 @@
 
 		&__views {
 			margin-right: 0;
-			width: 17.4rem;
+			width: 15.8rem;
 			height: 9.4rem;
+			border-radius: 4rem;
 			span {
 				font-size: 2.8rem;
 				line-height: 3.4rem;
@@ -2608,7 +2739,7 @@
 	}
 
 	.header-block__sort {
-		width: 57rem;
+		width: 56rem;
 		height: 11rem;
 		margin: 0;
 		margin-right: 1.2rem;
@@ -2850,6 +2981,22 @@
 	}
 
 	.sort-popup {
+		width: 69rem;
+		right: auto;
+		top: 13.2rem;
+		border-radius: 4rem;
+		&__item {
+			gap: 2.4rem;
+		}
+
+		&__title {
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 2.8rem;
+			line-height: 4rem;
+			color: #383742;
+		}
 	}
 
 	.basic-card {
@@ -3365,6 +3512,35 @@
 
 	.fonts {
 		overflow: hidden;
+
+		.sort-popup {
+			width: 69rem;
+			right: auto;
+			top: 13.2rem;
+			border-radius: 4rem;
+			&__item {
+				gap: 2.4rem;
+			}
+
+			&__title {
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 2.8rem;
+				line-height: 4rem;
+				color: #383742;
+			}
+
+			.checker {
+				width: 6rem;
+				height: 6rem;
+
+				img {
+					width: 2.1rem;
+					height: 2.25rem;
+				}
+			}
+		}
 	}
 
 	.header-block__item {

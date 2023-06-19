@@ -34,14 +34,17 @@ const mainSwiper = new Swiper('.main__swiper', {
 });
 
 const cleansingSlider = new Swiper('.popular-users__swiper', {
-	slidesPerView: 2,
 	speed: 500,
-	spaceBetween: rem(2),
+
 	wrapperClass: 'popular-users__swiper-wrapper',
 	slideClass: 'popular-users__slide',
 	breakpoints: {
 		769: {
 			slidesPerView: 4,
+			spaceBetween: rem(2),
+		},
+		320: {
+			slidesPerView: 2,
 		},
 	},
 
