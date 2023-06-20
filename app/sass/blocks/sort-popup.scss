@@ -1,0 +1,58 @@
+.sort-popup {
+	display: none;
+	flex-direction: column;
+	gap: 1.6rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+	background: #fff;
+	border-radius: 2rem;
+	padding: 3.2rem;
+  z-index: 10;
+  position: absolute;
+
+  &--show {
+    display: flex;
+  }
+  
+  &__title {
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1.6rem;
+		line-height: 2rem;
+		color: #383742;
+	}
+
+	&__item {
+		display: flex;
+		gap: 1.2rem;
+		align-items: center;
+		justify-content: flex-start;
+		cursor: pointer;
+	}
+
+}
+
+.checker {
+	width: 4rem;
+	height: 4rem;
+	background: #E0E1E7;
+	border-radius: 1rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		display: none;
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}
+
+.checker--active {
+	img {
+		display: block;
+	}
+}
