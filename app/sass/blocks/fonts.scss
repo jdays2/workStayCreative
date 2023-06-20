@@ -1,0 +1,40 @@
+.fonts {
+	width: 180rem;
+	margin: 0 auto;
+
+	li {
+		list-style-type: none;
+	}
+
+	&__list {
+    display: flex;
+    flex-direction: column;
+		ul {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 6rem;
+			margin-bottom: 5.9rem;
+		}
+	}
+
+	.basic-card__price span {
+    position: relative;
+    font-size: 1.4rem;
+    top: -0.5rem;
+    left: 0rem;
+	}
+
+	&__pagination {
+		margin-top: 6rem;
+		margin-bottom: 5.86rem;
+		padding-left:1rem;
+		padding-right: 1rem;
+	}
+
+	.sort-popup {
+		right: 25.2rem;
+    top: 9.2rem;
+	}
+
+}
