@@ -1979,6 +1979,7 @@
             margin-left: 0;
             margin-right: 0;
             margin-bottom: 6rem;
+            display: none;
         }
 
         &__title {
@@ -2826,6 +2827,323 @@
     .red-btn {
        margin: 0 auto;
        width: 100%;
+    }
+
+    .lk-sales {
+        &__title {
+            font-size: 6rem;
+            line-height: 7.2rem;
+            margin-bottom: 6rem;
+        }
+
+        &__statistics-title {
+            font-weight: 700;
+            font-size: 5rem;
+            line-height: 148%;
+            margin-bottom: 3rem;
+        }
+
+      
+
+
+        &__statistics-inner {
+            display: flex;
+            width: 100%;
+            justify-content: initial;
+            align-items: initial;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            padding: 0;
+            padding-top: 6rem;
+            margin-bottom: 9.6rem;
+        }
+
+        &__statistics-inner::-webkit-scrollbar {
+            display: none;
+        }
+
+        &__nav-wrap {
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+
+
+        &__statistics-box {
+            min-width: 41rem;
+            width: 41rem;
+            height: 24.8rem;
+            padding-top: 8.4rem;
+            padding-bottom: 3rem;
+            white-space: initial;
+        }
+    
+        &__statistics-box-circle {
+            width: 11rem;
+            height: 11rem;
+            top: -6rem;
+            img {
+                width: 4.4rem;
+                height: 4.4rem;
+            }
+        }
+
+        &__statistics-box-title {
+            font-size: 2.8rem;
+            line-height: 3.2rem;
+           
+            
+        }
+
+        &__nav {
+            flex-direction: column;
+            margin-bottom: 6rem;
+        }
+
+
+        &__lists {
+            display: flex;
+            width: 100%;
+            justify-content: initial;
+            align-items: initial;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            margin-right: 0;
+            margin-bottom: 4rem;
+        }
+
+        &__lists::-webkit-scrollbar {
+            display: none;
+        }
+
+        &__item {
+            font-weight: 700;
+            font-size: 2.8rem;
+            line-height: 3.4rem;
+        }
+
+        &__select {
+            width: 100%;
+            height: 11rem;
+        }
+
+        .new-select {
+            font-weight: 700;
+            font-size: 2.8rem;
+            line-height: 120%;
+
+            &::before {
+                width: 2rem;
+                height: 1.5rem;
+                background-image: url(../img/icon/Polygon.svg);
+                right: 0.5rem;
+                top: 3.3rem;
+            }
+        }
+
+        .new-select__list {
+            top: 12rem;
+        }
+
+        .new-select__item span {
+            font-size: 2.8rem;
+            padding: 4rem 4rem;
+        }
+
+        &__chart-wrap {
+            overflow: hidden;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 3rem;
+            margin-bottom: 12rem;
+        }
+
+        &__chart-wrap::-webkit-scrollbar {
+            display: none;
+        }
+
+        &__chart {
+            width: 152rem;
+            padding: 4rem;
+            height: 71.2rem;
+        }
+
+        &__chart-wrap-inner {
+            justify-content: initial;
+        }
+
+        &__chart-date {
+            font-size: 2.8rem;
+            line-height: 3.2rem;
+            margin-right: 7rem;
+        }
+
+        &__chart-btn {
+            span {
+                font-size: 2.8rem;
+                line-height: 3.2rem;
+                margin-right: 2rem;
+            }
+
+            img {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+
+        &__sale-title {
+            font-size: 5rem;
+            line-height: 7.4rem;
+            margin-bottom: 3rem;
+        }
+
+        &__sale-nav {
+            flex-wrap: wrap;
+        }
+
+        &__sale-nav-date {
+            width: 100%;
+            height: 10.8rem;
+            margin-bottom: 3rem;
+            font-size: 2.8rem;
+            line-height: 3.2rem;
+        }
+
+        &__sale-nav {
+            margin-bottom: 6rem;
+            .lk-sales__select {
+                margin-right: 1rem;
+                width: 57rem;
+                margin-left: initial;
+            }
+        }
+
+        &__sale-filter-btn {
+            width: 11rem;
+            height: 11rem;
+
+            span {
+                font-size: 0;
+                &::before {
+                    width: 4.6rem;
+                    height: 4.6rem;
+                    right: 50%;
+                    transform: translate(50%,-50%);
+                }
+            }
+        }
+
+        &__sale-points {
+            display: none;
+        }
+
+        &__advice {
+            width: 100%;
+        }
+
+        &__advice-title {
+            display: block;
+            margin-bottom: 6rem;
+        }
+
+        &__advice-word {
+            font-size: 5rem;
+            line-height: 6rem;
+            margin-bottom: 5rem;
+        }
+
+        &__advice-pagination {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 6rem;
+        }
+
+    }
+
+    .sale-box {
+        margin-bottom: 6rem;
+        border-radius: 4rem;
+        padding: 6rem 3rem;
+        &__desk {
+            display: none;
+        }
+
+        &__mob {
+            display: block;
+        }
+
+        &__mob-block {
+            display: flex;
+            align-items:center;
+            margin-bottom: 4rem;
+        }
+
+        &__mob-image {
+            width: 16rem;
+            height: 10rem;
+            margin-right: 2.2rem;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 2rem;
+            }
+        }
+
+        &__mob-name {
+            font-size: 2.8rem;
+            line-height: 3.4rem;
+        }
+
+        &__mob-data {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        &__mob-data:last-child {
+            margin-bottom: 0;
+        }
+
+        &__mob-data-bold {
+            font-weight: 700;
+            font-size: 2.8rem;
+            line-height: 3.4rem;
+            letter-spacing: 0.02em;
+            color: #A0A1A4;
+
+        }
+
+        &__mob-data-medium{
+            color: #A0A1A4;
+            font-size: 2.8rem;
+            line-height: 3.4rem;
+        }
+
+        &__mob-data-rub {
+            color: #A0A1A4;
+            font-size: 2.8rem;
+            line-height: 3.4rem;
+            padding-right: 1.3rem;
+            position: relative;
+            &::before {
+                position: absolute;
+                content:'₽';
+                right: 0rem;
+                top: -0.1rem;
+                font-size: 2rem;
+                color: #A0A1A4;
+            }
+        }
+
+       
     }
     
 }
