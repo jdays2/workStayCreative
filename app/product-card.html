@@ -8,6 +8,7 @@
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<link
 			rel="stylesheet"
 			href="./css/style.min.css" />
@@ -21,8 +22,146 @@
 		@@include('./template/header.html')
 
 		<main>
-			<section class="product-card"></section>
+			<section class="product-card">
+				<div class="product-card__head">
+					<div class="product-card__map">
+						<a class="product-card__map-item">Главная</a>
+						<a class="product-card__map-item">Шрифты</a>
+						<a class="product-card__map-item">Шрифты с засечками</a>
+					</div>
+					<p class="product-card__title">Семейство шрифтов Seasons</p>
+				</div>
+
+				<div class="product-card__swipers-wrapper">
+					<div
+						style="
+							--swiper-navigation-color: #fff;
+							--swiper-pagination-color: #fff;
+						"
+						class="product-card__main-swiper swiper mySwiper2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="product-card__item-main-img">
+									<img src="./img/product-card/card-item-sample-img.png" />
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card__item-main-img">
+									<img src="./img/product-card/card-item-sample-img.png" />
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card__item-main-img">
+									<img src="./img/product-card/card-item-sample-img.png" />
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card__item-main-img">
+									<img src="./img/product-card/card-item-sample-img.png" />
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card__item-main-img">
+									<img src="./img/product-card/card-item-sample-img.png" />
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card__item-main-img">
+									<img src="./img/product-card/card-item-sample-img.png" />
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card__item-main-img">
+									<img src="./img/product-card/card-item-sample-img.png" />
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card__item-main-img">
+									<img src="./img/product-card/card-item-sample-img.png" />
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card__item-main-img">
+									<img src="./img/product-card/card-item-sample-img.png" />
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card__item-main-img">
+									<img src="./img/product-card/card-item-sample-img.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-card__controll-swiper-wrapper">
+						<div class="product-card__arrow-right">
+							<img src="./img/product-card/slider-arrow-right.svg" alt="">
+						</div>
+
+						<div class="product-card__arrow-left">
+							<img src="./img/product-card/slider-arrow-left.svg" alt="">
+						</div>
+						<div
+							thumbsSlider=""
+							class="swiper product-card__controll-swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="product-card__item-img">
+										<img src="./img/product-card/card-item-sample-img.png" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-card__item-img">
+										<img src="./img/product-card/card-item-sample-img.png" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-card__item-img">
+										<img src="./img/product-card/card-item-sample-img.png" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-card__item-img">
+										<img src="./img/product-card/card-item-sample-img.png" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-card__item-img">
+										<img src="./img/product-card/card-item-sample-img.png" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-card__item-img">
+										<img src="./img/product-card/card-item-sample-img.png" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-card__item-img">
+										<img src="./img/product-card/card-item-sample-img.png" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-card__item-img">
+										<img src="./img/product-card/card-item-sample-img.png" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-card__item-img">
+										<img src="./img/product-card/card-item-sample-img.png" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-card__item-img">
+										<img src="./img/product-card/card-item-sample-img.png" />
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		@@include('./template/footer.html')
+		<script src="./js/product-card.js"></script>
 	</body>
 </html>

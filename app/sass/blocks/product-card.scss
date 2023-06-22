@@ -1,0 +1,123 @@
+.product-card {
+	padding: 0rem 6rem 0rem;
+	&__title {
+		font-family: 'Austin Cyr';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 7.3rem;
+		line-height: 7rem;
+		letter-spacing: 0.02em;
+		color: #383742;
+		margin-bottom: 3rem;
+	}
+
+	&__map {
+		display: flex;
+		gap: 3.3rem;
+		align-items: center;
+		margin-bottom: 5.5rem;
+	}
+
+	&__map-item {
+		display: block;
+		position: relative;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2.6rem;
+		color: #383742;
+	}
+
+	&__map-item:not(:last-child) {
+		&::after {
+			content: '';
+			position: absolute;
+			width: 1.2rem;
+			height: 1.2rem;
+			background-image: url(../../img/product-card/map-icon.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			top: 0.8rem;
+			right: -2.6rem;
+		}
+	}
+
+	&__item-img {
+		width: 15.5rem;
+		// margin-right: 2rem;
+		overflow: hidden;
+		border-radius: 2.5rem;
+		border: 0.3rem solid #de755e00;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__main-swiper {
+		margin-bottom: 3rem;
+	}
+	&__controll-swiper-wrapper {
+		padding: 1.3rem 7.5rem;
+		background-color: #fff;
+		border-radius: 4rem;
+    position: relative;
+	}
+	&__controll-swiper {
+		background-color: #fff;
+		border-radius: 2.5rem;
+	}
+
+	&__item-main-img {
+		width: 118rem;
+		height: 73rem;
+		img {
+			border-radius: 4rem;
+			height: 100%;
+		}
+	}
+
+	&__swipers-wrapper {
+		width: 118rem;
+		height: 89.2rem;
+	}
+
+	&__controll-swiper {
+    width: 103rem;
+	}
+
+	&__arrow-left {
+		width: 3.162rem;
+		position: absolute;
+		top: 6rem;
+		left: 2.297rem;
+    cursor: pointer;
+    transition: 0.7s;
+		img {
+			width: 100%;
+		}
+	}
+
+	&__arrow-right {
+		width: 3.162rem;
+		position: absolute;
+		top: 6rem;
+		right: 2.297rem;
+    cursor: pointer;
+    transition: 0.4s;    
+		img {
+			width: 100%;
+		}
+	}
+
+  &__arrow-right:active, &__arrow-left:active {
+    transform: scale(1.1);
+  }
+
+	.mySwiper .swiper-slide-thumb-active {
+		.product-card__item-img {
+			border: 0.3rem solid #de755e;
+		}
+	}
+}
