@@ -1,11 +1,15 @@
+const licensItems = document.querySelectorAll('.product-card__price-license-item');
+const licensList = document.querySelector('.product-card__price-license-list');
 
-var swiper = new Swiper(".mySwiper", {
+const activeLicensItemClass = 'product-card__price-license-item--active'
+//главный свайпер
+const swiper = new Swiper(".mySwiper", {
   loop: true,
   slidesPerView: 6,
   watchSlidesProgress: true,
 });
 
-var swiper2 = new Swiper(".mySwiper2", {
+const swiper2 = new Swiper(".mySwiper2", {
   loop: true,
   slidesPerView: 1,
   spaceBetween: rem(2),
@@ -16,4 +20,21 @@ var swiper2 = new Swiper(".mySwiper2", {
   thumbs: {
     swiper: swiper,
   },
+});
+
+//изменение активного элемента в выборе лицензии
+licensItems.forEach((element) => {
+	let itemClass = element.classList;
+
+	const removePrevios = () => {
+		const ativeItem = licensList.querySelector('.' + activeLicensItemClass);
+		ativeItem.classList.remove(activeLicensItemClass);
+	};
+
+	element.addEventListener('click', () => {
+		if (!itemClass.contains(activeLicensItemClass)) {
+			removePrevios();
+			itemClass.add(activeLicensItemClass);
+		}
+	});
 });
