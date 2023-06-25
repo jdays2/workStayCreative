@@ -1,5 +1,5 @@
 .product-card {
-	padding: 0rem 6rem 0rem;
+	padding: 0rem 6rem 18.6rem;
 	&__title {
 		font-family: 'Austin Cyr';
 		font-style: normal;
@@ -105,6 +105,7 @@
 	&__swipers-wrapper {
 		width: 118rem;
 		height: 89.2rem;
+		margin-bottom: 5.2rem;
 	}
 
 	&__controll-swiper {
@@ -153,6 +154,7 @@
 	&__main-content {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 19rem;
 	}
 
 	&__content-left-side {
@@ -483,6 +485,14 @@
 		}
 	}
 
+	.basic-card__price span {
+		left: 0rem;
+	}
+
+	&__seller-sub-btn--subscribed {
+		background-color: #383742;
+	}
+
 	&__seller-name {
 		font-family: 'Gilroy';
 		font-style: normal;
@@ -589,6 +599,476 @@
 			box-shadow: 2rem 1.5rem 4rem rgba(103, 110, 133, 0.1);
 		}
 	}
+
+	&__description-box {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 5rem;
+	}
+
+	&__title-list {
+		display: flex;
+		gap: 11.7rem;
+		align-items: center;
+		width: 100%;
+		border-bottom: 0.15rem solid #a0a1a44d;
+		margin-bottom: 4.9rem;
+	}
+
+	&__title-item {
+		position: relative;
+		bottom: -0.15rem;
+		cursor: pointer;
+		font-size: 2.2rem;
+		font-family: 'Gilroy';
+		font-weight: 700;
+		letter-spacing: 0.11rem;
+		text-transform: uppercase;
+		color: #a0a1a4;
+
+		display: flex;
+		flex-direction: column;
+
+		span {
+			display: flex;
+			margin-top: 1.2rem;
+			height: 0.3rem;
+			width: 100%;
+			background-color: #de755e00;
+			border-radius: 4rem;
+		}
+	}
+
+	&__title-item--active {
+		color: #383742;
+
+		span {
+			background-color: #de755e;
+		}
+	}
+
+	&__features-block {
+		display: none;
+		flex-direction: column;
+		width: 100%;
+		gap: 1.4rem;
+		min-height: 17.9rem;
+	}
+
+	&__description-block {
+		display: none;
+	}
+
+	&__features-item {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	&__features-item-title {
+		flex: 0;
+		white-space: nowrap;
+		color: #a0a1a4;
+		font-size: 2rem;
+		font-family: 'Gilroy';
+		font-weight: 500;
+		letter-spacing: 0.04rem;
+		padding-right: 0.4rem;
+	}
+
+	&__features-item-border {
+		flex: 1;
+		border-bottom: 0.1rem dashed #a0a1a4;
+		margin-bottom: 0.5rem;
+	}
+
+	&__features-item-value {
+		color: #383742;
+		font-size: 2rem;
+		font-family: 'Gilroy';
+		font-weight: 500;
+		letter-spacing: 0.04rem;
+		padding-left: 0.4rem;
+	}
+
+	&__description-block {
+		max-width: 105.4rem;
+		min-height: 17.9rem;
+		color: #383742;
+		font-size: 2rem;
+		font-family: 'Gilroy';
+		font-weight: 500;
+		line-height: 148%;
+	}
+
+	&__get-block {
+		display: none;
+		flex-direction: column;
+		gap: 0.8rem;
+		min-height: 17.9rem;
+	}
+
+	&__get-item {
+		color: #383742;
+		font-size: 2rem;
+		font-family: 'Gilroy';
+		font-weight: 500;
+		line-height: 148%;
+		margin-left: 3rem;
+		list-style-type: disc;
+	}
+
+	&__active-block {
+		display: flex;
+	}
+
+	&__preview-link {
+		display: flex;
+		gap: 2.5rem;
+		cursor: pointer;
+		align-items: center;
+
+		span {
+			color: #383742;
+			font-size: 2rem;
+			font-family: 'Gilroy';
+			font-weight: 700;
+			letter-spacing: 0.04rem;
+		}
+	}
+
+	&__preview-link-img {
+		width: 3.2rem;
+		img {
+			width: 100%;
+		}
+	}
+
+	&__other-products {
+		margin-bottom: 19.45rem;
+	}
+
+	&__reviews {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	&__reviews-head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 5.5rem;
+	}
+
+	&__reviews-title {
+		color: #383742;
+		font-size: 7.3rem;
+		font-family: 'Austin Cyr';
+		font-weight: 700;
+		line-height: 7rem;
+		letter-spacing: 0.146rem;
+	}
+
+	&__reviews-add-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 100rem;
+		width: 25.7rem;
+		height: 7.9rem;
+		background: #de755e;
+
+		span {
+			color: #fff;
+			text-align: center;
+			font-size: 2rem;
+			font-family: 'Gilroy';
+			font-weight: 700;
+			letter-spacing: 0.04rem;
+		}
+	}
+
+	&__reviews-info {
+		display: flex;
+		flex-direction: column;
+		gap: 2.3rem;
+		width: 30.5rem;
+		margin-right: 16rem;
+	}
+
+	&__reviews-slider {
+		width: 133.5rem;
+	}
+
+	&__reviews-content {
+		display: flex;
+		align-items: center;
+		margin-bottom: 19.9rem;
+	}
+
+	&__reviews-rating {
+		display: flex;
+		align-items: center;
+		gap: 1.3rem;
+		margin-bottom: 0.1rem;
+
+		span {
+			color: #383742;
+			font-size: 7.3rem;
+			font-family: Austin Cyr;
+			font-weight: 700;
+			line-height: 7rem;
+			letter-spacing: 0.146rem;
+		}
+	}
+
+	&__rating-icons {
+		display: flex;
+		gap: 0.5rem;
+		align-items: center;
+
+		.product-card__price-rating-item {
+			margin: 0;
+			width: 3.4rem;
+			height: 3.4rem;
+		}
+	}
+
+	&__reviews-values-list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
+
+		margin-bottom: 16.75rem;
+	}
+
+	&__reviews-values-item {
+		display: flex;
+		align-items: center;
+		gap: 1.593rem;
+
+		label {
+			color: #383742;
+			font-size: 2rem;
+			font-family: 'Gilroy';
+			font-weight: 500;
+			letter-spacing: 0.04rem;
+		}
+
+		progress {
+			width: 100%;
+			border-radius: 2.5rem;
+		}
+
+		progress::-webkit-progress-bar {
+			background-color: rgba(160, 161, 164, 0.3);
+			border-radius: 2.5rem;
+		}
+
+		progress::-moz-progress-bar {
+			background-color: rgba(160, 161, 164, 0.3);
+			border-radius: 2.5rem;
+		}
+
+		progress::-webkit-progress-value {
+			background-color: #de755e;
+			border-radius: 2.5rem;
+		}
+
+		progress::-moz-progress-value {
+			background-color: #de755e;
+			border-radius: 2.5rem;
+		}
+	}
+
+	&__rewies-item {
+		background-color: #fff;
+		border-radius: 3rem;
+		width: 40.5rem;
+		padding: 4.8rem;
+	}
+
+	&__rewies-item-head {
+		display: flex;
+		align-items: center;
+		margin-bottom: 3.1rem;
+	}
+
+	&__rewie-profile-info {
+		display: flex;
+		flex-direction: column;
+		gap: 1.1rem;
+	}
+
+	&__rewies-item-photo {
+		width: 8.6rem;
+		height: 8.6rem;
+		margin-right: 1.5rem;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__rewie-profile-name {
+		color: #383742;
+		font-size: 2rem;
+		font-family: 'Gilroy';
+		font-weight: 700;
+		letter-spacing: 0.04rem;
+	}
+
+	&__rewie-item-date {
+		color: #a0a1a4;
+		font-size: 2rem;
+		font-family: 'Gilroy';
+		font-weight: 500;
+		line-height: 2rem;
+	}
+
+	&__rewies-item-settings {
+		position: relative;
+		width: 3.2rem;
+		height: 3.2rem;
+		margin-left: auto;
+		margin-bottom: auto;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__rewies-item-title {
+		color: #383742;
+		font-size: 2rem;
+		font-family: 'Gilroy';
+		font-weight: 700;
+		letter-spacing: 0.04rem;
+		margin-bottom: 1.1rem;
+	}
+
+	&__rewies-item-subject {
+		color: #a0a1a4;
+		font-size: 2rem;
+		font-family: 'Gilroy';
+		font-weight: 500;
+		line-height: 2.8rem;
+
+		margin-bottom: 3.2rem;
+	}
+
+	&__rewies-item-rating {
+		display: flex;
+		gap: 0.8rem;
+		align-items: center;
+
+		span {
+			color: #383742;
+			font-size: 2.2rem;
+			font-family: 'Gilroy';
+			font-weight: 700;
+			letter-spacing: 0.11rem;
+			text-transform: uppercase;
+		}
+	}
+
+	&__settings-popup {
+		display: none;
+		justify-content: center;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		align-items: center;
+		border-radius: 1.5rem;
+		background: #fff;
+		box-shadow: 2rem 1.5rem 4rem 0rem rgba(103, 110, 133, 0.1);
+		position: absolute;
+		top: -0.8rem;
+		left: -21rem;
+
+		&::after {
+			content: '';
+			width: 2rem;
+			height: 2.6rem;
+			background-size: contain;
+			position: relative;
+			right: -1.95rem;
+			background-repeat: no-repeat;
+			background-image: url('../../img/product-card/popup-background-element.svg');
+		}
+
+		span {
+			display: block;
+			color: #383742;
+			font-size: 1.6rem;
+			font-family: 'Gilroy';
+			line-height: 2rem;
+			padding: 1.4rem;
+			white-space: nowrap;
+		}
+	}
+
+	.pagination__fraction .swiper-pagination-current {
+		position: relative;
+		padding-right: 4.2rem;
+		margin-right: 4.1rem;
+	}
+
+	.pagination__fraction .swiper-pagination-current::before {
+		width: 3.1rem;
+		height: 0.15rem;
+	}
+
+	.pagination__fraction .swiper-pagination-current {
+		position: relative;
+		padding-right: 4.2rem;
+		margin-right: 1.1rem;
+	}
+
+	&__footer {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	&__tags-box {
+		display: flex;
+		flex-direction: column;
+		gap: 2.4rem;
+	}
+
+	&__tags-title {
+		color: #383742;
+		font-size: 3.7rem;
+		font-family: 'Austin Cyr';
+		font-weight: 700;
+		line-height: 3.7rem;
+		letter-spacing: 0.074rem;
+	}
+
+	&__tags-wrapper {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+	}
+
+	&__tags-item {
+		padding: 1.6rem 4rem;
+		border-radius: 6.8rem;
+		background: #e0e1e7;
+		cursor: pointer;
+
+		span {
+			color: #383742;
+			font-size: 2rem;
+			font-family: 'Gilroy';
+			font-weight: 500;
+			letter-spacing: 0.04rem;
+		}
+	}
 }
 
 @media (hover: hover) {
@@ -605,6 +1085,10 @@
 	}
 
 	.product-card__item-heart-icon:hover ~ .product-card__heart-popup {
+		display: flex;
+	}
+
+	.product-card__rewies-item-settings:hover .product-card__settings-popup {
 		display: flex;
 	}
 }
