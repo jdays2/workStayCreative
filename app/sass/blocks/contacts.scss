@@ -1,0 +1,81 @@
+.contacts {
+	padding: 0rem 6rem 0rem;
+
+	&__title {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 5.5rem;
+
+		color: #000;
+		font-size: 7.3rem;
+		font-family: 'Austin Cyr';
+		font-weight: 700;
+		line-height: 7.5rem;
+		letter-spacing: 0.146rem;
+	}
+
+	&__hero {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__hero-img {
+		width: 87rem;
+		margin-bottom: 6rem;
+		border-radius: 5.5rem;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__links {
+		display: flex;
+		gap: 6rem;
+	}
+
+	&__links-for-seller,
+	&__links-for-client {
+		width: 40.5rem;
+		padding: 6rem;
+		background-color: #fff;
+		border-radius: 5.5rem;
+		flex-direction: column;
+		display: flex;
+		gap: 3rem;
+	}
+
+	&__links-title {
+		color: #383742;
+		font-size: 3.7rem;
+		font-family: 'Austin Cyr';
+		font-weight: 700;
+		line-height: 3.7rem;
+		letter-spacing: 0.074rem;
+		padding-bottom: 3rem;
+		border-bottom: 0.1rem solid rgba(217, 217, 217, 1);
+	}
+
+	&__links-wrapper {
+		display: flex;
+		gap: 2rem;
+		flex-direction: column;
+
+		span {
+			color: #383742;
+			font-size: 2rem;
+			font-family: 'Gilroy';
+			font-weight: 500;
+			line-height: 2.6rem;
+		}
+
+		a {
+			color: #de755e;
+			font-size: 2rem;
+			font-family: 'Gilroy';
+			font-weight: 700;
+			line-height: 2.6rem;
+		}
+	}
+}
