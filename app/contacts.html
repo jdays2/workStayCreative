@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./css/style.min.css" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Контакты</title>
+	</head>
+
+	<body>
+		@@include('./template/header.html')
+
+		<main>
+			<section class="contacts">
+				<p class="contacts__title">Контакты</p>
+				<div class="contacts__hero">
+					<div class="contacts__hero-part">
+						<div class="contacts__hero-img">
+							<img
+								src="./img/contacts/hero-img.png"
+								alt="" />
+						</div>
+
+						<div class="contacts__links">
+							<div class="contacts__links-for-seller">
+								<p class="contacts__links-title">Для продавцов</p>
+								<div class="contacts__links-wrapper">
+									<span>Телефон</span>
+									<a href="tel:+70000000000">+7 (000) 000 00-00</a>
+								</div>
+
+								<div class="contacts__links-wrapper">
+									<span>Почта</span>
+									<a href="mailto:forexampleinfo@mail.ru">
+										forexampleinfo@mail.ru
+									</a>
+								</div>
+							</div>
+
+							<div class="contacts__links-for-client">
+								<p class="contacts__links-title">Для продавцов</p>
+								<div class="contacts__links-wrapper">
+									<span>Телефон</span>
+									<a href="tel:+70000000000">+7 (000) 000 00-00</a>
+								</div>
+
+								<div class="contacts__links-wrapper">
+									<span>Почта</span>
+									<a href="mailto:forexampleinfo@mail.ru">
+										forexampleinfo@mail.ru
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<form
+						action=""
+						class="contacts__hero-part contacts__hero-part--form">
+						<div class="lk-register__title">
+							<strong>Напишите нам!</strong>
+							<span>Если у вас есть какие-то вопросы, наши менеджеры помогут вам.</span>
+						</div>
+						<div class="contacts__form-wrap">
+
+							<div class="contacts__form-inner">
+								<label for="">Имя Фамилия</label>
+								<input type="text" />
+							</div>
+							<div class="contacts__form-inner">
+								<label for="">E-mail</label>
+								<input type="text" />
+							</div>
+						</div>
+
+						<div class="contacts__form-wrap contacts__form-wrap--form">
+							<div class="contacts__form-inner">
+								<label for="">Ваш вопрос</label>
+								<textarea type="text"></textarea>
+							</div>
+						</div>
+
+						<div class="contacts__btns">
+							<a
+								href="#"
+								class="red-btn">
+								<span>Отправить</span>
+							</a>
+						</div>
+
+						<div class="contacts__policy">
+							Нажимая на кнопку, вы соглашаетесь с
+							<a href="#">Условиями обработки персональных данных</a>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		@@include('./template/footer.html')
+		<script src="./js/product-card.js"></script>
+	</body>
+</html>

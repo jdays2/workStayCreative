@@ -23,7 +23,7 @@ const iconFlip = () => {
 	sortBtnIcon.classList.toggle(sortBtnIconFlipClass);
 };
 
-//показать, скрыть popup sort
+// //показать, скрыть popup sort
 sortBtn.addEventListener('click', () => {
 	sortPopUp.classList.toggle(activeSortPopUpClass);
 	iconFlip();
@@ -40,8 +40,6 @@ const setCheckers = () => {
 		});
 	});
 };
-
-setCheckers();
 
 //функция по смене изображений кнопок filter
 const changeIcon = (icon, newIcon) => {
@@ -87,6 +85,7 @@ priceSlider.noUiSlider.on('update', updatePriceOutput);
 
 //показать, скрыть popUp filter
 filterBtn.addEventListener('click', () => {
+	setCheckers();
 	changeIcon(filterBtnIcon, filterBtnActiveIcon);
 
 	filterPopUp.classList.toggle(activeFilterPopUpClass);
