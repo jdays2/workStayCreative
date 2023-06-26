@@ -4403,7 +4403,7 @@
 		}
 	}
 
-  .categories {
+	.categories {
 		padding: 21rem 3rem 0rem;
 
 		.container {
@@ -4515,7 +4515,7 @@
 		}
 	}
 
-  .articles {
+	.articles {
 		padding: 0rem 3rem 0rem;
 
 		&__head {
@@ -4901,7 +4901,7 @@
 		}
 	}
 
-  .popular-photo {
+	.popular-photo {
 		margin-bottom: 12rem;
 
 		.title {
@@ -4917,7 +4917,7 @@
 		}
 	}
 
-  .popular-vector {
+	.popular-vector {
 		margin-bottom: 12rem;
 
 		.title {
@@ -4947,5 +4947,295 @@
 			justify-content: center;
 			margin-top: 6rem;
 		}
+	}
+
+	.contacts {
+		padding: 0rem 3rem 15rem;
+		&__title {
+			line-height: 5.5rem;
+			font-size: 6rem;
+			font-family: 'Austin Cyr';
+			font-weight: 700;
+			letter-spacing: 0.12rem;
+			margin-bottom: 6rem;
+		}
+
+		&__hero {
+			display: flex;
+			flex-direction: column;
+			gap: 6rem;
+			margin-bottom: 12rem;
+		}
+
+		&__hero-img {
+			width: 100%;
+		}
+
+		&__links {
+			display: flex;
+			flex-direction: column;
+			gap: 6rem;
+		}
+
+		&__links-for-seller,
+		&__links-for-client {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			flex-wrap: wrap;
+			padding: 6rem 3rem;
+			gap: 0 5rem;
+		}
+
+		&__links-title {
+			width: 100%;
+
+			color: #383742;
+			font-size: 6rem;
+			font-family: 'Austin Cyr';
+			font-weight: 700;
+			line-height: 130%;
+			letter-spacing: 0.12rem;
+			padding-bottom: 3rem;
+			margin-bottom: 3rem;
+		}
+
+		&__links-wrapper {
+			width: -webkit-fit-content;
+			width: -moz-fit-content;
+			width: fit-content;
+		}
+
+		&__links-wrapper {
+			gap: 1rem;
+			span {
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-weight: 500;
+				line-height: 5.2rem;
+			}
+
+			a {
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-weight: 700;
+				line-height: 5.2rem;
+			}
+		}
+
+		&__hero-part--form {
+			padding: 6rem 3rem;
+		}
+
+		&__form-wrap {
+			display: flex;
+			flex-direction: column;
+			gap: 6rem;
+
+			input {
+				width: 100%;
+				height: 9.6rem;
+				padding: 2.8rem 4.8rem;
+				border-radius: 2rem;
+
+				font-size: 3.2rem;
+				line-height: 125%;
+			}
+		}
+
+		&__form-wrap:not(:last-child) {
+			margin-bottom: 5.8rem;
+		}
+
+		&__form-inner {
+			label {
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-weight: 500;
+				letter-spacing: 0.056rem;
+				margin-bottom: 2rem;
+			}
+
+			textarea {
+				width: 100%;
+				height: 19.2rem;
+				padding: 2.8rem 4.8rem;
+				border-radius: 2rem;
+
+				font-size: 3.2rem;
+				line-height: 125%;
+			}
+		}
+
+		.lk-register__title {
+			strong {
+				font-size: 6rem;
+				font-family: 'Austin Cyr';
+				font-weight: 700;
+				letter-spacing: 0.12rem;
+			}
+
+			span {
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-weight: 500;
+				letter-spacing: 0.056rem;
+			}
+
+			margin-bottom: 6rem;
+			padding: 0rem;
+			border: none;
+		}
+		.red-btn {
+			width: 100%;
+		}
+
+		&__policy {
+			line-height: 3.2rem;
+			margin-top: 3rem;
+			width: 100%;
+			font-size: 2.8rem;
+			font-family: 'Gilroy';
+			font-weight: 500;
+			letter-spacing: 0.056rem;
+		}
+
+		.title {
+			margin-bottom: 5rem;
+			span {
+				margin-bottom: 1.8rem;
+			}
+		}
+
+		&__question-list {
+			width: 100%;
+			padding: 5rem 4rem 1rem;
+			border-radius: 3.7rem;
+			order: 1
+			
+		}
+
+		&__question-title {
+			font-size: 5rem;
+			font-family: "Austin Cyr";
+			font-weight: 700;
+			letter-spacing: 0.1rem;
+
+			margin-bottom: 4.5rem;
+		}
+
+		&__question-content {
+			flex-direction: column;
+			gap: 7.13rem;
+			
+		}
+
+		&__question-img {
+			width: 100%;
+			order: 2;
+			margin: 0;
+		}
+
+		.question-block {
+			order: 3;
+		}
+
+		&__question-item {
+			margin-left: -0.5rem;
+			gap: 1rem;
+			padding-bottom: 4rem;
+		}
+
+		&__question-item-title {
+			font-size: 3rem;
+			font-family: "Gilroy";
+			font-weight: 700 !important;
+			letter-spacing: 0.15rem;
+			text-transform: uppercase;
+			margin-top: 0rem;
+		}
+
+		&__question-item-content {
+			width: 100%;
+			height: 3.6rem;
+			padding-bottom: 0rem;
+
+			p {
+				width: 90%;
+				font-size: 2.8rem;
+				font-family: "Gilroy";
+				font-weight: 500;
+				line-height: 137%;
+				padding-bottom: 0;
+			}
+
+			span {
+				font-size: 2.8rem;
+				font-family: "Gilroy";
+				font-weight: 500;
+				line-height: 3.6rem;
+			}
+		}
+		&__question-icon {
+			width: 2.4rem;
+		}
+
+		&__question-item:not(:last-child) {
+			margin-bottom: 3.7rem;
+		}
+
+		&__question-item:last-child {
+			margin: 0;
+		}
+
+		.question-block {
+			margin-top: 4.5rem;
+			padding: 6rem 9.6rem;
+			border-radius: 5rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			gap: 0rem;
+
+			&__questions-title {
+				color: #383742;
+				font-size: 2.8rem;
+				font-family: "Gilroy";
+				font-weight: 700;
+				letter-spacing: 0.056rem;
+				padding: 0;
+				border: none;
+			}
+
+			&__questions-subtitle {
+				color: #383742;
+				text-align: center;
+				font-size: 2.8rem;
+				font-family: "Gilroy";
+				font-weight: 500;
+				letter-spacing: 0.056rem;
+				border: none;
+
+				padding-bottom: 4rem;
+				padding-top: 4rem;
+				margin-top: 4rem;
+				margin-bottom: 4rem;
+
+				border-top: 0.1rem solid #E0E1E7;
+				border-bottom: 0.1rem solid #E0E1E7;
+			}
+
+			&__questions-btn {
+				span {
+					font-size: 2.8rem;
+					font-family:"Gilroy";
+					font-weight: 700;
+					letter-spacing: 0.056rem;
+				}
+			}
+		}
+
+
 	}
 }
