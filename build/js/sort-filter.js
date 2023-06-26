@@ -23,13 +23,13 @@ const iconFlip = () => {
 	sortBtnIcon.classList.toggle(sortBtnIconFlipClass);
 };
 
-//показать, скрыть popup sort
+// //показать, скрыть popup sort
 sortBtn.addEventListener('click', () => {
 	sortPopUp.classList.toggle(activeSortPopUpClass);
 	iconFlip();
 });
 
-//логика checker
+// логика checker
 const setCheckers = () => {
 	const checkers = document.querySelectorAll('#checker');
 

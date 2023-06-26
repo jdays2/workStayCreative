@@ -17,7 +17,10 @@
 	&__hero {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-start;
+		width: 100%;
+		gap: 6rem;
+		margin-bottom: 19rem;
 	}
 
 	&__hero-img {
@@ -39,6 +42,7 @@
 	&__links-for-client {
 		width: 40.5rem;
 		padding: 6rem;
+		padding-bottom: 9.6rem;
 		background-color: #fff;
 		border-radius: 5.5rem;
 		flex-direction: column;
@@ -77,5 +81,118 @@
 			font-weight: 700;
 			line-height: 2.6rem;
 		}
+	}
+
+	&__hero-part--form {
+		padding: 8.1rem 12rem;
+		background-color: #fff;
+		border-radius: 5.5rem;
+	}
+
+	.lk-register__title strong {
+		display: block;
+		margin-bottom: 2rem;
+	}
+
+	&__form-inner {
+		label {
+			font-size: 2rem;
+			line-height: 2.4rem;
+			letter-spacing: 0.02em;
+			display: block;
+			margin-bottom: 1.2rem;
+			color: #383742;
+		}
+
+		input {
+			position: relative;
+			width: 30.5rem;
+			height: 4.8rem;
+			background: #eaebef;
+			border-radius: 1rem;
+			padding: 1.4rem 2.4rem;
+			font-weight: 400;
+			font-size: 1.6rem;
+			line-height: 125%;
+			color: #000000;
+			border: none;
+		}
+
+		textarea {
+			position: relative;
+			width: 63rem;
+			height: 9.6rem;
+			background: #eaebef;
+			border-radius: 1rem;
+			padding: 1.4rem 2.4rem;
+			font-weight: 400;
+			font-size: 1.6rem;
+			line-height: 125%;
+			color: #000000;
+			border: none;
+			resize: none;
+		}
+	}
+
+	&__form-wrap--form {
+		padding-bottom: 5.5rem;
+		border-bottom: 0.1rem solid #d9d9d9;
+		margin-bottom: 5.5rem !important;
+	}
+
+	.lk-register__title {
+		padding-bottom: 5.5rem;
+		border-bottom: 0.1rem solid #d9d9d9;
+
+		span {
+			display: block;
+			width: 90%;
+		}
+	}
+
+	.red-btn {
+		width: 56rem;
+		margin: 0rem;
+	}
+
+	&__btns {
+		display: flex;
+		align-items: center;
+	}
+
+	&__faq {
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 136.5%;
+		letter-spacing: 0.02em;
+		color: #a0a1a4;
+		a {
+			color: #de755e;
+			display: block;
+		}
+	}
+
+	&__faq.active {
+		display: flex;
+	}
+
+	&__policy {
+		margin-top: 2rem;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2.4rem;
+		letter-spacing: 0.02em;
+		width: 56rem;
+		color: #a0a1a4;
+
+		a {
+			color: #de755e;
+		}
+	}
+
+	&__form-wrap {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 4rem;
 	}
 }
