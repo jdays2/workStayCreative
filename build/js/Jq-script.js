@@ -396,30 +396,39 @@ $(document).ready(function () {
     //  закачка файла
 
 
-    var dt = new DataTransfer();
-
-    $('.input-file input[type=file]').on('change', function () {
-        let $filesList = $(this).closest('.input-file').next();
-
-
-        for (var i = 0; i < this.files.length; i++) {
-            let newFileInput = '<div class="input-file-list-item">' +
-                '<span class="input-file-list-name">' + this.files.item(i).name + '</span>' +
-
-                '</div>';
-            $filesList.append(newFileInput);
-            dt.items.add(this.files.item(i));
-        }
-        this.files = dt.files;
-    });
-  
-
 
 
 });
 
 
+var dt = new DataTransfer();
 
+$('.input-file input[type=file]').on('change', function(){
+	let $files_list = $(this).closest('.input-file').next();
+	
+
+	for(var i = 0; i < this.files.length; i++){
+		let new_file_input = '<div class="input-file-list-item">' +
+			'<span class="input-file-list-name">' + this.files.item(i).name + '</span>' +
+			'<a href="#" onclick="removeFilesItem(this); return false;" class="input-file-list-remove">x</a>' +
+			'</div>';
+		$files_list.append(new_file_input);
+		dt.items.add(this.files.item(i));
+	};
+	this.files = dt.files;
+});
+
+function removeFilesItem(target){
+	let name = $(target).prev().text();
+	let input = $(target).closest('.input-file-row').find('input[type=file]');	
+	$(target).closest('.input-file-list-item').remove();	
+	for(let i = 0; i < dt.items.length; i++){
+		if(name === dt.items[i].getAsFile().name){
+			dt.items.remove(i);
+		}
+	}
+	input[0].files = dt.files;  
+}
 
 
 
@@ -742,7 +751,128 @@ $('.lk-sales__select').each(function () {
     });
 });
 
+$(".product-lk__content-faq").each(function () {
 
+    let more = $(this).find(".product-lk__content-faq-btn");
+    let hide = $(this).find(".product-lk__content-faq-inner");
+    hide.hide(300);
+    more.click(function () {
+        hide.slideToggle(300);
+        more.toggleClass('active');
+    });
+
+});
+
+
+jQuery(document).ready(function ($) {
+ 
+    var maxFileSize = 2 * 1024 * 1024; // (байт) Максимальный размер файла (2мб)
+    var queue = {};
+    var form = $('form#uploadImages');
+    var imagesList = $('#uploadImagesList');
+
+    var itemPreviewTemplate = imagesList.find('.item.template').clone();
+    itemPreviewTemplate.removeClass('template');
+    imagesList.find('.item.template').remove();
+
+
+    $('#addImages').on('change', function () {
+        var files = this.files;
+
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+
+            if ( !file.type.match(/image\/(jpeg|jpg|png|gif)/) ) {
+                alert( 'Фотография должна быть в формате jpg, png или gif' );
+                continue;
+            }
+
+            if ( file.size > maxFileSize ) {
+                alert( 'Размер фотографии не должен превышать 2 Мб' );
+                continue;
+            }
+
+            preview(files[i]);
+        }
+
+        this.value = '';
+    });
+
+    // Создание превью
+    function preview(file) {
+        var reader = new FileReader();
+        reader.addEventListener('load', function(event) {
+            var img = document.createElement('img');
+
+            var itemPreview = itemPreviewTemplate.clone();
+
+            itemPreview.find('.img-wrap img').attr('src', event.target.result);
+            itemPreview.data('id', file.name);
+
+            imagesList.append(itemPreview);
+
+            queue[file.name] = file;
+
+        });
+        reader.readAsDataURL(file);
+    }
+
+    // Удаление фотографий
+    imagesList.on('click', '.delete-link', function () {
+        var item = $(this).closest('.item'),
+            id = item.data('id');
+
+        delete queue[id];
+
+        item.remove();
+    });
+
+
+    // Отправка формы
+    form.on('submit', function(event) {
+
+        var formData = new FormData(this);
+
+        for (var id in queue) {
+            formData.append('images[]', queue[id]);
+        }
+
+        $.ajax({
+            url: $(this).attr('action'),
+            type: 'POST',
+            data: formData,
+            async: true,
+            success: function (res) {
+                alert(res)
+            },
+            cache: false,
+            contentType: false,
+            processData: false
+        });
+
+        return false;
+    });
+
+});
+
+
+
+
+
+ 
+    // $('.checkbox').click( function () {
+    //     if (".checkbox > input[type='checkbox'] ").prop("checked") {
+    //         $(".checkbox > input[type='checkbox']").removeAttr("checked");
+    //       } else {
+    //         $(".checkbox > input[type='checkbox']").attr("checked");
+    //       }
+    // });
+     
+       
+       
+       
+     
+    
 
 
 

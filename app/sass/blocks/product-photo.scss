@@ -1,0 +1,105 @@
+.product-photo {
+    margin-top: 7.6rem;
+    margin-bottom: 6rem;
+    #uploadImages {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        width: 100%;
+
+       
+    }
+    #addImages {
+        font-size: 0;
+        background:none;
+        width: 16.6rem;
+        height: 16.6rem;
+        border: none;
+        background-image: url(../img/add-photo.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+
+        
+    }
+
+    .input-file {
+        font-size: 0;
+        background:none;
+        width: 16.6rem;
+        height: 16.6rem;
+        border: none;
+        background-image: url(../img/add-photo.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    #addImages[type=file] {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        display: block;
+        width: 0;
+        height: 0;
+    }
+
+    
+
+    #uploadImagesList {
+        display: flex;
+    }
+
+    .delete-link {
+        position: absolute;
+        z-index: 2;
+        background: #DE755E;
+        width: 3.3rem;
+        height: 3.3rem;
+        font-size: 0;
+        border-radius: 50%;
+        right: -1rem;
+        top: -1rem;
+        cursor: pointer;
+        display: none;
+        &::before {
+            position: absolute;
+            content:'';
+            width: 2rem;
+            height: 2rem;
+            background-image: url(../img/icx.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+           
+            right: 0.7rem;
+            top: 0.5rem;
+        }
+    }
+
+    .item {
+        position: relative;
+        width: 16.6rem;
+        height: 16.6rem;
+        margin-right: 2rem;
+    }
+
+    .item:last-child {
+        .delete-link {
+            display: block;
+        }
+    }
+
+    
+
+    .img-wrap {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 2rem;
+        }
+    }
+}
