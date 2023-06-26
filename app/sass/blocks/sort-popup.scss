@@ -40,19 +40,20 @@
 		}
 	}
 
+
+	input[type="radio"] {
+		display: none;
+	}
+	
+	.sort-popup__checker img {
+		display: none;
+	}
+	
+	.sort-popup__item input:checked + .sort-popup__label .sort-popup__checker img {
+		display: block;
+	}
 }
 
-input[type="radio"] {
-	display: none;
-}
-
-.sort-popup__checker img {
-  display: none;
-}
-
-.sort-popup__item input:checked + .sort-popup__label .sort-popup__checker img {
-  display: block;
-}
 
 .checker {
 	width: 4rem;
