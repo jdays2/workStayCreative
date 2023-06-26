@@ -1204,6 +1204,7 @@ main {
           align-items: center;
   z-index: 20;
   background-color: #fff;
+  border-radius: 0 0 3rem 3rem;
 }
 .header__lists {
   position: relative;
