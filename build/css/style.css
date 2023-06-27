@@ -11797,12 +11797,12 @@ img {
 }
 
 .contacts {
-  padding: 0rem 6rem 0rem;
+  padding: 0rem 6rem 12rem;
 }
 .contacts__title {
   width: 100%;
   text-align: center;
-  margin-bottom: 5.5rem;
+  margin-bottom: 6rem;
   color: #000;
   font-size: 7.3rem;
   font-family: "Austin Cyr";
@@ -11822,7 +11822,7 @@ img {
           align-items: flex-start;
   width: 100%;
   gap: 6rem;
-  margin-bottom: 19rem;
+  margin-bottom: 20rem;
 }
 .contacts__hero-img {
   width: 87rem;
@@ -11992,6 +11992,146 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 4rem;
+}
+.contacts__question-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.contacts__question-img {
+  width: 60.6rem;
+  margin-left: 1.7rem;
+}
+.contacts__question-img img {
+  width: 100%;
+}
+.contacts__question-list {
+  padding: 6.5rem 6rem 2.2rem;
+  border-radius: 5.5rem;
+  background: #fff;
+  width: 102.5rem;
+}
+.contacts__question-title {
+  color: #383742;
+  font-size: 3.5rem;
+  font-family: "Austin Cyr";
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.07rem;
+  margin-bottom: 1.6rem;
+}
+.contacts__question-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.4rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 2rem;
+  margin-bottom: 2.1rem;
+}
+.contacts__question-item input {
+  display: none;
+}
+.contacts__question-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  cursor: pointer;
+}
+.contacts__question-icon path {
+  fill: rgb(56, 55, 66);
+  stroke: rgba(56, 55, 66, 0);
+}
+.contacts input:checked + div label .contacts__question-icon {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.contacts input:checked + div label .contacts__question-icon path {
+  fill: rgb(222, 117, 94);
+  stroke: rgba(222, 117, 94, 0);
+}
+.contacts input:checked ~ .contacts__question-item-content {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.contacts__question-item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  height: 2.4rem;
+  overflow: hidden;
+}
+.contacts__question-item-content span {
+  color: #a0a1a4;
+  font-size: 1.8rem;
+  font-family: "Gilroy";
+  font-weight: 500;
+  letter-spacing: 0.036rem;
+}
+.contacts__question-item-content p {
+  width: 71.2rem;
+  color: #383742;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 500;
+  line-height: 2.6rem;
+  padding-bottom: 2rem;
+}
+.contacts__question-item:not(:last-child) {
+  border-bottom: 0.1rem solid #e0e1e7;
+  margin-bottom: 2rem;
+}
+.contacts__question-item-title {
+  color: #383742;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 0.35rem;
+  padding: 0 !important;
+  display: block !important;
+}
+.contacts__main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6rem;
+}
+.contacts .question-block {
+  width: 102.5rem;
+  margin-top: 6rem;
+  margin-left: auto;
+  padding: 3rem 4rem;
+  gap: 2.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contacts .title .link {
+  margin-top: 3.1rem;
 }
 
 @media only all and (max-width: 48em) {
@@ -16574,5 +16714,281 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 6rem;
+  }
+  .contacts {
+    padding: 0rem 3rem 15rem;
+  }
+  .contacts__title {
+    line-height: 5.5rem;
+    font-size: 6rem;
+    font-family: "Austin Cyr";
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+    margin-bottom: 6rem;
+  }
+  .contacts__hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 6rem;
+    margin-bottom: 12rem;
+  }
+  .contacts__hero-img {
+    width: 100%;
+  }
+  .contacts__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 6rem;
+  }
+  .contacts__links-for-seller, .contacts__links-for-client {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 6rem 3rem;
+    gap: 0 5rem;
+  }
+  .contacts__links-title {
+    width: 100%;
+    color: #383742;
+    font-size: 6rem;
+    font-family: "Austin Cyr";
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.12rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+  }
+  .contacts__links-wrapper {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .contacts__links-wrapper {
+    gap: 1rem;
+  }
+  .contacts__links-wrapper span {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    line-height: 5.2rem;
+  }
+  .contacts__links-wrapper a {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 700;
+    line-height: 5.2rem;
+  }
+  .contacts__hero-part--form {
+    padding: 6rem 3rem;
+  }
+  .contacts__form-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 6rem;
+  }
+  .contacts__form-wrap input {
+    width: 100%;
+    height: 9.6rem;
+    padding: 2.8rem 4.8rem;
+    border-radius: 2rem;
+    font-size: 3.2rem;
+    line-height: 125%;
+  }
+  .contacts__form-wrap:not(:last-child) {
+    margin-bottom: 5.8rem;
+  }
+  .contacts__form-inner label {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+    margin-bottom: 2rem;
+  }
+  .contacts__form-inner textarea {
+    width: 100%;
+    height: 19.2rem;
+    padding: 2.8rem 4.8rem;
+    border-radius: 2rem;
+    font-size: 3.2rem;
+    line-height: 125%;
+  }
+  .contacts .lk-register__title {
+    margin-bottom: 6rem;
+    padding: 0rem;
+    border: none;
+  }
+  .contacts .lk-register__title strong {
+    font-size: 6rem;
+    font-family: "Austin Cyr";
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+  }
+  .contacts .lk-register__title span {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+  }
+  .contacts .red-btn {
+    width: 100%;
+  }
+  .contacts__policy {
+    line-height: 3.2rem;
+    margin-top: 3rem;
+    width: 100%;
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+  }
+  .contacts .title {
+    margin-bottom: 5rem;
+  }
+  .contacts .title span {
+    margin-bottom: 1.8rem;
+  }
+  .contacts__question-list {
+    width: 100%;
+    padding: 5rem 4rem 1rem;
+    border-radius: 3.7rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .contacts__question-title {
+    font-size: 5rem;
+    font-family: "Austin Cyr";
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-bottom: 4.5rem;
+  }
+  .contacts__question-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 7.13rem;
+  }
+  .contacts__question-img {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0;
+  }
+  .contacts .question-block {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .contacts__question-item {
+    margin-left: -0.5rem;
+    gap: 1rem;
+    padding-bottom: 4rem;
+  }
+  .contacts__question-item-title {
+    font-size: 3rem;
+    font-family: "Gilroy";
+    font-weight: 700 !important;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    margin-top: 0rem;
+  }
+  .contacts__question-item-content {
+    width: 100%;
+    height: 3.6rem;
+    padding-bottom: 0rem;
+  }
+  .contacts__question-item-content p {
+    width: 90%;
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    line-height: 137%;
+    padding-bottom: 0;
+  }
+  .contacts__question-item-content span {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    line-height: 3.6rem;
+  }
+  .contacts__question-icon {
+    width: 2.4rem;
+  }
+  .contacts__question-item:not(:last-child) {
+    margin-bottom: 3.7rem;
+  }
+  .contacts__question-item:last-child {
+    margin: 0;
+  }
+  .contacts .question-block {
+    margin-top: 4.5rem;
+    padding: 6rem 9.6rem;
+    border-radius: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    gap: 0rem;
+  }
+  .contacts .question-block__questions-title {
+    color: #383742;
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 700;
+    letter-spacing: 0.056rem;
+    padding: 0;
+    border: none;
+  }
+  .contacts .question-block__questions-subtitle {
+    color: #383742;
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+    border: none;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-top: 0.1rem solid #E0E1E7;
+    border-bottom: 0.1rem solid #E0E1E7;
+  }
+  .contacts .question-block__questions-btn span {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 700;
+    letter-spacing: 0.056rem;
   }
 }
