@@ -10595,6 +10595,7 @@ img {
   overflow: hidden;
   border-radius: 2.5rem;
   border: 0.3rem solid rgba(222, 117, 94, 0);
+  cursor: pointer;
 }
 .product-card__item-img img {
   -o-object-fit: cover;
@@ -11630,12 +11631,17 @@ img {
   top: -0.8rem;
   left: -21rem;
 }
+.product-card__settings-popup--show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .product-card__settings-popup::after {
   content: "";
   width: 2rem;
   height: 2.6rem;
   background-size: contain;
-  position: relative;
+  position: absolute;
   right: -1.95rem;
   background-repeat: no-repeat;
   background-image: url("../../img/product-card/popup-background-element.svg");
@@ -11702,11 +11708,16 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+.product-card .question-block__questions-subtitle {
+  max-width: 26.8rem;
+}
 .product-card__tags-item {
   padding: 1.6rem 4rem;
   border-radius: 6.8rem;
   background: #e0e1e7;
   cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
 }
 .product-card__tags-item span {
   color: #383742;
@@ -11714,6 +11725,9 @@ img {
   font-family: "Gilroy";
   font-weight: 500;
   letter-spacing: 0.04rem;
+}
+.product-card__mobile-icons {
+  display: none;
 }
 
 @media (hover: hover) {
@@ -12102,7 +12116,7 @@ img {
   color: #383742;
   font-size: 2rem;
   font-family: "Gilroy";
-  font-weight: 700;
+  font-weight: 700 !important;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   cursor: pointer;
@@ -16899,9 +16913,15 @@ img {
     margin: 0;
   }
   .contacts .question-block {
+    padding: 6rem 9.6rem;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+    gap: 0;
+    width: 100%;
+  }
+  .contacts .question-block__questions-subtitle {
+    width: 100%;
   }
   .contacts__question-item {
     margin-left: -0.5rem;
@@ -16944,7 +16964,7 @@ img {
   .contacts__question-item:last-child {
     margin: 0;
   }
-  .contacts .question-block {
+  .question-block {
     margin-top: 4.5rem;
     padding: 6rem 9.6rem;
     border-radius: 5rem;
@@ -16961,7 +16981,7 @@ img {
     width: 100%;
     gap: 0rem;
   }
-  .contacts .question-block__questions-title {
+  .question-block__questions-title {
     color: #383742;
     font-size: 2.8rem;
     font-family: "Gilroy";
@@ -16970,7 +16990,7 @@ img {
     padding: 0;
     border: none;
   }
-  .contacts .question-block__questions-subtitle {
+  .question-block__questions-subtitle {
     color: #383742;
     text-align: center;
     font-size: 2.8rem;
@@ -16978,17 +16998,594 @@ img {
     font-weight: 500;
     letter-spacing: 0.056rem;
     border: none;
+    max-width: 100%;
     padding-bottom: 4rem;
     padding-top: 4rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    border-top: 0.1rem solid #E0E1E7;
-    border-bottom: 0.1rem solid #E0E1E7;
+    border-top: 0.1rem solid #e0e1e7;
+    border-bottom: 0.1rem solid #e0e1e7;
   }
-  .contacts .question-block__questions-btn span {
+  .question-block__questions-btn span {
     font-size: 2.8rem;
     font-family: "Gilroy";
     font-weight: 700;
+    letter-spacing: 0.056rem;
+  }
+  .product-card {
+    padding: 0rem 3rem 15rem;
+  }
+  .product-card__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-card__map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 6rem;
+    gap: 3.8rem;
+  }
+  .product-card__map-item {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    line-height: 5.2rem;
+  }
+  .product-card__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-bottom: 2rem;
+    font-size: 6rem;
+    line-height: 7.2rem;
+    font-family: "Austin Cyr";
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+  }
+  .product-card__map-item:not(:last-child)::after {
+    width: 1.3rem;
+    height: 1.7rem;
+    top: 1.7rem;
+    right: -2.8rem;
+  }
+  .product-card__main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-card__item-main-img {
+    width: 69rem;
+    height: 56rem;
+    border-radius: 5rem;
+  }
+  .product-card__item-main-img img {
+    height: 43rem;
+  }
+  .product-card__controll-swiper-wrapper {
+    padding: 2rem 2.4rem;
+    border-radius: 5rem;
+  }
+  .product-card__arrow-right, .product-card__arrow-left {
+    opacity: 0;
+    height: 0rem;
+    width: 0rem;
+  }
+  .product-card__item-img {
+    width: 20rem;
+    height: 13.67rem;
+    border-radius: 4rem;
+  }
+  .product-card__controll-swiper {
+    width: 134.8rem;
+  }
+  .product-card .mySwiper .swiper-slide-thumb-active .product-card__item-img {
+    border: 0.4rem solid #de755e;
+  }
+  .product-card__item-icons {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1.2rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 1.908rem;
+  }
+  .product-card__item-icons .product-card__item-icon-backgraund {
+    display: none;
+  }
+  .product-card__item-heart-icon, .product-card__item-bookmarks-icon {
+    position: static;
+    width: 15.8rem;
+    height: 11rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 4rem;
+    background: #e0e1e7;
+  }
+  .product-card__item-heart-icon {
+    background: #fff;
+  }
+  .product-card__item-heart-icon img {
+    width: 3.4rem;
+  }
+  .product-card__item-bookmarks-icon img {
+    width: 3.49rem;
+  }
+  .product-card__description-box {
+    top: 291.5rem;
+    position: absolute;
+  }
+  .product-card__content-right-side {
+    width: 69rem;
+    top: 131rem;
+    position: absolute;
+  }
+  .product-card__price-box, .product-card__seller-box {
+    border-radius: 5rem;
+    padding: 7rem 3rem 6rem;
+    width: 100%;
+  }
+  .product-card__price-title {
+    font-size: 6rem;
+    font-family: "Gilroy";
+    font-weight: 700;
+    line-height: 7rem;
+    letter-spacing: 0.06rem;
+  }
+  .product-card__preview-link {
+    position: relative;
+    top: 197.4rem;
+    gap: 4rem;
+  }
+  .product-card__preview-link span {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 700;
+    letter-spacing: 0.056rem;
+  }
+  .product-card__preview-link-img {
+    width: 5rem;
+  }
+  .product-card__price-current-value {
+    font-size: 6rem;
+    font-family: "Austin Cyr";
+    font-weight: 700;
+    line-height: 8.59rem;
+    letter-spacing: 0.12rem;
+  }
+  .product-card__price-current-value span {
+    margin-bottom: 3.9rem;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.1rem;
+    line-height: 2rem;
+  }
+  .product-card__price-head {
+    gap: 1.3rem;
+    margin-bottom: 3.5rem;
+  }
+  .product-card__price-rating {
+    gap: 0.8rem;
+  }
+  .product-card__price-rating-item {
+    width: 4.4rem;
+  }
+  .product-card__feedback {
+    gap: 2rem;
+  }
+  .product-card__feedback span {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+  }
+  .product-card__price-feedback-icon {
+    height: 4.8rem;
+    width: 4.8rem;
+  }
+  .product-card__price-item-title {
+    font-size: 2.5rem;
+    font-family: "Gilroy";
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+  }
+  .product-card__price-license-item span {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 700;
+    line-height: 5rem;
+    letter-spacing: 0.14rem;
+    text-transform: uppercase;
+  }
+  .product-card__price-circle {
+    margin-right: 2.4rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    border: 0.8rem solid #fff;
+  }
+  .product-card__price-buy-btn {
+    width: 50rem;
+    height: 11rem;
+  }
+  .product-card__price-buy-btn span {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 700;
+    letter-spacing: 0.056rem;
+  }
+  .product-card__price-buttons {
+    width: 100%;
+  }
+  .product-card__price-cart-btn {
+    width: 11rem;
+    height: 11rem;
+  }
+  .product-card__price-cart-btn img {
+    width: 4.93rem;
+    height: 4.93rem;
+  }
+  .product-card__content-right-side {
+    gap: 4rem;
+  }
+  .product-card__seller-box {
+    padding: 6rem 3rem 6rem;
+  }
+  .product-card__seller-head {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 3rem 0rem;
+  }
+  .product-card__seller-photo {
+    margin-right: 2rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  .product-card__seller-name {
+    width: 70%;
+    font-size: 3.2rem;
+    font-family: "Gilroy";
+    font-weight: 700;
+    letter-spacing: 0.064rem;
+  }
+  .product-card__seller-stats-value {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+    margin-top: 0.1rem;
+    margin-left: 1.1rem;
+  }
+  .product-card__seller-stats {
+    gap: 4rem;
+  }
+  .product-card__feedback span {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.005rem;
+  }
+  .product-card__product-count {
+    margin-left: 20rem;
+    letter-spacing: 0rem;
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    line-height: 4rem;
+  }
+  .product-card__seller-buttons {
+    margin-top: 2.1rem;
+    margin-bottom: 4rem;
+  }
+  .product-card__seller-profile-btn, .product-card__seller-sub-btn {
+    width: 30.8rem;
+    height: 11rem;
+  }
+  .product-card__seller-profile-btn span, .product-card__seller-sub-btn span {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 700;
+    letter-spacing: 0.056rem;
+  }
+  .product-card__seller-message {
+    padding-top: 3.5rem;
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+    line-height: 3.6rem;
+  }
+  .product-card__title-item {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 700;
+    letter-spacing: 0.14rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .product-card__title-list {
+    gap: 10rem;
+    width: 69rem;
+    overflow: scroll;
+    margin-bottom: 6.3rem;
+  }
+  .product-card__title-list::-webkit-scrollbar {
+    display: none;
+  }
+  .product-card__title-list::-moz-scrollbar {
+    display: none;
+  }
+  .product-card__features-block {
+    gap: 2.5rem;
+  }
+  .product-card__features-item-title, .product-card__features-item-value {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+    line-height: 3.4rem;
+  }
+  .product-card__active-block, .product-card__get-block {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+    line-height: 3.4rem;
+  }
+  .product-card__get-item {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+    line-height: 3.4rem;
+  }
+  .product-card .container {
+    padding: 0;
+  }
+  .product-card__other-products {
+    margin-top: 210rem;
+    margin-bottom: 19.45rem;
+  }
+  .product-card__other-products .link {
+    display: none;
+  }
+  .product-card .another-works__pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+  .product-card .basic-card__type {
+    width: 44.2rem;
+  }
+  .product-card__reviews-add-btn {
+    position: absolute;
+    width: 69rem;
+    height: 11rem;
+    top: 117rem;
+  }
+  .product-card__reviews-add-btn span {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 700;
+    letter-spacing: 0.056rem;
+  }
+  .product-card__reviews-content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-card__reviews-content {
+    width: 100%;
+  }
+  .product-card__reviews-info {
+    width: 100%;
+  }
+  .product-card__reviews-rating span {
+    font-size: 6rem;
+    font-family: "Austin Cyr";
+    font-weight: 700;
+    line-height: 14rem;
+    letter-spacing: 0.12rem;
+  }
+  .product-card__reviews {
+    margin-top: -15.7rem;
+  }
+  .product-card__reviews-title {
+    font-size: 6rem;
+    font-family: "Austin Cyr";
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+  }
+  .product-card__reviews-head {
+    margin: 0;
+    position: relative;
+  }
+  .product-card__rating-icons {
+    gap: 0.8rem;
+  }
+  .product-card__rating-icons .product-card__price-rating-item {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
+  .product-card__reviews-rating {
+    gap: 2.4rem;
+  }
+  .product-card__reviews-info {
+    gap: 0;
+  }
+  .product-card__reviews-values-item {
+    gap: 2rem;
+  }
+  .product-card__reviews-values-item label {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+  }
+  .product-card__reviews-values-item progress {
+    height: 1.4rem;
+  }
+  .product-card__reviews-values-list {
+    gap: 0.7rem;
+    margin-bottom: 6.75rem;
+  }
+  .product-card__pagination {
+    display: none;
+  }
+  .product-card__rewies-item {
+    width: 69rem;
+  }
+  .product-card__rewies-item-photo {
+    width: 12rem;
+    height: 12rem;
+    margin-right: 3rem;
+  }
+  .product-card__rewie-profile-name {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 700;
+    letter-spacing: 0.056rem;
+  }
+  .product-card__rewie-item-date {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    line-height: 4rem;
+  }
+  .product-card__rewies-item-title {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.046rem;
+  }
+  .product-card__rewies-item {
+    border-radius: 6rem;
+    padding: 6rem;
+  }
+  .product-card__rewies-item-title {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+    margin-bottom: 2rem;
+  }
+  .product-card__rewies-item-subject {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+  }
+  .product-card__rewies-item-head {
+    margin-bottom: 3rem;
+  }
+  .product-card__mobile-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.8rem;
+  }
+  .product-card__rewies-item-rating span {
+    display: none;
+  }
+  .product-card__rewies-item-settings {
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+  }
+  .product-card__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 17rem;
+  }
+  .product-card__tags-title {
+    font-size: 6rem;
+    font-family: "Austin Cyr";
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+    margin-bottom: 5rem;
+  }
+  .product-card__tags-wrapper {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1.8rem 2rem;
+    margin-bottom: 0.8rem;
+  }
+  .product-card__tags-wrapper span {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+  }
+  .product-card__tags-item {
+    padding: 3rem 4rem;
+  }
+  .product-card .question-block__questions-subtitle {
+    max-width: 100%;
+  }
+  .product-card__settings-popup {
+    padding: 2.8rem;
+    border-radius: 3rem;
+    left: -39rem;
+  }
+  .product-card__settings-popup::after {
+    position: absolute;
+    right: -3.95rem;
+    width: 4.6rem;
+    height: 4.6rem;
+  }
+  .product-card__settings-popup span {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
     letter-spacing: 0.056rem;
   }
 }

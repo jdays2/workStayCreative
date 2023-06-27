@@ -49,6 +49,7 @@
 		overflow: hidden;
 		border-radius: 2.5rem;
 		border: 0.3rem solid #de755e00;
+		cursor: pointer;
 
 		img {
 			-o-object-fit: cover;
@@ -988,12 +989,16 @@
 		top: -0.8rem;
 		left: -21rem;
 
+		&--show {
+			display: flex;
+		}
+
 		&::after {
 			content: '';
 			width: 2rem;
 			height: 2.6rem;
 			background-size: contain;
-			position: relative;
+			position: absolute;
 			right: -1.95rem;
 			background-repeat: no-repeat;
 			background-image: url('../../img/product-card/popup-background-element.svg');
@@ -1055,11 +1060,19 @@
 		align-items: center;
 	}
 
+	.question-block {
+		&__questions-subtitle {
+			max-width: 26.8rem;
+		}
+	}
+
 	&__tags-item {
 		padding: 1.6rem 4rem;
 		border-radius: 6.8rem;
 		background: #e0e1e7;
 		cursor: pointer;
+		text-align: center;
+    white-space: nowrap;
 
 		span {
 			color: #383742;
@@ -1068,6 +1081,10 @@
 			font-weight: 500;
 			letter-spacing: 0.04rem;
 		}
+	}
+
+	&__mobile-icons {
+		display: none;
 	}
 }
 
