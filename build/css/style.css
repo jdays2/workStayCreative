@@ -3845,8 +3845,10 @@ main {
 .modal {
   background: rgba(56, 55, 66, 0.25);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  display: none;
+  backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
   top: 0;
   width: 100%;
@@ -3858,6 +3860,27 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal__wrapper {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.modal--open {
+  pointer-events: auto !important;
+  opacity: 1;
+}
+.modal__product-card-swiper {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: 108.6rem;
 }
 .modal__container {
   position: relative;
@@ -3877,7 +3900,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
   margin-bottom: 2rem;
   margin-left: auto;
@@ -3887,10 +3910,268 @@ main {
   height: 1.8rem;
 }
 .modal__box {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 5.5rem;
   padding-top: 6rem;
   padding-bottom: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3.2rem;
+  padding: 6rem 8rem;
+  border-radius: 5.5rem;
+  background-color: #fff;
+}
+.modal__collection-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  max-height: 24rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.modal__collection-list::-webkit-scrollbar {
+  display: none;
+}
+.modal__collection-list::-moz-scrollbar {
+  display: none;
+}
+.modal__collection-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 82.9rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3rem;
+  background: #eaebef;
+  padding: 1.2rem 1.7rem;
+}
+.modal__collection-item-img {
+  height: 8.6rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin-right: 1.4rem;
+}
+.modal__collection-item-img img {
+  height: 100%;
+}
+.modal__collection-item-title {
+  color: #181818;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  margin-right: auto;
+}
+.modal__collection-item-btn {
+  padding: 2.6rem 3.9rem;
+  border-radius: 100rem;
+  background: #de755e;
+}
+.modal__collection-item-btn span {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+}
+.modal__collection-add-btn {
+  padding: 2.6rem 3.9rem;
+  border-radius: 100rem;
+  background: #de755e;
+  margin-left: auto;
+}
+.modal__collection-add-btn span {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+}
+.modal__form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.modal__form-input label {
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  margin-bottom: 1.2rem;
+}
+.modal__form-input input {
+  width: 74.5rem;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4.8rem;
+  padding: 1.4rem 2.4rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1rem;
+  background: #eaebef;
+  font-size: 1.6rem;
+  font-family: "Gilroy";
+  line-height: 2rem;
+}
+.modal__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5.2rem;
+}
+.modal__collections-create-btn span {
+  color: #de755e;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+}
+.modal__collection-item-btn--added {
+  background: #fff;
+}
+.modal__collection-item-btn--added span {
+  color: #383742;
+}
+.modal__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 14.4rem;
+  background: #de755e;
+}
+.modal__icon img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.modal__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.modal__user-profile {
+  width: 82.9rem;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal__user-profile-img {
+  width: 7.6161rem;
+  height: 7.6539rem;
+  margin-right: 2.19rem;
+}
+.modal__user-profile-img img {
+  height: 100%;
+}
+.modal__user-profile-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.6rem;
+}
+.modal__user-profile-data span {
+  color: #383742;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+}
+.modal__user-profile-data p {
+  color: #A0A1A4;
+  font-size: 1.6rem;
+  font-family: "Gilroy";
+  letter-spacing: 0.032rem;
+}
+.modal__form-input textarea {
+  border: none;
+  padding: 1.4rem 2.4rem;
+  width: 100%;
+  height: 16.2rem;
+  border-radius: 1rem;
+  background: #EAEBEF;
+  resize: none;
+  font-size: 1.6rem;
+  font-family: "Gilroy";
+  line-height: 2rem;
+}
+.modal__score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: auto;
+}
+.modal__score span {
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+}
+.modal__score .product-card__rating-icons {
+  gap: 0.4rem;
+}
+.modal__score .product-card__price-rating-item {
+  width: 2.2rem !important;
+  height: 2.2rem !important;
 }
 
 .thanks-reg.active {
@@ -3929,7 +4210,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #DE755E;
+  background: #de755e;
   margin-bottom: 3.3rem;
 }
 .thanks-reg__box-icon img {
@@ -3948,7 +4229,7 @@ main {
   font-size: 3.7rem;
   line-height: 100%;
   letter-spacing: 0.02em;
-  color: #1B1818;
+  color: #1b1818;
 }
 .thanks-reg__box-title span {
   font-weight: 500;
@@ -3956,7 +4237,7 @@ main {
   line-height: 2.4rem;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #A0A1A4;
+  color: #a0a1a4;
 }
 
 .art-modal {
@@ -4003,7 +4284,7 @@ main {
   font-size: 2rem;
   line-height: 2.4rem;
   letter-spacing: 0.02em;
-  color: #A0A1A4;
+  color: #a0a1a4;
 }
 .art-modal__inner {
   display: -webkit-box;
@@ -4084,7 +4365,7 @@ main {
   position: relative;
   width: 40rem;
   height: 4.8rem;
-  background: #EAEBEF;
+  background: #eaebef;
   border-radius: 1rem;
   padding: 1.4rem 2.4rem;
   font-weight: 400;
@@ -4149,7 +4430,7 @@ main {
   position: relative;
   width: 40rem;
   height: 4.8rem;
-  background: #EAEBEF;
+  background: #eaebef;
   border-radius: 1rem;
   padding: 1.4rem 2.4rem;
   font-weight: 400;
@@ -4250,7 +4531,7 @@ main {
   position: relative;
   width: 83rem;
   height: 15.8rem;
-  background: #EAEBEF;
+  background: #eaebef;
   border-radius: 1rem;
   padding: 1.4rem 2.4rem;
   font-weight: 400;
@@ -4315,7 +4596,7 @@ main {
   position: relative;
   width: 83rem;
   height: 15.8rem;
-  background: #EAEBEF;
+  background: #eaebef;
   border-radius: 1rem;
   padding: 1.4rem 2.4rem;
   font-weight: 400;
@@ -4446,7 +4727,7 @@ main {
   line-height: 2.4rem;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #A0A1A4;
+  color: #a0a1a4;
   margin-bottom: 3.2rem;
 }
 
@@ -4493,7 +4774,7 @@ main {
   line-height: 2.4rem;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #A0A1A4;
+  color: #a0a1a4;
   margin-bottom: 3.2rem;
 }
 .del-modal-user__alert {
@@ -4513,7 +4794,7 @@ main {
 }
 .del-modal-user__alert span {
   display: block;
-  color: #A0A1A4;
+  color: #a0a1a4;
 }
 .del-modal-user__alert p {
   color: rgb(222, 117, 94);
@@ -4532,7 +4813,7 @@ main {
 .del-modal-user__form input {
   position: relative;
   width: 100%;
-  background: #EAEBEF;
+  background: #eaebef;
   border-radius: 1rem;
   padding: 1.4rem 2.4rem;
   font-weight: 400;
@@ -4590,7 +4871,7 @@ main {
   line-height: 2.4rem;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #A0A1A4;
+  color: #a0a1a4;
   margin-bottom: 3.2rem;
   display: block;
   width: 63.5rem;
@@ -4607,7 +4888,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
   margin-bottom: 2rem;
   margin-left: auto;
@@ -4663,7 +4944,7 @@ main {
   line-height: 2.4rem;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #A0A1A4;
+  color: #a0a1a4;
   margin-bottom: 3.2rem;
   display: block;
   width: 63.5rem;
@@ -4680,7 +4961,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
   margin-bottom: 2rem;
   margin-left: auto;
@@ -11612,6 +11893,18 @@ img {
   letter-spacing: 0.11rem;
   text-transform: uppercase;
 }
+.product-card__item-popup-img {
+  border-radius: 4rem;
+  overflow: hidden;
+  height: 67.2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 0.5rem solid #fff;
+}
+.product-card__item-popup-img img {
+  height: 100%;
+}
 .product-card__settings-popup {
   display: none;
   -webkit-box-pack: center;
@@ -11728,6 +12021,15 @@ img {
 }
 .product-card__mobile-icons {
   display: none;
+}
+
+.item-popup__pagination {
+  background: #fff;
+  height: 7.8rem;
+  padding-left: 4.8rem;
+  padding-right: 4.8rem;
+  border-radius: 4rem;
+  margin-top: 3.3rem;
 }
 
 @media (hover: hover) {
@@ -14506,6 +14808,106 @@ img {
   .modal {
     padding: 0 3rem;
   }
+  .modal__icon {
+    width: 11rem;
+    height: 11rem;
+  }
+  .modal__icon img {
+    height: 4.4rem;
+    width: 4.4rem;
+  }
+  .modal__form-input {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .modal__form-input label {
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+    margin-bottom: 1.8rem;
+  }
+  .modal__form-input input {
+    border-radius: 2rem;
+    width: 63rem;
+    height: 9rem;
+    padding: 2.8rem 4.8rem;
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+  }
+  .modal__collection-add-btn {
+    padding: 3.8rem 4rem;
+    width: 100%;
+  }
+  .modal__collection-add-btn span {
+    display: block;
+    width: 100%;
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+  }
+  .modal__box {
+    gap: 5rem;
+    padding: 6rem 3rem;
+  }
+  .modal__title {
+    white-space: nowrap;
+    font-size: 5rem;
+    font-family: "Austin Cyr";
+    font-weight: 700;
+    line-height: 4.2rem;
+    padding-bottom: 2rem;
+    letter-spacing: -0.4rem;
+    padding-bottom: 1rem;
+    width: 100% !important;
+  }
+  .modal__collection-item {
+    width: 63rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 4.2rem 0;
+    padding: 3rem;
+  }
+  .modal__collection-list {
+    gap: 3rem;
+    max-height: 71rem;
+  }
+  .modal__collection-item-title {
+    font-size: 2.8rem;
+    width: 30%;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+  }
+  .modal__collection-item-img {
+    height: 11.8rem;
+    border-radius: 2rem;
+    margin-right: 2rem;
+  }
+  .modal__collection-item-btn {
+    padding: 3.8rem 4rem;
+    width: 100%;
+  }
+  .modal__collection-item-btn span {
+    display: block;
+    width: 100%;
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+  }
+  .modal__collections-create-btn span {
+    display: block;
+    width: 100%;
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+  }
   .modal__close {
     width: 11rem;
     height: 11rem;
@@ -14514,12 +14916,41 @@ img {
     width: 2.6rem;
     height: 2.6rem;
   }
+  .modal__buttons {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5rem;
+  }
   .modal__container {
     width: 100%;
   }
   .modal__wrapper {
     padding: 6rem 3rem;
     border-radius: 6rem;
+  }
+  .modal__product-card-swiper {
+    margin: 0 auto;
+    width: 69rem;
+  }
+  .modal--new-collection .modal__close {
+    margin-bottom: 6rem;
+  }
+  .modal--new-collection .modal__title {
+    margin: 0;
+  }
+  .modal--new-collection .modal__box {
+    position: relative;
+    padding: 6rem 3rem;
+    top: -3rem;
+  }
+  .modal__user-profile-data {
+    width: 63rem;
   }
   .modal--order-alert .modale__image {
     width: 11rem;
@@ -14541,7 +14972,7 @@ img {
     font-size: 6rem;
     line-height: 7.2rem;
     text-align: center;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.4rem;
     color: #383742;
     margin-bottom: 5rem;
     text-align: center;
@@ -14572,6 +15003,10 @@ img {
     font-size: 2.4rem;
     line-height: 3rem;
     margin-left: 2.4rem;
+  }
+  .modal__close img {
+    width: 3.2rem;
+    height: 3.2rem;
   }
   .modal__close-btn {
     width: 11rem;
@@ -17424,6 +17859,7 @@ img {
   }
   .product-card__reviews-info {
     width: 100%;
+    position: relative;
   }
   .product-card__reviews-rating span {
     font-size: 6rem;
@@ -17474,8 +17910,32 @@ img {
     gap: 0.7rem;
     margin-bottom: 6.75rem;
   }
-  .product-card__pagination {
+  .product-card__fraction {
+    gap: 1.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    bottom: -61rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .product-card .product-card__arrows {
     display: none;
+  }
+  .product-card .swiper-pagination-bullet-active {
+    background: #2b2f36;
+  }
+  .product-card .swiper-pagination-bullet {
+    width: 1.4rem;
+    height: 1.4rem;
   }
   .product-card__rewies-item {
     width: 69rem;
@@ -17587,5 +18047,22 @@ img {
     font-family: "Gilroy";
     font-weight: 500;
     letter-spacing: 0.056rem;
+  }
+  .product-card .modal__product-card-swiper {
+    margin: 0 auto;
+    width: 69rem;
+  }
+  .product-card__item-popup-img {
+    border: 0.6rem solid #fff;
+    height: 42.6rem;
+  }
+  .item-popup__pagination {
+    border-radius: 11rem;
+    height: 11.6rem;
+    padding-left: 4rem;
+    padding-right: 7.8rem;
+  }
+  .item-popup__prev svg, .item-popup__next svg {
+    width: 6rem;
   }
 }

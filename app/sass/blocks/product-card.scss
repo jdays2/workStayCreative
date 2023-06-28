@@ -975,6 +975,20 @@
 		}
 	}
 
+	&__item-popup-img {
+		border-radius: 4rem;
+		overflow: hidden;
+		height: 67.2rem;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		border: 0.5rem solid #fff;
+
+		img {
+			height: 100%;
+		}
+	}
+
 	&__settings-popup {
 		display: none;
 		justify-content: center;
@@ -1086,6 +1100,15 @@
 	&__mobile-icons {
 		display: none;
 	}
+}
+
+.item-popup__pagination {
+	background: #fff;
+	height: 7.8rem;
+	padding-left: 4.8rem;
+	padding-right: 4.8rem;
+	border-radius: 4rem;
+	margin-top: 3.3rem;
 }
 
 @media (hover: hover) {

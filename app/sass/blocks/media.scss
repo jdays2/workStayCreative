@@ -2488,6 +2488,123 @@
 
 	.modal {
 		padding: 0 3rem;
+		&__icon {
+			width: 11rem;
+			height: 11rem;
+
+			img {
+				height: 4.4rem;
+				width: 4.4rem;
+			}
+		}
+
+		&__form-input {
+			width: -webkit-fit-content;
+			width: -moz-fit-content;
+			width: fit-content;
+
+			label {
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-weight: 500;
+				letter-spacing: 0.056rem;
+				margin-bottom: 1.8rem;
+			}
+
+			input {
+				border-radius: 2rem;
+				width: 63rem;
+				height: 9rem;
+				padding: 2.8rem 4.8rem;
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-weight: 500;
+				letter-spacing: 0.056rem;
+			}
+		}
+
+		&__collection-add-btn {
+			padding: 3.8rem 4rem;
+			width: 100%;
+
+			span {
+				display: block;
+				width: 100%;
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-weight: 500;
+				letter-spacing: 0.056rem;
+			}
+		}
+
+		&__box {
+			gap: 5rem;
+			padding: 6rem 3rem;
+		}
+
+		&__title {
+			white-space: nowrap;
+			font-size: 5rem;
+			font-family: 'Austin Cyr';
+			font-weight: 700;
+			line-height: 4.2rem;
+			padding-bottom: 2rem;
+			letter-spacing: -0.4rem;
+			padding-bottom: 1rem;
+			width: 100% !important;
+		}
+
+		&__collection-item {
+			width: 63rem;
+			flex-wrap: wrap;
+			gap: 4.2rem 0;
+			padding: 3rem;
+		}
+
+		&__collection-list {
+			gap: 3rem;
+			max-height: 71rem;
+		}
+
+		&__collection-item-title {
+			font-size: 2.8rem;
+			width: 30%;
+			font-family: 'Gilroy';
+			font-weight: 500;
+			letter-spacing: 0.056rem;
+		}
+
+		&__collection-item-img {
+			height: 11.8rem;
+			border-radius: 2rem;
+			margin-right: 2rem;
+		}
+
+		&__collection-item-btn {
+			padding: 3.8rem 4rem;
+			width: 100%;
+
+			span {
+				display: block;
+				width: 100%;
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-weight: 500;
+				letter-spacing: 0.056rem;
+			}
+		}
+
+		&__collections-create-btn {
+			span {
+				display: block;
+				width: 100%;
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-weight: 500;
+				letter-spacing: 0.056rem;
+			}
+		}
+
 		&__close {
 			width: 11rem;
 			height: 11rem;
@@ -2497,15 +2614,47 @@
 			}
 		}
 
+		&__buttons {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 5rem;
+		}
+
 		&__container {
 			width: 100%;
 		}
-	}
-
-	.modal {
 		&__wrapper {
 			padding: 6rem 3rem;
 			border-radius: 6rem;
+		}
+
+		&__product-card-swiper {
+			margin: 0 auto;
+			width: 69rem;
+		}
+
+		&--new-collection {
+			.modal__close {
+				margin-bottom: 6rem;
+			}
+
+			.modal__title {
+				margin: 0;
+			}
+			.modal__box {
+				position: relative;
+				padding: 6rem 3rem;
+				top: -3rem;
+			}
+		}
+
+		// &--new-review {
+
+		// }
+
+		&__user-profile-data {
+			width: 63rem;
 		}
 
 		&--order-alert {
@@ -2533,7 +2682,7 @@
 			font-size: 6rem;
 			line-height: 7.2rem;
 			text-align: center;
-			letter-spacing: 0.02em;
+			letter-spacing: -0.4rem;
 			color: #383742;
 			margin-bottom: 5rem;
 			text-align: center;
@@ -2567,6 +2716,13 @@
 			font-size: 2.4rem;
 			line-height: 3rem;
 			margin-left: 2.4rem;
+		}
+
+		&__close {
+			img {
+				width: 3.2rem;
+				height: 3.2rem;
+			}
 		}
 
 		&__close-btn {
@@ -5698,6 +5854,7 @@
 
 		&__reviews-info {
 			width: 100%;
+			position: relative;
 		}
 
 		&__reviews-rating {
@@ -5762,8 +5919,30 @@
 			margin-bottom: 6.75rem;
 		}
 
-		&__pagination {
+		&__fraction {
+			gap: 1.4rem;
+			display: flex;
+			align-items: center;
+			position: absolute;
+			bottom: -61rem;
+			width: -webkit-fit-content;
+			width: -moz-fit-content;
+			width: fit-content;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+		}
+		.product-card__arrows {
 			display: none;
+		}
+
+		.swiper-pagination-bullet-active {
+			background: #2b2f36;
+		}
+
+		.swiper-pagination-bullet {
+			width: 1.4rem;
+			height: 1.4rem;
 		}
 
 		&__rewies-item {
@@ -5893,6 +6072,31 @@
 				font-family: 'Gilroy';
 				font-weight: 500;
 				letter-spacing: 0.056rem;
+			}
+		}
+
+		.modal__product-card-swiper {
+			margin: 0 auto;
+			width: 69rem;
+		}
+
+		&__item-popup-img {
+			border: 0.6rem solid #fff;
+			height: 42.6rem;
+		}
+	}
+
+	.item-popup {
+		&__pagination {
+			border-radius: 11rem;
+			height: 11.6rem;
+			padding-left: 4rem;
+			padding-right: 7.8rem;
+		}
+		&__prev,
+		&__next {
+			svg {
+				width: 6rem;
 			}
 		}
 	}
