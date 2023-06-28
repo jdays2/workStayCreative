@@ -4095,6 +4095,8 @@ main {
   letter-spacing: 0.02em;
 }
 .modal__user-profile {
+  border-radius: 1rem;
+  background: rgba(224, 225, 231, 0.5);
   width: 82.9rem;
   padding: 1.5rem;
   display: -webkit-box;
@@ -14949,8 +14951,45 @@ img {
     padding: 6rem 3rem;
     top: -3rem;
   }
-  .modal__user-profile-data {
+  .modal__user-profile {
     width: 63rem;
+    border-radius: 2rem;
+  }
+  .modal__user-profile-img {
+    width: 9.6754rem;
+    height: 9.7234rem;
+  }
+  .modal__user-profile-data {
+    gap: 0.8rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .modal__user-profile-data span {
+    color: #383742;
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+  }
+  .modal__user-profile-data p {
+    color: #A0A1A4;
+    font-size: 2.4rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.048rem;
+  }
+  .modal__form-input textarea {
+    width: 100%;
+    height: 24.4rem;
+    border-radius: 2rem;
+    padding: 2.8rem 4.8rem;
+    width: 63rem;
+    font-size: 2.8rem;
+    font-family: "Gilroy";
+    font-weight: 500;
+    letter-spacing: 0.056rem;
   }
   .modal--order-alert .modale__image {
     width: 11rem;
