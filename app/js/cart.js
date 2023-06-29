@@ -19,9 +19,17 @@ orderItems.forEach((element) => {
 
 	if (moveItemBtn) {
 		item.addEventListener('click', (e) => {
-			if (!e.target.classList.contains('cart__item-license')){
+			if (
+				!e.target.classList.contains('cart__item-license') &&
+				!e.target.classList.contains('cart__item-info-icon')
+			) {
 				item.classList.add(moveItemClass);
+				if (itemInfo.classList.contains(showItemInfoClass)) {
+					itemInfo.classList.remove(showItemInfoClass);
+				}
 			}
+
+		
 		});
 
 		moveItemBtn.addEventListener('click', () => {
@@ -31,39 +39,27 @@ orderItems.forEach((element) => {
 
 	if (itemInfoIcon) {
 		itemInfoIcon.addEventListener('mouseover', () => {
-			itemInfo.classList.add(showItemInfoClass);
+			if (window.screen.width > 768) {
+				itemInfo.classList.add(showItemInfoClass);
+			}
 		});
 		itemInfoIcon.addEventListener('mouseout', () => {
-			itemInfo.classList.remove(showItemInfoClass);
+			if (window.screen.width > 768) {
+				itemInfo.classList.remove(showItemInfoClass);
+			}
 		});
 	}
-});
 
-//выбор активного элемента в модальном окне
-modalItems.forEach((element) => {
-	let itemClass = element.classList;
-
-	const removePrevios = () => {
-		const ativeItem = modalList.querySelector('.' + activeModalItemClass);
-		ativeItem.classList.remove(activeModalItemClass);
-	};
-
-	element.addEventListener('click', () => {
-		if (!itemClass.contains(activeModalItemClass)) {
-			removePrevios();
-			itemClass.add(activeModalItemClass);
+	if(!itemInfoIcon) {
+		return
+	}
+	itemInfoIcon.addEventListener('touchstart', () => {
+		if (window.screen.width < 769) {
+			if (item.classList.contains(moveItemClass)) {
+				item.classList.remove(moveItemClass);
+				return;
+			}
+			itemInfo.classList.toggle(showItemInfoClass);
 		}
 	});
-});
-
-//открыть modal
-openModalBtn.forEach((element) => {
-	element.addEventListener('click', () => {
-		modal.classList.add(modalOpenClass);
-	});
-});
-
-//закрыть modal
-closeModalBtn.addEventListener('click', () => {
-	modal.classList.remove(modalOpenClass);
 });

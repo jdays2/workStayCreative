@@ -1023,7 +1023,9 @@
 				<div class="product-card__reviews">
 					<div class="product-card__reviews-head">
 						<p class="product-card__reviews-title">Отзывы</p>
-						<button class="product-card__reviews-add-btn">
+						<button
+							class="product-card__reviews-add-btn"
+							id="provide-feedback">
 							<span>Оставить отзыв</span>
 						</button>
 					</div>
@@ -1817,7 +1819,7 @@
 						<p class="question-block__questions-subtitle">
 							Вы можете обратиться к нашим специалистам.
 						</p>
-						<button class="question-block__questions-btn">
+						<button class="question-block__questions-btn" id="set-question">
 							<span>Задать вопрос</span>
 							<div class="question-block__questions-btn-img">
 								<img
@@ -2017,7 +2019,7 @@
 		</div>
 
 		<!-- модалка, оставить отзыв -->
-		<div class="modal modal--open modal--new-review">
+		<div class="modal modal--new-review">
 			<div class="modal__wrapper">
 				<button class="modal__close">
 					<img
@@ -2045,81 +2047,300 @@
 						</div>
 					</div>
 
+					<div class="modal__form-input">
+						<label for="">Отзыв</label>
+						<textarea type="text"></textarea>
+					</div>
+
+					<div class="modal__score">
+						<span>Ваша оценка</span>
+						<div class="product-card__rating-icons">
+							<svg
+								id="modal-rating-star"
+								class="product-card__price-rating-item"
+								viewBox="0 0 22 22"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
+									fill="#DE755E"
+									stroke="#DE755E"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+							<svg
+								id="modal-rating-star"
+								class="product-card__price-rating-item"
+								viewBox="0 0 22 22"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
+									fill="#DE755E"
+									stroke="#DE755E"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+							<svg
+								id="modal-rating-star"
+								class="product-card__price-rating-item"
+								viewBox="0 0 22 22"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
+									fill="#DE755E"
+									stroke="#DE755E"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+							<svg
+								id="modal-rating-star"
+								class="product-card__price-rating-item"
+								viewBox="0 0 22 22"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
+									fill="#DE755E"
+									stroke="#DE755E"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+							<svg
+								id="modal-rating-star"
+								class="product-card__price-rating-item"
+								viewBox="0 0 22 22"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
+									fill="#DE755E"
+									stroke="#DE755E"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</div>
+					</div>
+
+					<button
+						class="modal__collection-add-btn"
+						id="send-feedback">
+						<span>Отправить отзыв</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- модалка, подтверждение отправки отзыва -->
+		<div class="modal modal--confirm-review">
+			<div class="modal__wrapper">
+				<button class="modal__close">
+					<img
+						src="./img/icon/close.svg"
+						alt="" />
+				</button>
+				<div class="modal__box">
+					<div class="modal__icon">
+						<img
+							src="./img/product-card/message-white-icon.svg"
+							alt="" />
+					</div>
+
+					<p class="modal__title">Отзыв отправлен</p>
+					<p class="modal__subtitle">Мы опубликуем его после модерации</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- модалка, отправить жалобу -->
+		<div class="modal modal--set-complain">
+			<div class="modal__wrapper">
+				<button class="modal__close">
+					<img
+						src="./img/icon/close.svg"
+						alt="" />
+				</button>
+				<div class="modal__box">
+					<div class="modal__icon">
+						<img
+							src="./img/product-card/message-white-icon.svg"
+							alt="" />
+					</div>
+
+					<p class="modal__title">Оставить жалобу</p>
+
+					<div class="modal__user-profile">
+						<div class="modal__user-profile-img">
+							<img
+								src="./img/product-card/seller-photo-img.png"
+								alt="" />
+						</div>
+
+						<div class="modal__user-profile-data">
+							<span>Vasiliy123</span>
+							<p>Профиль отправки жалобы на отзыв</p>
+						</div>
+					</div>
+
+					<div class="modal__form-input modal__form-input--list">
+						<label for="">Почему вы хотите пожаловаться на этот товар?</label>
+						<input
+							type="text"
+							readonly
+							id="modal-list-btn" />
+						<div class="modal__form-popup-wrapper">
+							<form class="modal__form-popup-box">
+								<div>
+									<input
+										type="radio"
+										name="item"
+										id="item1" />
+									<label for="item1">Не соответствует описанию</label>
+								</div>
+
+								<div>
+									<input
+										type="radio"
+										name="item"
+										id="item2" />
+									<label for="item2">
+										Продавец не предоставил информации о правилах и условиях
+										использования товара
+									</label>
+								</div>
+
+								<div>
+									<input
+										type="radio"
+										name="item"
+										id="item3" />
+									<label for="item3">Пришел пустой файл</label>
+								</div>
+
+								<div>
+									<input
+										type="radio"
+										name="item"
+										id="item4" />
+									<label for="item4">Не соответствует описанию</label>
+								</div>
+
+								<div>
+									<input
+										type="radio"
+										name="item"
+										id="item5" />
+									<label for="item5">Не соответствует описанию</label>
+								</div>
+
+								<div>
+									<input
+										type="radio"
+										name="item"
+										id="item6" />
+									<label for="item6">Не соответствует описанию</label>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="modal__form-input">
+						<label for="">Опишите проблему</label>
+						<textarea type="text"></textarea>
+					</div>
+
+					<button
+						class="modal__collection-add-btn"
+						id="send-complain">
+						<span>Отправить жалобу</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- модалка, подтверждение отправки жалобы -->
+		<div class="modal modal--confirm-complain">
+			<div class="modal__wrapper">
+				<button class="modal__close">
+					<img
+						src="./img/icon/close.svg"
+						alt="" />
+				</button>
+				<div class="modal__box">
+					<div class="modal__icon">
+						<img
+							src="./img/product-card/message-white-icon.svg"
+							alt="" />
+					</div>
+
+					<p class="modal__title">Спасибо за помощь, ваша жалоба отправлена!</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- модалка, задать вопрос -->
+		<div class="modal modal--question">
+			<div class="modal__wrapper">
+				<button class="modal__close">
+					<img
+						src="./img/icon/close.svg"
+						alt="" />
+				</button>
+				<div class="modal__box">
+					<p class="modal__title">Напишите нам!</p>
+					<p class="modal__subtitle">
+						Если у вас есть какие-то вопросы, наши менеджеры помогут вам.
+					</p>
+
+					<form class="modal__form-wrapper">
 						<div class="modal__form-input">
-							<label for="">Отзыв</label>
-							<textarea type="text"></textarea>
+							<label for="">Имя Фамилия</label>
+							<input type="text" />
 						</div>
 
-						<div class="modal__score">
-							<span>Ваша оценка</span>
-							<div class="product-card__rating-icons">
-								<svg
-									class="product-card__price-rating-item product-card__price-rating-item--full"
-									viewBox="0 0 22 22"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
-										fill="#DE755E"
-										stroke="#DE755E"
-										stroke-width="1.5"
-										stroke-linecap="round"
-										stroke-linejoin="round" />
-								</svg>
-								<svg
-									class="product-card__price-rating-item product-card__price-rating-item--full"
-									viewBox="0 0 22 22"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
-										fill="#DE755E"
-										stroke="#DE755E"
-										stroke-width="1.5"
-										stroke-linecap="round"
-										stroke-linejoin="round" />
-								</svg>
-								<svg
-									class="product-card__price-rating-item product-card__price-rating-item--full"
-									viewBox="0 0 22 22"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
-										fill="#DE755E"
-										stroke="#DE755E"
-										stroke-width="1.5"
-										stroke-linecap="round"
-										stroke-linejoin="round" />
-								</svg>
-								<svg
-									class="product-card__price-rating-item product-card__price-rating-item--full"
-									viewBox="0 0 22 22"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
-										fill="#DE755E"
-										stroke="#DE755E"
-										stroke-width="1.5"
-										stroke-linecap="round"
-										stroke-linejoin="round" />
-								</svg>
-								<svg
-									class="product-card__price-rating-item"
-									viewBox="0 0 22 22"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
-										fill="#DE755E"
-										stroke="#DE755E"
-										stroke-width="1.5"
-										stroke-linecap="round"
-										stroke-linejoin="round" />
-								</svg>
-							</div>
+						<div class="modal__form-input">
+							<label for="">E-mail</label>
+							<input type="text" />
 						</div>
+					</form>
 
-						<button class="modal__collection-add-btn">
-							<span>Отправить отзыв</span>
+					<div class="modal__form-input">
+						<label for="">Ваш вопрос</label>
+						<textarea type="text"></textarea>
+					</div>
+
+					<div class="contacts__policy">
+						<button
+							class="modal__collection-add-btn"
+							id="send-question">
+							<span>Отправить</span>
 						</button>
-				
+
+						<p>Нажимая на кнопку, вы соглашаетесь с
+						<a href="#">Условиями обработки персональных данных</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- модалка, подтверждение отправки вопроса -->
+		<div class="modal modal--confirm-question">
+			<div class="modal__wrapper">
+				<button class="modal__close">
+					<img
+						src="./img/icon/close.svg"
+						alt="" />
+				</button>
+				<div class="modal__box">
+					<div class="modal__icon">
+						<img
+							src="./img/product-card/message-white-icon.svg"
+							alt="" />
+					</div>
+
+					<p class="modal__title">Вопрос отправлен</p>
+					<p class="modal__subtitle">Мы ответим Вам в ближайшее время.</p>
 				</div>
 			</div>
 		</div>
