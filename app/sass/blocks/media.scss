@@ -2542,6 +2542,162 @@
 			padding: 6rem 3rem;
 		}
 
+		&--confirm-complain {
+			.modal__title {
+				white-space: wrap;
+				max-width: 63rem;
+				letter-spacing: 0.12rem;
+				margin: 0;
+			}
+
+			.modal__box {
+				gap: 0rem;
+			}
+
+			.modal__title {
+				margin-top: 3rem;
+				margin-bottom: 2rem;
+			}
+		}
+
+		&--confirm-question {
+			.modal__title {
+				white-space: wrap;
+				max-width: 63rem;
+				letter-spacing: 0.12rem;
+				margin: 0;
+			}
+
+			.modal__box {
+				gap: 0rem;
+			}
+
+			.modal__title {
+				margin-top: 3rem;
+				margin-bottom: 2rem;
+			}
+		}
+
+		&--set-complain {
+			.modal__box {
+				gap: 5rem;
+			}
+
+			.modal__title {
+				margin: 0;
+			}
+
+			.modal__collection-add-btn {
+				margin: 0;
+			}
+
+			.modal__form-input input {
+				padding-right: 9rem;
+			}
+
+			.modal__form-input {
+				&--list {
+					&::before {
+						bottom: 3.7rem;
+						right: 4rem;
+						position: absolute;
+						width: 2.4rem;
+						height: 1.8rem;
+						content: '';
+						background-size: contain;
+						background-repeat: no-repeat;
+						background-image: url('../../img/product-card/modal-input-icon-gray.svg');
+					}
+				}
+			}
+
+			.modal__form-popup-box input[type='radio'] {
+				min-width: 4.4rem;
+				min-height: 4.4rem;
+				border: 0.2rem solid #de755e;
+				gap: 1.4rem;
+			}
+
+			.modal__form-popup-box input[type='radio']:checked::after {
+				width: 1.2rem;
+				height: 1.2rem;
+			}
+
+			.modal__form-popup-box {
+				gap: 2.2rem;
+				div {
+					gap: 2.4rem;
+				}
+
+				label {
+					font-size: 2.8rem;
+					font-family: 'Gilroy';
+					font-style: normal;
+					font-weight: 400;
+					line-height: 4rem;
+					width: 50.4rem;
+				}
+			}
+		}
+
+		&--question {
+			.modal__box {
+				padding: 6rem 3rem;
+				gap: 0rem;
+			}
+
+			.modal__title {
+				margin-bottom: 2rem;
+			}
+
+			.modal__subtitle {
+				width: 63rem;
+
+				padding-bottom: 0rem;
+				margin-bottom: 6rem;
+				border-bottom: none;
+			}
+
+			.modal__form-input {
+				textarea {
+					height: 19.2rem;
+				}
+			}
+
+			.modal__form-wrapper {
+				gap: 5rem;
+				flex-direction: column;
+				margin-top: 0rem;
+				margin-bottom: 5rem;
+			}
+
+			.modal__collection-add-btn {
+				height: 11rem;
+			}
+
+			.modal__form-input {
+				input {
+					width: 63rem;
+				}
+			}
+
+			// .modal__collection-add-btn {
+			// 	margin-left: 0;
+			// 	margin-right: auto;
+			// 	padding: 2.6rem 22.7rem;
+			// }
+
+			.contacts__policy {
+				width: 100%;
+				padding-top: 5rem;
+				margin-top: 6rem;
+				gap: 3rem;
+				p {
+					width: 63rem;
+				}
+			}
+		}
+
 		&__title {
 			white-space: nowrap;
 			font-size: 5rem;
@@ -2649,9 +2805,21 @@
 			}
 		}
 
-		// &--new-review {
+		&--confirm-review {
+			.modal__title {
+				margin-top: 3rem;
+				margin-bottom: 2rem;
+			}
+		}
 
-		// }
+		&__subtitle {
+			font-size: 2.8rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			letter-spacing: 0.056rem;
+		}
 
 		&__user-profile {
 			width: 63rem;
@@ -2659,27 +2827,27 @@
 		}
 
 		&__user-profile-img {
-			width: 4.8377*2rem;
-			height: 4.8617*2rem;
+			width: 4.8377 * 2rem;
+			height: 4.8617 * 2rem;
 		}
 
 		&__user-profile-data {
 			gap: 0.8rem;
 			align-items: flex-start;
-			
+
 			span {
-				color:  #383742;
+				color: #383742;
 				text-align: center;
 				font-size: 2.8rem;
-				font-family: "Gilroy";
+				font-family: 'Gilroy';
 				font-weight: 500;
 				letter-spacing: 0.056rem;
 			}
 
 			p {
-				color: #A0A1A4;
+				color: #a0a1a4;
 				font-size: 2.4rem;
-				font-family: "Gilroy";
+				font-family: 'Gilroy';
 				font-weight: 500;
 				letter-spacing: 0.048rem;
 			}
@@ -2696,6 +2864,27 @@
 				font-family: 'Gilroy';
 				font-weight: 500;
 				letter-spacing: 0.056rem;
+			}
+		}
+
+		&__score {
+			gap: 5.6rem;
+			span {
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				letter-spacing: 0.056rem;
+			}
+
+			.product-card__rating-icons {
+				gap: 0.8rem;
+			}
+
+			.product-card__price-rating-item {
+				width: 4.4rem !important;
+				height: 4.4rem !important;
 			}
 		}
 
@@ -4821,6 +5010,24 @@
 			margin-bottom: 6rem;
 		}
 
+		&__item-info {
+			display: none;
+			border-radius: 5rem;
+			z-index: 20;
+			padding: 1.6rem 2.8rem;
+			padding-right: 2rem;
+			width: 59.5rem;
+			position: absolute;
+			font-size: 2.8rem;
+			font-family: "Gilroy";
+			font-style: normal;
+			font-weight: 400;
+			line-height: 4rem;
+			height: 11.2rem;
+			top: 10rem;
+			right: 2rem;
+		}
+
 		&__counter {
 			font-weight: 700;
 			font-size: 5rem;
@@ -4838,6 +5045,10 @@
 		&__order {
 			display: flex;
 			flex-direction: column;
+		}
+
+		&__item-wrapper {
+			position: relative;
 		}
 
 		&__item {
@@ -6141,5 +6352,14 @@
 				width: 6rem;
 			}
 		}
+	}
+
+	.product-card__pagination {
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content !important;
+		margin: 0 auto;
+		position: relative;
+		top: 61.5rem;
 	}
 }

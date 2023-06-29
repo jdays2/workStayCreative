@@ -7,13 +7,29 @@ const mainSliderItems = document.querySelectorAll(
 const licensList = document.querySelector('.product-card__price-license-list');
 const handlers = document.querySelectorAll('.product-card__title-item');
 const bookmarksBtns = document.querySelectorAll('#add-to-bookmarks');
-const createCollectionBtn = document.querySelector("#create-new-collection");
-const createCollectionModal = document.querySelector('.modal--new-collection')
+const sendFeedbackBtn = document.querySelector('#send-feedback');
+const provideFeedbackBtn = document.querySelector('#provide-feedback');
+const provideFeedbackModal = document.querySelector('.modal--new-review');
+const createCollectionBtn = document.querySelector('#create-new-collection');
+const createCollectionModal = document.querySelector('.modal--new-collection');
+const confirmRevieModal = document.querySelector('.modal--confirm-review');
 const addToBookmarksModal = document.querySelector('.modal--add-to-collection');
-
+const modalListBtn = document.querySelector('#modal-list-btn');
 const descriptionBlock = document.querySelector(
 	'.product-card__description-block',
 );
+
+const complainModal = document.querySelector('.modal--set-complain');
+const complainConfirmModal = document.querySelector('.modal--confirm-complain');
+const settingsPopUpBtn = document.querySelectorAll(
+	'.product-card__settings-popup',
+);
+const rewiesItemSettings = document.querySelectorAll(
+	'.product-card__rewies-item-settings',
+);
+const sendComplainBtn = document.querySelector('#send-complain');
+
+const modalFormList = document.querySelector('.modal__form-popup-wrapper');
 const getBlock = document.querySelector('.product-card__get-block');
 const featuresBlock = document.querySelector('.product-card__features-block');
 
@@ -21,12 +37,20 @@ const rewies = document.querySelectorAll('.product-card__rewies-item');
 
 const closeBtn = document.querySelectorAll('.modal__close');
 const modalSlider = document.querySelector('.modal--slider');
+const modalInputElement = document.querySelector('.modal__form-input--list');
+
+const modalQuestionBtn = document.querySelector('#set-question');
+const modalQuestionConfirm = document.querySelector('.modal--confirm-question');
+const modalQuestion = document.querySelector('.modal--question');
+const modalQuestionConfirmBtn = document.querySelector('#send-question');
 
 const activeBlock = 'product-card__active-block';
 const activeLicensItemClass = 'product-card__price-license-item--active';
 const activeHandlerClass = 'product-card__title-item--active';
 const rewiesPopUpShow = 'product-card__settings-popup--show';
+const activeModalFormList = 'modal__form-popup-wrapper--active';
 const openModal = 'modal--open';
+const activeModalInput = 'modal__form-input--list-active';
 
 //главный свайпер
 const swiper = new Swiper('.mySwiper', {
@@ -177,8 +201,9 @@ rewies.forEach((element) => {
 	);
 	const popUp = element.querySelector('.product-card__settings-popup');
 	toggleBtn.addEventListener('click', () => {
-		const currentWidth = window.innerWidth;
-		if (currentWidth < 768) {
+		console.log(window.screen.width)
+		const currentWidth = window.screen.width;
+		if (currentWidth < 769) {
 			popUp.classList.toggle(rewiesPopUpShow);
 		}
 	});
@@ -212,8 +237,116 @@ bookmarksBtns.forEach((element) => {
 	});
 });
 
-
 //показ создания новой коллекции modal
 createCollectionBtn.addEventListener('click', () => {
-	createCollectionModal.classList.add(openModal)
+	createCollectionModal.classList.add(openModal);
+});
+
+//
+const ratingStars = document.querySelectorAll('#modal-rating-star');
+
+let selectedRating = 0; // Переменная для хранения выбранного рейтинга
+
+// Добавляем обработчики событий для звезд
+ratingStars.forEach((star, index) => {
+	star.addEventListener('mouseover', () => {
+		// Выделяем звезды до текущей звезды включительно
+		for (let i = 0; i <= index; i++) {
+			ratingStars[i].classList.add('product-card__price-rating-item--full');
+		}
+	});
+
+	star.addEventListener('mouseout', () => {
+		// Убираем выделение со всех звезд
+		ratingStars.forEach((star) => {
+			star.classList.remove('product-card__price-rating-item--full');
+		});
+
+		// Выделяем звезды до выбранного рейтинга включительно
+		for (let i = 0; i < selectedRating; i++) {
+			ratingStars[i].classList.add('product-card__price-rating-item--full');
+		}
+	});
+
+	star.addEventListener('click', () => {
+		selectedRating = index + 1;
+
+		// Визуальное отображение выбранного рейтинга
+		ratingStars.forEach((star, i) => {
+			if (i <= index) {
+				star.classList.add('product-card__price-rating-item--full');
+			} else {
+				star.classList.remove('product-card__price-rating-item--full');
+			}
+		});
+	});
+});
+
+//показ модального окна с отзывом
+provideFeedbackBtn.addEventListener('click', () => {
+	provideFeedbackModal.classList.add(openModal);
+});
+
+//показ модального окна с подтверждением отправки отзыва
+sendFeedbackBtn.addEventListener('click', () => {
+	provideFeedbackModal.classList.remove(openModal);
+	confirmRevieModal.classList.add(openModal);
+});
+
+//показ списка для выбора конкретной жалобы (ее темы)
+modalListBtn.addEventListener('click', () => {
+	modalInputElement.classList.toggle(activeModalInput);
+	modalFormList.classList.toggle(activeModalFormList);
+});
+
+//изменение placeholder для инпута modal, при выборе активной темы жалобы
+const radioButtons = document.querySelectorAll('input[type="radio"]');
+
+radioButtons.forEach((radioButton) => {
+	radioButton.addEventListener('change', () => {
+		if (radioButton.checked) {
+			const labelText = radioButton.nextElementSibling.textContent.trim();
+			modalListBtn.placeholder = labelText;
+		}
+	});
+});
+
+//показ modal c отправкой жалобы
+
+rewiesItemSettings.forEach((element) => {
+	element.addEventListener('click', (e) => {
+		if (
+			window.screen.width > 769 
+		) {
+			complainModal.classList.add(openModal);
+		}
+	});
+});
+
+settingsPopUpBtn.forEach((element) => {
+	element.addEventListener('click', (e) => {
+		if (
+			window.screen.width < 769 
+		) {
+			complainModal.classList.add(openModal);
+		}
+	});
+});
+
+//показ modal с оповещением об удачной отправке жалобы
+
+sendComplainBtn.addEventListener('click', () => {
+	complainModal.classList.remove(openModal);
+	complainConfirmModal.classList.add(openModal);
+});
+
+//показ modal с вопросом
+modalQuestionBtn.addEventListener('click', () => {
+	modalQuestion.classList.add(openModal);
+})
+
+//показ modal с оповещением об удачной отправке вопроса
+modalQuestionConfirmBtn.addEventListener('click', () => {
+	modalQuestion.classList.remove(openModal);
+	modalQuestionConfirm.classList.add(openModal);
 })
