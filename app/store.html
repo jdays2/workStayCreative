@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./css/style.min.css" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>О магазине</title>
+	</head>
+
+	<body>
+		@@include('./template/header.html')
+
+		<main>
+			<section class="store">
+				<div class="store__head">
+					<div class="store__profile">
+						<div class="store__profile-background-img">
+							<img
+								src="./img/store/profile-background-img.png"
+								alt="" />
+						</div>
+
+						<div class="store__profile-photo">
+							<img
+								src="./img/store/profile-photo.png"
+								alt="" />
+						</div>
+
+						<div class="store__profile-info">
+							<div class="store__profile-name">
+								<strong>Vasiliy123</strong>
+								<div class="store__profile-rating">
+									<img
+										src="./img/store/star-icon.svg"
+										alt="" />
+									<span>4.8</span>
+								</div>
+							</div>
+
+							<p class="store__profile-status">Скидка 10% на первый заказ!</p>
+						</div>
+
+						<button class="store__profile-sub-btn">
+							<span>Применить</span>
+							<img
+								src="./img/icon/right-arrow-icon-white.svg"
+								alt="" />
+						</button>
+					</div>
+
+					<div class="store__stats">
+						<div class="store__stats-title">
+							<p>Регистрация</p>
+							<div class="store__stats-title-icon">
+								<img
+									src="./img/store/stats-icon.svg"
+									alt="" />
+							</div>
+						</div>
+
+						<div class="store__stats-date">
+							<div class="store__stats-date-item">
+								<span>День</span>
+								<strong>12</strong>
+							</div>
+
+							<div class="store__stats-date-item">
+								<span>Месяц</span>
+								<strong>10</strong>
+							</div>
+
+							<div class="store__stats-date-item">
+								<span>Год</span>
+								<strong>22</strong>
+							</div>
+						</div>
+
+						<div class="store__stats-subs">
+							<div class="store__stats-subs-item">
+								<strong>17</strong>
+								<span>Подписчиков</span>
+							</div>
+							<div class="store__stats-subs-item">
+								<strong>0</strong>
+								<span>Подписок</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="store__pages product-card__title-list">
+					<span
+						id="store"
+						class="product-card__title-item product-card__title-item--active">
+						магазин
+						<span></span>
+					</span>
+					<span
+						id="description"
+						class="product-card__title-item">
+						Описание
+						<span></span>
+					</span>
+				</div>
+			</section>
+		</main>
+		@@include('./template/footer.html')
+	</body>
+</html>
