@@ -1,0 +1,145 @@
+.about {
+	padding: 0rem 6rem 18.6rem;
+
+  &__hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 25.1rem;
+  }
+
+  &__slogan {
+    color: #383742;
+    font-size: 2rem;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.04rem;
+
+    padding: 1.3rem 2.8rem;
+    background-color: #fff;
+    border-radius: 100rem;
+  }
+
+  &__hero-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5.5rem;
+  }
+
+  &__title {
+    color:  #383742;
+    width: 81.7rem;
+    font-size: 7.3rem;
+    font-family: "Austin Cyr";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 7.5rem;
+    letter-spacing: 0.146rem;
+  }
+
+  &__subtitle {
+    width: 66.2rem;
+    color: #383742;
+    font-size: 2rem;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.6rem;
+    opacity: 0.6;
+  }
+
+  &__hero-links {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  &__link:first-child {
+    padding: 2.6rem 4rem;
+    border-radius: 100rem;
+    background: #DE755E;
+    display: flex;
+    align-items: center;
+    gap: 5.6rem;
+
+    span {
+      color: #FFF;
+      font-size: 2rem;
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.04rem;
+    }
+
+    img {
+      width: 3.2rem;
+    }
+  }
+
+  &__link:last-child {
+    display: flex;
+    align-items: center;
+    gap: 5.6rem;
+
+    span {
+      color: rgba(56, 55, 66, 1);
+      font-size: 2rem;
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.04rem;
+    }
+
+    img {
+      width: 3.2rem;
+    }
+  }
+
+  &__hero-img {
+    width: 87rem;
+    height: 49.6rem;
+    display: flex;
+    position: relative;
+    margin-top: 5.1rem;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__hero-icon {
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+
+    left: -7.3rem;
+    top: -7.3rem;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__slider-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+
+    .about__title {
+      width: 100%;
+      text-align: center;
+    }
+
+    .about__subtitle {
+      margin: 0 auto;
+      width: 83.4rem;
+      text-align: center;
+    }
+  }
+}
