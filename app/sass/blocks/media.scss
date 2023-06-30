@@ -5019,7 +5019,7 @@
 			width: 59.5rem;
 			position: absolute;
 			font-size: 2.8rem;
-			font-family: "Gilroy";
+			font-family: 'Gilroy';
 			font-style: normal;
 			font-weight: 400;
 			line-height: 4rem;
@@ -6361,5 +6361,263 @@
 		margin: 0 auto;
 		position: relative;
 		top: 61.5rem;
+	}
+
+	.about {
+		padding: 0rem 3rem 15rem;
+		&__slogan {
+			display: block;
+			padding: 2.6rem 4.4rem;
+			border-radius: 100rem;
+			margin-bottom: 3rem;
+
+			span {
+				font-size: 2.8rem;
+				font-weight: 500;
+				line-height: 3.6rem;
+			}
+		}
+
+		&__hero {
+			display: flex;
+			flex-direction: column;
+			gap: 6rem;
+			margin-bottom: 6.5rem;
+		}
+
+		&__hero-part {
+			gap: 0;
+		}
+
+		&__title {
+			font-size: 6rem;
+			font-family: 'Austin Cyr';
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.12rem;
+			margin-bottom: 2rem;
+			width: 57rem;
+		}
+
+		&__subtitle {
+			color: #383742;
+			opacity: 1;
+			font-size: 2.8rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 500;
+			line-height: 137%;
+			letter-spacing: 0.056rem;
+			margin-bottom: 5rem;
+			width: 62.6rem;
+		}
+
+		&__hero-links {
+			display: flex;
+			flex-direction: column;
+			gap: 5rem;
+			align-items: flex-start;
+		}
+
+		&__hero-icon {
+			width: 24.4rem;
+			height: 24.4rem;
+			left: -10px;
+			top: -6.2rem;
+		}
+
+		&__link:first-child {
+			padding: 3.8rem 8rem;
+			gap: 3rem;
+
+			span {
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				letter-spacing: 0.056rem;
+			}
+
+			img {
+				width: 5rem;
+			}
+		}
+
+		&__link:last-child {
+			gap: 2.8rem;
+			span {
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				letter-spacing: 0.056rem;
+			}
+
+			img {
+				width: 5rem;
+			}
+		}
+
+		&__hero-img {
+			width: 100%;
+		}
+
+		&__slider-block {
+			gap: 0rem;
+
+			.about__title {
+				text-align: left;
+			}
+
+			.about__subtitle {
+				margin: 0;
+				width: 58rem;
+				font-weight: 500;
+				text-align: left;
+				margin-bottom: 6rem;
+				line-height: 135%;
+			}
+
+			.pagination {
+				display: none;
+			}
+		}
+
+		&__principles-discription {
+			font-size: 2.8rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 500;
+			line-height: 137%;
+			letter-spacing: 0.056rem;
+			text-align: left;
+			width: 53.6rem;
+			margin-bottom: 14.5rem;
+		}
+
+		&__principles-card {
+			border-radius: 5rem;
+			padding: 4rem;
+			gap: 3rem;
+			width: 69rem;
+		}
+
+		&__principles-card-title {
+			font-size: 3.2rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 700;
+			letter-spacing: 0.064rem;
+			line-height: 3rem;
+		}
+
+		&__principles-list {
+			gap: 2rem;
+		}
+
+		&__principles-card-discription {
+			font-size: 2.8rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 500;
+			letter-spacing: 0.056rem;
+			width: 63rem;
+			line-height: 3.6rem;
+		}
+
+		&__principles-icon {
+			width: 16.2rem;
+			height: 15.2rem;
+
+			span {
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				letter-spacing: 0.056rem;
+				left: 6rem;
+				top: 6.9rem;
+			}
+		}
+
+		&__slider-block {
+			margin-bottom: 12rem;
+		}
+
+		&__principles-block {
+			.title {
+				margin-bottom: 2rem;
+				span {
+					margin-bottom: 2.8rem;
+				}
+
+				.link {
+					top: 32rem;
+					position: absolute;
+
+					&::before {
+						width: 5rem;
+						height: 2.6rem;
+						top: 0.8rem;
+					}
+				}
+			}
+		}
+
+		&__slider-card {
+			padding: 4.4rem;
+			min-width: 60rem !important;
+			height: -webkit-fit-content;
+			height: -moz-fit-content;
+			height: fit-content;
+			margin-right: 6rem;
+		}
+
+		&__card-head {
+			margin-bottom: 3rem;
+		}
+
+		&__card-title {
+			font-size: 3rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.15rem;
+			text-transform: uppercase;
+		}
+
+		&__card-icon {
+			width: 5rem;
+			height: 3.8rem;
+		}
+
+		&__card-description {
+			color: #383742;
+			font-size: 2.8rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			letter-spacing: 0.056rem;
+
+			margin-bottom: 45.2rem;
+		}
+
+		&__card-feature-tag {
+			padding: 2.6rem 5.4rem;
+			border-radius: 4.44rem;
+
+			font-size: 2.8rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.056rem;
+		}
 	}
 }
