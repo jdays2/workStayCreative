@@ -12969,6 +12969,291 @@ input:checked ~ .contacts__question-item-content {
   margin-bottom: 5.5rem;
 }
 
+.store {
+  padding: 0rem 6rem 18.6rem;
+}
+.store__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 9.3rem;
+}
+.store__profile {
+  border-radius: 3rem;
+  width: 133.5rem;
+  height: 42.8rem;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  padding: 5.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.store__profile-background-img {
+  width: 100%;
+  height: 24.9rem;
+  border-radius: 3rem;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+.store__profile-background-img img {
+  width: 100%;
+  height: 100%;
+}
+.store__profile-photo {
+  margin-top: auto;
+  border-radius: 18.6rem;
+  width: 18.6rem;
+  height: 18.6rem;
+  border: 0.3rem solid #fff;
+  z-index: 2;
+  margin-right: 2.2rem;
+}
+.store__profile-photo img {
+  width: 100%;
+}
+.store__profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.2rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.store__profile-status {
+  color: #a0a1a4;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+}
+.store__profile-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2.2rem;
+}
+.store__profile-name strong {
+  color: #383742;
+  font-size: 3.7rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.074rem;
+}
+.store__profile-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+}
+.store__profile-rating span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+  color: #a0a1a4;
+  font-size: 2.2rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.11rem;
+  text-transform: uppercase;
+}
+.store__profile-rating img {
+  width: 1.9rem;
+  height: 1.7rem;
+}
+.store__profile-sub-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #de755e;
+  padding: 2.6rem 4rem;
+  border-radius: 100rem;
+  margin-left: auto;
+}
+.store__profile-sub-btn span {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+}
+.store__profile-sub-btn img {
+  width: 3.2rem;
+}
+.store__stats {
+  border-radius: 4rem;
+  padding: 4.4rem 3.5rem;
+  background: #fff;
+}
+.store__stats-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4.8rem;
+}
+.store__stats-title p {
+  color: #181818;
+  font-size: 3.7rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.074rem;
+}
+.store__stats-title-icon {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100rem;
+  background-color: rgb(222, 117, 94);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.store__stats-title-icon img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.store__stats-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 5.2rem;
+}
+.store__stats-date-item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1.8rem;
+  width: 8.8rem;
+  height: 10.5rem;
+  border-radius: 2rem;
+  border: 0.1rem solid #e0e1e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+}
+.store__stats-date-item strong {
+  color: #181818;
+  text-align: center;
+  font-size: 3.7rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.074rem;
+}
+.store__stats-date-item span {
+  color: #A0A1A4;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.store__stats-subs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.store__stats-subs-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 8.4rem;
+  gap: 0.2rem;
+}
+.store__stats-subs-item:first-child {
+  margin-left: 2.4rem;
+  padding-right: 2.3rem;
+  margin-right: 4rem;
+  border-right: 0.1rem solid rgba(160, 161, 164, 0.3);
+}
+.store__stats-subs-item strong {
+  color: #181818;
+  font-size: 3.7rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.074rem;
+}
+.store__stats-subs-item span {
+  color: #181818;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+}
+.store .product-card__title-list {
+  max-width: 133.5rem;
+}
+
 @media only all and (max-width: 48em) {
   html {
     font-size: 1.3333333333vw;
