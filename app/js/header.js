@@ -96,7 +96,12 @@ mobileSearchInputPopUpBtn.addEventListener('click', () => {
 
 //добавляем показ register-popup
 shopBtn.addEventListener('click', () => {
-	searchInputPopUp.classList.toggle(registerPopUpClass);
+	if (window.innerWidth > 768) {
+		registerPopUp.classList.toggle(registerPopUpClass);
+	}
+	// } else {
+	// 	searchInputPopUp.classList.toggle(registerPopUpClass);
+	// }
 });
 
 //показ profile-popup

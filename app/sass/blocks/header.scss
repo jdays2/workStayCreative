@@ -12,6 +12,10 @@
 		display: none;
 	}
 
+	.item--hide {
+		display: none;
+	}
+
 	.burger {
 		&__categ-item,
 		&__mobile-bar,
@@ -97,6 +101,7 @@
 			text-transform: uppercase;
 		}
 	}
+
 
 	&__item--slide {
 		padding-right: 1.9rem;
@@ -343,6 +348,7 @@
 			color: #383742;
 		}
 	}
+
 
 	&__register-alert--show {
 		top: 11.8rem;
