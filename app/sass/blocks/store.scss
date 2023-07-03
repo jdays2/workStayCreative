@@ -253,6 +253,7 @@
 	}
 
 	.product-card__title-list {
+		margin: 0;
 		max-width: 133.5rem;
 	}
 
@@ -261,7 +262,7 @@
 		width: 100%;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: 3.9rem;
+		margin-bottom: 4.2rem;
 
 		div {
 			align-items: center;
@@ -337,11 +338,13 @@
 
 	&__item {
 		display: flex;
-		align-items: center;
-		gap: 3.2rem;
+		align-items: flex-start;
+		gap: 2.9rem;
 		background: #fff;
 		padding: 3.2rem;
+		padding-bottom: 3rem;
 		border-radius: 5.5rem;
+		height: 38.6rem;
 	}
 
 	&__item-img {
@@ -351,8 +354,45 @@
 		overflow: hidden;
 
 		img {
+			width: auto;
 			height: 100%;
 		}
+	}
+
+	.basic-card {
+		width: 40.5rem;
+	}
+
+	&__pages-link {
+		display: flex;
+		gap: 2.5rem;
+		align-items: center;
+		position: relative;
+		bottom: -1rem;
+
+		span {
+			color: #383742;
+			font-size: 2rem;
+			font-family: "Gilroy";
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.04rem;
+		}
+	}
+	
+	&__pages-wrapper {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 6.4rem;
+		position: relative;
+		bottom: -1rem;
+	}
+
+	&__pages-link-icon {
+		width: 3.2rem;
 	}
 
 	&__news-content-box {
@@ -360,6 +400,11 @@
 		flex-direction: column;
 		gap: 2.4rem;
 		align-items: flex-start;
+	}
+
+	&__content-block {
+		display: none;
+		flex-direction: column;
 	}
 
 	&__item-info {
@@ -372,12 +417,23 @@
 		letter-spacing: 0.04rem;
 
 		border-radius: 100rem;
-		background: #de755e;
 		padding: 1.3rem 2.8rem;
+
+		&--orange {
+			background: #de755e;
+		}
+
+		&--dark {
+			background: #383742;
+		}
+
+		&--yellow {
+			background: #ffb42f;
+		}
 	}
 
 	&__item-content {
-		padding: 2.8rem 3rem;
+		padding: 2.8rem 3rem 2.9rem;
 		border-radius: 3rem;
 		border: 0.1rem solid #eaebef;
 	}
@@ -386,7 +442,7 @@
 		display: flex;
 		width: 100%;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-start;
 
 		p {
 			color: #181818;
@@ -418,12 +474,15 @@
 		font-weight: 500;
 		line-height: normal;
 		letter-spacing: 0.04rem;
+		margin-bottom: 4.9rem;
+		width: 119.4rem;
 	}
 
 	&__item-stats {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		width: 100%;
 		p {
 			color: #a0a1a4;
 			font-size: 1.6rem;

@@ -105,9 +105,7 @@ shopBtn.addEventListener('click', () => {
 });
 
 const shopBtnMobile = document.querySelector('.header__shop-button--burger');
-console.log(shopBtnMobile)
 shopBtnMobile.addEventListener('click', () => {
-	console.log(regModal)
 	regModal.classList.toggle('modal--active');
 });
 
@@ -226,7 +224,6 @@ burgerBtn.addEventListener('click', () => {
 burgerPopUpBtn.forEach((element) => {
 	element.addEventListener('click', () => {
 		const parent = element.closest('.burger__categ-item--show');
-		console.log(parent);
 		parent.classList.remove(burgerCategoryPopUpClass);
 	});
 });

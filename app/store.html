@@ -98,24 +98,36 @@
 					</div>
 				</div>
 
-				<div class="store__pages product-card__title-list">
-					<span
-						id="store"
-						class="product-card__title-item product-card__title-item--active">
-						магазин
-						<span></span>
-					</span>
-					<span
-						id="description"
-						class="product-card__title-item">
-						новости
-						<span></span>
-					</span>
+				<div class="store__pages-wrapper">
+					<div class="store__pages product-card__title-list">
+						<span
+							id="store"
+							class="product-card__title-item product-card__title-item--active">
+							магазин
+							<span></span>
+						</span>
+						<span
+							id="news"
+							class="product-card__title-item">
+							новости
+							<span></span>
+						</span>
+					</div>
+					<a
+						href=""
+						class="store__pages-link">
+						<span>Техническая поддержка</span>
+						<div class="store__pages-link-icon">
+							<img
+								src="./img/icon/arrownext.svg"
+								alt="" />
+						</div>
+					</a>
 				</div>
 
-				<!-- <div
-					class="store__content-block"
-					id="store">
+				<div
+					class="store__content-block product-card__active-block"
+					id="store-block">
 					<div class="store__search-filter">
 						<span class="store__product-count">6 457 продуктов</span>
 
@@ -142,7 +154,9 @@
 										class="header-block__sort-btn-icon" />
 								</button>
 
-								<ul class="sort-popup">
+								<ul
+									class="sort-popup"
+									id="sort-popup">
 									<li class="sort-popup__item">
 										<input
 											type="radio"
@@ -250,1336 +264,1338 @@
 						</div>
 					</div>
 
-					<div class="general__swiper swiper">
-						<ul class="general__swiper-wrapper swiper-wrapper">
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+					<div>
+						<div class="general__swiper swiper">
+							<ul class="general__swiper-wrapper swiper-wrapper">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/favor-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
-										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
-									</div>
-								</div>
-							</li>
+											</button>
 
-							<li class="cart__favorites-item general__slide swiper-slide">
-								<div class="basic-card">
-									<div class="basic-card__wrapper">
-										<p class="basic-card__type">Шрифты с засечками</p>
-										<button class="basic-card__favor">
-											<img
-												src="./img/basic-card/favor-icon.svg"
-												alt="" />
-										</button>
-
-										<button class="basic-card__like">
-											<img
-												src="./img/basic-card/heart-icon.svg"
-												alt="" />
-										</button>
-									</div>
-
-									<img
-										class="basic-card__img"
-										src="./img/basic-card/image 19452.png"
-										alt="" />
-
-									<div class="basic-card__info">
-										<div class="basic-card__discription">
-											<p class="basic-card__title">Мега набор постеров</p>
-											<a
-												href="#"
-												class="basic-card__link">
+											<button class="basic-card__like">
 												<img
-													src="./img/basic-card/resurs-icon.svg"
+													src="./img/basic-card/heart-icon.svg"
 													alt="" />
-												<span>От Wall art...</span>
-											</a>
+											</button>
 										</div>
-										<span
-											class="basic-card__price basic-card__price--pink-backgraund">
-											4500
-											<span>₽</span>
-										</span>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</li>
-						</ul>
-						<div class="pagination fonts__pagination">
-							<div class="pagination__fraction general__fraction"></div>
-							<div class="pagination__arrows fonts__arrows">
-								<div class="pagination__prev general__prev">
-									<svg
-										viewBox="0 0 33 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M0.292961 8.70711C-0.0975647 8.31658 -0.0975647 7.68342 0.292961 7.29289L6.65692 0.928932C7.04745 0.538408 7.68061 0.538408 8.07113 0.928932C8.46166 1.31946 8.46166 1.95262 8.07113 2.34315L2.41428 8L8.07113 13.6569C8.46166 14.0474 8.46166 14.6805 8.07113 15.0711C7.68061 15.4616 7.04745 15.4616 6.65692 15.0711L0.292961 8.70711ZM32.6189 9H1.00007V7H32.6189V9Z"
-											fill="#383742" />
-									</svg>
-								</div>
-								<div class="pagination__next general__next">
-									<svg
-										viewBox="0 0 33 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M32.707 8.70711C33.0976 8.31658 33.0976 7.68342 32.707 7.29289L26.3431 0.928932C25.9526 0.538408 25.3194 0.538408 24.9289 0.928932C24.5383 1.31946 24.5383 1.95262 24.9289 2.34315L30.5857 8L24.9289 13.6569C24.5383 14.0474 24.5383 14.6805 24.9289 15.0711C25.3194 15.4616 25.9526 15.4616 26.3431 15.0711L32.707 8.70711ZM0.381104 9H31.9999V7H0.381104V9Z"
-											fill="#383742" />
-									</svg>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="cart__favorites-item general__slide swiper-slide">
+									<div class="basic-card">
+										<div class="basic-card__wrapper">
+											<p class="basic-card__type">Шрифты с засечками</p>
+											<button class="basic-card__favor">
+												<img
+													src="./img/basic-card/favor-icon.svg"
+													alt="" />
+											</button>
+
+											<button class="basic-card__like">
+												<img
+													src="./img/basic-card/heart-icon.svg"
+													alt="" />
+											</button>
+										</div>
+
+										<img
+											class="basic-card__img"
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+
+										<div class="basic-card__info">
+											<div class="basic-card__discription">
+												<p class="basic-card__title">Мега набор постеров</p>
+												<a
+													href="#"
+													class="basic-card__link">
+													<img
+														src="./img/basic-card/resurs-icon.svg"
+														alt="" />
+													<span>От Wall art...</span>
+												</a>
+											</div>
+											<span
+												class="basic-card__price basic-card__price--pink-backgraund">
+												4500
+												<span>₽</span>
+											</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="pagination fonts__pagination">
+								<div class="pagination__fraction general__fraction"></div>
+								<div class="pagination__arrows fonts__arrows">
+									<div class="pagination__prev general__prev">
+										<svg
+											viewBox="0 0 33 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.292961 8.70711C-0.0975647 8.31658 -0.0975647 7.68342 0.292961 7.29289L6.65692 0.928932C7.04745 0.538408 7.68061 0.538408 8.07113 0.928932C8.46166 1.31946 8.46166 1.95262 8.07113 2.34315L2.41428 8L8.07113 13.6569C8.46166 14.0474 8.46166 14.6805 8.07113 15.0711C7.68061 15.4616 7.04745 15.4616 6.65692 15.0711L0.292961 8.70711ZM32.6189 9H1.00007V7H32.6189V9Z"
+												fill="#383742" />
+										</svg>
+									</div>
+									<div class="pagination__next general__next">
+										<svg
+											viewBox="0 0 33 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M32.707 8.70711C33.0976 8.31658 33.0976 7.68342 32.707 7.29289L26.3431 0.928932C25.9526 0.538408 25.3194 0.538408 24.9289 0.928932C24.5383 1.31946 24.5383 1.95262 24.9289 2.34315L30.5857 8L24.9289 13.6569C24.5383 14.0474 24.5383 14.6805 24.9289 15.0711C25.3194 15.4616 25.9526 15.4616 26.3431 15.0711L32.707 8.70711ZM0.381104 9H31.9999V7H0.381104V9Z"
+												fill="#383742" />
+										</svg>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 
 				<div
 					class="store__content-block"
-					id="news">
+					id="news-block">
 					<div class="store__search-filter">
 						<span class="store__product-count">324 НОВОСТИ</span>
 
 						<div class="header-block__buttons-wrapper">
 							<button
 								class="header-block__sort"
-								id="sort-btn">
+								id="sort-btn-2">
 								<span>Все категории</span>
 								<img
 									src="./img/fonts/list-icon.svg"
@@ -1587,15 +1603,17 @@
 									class="header-block__sort-btn-icon" />
 							</button>
 
-							<ul class="sort-popup">
+							<ul
+								class="sort-popup"
+								id="sort-popup-2">
 								<li class="sort-popup__item">
 									<input
 										type="radio"
 										name="sort"
-										id="sort-new"
+										id="sort-new2"
 										checked />
 									<label
-										for="sort-new"
+										for="sort-new2"
 										class="sort-popup__label">
 										<div class="sort-popup__checker checker checker">
 											<img
@@ -1610,9 +1628,9 @@
 									<input
 										type="radio"
 										name="sort"
-										id="sort-popular" />
+										id="sort-popular2" />
 									<label
-										for="sort-popular"
+										for="sort-popular2"
 										class="sort-popup__label">
 										<div class="sort-popup__checker checker">
 											<img
@@ -1627,9 +1645,9 @@
 									<input
 										type="radio"
 										name="sort"
-										id="sort-7days" />
+										id="sort-7days2" />
 									<label
-										for="sort-7days"
+										for="sort-7days2"
 										class="sort-popup__label">
 										<div class="sort-popup__checker checker">
 											<img
@@ -1644,9 +1662,9 @@
 									<input
 										type="radio"
 										name="sort"
-										id="sort-30days" />
+										id="sort-30days2" />
 									<label
-										for="sort-30days"
+										for="sort-30days2"
 										class="sort-popup__label">
 										<div class="sort-popup__checker checker">
 											<img
@@ -1661,9 +1679,9 @@
 									<input
 										type="radio"
 										name="sort"
-										id="sort-365days" />
+										id="sort-365days2" />
 									<label
-										for="sort-365days"
+										for="sort-365days2"
 										class="sort-popup__label">
 										<div class="sort-popup__checker checker">
 											<img
@@ -1678,9 +1696,9 @@
 									<input
 										type="radio"
 										name="sort"
-										id="sort-alltime" />
+										id="sort-alltime2" />
 									<label
-										for="sort-alltime"
+										for="sort-alltime2"
 										class="sort-popup__label">
 										<div class="sort-popup__checker checker">
 											<img
@@ -1703,7 +1721,9 @@
 							</div>
 
 							<div class="store__news-content-box">
-								<span class="store__item-info">Новинка</span>
+								<span class="store__item-info store__item-info--orange">
+									Новинка
+								</span>
 
 								<div class="store__item-content">
 									<div class="store__item-title">
@@ -1714,17 +1734,101 @@
 										Японская винтажная оригинальная гравюра на дереве с
 										изображением тигров из Yatsuo no tsubaki от Taguchi Tomoki.
 										Музейный уровень и цифровое улучшение, поэтому с идеальной
-										детализацией и высоким качеством. Проверьте это!
+										детализацией и высоким качеством.
+										<br />
+										Проверьте это!
 									</p>
 
 									<div class="store__item-stats">
 										<p>2 часа назад</p>
 										<p class="store__item-stats-likes">
-											<div class="store__item-stats-icon">
+											<span class="store__item-stats-icon">
 												<img
 													src="/img/icon/heart-icon.svg"
 													alt="" />
-											</div>
+											</span>
+											2
+										</p>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="store__item">
+							<div class="store__item-img">
+								<img
+									src="./img/store/news-sample.png"
+									alt="" />
+							</div>
+
+							<div class="store__news-content-box">
+								<span class="store__item-info store__item-info--dark">
+									Новинка
+								</span>
+
+								<div class="store__item-content">
+									<div class="store__item-title">
+										<p>Мега набор постеров</p>
+										<span>В постерах</span>
+									</div>
+									<p class="store__item-subtitle">
+										Японская винтажная оригинальная гравюра на дереве с
+										изображением тигров из Yatsuo no tsubaki от Taguchi Tomoki.
+										Музейный уровень и цифровое улучшение, поэтому с идеальной
+										детализацией и высоким качеством.
+										<br />
+										Проверьте это!
+									</p>
+
+									<div class="store__item-stats">
+										<p>2 часа назад</p>
+										<p class="store__item-stats-likes">
+											<span class="store__item-stats-icon">
+												<img
+													src="/img/icon/heart-icon.svg"
+													alt="" />
+											</span>
+											2
+										</p>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="store__item">
+							<div class="store__item-img">
+								<img
+									src="./img/store/news-sample.png"
+									alt="" />
+							</div>
+
+							<div class="store__news-content-box">
+								<span class="store__item-info store__item-info--yellow">
+									Новинка
+								</span>
+
+								<div class="store__item-content">
+									<div class="store__item-title">
+										<p>Мега набор постеров</p>
+										<span>В постерах</span>
+									</div>
+									<p class="store__item-subtitle">
+										Японская винтажная оригинальная гравюра на дереве с
+										изображением тигров из Yatsuo no tsubaki от Taguchi Tomoki.
+										Музейный уровень и цифровое улучшение, поэтому с идеальной
+										детализацией и высоким качеством.
+										<br />
+										Проверьте это!
+									</p>
+
+									<div class="store__item-stats">
+										<p>2 часа назад</p>
+										<p class="store__item-stats-likes">
+											<span class="store__item-stats-icon">
+												<img
+													src="/img/icon/heart-icon.svg"
+													alt="" />
+											</span>
 											2
 										</p>
 									</div>
@@ -1736,5 +1840,6 @@
 			</section>
 		</main>
 		@@include('./template/footer.html')
+		<script src="./js/store.js"></script>
 	</body>
 </html>
