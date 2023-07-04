@@ -12,7 +12,7 @@ titles.forEach((element) => {
 			const currentActiveBlock = document.querySelector('.' + activePart);
 			currentActive.classList.remove(activeClass);
 			element.classList.add(activeClass);
-
+			
 			currentActiveBlock.classList.remove(activePart);
 			switch (e.target.id) {
 				case 'store':
