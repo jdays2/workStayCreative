@@ -24,7 +24,7 @@ const fontsSwiper = new Swiper('.general__swiper', {
     },
     320: {
       slidesPerView: 1,
-      spaceBetween: rem(2.3),
+      spaceBetween: rem(3.5),
       grid: {
         fill: 'row',
         rows: 6

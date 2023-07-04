@@ -7582,7 +7582,7 @@
 			gap: 7rem;
 		}
 
-		&&__item-head {
+		&__item-head {
 			gap: 3rem;
 			strong {
 				font-size: 3.2rem;
@@ -7611,6 +7611,15 @@
 		&__item-showcase {
 			display: flex;
 			gap: 2.2rem;
+			
+		}
+
+		&__item-showcase {
+			width: 63rem;
+		}
+
+		&__collection-item {
+			padding: 3rem;
 		}
 	}
 }
