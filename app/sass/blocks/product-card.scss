@@ -719,7 +719,7 @@
 	}
 
 	&__active-block {
-		display: flex;
+		display: flex !important;
 	}
 
 	&__preview-link {
