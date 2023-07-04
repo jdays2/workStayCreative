@@ -2990,7 +2990,7 @@
 
 		.basic-card__price {
 			font-weight: 700;
-			font-size: 2.4rem;
+			font-size: 2.4rem !important;
 			line-height: 3.4rem;
 			letter-spacing: 0.05em;
 
@@ -4591,7 +4591,7 @@
 			border-radius: 6rem;
 
 			span {
-				font-size: 2.1rem;
+				font-size: 2.1rem !important;
 			}
 		}
 
@@ -7102,6 +7102,515 @@
 
 		&__news-list {
 			gap: 7rem;
+		}
+	}
+
+	.publick-profile {
+		padding: 0rem 3rem 15rem;
+		margin-top: -7rem;
+
+		&__head {
+			display: flex;
+			flex-direction: column;
+			gap: 3rem;
+		}
+
+		&__profile {
+			width: 69rem;
+			height: -webkit-fit-content;
+			height: -moz-fit-content;
+			height: fit-content;
+			border-radius: 5rem;
+			padding: 4rem;
+
+			flex-direction: column;
+			align-items: center;
+			margin-top: 8rem;
+		}
+
+		&__profile-background-img {
+			height: 20rem;
+			overflow: hidden;
+			border-radius: 5rem;
+
+			img {
+				width: auto;
+				height: auto;
+			}
+		}
+
+		&__profile-photo {
+			width: 25.5rem;
+			height: 25.5rem;
+			border-radius: 26rem;
+			margin: 0 auto;
+			margin-bottom: 2.3rem;
+			margin-top: 3rem;
+			border: 0.6rem solid #fff;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&__profile-name {
+			gap: 2rem;
+			margin-left: 2.9rem;
+			strong {
+				color: #383742;
+				font-size: 5rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				letter-spacing: 0.1rem;
+			}
+		}
+
+		&__profile-rating {
+			gap: 1.2rem;
+
+			span {
+				color: #a0a1a4;
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 700;
+				line-height: 5.6rem;
+			}
+
+			img {
+				width: 4.4rem;
+				height: 4.4rem;
+			}
+		}
+
+		&__profile-status {
+			color: #a0a1a4;
+			font-size: 2.8rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			letter-spacing: 0.056rem;
+		}
+
+		&__profile-info {
+			gap: 2rem;
+			margin-bottom: 5rem;
+		}
+
+		&__profile-sub-btn {
+			padding: 3.8rem 4.8rem;
+			border-radius: 100rem;
+			gap: 4rem;
+			margin: 0;
+			width: 61rem;
+			justify-content: center;
+
+			span {
+				color: #fff;
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				letter-spacing: 0.056rem;
+			}
+
+			img {
+				width: 5rem;
+			}
+		}
+
+		&__stats {
+			gap: 4rem;
+			border-radius: 5rem;
+		}
+
+		&__stats-title {
+			justify-content: space-between;
+			p {
+				color: #181818;
+				font-size: 5rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				letter-spacing: 0.1rem;
+			}
+		}
+
+		&__stats-title-icon {
+			width: 11rem;
+			height: 11rem;
+			border-radius: 100rem;
+
+			img {
+				width: 5.4rem;
+				height: 5.4rem;
+			}
+		}
+
+		&__stats-date-item {
+			gap: 1rem;
+			width: 17.6rem;
+			height: 18.2rem;
+			padding-top: 3.6rem;
+			margin-bottom: 5rem;
+			border: 0.2rem solid #e0e1e7;
+
+			span {
+				color: #a0a1a4;
+				text-align: center;
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 400;
+				line-height: 4rem;
+			}
+
+			strong {
+				color: #181818;
+				text-align: center;
+				font-size: 5rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				letter-spacing: 0.1rem;
+			}
+		}
+
+		&__stats-date {
+			gap: 4.2rem;
+			margin-bottom: 1.3rem;
+		}
+
+		&__stats-subs {
+			strong {
+				color: #181818;
+				font-size: 5rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				letter-spacing: 0.1rem;
+			}
+
+			span {
+				gap: 1rem;
+				color: #181818;
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				letter-spacing: 0.056rem;
+			}
+		}
+
+		&__stats {
+			height: -webkit-fit-content;
+			height: -moz-fit-content;
+			height: fit-content;
+			padding-bottom: 2.6rem;
+		}
+
+		&__stats-subs-item {
+			height: 14rem;
+			gap: 1rem;
+		}
+
+		&__stats-subs-item:first-child {
+			border-right: 0.3rem solid rgba(160, 161, 164, 0.3);
+			padding-right: 12.6rem;
+			margin-left: 0.5rem;
+		}
+
+		&__head {
+			margin-bottom: 10.4rem;
+		}
+
+		&__title-list {
+			border-bottom: 0.3rem solid rgba(160, 161, 164, 0.3019607843);
+		}
+
+		.product-card__title-list {
+			overflow: scroll;
+		}
+
+		.product-card__title-item {
+			line-height: 4.5rem;
+
+			span {
+				margin-top: 1.4rem;
+				height: 0.6rem;
+			}
+		}
+
+		&__pages-link {
+			display: none;
+		}
+
+		&__search-filter {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 6rem;
+
+			span {
+				order: 2;
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				letter-spacing: 0.14rem;
+				margin-right: auto;
+			}
+
+			div {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				order: 1;
+				gap: 3rem;
+				margin-bottom: 0rem;
+			}
+		}
+
+		&__product-count {
+			margin-top: 6rem;
+		}
+
+		.header-block__sort {
+			width: 100%;
+
+			span {
+				display: flex;
+				order: 1;
+				text-transform: none;
+				margin-right: 0;
+			}
+
+			img {
+				display: flex;
+				order: 2;
+			}
+		}
+
+		&__search-input {
+			width: 100%;
+			height: 11rem;
+			padding: 2.8rem 4rem;
+			padding-left: 9.2rem;
+
+			font-size: 2.8rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			letter-spacing: 0.056rem;
+		}
+
+		&__input-wrapper {
+			img {
+				left: 4rem;
+				top: 3.9rem;
+
+				width: 3.2rem;
+				height: 3.2rem;
+			}
+		}
+
+		.sort-popup--show {
+			display: flex;
+			top: 13.4rem;
+			border-radius: 4rem;
+		}
+
+		.sort-popup {
+			width: 69rem;
+			right: auto;
+			top: 13.2rem;
+			gap: 2rem;
+			border-radius: 4rem;
+			&__item {
+				gap: 2.4rem;
+			}
+
+			&__title {
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 2.8rem;
+				line-height: 4rem;
+				color: #383742;
+			}
+
+			.checker {
+				width: 6rem;
+				height: 6rem;
+
+				img {
+					width: 2.1rem;
+					height: 2.25rem;
+				}
+			}
+
+			label {
+				display: flex;
+				gap: 2.4rem;
+			}
+		}
+
+		.basic-card__type {
+			width: 44.2rem;
+		}
+
+		&__item {
+			padding: 3rem;
+			gap: 3rem;
+			display: flex;
+			flex-direction: column;
+			height: -webkit-fit-content;
+			height: -moz-fit-content;
+			height: fit-content;
+		}
+
+		&__item-img {
+			width: 63rem;
+			height: 43rem;
+			overflow: hidden;
+			margin: 0;
+			border-radius: 5rem;
+
+			img {
+				width: 100%;
+				height: auto;
+				-o-object-fit: cover;
+				object-fit: cover;
+			}
+		}
+
+		&__news-content-box {
+			width: 63rem;
+		}
+
+		&__item-info {
+			color: #fff;
+			font-size: 2.8rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.056rem;
+			padding: 2.6rem 5.6rem;
+		}
+
+		&__item-content {
+			padding: 4rem 3rem;
+			width: 100%;
+			border: 0.2rem solid #eaebef;
+		}
+
+		&__item-title {
+			p {
+				color: #181818;
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				letter-spacing: 0.056rem;
+			}
+
+			span {
+				color: #999;
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				letter-spacing: 0.056rem;
+			}
+		}
+
+		&__item-subtitle {
+			color: #999;
+			font-size: 2.8rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 400;
+			line-height: 4rem;
+			margin-bottom: 4rem;
+
+			width: 55rem;
+		}
+
+		&__item-stats {
+			padding-bottom: 2rem;
+			p {
+				color: #a0a1a4;
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 400;
+				line-height: 4rem;
+			}
+		}
+
+		&__item-stats-likes {
+			gap: 1rem;
+
+			span {
+				color: #1b1818;
+				font-size: 2.8rem;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 400;
+				line-height: 4rem;
+			}
+		}
+
+		&__item-stats-icon {
+			width: 3.4rem;
+			height: 3.4rem;
+		}
+
+		&__news-list {
+			gap: 7rem;
+		}
+
+		&&__item-head {
+			gap: 3rem;
+			strong {
+				font-size: 3.2rem;
+				font-family: "Gilroy";
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
+	
+			span {
+				padding: 1rem 4rem;
+				font-size: 2.8rem;
+				font-family: "Gilroy";
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				letter-spacing: 0.056rem;
+			}
+		}
+
+		&__showcase-img, &__showcase-item {
+			height: 21rem;
+			width: 30.4rem;
+		}
+
+		&__item-showcase {
+			display: flex;
+			gap: 2.2rem;
 		}
 	}
 }
