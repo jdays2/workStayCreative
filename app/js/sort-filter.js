@@ -5,7 +5,7 @@ const sortBtnIcon1 = document.querySelector(
 );
 const sortBtnHideClass = 'header-block__sort--hidden';
 const sortBtnIconFlipClass = 'header-block__sort-btn-icon--flip';
-const priceSlider = document.querySelector('.price-slider');
+const priceSlider = document.querySelector('#price-slider');
 
 // Функция для переворота индикатора/icon в sort popup 1
 const iconFlip1 = () => {
@@ -17,20 +17,20 @@ const setCheckers = (popup) => {
 	const checkers = popup.querySelectorAll('.checker');
 
 	checkers.forEach((element) => {
-		if (element.closest('.sort-popup') === popup) {
-			element.addEventListener('click', () => {
-				element.classList.toggle('checker--active');
-			});
-		}
+		element.addEventListener('click', (event) => {
+			element.classList.toggle('checker--active');
+		});
 	});
 };
 
 // Показать/скрыть sort popup 1
-sortBtn1.addEventListener('click', () => {
-	sortPopUp1.classList.toggle('sort-popup--show');
-	setCheckers(sortPopUp1);
-	iconFlip1();
-});
+if (sortBtn1) {
+	sortBtn1.addEventListener('click', () => {
+		sortPopUp1.classList.toggle('sort-popup--show');
+		setCheckers(sortPopUp1);
+		iconFlip1();
+	});
+}
 
 const sortBtn2 = document.querySelector('#sort-btn-2');
 const sortPopUp2 = document.querySelector('#sort-popup-2');
@@ -55,11 +55,9 @@ if (sortBtn2) {
 // Показать/скрыть filter popup
 const filterBtn = document.querySelector('#filter-btn');
 const filterPopUp = document.querySelector('#filter-popup');
-const filterBtnIcon = document.querySelector(
-	'#filter-btn .header-block__filter-img',
-);
+const filterBtnIcon = document.querySelector('.fonts__filter-img');
 const filterBtnActiveIcon = document.querySelector(
-	'#filter-btn .header-block__filter-img--alter',
+	'.header-block__filter-img--alter',
 );
 
 const changeIcon = () => {
@@ -68,30 +66,27 @@ const changeIcon = () => {
 };
 
 if (filterBtn) {
+	setCheckers(filterPopUp);
 	filterBtn.addEventListener('click', () => {
-		setCheckers(filterPopUp);
 		changeIcon();
-
 		filterPopUp.classList.toggle('filter-popup__wrapper--show');
-		if (sortPopUp2 && sortPopUp1.classList.contains('sort-popup--show')) {
-			sortPopUp1.classList.remove('sort-popup--show');
-			iconFlip1();
-		}
-		if (sortPopUp2 && sortPopUp2.classList.contains('sort-popup--show')) {
-			sortPopUp2.classList.remove('sort-popup--show');
-			iconFlip2();
-		}
 	});
 }
 
-noUiSlider.create(priceSlider, {
-	start: [0, 5000],
-	connect: true,
-	range: {
-		min: 0,
-		max: 10000,
-	},
-});
+//логика input range
+const minPriceOutput = document.getElementById('min-price-value');
+const maxPriceOutput = document.getElementById('max-price-value');
+
+if (priceSlider) {
+	noUiSlider.create(priceSlider, {
+		start: [0, 5000],
+		connect: true,
+		range: {
+			min: 0,
+			max: 10000,
+		},
+	});
+}
 
 const updatePriceOutput = (values, handle) => {
 	const minPointer = document.querySelector('.noUi-handle-lower');
@@ -109,4 +104,37 @@ const updatePriceOutput = (values, handle) => {
 		maxPriceOutput.textContent = Math.round(values[handle]);
 	}
 };
-priceSlider.noUiSlider.on('update', updatePriceOutput);
+
+if (priceSlider) {
+	priceSlider.noUiSlider.on('update', updatePriceOutput);
+}
+
+//закрытие filter-popup
+const filterApplyBtn = document.querySelector('.filter-popup__apply-btn');
+const filterResetBtn = document.querySelector('.filter-popup__reset-btn');
+const activeFilterPopUpClass = 'filter-popup__wrapper--show';
+const activeCheckerClass = 'checker--active';
+
+//закрытие и 'применение' параметров
+filterApplyBtn.addEventListener('click', () => {
+  changeIcon(filterBtnIcon, filterBtnActiveIcon);
+  filterPopUp.classList.remove(activeFilterPopUpClass);
+});
+
+filterResetBtn.addEventListener('click', () => {
+  // Сброс ползунка
+  priceSlider.noUiSlider.reset();
+
+  // Сброс состояния чекеров
+  const checkers = filterPopUp.querySelectorAll('.checker');
+  checkers.forEach((element) => {
+    element.classList.remove('checker--active');
+  });
+});
+
+//закрытие при мобилке 
+const mobileFilterCloseBtn = document.querySelector('.filter-popup__close-btn')
+mobileFilterCloseBtn.addEventListener('click', () => {
+  changeIcon(filterBtnIcon, filterBtnActiveIcon);
+  filterPopUp.classList.remove(activeFilterPopUpClass);
+});
