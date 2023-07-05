@@ -26,11 +26,13 @@ const setCheckers = (popup) => {
 };
 
 // Показать/скрыть sort popup 1
-sortBtn1.addEventListener('click', () => {
-	sortPopUp1.classList.toggle('sort-popup--show');
-	setCheckers(sortPopUp1);
-	iconFlip1();
-});
+if (sortBtn1) {
+	sortBtn1.addEventListener('click', () => {
+		sortPopUp1.classList.toggle('sort-popup--show');
+		setCheckers(sortPopUp1);
+		iconFlip1();
+	});
+}
 
 const sortBtn2 = document.querySelector('#sort-btn-2');
 const sortPopUp2 = document.querySelector('#sort-popup-2');
@@ -84,14 +86,16 @@ if (filterBtn) {
 	});
 }
 
-noUiSlider.create(priceSlider, {
-	start: [0, 5000],
-	connect: true,
-	range: {
-		min: 0,
-		max: 10000,
-	},
-});
+if (priceSlider) {
+	noUiSlider.create(priceSlider, {
+		start: [0, 5000],
+		connect: true,
+		range: {
+			min: 0,
+			max: 10000,
+		},
+	});
+}
 
 const updatePriceOutput = (values, handle) => {
 	const minPointer = document.querySelector('.noUi-handle-lower');
@@ -109,4 +113,7 @@ const updatePriceOutput = (values, handle) => {
 		maxPriceOutput.textContent = Math.round(values[handle]);
 	}
 };
-priceSlider.noUiSlider.on('update', updatePriceOutput);
+
+if (priceSlider) {
+	priceSlider.noUiSlider.on('update', updatePriceOutput);
+}

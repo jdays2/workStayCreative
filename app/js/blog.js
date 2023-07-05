@@ -1,4 +1,4 @@
-const fontsSwiper = new Swiper('.general__swiper', {
+const blogSwiper = new Swiper('.general__swiper', {
   spaceBetween: rem(6),
   wrapperClass: 'general__swiper-wrapper',
   slideClass: 'general__slide',
