@@ -14,7 +14,7 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<title>О магазине</title>
+		<title>Страница пользователя</title>
 	</head>
 
 	<body>
@@ -1120,36 +1120,38 @@
 
 
 		<main>
-			<section class="store">
-				<div class="store__head">
-					<div class="store__profile">
-						<div class="store__profile-background-img">
+			<section class="publick-profile">
+				<div class="publick-profile__head">
+					<div class="publick-profile__profile">
+						<div class="publick-profile__profile-background-img">
 							<img
-								src="./img/store/profile-background-img.png"
+								src="./img/publick-profile/profile-background-img.png"
 								alt="" />
 						</div>
 
-						<div class="store__profile-photo">
+						<div class="publick-profile__profile-photo">
 							<img
-								src="./img/store/profile-photo.png"
+								src="./img/publick-profile/profile-photo.png"
 								alt="" />
 						</div>
 
-						<div class="store__profile-info">
-							<div class="store__profile-name">
+						<div class="publick-profile__profile-info">
+							<div class="publick-profile__profile-name">
 								<strong>Vasiliy123</strong>
-								<div class="store__profile-rating">
+								<div class="publick-profile__profile-rating">
 									<img
-										src="./img/store/star-icon.svg"
+										src="./img/publick-profile/star-icon.svg"
 										alt="" />
 									<span>4.8</span>
 								</div>
 							</div>
 
-							<p class="store__profile-status">Скидка 10% на первый заказ!</p>
+							<p class="publick-profile__profile-status">
+								Скидка 10% на первый заказ!
+							</p>
 						</div>
 
-						<button class="store__profile-sub-btn">
+						<button class="publick-profile__profile-sub-btn">
 							<span>Подписаться</span>
 							<img
 								src="./img/icon/right-arrow-icon-white.svg"
@@ -1157,39 +1159,39 @@
 						</button>
 					</div>
 
-					<div class="store__stats">
-						<div class="store__stats-title">
+					<div class="publick-profile__stats">
+						<div class="publick-profile__stats-title">
 							<p>Регистрация</p>
-							<div class="store__stats-title-icon">
+							<div class="publick-profile__stats-title-icon">
 								<img
-									src="./img/store/stats-icon.svg"
+									src="./img/publick-profile/stats-icon.svg"
 									alt="" />
 							</div>
 						</div>
 
-						<div class="store__stats-date">
-							<div class="store__stats-date-item">
+						<div class="publick-profile__stats-date">
+							<div class="publick-profile__stats-date-item">
 								<span>День</span>
 								<strong>12</strong>
 							</div>
 
-							<div class="store__stats-date-item">
+							<div class="publick-profile__stats-date-item">
 								<span>Месяц</span>
 								<strong>10</strong>
 							</div>
 
-							<div class="store__stats-date-item">
+							<div class="publick-profile__stats-date-item">
 								<span>Год</span>
 								<strong>22</strong>
 							</div>
 						</div>
 
-						<div class="store__stats-subs">
-							<div class="store__stats-subs-item">
+						<div class="publick-profile__stats-subs">
+							<div class="publick-profile__stats-subs-item">
 								<strong>17</strong>
 								<span>Подписчиков</span>
 							</div>
-							<div class="store__stats-subs-item">
+							<div class="publick-profile__stats-subs-item">
 								<strong>0</strong>
 								<span>Подписок</span>
 							</div>
@@ -1197,26 +1199,26 @@
 					</div>
 				</div>
 
-				<div class="store__pages-wrapper">
-					<div class="store__pages product-card__title-list">
+				<div class="publick-profile__pages-wrapper">
+					<div class="publick-profile__pages product-card__title-list">
 						<span
-							id="store"
+							id="collections"
 							class="product-card__title-item product-card__title-item--active">
-							магазин
+							коллекции
 							<span></span>
 						</span>
 						<span
-							id="news"
+							id="liked"
 							class="product-card__title-item">
-							новости
+							Понравившиеся товары
 							<span></span>
 						</span>
 					</div>
 					<a
 						href=""
-						class="store__pages-link">
+						class="publick-profile__pages-link">
 						<span>Техническая поддержка</span>
-						<div class="store__pages-link-icon">
+						<div class="publick-profile__pages-link-icon">
 							<img
 								src="./img/icon/arrownext.svg"
 								alt="" />
@@ -1225,144 +1227,663 @@
 				</div>
 
 				<div
-					class="store__content-block product-card__active-block"
-					id="store-block">
-					<div class="store__search-filter">
-						<span class="store__product-count">6 457 продуктов</span>
+					class="publick-profile__content-block product-card__active-block"
+					id="collections-block">
+					<div>
+						<div class="general__swiper swiper collection-swiper">
+							<ul class="general__swiper-wrapper swiper-wrapper">
+								<li
+									class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+									<div class="publick-profile__item-head">
+										<span>5</span>
+										<strong>Графика</strong>
+									</div>
 
-						<div>
-							<div class="store__input-wrapper">
-								<img
-									class="store__search-icon"
-									src="./img/header/search.svg"
-									alt="" />
-								<input
-									class="header__search-input store__search-input"
-									placeholder="Поиск"
-									type="text" />
+									<div class="publick-profile__item-showcase">
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+									</div>
+								</li>
+
+								<li
+									class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+									<div class="publick-profile__item-head">
+										<span>5</span>
+										<strong>Графика</strong>
+									</div>
+
+									<div class="publick-profile__item-showcase">
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+									</div>
+								</li>
+
+								<li
+									class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+									<div class="publick-profile__item-head">
+										<span>5</span>
+										<strong>Графика</strong>
+									</div>
+
+									<div class="publick-profile__item-showcase">
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+									</div>
+								</li>
+
+								<li
+									class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+									<div class="publick-profile__item-head">
+										<span>5</span>
+										<strong>Графика</strong>
+									</div>
+
+									<div class="publick-profile__item-showcase">
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+										<div class="publick-profile__showcase-img">
+											<img
+												src="./img/publick-profile/collection-sample.png"
+												alt="" />
+										</div>
+										<div class="publick-profile__showcase-item">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+								</li>
+
+								<li
+								class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+								<div class="publick-profile__item-head">
+									<span>5</span>
+									<strong>Графика</strong>
+								</div>
+
+								<div class="publick-profile__item-showcase">
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+								</div>
+							</li>
+
+							<li
+								class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+								<div class="publick-profile__item-head">
+									<span>5</span>
+									<strong>Графика</strong>
+								</div>
+
+								<div class="publick-profile__item-showcase">
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+								</div>
+							</li>
+
+							<li
+								class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+								<div class="publick-profile__item-head">
+									<span>5</span>
+									<strong>Графика</strong>
+								</div>
+
+								<div class="publick-profile__item-showcase">
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+								</div>
+							</li>
+
+							<li
+								class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+								<div class="publick-profile__item-head">
+									<span>5</span>
+									<strong>Графика</strong>
+								</div>
+
+								<div class="publick-profile__item-showcase">
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+									<div class="publick-profile__showcase-img">
+										<img
+											src="./img/publick-profile/collection-sample.png"
+											alt="" />
+									</div>
+									<div class="publick-profile__showcase-item">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</li>
+
+							<li
+							class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+							<div class="publick-profile__item-head">
+								<span>5</span>
+								<strong>Графика</strong>
 							</div>
 
-							<div class="header-block__buttons-wrapper">
-								<button
-									class="header-block__sort"
-									id="sort-btn">
-									<span>Все категории</span>
+							<div class="publick-profile__item-showcase">
+								<div class="publick-profile__showcase-img">
 									<img
-										src="./img/fonts/list-icon.svg"
-										alt=""
-										class="header-block__sort-btn-icon" />
-								</button>
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+								<div class="publick-profile__showcase-img">
+									<img
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+								<div class="publick-profile__showcase-img">
+									<img
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+								<div class="publick-profile__showcase-img">
+									<img
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+							</div>
+						</li>
 
-								<ul
-									class="sort-popup"
-									id="sort-popup">
-									<li class="sort-popup__item">
-										<input
-											type="radio"
-											name="sort"
-											id="sort-new"
-											checked />
-										<label
-											for="sort-new"
-											class="sort-popup__label">
-											<div class="sort-popup__checker checker checker">
-												<img
-													src="./img/icon/checker-icon-black.svg"
-													alt="" />
-											</div>
-											<span class="sort-popup__title">Все</span>
-										</label>
-									</li>
+						<li
+							class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+							<div class="publick-profile__item-head">
+								<span>5</span>
+								<strong>Графика</strong>
+							</div>
 
-									<li class="sort-popup__item">
-										<input
-											type="radio"
-											name="sort"
-											id="sort-popular" />
-										<label
-											for="sort-popular"
-											class="sort-popup__label">
-											<div class="sort-popup__checker checker">
-												<img
-													src="./img/icon/checker-icon-black.svg"
-													alt="" />
-											</div>
-											<span class="sort-popup__title">Шрифты</span>
-										</label>
-									</li>
+							<div class="publick-profile__item-showcase">
+								<div class="publick-profile__showcase-img">
+									<img
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+								<div class="publick-profile__showcase-img">
+									<img
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+								<div class="publick-profile__showcase-img">
+									<img
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+								<div class="publick-profile__showcase-img">
+									<img
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+							</div>
+						</li>
 
-									<li class="sort-popup__item">
-										<input
-											type="radio"
-											name="sort"
-											id="sort-7days" />
-										<label
-											for="sort-7days"
-											class="sort-popup__label">
-											<div class="sort-popup__checker checker">
-												<img
-													src="./img/icon/checker-icon-black.svg"
-													alt="" />
-											</div>
-											<span class="sort-popup__title">Фотографии</span>
-										</label>
-									</li>
+						<li
+							class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+							<div class="publick-profile__item-head">
+								<span>5</span>
+								<strong>Графика</strong>
+							</div>
 
-									<li class="sort-popup__item">
-										<input
-											type="radio"
-											name="sort"
-											id="sort-30days" />
-										<label
-											for="sort-30days"
-											class="sort-popup__label">
-											<div class="sort-popup__checker checker">
-												<img
-													src="./img/icon/checker-icon-black.svg"
-													alt="" />
-											</div>
-											<span class="sort-popup__title">Графика</span>
-										</label>
-									</li>
+							<div class="publick-profile__item-showcase">
+								<div class="publick-profile__showcase-img">
+									<img
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+								<div class="publick-profile__showcase-img">
+									<img
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+								<div class="publick-profile__showcase-img">
+									<img
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+								<div class="publick-profile__showcase-img">
+									<img
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+							</div>
+						</li>
 
-									<li class="sort-popup__item">
-										<input
-											type="radio"
-											name="sort"
-											id="sort-365days" />
-										<label
-											for="sort-365days"
-											class="sort-popup__label">
-											<div class="sort-popup__checker checker">
-												<img
-													src="./img/icon/checker-icon-black.svg"
-													alt="" />
-											</div>
-											<span class="sort-popup__title">Векторы</span>
-										</label>
-									</li>
+						<li
+							class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+							<div class="publick-profile__item-head">
+								<span>5</span>
+								<strong>Графика</strong>
+							</div>
 
-									<li class="sort-popup__item">
-										<input
-											type="radio"
-											name="sort"
-											id="sort-alltime" />
-										<label
-											for="sort-alltime"
-											class="sort-popup__label">
-											<div class="sort-popup__checker checker">
-												<img
-													src="./img/icon/checker-icon-black.svg"
-													alt="" />
-											</div>
-											<span class="sort-popup__title">Постеры</span>
-										</label>
-									</li>
-								</ul>
+							<div class="publick-profile__item-showcase">
+								<div class="publick-profile__showcase-img">
+									<img
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+								<div class="publick-profile__showcase-img">
+									<img
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+								<div class="publick-profile__showcase-img">
+									<img
+										src="./img/publick-profile/collection-sample.png"
+										alt="" />
+								</div>
+								<div class="publick-profile__showcase-item">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</li>
+
+						<li
+						class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+						<div class="publick-profile__item-head">
+							<span>5</span>
+							<strong>Графика</strong>
+						</div>
+
+						<div class="publick-profile__item-showcase">
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+						</div>
+					</li>
+
+					<li
+						class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+						<div class="publick-profile__item-head">
+							<span>5</span>
+							<strong>Графика</strong>
+						</div>
+
+						<div class="publick-profile__item-showcase">
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+						</div>
+					</li>
+
+					<li
+						class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+						<div class="publick-profile__item-head">
+							<span>5</span>
+							<strong>Графика</strong>
+						</div>
+
+						<div class="publick-profile__item-showcase">
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+						</div>
+					</li>
+
+					<li
+						class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+						<div class="publick-profile__item-head">
+							<span>5</span>
+							<strong>Графика</strong>
+						</div>
+
+						<div class="publick-profile__item-showcase">
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+							<div class="publick-profile__showcase-img">
+								<img
+									src="./img/publick-profile/collection-sample.png"
+									alt="" />
+							</div>
+							<div class="publick-profile__showcase-item">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</li>
+
+					<li
+					class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+					<div class="publick-profile__item-head">
+						<span>5</span>
+						<strong>Графика</strong>
+					</div>
+
+					<div class="publick-profile__item-showcase">
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+					</div>
+				</li>
+
+				<li
+					class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+					<div class="publick-profile__item-head">
+						<span>5</span>
+						<strong>Графика</strong>
+					</div>
+
+					<div class="publick-profile__item-showcase">
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+					</div>
+				</li>
+
+				<li
+					class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+					<div class="publick-profile__item-head">
+						<span>5</span>
+						<strong>Графика</strong>
+					</div>
+
+					<div class="publick-profile__item-showcase">
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+					</div>
+				</li>
+
+				<li
+					class="cart__favorites-item general__slide swiper-slide publick-profile__collection-item">
+					<div class="publick-profile__item-head">
+						<span>5</span>
+						<strong>Графика</strong>
+					</div>
+
+					<div class="publick-profile__item-showcase">
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+						<div class="publick-profile__showcase-img">
+							<img
+								src="./img/publick-profile/collection-sample.png"
+								alt="" />
+						</div>
+						<div class="publick-profile__showcase-item">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</li>
+							</ul>
+							<div class="pagination fonts__pagination">
+								<div class="pagination__fraction general__fraction"></div>
+								<div class="pagination__arrows fonts__arrows">
+									<div class="pagination__prev general__prev">
+										<svg
+											viewBox="0 0 33 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.292961 8.70711C-0.0975647 8.31658 -0.0975647 7.68342 0.292961 7.29289L6.65692 0.928932C7.04745 0.538408 7.68061 0.538408 8.07113 0.928932C8.46166 1.31946 8.46166 1.95262 8.07113 2.34315L2.41428 8L8.07113 13.6569C8.46166 14.0474 8.46166 14.6805 8.07113 15.0711C7.68061 15.4616 7.04745 15.4616 6.65692 15.0711L0.292961 8.70711ZM32.6189 9H1.00007V7H32.6189V9Z"
+												fill="#383742" />
+										</svg>
+									</div>
+									<div class="pagination__next general__next">
+										<svg
+											viewBox="0 0 33 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M32.707 8.70711C33.0976 8.31658 33.0976 7.68342 32.707 7.29289L26.3431 0.928932C25.9526 0.538408 25.3194 0.538408 24.9289 0.928932C24.5383 1.31946 24.5383 1.95262 24.9289 2.34315L30.5857 8L24.9289 13.6569C24.5383 14.0474 24.5383 14.6805 24.9289 15.0711C25.3194 15.4616 25.9526 15.4616 26.3431 15.0711L32.707 8.70711ZM0.381104 9H31.9999V7H0.381104V9Z"
+												fill="#383742" />
+										</svg>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
+				<div
+					class="publick-profile__content-block"
+					id="liked-block">
 					<div>
 						<div class="general__swiper swiper">
 							<ul class="general__swiper-wrapper swiper-wrapper">
@@ -2684,258 +3205,6 @@
 						</div>
 					</div>
 				</div>
-
-				<div
-					class="store__content-block"
-					id="news-block">
-					<div class="store__search-filter">
-						<span class="store__product-count">324 НОВОСТИ</span>
-
-						<div class="header-block__buttons-wrapper">
-							<button
-								class="header-block__sort"
-								id="sort-btn-2">
-								<span>Все категории</span>
-								<img
-									src="./img/fonts/list-icon.svg"
-									alt=""
-									class="header-block__sort-btn-icon" />
-							</button>
-
-							<ul
-								class="sort-popup"
-								id="sort-popup-2">
-								<li class="sort-popup__item">
-									<input
-										type="radio"
-										name="sort"
-										id="sort-new2"
-										checked />
-									<label
-										for="sort-new2"
-										class="sort-popup__label">
-										<div class="sort-popup__checker checker checker">
-											<img
-												src="./img/icon/checker-icon-black.svg"
-												alt="" />
-										</div>
-										<span class="sort-popup__title">Все</span>
-									</label>
-								</li>
-
-								<li class="sort-popup__item">
-									<input
-										type="radio"
-										name="sort"
-										id="sort-popular2" />
-									<label
-										for="sort-popular2"
-										class="sort-popup__label">
-										<div class="sort-popup__checker checker">
-											<img
-												src="./img/icon/checker-icon-black.svg"
-												alt="" />
-										</div>
-										<span class="sort-popup__title">Шрифты</span>
-									</label>
-								</li>
-
-								<li class="sort-popup__item">
-									<input
-										type="radio"
-										name="sort"
-										id="sort-7days2" />
-									<label
-										for="sort-7days2"
-										class="sort-popup__label">
-										<div class="sort-popup__checker checker">
-											<img
-												src="./img/icon/checker-icon-black.svg"
-												alt="" />
-										</div>
-										<span class="sort-popup__title">Фотографии</span>
-									</label>
-								</li>
-
-								<li class="sort-popup__item">
-									<input
-										type="radio"
-										name="sort"
-										id="sort-30days2" />
-									<label
-										for="sort-30days2"
-										class="sort-popup__label">
-										<div class="sort-popup__checker checker">
-											<img
-												src="./img/icon/checker-icon-black.svg"
-												alt="" />
-										</div>
-										<span class="sort-popup__title">Графика</span>
-									</label>
-								</li>
-
-								<li class="sort-popup__item">
-									<input
-										type="radio"
-										name="sort"
-										id="sort-365days2" />
-									<label
-										for="sort-365days2"
-										class="sort-popup__label">
-										<div class="sort-popup__checker checker">
-											<img
-												src="./img/icon/checker-icon-black.svg"
-												alt="" />
-										</div>
-										<span class="sort-popup__title">Векторы</span>
-									</label>
-								</li>
-
-								<li class="sort-popup__item">
-									<input
-										type="radio"
-										name="sort"
-										id="sort-alltime2" />
-									<label
-										for="sort-alltime2"
-										class="sort-popup__label">
-										<div class="sort-popup__checker checker">
-											<img
-												src="./img/icon/checker-icon-black.svg"
-												alt="" />
-										</div>
-										<span class="sort-popup__title">Постеры</span>
-									</label>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<ul class="store__news-list">
-						<li class="store__item">
-							<div class="store__item-img">
-								<img
-									src="./img/store/news-sample.png"
-									alt="" />
-							</div>
-
-							<div class="store__news-content-box">
-								<span class="store__item-info store__item-info--orange">
-									Новинка
-								</span>
-
-								<div class="store__item-content">
-									<div class="store__item-title">
-										<p>Мега набор постеров</p>
-										<span>В постерах</span>
-									</div>
-									<p class="store__item-subtitle">
-										Японская винтажная оригинальная гравюра на дереве с
-										изображением тигров из Yatsuo no tsubaki от Taguchi Tomoki.
-										Музейный уровень и цифровое улучшение, поэтому с идеальной
-										детализацией и высоким качеством.
-										<br />
-										Проверьте это!
-									</p>
-
-									<div class="store__item-stats">
-										<p>2 часа назад</p>
-										<p class="store__item-stats-likes">
-											<span class="store__item-stats-icon">
-												<img
-													src="/img/icon/heart-icon.svg"
-													alt="" />
-											</span>
-											2
-										</p>
-									</div>
-								</div>
-							</div>
-						</li>
-
-						<li class="store__item">
-							<div class="store__item-img">
-								<img
-									src="./img/store/news-sample.png"
-									alt="" />
-							</div>
-
-							<div class="store__news-content-box">
-								<span class="store__item-info store__item-info--dark">
-									Новинка
-								</span>
-
-								<div class="store__item-content">
-									<div class="store__item-title">
-										<p>Мега набор постеров</p>
-										<span>В постерах</span>
-									</div>
-									<p class="store__item-subtitle">
-										Японская винтажная оригинальная гравюра на дереве с
-										изображением тигров из Yatsuo no tsubaki от Taguchi Tomoki.
-										Музейный уровень и цифровое улучшение, поэтому с идеальной
-										детализацией и высоким качеством.
-										<br />
-										Проверьте это!
-									</p>
-
-									<div class="store__item-stats">
-										<p>2 часа назад</p>
-										<p class="store__item-stats-likes">
-											<span class="store__item-stats-icon">
-												<img
-													src="/img/icon/heart-icon.svg"
-													alt="" />
-											</span>
-											2
-										</p>
-									</div>
-								</div>
-							</div>
-						</li>
-
-						<li class="store__item">
-							<div class="store__item-img">
-								<img
-									src="./img/store/news-sample.png"
-									alt="" />
-							</div>
-
-							<div class="store__news-content-box">
-								<span class="store__item-info store__item-info--yellow">
-									Новинка
-								</span>
-
-								<div class="store__item-content">
-									<div class="store__item-title">
-										<p>Мега набор постеров</p>
-										<span>В постерах</span>
-									</div>
-									<p class="store__item-subtitle">
-										Японская винтажная оригинальная гравюра на дереве с
-										изображением тигров из Yatsuo no tsubaki от Taguchi Tomoki.
-										Музейный уровень и цифровое улучшение, поэтому с идеальной
-										детализацией и высоким качеством.
-										<br />
-										Проверьте это!
-									</p>
-
-									<div class="store__item-stats">
-										<p>2 часа назад</p>
-										<p class="store__item-stats-likes">
-											<span class="store__item-stats-icon">
-												<img
-													src="/img/icon/heart-icon.svg"
-													alt="" />
-											</span>
-											2
-										</p>
-									</div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
 			</section>
 		</main>
 		<div class="modal thanks-reg">
@@ -3146,6 +3415,6 @@
 <script src="./js/main.js"></script>
 <script src="./js/general-swiper.js"></script>
 <script src="./js/sort-filter.js"></script>
-		<script src="./js/store.js"></script>
+		<script src="./js/publick-profile.js"></script>
 	</body>
 </html>
