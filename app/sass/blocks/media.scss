@@ -7672,4 +7672,31 @@
 			}
 		}
 	}
+
+	.tem-categ {
+		padding: 0rem 3rem 15rem;
+		gap: 12rem;
+		
+		&__return-link {
+			width: 11rem;
+			height: 11rem;
+			margin-bottom: 6rem;
+
+			img {
+				width: 5.1rem;
+			}
+		}
+
+		.header-block {
+			margin-bottom: 6rem;
+
+			&__prod-count {
+				margin-bottom: 0;
+			}
+		}
+
+		.container {
+			padding: 0;
+		}
+	}
 }

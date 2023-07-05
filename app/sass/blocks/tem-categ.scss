@@ -1,0 +1,34 @@
+.tem-categ {
+	padding: 0rem 6rem 18.285rem;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: 19rem;
+
+	.fonts__pagination {
+		margin-bottom: 0;
+	}
+
+	&__return-link {
+		width: 7.7rem;
+		height: 7.7rem;
+		background: #FFF;
+		border-radius: 20rem;
+		cursor: pointer;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 5.4rem;
+
+		img {
+			transform: rotate(180deg);
+			width: 3.2rem;
+		}
+	}
+
+	.container {
+		padding: 0;
+	}
+}
