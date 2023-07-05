@@ -8,6 +8,10 @@
         align-items:center;
     }
 
+    &__mob {
+        display: none;
+    }
+
     &__desk-inner {
         display: flex;
         align-items:center;

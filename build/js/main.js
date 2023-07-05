@@ -363,3 +363,97 @@ function createTag(tag, index) {
 function addZero(num) {
 	return num > 9 ? num : '0' + num;
 }
+
+
+
+// Место для первой задачи
+function firstTask(i) {
+    for (let i = 5; i < 11; i++) { 
+		console.log(i);
+	}
+    
+    
+}
+
+firstTask();
+
+// Место для второй задачи
+function secondTask() {
+	for (let i = 20; i > 10; i--) { 
+		if( i === 13) {
+			
+			break;
+			
+		}
+
+		console.log(i);
+	}
+    
+    
+}
+
+secondTask();
+
+
+
+// Место для третьей задачи
+function thirdTask() {
+    
+	for (let i = 2; i <= 10; i++) { 
+		if( i % 2 == 0) {
+			
+			console.log(i);
+			
+		}
+
+		
+	}  
+}
+
+
+thirdTask();
+
+// Место для четвертой задачи
+
+// Цикл, который нужно переписать:
+
+// for (let i = 2; i <= 16; i++) {
+//     if (i % 2 === 0) {
+//         continue;
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+
+let i = 2;
+
+function fourthTask() {
+    do {
+		console.log(i);
+		
+		i++;
+	}
+    
+    while( i % 2 === 0 , i <=16);
+}
+
+// Место для пятой задачи
+
+function fifthTask() {
+    const arrayOfNumbers = [];
+
+	for (let i = 5; i <= arrayOfNumbers.length; i++) { 
+		if(arrayOfNumbers < 11) {
+			console.log(arrayOfNumbers);
+		}
+	}
+    
+   
+    
+	console.log(arrayOfNumbers);
+    return arrayOfNumbers;
+	
+}
+
+fifthTask();

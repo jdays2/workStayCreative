@@ -353,5 +353,27 @@
             margin-right: 6.3rem;
         }
     }
+
+    &__search-btn {
+        display: none;
+    }
+
+    &__error {
+        display: none;
+        .red-btn {
+            width: 25.9rem;
+            padding: 0;
+        }
+    }
+
+    &__error-title {
+        font-size: 3.7rem;
+        font-family: 'Austin Cyr';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.7rem;
+        letter-spacing: 0.74px;
+        margin-bottom: 6rem;
+    }
     
 }
