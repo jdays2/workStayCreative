@@ -928,7 +928,21 @@ jQuery(document).ready(function ($) {
     // });
      
        
-       
+
+ //  табы Начисления и документы
+
+
+ $('.charges__item').click(function () {
+    var id = $(this).attr('data-tab'),
+        content = $('.charges__block[data-tab="' + id + '"]');
+
+    $('.charges__item.active').removeClass('active'); // 1
+    $(this).addClass('active'); // 2
+
+    $('.charges__block.active').removeClass('active'); // 3
+    content.addClass('active'); // 4
+});
+
        
      
     
