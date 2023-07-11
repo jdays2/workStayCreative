@@ -1,0 +1,186 @@
+.modal-follow {
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.modal-follow__container {
+  margin: 0 auto;
+}
+.modal-follow__box {
+  padding: 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-follow__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem;
+}
+.modal-follow__table {
+  background: rgba(224, 225, 231, 0.5);
+  border-radius: 11.6rem;
+  width: 82.9rem;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  position: relative;
+  margin-bottom: 3.2rem;
+}
+.modal-follow__table:last-child {
+  margin-bottom: 0;
+}
+.modal-follow__table-avatar {
+  width: 8rem;
+  height: 8rem;
+  position: relative;
+  border-radius: 50%;
+  margin-right: 1.6rem;
+}
+.modal-follow__table-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.modal-follow__table-avatar-star {
+  width: 2.6rem;
+  height: 2.6rem;
+  right: 0;
+  position: absolute;
+  bottom: 0rem;
+}
+.modal-follow__table-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  color: #383742;
+  margin-bottom: 0.6rem;
+}
+.modal-follow__table-block {
+  display: flex;
+}
+.modal-follow__table-follow {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #A0A1A4;
+  padding-left: 3.2rem;
+  position: relative;
+}
+.modal-follow__table-follow::before {
+  position: absolute;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../img/modal-follow/user.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+}
+.modal-follow__table-follows {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #A0A1A4;
+  padding-left: 3.2rem;
+  position: relative;
+  margin-right: 2rem;
+}
+.modal-follow__table-follows::before {
+  position: absolute;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../img/modal-follow/user-add.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+}
+.modal-follow__table-btn {
+  position: absolute;
+  width: 20.675rem;
+  height: 7.7rem;
+  background: #DE755E;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+.modal-follow__table-btn.active {
+  background: #FFFFFF;
+  color: #383742;
+}
+.modal-follow__lists {
+  display: flex;
+  padding-bottom: 1.4rem;
+  margin-bottom: 3.2rem;
+  border-bottom: 0.15rem solid rgba(160, 161, 164, 0.3);
+}
+.modal-follow__item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #A0A1A4;
+  cursor: pointer;
+  position: relative;
+}
+.modal-follow__item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.3rem;
+  bottom: -1.6rem;
+}
+.modal-follow__item--follows {
+  margin-right: 3.1rem;
+}
+.modal-follow__item--follows.active {
+  color: #383742;
+}
+.modal-follow__item--follows.active::before {
+  background: #DE755E;
+}
+.modal-follow__item--follow.active {
+  color: #383742;
+}
+.modal-follow__item--follow.active::before {
+  background: #DE755E;
+}
+.modal-follow__inner {
+  display: none;
+}
+.modal-follow__inner--one.active {
+  display: block;
+}
+.modal-follow__inner--two.active {
+  display: block;
+}
+
+.modal-follow::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-follow.active {
+  display: block;
+}/*# sourceMappingURL=modal-follow.css.map */

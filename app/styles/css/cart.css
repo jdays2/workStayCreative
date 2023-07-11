@@ -1,0 +1,346 @@
+.cart {
+  padding: 0rem 6rem 18.285rem;
+  background-color: #eaebef;
+  width: 100%;
+}
+.cart__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7.3rem;
+  line-height: 7rem;
+  letter-spacing: 0.02em;
+  color: #181818;
+  display: flex;
+  margin-bottom: 6rem;
+}
+.cart__title--favorites {
+  margin-bottom: 5.5rem;
+}
+.cart__counter {
+  display: block;
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 3.7rem;
+  letter-spacing: 0.02em;
+  color: #a0a1a4;
+  margin-bottom: 3.3rem;
+  margin-left: 1rem;
+}
+.cart__order {
+  display: flex;
+  margin-bottom: 19rem;
+}
+.cart__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-right: 5rem;
+  width: 133.5rem;
+}
+.cart__item-wrapper {
+  position: relative;
+  display: flex;
+}
+.cart__item {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  padding: 3.2rem 4rem;
+  align-items: center;
+  border-radius: 3rem;
+}
+.cart__item .basic-card__price {
+  margin-left: auto;
+}
+.cart__item-mob-close-btn {
+  display: none;
+}
+.cart__item-remove {
+  padding: 0.25rem;
+  margin-right: 4.345rem;
+}
+.cart__item-remove img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.cart__item-img {
+  width: 24.6rem;
+  height: 17.5rem;
+  margin-right: 4rem;
+}
+.cart__item-description {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  color: #383742;
+  width: 42.5rem;
+  margin-right: 11.7rem;
+}
+.cart__item-description span {
+  display: block;
+  color: #999;
+  margin-top: 1rem;
+}
+.cart__item-license {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  color: #de755e;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 7rem;
+  cursor: pointer;
+  position: relative;
+}
+.cart__item-license::after {
+  position: absolute;
+  right: -2.5rem;
+  top: 0.8rem;
+  transform: rotate(180deg);
+  content: "";
+  width: 1.2rem;
+  display: block;
+  height: 0.9rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/icon/active-item-icon.svg);
+}
+.cart__favorites {
+  width: 180rem;
+}
+.cart__favorites ul {
+  display: flex;
+  gap: 6rem;
+}
+.cart__favorites-btn {
+  width: 40.5rem;
+  height: 7.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #de755e;
+  border-radius: 100rem;
+  margin-top: 3.5rem;
+}
+.cart__favorites-btn span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.cart__order-info {
+  background: #de755e;
+  border-radius: 4rem;
+  padding: 5rem 3.2rem;
+  width: 40.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.cart__order-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 4.5rem;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 0.8rem;
+  margin-left: 1.1rem;
+}
+.cart__order-subtitle {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  margin-left: 1.1rem;
+}
+.cart__order-list {
+  background-color: #fff;
+  padding: 3.1rem 2rem 2.7rem 3.2rem;
+  border-radius: 3rem;
+}
+.cart__order-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+.cart__order-summary {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart__order-summary-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #9ba8a8;
+}
+.cart__order-list-price {
+  display: block;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.05em;
+}
+.cart__order-list-price span {
+  font-weight: 600;
+  font-size: 1.6rem;
+  top: -0.6rem;
+}
+.cart__order-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.4rem;
+}
+.cart__order-item-name {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #9ba8a8;
+}
+.cart__order-item-price {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #383742;
+}
+.cart__order-item-price span {
+  font-weight: 500;
+}
+.cart__item-price-wrapper {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: flex-end;
+}
+.cart__item-price {
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.7rem;
+}
+.cart__item-price span {
+  font-size: 1.3rem;
+  top: -1rem;
+}
+.cart__item-info-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: auto;
+  margin-left: 0.8rem;
+  cursor: pointer;
+}
+.cart__order-link {
+  background-color: #fff;
+  padding: 1.4rem 3.2rem 1.6rem;
+  border-radius: 3rem;
+  position: relative;
+  top: -0.3rem;
+}
+.cart__order-link a {
+  width: 100%;
+  height: 7.1rem;
+  background-color: #de755e;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.cart__break-line {
+  width: 28rem;
+  margin: 0 auto;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0rem;
+  position: absolute;
+  border-bottom: 0.1rem dashed rgba(160, 161, 164, 0.3);
+}
+.cart__item-content-wrapper {
+  display: flex;
+  width: 100%;
+}
+.cart__item-info {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #383742;
+  padding: 1rem 1.4rem;
+  background-color: #ffdbd4;
+  box-shadow: 0.86rem 0.56rem 2.8rem rgba(234, 235, 239, 0.3);
+  border-radius: 2.5rem;
+  position: absolute;
+  top: 3.9rem;
+  right: 4rem;
+  display: none;
+}
+.cart__item-info--show {
+  display: flex !important;
+}
+
+.basic-card__price--pink-backgraund {
+  background: #ffdbd4;
+  border-radius: 3rem;
+  min-width: 11.1rem;
+  height: 5.8rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+}
+.basic-card__price--pink-backgraund span {
+  font-size: 1.3rem;
+  top: -0.5rem;
+  left: 0;
+}
+.basic-card__price--pink-backgraund .basic-card__price-ruble {
+  left: 0rem;
+}
+.basic-card__price--pink-backgraund__item-popup {
+  position: absolute;
+  padding: 3.2rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}/*# sourceMappingURL=cart.css.map */
