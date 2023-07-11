@@ -122,6 +122,7 @@ if (mobileFilterCloseBtn) {
 	});
 }
 
+
 	filterPopUp.classList.toggle(activeFilterPopUpClass);
 	sortBtn.classList.toggle(sortBtnHideClass);
 	if (sortPopUp.classList.contains(activeSortPopUpClass)) {
