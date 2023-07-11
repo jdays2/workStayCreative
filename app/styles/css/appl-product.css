@@ -1,0 +1,82 @@
+.appl-product {
+  padding: 1.5rem 0rem;
+  border-bottom: 0.1rem solid rgba(160, 161, 164, 0.3);
+}
+.appl-product__desk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.appl-product__mob {
+  display: none;
+}
+.appl-product__desk-inner {
+  display: flex;
+  align-items: center;
+}
+.appl-product__desk-image {
+  width: 6.2rem;
+  height: 4rem;
+  margin-right: 1.5rem;
+}
+.appl-product__desk-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.appl-product__desk-title {
+  font-size: 1.6rem;
+  width: 12.4rem;
+  line-height: 2rem;
+}
+.appl-product__desk-category {
+  color: #A0A1A4;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.appl-product__desk-date {
+  color: #A0A1A4;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.appl-product__desk-status {
+  color: #A0A1A4;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  width: 14rem;
+}
+.appl-product__desk-status--win {
+  color: #DE755E;
+  position: relative;
+  padding-left: 2rem;
+  text-align: left;
+}
+.appl-product__desk-status--win::before {
+  position: absolute;
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../img/icontwo/good.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 0;
+  top: 0.2rem;
+}
+.appl-product__desk-status--error {
+  color: #383742;
+  position: relative;
+  padding-left: 2rem;
+  text-align: left;
+}
+.appl-product__desk-status--error::before {
+  position: absolute;
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../img/icontwo/none.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 0;
+  top: 0.2rem;
+}/*# sourceMappingURL=appl-product.css.map */

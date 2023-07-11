@@ -21,32 +21,16 @@ const freeSlider = new Swiper('.free__slider', {
 const recomSlider = new Swiper('.free__recom-slider', {
   speed: 500,
   loop: true,
+  
+  centeredSlides: true,
   spaceBetween: rem(0),
   breakpoints: {
     769: {
-      slidesPerView: 5,
+      slidesPerView: 6,
     },
     320: {
       slidesPerView: 2,
     },
   },
 });
-
-const recomHeroSlider = new Swiper('.free__recom-hero-slider', {
-  speed: 500,
-  effect: "fade",
-  spaceBetween: rem(12),
-  breakpoints: {
-    769: {
-      slidesPerGroup: 1,
-      slidesPerView: 1,
-    },
-    320: {
-      slidesPerView: 2,
-    },
-  },
-});
-
-recomSlider.controller.control = recomHeroSlider; // регистрируем связь между слайдерами
-recomHeroSlider.controller.control = recomSlider;
 

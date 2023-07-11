@@ -1,14 +1,37 @@
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-Regular.eot");
-  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/Gilroy-Regular.eot") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+.fonts {
+  width: 180rem;
+  margin: 0 auto;
 }
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-ExtraboldItalic.eot");
-  src: local("Gilroy Extrabold Italic"), local("Gilroy-ExtraboldItalic"), url("../fonts/Gilroy-ExtraboldItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-ExtraboldItalic.woff2") format("woff2"), url("../fonts/Gilroy-ExtraboldItalic.woff") format("woff"), url("../fonts/Gilroy-ExtraboldItalic.ttf") format("truetype");
+.fonts li {
+  list-style-type: none;
+}
+.fonts__list {
+  display: flex;
+  flex-direction: column;
+}
+.fonts__list ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+  margin-bottom: 5.9rem;
+}
+.fonts .basic-card__price span {
+  position: relative;
+  font-size: 1.4rem;
+  top: -0.5rem;
+  left: 0rem;
+}
+.fonts__pagination {
+  margin-top: 6rem;
+  margin-bottom: 5.86rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.fonts .sort-popup {
+  right: 25.2rem;
+  top: 10.2rem;
+}/*# sourceMappingURL=fonts.css.map */Gilroy-ExtraboldItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-ExtraboldItalic.woff2") format("woff2"), url("../fonts/Gilroy-ExtraboldItalic.woff") format("woff"), url("../fonts/Gilroy-ExtraboldItalic.ttf") format("truetype");
   font-weight: 800;
   font-style: italic;
 }
