@@ -2498,6 +2498,53 @@
 			}
 		}
 
+		&__hor-list {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			flex-wrap: wrap;
+		}
+
+		&__vert-list {
+			gap: 4.8rem;
+		}
+
+		&__vert-list-item {
+			gap: 3.6rem;
+			
+			strong {
+				font-size: 3.2rem;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				letter-spacing: 0.064rem;
+			}
+
+			div {
+				gap: 2.4rem;
+				padding-left: 5.4rem;
+			}
+		}
+
+		&__vert-list-icon {
+			width: 4rem;
+			height: 4rem;
+		}
+
+		&__vert-list-text {
+			font-size: 2.8rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 4rem;
+		}
+
+		&__hor-list-item {
+			padding: 3rem 4rem;
+			height: 9.4rem;
+			font-size: 2.8rem;
+			font-weight: 500;
+			letter-spacing: 0.056rem;
+		}
+
 		&__form-input {
 			width: -webkit-fit-content;
 			width: -moz-fit-content;
@@ -2704,9 +2751,7 @@
 			font-family: 'Austin Cyr';
 			font-weight: 700;
 			line-height: 4.2rem;
-			padding-bottom: 2rem;
 			letter-spacing: -0.4rem;
-			padding-bottom: 1rem;
 			width: 100% !important;
 		}
 
@@ -2915,7 +2960,6 @@
 			text-align: center;
 			letter-spacing: -0.4rem;
 			color: #383742;
-			margin-bottom: 5rem;
 			text-align: center;
 		}
 
