@@ -1,4 +1,6 @@
-const navItems = document.querySelectorAll('.articles__navigation-item')
+"use strict";
+
+const navItems = document.querySelectorAll('.articles__navigation-item');
 
 const activeNavItem = 'articles__navigation-item--active';
 
@@ -39,12 +41,12 @@ const articleSwiper = new Swiper('.articles__swiper', {
 		769: {
       slidesPerView: 4,
       slidesPerGroup: 4,
-      spaceBetween: rem(6)
+      spaceBetween: rem(6),
     },
     320: {
       slidesPerView: 1,
       slidesPerGroup: 1,
-      spaceBetween: rem(3)
+      spaceBetween: rem(3),
     }
   }
 });
@@ -57,6 +59,6 @@ navItems.forEach((element) => {
       currentItem.classList.remove(activeNavItem);
       element.classList.add(activeNavItem)
     }
-  })
-})
+  });
+});
 

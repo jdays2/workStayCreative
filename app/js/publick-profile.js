@@ -1,3 +1,5 @@
+"use strict";
+
 const titles = document.querySelectorAll('.product-card__title-item');
 const collectionsBlock = document.querySelector('#collections-block');
 const likedBlock = document.querySelector('#liked-block');

@@ -1,0 +1,419 @@
+.charges {
+
+
+    &__lists {
+        display: flex;
+       
+        border-bottom: 0.15rem solid  rgba(160, 161, 164, 0.30);
+    }
+
+    &__item {
+        margin-right: 9rem;
+        color:  #A0A1A4;
+        font-size: 2.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 1.2rem;
+        
+        cursor: pointer;
+        &::before {
+            position: absolute;
+            content:'';
+            bottom: -0.2rem;
+            width: 100%;
+            height: 0.3rem;
+        }
+    }
+
+    &__item.active {
+        color:  #383742;
+        &::before {
+            background: #DE755E;
+        }
+    }
+
+    &__block {
+        display: none;
+        padding-top: 6rem;
+    }
+
+    &__block.active {
+        display: block;
+    }
+
+    &__menu {
+        display: flex;
+        margin-bottom: 3.3rem;
+    }
+
+    &__red {
+        background-image: url(../img/charges/bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 87rem;
+        height: 14.8rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding-left: 3rem;
+        padding-right: 2.8rem;
+        margin-bottom: 10rem;
+        
+    }
+
+    &__red-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__red-icon {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        border-radius: 50%;
+        background: #fff;
+        width: 8.9rem;
+        height: 8.9rem;
+        margin-right: 3.6rem;
+        img {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
+    &__red-title {
+        color:  #FFF;
+        margin-bottom: 0.4rem;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.4px;
+    }
+
+    &__red-price {
+        position: relative;
+        color:  #FFF;
+        font-size: 3.7rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.74px;
+        padding-right: 1.3rem;
+        width: fit-content;
+        &::before {
+            position: absolute;
+            content:"₽";
+            font-size: 2rem;
+            right: 0;
+            top: 0.3rem;
+        }
+    }
+
+    &__red-date {
+        color: #E0E1E7;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.32px;
+    }
+
+    &__red-btn {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 24.7rem;
+        height: 7.7rem;
+        border-radius: 100rem;
+        background:  #FFF;
+        color:  #DE755E;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.4px;
+    }
+
+    &__title {
+        margin-bottom: 3.2rem;
+        font-family: 'Austin Cyr';
+        font-size: 3.7rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.7rem;
+        letter-spacing: 0.74px;
+    }
+
+    &__date {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        padding: 2.7rem 3rem;
+        border-radius: 9.5rem;
+        background: #FFF;
+        color:  #A0A1A4;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        max-width: 29.8rem;
+        span {
+            display: block;
+            position: relative;
+        }
+
+        span:first-child {
+            margin-right: 1.2rem;
+            padding-right: 3.2rem;
+            &::before {
+                position: absolute;
+                content:'';
+                width: 2rem;
+                background: #383742;
+                height: 0.1rem;
+                top: 50%;
+                right: 0;
+                
+            }
+        }
+    }
+
+
+    .select-global-div {
+        
+        display: block;
+    }
+
+    .select-global-div--first {
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+
+    .select-global-div--two {
+        .select-global {
+            width: 31.7rem;
+        }
+
+        .new-select {
+            width: 31.7rem;
+        }
+    }
+
+
+    .select-global {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        background: #FFFFFF;
+        border-radius: 10.3rem;
+        position: relative;
+        width: 29.8rem;
+        height: 7.7rem;
+       
+        
+    }
+
+  
+
+   
+
+    .new-select {
+        display: flex;
+        padding-left: 3rem;
+        align-items:center;
+        background: #FFFFFF;
+        border-radius: 10.3rem;
+        position: relative;
+        width: 29.8rem;
+        height: 7.7rem;
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        
+        &::before {
+            transition: all 0.2s;
+            position: absolute;
+            content:'';
+            width: 1.6rem;
+            height: 1.2rem;
+            background-image: url(../img/icon/Polygon.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            right: 3.5rem;
+            top: 3.3rem;
+        }
+    }
+
+    .new-select.on {
+        &::before {
+            transition: all 0.2s;
+            transform: rotate(180deg);
+        }
+    }
+
+
+    .select-global--big .new-select {
+        width: 31.7rem;
+    }
+    
+    .new-select__list {
+        position: absolute;
+        top: 9rem;
+        left: 0;
+        border-radius: 5rem;
+        cursor: pointer;
+        width: 100%;
+        z-index: 2;
+        background: #fff;
+        user-select: none;
+    }
+    
+    .new-select__list.on {
+        display: block;
+    }
+    
+    .new-select__item span {
+        display: block;
+        padding: 2rem 3rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    
+    .new-select__item span:hover {
+        color: #DE755E;
+    }
+
+    &__sections {
+        width: 100%;
+        color:  #A0A1A4;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        border-radius: 2rem;
+        background:  #FFF;
+        margin-bottom: 1.5rem;
+        height: 6.3rem;
+        justify-content: center;
+        align-items:center;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3.8rem;
+        padding-right: 5.5rem;
+    }
+
+    &__red-btn {
+        width: 27.2rem;
+        height: 7.7rem;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        border-radius: 100rem;
+        background:  #fff;
+
+        span {
+            color: #DE755E;
+            text-align: center;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.4px;
+        }
+
+    }
+
+    .select-global-div--mob {
+        display: none;
+    }
+
+    .select-global-div--three {
+        margin-left: auto;
+        margin-right: 1.8rem;
+        .select-global {
+            width: 21.4rem;
+        }
+    }
+
+    .select-global-div--desk {
+        margin-right: 2rem;
+    }
+
+    &__total {
+        width: 100%;
+        color:  #fff;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        border-radius: 2rem;
+        background:  #DE755E;
+        margin-bottom: 1.5rem;
+        height: 11rem;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        padding-left: 3.8rem;
+        padding-right: 5.5rem;
+        padding-top: 3.8rem;
+    }
+
+
+    &__total-price {
+        display: flex;
+        justify-content: flex-end;
+        strong {
+            display: none;
+        }
+        span {
+            position: relative;
+            display: block;
+            padding-right: 1rem;
+            width: fit-content;
+            
+            &::before {
+                position: absolute;
+                content:'₽';
+                font-size: 1.6rem;
+                right: 0;
+            }
+        }
+
+
+        .no-data {
+            padding: 0;
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    &__total-title {
+        width: 10.4rem;
+    }
+
+    &__total-sum {
+        text-align: center;
+
+        strong {
+            display: none;
+        }
+    }
+
+    &__total--end {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    
+}
