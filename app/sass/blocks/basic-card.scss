@@ -99,9 +99,47 @@
 			font-size: 1.4rem;
 			top: -0.5rem;
 			left: 0rem;
-		
+		}
+
+		img {
+			width: 2.4rem;
 		}
 	}
+
+	&__date {
+		color: #383742;
+		font-family: "Gilroy";
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: 0.04rem;
+		position: relative;
+		padding: 1.3rem 2.8rem;
+		border-radius: 100rem;
+		background: #FFF;
+	}
+
+	&__rubles {
+		color: #999;
+		font-family: "Gilroy";
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 0.04rem;
+		position: relative;
+		width: 21.5rem;
+
+		span {
+			position: absolute;
+			font-size: 1.5rem !important;
+			line-height: 1.4rem !important;
+			font-weight: 500 !important;
+			margin-bottom: auto;
+		}
+	}
+
 	&__price-wrapper {
 		display: flex;
 		justify-content: center;
@@ -176,6 +214,17 @@
       right: -0.65rem;
       position: absolute;
 			text-decoration: none;
+		}
+	}
+
+	&--correct {
+		.basic-card__price {
+			background-color: #EFD1CB;
+			color: #DE755E;
+			
+			span {
+				color: #DE755E;
+			}
 		}
 	}
 }
