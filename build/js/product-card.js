@@ -43,6 +43,8 @@ const modalQuestionBtn = document.querySelector('#set-question');
 const modalQuestionConfirm = document.querySelector('.modal--confirm-question');
 const modalQuestion = document.querySelector('.modal--question');
 const modalQuestionConfirmBtn = document.querySelector('#send-question');
+const modalFiles = document.querySelector('.modal--files');
+const modalFilesBtn = document.querySelector('#files-info');
 
 const activeBlock = 'product-card__active-block';
 const activeLicensItemClass = 'product-card__price-license-item--active';
@@ -201,7 +203,7 @@ rewies.forEach((element) => {
 	);
 	const popUp = element.querySelector('.product-card__settings-popup');
 	toggleBtn.addEventListener('click', () => {
-		console.log(window.screen.width)
+		console.log(window.screen.width);
 		const currentWidth = window.screen.width;
 		if (currentWidth < 769) {
 			popUp.classList.toggle(rewiesPopUpShow);
@@ -315,9 +317,7 @@ radioButtons.forEach((radioButton) => {
 
 rewiesItemSettings.forEach((element) => {
 	element.addEventListener('click', (e) => {
-		if (
-			window.screen.width > 769 
-		) {
+		if (window.screen.width > 769) {
 			complainModal.classList.add(openModal);
 		}
 	});
@@ -325,9 +325,7 @@ rewiesItemSettings.forEach((element) => {
 
 settingsPopUpBtn.forEach((element) => {
 	element.addEventListener('click', (e) => {
-		if (
-			window.screen.width < 769 
-		) {
+		if (window.screen.width < 769) {
 			complainModal.classList.add(openModal);
 		}
 	});
@@ -343,10 +341,15 @@ sendComplainBtn.addEventListener('click', () => {
 //показ modal с вопросом
 modalQuestionBtn.addEventListener('click', () => {
 	modalQuestion.classList.add(openModal);
-})
+});
 
 //показ modal с оповещением об удачной отправке вопроса
 modalQuestionConfirmBtn.addEventListener('click', () => {
 	modalQuestion.classList.remove(openModal);
 	modalQuestionConfirm.classList.add(openModal);
-})
+});
+
+//показ модал с просмотром информации о файле
+modalFilesBtn.addEventListener('click', () => {
+	modalFiles.classList.add(openModal);
+});

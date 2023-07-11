@@ -1731,8 +1731,8 @@
 							</ul>
 						</div>
 
-						<a
-							href=""
+						<btn
+							id="files-info"
 							class="product-card__preview-link">
 							<span>Предпросмотр файла</span>
 							<div class="product-card__preview-link-img">
@@ -1740,7 +1740,7 @@
 									src="./img/product-card/slider-arrow-right.svg"
 									alt="" />
 							</div>
-						</a>
+						</btn>
 					</div>
 
 					<div class="product-card__content-right-side">
@@ -2918,7 +2918,9 @@
 						<p class="question-block__questions-subtitle">
 							Вы можете обратиться к нашим специалистам.
 						</p>
-						<button class="question-block__questions-btn" id="set-question">
+						<button
+							class="question-block__questions-btn"
+							id="set-question">
 							<span>Задать вопрос</span>
 							<div class="question-block__questions-btn-img">
 								<img
@@ -2932,7 +2934,7 @@
 		</main>
 
 		<!-- модалки -->
-
+		<!-- Что бы открыть/показать модалку используем класс modal--open -->
 		<!-- модалка, слайдер -->
 		<div class="modal modal--slider">
 			<div class="modal__wrapper">
@@ -3024,6 +3026,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- модалка, добавление в коллекцию -->
 		<div class="modal modal--add-to-collection">
 			<div class="modal__wrapper">
@@ -3242,7 +3245,7 @@
 				<div class="modal__box">
 					<div class="modal__icon">
 						<img
-							src="./img/product-card/message-white-icon.svg"
+							src="./img/icon/is-done-icon.svg"
 							alt="" />
 					</div>
 
@@ -3263,7 +3266,7 @@
 				<div class="modal__box">
 					<div class="modal__icon">
 						<img
-							src="./img/product-card/message-white-icon.svg"
+							src="./img/icon/exclamation-icon.svg"
 							alt="" />
 					</div>
 
@@ -3369,7 +3372,7 @@
 				<div class="modal__box">
 					<div class="modal__icon">
 						<img
-							src="./img/product-card/message-white-icon.svg"
+							src="./img/icon/is-done-icon.svg"
 							alt="" />
 					</div>
 
@@ -3416,8 +3419,10 @@
 							<span>Отправить</span>
 						</button>
 
-						<p>Нажимая на кнопку, вы соглашаетесь с
-						<a href="#">Условиями обработки персональных данных</a></p>
+						<p>
+							Нажимая на кнопку, вы соглашаетесь с
+							<a href="#">Условиями обработки персональных данных</a>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -3434,12 +3439,76 @@
 				<div class="modal__box">
 					<div class="modal__icon">
 						<img
-							src="./img/product-card/message-white-icon.svg"
+							src="./img/icon/is-done-icon.svg"
 							alt="" />
 					</div>
 
 					<p class="modal__title">Вопрос отправлен</p>
 					<p class="modal__subtitle">Мы ответим Вам в ближайшее время.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- модалка, информация о файлах -->
+		<div class="modal modal--files">
+			<div class="modal__wrapper">
+				<button class="modal__close">
+					<img
+						src="./img/icon/close.svg"
+						alt="" />
+				</button>
+				<div class="modal__box">
+					<p class="modal__title">Информация о файлах</p>
+					<ul class="modal__hor-list">
+						<li class="modal__hor-list-item modal__hor-list-item--total">
+							<span>Всего 3</span>
+						</li>
+						<li class="modal__hor-list-item">
+							<span>PDF 1</span>
+						</li>
+						<li class="modal__hor-list-item">
+							<span>INDD 1</span>
+						</li>
+						<li class="modal__hor-list-item">
+							<span>TXT 1</span>
+						</li>
+					</ul>
+
+					<ul class="modal__vert-list">
+						<li class="modal__vert-list-item">
+							<strong>PDF</strong>
+							<div>
+								<span class="modal__vert-list-icon">
+									<img
+										src="./img/icon/folder-icon.svg"
+										alt="" />
+								</span>
+								<span class="modal__vert-list-text">readme.pdf</span>
+							</div>
+						</li>
+						<li class="modal__vert-list-item">
+							<strong>Indesign</strong>
+							<div>
+								<span class="modal__vert-list-icon">
+									<img
+										src="./img/icon/folder-icon.svg"
+										alt="" />
+								</span>
+								<span class="modal__vert-list-text">readme.indd</span>
+							</div>
+						</li>
+						<li class="modal__vert-list-item">
+							<strong>TXT</strong>
+							<div>
+								<span class="modal__vert-list-icon">
+									<img
+										src="./img/icon/folder-icon.svg"
+										alt="" />
+								</span>
+								<span class="modal__vert-list-text">readme.txt</span>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>

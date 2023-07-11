@@ -3944,6 +3944,95 @@ main {
   pointer-events: auto !important;
   opacity: 1;
 }
+.modal__hor-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.modal__vert-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+  margin-right: auto;
+}
+.modal__vert-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+}
+.modal__vert-list-item strong {
+  color: #1B1818;
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  text-align: left;
+}
+.modal__vert-list-item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.6rem;
+  padding-left: 2.8rem;
+}
+.modal__vert-list-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: block;
+}
+.modal__vert-list-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.modal__vert-list-text {
+  color: #1B1818;
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.modal__hor-list-item {
+  padding: 1.5rem 3.9rem;
+  height: 5.6rem;
+  color: #de755e;
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+  border-radius: 1000rem;
+  background: rgb(255, 219, 212);
+}
+.modal__hor-list-item--total {
+  color: #fff;
+  background: #de755e;
+}
 .modal__product-card-swiper {
   margin: 0 auto;
   width: -webkit-fit-content;
@@ -9324,6 +9413,9 @@ main {
   margin-right: 5rem;
   width: 133.5rem;
 }
+.cart__list li {
+  position: relative;
+}
 .cart__item-wrapper {
   position: relative;
   display: -webkit-box;
@@ -9652,6 +9744,85 @@ main {
   display: -ms-flexbox !important;
   display: flex !important;
 }
+.cart__item-popup--show {
+  max-height: 100rem !important;
+}
+.cart__item-popup {
+  max-height: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  overflow: hidden;
+  position: absolute;
+  padding: 1.2rem 3.2rem;
+  width: 52.8rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  top: 14.5rem;
+  right: 17.5rem;
+  z-index: 10;
+  -webkit-box-shadow: 2rem 1.5rem 4rem 0rem rgba(103, 110, 133, 0.1);
+          box-shadow: 2rem 1.5rem 4rem 0rem rgba(103, 110, 133, 0.1);
+}
+.cart__item-popup input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.cart__item-popup li:not(:last-child) {
+  border-bottom: 0.1rem solid rgba(160, 161, 164, 0.3);
+}
+.cart__item-popup input[type=radio]:checked + p::before {
+  background-color: rgb(222, 117, 94);
+}
+.cart__item-popup input[type=radio]:checked + p,
+.cart__item-popup input[type=radio]:checked ~ .cart__item-popup-price {
+  color: #383742;
+}
+.cart__popup-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 2rem 0rem;
+}
+.cart__popup-item p {
+  color: #a0a1a4;
+  font-family: "Gilroy";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+  position: relative;
+  padding-left: 3.4rem;
+}
+.cart__popup-item p::before {
+  content: "";
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  border: 0.4rem solid #fff;
+  background-color: rgb(224, 225, 231);
+  position: absolute;
+  left: 0rem;
+  top: 0.1rem;
+}
+.cart__item-popup-price {
+  color: #a0a1a4;
+  font-family: "Gilroy";
+  margin-left: auto;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+  border: 0rem;
+  background-color: inherit;
+  border-radius: 0%;
+}
 
 .basic-card__price--pink-backgraund {
   background: #ffdbd4;
@@ -9916,6 +10087,40 @@ main {
   top: -0.5rem;
   left: 0rem;
 }
+.basic-card__price img {
+  width: 2.4rem;
+}
+.basic-card__date {
+  color: #383742;
+  font-family: "Gilroy";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+  position: relative;
+  padding: 1.3rem 2.8rem;
+  border-radius: 100rem;
+  background: #FFF;
+}
+.basic-card__rubles {
+  color: #999;
+  font-family: "Gilroy";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+  position: relative;
+  width: 21.5rem;
+}
+.basic-card__rubles span {
+  position: absolute;
+  font-size: 1.5rem !important;
+  line-height: 1.4rem !important;
+  font-weight: 500 !important;
+  margin-bottom: auto;
+}
 .basic-card__price-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9995,6 +10200,13 @@ main {
   right: -0.65rem;
   position: absolute;
   text-decoration: none;
+}
+.basic-card--correct .basic-card__price {
+  background-color: #EFD1CB;
+  color: #DE755E;
+}
+.basic-card--correct .basic-card__price span {
+  color: #DE755E;
 }
 
 @media (hover: hover) {
@@ -14759,6 +14971,297 @@ input:checked ~ .contacts__question-item-content {
   padding: 0;
 }
 
+.free {
+  padding: 0rem 6rem 18.6rem;
+  overflow: hidden;
+}
+.free .basic-card {
+  width: 40.5rem;
+}
+.free__slider-title {
+  gap: 2rem;
+  margin-bottom: 5.5rem;
+}
+.free__slider-title span {
+  padding: 1.3rem 2.8rem;
+  border-radius: 100rem;
+  background: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3.2rem;
+  color: #383742;
+  font-size: 2rem;
+  font-family: G "ilroy";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+}
+.free__slider-title strong {
+  display: block;
+  margin: 0 auto;
+  color: #383742;
+  text-align: center;
+  font-size: 7.3rem;
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 7rem;
+  letter-spacing: 0.146rem;
+}
+.free__slider-title p {
+  margin: 0 auto;
+  width: 84.7rem;
+  color: #383742;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.6rem;
+}
+.free__rates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 24.1rem;
+  width: 100%;
+  height: 48rem;
+  border-radius: 5.5rem;
+  background: #e0e1e7;
+}
+.free__rates-subtitle {
+  border-radius: 100rem;
+  background: #fff;
+  padding: 1.3rem 2.8rem;
+  color: #383742;
+  font-family: "Gilroy";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+  margin-bottom: 3.2rem;
+}
+.free__rates-title {
+  color: #383742;
+  text-align: center;
+  font-family: "Austin Cyr";
+  font-size: 3.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.7rem;
+  letter-spacing: 0.074rem;
+  margin-bottom: 7.4rem;
+}
+.free__girl-background {
+  height: 47.74rem;
+  position: absolute;
+  left: 9.4rem;
+  top: -15.3rem;
+}
+.free__girl-background svg {
+  width: 30.6rem;
+  height: 15.3rem;
+  position: absolute;
+  right: 0.7rem;
+  top: 15.3rem;
+  z-index: 2;
+}
+.free__girl-background img {
+  position: relative;
+  z-index: 3;
+}
+.free__men-background {
+  height: 41.5rem;
+  position: absolute;
+  bottom: -5.1rem;
+  right: 13rem;
+}
+.free__men-background svg {
+  width: 31.2rem;
+  height: 15.6rem;
+  position: absolute;
+  left: 1.7rem;
+  bottom: 5.1rem;
+  z-index: 2;
+}
+.free__men-background img {
+  position: relative;
+  z-index: 3;
+}
+.free__discount-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6rem;
+  margin-bottom: 3.2rem;
+}
+.free__discount-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.free__discount-item:nth-child(1) strong {
+  color: rgba(255, 180, 47, 0.5);
+}
+.free__discount-item:nth-child(2) strong {
+  color: rgba(255, 180, 47, 0.8);
+}
+.free__discount-item:nth-child(3) strong {
+  color: rgba(222, 117, 94, 0.8);
+}
+.free__discount-item:nth-child(4) strong {
+  color: #de755e;
+}
+.free__discount-item span {
+  display: block;
+  color: #a0a1a4;
+  text-align: center;
+  font-family: " Gilroy";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+}
+.free__discount-item strong {
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 3.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.074rem;
+}
+.free__link {
+  padding: 2.7rem 4.9rem;
+  border-radius: 100rem;
+  background: #de755e;
+}
+.free__link span {
+  color: #fff;
+  font-family: "Gilroy";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.036rem;
+}
+.free .basic-card__img {
+  top: -2.5rem;
+  position: relative;
+}
+.free .basic-card__img span {
+  z-index: 10;
+  position: relative;
+  top: 5.8rem;
+  z-index: 10;
+  left: 24.5rem;
+}
+.free__recom-item-img {
+  width: 26.8rem;
+  height: 22.2rem;
+}
+.free__recom-item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.free__slider-recommendations {
+  margin: 0 auto;
+  margin-top: 22rem;
+  margin-bottom: 34.3rem;
+}
+.free__recom-slider {
+  left: -13.5rem;
+  top: 44rem;
+  width: 207rem;
+}
+.free__recom-hero-slider {
+  width: 87rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.free__recom-hero-item-img {
+  width: 60rem;
+  height: 40rem;
+  border-radius: 4rem;
+  overflow: hidden;
+}
+.free__recom-hero-item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.free__recom-hero-slider-item {
+  padding: 6rem 13.5rem;
+  padding-bottom: 15.8rem;
+  border-radius: 5.5rem;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3.2rem;
+}
+.free__recom-hero-title {
+  color: #383742;
+  font-family: "Gilroy";
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.11rem;
+  text-transform: uppercase;
+}
+.free__recom-hero-sub-title {
+  color: #383742;
+  font-family: "Gilroy";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+}
+.free .free__recom-slider-item {
+  position: relative;
+  z-index: 1;
+}
+.free .free__recom-hero-slider-item {
+  position: relative;
+  z-index: 2;
+}
+
 @media only all and (max-width: 48em) {
   html {
     font-size: 1.3333333333vw;
@@ -17125,6 +17628,46 @@ input:checked ~ .contacts__question-item-content {
     height: 4.4rem;
     width: 4.4rem;
   }
+  .modal__hor-list {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modal__vert-list {
+    gap: 4.8rem;
+  }
+  .modal__vert-list-item {
+    gap: 3.6rem;
+  }
+  .modal__vert-list-item strong {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.064rem;
+  }
+  .modal__vert-list-item div {
+    gap: 2.4rem;
+    padding-left: 5.4rem;
+  }
+  .modal__vert-list-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .modal__vert-list-text {
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4rem;
+  }
+  .modal__hor-list-item {
+    padding: 3rem 4rem;
+    height: 9.4rem;
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.056rem;
+  }
   .modal__form-input {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -17282,9 +17825,7 @@ input:checked ~ .contacts__question-item-content {
     font-family: "Austin Cyr";
     font-weight: 700;
     line-height: 4.2rem;
-    padding-bottom: 2rem;
     letter-spacing: -0.4rem;
-    padding-bottom: 1rem;
     width: 100% !important;
   }
   .modal__collection-item {
@@ -17463,7 +18004,6 @@ input:checked ~ .contacts__question-item-content {
     text-align: center;
     letter-spacing: -0.4rem;
     color: #383742;
-    margin-bottom: 5rem;
     text-align: center;
   }
   .modal__list {
@@ -19339,6 +19879,46 @@ input:checked ~ .contacts__question-item-content {
     font-size: 6rem;
     line-height: 7.2rem;
     margin-bottom: 6rem;
+  }
+  .cart__item-popup--show {
+    position: static !important;
+    visibility: visible !important;
+  }
+  .cart__item-popup {
+    position: absolute;
+    margin-top: 1.6rem;
+    left: 0rem;
+    right: 0rem;
+    visibility: hidden;
+    border-radius: 5rem;
+    width: 100%;
+    -webkit-transition: 0s;
+    transition: 0s;
+    padding: 2rem 2.4rem;
+  }
+  .cart__popup-item {
+    padding: 2rem 0rem;
+  }
+  .cart__popup-item p::before {
+    width: 4.4rem;
+    height: 4.4rem;
+    border: 0.8rem solid #fff;
+  }
+  .cart__popup-item p {
+    font-size: 2.9rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.056rem;
+    padding-left: 6.8rem;
+  }
+  .cart__item-popup-price {
+    font-size: 2.9rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.056rem;
+    padding-left: 6.8rem;
   }
   .cart__item-info {
     display: none;
