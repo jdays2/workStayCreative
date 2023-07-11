@@ -4,6 +4,7 @@ const modalList = document.querySelector('.modal__list');
 const closeModalBtn = document.querySelector('.modal__close-btn');
 const openModalBtn = document.querySelectorAll('.cart__item-license');
 const modal = document.querySelector('.modal');
+const cartItems = document.querySelectorAll('.cart__product-item');
 
 const modalOpenClass = 'modal__open';
 const moveItemClass = 'cart__item--move';
@@ -24,12 +25,10 @@ orderItems.forEach((element) => {
 				!e.target.classList.contains('cart__item-info-icon')
 			) {
 				item.classList.add(moveItemClass);
-				if (itemInfo.classList.contains(showItemInfoClass)) {
+				if (itemInfo?.classList.contains(showItemInfoClass)) {
 					itemInfo.classList.remove(showItemInfoClass);
 				}
 			}
-
-		
 		});
 
 		moveItemBtn.addEventListener('click', () => {
@@ -39,27 +38,39 @@ orderItems.forEach((element) => {
 
 	if (itemInfoIcon) {
 		itemInfoIcon.addEventListener('mouseover', () => {
-			if (window.screen.width > 768) {
+			if (window.innerWidth > 768) {
 				itemInfo.classList.add(showItemInfoClass);
 			}
 		});
 		itemInfoIcon.addEventListener('mouseout', () => {
-			if (window.screen.width > 768) {
+			if (window.innerWidth > 768) {
 				itemInfo.classList.remove(showItemInfoClass);
 			}
 		});
-	}
 
-	if(!itemInfoIcon) {
-		return
-	}
-	itemInfoIcon.addEventListener('touchstart', () => {
-		if (window.screen.width < 769) {
-			if (item.classList.contains(moveItemClass)) {
-				item.classList.remove(moveItemClass);
-				return;
+		itemInfoIcon.addEventListener('touchstart', () => {
+			if (window.innerWidth < 769) {
+				console.log(window.innerWidth);
+				if (item.classList.contains(moveItemClass)) {
+					item.classList.remove(moveItemClass);
+					return;
+				}
+				itemInfo.classList.toggle(showItemInfoClass);
 			}
-			itemInfo.classList.toggle(showItemInfoClass);
-		}
+		});
+	}
+});
+
+//обработка показа модального окошка с выбором лицензии
+
+cartItems.forEach((item) => {
+	const popupShowClass = 'cart__item-popup--show';
+	const licensePopup = item.querySelector('.cart__item-popup');
+	const licenseBtn = item.querySelector('.cart__item-license');
+
+	console.log(licensePopup, licenseBtn);
+
+	licenseBtn.addEventListener('click', () => {
+		licensePopup.classList.toggle(popupShowClass);
 	});
 });

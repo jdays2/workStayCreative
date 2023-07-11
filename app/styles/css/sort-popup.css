@@ -1,0 +1,64 @@
+.sort-popup {
+  display: none;
+  flex-direction: column;
+  gap: 1.6rem;
+  min-width: 23.9rem;
+  background: #fff;
+  border-radius: 2rem;
+  padding: 3.2rem;
+  z-index: 10;
+  position: absolute;
+}
+.sort-popup--show {
+  display: flex;
+}
+.sort-popup__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #383742;
+}
+.sort-popup__item {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.sort-popup__item label {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.sort-popup input[type=radio] {
+  display: none;
+}
+.sort-popup .sort-popup__checker img {
+  display: none;
+}
+.sort-popup .sort-popup__item input:checked + .sort-popup__label .sort-popup__checker img {
+  display: block;
+}
+
+.checker {
+  width: 4rem;
+  height: 4rem;
+  background: #E0E1E7;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checker img {
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.checker--active img {
+  display: block;
+}/*# sourceMappingURL=sort-popup.css.map */
