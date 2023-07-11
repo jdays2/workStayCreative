@@ -14426,6 +14426,154 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.purchases__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2rem;
+  background: #fff;
+  padding-left: 2.8rem;
+  padding-right: 7.4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #A0A1A4;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  margin-bottom: 1.5rem;
+}
+.purchases__section span {
+  display: block;
+}
+.purchases__section span:nth-child(1) {
+  margin-right: 34.5rem;
+}
+.purchases__section span:nth-child(2) {
+  margin-right: 5.1rem;
+}
+.purchases__section span:nth-child(3) {
+  margin-right: 8.6rem;
+}
+.purchases__section span:nth-child(4) {
+  margin-right: 16.7rem;
+}
+.purchases__section span:nth-child(5) {
+  margin-right: 10.1rem;
+}
+.purchases .sort-popup {
+  top: 10rem;
+}
+
+.purchases-box {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 2rem;
+  background: #fff;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 2.8rem;
+}
+.purchases-box__title {
+  display: none;
+}
+.purchases-box__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.purchases-box__image {
+  width: 9.6rem;
+  height: 6.8rem;
+  margin-right: 2rem;
+}
+.purchases-box__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.purchases-box__name {
+  color: #181818;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+.purchases-box__inner-wrap {
+  max-width: 22rem;
+}
+.purchases-box__from {
+  color: #999;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+.purchases-box__date {
+  color: #A0A1A4;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+.purchases-box__price {
+  color: #A0A1A4;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  position: relative;
+  padding-right: 0.8rem;
+}
+.purchases-box__price::before {
+  position: absolute;
+  content: "₽";
+  font-size: 1.2rem;
+  right: 0;
+}
+.purchases-box__license {
+  color: #A0A1A4;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+.purchases-box__law {
+  color: #DE755E;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+.purchases-box__messages {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: block;
+}
+.purchases-box__download {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: block;
+}
+
 @media only all and (max-width: 48em) {
   html {
     font-size: 1.3333333333vw;

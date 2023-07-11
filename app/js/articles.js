@@ -1,3 +1,5 @@
+"use strict";
+
 const navItems = document.querySelectorAll('.articles__navigation-item')
 
 const activeNavItem = 'articles__navigation-item--active';

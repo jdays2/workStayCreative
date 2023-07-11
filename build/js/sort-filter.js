@@ -1,3 +1,5 @@
+"use strict";
+
 const sortBtn = document.querySelector('.header-block__sort');
 const filterBtn = document.querySelector('#filter-btn');
 const sortPopUp = document.querySelector('.sort-popup');
