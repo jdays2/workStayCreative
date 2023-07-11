@@ -1,3 +1,5 @@
+"use strict";
+
 const titles = document.querySelectorAll('.product-card__title-item');
 const newsBlock = document.querySelector('#news-block');
 const storeBlock = document.querySelector('#store-block');

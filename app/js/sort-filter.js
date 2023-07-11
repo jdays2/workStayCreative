@@ -1,92 +1,69 @@
-const sortBtn1 = document.querySelector('#sort-btn');
-const sortPopUp1 = document.querySelector('#sort-popup');
-const sortBtnIcon1 = document.querySelector(
-	'#sort-btn .header-block__sort-btn-icon',
+"use strict";
+
+const sortBtn = document.querySelector('.header-block__sort');
+const filterBtn = document.querySelector('#filter-btn');
+const sortPopUp = document.querySelector('.sort-popup');
+const filterPopUp = document.querySelector('.filter-popup__wrapper');
+const filterResetBtn = document.querySelector('.filter-popup__reset-btn');
+const filterApplyBtn = document.querySelector('.filter-popup__apply-btn');
+const filterBtnIcon = document.querySelector('.header-block__filter-img');
+const filterBtnActiveIcon = document.querySelector(
+	'.header-block__filter-img--alter',
 );
+const sortBtnIcon = document.querySelector('.header-block__sort-btn-icon');
+const filterCloseBtn = document.querySelector('.filter-popup__close-btn');
+
+const activeCheckerClass = 'checker--active';
+const activeSortPopUpClass = 'sort-popup--show';
+const activeFilterPopUpClass = 'filter-popup__wrapper--show';
 const sortBtnHideClass = 'header-block__sort--hidden';
 const sortBtnIconFlipClass = 'header-block__sort-btn-icon--flip';
-const priceSlider = document.querySelector('#price-slider');
+const filterBtnHiddenIcon = 'header-block__filter-img--hidden';
 
-// Функция для переворота индикатора/icon в sort popup 1
-const iconFlip1 = () => {
-	sortBtnIcon1.classList.toggle(sortBtnIconFlipClass);
+//функция по перевороту индикатора/icon sort popup
+const iconFlip = () => {
+	sortBtnIcon.classList.toggle(sortBtnIconFlipClass);
 };
 
-// Логика checker
-const setCheckers = (popup) => {
-	const checkers = popup.querySelectorAll('.checker');
+// //показать, скрыть popup sort
+sortBtn.addEventListener('click', () => {
+	sortPopUp.classList.toggle(activeSortPopUpClass);
+	iconFlip();
+});
+
+//логика checker
+const setCheckers = () => {
+	const checkers = document.querySelectorAll('#checker');
 
 	checkers.forEach((element) => {
-		element.addEventListener('click', (event) => {
-			element.classList.toggle('checker--active');
+		element.addEventListener('click', () => {
+			const checker = element.querySelector('.checker');
+			checker.classList.toggle(activeCheckerClass);
 		});
 	});
 };
 
-// Показать/скрыть sort popup 1
-if (sortBtn1) {
-	sortBtn1.addEventListener('click', () => {
-		sortPopUp1.classList.toggle('sort-popup--show');
-		setCheckers(sortPopUp1);
-		iconFlip1();
-	});
-}
-
-const sortBtn2 = document.querySelector('#sort-btn-2');
-const sortPopUp2 = document.querySelector('#sort-popup-2');
-const sortBtnIcon2 = document.querySelector(
-	'#sort-btn-2 .header-block__sort-btn-icon',
-);
-
-// Функция для переворота индикатора/icon в sort popup 2
-const iconFlip2 = () => {
-	sortBtnIcon2.classList.toggle(sortBtnIconFlipClass);
+//функция по смене изображений кнопок filter
+const changeIcon = (icon, newIcon) => {
+	newIcon.classList.toggle(filterBtnHiddenIcon);
+	icon.classList.toggle(filterBtnHiddenIcon);
 };
 
-// Показать/скрыть sort popup 2
-if (sortBtn2) {
-	sortBtn2.addEventListener('click', () => {
-		sortPopUp2.classList.toggle('sort-popup--show');
-		setCheckers(sortPopUp2);
-		iconFlip2();
-	});
-}
-
-// Показать/скрыть filter popup
-const filterBtn = document.querySelector('#filter-btn');
-const filterPopUp = document.querySelector('#filter-popup');
-const filterBtnIcon = document.querySelector('.fonts__filter-img');
-const filterBtnActiveIcon = document.querySelector(
-	'.header-block__filter-img--alter',
-);
-
-const changeIcon = () => {
-	filterBtnIcon.classList.toggle('header-block__filter-img--hidden');
-	filterBtnActiveIcon.classList.toggle('header-block__filter-img--hidden');
-};
-
-if (filterBtn) {
-	setCheckers(filterPopUp);
-	filterBtn.addEventListener('click', () => {
-		changeIcon();
-		filterPopUp.classList.toggle('filter-popup__wrapper--show');
-	});
-}
-
-//логика input range
+//range slider
+const priceSlider = document.getElementById('price-slider');
+const minPriceInput = document.getElementById('min-price');
+const maxPriceInput = document.getElementById('max-price');
 const minPriceOutput = document.getElementById('min-price-value');
 const maxPriceOutput = document.getElementById('max-price-value');
 
-if (priceSlider) {
-	noUiSlider.create(priceSlider, {
-		start: [0, 5000],
-		connect: true,
-		range: {
-			min: 0,
-			max: 10000,
-		},
-	});
-}
+noUiSlider.create(priceSlider, {
+	start: [0, 5000],
+	connect: true,
+	range: {
+		min: 0,
+		max: 10000,
+	},
+});
 
 const updatePriceOutput = (values, handle) => {
 	const minPointer = document.querySelector('.noUi-handle-lower');
@@ -98,6 +75,7 @@ const updatePriceOutput = (values, handle) => {
 			minPriceOutput.classList.remove('filter-popup__price-value--min');
 			minPointer.classList.remove('noUi-handle-lower--min');
 		}
+
 		minPriceOutput.textContent = Math.round(values[handle]);
 	}
 	if (handle === 1) {
@@ -105,15 +83,13 @@ const updatePriceOutput = (values, handle) => {
 	}
 };
 
-if (priceSlider) {
-	priceSlider.noUiSlider.on('update', updatePriceOutput);
-}
+priceSlider.noUiSlider.on('update', updatePriceOutput);
 
-//закрытие filter-popup
-const filterApplyBtn = document.querySelector('.filter-popup__apply-btn');
-const filterResetBtn = document.querySelector('.filter-popup__reset-btn');
-const activeFilterPopUpClass = 'filter-popup__wrapper--show';
-const activeCheckerClass = 'checker--active';
+//показать, скрыть popUp filter
+filterBtn.addEventListener('click', () => {
+	setCheckers();
+	changeIcon(filterBtnIcon, filterBtnActiveIcon);
+
 
 //закрытие и 'применение' параметров
 if (filterApplyBtn) {
@@ -145,3 +121,42 @@ if (mobileFilterCloseBtn) {
 		filterPopUp.classList.remove(activeFilterPopUpClass);
 	});
 }
+
+
+	filterPopUp.classList.toggle(activeFilterPopUpClass);
+	sortBtn.classList.toggle(sortBtnHideClass);
+	if (sortPopUp.classList.contains(activeSortPopUpClass)) {
+		sortPopUp.classList.remove(activeSortPopUpClass);
+	}
+});
+
+//кнопка сброса cheker в filter popup
+filterResetBtn.addEventListener('click', () => {
+	priceSlider.noUiSlider.reset();
+	const checkers = filterPopUp.querySelectorAll('.checker');
+
+	checkers.forEach((element) => {
+		if (element.classList.contains(activeCheckerClass)) {
+			element.classList.remove(activeCheckerClass);
+		}
+	});
+});
+
+//закрытие и 'применение' параметров
+filterApplyBtn.addEventListener('click', () => {
+	changeIcon(filterBtnIcon, filterBtnActiveIcon);
+	filterPopUp.classList.remove(activeFilterPopUpClass);
+	sortBtn.classList.toggle(sortBtnHideClass);
+	if (sortPopUp.classList.contains(activeSortPopUpClass)) {
+		sortPopUp.classList.remove(activeSortPopUpClass);
+	}
+});
+
+filterCloseBtn.addEventListener('click', () => {
+	changeIcon(filterBtnIcon, filterBtnActiveIcon);
+	filterPopUp.classList.remove(activeFilterPopUpClass);
+	sortBtn.classList.toggle(sortBtnHideClass);
+	if (sortPopUp.classList.contains(activeSortPopUpClass)) {
+		sortPopUp.classList.remove(activeSortPopUpClass);
+	}
+});
