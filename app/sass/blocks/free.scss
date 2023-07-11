@@ -252,15 +252,7 @@
 	}
 
 	&__recom-slider {
-		left: -13.5rem;
-		top: 44rem;
-		width: 207rem;
-	}
-
-	&__recom-hero-slider {
-		width: 87rem;
-		overflow: hidden;
-		margin: 0 auto;
+		width: 100%
 	}
 
 	&__recom-hero-item-img {
@@ -308,13 +300,66 @@
 		letter-spacing: 0.04rem;
 	}
 
-	.free__recom-slider-item {
-		position: relative;
-		z-index: 1;
+	&__recom-item-title {
+		margin-bottom: 3.2rem;
+		display: none;
+
+		color:#383742;
+		font-family: "Gilroy";
+		font-size: 2.2rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 0.11rem;
+		text-transform: uppercase;
 	}
-	
-	.free__recom-hero-slider-item {
+
+	&__recom-item-text {
+		margin-top: 3.2rem;
+		width: 48rem;
+		display: none;
+
+		color: #383742;
+		font-family: "Gilroy";
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: 0.04rem;
+	}
+
+	.swiper-slide-active {
+		z-index: 100;
 		position: relative;
-		z-index: 2;
+		left: -20rem;
+
+		.free__recom-item-title {
+			display: block;
+		}
+
+		.free__recom-item-text {
+			display: block;
+		}
+
+		img {
+			width: 60rem;
+			height: 40rem;
+			border-radius: 4rem;
+			-o-object-fit: cover;
+			   object-fit: cover;
+			
+		}
+
+		.free__recom-item-img {
+			width: 87rem;
+			height: 78.1rem;
+			padding: 6rem 13.5rem;
+			background-color: #fff;
+			border-radius: 4rem;
+		}
+	}
+
+	.swiper-slide-next {
+		margin-left: 20rem;
 	}
 }

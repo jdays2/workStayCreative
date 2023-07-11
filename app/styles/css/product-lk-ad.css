@@ -1,0 +1,82 @@
+.product-lk-ad__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.product-lk-ad__one {
+  padding: 4rem 3rem;
+  background: #fff;
+  border-radius: 4rem;
+  width: 56rem;
+}
+.product-lk-ad__one-title {
+  color: #292D32;
+  font-size: 3.7rem;
+  font-family: "Austin Cyr";
+  font-weight: 700;
+  line-height: 3.7rem;
+  letter-spacing: 0.74px;
+  margin-bottom: 2.7rem;
+}
+.product-lk-ad__one-text {
+  color: #292D32;
+  font-size: 1.6rem;
+  line-height: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+.product-lk-ad__one-item {
+  position: relative;
+  margin-bottom: 2rem;
+  color: #292D32;
+  font-size: 1.6rem;
+  line-height: 2.25rem;
+  padding-left: 3rem;
+}
+.product-lk-ad__one-item::before {
+  position: absolute;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../img/icon/ministar.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 0;
+  top: 0.3rem;
+}
+.product-lk-ad__one-item:last-child {
+  margin-bottom: 0;
+}
+.product-lk-ad__two {
+  background: rgb(255, 255, 255);
+  border-radius: 4rem;
+  padding: 4rem 3rem;
+  width: 71.5rem;
+}
+.product-lk-ad__two-title {
+  color: #292D32;
+  font-size: 3.7rem;
+  font-family: "Austin Cyr";
+  font-weight: 700;
+  line-height: 3.7rem;
+  letter-spacing: 0.74px;
+  margin-bottom: 2.7rem;
+}
+.product-lk-ad__two-sections {
+  display: flex;
+  color: #A0A1A4;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.1rem solid rgba(160, 161, 164, 0.3);
+}
+.product-lk-ad__two-sections span {
+  display: block;
+}
+.product-lk-ad__two-sections span:nth-child(1) {
+  margin-right: 21.3rem;
+}
+.product-lk-ad__two-sections span:nth-child(2) {
+  margin-right: 4.6rem;
+}
+.product-lk-ad__two-sections span:nth-child(3) {
+  margin-right: 9.8rem;
+}/*# sourceMappingURL=product-lk-ad.css.map */

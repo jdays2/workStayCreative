@@ -150,6 +150,7 @@ main {
   letter-spacing: 0.02em;
   display: inline-block;
   color: #383742;
+  height: fit-content;
   padding-right: 5.5rem;
   position: relative;
 }
