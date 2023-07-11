@@ -1,4 +1,3 @@
-//элементы
 const shopBtn = document.querySelector('.header__shop-button');
 const registerPopUp = document.querySelector('.header__register-alert');
 const profilePopUp = document.querySelector('.header__profile-bar');
