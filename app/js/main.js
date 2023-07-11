@@ -284,49 +284,52 @@ const label = document.querySelector(".label");
 
 let tags = [];
 
-function addEvent(element) {
-  tagArea.addEventListener("click", () => {
-  element.focus();
-  });
-
-  element.addEventListener("focus", () => {
-  tagArea.classList.add("active");
-  label.classList.add("label-active");
-  });
-
-  element.addEventListener("blur", (e) => {
-  tagArea.classList.remove("active");
-  if (element.value === "" && tags.length === 0) {
-  label.classList.remove("label-active");
-  }
-  if (!element.value.match(/^\s+$/gi) && element.value !== "") {
-  tags.push(e.target.value.trim());
-  element.value = "";
-  renderTags();
-  }
-  });
-
-  element.addEventListener("keydown", (e) => {
-  console.log(e);
-  const value = e.target.value;
-  if (
-  (e.keyCode === 32 ||
-  e.keyCode === 13 ||
-  value[value.length - 1] === " ") &&
-  !value.match(/^\s+$/gi) &&
-  value !== ""
-  ) {
-  tags.push(e.target.value.trim());
-  element.value = "";
-  renderTags();
-  }
-  if (e.keyCode === 8 && value === "") {
-  tags.pop();
-  renderTags();
-  }
-  });
+if(tagArea) {
+	function addEvent(element) {
+		tagArea.addEventListener("click", () => {
+		element.focus();
+		});
+	
+		element.addEventListener("focus", () => {
+		tagArea.classList.add("active");
+		label.classList.add("label-active");
+		});
+	
+		element.addEventListener("blur", (e) => {
+		tagArea.classList.remove("active");
+		if (element.value === "" && tags.length === 0) {
+		label.classList.remove("label-active");
+		}
+		if (!element.value.match(/^\s+$/gi) && element.value !== "") {
+		tags.push(e.target.value.trim());
+		element.value = "";
+		renderTags();
+		}
+		});
+	
+		element.addEventListener("keydown", (e) => {
+		console.log(e);
+		const value = e.target.value;
+		if (
+		(e.keyCode === 32 ||
+		e.keyCode === 13 ||
+		value[value.length - 1] === " ") &&
+		!value.match(/^\s+$/gi) &&
+		value !== ""
+		) {
+		tags.push(e.target.value.trim());
+		element.value = "";
+		renderTags();
+		}
+		if (e.keyCode === 8 && value === "") {
+		tags.pop();
+		renderTags();
+		}
+		});
+	}
+	addEvent(tagInput);
 }
-addEvent(tagInput);
+
 
 function renderTags() {
   ul.innerHTML = "";

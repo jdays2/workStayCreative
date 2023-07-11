@@ -9,6 +9,8 @@ const registerCloseBtn = document.querySelector(
 const profilePopUpCloseBtn = document.querySelector(
 	'.header__profile-bar-button',
 );
+const regModal = document.querySelector('.header__store-modal');
+const regModalCloseBtn = document.querySelector('#register-modal-btn');
 const storeBtn = document.querySelector('.header__store');
 const userBtn = document.querySelector('.header__user');
 const infoBtn = document.querySelector('#info-btn');
@@ -95,8 +97,21 @@ mobileSearchInputPopUpBtn.addEventListener('click', () => {
 });
 
 //добавляем показ register-popup
+
 shopBtn.addEventListener('click', () => {
-	searchInputPopUp.classList.toggle(registerPopUpClass);
+	if (window.innerWidth > 768) {
+		registerPopUp.classList.toggle(registerPopUpClass);
+	}
+});
+
+const shopBtnMobile = document.querySelector('.header__shop-button--burger');
+shopBtnMobile.addEventListener('click', () => {
+	regModal.classList.toggle('modal--active');
+});
+
+//закрыть store модалку
+regModalCloseBtn.addEventListener('click', () => {
+	regModal.classList.toggle('modal--active');
 });
 
 //показ profile-popup
@@ -209,7 +224,6 @@ burgerBtn.addEventListener('click', () => {
 burgerPopUpBtn.forEach((element) => {
 	element.addEventListener('click', () => {
 		const parent = element.closest('.burger__categ-item--show');
-		console.log(parent);
 		parent.classList.remove(burgerCategoryPopUpClass);
 	});
 });
