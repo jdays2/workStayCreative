@@ -6,6 +6,13 @@
 		width: 40.5rem;
 	}
 
+	&__pagination {
+		position: absolute;
+		left: 86rem;
+		z-index: 10;
+		bottom: 5rem;
+	}
+
 	&__slider-title {
 		gap: 2rem;
 		margin-bottom: 5.5rem;
@@ -23,7 +30,7 @@
 
 			color: #383742;
 			font-size: 2rem;
-			font-family: G 'ilroy';
+			font-family: 'Gilroy';
 			font-style: normal;
 			font-weight: 500;
 			line-height: normal;
@@ -41,6 +48,7 @@
 			font-weight: 700;
 			line-height: 7rem;
 			letter-spacing: 0.146rem;
+			margin-bottom: 2rem;
 		}
 
 		p {
@@ -63,11 +71,19 @@
 		position: relative;
 		flex-direction: column;
 		margin-bottom: 24.1rem;
-
+		padding: 5.5rem 46rem;
 		width: 100%;
 		height: 48rem;
 		border-radius: 5.5rem;
 		background: #e0e1e7;
+
+		.free__slider-title strong {
+			font-size: 3.7rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 3.7rem;
+			letter-spacing: 0.074rem;
+		}
 	}
 
 	&__rates-subtitle {
@@ -117,6 +133,8 @@
 		img {
 			position: relative;
 			z-index: 3;
+			width: 29.6rem;
+			height: 47.7389rem;
 		}
 	}
 
@@ -139,6 +157,8 @@
 		img {
 			position: relative;
 			z-index: 3;
+			width: 26.6rem;
+			height: 41.5rem;
 		}
 	}
 
@@ -251,7 +271,10 @@
 		margin-bottom: 34.3rem;
 	}
 
-	
+	&__recom-slider {
+		width: 100%;
+	}
+
 	&__recom-hero-item-img {
 		width: 60rem;
 		height: 40rem;
@@ -301,8 +324,8 @@
 		margin-bottom: 3.2rem;
 		display: none;
 
-		color:#383742;
-		font-family: "Gilroy";
+		color: #383742;
+		font-family: 'Gilroy';
 		font-size: 2.2rem;
 		font-style: normal;
 		font-weight: 700;
@@ -311,13 +334,17 @@
 		text-transform: uppercase;
 	}
 
+	.basic-card__price:hover {
+		background-color: #de755e;
+	}
+
 	&__recom-item-text {
 		margin-top: 3.2rem;
 		width: 48rem;
 		display: none;
 
 		color: #383742;
-		font-family: "Gilroy";
+		font-family: 'Gilroy';
 		font-size: 2rem;
 		font-style: normal;
 		font-weight: 500;
@@ -326,10 +353,84 @@
 	}
 
 
+	&__main-sliders {
+		position: relative;
+	}
 
-	
+	&__recom-second-slider {
+		width: 87rem;
+	}
+
+	&__recom-zero-slider {
+		position: absolute;
+		top: 52.9rem;
+		width: 56.8rem;
+		left: -11rem;
+	}
+
+	&__main-sliders {
+		margin-top: 19rem;
+		margin-bottom: 34.3rem;
+		strong {
+			width: 156.4rem;
+		}
+	}
+
+	&__recom-first-slider {
+		position: absolute;
+		top: 52.9rem;
+		width: 56.8rem;
+		right: -13rem;
+	}
+
+	.swiper-slide-active {
+		z-index: 100;
+		position: relative;
+		// left: -20rem;
+
+		// .free__recom-item-title {
+		// 	display: block;
+		// }
+
+		// .free__recom-item-text {
+		// 	display: block;
+		// }
+
+		// img {
+		// 	width: 60rem;
+		// 	height: 40rem;
+		// 	border-radius: 4rem;
+		// 	-o-object-fit: cover;
+		// 	   object-fit: cover;
+
+		// }
+
+		// .free__recom-item-img {
+		// 	width: 87rem;
+		// 	height: 78.1rem;
+		// 	padding: 6rem 13.5rem;
+		// 	background-color: #fff;
+		// 	border-radius: 4rem;
+		// }
+	}
+
+	// .swiper-slide-next {
+	// 	margin-left: 20rem;
+	// }
+
+	&__recom-second-slider {
+		.free__recom-item-title {
+			display: block;
+		}
 
 	// DIMA
+		img {
+			width: 60rem;
+			height: 40rem;
+			border-radius: 4rem;
+			-o-object-fit: cover;
+			object-fit: cover;
+    }
 
 	&__slider-recommendations-global {
 

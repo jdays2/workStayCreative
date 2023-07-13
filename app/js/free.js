@@ -1,8 +1,9 @@
 'use strict';
 
 const freeSlider = new Swiper('.free__slider', {
-	speed: 500,
 
+
+	speed: 500,
 	wrapperClass: 'free__swiper-wrapper',
 	slideClass: 'free__slide',
 	breakpoints: {
@@ -12,11 +13,23 @@ const freeSlider = new Swiper('.free__slider', {
 			spaceBetween: rem(6),
 		},
 		320: {
-			slidesPerView: 2,
+			slidesPerView: 1,
+			spaceBetween: rem(0),
 		},
+    pagination: {
+      clickable: true,
+      renderBullet: function (index, className) {
+        return `
+          <span class="${className}">
+           
+          </span>
+        `;
+      },
+      el: '.popular-fonts__bullets',
+    },
 	},
-
 });
+
 
 // слайдер рекомендаций
 
@@ -43,15 +56,7 @@ slidesPerView: 'auto',
 watchOverflow: true,
 autoHeight: true,
 centeredSlides: true,
-
-
-
-
-
- 
 });
-
-
 
 
 
@@ -60,7 +65,8 @@ const swiper1 = new Swiper(".testing__swiper", {
 	loop: true,
 	
 
-});
+
+
 const swiper2 = new Swiper(".testing__swiper-two", {
 	slidesPerView: 'auto',
 	loop: true,
@@ -87,3 +93,4 @@ const swipeAllSliders = (index) => {
 swiper1.on('slideChange', () => swipeAllSliders(swiper1.activeIndex));
 swiper2.on('slideChange', () => swipeAllSliders(swiper2.activeIndex));
 swiper3.on('slideChange', () => swipeAllSliders(swiper3.activeIndex));
+

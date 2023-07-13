@@ -112,22 +112,22 @@
     }
 
     &__small-svg {
-        margin-right: 2rem;
+        margin-right: 4rem;
         &::before {
-            background-image: url(../img/main/icon3.svg);
+            background-image: url(../img/icon/vectors-icon.svg);
         }
     }
 
     &__small-photo {
         margin-right: 1.2rem;
         &::before {
-            background-image: url(../img/main/icon4.svg);
+            background-image: url(../img/icon/photo-icon.svg);
         }
     }
 
     &__small-text {
         &::before {
-            background-image: url(../img/main/icon5.svg);
+            background-image: url(../img/icon/fonts-icon.svg);
         }
     }
 
@@ -205,7 +205,8 @@
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            -o-object-fit: cover;
+               object-fit: cover;
             border-radius: 5.5rem;
 
         }
