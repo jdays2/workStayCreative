@@ -92,51 +92,6 @@ if (priceSlider) {
 }
 
 //показать, скрыть popUp filter
-<<<<<<< Updated upstream
-filterBtn.addEventListener('click', () => {
-	setCheckers();
-	changeIcon(filterBtnIcon, filterBtnActiveIcon);
-
-	//закрытие и 'применение' параметров
-	if (filterApplyBtn) {
-		filterApplyBtn.addEventListener('click', () => {
-			changeIcon(filterBtnIcon, filterBtnActiveIcon);
-			filterPopUp.classList.remove(activeFilterPopUpClass);
-		});
-	}
-
-	if (filterResetBtn) {
-		filterResetBtn.addEventListener('click', () => {
-			// Сброс ползунка
-			priceSlider.noUiSlider.reset();
-
-			// Сброс состояния чекеров
-			const checkers = filterPopUp.querySelectorAll('.checker');
-			checkers.forEach((element) => {
-				element.classList.remove('checker--active');
-			});
-		});
-	}
-
-	//закрытие при мобилке
-
-	const mobileFilterCloseBtn = document.querySelector(
-		'.filter-popup__close-btn',
-	);
-	if (mobileFilterCloseBtn) {
-		mobileFilterCloseBtn.addEventListener('click', () => {
-			changeIcon(filterBtnIcon, filterBtnActiveIcon);
-			filterPopUp.classList.remove(activeFilterPopUpClass);
-		});
-	}
-
-	filterPopUp.classList.toggle(activeFilterPopUpClass);
-	sortBtn.classList.toggle(sortBtnHideClass);
-	if (sortPopUp.classList.contains(activeSortPopUpClass)) {
-		sortPopUp.classList.remove(activeSortPopUpClass);
-	}
-});
-=======
 	filterBtn?.addEventListener('click', () => {
 		setCheckers();
 		changeIcon(filterBtnIcon, filterBtnActiveIcon);
@@ -180,7 +135,6 @@ filterBtn.addEventListener('click', () => {
 			sortPopUp.classList.remove(activeSortPopUpClass);
 		}
 	});
->>>>>>> Stashed changes
 
 //кнопка сброса cheker в filter popup
 filterResetBtn?.addEventListener('click', () => {

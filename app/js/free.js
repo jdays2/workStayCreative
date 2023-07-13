@@ -1,16 +1,27 @@
 const freeSlider = new Swiper('.free__swiper', {
-	speed: 500,
-	wrapperClass: 'free__swiper-wrapper',
-	slideClass: 'free__slide',
-	breakpoints: {
-		769: {
-			slidesPerView: 4,
-			spaceBetween: rem(6),
-		},
-		320: {
-			slidesPerView: 1,
-		},
-	},
+  speed: 500,
+  wrapperClass: 'free__swiper-wrapper',
+  slideClass: 'free__slide',
+  breakpoints: {
+    769: {
+      slidesPerView: 4,
+      spaceBetween: rem(6),
+    },
+    320: {
+      slidesPerView: 1,
+    },
+  },
+  pagination: {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return `
+        <span class="${className}">
+         
+        </span>
+      `;
+    },
+    el: '.popular-fonts__bullets',
+  },
 });
 
 // слайдер рекомендаций
