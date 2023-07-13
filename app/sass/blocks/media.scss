@@ -16759,7 +16759,41 @@
 		&__section {
 			display: none;
 		}
+
+
+		.sort-popup {
+			width: 69rem;
+			right: auto;
+			top: 16.2rem;
+			border-radius: 4rem;
+			&__item {
+				gap: 2.4rem;
+			}
+
+			&__title {
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 2.8rem;
+				line-height: 4rem;
+				color: #383742;
+			}
+
+			.checker {
+				width: 6rem;
+				height: 6rem;
+
+				img {
+					width: 2.1rem;
+					height: 2.25rem;
+				}
+			}
+		}
+	  }
+
+
 	}
+
 
 	.purchases-box {
 		margin-bottom: 7rem;
@@ -16880,6 +16914,80 @@
 			}
 		}
 	}
+
+	.header-block--my-collection {
+		justify-content: space-between;
+		display: flex;
+		flex-direction: column;
+	  
+		.store__input-wrapper {
+			width: 100%;
+			margin-bottom: 1rem;
+		}
+	  
+		.store__search-input {
+		  width: 100%;
+		}
+	  
+		.header-block__sort {
+		  margin-right: 0;
+		}
+
+
+		.header-block__buttons-wrapper {
+			flex-direction: column-reverse;
+		}
+
+		.header-block__sort {
+			width: 100%;
+		}
+	  
+	  
+	  }
+
+	.my-collection {
+
+		&__wrapper {
+			flex-direction: column;
+		}
+		.publick-profile__collection-item {
+			width: 100%;
+			margin-right: 0;
+		}
+
+
+		.sort-popup {
+			width: 69rem;
+			right: auto;
+			top: 26.2rem;
+			border-radius: 4rem;
+			&__item {
+				gap: 2.4rem;
+			}
+
+			&__title {
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 2.8rem;
+				line-height: 4rem;
+				color: #383742;
+			}
+
+			.checker {
+				width: 6rem;
+				height: 6rem;
+
+				img {
+					width: 2.1rem;
+					height: 2.25rem;
+				}
+			}
+		}
+	}
+
+}
+
 
 	.free {
 		padding: 0rem 3rem 0rem;

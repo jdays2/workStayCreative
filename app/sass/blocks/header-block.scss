@@ -21,6 +21,26 @@
 	}
 }
 
+
+.header-block--my-collection {
+  justify-content: space-between;
+  display: flex;
+
+  .store__input-wrapper {
+    width: 107.6rem;
+  }
+
+  .store__search-input {
+    width: 100%;
+  }
+
+  .header-block__sort {
+    margin-right: 0;
+  }
+
+
+}
+
 .header-block--with-slider {
 	flex-direction: column;
 	align-items: flex-start;

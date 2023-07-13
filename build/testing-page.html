@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./css/style.min.css" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Бесплатные продукты</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU" type="text/javascript"> </script>
-	<link rel="stylesheet" href="./css/style.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Главная</title>
-</head>
-
-<body>
-	<header class="header">
+	<body>
+		<header class="header">
 	<div class="header__wrapper">
 		<div class="header__head">
 			<button class="header__burger">
@@ -1112,79 +1118,588 @@
 	</div>
 </header>
 
-	
-	
-	<main>
-		<section class="register-m">
-            <div class="container">
-                <div class="register-m__wrapper">
-                    <div class="register-m__left">
-                        <div class="register-m__image">
-                            <img src="./img/willkommensfenster/img1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="register-m__right">
-                        <a href="" class="register-m__prev">
-                            <svg  viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z" fill="#383742"/>
-                            </svg>
-                        </a>
-                        <div class="register-m__numbers register-m__numbers--two">
-                            <div class="register-m__numbers-box register-m__numbers-box--end">
-                                <div class="register-m__numbers-box-number no-before"><span><img src="./img/icon/galkawhite.svg" alt=""></span></div>
-                                <div class="register-m__numbers-box-text no-before">Данные магазина</div>
-                            </div>
-                            <div class="register-m__numbers-box register-m__numbers-box--end">
-                                <div class="register-m__numbers-box-number no-after"><span>2</span></div>
-                                <div class="register-m__numbers-box-text no-afer">Информация о магазине</div>
-                            </div>
-                        </div>
-                        <!-- numbers -->
-                        
-                        <div class="register-m__content">
-                            <div class="register-m__title">
-                                <strong>Открыть магазин</strong>
-                                
-                            </div>
-                            <form action="" class="register-m__form">
-                                <div class="register-m__form-wrap">
-                                    <div class="register-m__form-inner">
-                                        <label for="">Название магазина</label>
-                                        <input type="text">
-                                        <div class="input-error">*Отсутствует заглавная буква</div>
-                                    </div>
-                                    <div class="register-m__form-inner">
-                                        <label for="">Категория товаров (основная)</label>
-                                        <div class="select">
-                                            <input class="select-input" type="hidden" name="">
-                                            <div class="select-head"> <br></div>
-                                            <ul class="select-list">
-                                                <li class="select-item">Узбекистан</li>
-                                                <li class="select-item">Кыргызстан </li>
-                                            </ul>
-                                        </div>
-                                        <div class="input-error">*Отсутствует заглавная буква</div>
-                                    </div>
-                                   
-                                </div>
-                               
-                            </form>
-                            <div class="register-m__btns">
-                                <button class="red-btn thanks-reg-open"><span>Продолжить</span></button>
-                                
-                            </div>
-                            <div class="register-m__two-text">
-                                Нажимая «Продолжить», я даю согласие на <a href="#">обработку персональных данных</a> и подтверждаю, что ознакомлен с <a href="#">условиями Договора</a>. 
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
-        </section>
+
+		<main>
+			<section class="free">
+				<div class="free__slider-block">
+					<div class="free__slider-title">
+						<span>Рекомендации</span>
+						<strong>Бесплатные продукты</strong>
+						<p>
+							Загружайте 4 бесплатных продукта каждую неделю. Или оформите
+							подписку и получите доступ до всех продуктов этого раздела на
+							сумму до 10 000 руб.
+						</p>
+					</div>
+
+					<div class="free__slider swiper">
+						<ul class="free__swiper-wrapper swiper-wrapper">
+							<li class="free__slide">
+								<div class="basic-card">
+									<div class="basic-card__wrapper">
+										<p class="basic-card__type">Шрифты с засечками</p>
+										<button class="basic-card__favor">
+											<img
+												src="./img/basic-card/favor-icon.svg"
+												alt="" />
+										</button>
+
+										<button class="basic-card__like">
+											<img
+												src="./img/basic-card/heart-icon.svg"
+												alt="" />
+										</button>
+									</div>
+									<div class="basic-card__img">
+										<span class="basic-card__date">До 28.03</span>
+										<img
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+									</div>
+
+									<div class="basic-card__info">
+										<div class="basic-card__discription">
+											<p class="basic-card__title">Мега набор постеров</p>
+											<a
+												href="#"
+												class="basic-card__link">
+												<span class="basic-card__rubles">
+													0
+													<span>₽</span>
+												</span>
+											</a>
+										</div>
+										<span
+											class="basic-card__price basic-card__price--pink-backgraund">
+											<img
+												src="./img/icon/arrownext.svg"
+												alt="" />
+										</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="free__slide">
+								<div class="basic-card">
+									<div class="basic-card__wrapper">
+										<p class="basic-card__type">Шрифты с засечками</p>
+										<button class="basic-card__favor">
+											<img
+												src="./img/basic-card/favor-icon.svg"
+												alt="" />
+										</button>
+
+										<button class="basic-card__like">
+											<img
+												src="./img/basic-card/heart-icon.svg"
+												alt="" />
+										</button>
+									</div>
+									<div class="basic-card__img">
+										<span class="basic-card__date">До 28.03</span>
+										<img
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+									</div>
+
+									<div class="basic-card__info">
+										<div class="basic-card__discription">
+											<p class="basic-card__title">Мега набор постеров</p>
+											<a
+												href="#"
+												class="basic-card__link">
+												<span class="basic-card__rubles">
+													0
+													<span>₽</span>
+												</span>
+											</a>
+										</div>
+										<span
+											class="basic-card__price basic-card__price--pink-backgraund">
+											<img
+												src="./img/icon/arrownext.svg"
+												alt="" />
+										</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="free__slide">
+								<div class="basic-card">
+									<div class="basic-card__wrapper">
+										<p class="basic-card__type">Шрифты с засечками</p>
+										<button class="basic-card__favor">
+											<img
+												src="./img/basic-card/favor-icon.svg"
+												alt="" />
+										</button>
+
+										<button class="basic-card__like">
+											<img
+												src="./img/basic-card/heart-icon.svg"
+												alt="" />
+										</button>
+									</div>
+									<div class="basic-card__img">
+										<span class="basic-card__date">До 28.03</span>
+										<img
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+									</div>
+
+									<div class="basic-card__info">
+										<div class="basic-card__discription">
+											<p class="basic-card__title">Мега набор постеров</p>
+											<a
+												href="#"
+												class="basic-card__link">
+												<span class="basic-card__rubles">
+													0
+													<span>₽</span>
+												</span>
+											</a>
+										</div>
+										<span
+											class="basic-card__price basic-card__price--pink-backgraund">
+											<img
+												src="./img/icon/arrownext.svg"
+												alt="" />
+										</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="free__slide">
+								<div class="basic-card">
+									<div class="basic-card__wrapper">
+										<p class="basic-card__type">Шрифты с засечками</p>
+										<button class="basic-card__favor">
+											<img
+												src="./img/basic-card/favor-icon.svg"
+												alt="" />
+										</button>
+
+										<button class="basic-card__like">
+											<img
+												src="./img/basic-card/heart-icon.svg"
+												alt="" />
+										</button>
+									</div>
+									<div class="basic-card__img">
+										<span class="basic-card__date">До 28.03</span>
+										<img
+											src="./img/basic-card/image 19452.png"
+											alt="" />
+									</div>
+
+									<div class="basic-card__info">
+										<div class="basic-card__discription">
+											<p class="basic-card__title">Мега набор постеров</p>
+											<a
+												href="#"
+												class="basic-card__link">
+												<span class="basic-card__rubles">
+													0
+													<span>₽</span>
+												</span>
+											</a>
+										</div>
+										<span
+											class="basic-card__price basic-card__price--pink-backgraund">
+											<img
+												src="./img/icon/arrownext.svg"
+												alt="" />
+										</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				
+			</section>
+			<section class="free free--padding">
+				
+				<div class="free__rates">
+					<div class="free__men-background">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="312"
+							height="156"
+							viewBox="0 0 312 156"
+							fill="none">
+							<path
+								d="M312 156C312 114.626 295.564 74.947 266.309 45.6913C237.053 16.4357 197.374 3.12363e-06 156 0C114.626 -3.12363e-06 74.947 16.4357 45.6914 45.6913C16.4357 74.947 6.24727e-06 114.626 0 156L156 156H312Z"
+								fill="#EAEBEF" />
+						</svg>
+						<img
+							src="./img/free/men-background.svg"
+							alt="" />
+					</div>
+
+					<div class="free__girl-background">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 306 153"
+							fill="none">
+							<path
+								d="M-1.71419e-05 -1.14926e-05C-2.06893e-05 40.5781 16.1196 79.4943 44.8126 108.187C73.5057 136.88 112.422 153 153 153C193.578 153 232.494 136.88 261.187 108.187C289.88 79.4943 306 40.5782 306 4.57764e-05L153 1.8831e-06L-1.71419e-05 -1.14926e-05Z"
+								fill="#EAEBEF" />
+						</svg>
+						<img
+							src="./img/free/girl-background.svg"
+							alt="" />
+					</div>
+
+					<span class="free__rates-subtitle">Включено в любой тариф</span>
+					<p class="free__rates-title">
+						Скидки на все дизайнерские продукты на ArtLovers
+					</p>
+
+					<div class="free__discount-box">
+						<div class="free__discount-item">
+							<strong>10%</strong>
+							<span>скидка</span>
+						</div>
+
+						<div class="free__discount-item">
+							<strong>12%</strong>
+							<span>скидка</span>
+						</div>
+
+						<div class="free__discount-item">
+							<strong>15%</strong>
+							<span>скидка</span>
+						</div>
+
+						<div class="free__discount-item">
+							<strong>20%</strong>
+							<span>скидка</span>
+						</div>
+					</div>
+
+					<a class="free__link">
+						<span>Выбрать тариф</span>
+					</a>
+				</div>
+
+				<div class="contacnts__question-wrapper">
+					<div class="title">
+						<div class="title__words">
+							<span>Собрали здесь все вопросы и ответили на них</span>
+							<strong>Часто задаваемые вопросы</strong>
+						</div>
+						<a
+							href="#"
+							class="link">
+							Перейти к покупкам
+						</a>
+					</div>
+
+					<div class="contacts__question-content">
+						<div class="contacts__question-img">
+							<img
+								src="./img/contacts/questions-img.png"
+								alt="" />
+						</div>
+
+						<div class="contacts__main-content">
+							<div class="contacts__question-list">
+								<p class="contacts__question-title">Вопросы</p>
+								<ul>
+									<li class="contacts__question-item">
+										<input
+											type="radio"
+											id="question1"
+											name="question"
+											checked />
+										<div>
+											<label for="question1">
+												<svg
+													class="contacts__question-icon"
+													viewBox="0 0 32 33"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M15.7071 0.292892C15.3166 -0.0976295 14.6834 -0.0976296 14.2929 0.292892L7.92893 6.65685C7.53841 7.04738 7.53841 7.68054 7.92893 8.07107C8.31946 8.46159 8.95262 8.46159 9.34315 8.07107L15 2.41421L20.6569 8.07107C21.0474 8.46159 21.6805 8.46159 22.0711 8.07107C22.4616 7.68054 22.4616 7.04738 22.0711 6.65685L15.7071 0.292892ZM16 33L16 1L14 1L14 33L16 33Z"
+														fill="#DE755E" />
+												</svg>
+											</label>
+										</div>
+										<div class="contacts__question-item-content">
+											<label for="question1">
+												<p class="contacts__question-item-title">
+													Как стать автором?
+												</p>
+											</label>
+											<span>Быстрый ответ</span>
+											<p>
+												Чтобы стать автором, необходимо зарегистрироваться на
+												сайте. Чтобы стать автором, необходимо
+												зарегистрироваться на сайте. Чтобы стать автором,
+												необходимо зарегистрироваться на сайте.
+											</p>
+										</div>
+									</li>
+
+									<li class="contacts__question-item">
+										<input
+											type="radio"
+											id="question2"
+											name="question" />
+										<div>
+											<label for="question2">
+												<svg
+													class="contacts__question-icon"
+													viewBox="0 0 32 33"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M15.7071 0.292892C15.3166 -0.0976295 14.6834 -0.0976296 14.2929 0.292892L7.92893 6.65685C7.53841 7.04738 7.53841 7.68054 7.92893 8.07107C8.31946 8.46159 8.95262 8.46159 9.34315 8.07107L15 2.41421L20.6569 8.07107C21.0474 8.46159 21.6805 8.46159 22.0711 8.07107C22.4616 7.68054 22.4616 7.04738 22.0711 6.65685L15.7071 0.292892ZM16 33L16 1L14 1L14 33L16 33Z"
+														fill="#DE755E" />
+												</svg>
+											</label>
+										</div>
+										<div class="contacts__question-item-content">
+											<label for="question2">
+												<p class="contacts__question-item-title">
+													Как совершить покупку?
+												</p>
+											</label>
+											<span>Быстрый ответ</span>
+											<p>
+												Чтобы стать автором, необходимо зарегистрироваться на
+												сайте. Чтобы стать автором, необходимо
+												зарегистрироваться на сайте. Чтобы стать автором,
+												необходимо зарегистрироваться на сайте.
+											</p>
+										</div>
+									</li>
+
+									<li class="contacts__question-item">
+										<input
+											type="radio"
+											id="question3"
+											name="question" />
+										<div>
+											<label for="question3">
+												<svg
+													class="contacts__question-icon"
+													viewBox="0 0 32 33"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M15.7071 0.292892C15.3166 -0.0976295 14.6834 -0.0976296 14.2929 0.292892L7.92893 6.65685C7.53841 7.04738 7.53841 7.68054 7.92893 8.07107C8.31946 8.46159 8.95262 8.46159 9.34315 8.07107L15 2.41421L20.6569 8.07107C21.0474 8.46159 21.6805 8.46159 22.0711 8.07107C22.4616 7.68054 22.4616 7.04738 22.0711 6.65685L15.7071 0.292892ZM16 33L16 1L14 1L14 33L16 33Z"
+														fill="#DE755E" />
+												</svg>
+											</label>
+										</div>
+										<div class="contacts__question-item-content">
+											<label for="question3">
+												<p class="contacts__question-item-title">
+													Что такое коллекции?
+												</p>
+											</label>
+											<span>Быстрый ответ</span>
+											<p>
+												Чтобы стать автором, необходимо зарегистрироваться на
+												сайте. Чтобы стать автором, необходимо
+												зарегистрироваться на сайте. Чтобы стать автором,
+												необходимо зарегистрироваться на сайте.
+											</p>
+										</div>
+									</li>
+
+									<li class="contacts__question-item">
+										<input
+											type="radio"
+											id="question4"
+											name="question" />
+										<div>
+											<label for="question4">
+												<svg
+													class="contacts__question-icon"
+													viewBox="0 0 32 33"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M15.7071 0.292892C15.3166 -0.0976295 14.6834 -0.0976296 14.2929 0.292892L7.92893 6.65685C7.53841 7.04738 7.53841 7.68054 7.92893 8.07107C8.31946 8.46159 8.95262 8.46159 9.34315 8.07107L15 2.41421L20.6569 8.07107C21.0474 8.46159 21.6805 8.46159 22.0711 8.07107C22.4616 7.68054 22.4616 7.04738 22.0711 6.65685L15.7071 0.292892ZM16 33L16 1L14 1L14 33L16 33Z"
+														fill="#DE755E" />
+												</svg>
+											</label>
+										</div>
+										<div class="contacts__question-item-content">
+											<label for="question4">
+												<p class="contacts__question-item-title">
+													Чем отличаются лицензии?
+												</p>
+											</label>
+											<span>Быстрый ответ</span>
+											<p>
+												Чтобы стать автором, необходимо зарегистрироваться на
+												сайте. Чтобы стать автором, необходимо
+												зарегистрироваться на сайте. Чтобы стать автором,
+												необходимо зарегистрироваться на сайте.
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="testing">
+				<div class="testing__swiper swiper">
+					<div class="testing__swiper-wrapper swiper-wrapper">
+						<div class="testing__slide swiper-slide">
+							<div class="testing__content">
+								<div class="testing__image">
+									<img src="./img/free/recom-sample-1.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="testing__slide swiper-slide">
+							<div class="testing__content">
+								<div class="testing__image">
+									<img src="./img/free/recom-sample-2.png" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="testing__slide swiper-slide">
+							<div class="testing__content">
+								<div class="testing__image">
+									<img src="./img/cfont/img2.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="testing__slide swiper-slide">
+							<div class="testing__content">
+								<div class="testing__image">
+									<img src="./img/cfont/img1.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="testing__slide swiper-slide">
+							<div class="testing__content">
+								<div class="testing__image">
+									<img src="./img/free/recom-sample-3.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="testing__swiper-two swiper">
+					<div class="testing__swiper-two-wrapper swiper-wrapper">
+						<div class="testing__slide-two swiper-slide">
+							<div class="testing__two-content">
+								<div class="testing__two-title">
+									Doodle background
+								</div>
+								<div class="testing__two-image">
+									<img src="./img/free/recom-sample-3.png" alt="">
+								</div>
+								<div class="testing__two-text">
+									Этот набор передает атмосферу теплых летних дней, тонких изящных растений и нежного запаха цветов, привлекающего бабочек.
+								</div>
+							</div>
+						</div>
+						<div class="testing__slide-two swiper-slide">
+							<div class="testing__two-content">
+								<div class="testing__two-title">
+									Doodle background
+								</div>
+								<div class="testing__two-image">
+									<img src="./img/free/recom-sample-2.png" alt="">
+								</div>
+								<div class="testing__two-text">
+									Этот набор передает атмосферу теплых летних дней, тонких изящных растений и нежного запаха цветов, привлекающего бабочек.
+								</div>
+							</div>
+						</div>
+						<div class="testing__slide-two swiper-slide">
+							<div class="testing__two-content">
+								<div class="testing__two-title">
+									Doodle background
+								</div>
+								<div class="testing__two-image">
+									<img src="./img/free/recom-sample-1.png" alt="">
+								</div>
+								<div class="testing__two-text">
+									Этот набор передает атмосферу теплых летних дней, тонких изящных растений и нежного запаха цветов, привлекающего бабочек.
+								</div>
+							</div>
+						</div>
+						<div class="testing__slide-two swiper-slide">
+							<div class="testing__two-content">
+								<div class="testing__two-title">
+									Doodle background
+								</div>
+								<div class="testing__two-image">
+									<img src="./img/cfont/img1.png" alt="">
+								</div>
+								<div class="testing__two-text">
+									Этот набор передает атмосферу теплых летних дней, тонких изящных растений и нежного запаха цветов, привлекающего бабочек.
+								</div>
+							</div>
+						</div>
+						<div class="testing__slide-two swiper-slide">
+							<div class="testing__two-content">
+								<div class="testing__two-title">
+									Doodle background
+								</div>
+								<div class="testing__two-image">
+									<img src="./img/cfont/img2.png" alt="">
+								</div>
+								<div class="testing__two-text">
+									Этот набор передает атмосферу теплых летних дней, тонких изящных растений и нежного запаха цветов, привлекающего бабочек.
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="testing__swiper-three swiper">
+					<div class="testing__swiper-three-wrapper swiper-wrapper">
+						<div class="testing__slide-three swiper-slide">
+							<div class="testing__content">
+								<div class="testing__image">
+									<img src="./img/cfont/img1.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="testing__slide-three swiper-slide">
+							<div class="testing__content">
+								<div class="testing__image">
+									<img src="./img/cfont/img2.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="testing__slide-three swiper-slide">
+							<div class="testing__content">
+								<div class="testing__image">
+									<img src="./img/free/recom-sample-3.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="testing__slide-three swiper-slide">
+							<div class="testing__content">
+								<div class="testing__image">
+									<img src="./img/free/recom-sample-2.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="testing__slide-three swiper-slide">
+							<div class="testing__content">
+								<div class="testing__image">
+									<img src="./img/free/recom-sample-1png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 		
-	</main>
-	
 
 <footer class="footer">
 	<div class="container">
@@ -1973,7 +2488,6 @@
 <script src="./js/general-swiper.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.js"></script>
 <script src="./js/fonts.js"></script>
-
-</body>
-
+		<script src="./js/free.js"></script>
+	</body>
 </html>
