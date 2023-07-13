@@ -25357,6 +25357,17 @@ input:checked ~ .contacts__question-item-content {
   .fonts {
     overflow: hidden;
   }
+  .fonts .header-block__prod-count {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 4.8rem;
+    margin-right: 100%;
+    position: absolute;
+    top: 9.2rem;
+  }
   .fonts .sort-popup {
     width: 69rem;
     right: auto;
@@ -25664,6 +25675,10 @@ input:checked ~ .contacts__question-item-content {
   .filter-popup__close-btn img {
     width: 2.572rem;
     height: 2.572rem;
+  }
+  .filter-popup .checker img {
+    width: 2.1rem;
+    height: 2.25rem;
   }
   .categories {
     padding: 21rem 3rem 0rem;
@@ -33733,12 +33748,14 @@ input:checked ~ .contacts__question-item-content {
   .basic-card {
     width: 100%;
     height: 79.4rem;
+    border-radius: 6rem;
+    overflow: hidden;
   }
   .basic-card__img {
     margin-top: 15.03rem;
   }
   .basic-card__type {
-    width: 32.4rem;
+    width: 44.2rem;
     height: 13rem;
     font-weight: 400;
     font-size: 2.8rem;
@@ -37135,7 +37152,7 @@ input:checked ~ .contacts__question-item-content {
     font-size: 6rem;
     line-height: 7.2rem;
     letter-spacing: 0.02em;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
     margin-right: 100%;
   }
   .header-block__prod-count {
@@ -41216,6 +41233,17 @@ input:checked ~ .contacts__question-item-content {
   .fonts {
     overflow: hidden;
   }
+  .fonts .header-block__prod-count {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 4.8rem;
+    margin-right: 100%;
+    position: absolute;
+    top: 9.2rem;
+  }
   .fonts .sort-popup {
     width: 69rem;
     right: auto;
@@ -41523,6 +41551,10 @@ input:checked ~ .contacts__question-item-content {
   .filter-popup__close-btn img {
     width: 2.572rem;
     height: 2.572rem;
+  }
+  .filter-popup .checker img {
+    width: 2.1rem;
+    height: 2.25rem;
   }
   .categories {
     padding: 21rem 3rem 0rem;
@@ -49592,12 +49624,14 @@ input:checked ~ .contacts__question-item-content {
   .basic-card {
     width: 100%;
     height: 79.4rem;
+    border-radius: 6rem;
+    overflow: hidden;
   }
   .basic-card__img {
     margin-top: 15.03rem;
   }
   .basic-card__type {
-    width: 32.4rem;
+    width: 44.2rem;
     height: 13rem;
     font-weight: 400;
     font-size: 2.8rem;
@@ -52994,7 +53028,7 @@ input:checked ~ .contacts__question-item-content {
     font-size: 6rem;
     line-height: 7.2rem;
     letter-spacing: 0.02em;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
     margin-right: 100%;
   }
   .header-block__prod-count {
