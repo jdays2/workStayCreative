@@ -4,7 +4,6 @@
 	border-radius: 0 0 3rem 3rem;
 	position: fixed;
 	width: 100%;
-	top: 0rem;	
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
 	height: fit-content;
@@ -618,14 +617,15 @@
 	&__categorys-list {
 		overflow: hidden;
 		transition: 0.5s;
-		max-height: 0;
+		height: 0;
 		will-change: height;
 		transition: 0.6s ease;
 	}
 
 	&__categorys-list--show {
-		max-height: 100rem;
+		height: auto;
 	}
+
 	&__categorys-title {
 		font-family: 'Gilroy';
 		font-style: normal;
@@ -653,14 +653,11 @@
 		padding-right: 1.1rem;
 		box-shadow: 1rem 1rem 3.1rem rgba(160, 161, 164, 0.19);
 		border-radius: 0 0 2rem 2rem;
-		transform: translateY(20.3rem);
+		transform: translateY(-60rem);
 		position: absolute;
 		left: 6.3rem;
-		transition: 0.4s;
+		transition: 0.8s;
 		z-index: -1;
-		max-height: 0rem;
-		overflow: hidden;
-		top: -15rem;
 
 		ul {
 			overflow-y: scroll;
@@ -686,8 +683,7 @@
 	}
 
 	&__search-popup--show {
-		max-height: 100rem;
-		top: -11rem;
+		transform: translateY(20.3rem);
 	}
 
 	&__search-popup-item {
