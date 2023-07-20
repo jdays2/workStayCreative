@@ -8,6 +8,7 @@
 	padding: 3.2rem;
   z-index: 10;
   position: absolute;
+	box-shadow: 3.7rem 3.5rem 8rem rgba(103,110,133,.2);
 
   &--show {
     display: flex;
@@ -52,13 +53,17 @@
 	}
 }
 
+.sort-popup__item input:checked + .sort-popup__label .sort-popup__checker {
+	box-shadow: 0.86rem 0.86rem 2rem rgba(103, 110, 133, 0.2);
+}
+
+
 
 .checker {
 	width: 4rem;
 	height: 4rem;
 	background: #E0E1E7;
 	border-radius: 1rem;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
