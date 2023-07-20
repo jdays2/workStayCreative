@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU" type="text/javascript"> </script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+</head>
+
+<body>
+	@@include('./template/header.html')
+	
+	
+	<main>
+		<section class="lk-m">
+            <div class="container">
+				
+                <div class="lk-m__wrapper">
+					<div class="lk-m__left">
+						<div class="m-sidebar">
+							<div class="m-sidebar__top">
+								<div class="m-sidebar__top-avatar">
+									<div class="m-sidebar__top-avatar-image">
+										<img src="./img/lk-m/anna.png" alt="">
+									</div>
+									<div class="m-sidebar__top-avatar-star">
+										<img src="./img/lk-m/starred.svg" alt="">
+									</div>
+								</div>
+								<!-- ava -->
+								<div class="m-sidebar__top-inner">
+									<div class="m-sidebar__top-name">Алина Петрова</div>
+									<div class="m-sidebar__top-mail">Infooooooo@gmail.com</div>
+								</div>
+							</div>
+							<div class="m-sidebar__bottom">
+								<ul class="m-sidebar__lists">
+									<li class="m-sidebar__item m-sidebar__item--p ">
+										<div class="icon">
+											<svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5ZM12 21.5C15.866 21.5 19 19.7091 19 17.5C19 15.2909 15.866 13.5 12 13.5C8.13401 13.5 5 15.2909 5 17.5C5 19.7091 8.13401 21.5 12 21.5Z" fill="#A0A1A4"/>
+                                                </svg>
+                                                
+										</div>
+										<div class="text">Профиль магазина</div>
+									</li>
+									<!-- li -->
+									<li class="m-sidebar__item m-sidebar__item--p" >
+										<div class="icon">
+											<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1896 6.00291L15.6 2.55004C15.3514 2.21867 14.8813 2.15152 14.55 2.40004C14.2186 2.64857 14.1514 3.11867 14.4 3.45004L16.3124 6H7.68749L9.59996 3.45004C9.84848 3.11867 9.78133 2.64857 9.44996 2.40004C9.11859 2.15152 8.64848 2.21867 8.39996 2.55004L5.81025 6.00299C3.91215 6.07606 2.4048 7.48131 2.07031 9.25H21.9315C21.5969 7.48072 20.0886 6.07511 18.1896 6.00291ZM20.2829 18.808C19.903 20.6666 18.2815 22 16.4011 22H7.60066C5.7203 22 4.09876 20.6666 3.71893 18.808L2.08401 10.808C2.08006 10.7887 2.07625 10.7693 2.07258 10.75H21.9292C21.9255 10.7693 21.9217 10.7887 21.9178 10.808L20.2829 18.808ZM9 13.25C9.41421 13.25 9.75 13.5858 9.75 14L9.75 18C9.75 18.4142 9.41421 18.75 9 18.75C8.58579 18.75 8.25 18.4142 8.25 18L8.25 14C8.25 13.5858 8.58579 13.25 9 13.25ZM15.75 14C15.75 13.5858 15.4142 13.25 15 13.25C14.5858 13.25 14.25 13.5858 14.25 14V18C14.25 18.4142 14.5858 18.75 15 18.75C15.4142 18.75 15.75 18.4142 15.75 18V14Z" fill="#A0A1A4"/>
+                                            </svg>
+										</div>
+										<div class="text">Покупки</div>
+									</li>
+									<!-- li -->
+									<li class="m-sidebar__item m-sidebar__item--p " >
+										<div class="icon">
+											<svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 9.99084V21.3509C16 22.8009 14.96 23.4108 13.69 22.7108L9.76001 20.5208C9.34001 20.2908 8.65999 20.2908 8.23999 20.5208L4.31 22.7108C3.04 23.4108 2 22.8009 2 21.3509V9.99084C2 8.28084 3.39999 6.88086 5.10999 6.88086H12.89C14.6 6.88086 16 8.28084 16 9.99084Z" fill="#A0A1A4"/>
+                                                <path d="M22.5 5.60999V16.97C22.5 18.42 21.46 19.03 20.19 18.33L16.5 16.27V9.48999C16.5 7.77999 15.1 6.38 13.39 6.38H8.5V5.60999C8.5 3.89999 9.89999 2.5 11.61 2.5H19.39C21.1 2.5 22.5 3.89999 22.5 5.60999Z" fill="#A0A1A4"/>
+                                                </svg>
+                                                
+												
+										</div>
+										<div class="text">Коллекции</div>
+									</li>
+									<!-- li -->
+									<li class="m-sidebar__item m-sidebar__item--p ">
+										<div class="icon">
+											<svg  viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.151 20.409C13.794 20.5303 13.206 20.5303 12.849 20.409C9.804 19.4079 3 15.2315 3 8.15281C3 5.02809 5.6145 2.5 8.838 2.5C10.749 2.5 12.4395 3.38989 13.5 4.76517C14.5605 3.38989 16.2615 2.5 18.162 2.5C21.3855 2.5 24 5.02809 24 8.15281C24 15.2315 17.196 19.4079 14.151 20.409Z" fill="#A0A1A4"/>
+                                            </svg>
+										</div>
+										<div class="text">Избранное</div>
+									</li>
+									<!-- li -->
+									<li class="m-sidebar__item m-sidebar__item--p " >
+										<div class="icon">
+                                            <svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.22951 2.5H16.767C18.5844 2.5 20.2186 3.74475 20.8936 5.64305L21.6515 7.77487C21.881 8.42019 22.0396 9.11074 21.8722 9.77488C21.4759 11.3478 20.19 12.5 18.6649 12.5C16.824 12.5 15.3316 10.8211 15.3316 8.75C15.3316 10.8211 13.8392 12.5 11.9983 12.5C10.1573 12.5 8.66492 10.8211 8.66492 8.75C8.66492 10.8211 7.17254 12.5 5.33159 12.5C3.80649 12.5 2.52061 11.3478 2.12427 9.77488C1.95691 9.11074 2.11552 8.42019 2.34496 7.77487L3.10295 5.64305C3.7779 3.74476 5.41216 2.5 7.22951 2.5ZM3.99805 13.8002V18.4997C3.99805 20.7088 5.78891 22.4997 7.99805 22.4997H8.99805V20.4998C8.99805 18.8429 10.3412 17.4998 11.998 17.4998C13.6549 17.4998 14.998 18.8429 14.998 20.4998V22.4997H15.998C18.2072 22.4997 19.998 20.7088 19.998 18.4997V13.8003C19.5792 13.9295 19.1329 13.9997 18.6648 13.9997C17.3277 13.9997 16.1753 13.437 15.3315 12.5557C14.4876 13.437 13.3352 13.9997 11.9981 13.9997C10.661 13.9997 9.5086 13.437 8.66479 12.5557C7.82097 13.437 6.66858 13.9997 5.33145 13.9997C4.86332 13.9997 4.41691 13.9295 3.99805 13.8002Z" fill="#A0A1A4"/>
+                                                </svg>
+                                                
+                                                
+										</div>
+										<div class="text">Обновления магазинов</div>
+									</li>
+									<!-- li -->
+									<li class="m-sidebar__item m-sidebar__item--p active" >
+										<div class="icon">
+											<svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.5C8.77095 3.5 6.05382 5.99085 5.67964 9.29403L5.33476 12.3385C5.24906 13.095 4.94246 13.8069 4.45549 14.38C3.42209 15.5964 4.26081 17.5 5.83014 17.5H18.1699C19.7392 17.5 20.5779 15.5964 19.5445 14.38C19.0575 13.8069 18.7509 13.095 18.6652 12.3385L18.3204 9.29403C17.9462 5.99085 15.2291 3.5 12 3.5ZM14.9721 19.5715C14.5147 20.6992 13.3565 21.5 12 21.5C10.6435 21.5 9.48526 20.6992 9.02789 19.5715C9.00883 19.5245 9 19.474 9 19.4233C9 19.1895 9.18951 19 9.42329 19H14.5767C14.8105 19 15 19.1895 15 19.4233C15 19.474 14.9912 19.5245 14.9721 19.5715Z" fill="#DE755E"/>
+                                                </svg>
+                                                
+										</div>
+										<div class="text">Уведомления</div>
+									</li>
+									<!-- li -->
+								</ul>
+								<a href="" class="m-sidebar__m-link">Перейти в магазин</a>
+								<button class="m-sidebar__exit">
+									Выйти
+								</button>
+							</div>
+						</div>
+					</div>
+                    
+					<div class="lk-m__right">
+						<div class="notifications">
+                            <div class="notifications__title">Уведомления</div>
+                            <nav class="notifications__nav">
+                                <ul class="notifications__lists">
+                                    <li class="notifications__item active"  data-tab="1">все уведомления</li>
+                                    <li class="notifications__item" data-tab="2">ответы поддержки</li>
+                                    
+                                </ul>
+                            </nav>
+                            <div class="notifications__wrap active" data-tab="1">
+                                <div class="notifications__title-mini">Уведомления</div>
+                                <article class="notifications-box active">
+                                    <div class="notifications-box__avatar">
+										<img src="./img/update/man.png" alt="">
+                                        <div class="notifications-box__star">
+											<img src="./img/lk-m/starred.svg" alt="">
+										</div>
+                                    </div>
+                                    <!--  -->
+									<div class="notifications-box__block">
+										<div class="notifications-box__name">
+											<strong>Vasiliy123</strong>
+											<span>подписался(-ась) на вас</span>
+										</div>
+										<div class="notifications-box__inner">
+											<div class="notifications-box__clock">18:01</div>
+											<div class="notifications-box__date">12.03.23</div>
+										</div>
+									</div>
+									<button class="notifications-box__btn">Подписаться в ответ</button>
+                                </article>
+								<article class="notifications-box active">
+                                    <div class="notifications-box__avatar">
+										<img src="./img/notifications/ret.png" alt="">
+                                        
+                                    </div>
+                                    <!--  -->
+									<div class="notifications-box__block">
+										<div class="notifications-box__text">На этой неделе появилось много новинок, перейдите в раздел “Название” чтобы посмотреть</div>
+										<div class="notifications-box__inner">
+											<div class="notifications-box__clock">18:01</div>
+											<div class="notifications-box__date">12.03.23</div>
+										</div>
+									</div>
+									
+                                </article>
+								<article class="notifications-box ">
+                                    <div class="notifications-box__avatar">
+										<img src="./img/notifications/ret.png" alt="">
+                                        
+                                    </div>
+                                    <!--  -->
+									<div class="notifications-box__block">
+										<div class="notifications-box__text">Продавец <strong>Vasiliy123</strong> добавил новый товар <strong>Шрифт с засечками</strong> </div>
+										<div class="notifications-box__inner">
+											<div class="notifications-box__clock">18:01</div>
+											<div class="notifications-box__date">12.03.23</div>
+										</div>
+									</div>
+									
+                                </article>
+								<article class="notifications-box ">
+                                    <div class="notifications-box__avatar">
+										<img src="./img/notifications/ret.png" alt="">
+                                        
+                                    </div>
+                                    <!--  -->
+									<div class="notifications-box__block">
+										<div class="notifications-box__text">Продавец <strong>Vasiliy123</strong> добавил новый товар <strong>Шрифт с засечками</strong> </div>
+										<div class="notifications-box__inner">
+											<div class="notifications-box__clock">18:01</div>
+											<div class="notifications-box__date">12.03.23</div>
+										</div>
+									</div>
+									
+                                </article>
+								<article class="notifications-box ">
+                                    <div class="notifications-box__avatar">
+										<img src="./img/notifications/ret.png" alt="">
+                                        
+                                    </div>
+                                    <!--  -->
+									<div class="notifications-box__block">
+										<div class="notifications-box__text">Вам ответила Техническая поддержка </div>
+										<div class="notifications-box__inner">
+											<div class="notifications-box__clock">18:01</div>
+											<div class="notifications-box__date">12.03.23</div>
+										</div>
+									</div>
+									
+                                </article>
+                            </div>
+                            <div class="notifications__wrap" data-tab="2"></div>
+                        </div>
+                       
+					</div>
+                </div>
+            </div>
+        </section>
+		
+	</main>
+    
+	@@include('./template/footer.html')
+ 
+</body>
+
+</html>

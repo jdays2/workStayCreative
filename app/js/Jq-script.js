@@ -943,9 +943,52 @@ jQuery(document).ready(function ($) {
     content.addClass('active'); // 4
 });
 
+
+//  модалка на страницы коллекции в лк 
+
+
+$(".fonts-lk__edit").click(function () {
+    $(".edit-g").addClass("active");
+
+});
+
+$(".edit-g__close").click(function () {
+    $(".edit-g").removeClass("active");
+
+});
+
+
        
      
     
 
+ //  табы Обновления магазинов
+
+
+ $('.updates__item').click(function () {
+    var id = $(this).attr('data-tab'),
+        content = $('.updates__wrap[data-tab="' + id + '"]');
+
+    $('.updates__item.active').removeClass('active'); // 1
+    $(this).addClass('active'); // 2
+
+    $('.updates__wrap.active').removeClass('active'); // 3
+    content.addClass('active'); // 4
+});
+
+
+ //  табы Уведомления
+
+
+ $('.notifications__item').click(function () {
+    var id = $(this).attr('data-tab'),
+        content = $('.notifications__wrap[data-tab="' + id + '"]');
+
+    $('.notifications__item.active').removeClass('active'); // 1
+    $(this).addClass('active'); // 2
+
+    $('.notifications__wrap.active').removeClass('active'); // 3
+    content.addClass('active'); // 4
+});
 
 

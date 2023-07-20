@@ -17006,6 +17006,504 @@
 		}
 	}
 
+
+	.edit-g {
+		&__icon {
+			width: 11rem;
+			height: 11rem;
+			margin-bottom: 0;
+		}
+
+		&__title {
+			font-size: 5rem;
+			line-height: normal;
+			margin-bottom: 0;
+		}
+
+		&__form-inner {
+			input {
+				width: 100%;
+				padding: 2.8rem 4.8rem;
+				border-radius: 2rem;
+				font-size: 2.8rem;
+			}
+
+			label {
+				margin-bottom: 1.8rem;
+				font-size: 2.8rem;
+			}
+		}
+
+		&__form {
+			width: 100%;
+		}
+
+		&__form-title {
+			font-size: 2.8rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 120%;
+			margin-bottom: 3rem;
+		}
+
+		.checkbox {
+			padding-top: 1.8rem;
+		}
+
+		&__form-span {
+			margin-top: 4rem;
+			font-size: 2.8rem;
+		}
+
+		&__wrapper {
+			flex-direction: column;
+			align-items: initial;
+		}
+
+		&__del {
+			font-size: 2.8rem;
+			margin-bottom: 6rem;
+			color:#DE755E;
+		}
+	}
+
+	.fonts-lk {
+		&__wrapper {
+			width: 100%;
+
+			.basic-card {
+				width: 100%;
+				margin-right: 0;
+				margin-bottom: 7rem;
+			}
+
+			.basic-card__add {
+				width: 44.6rem;
+				height: 13rem;
+
+				font-size: 2.8rem;
+			}
+
+			.basic-card__del {
+				width: 10.2rem;
+				height: 13rem;
+				border-radius: 6rem;
+
+				img {
+					width: 3.408rem;
+    				height: 3.032rem;
+				}
+			}
+
+
+			.basic-card__edit {
+				width: 10.2rem;
+				height: 13rem;
+				border-radius: 6rem;
+				img {
+					width: 3.408rem;
+    				height: 4.032rem;
+				}
+			}
+	
+		}
+
+		&__block-inner {
+			flex-direction: column;
+			align-items: initial;
+
+		}
+
+		&__sum {
+			font-size: 2.8rem;
+			margin-top: 3.3rem;
+			span {
+				padding-right: 1.6rem;
+				margin-right: 1rem;
+				&::before {
+					width: 0.6rem;
+					height: 0.6rem;
+				}
+			}
+		}
+
+		&__edit {
+			width: 11rem;
+			height: 11rem;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 4.8rem;
+				height: 4.8rem;
+			}
+			span {
+				display: none;
+			}
+		}
+	}
+
+
+	.lk-favorites {
+		&__wrapper {
+			width: 100%;
+
+			.basic-card {
+				width: 100%;
+				margin-right: 0;
+				margin-bottom: 7rem;
+			}
+
+			.basic-card__add {
+				width: 44.6rem;
+				height: 13rem;
+
+				font-size: 2.8rem;
+			}
+
+			.basic-card__del {
+				width: 10.2rem;
+				height: 13rem;
+				border-radius: 6rem;
+
+				img {
+					width: 3.408rem;
+    				height: 3.032rem;
+				}
+			}
+
+
+			.basic-card__edit {
+				width: 10.2rem;
+				height: 13rem;
+				border-radius: 6rem;
+				img {
+					width: 3.408rem;
+    				height: 4.032rem;
+				}
+			}
+	
+		}
+
+
+		.sort-popup {
+			width: 69rem;
+			right: auto;
+			top: 26.2rem;
+			border-radius: 4rem;
+			&__item {
+				gap: 2.4rem;
+			}
+
+			&__title {
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 2.8rem;
+				line-height: 4rem;
+				color: #383742;
+			}
+
+			.checker {
+				width: 6rem;
+				height: 6rem;
+
+				img {
+					width: 2.1rem;
+					height: 2.25rem;
+				}
+			}
+		}
+	}
+
+	.updates {
+		&__nav {
+            display: flex;
+            width: 100%;
+            justify-content: initial;
+            align-items: initial;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            padding: 0;
+            border-bottom: 0.3rem solid #a0a1a4;
+			margin-bottom: 7rem;
+        }
+
+		&__title-mini {
+			font-size: 5rem;
+			margin-bottom: 4rem;
+		}
+
+        &__nav::-webkit-scrollbar {
+            display: none;
+        }
+
+        &__item {
+            background: none;
+            border-left: none;
+            height: 0;
+            padding: 0;
+            padding-bottom: 4rem;
+            min-width: fit-content;
+            border-left: none;
+            margin-right: 10rem;
+            position: relative;
+            margin-bottom: 0;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 0.3rem;
+                bottom: -0.2rem;
+            }
+         
+        }
+
+        &__item.active {
+            background: none;
+            border-left: none;
+            &::before {
+                background: #de755e;
+            }
+
+           
+        }
+
+		&__title {
+			font-size: 6rem;
+		}
+	}
+
+	.updates-box {
+		flex-direction: column;
+		border-radius: 5rem;
+		padding: 3rem;
+		margin-bottom: 7rem;
+		&__image {
+			width: 100%;
+			height: 43rem;
+			margin-bottom: 3rem;
+			img {
+				width: 100%;
+				height: 100%;
+				border-radius: 5rem;
+			}
+		}
+
+		&__block {
+			width: 100%;
+		}
+
+		&__user {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 4rem 3rem;
+			margin-bottom: 3rem;
+		}
+
+		&__user-btn {
+			width: 100%;
+			margin-top: 3rem;
+			height: 11rem;
+			font-size: 2.8rem;
+		}
+
+		&__user-avatar {
+			width: 12rem;
+			height: 12rem;
+		}
+
+		&__user-avatar-face {
+			width: 12rem;
+			height: 12rem;
+		}
+
+		&__user-star {
+			width: 4rem;
+			height: 4rem;
+		}
+
+		&__user-name {
+			font-size: 2.8rem;
+			max-width: 37rem;
+			display: block;
+		}
+
+		&__info {
+			padding: 4rem 3rem;
+		}
+
+		&__info-title {
+			font-size: 2.8rem;
+		}
+
+		&__info-status {
+			font-size: 2.8rem;
+		}
+
+		&__info-text {
+			margin-top: 2.8rem;
+			font-size: 2.8rem;
+			margin-bottom: 4rem;
+		}
+
+		&__info-date {
+			font-size: 2.8rem;
+		}
+
+		&__info-like {
+			font-size: 2.8rem;
+			padding-left: 3.2rem;
+			&::before {
+				width: 3.4rem;
+				height: 3rem;
+			}
+		}
+
+	}
+
+
+	.notifications {
+		&__nav {
+            display: flex;
+            width: 100%;
+            justify-content: initial;
+            align-items: initial;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            padding: 0;
+            border-bottom: 0.3rem solid #a0a1a4;
+			margin-bottom: 7rem;
+        }
+
+		&__title-mini {
+			font-size: 5rem;
+			margin-bottom: 4rem;
+		}
+
+        &__nav::-webkit-scrollbar {
+            display: none;
+        }
+
+        &__item {
+            background: none;
+            border-left: none;
+            height: 0;
+            padding: 0;
+            padding-bottom: 4rem;
+            min-width: fit-content;
+            border-left: none;
+            margin-right: 10rem;
+            position: relative;
+            margin-bottom: 0;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 0.3rem;
+                bottom: -0.2rem;
+            }
+         
+        }
+
+        &__item.active {
+            background: none;
+            border-left: none;
+            &::before {
+                background: #de755e;
+            }
+
+           
+        }
+
+		&__title {
+			font-size: 6rem;
+		}
+	}
+
+
+
+
+	.notifications-box {
+		padding: 2rem 3rem!important;
+
+		&__avatar {
+			width: 11.6rem;
+			height: 11.6rem;
+			margin-right: 3.6rem;
+		}
+
+		&__star {
+			width: 4rem;
+			height: 4rem;
+		}
+
+		&__name {
+			max-width: 40.5rem;
+			font-size: 2.8rem;
+			line-height: normal;
+			margin-bottom: 1.6rem;
+			overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 4;
+				-webkit-box-orient: vertical;
+		}
+
+		&__text {
+			font-size: 2.8rem;
+			line-height: normal;
+			max-width: 40.5rem;
+			margin-bottom: 1.6rem;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 4;
+				-webkit-box-orient: vertical;
+		
+		}
+
+		&__clock {
+			font-size: 2.8rem;
+			padding-left: 5rem;
+			margin-right: 3rem;
+			line-height: 4.1rem;
+			&::before {
+				width: 4rem;
+				height: 4rem;
+			}
+		}
+
+		&__date {
+			font-size: 2.8rem;
+			padding-left: 5rem;
+			line-height: 4.1rem;
+			&::before {
+				width: 4rem;
+				height: 4rem;
+			}
+		}
+
+		&__btn {
+			display: none;
+		}
+	}
+
+	.notifications-box.active {
+		padding: 2rem 3rem;
+
+		&::before {
+			width: 1rem;
+			border-radius: 0px 4rem 4rem 0px;
+			height: 12rem;
+		}
+	}
+
 }
 
 
