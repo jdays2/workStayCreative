@@ -13457,6 +13457,22 @@ input:checked ~ .contacts__question-item-content {
   background-color: #fff;
   border-radius: 100rem;
 }
+.about__card-img-main {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  width: 34rem;
+  bottom: 7.5rem;
+  height: 33rem;
+}
+.about__card-img-border {
+  position: absolute;
+  z-index: 10;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  height: 100%;
+}
 .about__hero-part {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13615,7 +13631,7 @@ input:checked ~ .contacts__question-item-content {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 1.2rem;
-  z-index: 2;
+  z-index: 11;
 }
 .about__card-title {
   color: #383742;
@@ -13630,6 +13646,7 @@ input:checked ~ .contacts__question-item-content {
 .about__card-icon {
   width: 2.5rem;
   height: 2.2rem;
+  cursor: pointer;
 }
 .about__card-icon img {
   width: 100%;
@@ -13642,7 +13659,7 @@ input:checked ~ .contacts__question-item-content {
   font-style: normal;
   font-weight: 500;
   line-height: 2.6rem;
-  z-index: 2;
+  z-index: 11;
   margin-bottom: 27.7rem;
 }
 .about__card-feature-tag {
@@ -13656,7 +13673,7 @@ input:checked ~ .contacts__question-item-content {
   padding: 1.7rem 2.4rem;
   border-radius: 3rem;
   background: #ffe9c1;
-  z-index: 2;
+  z-index: 11;
 }
 .about__pagination {
   margin-top: 6rem;
@@ -13701,7 +13718,7 @@ input:checked ~ .contacts__question-item-content {
   left: 3.3rem;
   top: 3.5rem;
   position: absolute;
-  color: #FFF;
+  color: #fff;
   font-size: 1.6rem;
   font-family: "Gilroy";
   font-style: normal;
@@ -19670,6 +19687,22 @@ input:checked ~ .contacts__question-item-content {
   background-color: #fff;
   border-radius: 100rem;
 }
+.about__card-img-main {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  width: 34rem;
+  bottom: 7.5rem;
+  height: 33rem;
+}
+.about__card-img-border {
+  position: absolute;
+  z-index: 10;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  height: 100%;
+}
 .about__hero-part {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19828,7 +19861,7 @@ input:checked ~ .contacts__question-item-content {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 1.2rem;
-  z-index: 2;
+  z-index: 11;
 }
 .about__card-title {
   color: #383742;
@@ -19843,6 +19876,7 @@ input:checked ~ .contacts__question-item-content {
 .about__card-icon {
   width: 2.5rem;
   height: 2.2rem;
+  cursor: pointer;
 }
 .about__card-icon img {
   width: 100%;
@@ -19855,7 +19889,7 @@ input:checked ~ .contacts__question-item-content {
   font-style: normal;
   font-weight: 500;
   line-height: 2.6rem;
-  z-index: 2;
+  z-index: 11;
   margin-bottom: 27.7rem;
 }
 .about__card-feature-tag {
@@ -19869,7 +19903,7 @@ input:checked ~ .contacts__question-item-content {
   padding: 1.7rem 2.4rem;
   border-radius: 3rem;
   background: #ffe9c1;
-  z-index: 2;
+  z-index: 11;
 }
 .about__pagination {
   margin-top: 6rem;
@@ -19914,7 +19948,7 @@ input:checked ~ .contacts__question-item-content {
   left: 3.3rem;
   top: 3.5rem;
   position: absolute;
-  color: #FFF;
+  color: #fff;
   font-size: 1.6rem;
   font-family: "Gilroy";
   font-style: normal;
@@ -34537,6 +34571,11 @@ input:checked ~ .contacts__question-item-content {
     font-size: 2.8rem;
     font-weight: 500;
     line-height: 3.6rem;
+  }
+  .about__card-img-main {
+    width: 51rem;
+    bottom: 12.5rem;
+    height: 51rem;
   }
   .about__hero {
     display: -webkit-box;
@@ -50413,6 +50452,11 @@ input:checked ~ .contacts__question-item-content {
     font-size: 2.8rem;
     font-weight: 500;
     line-height: 3.6rem;
+  }
+  .about__card-img-main {
+    width: 51rem;
+    bottom: 12.5rem;
+    height: 51rem;
   }
   .about__hero {
     display: -webkit-box;
