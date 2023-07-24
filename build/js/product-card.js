@@ -5,7 +5,9 @@ const mainSliderItems = document.querySelectorAll(
 	'.product-card__item-main-img',
 );
 const licensList = document.querySelector('.product-card__price-license-list');
-const handlers = document.querySelectorAll('.product-card__title-item');
+const handlers = document.querySelectorAll(
+	'.product-card .product-card__title-item',
+);
 const bookmarksBtns = document.querySelectorAll('#add-to-bookmarks');
 const sendFeedbackBtn = document.querySelector('#send-feedback');
 const provideFeedbackBtn = document.querySelector('#provide-feedback');
@@ -97,7 +99,7 @@ swiper2.on('slideChange', function () {
 });
 
 //изменение активного элемента в выборе лицензии
-licensItems.forEach((element) => {
+licensItems?.forEach((element) => {
 	let itemClass = element.classList;
 
 	const removePrevios = () => {
@@ -114,7 +116,7 @@ licensItems.forEach((element) => {
 });
 
 //смена отображения характеристик/описания и тд
-handlers.forEach((element) => {
+handlers?.forEach((element) => {
 	element.addEventListener('click', (e) => {
 		if (!e.target.classList.contains(activeHandlerClass)) {
 			const currentActive = document.querySelector('.' + activeHandlerClass);
@@ -197,7 +199,7 @@ const rewieSwiper = new Swiper('.product-card__swiper', {
 
 //логика появления pop-up для отзывов
 
-rewies.forEach((element) => {
+rewies?.forEach((element) => {
 	const toggleBtn = element.querySelector(
 		'.product-card__rewies-item-settings',
 	);
@@ -212,7 +214,7 @@ rewies.forEach((element) => {
 });
 
 //показ модалки для главного слайдера
-mainSliderItems.forEach((element) => {
+mainSliderItems?.forEach((element) => {
 	element.addEventListener('click', (e) => {
 		if (e.target.id === 'main-slider-img') {
 			modalSlider.classList.add(openModal);
@@ -221,17 +223,16 @@ mainSliderItems.forEach((element) => {
 });
 
 //смежный обработчик для всех закрывающих кнопок в модалках
-if (closeBtn) {
-	closeBtn.forEach((element) => {
-		element.addEventListener('click', () => {
-			const parent = element.parentElement.parentElement;
-			parent.classList.remove(openModal);
-		});
+
+closeBtn?.forEach((element) => {
+	element.addEventListener('click', () => {
+		const parent = element.parentElement.parentElement;
+		parent.classList.remove(openModal);
 	});
-}
+});
 
 //показ добавление в закладки modal
-bookmarksBtns.forEach((element) => {
+bookmarksBtns?.forEach((element) => {
 	element.addEventListener('click', (e) => {
 		if (e.currentTarget.id === 'add-to-bookmarks') {
 			addToBookmarksModal.classList.add(openModal);
@@ -240,7 +241,7 @@ bookmarksBtns.forEach((element) => {
 });
 
 //показ создания новой коллекции modal
-createCollectionBtn.addEventListener('click', () => {
+createCollectionBtn?.addEventListener('click', () => {
 	createCollectionModal.classList.add(openModal);
 });
 
@@ -250,7 +251,7 @@ const ratingStars = document.querySelectorAll('#modal-rating-star');
 let selectedRating = 0; // Переменная для хранения выбранного рейтинга
 
 // Добавляем обработчики событий для звезд
-ratingStars.forEach((star, index) => {
+ratingStars?.forEach((star, index) => {
 	star.addEventListener('mouseover', () => {
 		// Выделяем звезды до текущей звезды включительно
 		for (let i = 0; i <= index; i++) {
@@ -285,18 +286,18 @@ ratingStars.forEach((star, index) => {
 });
 
 //показ модального окна с отзывом
-provideFeedbackBtn.addEventListener('click', () => {
+provideFeedbackBtn?.addEventListener('click', () => {
 	provideFeedbackModal.classList.add(openModal);
 });
 
 //показ модального окна с подтверждением отправки отзыва
-sendFeedbackBtn.addEventListener('click', () => {
+sendFeedbackBtn?.addEventListener('click', () => {
 	provideFeedbackModal.classList.remove(openModal);
 	confirmRevieModal.classList.add(openModal);
 });
 
 //показ списка для выбора конкретной жалобы (ее темы)
-modalListBtn.addEventListener('click', () => {
+modalListBtn?.addEventListener('click', () => {
 	modalInputElement.classList.toggle(activeModalInput);
 	modalFormList.classList.toggle(activeModalFormList);
 });
@@ -304,7 +305,7 @@ modalListBtn.addEventListener('click', () => {
 //изменение placeholder для инпута modal, при выборе активной темы жалобы
 const radioButtons = document.querySelectorAll('input[type="radio"]');
 
-radioButtons.forEach((radioButton) => {
+radioButtons?.forEach((radioButton) => {
 	radioButton.addEventListener('change', () => {
 		if (radioButton.checked) {
 			const labelText = radioButton.nextElementSibling.textContent.trim();
@@ -315,7 +316,7 @@ radioButtons.forEach((radioButton) => {
 
 //показ modal c отправкой жалобы
 
-rewiesItemSettings.forEach((element) => {
+rewiesItemSettings?.forEach((element) => {
 	element.addEventListener('click', (e) => {
 		if (window.screen.width > 769) {
 			complainModal.classList.add(openModal);
@@ -323,7 +324,7 @@ rewiesItemSettings.forEach((element) => {
 	});
 });
 
-settingsPopUpBtn.forEach((element) => {
+settingsPopUpBtn?.forEach((element) => {
 	element.addEventListener('click', (e) => {
 		if (window.screen.width < 769) {
 			complainModal.classList.add(openModal);
@@ -333,23 +334,23 @@ settingsPopUpBtn.forEach((element) => {
 
 //показ modal с оповещением об удачной отправке жалобы
 
-sendComplainBtn.addEventListener('click', () => {
+sendComplainBtn?.addEventListener('click', () => {
 	complainModal.classList.remove(openModal);
 	complainConfirmModal.classList.add(openModal);
 });
 
 //показ modal с вопросом
-modalQuestionBtn.addEventListener('click', () => {
+modalQuestionBtn?.addEventListener('click', () => {
 	modalQuestion.classList.add(openModal);
 });
 
 //показ modal с оповещением об удачной отправке вопроса
-modalQuestionConfirmBtn.addEventListener('click', () => {
+modalQuestionConfirmBtn?.addEventListener('click', () => {
 	modalQuestion.classList.remove(openModal);
 	modalQuestionConfirm.classList.add(openModal);
 });
 
 //показ модал с просмотром информации о файле
-modalFilesBtn.addEventListener('click', () => {
+modalFilesBtn?.addEventListener('click', () => {
 	modalFiles.classList.add(openModal);
 });

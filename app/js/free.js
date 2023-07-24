@@ -30,11 +30,11 @@ const freeSlider = new Swiper('.free__swiper', {
 const zeroFreeSwiper = new Swiper('.free__recom-zero-slider', {
 	slidesPerView: 'auto',
 	initialSlide: 1,
-	loop: true,
+	
 });
 const secondFreeSwiper = new Swiper('.free__recom-second-slider', {
 	slidesPerView: 'auto',
-	loop: true,
+	
 	initialSlide: 2,
 
 	effect: 'fade',
@@ -53,7 +53,7 @@ const secondFreeSwiper = new Swiper('.free__recom-second-slider', {
   },
 });
 const firstFreeSwiper = new Swiper('.free__recom-first-slider', {
-	loop: true,
+	
 	slidesPerView: 'auto',
 	initialSlide: 3
 });
