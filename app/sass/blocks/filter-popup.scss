@@ -78,9 +78,9 @@
 			align-items: center;
 
 			background: #fff;
+			box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
 			border-radius: 1rem;
 		}
-
 
 		img {
 			width: 0.933rem;
@@ -265,7 +265,6 @@
 }
 
 .checker--active {
-	box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
 	img {
 		display: block;
 	}
