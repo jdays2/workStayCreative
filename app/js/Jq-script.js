@@ -992,3 +992,10 @@ $(".edit-g__close").click(function () {
 });
 
 
+
+
+
+
+$('.discount-product__box').click(function() {
+    $(this).addClass('active').siblings().removeClass('active');
+});
