@@ -6538,6 +6538,10 @@
 	}
 
 	.header {
+		.item--hide {
+			display: none;
+		}
+		
 		&--active {
 			height: 100vh;
 			overflow: scroll;
