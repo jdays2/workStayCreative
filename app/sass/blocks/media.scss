@@ -6981,12 +6981,12 @@
         }
     }
 
-    .header {
-        &--active {
-            height: 100vh;
-            overflow: scroll;
-            background-color: #eaebef;
-        }
+	.header {
+		&--active {
+			height: 100vh;
+			overflow: scroll;
+			background-color: #eaebef;
+		}
 
         &__profile-wrapper {
             height: 100%;
@@ -14835,6 +14835,12 @@
 			}
 		}
 
+		&__card-img-main {
+			width: 51rem;
+			bottom: 12.5rem;
+			height: 51rem;
+		}
+
 		&__hero {
 			display: flex;
 			flex-direction: column;
@@ -16444,7 +16450,7 @@
 		padding: 0;
 		border: none;
 	}
-<<<<<<< HEAD
+
 
 
 	.discount-product {
@@ -16488,9 +16494,7 @@
 		}
 	}
 
-=======
-	
->>>>>>> cc191f342301d43049414446611713079f6aa259
+
 	.merchandise {
 		&__chapter {
 			display: none;
@@ -16562,15 +16566,15 @@
 			margin-bottom: 6rem;
 			height: 11rem;
 		}
-<<<<<<< HEAD
+
 
 		.new-select__list {
 			top: 12rem;
 		}
 
-=======
+
 	
->>>>>>> cc191f342301d43049414446611713079f6aa259
+
 		.new-select {
 			width: 57rem;
 			display: flex;
@@ -17926,7 +17930,7 @@
 		}
 
 		&__btn {
-<<<<<<< HEAD
+
 			display: none;
 		}
 	}
@@ -18165,8 +18169,7 @@
 
 		&__recom-first-slider {
 
-=======
->>>>>>> cc191f342301d43049414446611713079f6aa259
+
 			display: none;
 		}
 	}
@@ -18497,8 +18500,7 @@
 
 
 
-=======
->>>>>>> cc191f342301d43049414446611713079f6aa259
+
 }
 
 

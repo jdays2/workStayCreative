@@ -62,15 +62,16 @@ orderItems.forEach((element) => {
 });
 
 //обработка показа модального окошка с выбором лицензии
+if (cartItems) {
+	cartItems.forEach((item) => {
+		const popupShowClass = 'cart__item-popup--show';
+		const licensePopup = item.querySelector('.cart__item-popup');
+		const licenseBtn = item.querySelector('.cart__item-license');
 
-cartItems.forEach((item) => {
-	const popupShowClass = 'cart__item-popup--show';
-	const licensePopup = item.querySelector('.cart__item-popup');
-	const licenseBtn = item.querySelector('.cart__item-license');
+		console.log(licensePopup, licenseBtn);
 
-	console.log(licensePopup, licenseBtn);
-
-	licenseBtn.addEventListener('click', () => {
-		licensePopup.classList.toggle(popupShowClass);
+		licenseBtn.addEventListener('click', () => {
+			licensePopup.classList.toggle(popupShowClass);
+		});
 	});
-});
+}

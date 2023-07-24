@@ -35,6 +35,7 @@ const recomSlider = new Swiper('.free__recom-slider', {
 //     },
 //   },
 
+<<<<<<< HEAD
 loop: true,
 wrapperClass: 'free__recom-wrapper',
 slideClass: 'free__recom-slider-item',
@@ -49,6 +50,12 @@ centeredSlides: true,
 
 
  
+=======
+const zeroFreeSwiper = new Swiper('.free__recom-zero-slider', {
+	slidesPerView: 'auto',
+	initialSlide: 1,
+	
+>>>>>>> 8e22245441bce6641d516af2303837592e863ae3
 });
 
 
@@ -57,8 +64,13 @@ centeredSlides: true,
 
 const swiper1 = new Swiper(".testing__swiper", {
 	slidesPerView: 'auto',
+<<<<<<< HEAD
 	loop: true,
 	
+=======
+	
+	initialSlide: 2,
+>>>>>>> 8e22245441bce6641d516af2303837592e863ae3
 
 });
 const swiper2 = new Swiper(".testing__swiper-two", {
@@ -71,8 +83,13 @@ const swiper2 = new Swiper(".testing__swiper-two", {
 	},
 	
 });
+<<<<<<< HEAD
 const swiper3 = new Swiper(".testing__swiper-three", {
 	loop: true,
+=======
+const firstFreeSwiper = new Swiper('.free__recom-first-slider', {
+	
+>>>>>>> 8e22245441bce6641d516af2303837592e863ae3
 	slidesPerView: 'auto',
 	
 	

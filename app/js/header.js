@@ -74,6 +74,8 @@ const profileMobilePopUpShowClass = 'header__profile-wrapper--show';
 const profileMobilePopUpActiveItem = 'header__profile-link--active';
 
 //показ serch-popup & переключение активной категории
+
+if(searchInputItemsPupUp) {
 searchInputItemsPupUp.forEach((element) => {
 	element.addEventListener('click', () => {
 		if (!element.classList.contains(searchItemPupUpActiveClass)) {
@@ -87,34 +89,35 @@ searchInputItemsPupUp.forEach((element) => {
 		}
 	});
 });
+}
 
-headerSearchBtn.addEventListener('click', () => {
+headerSearchBtn?.addEventListener('click', () => {
 	searchInputPopUp.classList.toggle(searchPupUpShowClass);
 });
-mobileSearchInputPopUpBtn.addEventListener('click', () => {
+mobileSearchInputPopUpBtn?.addEventListener('click', () => {
 	mobileSearchInputPopUp.classList.toggle(searchPupUpShowClass);
 });
 
 //добавляем показ register-popup
 
-shopBtn.addEventListener('click', () => {
+shopBtn?.addEventListener('click', () => {
 	if (window.innerWidth > 768) {
 		registerPopUp.classList.toggle(registerPopUpClass);
 	}
 });
 
 const shopBtnMobile = document.querySelector('.header__shop-button--burger');
-shopBtnMobile.addEventListener('click', () => {
+shopBtnMobile?.addEventListener('click', () => {
 	regModal.classList.toggle('modal--active');
 });
 
 //закрыть store модалку
-regModalCloseBtn.addEventListener('click', () => {
+regModalCloseBtn?.addEventListener('click', () => {
 	regModal.classList.toggle('modal--active');
 });
 
 //показ profile-popup
-userBtn.addEventListener('click', () => {
+userBtn?.addEventListener('click', () => {
 	if (window.innerWidth > 768) {
 		profilePopUp.classList.toggle(profilePopUpClass);
 	} else {
@@ -122,12 +125,12 @@ userBtn.addEventListener('click', () => {
 	}
 });
 
-profilePopUpCloseBtn.addEventListener('click', () => {
+profilePopUpCloseBtn?.addEventListener('click', () => {
 	profilePopUp.classList.remove(profilePopUpClass);
 });
 
 //открыть, закрыть информация popup, desktop and mobile
-infoBtn.addEventListener('click', () => {
+infoBtn?.addEventListener('click', () => {
 	const currentWidth = window.innerWidth;
 	if (currentWidth > 768) {
 		if (categorysPopUp.classList.contains(categorysPopUpClass)) {
@@ -177,7 +180,7 @@ if (currentWidth > 768) {
 }
 
 //показать, закрыть категории popup
-categorysPopUpBnt.addEventListener('click', () => {
+categorysPopUpBnt?.addEventListener('click', () => {
 	const currentWidth = window.innerWidth;
 	if (currentWidth > 768) {
 		if (infoPopUp.classList.contains(infoPopupClass)) {
@@ -198,7 +201,7 @@ categorysPopUpBnt.addEventListener('click', () => {
 });
 
 //расскрыть, закрыть список категорий в popup
-categorysTitle.forEach((element) => {
+categorysTitle?.forEach((element) => {
 	element.addEventListener('click', () => {
 		const list = element.nextElementSibling;
 		list.classList.toggle(showParentListClass);
@@ -206,7 +209,7 @@ categorysTitle.forEach((element) => {
 });
 
 //открыть, закрыть бургер-меню
-burgerBtn.addEventListener('click', () => {
+burgerBtn?.addEventListener('click', () => {
 	header.classList.toggle('header--active');
 	const openPopUps = document.querySelectorAll('.burger__categ-item--show');
 	if (openPopUps) {
@@ -220,7 +223,7 @@ burgerBtn.addEventListener('click', () => {
 });
 
 //закрыть попап бургер-меню
-burgerPopUpBtn.forEach((element) => {
+burgerPopUpBtn?.forEach((element) => {
 	element.addEventListener('click', () => {
 		const parent = element.closest('.burger__categ-item--show');
 		parent.classList.remove(burgerCategoryPopUpClass);
@@ -229,11 +232,11 @@ burgerPopUpBtn.forEach((element) => {
 
 //открыть, закрыть search попап бургер-меню
 
-mobileSearchBtn.addEventListener('click', () => {
+mobileSearchBtn?.addEventListener('click', () => {
 	mobileSearchPopUp.classList.add(mobileSerchPopUpClass);
 });
 
-mobileSearchPopUpCloseBtn.addEventListener('click', () => {
+mobileSearchPopUpCloseBtn?.addEventListener('click', () => {
 	mobileSearchPopUp.classList.remove(mobileSerchPopUpClass);
 });
 
@@ -247,13 +250,13 @@ window.addEventListener('scroll', () => {
 });
 
 //переключение активной вкладки
-profileMobilePopUpCloseBtn.addEventListener('click', () => {
+profileMobilePopUpCloseBtn?.addEventListener('click', () => {
 	profileMobilePopUp.classList.toggle(profileMobilePopUpShowClass);
 });
 
 const items = profileMobilePopUpList.querySelectorAll('.header__profile-link');
 
-items.forEach((element) => {
+items?.forEach((element) => {
 	element.addEventListener('click', () => {
 		if (!element.classList.contains(profileMobilePopUpActiveItem)) {
 			const currentItem = document.querySelectorAll(

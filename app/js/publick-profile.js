@@ -1,13 +1,13 @@
 "use strict";
 
-const titles = document.querySelectorAll('.product-card__title-item');
+const titles = document.querySelectorAll('.publick-profile .product-card__title-item');
 const collectionsBlock = document.querySelector('#collections-block');
 const likedBlock = document.querySelector('#liked-block');
 
 const activePart = 'product-card__active-block';
 const activeClass = 'product-card__title-item--active';
 
-titles.forEach((element) => {
+titles?.forEach((element) => {
 	element.addEventListener('click', (e) => {
 		if (!e.target.classList.contains(activeClass)) {
 			const currentActive = document.querySelector('.' + activeClass);
