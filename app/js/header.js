@@ -120,7 +120,7 @@ document.addEventListener('click', (e) => {
 	if (isModalActive && !registerPopUp.contains(e.target)) {
 		modalHandler();
 		isModalActive = false;
-	
+	}
 });
 
 const regAlertBtnMobile = document.querySelector(
