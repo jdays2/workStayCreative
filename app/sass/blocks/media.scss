@@ -6044,7 +6044,7 @@
 		&__title-list {
 			gap: 10rem;
 			width: 69rem;
-			overflow: scroll;
+			overflow-x: scroll;
 			margin-bottom: 6.3rem;
 
 			&::-webkit-scrollbar {
@@ -13957,7 +13957,24 @@
 		}
 
 		&__navigation {
-			display: none;
+
+			display: flex;
+			gap: 1rem;
+				position: relative;
+				width: 100%;
+				margin-bottom: 6rem;
+		}
+
+		&__navigation-item {
+			max-width: 100%;
+
+			span {
+				font-family: Gilroy;
+				font-size: 2.8rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 5.2rem;
+			}
 		}
 
 		&__brief {
