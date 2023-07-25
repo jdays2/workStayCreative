@@ -1,5 +1,3 @@
-'use strict';
-
 const sortBtn = document.querySelectorAll('.header-block__sort');
 const filterBtn = document.querySelector('#filter-btn');
 const sortPopUp = document.querySelectorAll('.sort-popup');
@@ -39,17 +37,6 @@ if (sortBtn) {
 	});
 }
 
-//логика checker
-const setCheckers = () => {
-	const checkers = document.querySelectorAll('#checker');
-
-	checkers.forEach((element) => {
-		element.addEventListener('click', () => {
-			const checker = element.querySelector('.checker');
-			checker.classList.toggle(activeCheckerClass);
-		});
-	});
-};
 
 //функция по смене изображений кнопок filter
 const changeIcon = (icon, newIcon) => {
@@ -99,7 +86,6 @@ if (priceSlider) {
 
 //показать, скрыть popUp filter
 filterBtn?.addEventListener('click', () => {
-	setCheckers();
 	changeIcon(filterBtnIcon, filterBtnActiveIcon);
 
 	//закрытие и 'применение' параметров
@@ -142,17 +128,6 @@ filterBtn?.addEventListener('click', () => {
 	}
 });
 
-//кнопка сброса cheker в filter popup
-filterResetBtn?.addEventListener('click', () => {
-	priceSlider.noUiSlider.reset();
-	const checkers = filterPopUp.querySelectorAll('.checker');
-
-	checkers.forEach((element) => {
-		if (element.classList.contains(activeCheckerClass)) {
-			element.classList.remove(activeCheckerClass);
-		}
-	});
-});
 
 //закрытие и 'применение' параметров
 filterApplyBtn?.addEventListener('click', () => {
