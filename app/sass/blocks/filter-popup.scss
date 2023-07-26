@@ -294,3 +294,8 @@
 .filter-popup__features-list li input:checked + .filter-popup__type-item .checker img {
 	display: block;
 }
+
+
+.filter-popup__features-list li input:checked + .filter-popup__type-item .checker {
+	box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
+}
