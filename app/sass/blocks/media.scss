@@ -13,7 +13,6 @@
 		&__big {
 			padding: 6.5rem 3rem;
 		}
-
 		.container {
 			width: 100%;
 			padding: 0 3rem;
@@ -4932,6 +4931,84 @@
 	.basic-card {
 		width: 100%;
 		height: 79.4rem;
+		&__info {
+			height: 16.2rem;
+		}
+
+		&--discount {
+			.basic-card__discription {
+				gap: 1.4rem
+
+			}
+			.basic-card__info {
+				padding: 2.2rem 4rem;
+				height: 16.2rem;
+			}
+			.basic-card__price {
+				height: 11.8rem;
+				border-radius: 6rem;
+			}
+			.basic-card__regular-price {
+
+				strong {
+					font-size: 2.8rem;
+					font-style: normal;
+					font-weight: 400;
+					line-height:4rem;
+					-webkit-text-decoration-line: line-through;
+					        text-decoration-line: line-through;
+					text-transform: uppercase;
+				}
+	
+				span {
+					right: -11.6rem;
+    			top: 0.2rem;
+					font-family: Gilroy;
+					font-size: 1.9rem !important;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					letter-spacing: 3rem;
+				}
+			}
+
+			.basic-card__discount-price {
+		
+				strong {
+					font-size: 3rem;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+					letter-spacing: 0.15rem;
+					text-transform: uppercase;
+				}
+	
+				span {
+					right: -11.8rem;
+    top: 0.2rem;
+					font-size: 3rem;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+					letter-spacing: 3rem;
+				}
+			}
+		}
+
+		&__discount-box {
+			top: 18.2rem;
+			right: 4rem;
+			padding: 2rem 3rem;
+			height: 8rem;
+			width: 15rem;
+
+			color:  #FFf;
+			font-size: 3.2rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.064rem;
+		}
 
 		&__img {
 			margin-top: 15.03rem;
@@ -5176,30 +5253,25 @@
 		&__apply-btn {
 			width: 43rem;
 			height: 11rem;
-			gap: 3rem;
+			font-weight: 700;
+			font-size: 2.8rem;
+			line-height: 3.4rem;
+		}
 
-			span {
-				font-weight: 700;
-				font-size: 2.8rem;
-				line-height: 3.4rem;
-			}
-
-			img {
-				width: 5rem;
-			}
+		&__apply-icon  {
+			width: 5rem;
+			right:10rem;
 		}
 
 		&__reset-btn {
-			span {
-				font-weight: 700;
-				font-size: 2.8rem;
-				line-height: 3.4rem;
-				margin-right: 1rem;
-			}
+			font-weight: 700;
+			font-size: 2.8rem;
+			line-height: 3.4rem;
+			margin-right: 1rem;
 		}
 
 		&__close-btn {
-			display: flex;
+			display: flex !important;
 			position: absolute;
 			width: 11rem;
 			height: 11rem;
@@ -6489,7 +6561,7 @@
 		&__title-list {
 			gap: 10rem;
 			width: 69rem;
-			overflow: scroll;
+			overflow-x: scroll;
 			margin-bottom: 6.3rem;
 
 			&::-webkit-scrollbar {
@@ -14365,9 +14437,9 @@
             margin-bottom: 2rem;
         }
 
-        &__navigation {
-            display: none;
-        }
+		&__navigation {
+			display: none;
+		}
 
         &__brief {
             font-weight: 500;
