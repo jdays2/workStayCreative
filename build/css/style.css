@@ -10418,6 +10418,9 @@ main {
   text-align: center;
   letter-spacing: 0.02em;
   color: #383742;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 2.3rem;
 }
 .filter-popup__type-item {
@@ -10483,9 +10486,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 33.6rem;
@@ -10579,7 +10582,21 @@ main {
   margin-left: auto;
   gap: 6rem;
 }
+.filter-popup__buttons label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.filter-popup__apply-btn-wrapper {
+  position: relative;
+}
 .filter-popup__apply-btn {
+  border: none;
+  outline: none;
+  position: relative;
   width: 27.5rem;
   height: 7.7rem;
   display: -webkit-box;
@@ -10594,8 +10611,6 @@ main {
   gap: 6rem;
   border-radius: 100rem;
   background-color: #de755e;
-}
-.filter-popup__apply-btn span {
   color: #fff;
   font-family: "Gilroy";
   font-style: normal;
@@ -10603,9 +10618,15 @@ main {
   font-size: 2rem;
   line-height: 2.5rem;
   letter-spacing: 0.02em;
+  padding-right: 8.8rem;
 }
-.filter-popup__apply-btn img {
+.filter-popup__apply-icon {
   width: 3.2rem;
+  position: absolute;
+  right: 4rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .filter-popup__reset-btn {
   font-family: "Gilroy";
@@ -10616,9 +10637,17 @@ main {
   text-align: center;
   letter-spacing: 0.02em;
   color: #de755e;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 .filter-popup__close-btn {
-  display: none;
+  display: none !important;
+  position: relative;
+}
+.filter-popup__close-btn input {
+  position: absolute;
+  opacity: 0;
 }
 
 .checker {
@@ -10668,11 +10697,16 @@ main {
   display: block;
 }
 
-.filter-popup__features-list li input:checked + .filter-popup__type-item .checker img {
+.filter-popup__features-list li input:checked + .filter-popup__features-item .checker img {
   display: block;
 }
 
 .filter-popup__features-list li input:checked + .filter-popup__type-item .checker {
+  -webkit-box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
+          box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
+}
+
+.filter-popup__features-list li input:checked + .filter-popup__features-item .checker {
   -webkit-box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
           box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
 }
@@ -16811,6 +16845,9 @@ input:checked ~ .contacts__question-item-content {
   text-align: center;
   letter-spacing: 0.02em;
   color: #383742;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 2.3rem;
 }
 .filter-popup__type-item {
@@ -16876,9 +16913,9 @@ input:checked ~ .contacts__question-item-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 33.6rem;
@@ -16972,7 +17009,21 @@ input:checked ~ .contacts__question-item-content {
   margin-left: auto;
   gap: 6rem;
 }
+.filter-popup__buttons label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.filter-popup__apply-btn-wrapper {
+  position: relative;
+}
 .filter-popup__apply-btn {
+  border: none;
+  outline: none;
+  position: relative;
   width: 27.5rem;
   height: 7.7rem;
   display: -webkit-box;
@@ -16987,8 +17038,6 @@ input:checked ~ .contacts__question-item-content {
   gap: 6rem;
   border-radius: 100rem;
   background-color: #de755e;
-}
-.filter-popup__apply-btn span {
   color: #fff;
   font-family: "Gilroy";
   font-style: normal;
@@ -16996,9 +17045,15 @@ input:checked ~ .contacts__question-item-content {
   font-size: 2rem;
   line-height: 2.5rem;
   letter-spacing: 0.02em;
+  padding-right: 8.8rem;
 }
-.filter-popup__apply-btn img {
+.filter-popup__apply-icon {
   width: 3.2rem;
+  position: absolute;
+  right: 4rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .filter-popup__reset-btn {
   font-family: "Gilroy";
@@ -17009,9 +17064,17 @@ input:checked ~ .contacts__question-item-content {
   text-align: center;
   letter-spacing: 0.02em;
   color: #de755e;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 .filter-popup__close-btn {
-  display: none;
+  display: none !important;
+  position: relative;
+}
+.filter-popup__close-btn input {
+  position: absolute;
+  opacity: 0;
 }
 
 .checker {
@@ -17061,11 +17124,16 @@ input:checked ~ .contacts__question-item-content {
   display: block;
 }
 
-.filter-popup__features-list li input:checked + .filter-popup__type-item .checker img {
+.filter-popup__features-list li input:checked + .filter-popup__features-item .checker img {
   display: block;
 }
 
 .filter-popup__features-list li input:checked + .filter-popup__type-item .checker {
+  -webkit-box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
+          box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
+}
+
+.filter-popup__features-list li input:checked + .filter-popup__features-item .checker {
   -webkit-box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
           box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
 }
@@ -26013,26 +26081,24 @@ input:checked ~ .contacts__question-item-content {
   .filter-popup__apply-btn {
     width: 43rem;
     height: 11rem;
-    gap: 3rem;
-  }
-  .filter-popup__apply-btn span {
     font-weight: 700;
     font-size: 2.8rem;
     line-height: 3.4rem;
   }
-  .filter-popup__apply-btn img {
+  .filter-popup__apply-icon {
     width: 5rem;
+    right: 10rem;
   }
-  .filter-popup__reset-btn span {
+  .filter-popup__reset-btn {
     font-weight: 700;
     font-size: 2.8rem;
     line-height: 3.4rem;
     margin-right: 1rem;
   }
   .filter-popup__close-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     position: absolute;
     width: 11rem;
     height: 11rem;
@@ -41976,26 +42042,24 @@ input:checked ~ .contacts__question-item-content {
   .filter-popup__apply-btn {
     width: 43rem;
     height: 11rem;
-    gap: 3rem;
-  }
-  .filter-popup__apply-btn span {
     font-weight: 700;
     font-size: 2.8rem;
     line-height: 3.4rem;
   }
-  .filter-popup__apply-btn img {
+  .filter-popup__apply-icon {
     width: 5rem;
+    right: 10rem;
   }
-  .filter-popup__reset-btn span {
+  .filter-popup__reset-btn {
     font-weight: 700;
     font-size: 2.8rem;
     line-height: 3.4rem;
     margin-right: 1rem;
   }
   .filter-popup__close-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     position: absolute;
     width: 11rem;
     height: 11rem;

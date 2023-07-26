@@ -51,7 +51,9 @@
 		text-align: center;
 		letter-spacing: 0.02em;
 		color: #383742;
-
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
 		margin-bottom: 2.3rem;
 	}
 
@@ -104,7 +106,7 @@
 			align-items: flex-start;
 			flex-wrap: wrap;
 			width: 50rem;
-			
+
 			gap: 2.6rem;
 		}
 	}
@@ -112,7 +114,7 @@
 	&__features-list {
 		ul {
 			display: flex;
-			justify-content: flex-start;
+			justify-content: space-between;
 			flex-wrap: wrap;
 			width: 33.6rem;
 			gap: 2.6rem;
@@ -204,9 +206,21 @@
 		width: fit-content;
 		margin-left: auto;
 		gap: 6rem;
+
+		label {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__apply-btn-wrapper {
+		position: relative;
 	}
 
 	&__apply-btn {
+		border: none;
+		outline: none;
+		position: relative;
 		width: 27.5rem;
 		height: 7.7rem;
 		display: flex;
@@ -217,19 +231,22 @@
 
 		background-color: #de755e;
 
-		span {
-			color: #fff;
-			font-family: 'Gilroy';
-			font-style: normal;
-			font-weight: 700;
-			font-size: 2rem;
-			line-height: 2.5rem;
-			letter-spacing: 0.02em;
-		}
+		color: #fff;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 2.5rem;
+		letter-spacing: 0.02em;
+    padding-right: 8.8rem;
+	}
 
-		img {
-			width: 3.2rem;
-		}
+	&__apply-icon {
+		width: 3.2rem;
+		position: absolute;
+		right: 4rem;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 
 	&__reset-btn {
@@ -241,10 +258,19 @@
 		text-align: center;
 		letter-spacing: 0.02em;
 		color: #de755e;
+		background-color: transparent;
+		border: none;
+		outline: none;
 	}
 
 	&__close-btn {
-		display: none;
+		display: none !important;
+		position: relative;
+
+		input {
+			position: absolute;
+			opacity: 0;
+		}
 	}
 }
 
@@ -286,16 +312,36 @@
 	opacity: 0;
 }
 
-.filter-popup__type-list li input:checked + .filter-popup__type-item .checker img {
+.filter-popup__type-list
+	li
+	input:checked
+	+ .filter-popup__type-item
+	.checker
+	img {
 	display: block;
 }
 
-
-.filter-popup__features-list li input:checked + .filter-popup__type-item .checker img {
+.filter-popup__features-list
+	li
+	input:checked
+	+ .filter-popup__features-item
+	.checker
+	img {
 	display: block;
 }
 
+.filter-popup__features-list
+	li
+	input:checked
+	+ .filter-popup__type-item
+	.checker {
+	box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
+}
 
-.filter-popup__features-list li input:checked + .filter-popup__type-item .checker {
+.filter-popup__features-list
+	li
+	input:checked
+	+ .filter-popup__features-item
+	.checker {
 	box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
 }

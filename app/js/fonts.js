@@ -1,4 +1,3 @@
-//head-swiper
 const fontsHeadSwiper = new Swiper('.header-block__swiper', {
 	speed: 350,
 	freeMode: true,

@@ -4803,30 +4803,25 @@
 		&__apply-btn {
 			width: 43rem;
 			height: 11rem;
-			gap: 3rem;
+			font-weight: 700;
+			font-size: 2.8rem;
+			line-height: 3.4rem;
+		}
 
-			span {
-				font-weight: 700;
-				font-size: 2.8rem;
-				line-height: 3.4rem;
-			}
-
-			img {
-				width: 5rem;
-			}
+		&__apply-icon  {
+			width: 5rem;
+			right:10rem;
 		}
 
 		&__reset-btn {
-			span {
-				font-weight: 700;
-				font-size: 2.8rem;
-				line-height: 3.4rem;
-				margin-right: 1rem;
-			}
+			font-weight: 700;
+			font-size: 2.8rem;
+			line-height: 3.4rem;
+			margin-right: 1rem;
 		}
 
 		&__close-btn {
-			display: flex;
+			display: flex !important;
 			position: absolute;
 			width: 11rem;
 			height: 11rem;
