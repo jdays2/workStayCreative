@@ -1,0 +1,1301 @@
+@charset "UTF-8";
+.modal {
+  background: rgba(56, 55, 66, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal__wrapper {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.modal--open {
+  pointer-events: auto !important;
+  opacity: 1;
+}
+.modal__hor-list {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.modal__vert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-right: auto;
+}
+.modal__vert-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.modal__vert-list-item strong {
+  color: #1B1818;
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  text-align: left;
+}
+.modal__vert-list-item div {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding-left: 2.8rem;
+}
+.modal__vert-list-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: block;
+}
+.modal__vert-list-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.modal__vert-list-text {
+  color: #1B1818;
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.modal__hor-list-item {
+  padding: 1.5rem 3.9rem;
+  height: 5.6rem;
+  color: #de755e;
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+  border-radius: 1000rem;
+  background: rgb(255, 219, 212);
+}
+.modal__hor-list-item--total {
+  color: #fff;
+  background: #de755e;
+}
+.modal__product-card-swiper {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: 108.6rem;
+}
+.modal__container {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.modal__close {
+  width: 7.7rem;
+  height: 7.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  margin-left: auto;
+}
+.modal__close img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.modal__box {
+  background: #ffffff;
+  border-radius: 5.5rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  padding: 6rem 8rem;
+  border-radius: 5.5rem;
+  background-color: #fff;
+}
+.modal__collection-list {
+  display: flex;
+  gap: 1.5rem;
+  max-height: 24rem;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.modal__collection-list::-webkit-scrollbar {
+  display: none;
+}
+.modal__collection-list::-moz-scrollbar {
+  display: none;
+}
+.modal__collection-item {
+  display: flex;
+  width: 82.9rem;
+  align-items: center;
+  border-radius: 3rem;
+  background: #eaebef;
+  padding: 1.2rem 1.7rem;
+}
+.modal__collection-item-img {
+  height: 8.6rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin-right: 1.4rem;
+}
+.modal__collection-item-img img {
+  height: 100%;
+}
+.modal__collection-item-title {
+  color: #181818;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  margin-right: auto;
+}
+.modal__collection-item-btn {
+  padding: 2.6rem 3.9rem;
+  border-radius: 100rem;
+  background: #de755e;
+}
+.modal__collection-item-btn span {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+}
+.modal__collection-add-btn {
+  padding: 2.6rem 3.9rem;
+  border-radius: 100rem;
+  background: #de755e;
+  margin-left: auto;
+}
+.modal__collection-add-btn span {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+}
+.modal__form-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.modal__form-input label {
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  margin-bottom: 1.2rem;
+}
+.modal__form-input input {
+  width: 74.5rem;
+  border: none;
+  display: flex;
+  height: 4.8rem;
+  padding: 1.4rem 2.4rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  background: #eaebef;
+  font-size: 1.6rem;
+  font-family: "Gilroy";
+  line-height: 2rem;
+}
+.modal__buttons {
+  display: flex;
+  align-items: center;
+  gap: 5.2rem;
+}
+.modal__collections-create-btn span {
+  color: #de755e;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+}
+.modal__collection-item-btn--added {
+  background: #fff;
+}
+.modal__collection-item-btn--added span {
+  color: #383742;
+}
+.modal__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14.4rem;
+  background: #de755e;
+}
+.modal__icon img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.modal__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.modal__user-profile {
+  border-radius: 1rem;
+  background: rgba(224, 225, 231, 0.5);
+  width: 82.9rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.modal__user-profile-img {
+  width: 7.6161rem;
+  height: 7.6539rem;
+  margin-right: 2.19rem;
+}
+.modal__user-profile-img img {
+  height: 100%;
+}
+.modal__user-profile-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.modal__user-profile-data span {
+  color: #383742;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+}
+.modal__user-profile-data p {
+  color: #a0a1a4;
+  font-size: 1.6rem;
+  font-family: "Gilroy";
+  letter-spacing: 0.032rem;
+}
+.modal__form-input textarea {
+  border: none;
+  padding: 1.4rem 2.4rem;
+  width: 100%;
+  height: 16.2rem;
+  border-radius: 1rem;
+  background: #eaebef;
+  resize: none;
+  font-size: 1.6rem;
+  font-family: "Gilroy";
+  line-height: 2rem;
+}
+.modal--question .modal__box {
+  padding: 8rem 12rem;
+}
+.modal--question .modal__title {
+  text-align: left;
+  margin: 0;
+  margin-right: auto;
+}
+.modal--question .modal__subtitle {
+  text-align: left;
+  width: 63rem;
+  padding-bottom: 5.5rem;
+  border-bottom: 0.1rem solid #d9d9d9;
+}
+.modal--question .modal__form-input textarea {
+  height: 9.6rem;
+}
+.modal--question .modal__form-wrapper {
+  gap: 2rem;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+.modal--question .modal__form-input input {
+  width: 30.5rem;
+}
+.modal--question .modal__collection-add-btn {
+  margin-left: 0;
+  margin-right: auto;
+  padding: 2.6rem 22.7rem;
+}
+.modal--question .contacts__policy {
+  width: 100%;
+  padding-top: 5.5rem;
+  border-top: 0.1rem solid #d9d9d9;
+  margin-top: 2rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+.modal--question .contacts__policy p {
+  width: 56rem;
+}
+.modal--confirm-review .modal__title {
+  margin-top: 3.3rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0rem;
+}
+.modal--confirm-review .modal__box {
+  padding: 6rem 8rem 8rem;
+  gap: 0rem !important;
+}
+.modal--confirm-complain .modal__title {
+  max-width: 42.7rem;
+  margin: 0;
+}
+.modal--confirm-complain .modal__box {
+  gap: 0rem;
+}
+.modal--confirm-complain .modal__title {
+  margin-top: 3.3rem;
+  margin-bottom: 2rem;
+}
+.modal--confirm-question .modal__title {
+  max-width: 42.7rem;
+  margin: 0;
+}
+.modal--confirm-question .modal__box {
+  gap: 0rem;
+}
+.modal--confirm-question .modal__title {
+  margin-top: 3.3rem;
+  margin-bottom: 2rem;
+}
+.modal--set-complain .modal__collection-add-btn {
+  margin-top: 2.2rem;
+}
+.modal--set-complain .modal__form-input input {
+  width: 100%;
+}
+.modal--set-complain .modal__form-input .modal__form-popup-wrapper {
+  position: absolute;
+  top: 101%;
+  overflow: hidden;
+  z-index: 11;
+  width: 100%;
+  height: 0rem;
+}
+.modal--set-complain .modal__form-input .modal__form-popup-wrapper--active {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.modal--set-complain .modal__form-input--list-active::before {
+  transform: rotate(180deg);
+}
+.modal--set-complain .modal__form-input--list {
+  position: relative;
+}
+.modal--set-complain .modal__form-input--list::before {
+  bottom: 1.8rem;
+  right: 2.1rem;
+  position: absolute;
+  width: 1.2rem;
+  height: 0.9rem;
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../img/product-card/modal-input-icon-gray.svg");
+}
+.modal--set-complain .modal__form-popup-box {
+  display: flex;
+  z-index: 10;
+  gap: 1.6rem;
+  width: 83.1rem;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3.2rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-shadow: 0.86rem 0.86rem 2rem 0rem rgba(56, 55, 66, 0.11);
+}
+.modal--set-complain .modal__form-popup-box div {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.modal--set-complain .modal__form-popup-box label {
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.modal--set-complain .modal__form-popup-box input[type=radio] {
+  /* Скрыть оригинальные радиокнопки */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* Установить размеры */
+  width: 2rem;
+  height: 2rem;
+  padding: 0.7rem;
+  /* Установить внешний вид кнопки */
+  border: 0.1rem solid rgb(222, 117, 94);
+  border-radius: 50%;
+  background-color: transparent;
+  /* Позиционирование внутреннего круга */
+  position: relative;
+}
+.modal--set-complain .modal__form-popup-box input[type=radio]:checked::after {
+  content: "";
+  /* Установить размеры внутреннего круга */
+  width: 0.6rem;
+  height: 0.6rem;
+  /* Установить цвет внутреннего круга */
+  background-color: rgb(222, 117, 94);
+  /* Установить позицию внутреннего круга */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.modal__subtitle {
+  color: #a0a1a4;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+  width: 53.9rem;
+}
+.modal__score {
+  display: flex;
+  gap: 2.8rem;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: auto;
+}
+.modal__score span {
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+}
+.modal__score .product-card__rating-icons {
+  gap: 0.4rem;
+}
+.modal__score .product-card__price-rating-item {
+  width: 2.2rem !important;
+  cursor: pointer;
+  height: 2.2rem !important;
+}
+
+.thanks-reg.active {
+  display: flex;
+}
+
+.thanks-reg__box {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thanks-reg__box-icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #de755e;
+  margin-bottom: 3.3rem;
+}
+.thanks-reg__box-icon img {
+  width: 2rem;
+  height: 1.3rem;
+}
+.thanks-reg__box-title {
+  text-align: center;
+}
+.thanks-reg__box-title strong {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  display: block;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #1b1818;
+}
+.thanks-reg__box-title span {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #a0a1a4;
+}
+
+.art-modal {
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.art-modal__container {
+  margin: 0 auto;
+}
+.art-modal__box {
+  max-width: 108.5rem;
+  padding: 6rem;
+}
+.art-modal__title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.art-modal__title strong {
+  display: block;
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #383742;
+  margin-bottom: 2rem;
+}
+.art-modal__title span {
+  display: block;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  color: #a0a1a4;
+}
+.art-modal__inner {
+  display: flex;
+  margin-bottom: 4rem;
+}
+.art-modal__inner:last-child {
+  margin-bottom: 0;
+}
+.art-modal__image {
+  width: 15.7rem;
+  height: 15.7rem;
+  margin-right: 3rem;
+}
+.art-modal__text {
+  max-width: 61.5rem;
+}
+.art-modal__text strong {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.02em;
+  display: block;
+  margin-bottom: 1.3rem;
+}
+.art-modal__text span {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.art-modal.active {
+  display: block;
+}
+
+.art-modal::-webkit-scrollbar {
+  display: none;
+}
+
+.profile-market-modal__box {
+  padding: 6rem 8rem;
+}
+.profile-market-modal__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.profile-market-modal__wrap:last-child {
+  margin-bottom: 3.2rem;
+}
+.profile-market-modal__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 3.2rem;
+}
+.profile-market-modal__inner {
+  margin-right: 2.9rem;
+}
+.profile-market-modal__inner label {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  display: block;
+  margin-bottom: 1.2rem;
+  color: #383742;
+}
+.profile-market-modal__inner input {
+  position: relative;
+  width: 40rem;
+  height: 4.8rem;
+  background: #eaebef;
+  border-radius: 1rem;
+  padding: 1.4rem 2.4rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 125%;
+  color: #000000;
+  border: none;
+}
+.profile-market-modal__inner:last-child {
+  margin-right: 0;
+}
+.profile-market-modal .red-btn {
+  margin-left: auto;
+}
+
+.profile-market-modal.active {
+  display: flex;
+}
+
+.profile-user-modal {
+  display: none;
+}
+.profile-user-modal__box {
+  padding: 6rem 8rem;
+}
+.profile-user-modal__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.profile-user-modal__wrap:last-child {
+  margin-bottom: 3.2rem;
+}
+.profile-user-modal__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 3.2rem;
+}
+.profile-user-modal__inner {
+  margin-right: 2.9rem;
+}
+.profile-user-modal__inner label {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  display: block;
+  margin-bottom: 1.2rem;
+  color: #383742;
+}
+.profile-user-modal__inner input {
+  position: relative;
+  width: 40rem;
+  height: 4.8rem;
+  background: #eaebef;
+  border-radius: 1rem;
+  padding: 1.4rem 2.4rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 125%;
+  color: #000000;
+  border: none;
+}
+.profile-user-modal__inner:last-child {
+  margin-right: 0;
+}
+.profile-user-modal__search {
+  position: relative;
+}
+.profile-user-modal__search input {
+  width: 40rem;
+}
+.profile-user-modal__search-btn {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  right: 2.4rem;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.profile-user-modal .red-btn {
+  margin-left: auto;
+}
+.profile-user-modal__wrap-block {
+  display: flex;
+}
+.profile-user-modal__wrap-block .profile-user-modal__inner {
+  margin-right: 3.2rem;
+}
+.profile-user-modal__wrap-block .profile-user-modal__inner input {
+  width: 11.2rem;
+}
+.profile-user-modal__wrap-block .profile-user-modal__inner:last-child {
+  margin-right: 0;
+}
+.profile-user-modal__checkbox {
+  width: 40rem;
+  padding-top: 0;
+  margin-top: 3.5rem;
+}
+
+.profile-user-modal.active {
+  display: flex;
+}
+
+.profile-description-modal {
+  display: none;
+}
+.profile-description-modal__box {
+  padding: 6rem 8rem;
+}
+.profile-description-modal__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.profile-description-modal__wrap:last-child {
+  margin-bottom: 3.2rem;
+}
+.profile-description-modal__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 3.2rem;
+}
+.profile-description-modal__inner {
+  margin-right: 0;
+  width: 100%;
+}
+.profile-description-modal__inner label {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  display: block;
+  margin-bottom: 1.2rem;
+  color: #383742;
+}
+.profile-description-modal__inner textarea {
+  overflow: hidden;
+  position: relative;
+  width: 83rem;
+  height: 15.8rem;
+  background: #eaebef;
+  border-radius: 1rem;
+  padding: 1.4rem 2.4rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 125%;
+  color: #000000;
+  border: none;
+  resize: none;
+}
+.profile-description-modal .red-btn {
+  margin: 0 auto;
+}
+
+.profile-description-modal.active {
+  display: flex;
+}
+
+.profile-description-modal-two {
+  display: none;
+}
+.profile-description-modal-two__box {
+  padding: 6rem 8rem;
+}
+.profile-description-modal-two__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.profile-description-modal-two__wrap:last-child {
+  margin-bottom: 3.2rem;
+}
+.profile-description-modal-two__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 3.2rem;
+}
+.profile-description-modal-two__inner {
+  margin-right: 0;
+  width: 100%;
+}
+.profile-description-modal-two__inner label {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  display: block;
+  margin-bottom: 1.2rem;
+  color: #383742;
+}
+.profile-description-modal-two__inner textarea {
+  overflow: hidden;
+  position: relative;
+  width: 83rem;
+  height: 15.8rem;
+  background: #eaebef;
+  border-radius: 1rem;
+  padding: 1.4rem 2.4rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 125%;
+  color: #000000;
+  border: none;
+  resize: none;
+}
+.profile-description-modal-two .red-btn {
+  margin: 0 auto;
+}
+
+.profile-description-modal-two.active {
+  display: flex;
+}
+
+.profile-market-thanks__box {
+  padding: 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-market-thanks__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem;
+}
+.profile-market-thanks__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.profile-market-thanks.active {
+  display: flex;
+}
+
+.profile-user-thanks__box {
+  padding: 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-user-thanks__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem;
+}
+.profile-user-thanks__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.profile-user-thanks.active {
+  display: flex;
+}
+
+.del-modal__box {
+  padding: 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.del-modal__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem;
+}
+.del-modal__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 3.2rem;
+}
+.del-modal__text {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #a0a1a4;
+  margin-bottom: 3.2rem;
+}
+
+.del-modal.active {
+  display: flex;
+}
+
+.del-modal-user__box {
+  padding: 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.del-modal-user__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem;
+}
+.del-modal-user__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 3.2rem;
+}
+.del-modal-user__text {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #a0a1a4;
+  margin-bottom: 3.2rem;
+}
+.del-modal-user__alert {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 3.2rem;
+}
+.del-modal-user__alert span {
+  display: block;
+  color: #a0a1a4;
+}
+.del-modal-user__alert p {
+  color: rgb(222, 117, 94);
+}
+.del-modal-user__form {
+  width: 100%;
+}
+.del-modal-user__form label {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  display: block;
+  margin-bottom: 1.2rem;
+  color: #383742;
+}
+.del-modal-user__form input {
+  position: relative;
+  width: 100%;
+  background: #eaebef;
+  border-radius: 1rem;
+  padding: 1.4rem 2.4rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 125%;
+  color: #000000;
+  border: none;
+}
+.del-modal-user .red-btn {
+  margin: 0 auto;
+  margin-top: 3.2rem;
+}
+
+.del-modal-user.active {
+  display: flex;
+}
+
+.cover-modal-error__box {
+  padding: 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cover-modal-error__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem;
+}
+.cover-modal-error__title {
+  font-family: "Austin Cyr";
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 3.2rem;
+}
+.cover-modal-error__text {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #a0a1a4;
+  margin-bottom: 3.2rem;
+  display: block;
+  width: 63.5rem;
+}
+.cover-modal-error__prev {
+  width: 7.7rem;
+  height: 7.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  position: absolute;
+  right: 9rem;
+}
+.cover-modal-error__prev svg {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.cover-modal-error.active {
+  display: flex;
+}
+
+.avatar-modal-error__box {
+  padding: 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.avatar-modal-error__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem;
+}
+.avatar-modal-error__title {
+  font-family: "Austin Cyr";
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 3.2rem;
+}
+.avatar-modal-error__text {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #a0a1a4;
+  margin-bottom: 3.2rem;
+  display: block;
+  width: 63.5rem;
+}
+.avatar-modal-error__prev {
+  width: 7.7rem;
+  height: 7.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  position: absolute;
+  right: 9rem;
+}
+.avatar-modal-error__prev svg {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.avatar-modal-error.active {
+  display: flex;
+}
+
+.cover-modal-thanks__box {
+  padding: 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cover-modal-thanks__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem;
+}
+.cover-modal-thanks__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.cover-modal-thanks.active {
+  display: flex;
+}
+
+.avatar-modal-thanks__box {
+  padding: 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-modal-thanks__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem;
+}
+.avatar-modal-thanks__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.avatar-modal-thanks.active {
+  display: flex;
+}
+
+.cover-modal-del__box {
+  padding: 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cover-modal-del__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem;
+}
+.cover-modal-del__title {
+  font-family: "Austin Cyr";
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 3.2rem;
+}
+
+.cover-modal-del.active {
+  display: flex;
+}
+
+.modal-thanks-r__box {
+  padding: 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-thanks-r__icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-bottom: 3.3rem;
+}
+.modal-thanks-r__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.modal-thanks-r.active {
+  display: flex;
+}/*# sourceMappingURL=modal.css.map */

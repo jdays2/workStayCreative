@@ -1,0 +1,86 @@
+.charges-box {
+    height: 10rem;
+    width: 100%;
+    background: #fff;
+    border-radius: 2rem;
+    // display: flex;
+    // align-items:center;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    padding-top: 3.8rem;
+  text-align: center;
+    padding-left: 3.8rem;
+    padding-right: 5.2rem;
+    color:  #A0A1A4;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.4px;
+   margin-bottom: 1.5rem;
+    
+    &__price {
+        display: flex;
+        justify-content: flex-end;
+        strong {
+            display: none;
+        }
+        span {
+            position: relative;
+            display: block;
+            padding-right: 1rem;
+            width: fit-content;
+            
+            &::before {
+                position: absolute;
+                content:'₽';
+                font-size: 1.6rem;
+                right: 0;
+            }
+        }
+
+
+        .no-data {
+            padding: 0;
+            &::before {
+                display: none;
+            }
+        }
+       
+    }
+
+
+    .no-data {
+        
+        
+        span {
+            padding: 0;
+            padding-right: 4rem;
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    &__sum {
+     
+    
+        strong {
+            display: none;
+        }
+    }
+
+    &__date {
+       text-align: left;
+        strong {
+            display: none;
+        }
+    }
+}
+
+
+.charges-box--end {
+    grid-template-columns: repeat(2, 1fr);
+}

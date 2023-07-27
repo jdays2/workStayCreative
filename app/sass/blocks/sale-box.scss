@@ -1,0 +1,86 @@
+.sale-box {
+    padding: 2rem 3.8rem;
+    margin-bottom: 1.5rem;
+    background: #FFFFFF;
+    border-radius: 2rem;
+    width: 100%;
+    &__mob {
+        display: none;
+    }
+
+    &__desk {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    &__desk-block {
+        display: flex;
+        align-items:center;
+        margin-right: 11rem;
+    }
+
+    &__desk-image {
+        width: 9.6rem;
+        height: 6rem;
+        border-radius: 1rem;
+        margin-right: 1.2rem;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius:1rem;
+        }
+    }
+
+    &__desk-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.02em;
+        color: #181818;
+    }
+
+    &__desk-date {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.02em;
+        color: #A0A1A4;
+        margin-right: 11rem;
+        text-align: left;
+
+    }
+
+    &__desk-price {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.02em;
+        color: #A0A1A4;
+        margin-right: 11rem;
+        position: relative;
+        padding-right: 1.2rem;
+        text-align: left;
+        &::before {
+            position: absolute;
+            content:'₽';
+            right: 0.3rem;
+            top: -0.1rem;
+            font-size: 1.4rem;
+            color: #A0A1A4;
+        }
+    }
+
+    &__desk-name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.02em;
+        color: #A0A1A4;
+        text-align: left;
+    }
+}

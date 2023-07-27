@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU" type="text/javascript"> </script>
+	<link rel="stylesheet" href="./css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+</head>
+
+<body>
+	@@include('./template/header.html')
+	
+	
+	<main>
+		<section class="lk-register">
+            <div class="container">
+                <div class="lk-register__wrapper">
+                    <div class="lk-register__left">
+                        <div class="lk-register__image">
+                            <img src="./img/bgglass.png" alt="">
+                        </div>
+                    </div>
+                    <div class="lk-register__right lk-register__right--m">
+                       <div class="lk-register__content ">
+                            <a href="" class="lk-register__email-prev">
+                                <svg  viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z" fill="#383742"/>
+                                </svg>
+                            </a>
+                            <div class="lk-register__email">
+                            
+                                <div class="lk-register__email-title">Введите новый электронный адрес</div>
+                                <div class="lk-register__email-text">Для завершения решистрации необходимо подтвердить адрес электронной почты</div>
+                                <form action="" class="lk-register__email-form">
+                                    <label for="">Электронная почта</label>
+                                    <input type="text">
+                                    <button class="red-btn"><span>Продолжить</span></button>
+                                </form>
+                                
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+	</main>
+	@@include('./template/footer.html')
+
+</body>
+
+</html>

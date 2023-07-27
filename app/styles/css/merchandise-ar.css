@@ -1,0 +1,157 @@
+@charset "UTF-8";
+.merchandise-ar {
+  width: 100%;
+  height: 10rem;
+  background: rgb(255, 255, 255);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem 3.8rem;
+  margin-bottom: 1.5rem;
+}
+.merchandise-ar__desk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.merchandise-ar__desk .checkbox {
+  padding-left: 0;
+  padding-top: 0;
+  margin-right: 0rem;
+  height: 4rem;
+  width: 4rem;
+}
+.merchandise-ar__desk-inner {
+  display: flex;
+  align-items: center;
+}
+.merchandise-ar__desk-image {
+  width: 9.6rem;
+  height: 6rem;
+  margin-right: 1.2rem;
+}
+.merchandise-ar__desk-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.merchandise-ar__desk-name {
+  color: #181818;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+.merchandise-ar__desk-price {
+  color: #A0A1A4;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  position: relative;
+  padding-right: 0.8rem;
+}
+.merchandise-ar__desk-price::before {
+  position: absolute;
+  content: "₽";
+  font-size: 1.2rem;
+  right: 0;
+}
+.merchandise-ar__desk-pieces {
+  color: #A0A1A4;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  position: relative;
+}
+.merchandise-ar__desk-income {
+  color: #A0A1A4;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  position: relative;
+  padding-right: 0.8rem;
+}
+.merchandise-ar__desk-income::before {
+  position: absolute;
+  content: "₽";
+  font-size: 1.2rem;
+  right: 0;
+}
+.merchandise-ar__desk-cate {
+  color: #A0A1A4;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  position: relative;
+}
+.merchandise-ar__desk-views {
+  color: #A0A1A4;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  position: relative;
+  padding-left: 2.6rem;
+}
+.merchandise-ar__desk-views::before {
+  position: absolute;
+  content: "";
+  width: 2.2rem;
+  height: 1.7rem;
+  background-image: url(../img/merchandise/glass.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.merchandise-ar__desk-like {
+  color: #A0A1A4;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  position: relative;
+  padding-left: 2.7rem;
+}
+.merchandise-ar__desk-like::before {
+  position: absolute;
+  content: "";
+  width: 2.3rem;
+  height: 1.7rem;
+  background-image: url(../img/merchandise/heart.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.merchandise-ar__desk-edit {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.merchandise-ar__desk-basket {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.merchandise-ar__mob {
+  display: none;
+}
+.merchandise-ar__mob-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-column-gap: 9rem;
+  flex-grow: 1;
+}/*# sourceMappingURL=merchandise-ar.css.map */

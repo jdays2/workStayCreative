@@ -1,0 +1,265 @@
+.free {
+  padding: 0rem 6rem 18.6rem;
+  overflow: hidden;
+}
+.free .basic-card {
+  width: 40.5rem;
+}
+.free__slider-title {
+  gap: 2rem;
+  margin-bottom: 5.5rem;
+}
+.free__slider-title span {
+  padding: 1.3rem 2.8rem;
+  border-radius: 100rem;
+  background: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3.2rem;
+  color: #383742;
+  font-size: 2rem;
+  font-family: G "ilroy";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+}
+.free__slider-title strong {
+  display: block;
+  margin: 0 auto;
+  color: #383742;
+  text-align: center;
+  font-size: 7.3rem;
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 7rem;
+  letter-spacing: 0.146rem;
+}
+.free__slider-title p {
+  margin: 0 auto;
+  width: 84.7rem;
+  color: #383742;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.6rem;
+}
+.free__rates {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 24.1rem;
+  width: 100%;
+  height: 48rem;
+  border-radius: 5.5rem;
+  background: #e0e1e7;
+}
+.free__rates-subtitle {
+  border-radius: 100rem;
+  background: #fff;
+  padding: 1.3rem 2.8rem;
+  color: #383742;
+  font-family: "Gilroy";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+  margin-bottom: 3.2rem;
+}
+.free__rates-title {
+  color: #383742;
+  text-align: center;
+  font-family: "Austin Cyr";
+  font-size: 3.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.7rem;
+  letter-spacing: 0.074rem;
+  margin-bottom: 7.4rem;
+}
+.free__girl-background {
+  height: 47.74rem;
+  position: absolute;
+  left: 9.4rem;
+  top: -15.3rem;
+}
+.free__girl-background svg {
+  width: 30.6rem;
+  height: 15.3rem;
+  position: absolute;
+  right: 0.7rem;
+  top: 15.3rem;
+  z-index: 2;
+}
+.free__girl-background img {
+  position: relative;
+  z-index: 3;
+}
+.free__men-background {
+  height: 41.5rem;
+  position: absolute;
+  bottom: -5.1rem;
+  right: 13rem;
+}
+.free__men-background svg {
+  width: 31.2rem;
+  height: 15.6rem;
+  position: absolute;
+  left: 1.7rem;
+  bottom: 5.1rem;
+  z-index: 2;
+}
+.free__men-background img {
+  position: relative;
+  z-index: 3;
+}
+.free__discount-box {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  margin-bottom: 3.2rem;
+}
+.free__discount-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.free__discount-item:nth-child(1) strong {
+  color: rgba(255, 180, 47, 0.5);
+}
+.free__discount-item:nth-child(2) strong {
+  color: rgba(255, 180, 47, 0.8);
+}
+.free__discount-item:nth-child(3) strong {
+  color: rgba(222, 117, 94, 0.8);
+}
+.free__discount-item:nth-child(4) strong {
+  color: #de755e;
+}
+.free__discount-item span {
+  display: block;
+  color: #a0a1a4;
+  text-align: center;
+  font-family: " Gilroy";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+}
+.free__discount-item strong {
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 3.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.074rem;
+}
+.free__link {
+  padding: 2.7rem 4.9rem;
+  border-radius: 100rem;
+  background: #de755e;
+}
+.free__link span {
+  color: #fff;
+  font-family: "Gilroy";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.036rem;
+}
+.free .basic-card__img {
+  top: -2.5rem;
+  position: relative;
+}
+.free .basic-card__img span {
+  z-index: 10;
+  position: relative;
+  top: 5.8rem;
+  z-index: 10;
+  left: 24.5rem;
+}
+.free__recom-item-img {
+  width: 26.8rem;
+  height: 22.2rem;
+}
+.free__recom-item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.free__slider-recommendations {
+  margin: 0 auto;
+  margin-top: 22rem;
+  margin-bottom: 34.3rem;
+}
+.free__recom-slider {
+  left: -13.5rem;
+  top: 44rem;
+  width: 207rem;
+}
+.free__recom-hero-slider {
+  width: 87rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.free__recom-hero-item-img {
+  width: 60rem;
+  height: 40rem;
+  border-radius: 4rem;
+  overflow: hidden;
+}
+.free__recom-hero-item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.free__recom-hero-slider-item {
+  padding: 6rem 13.5rem;
+  padding-bottom: 15.8rem;
+  border-radius: 5.5rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.free__recom-hero-title {
+  color: #383742;
+  font-family: "Gilroy";
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.11rem;
+  text-transform: uppercase;
+}
+.free__recom-hero-sub-title {
+  color: #383742;
+  font-family: "Gilroy";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+}
+.free .free__recom-slider-item {
+  position: relative;
+  z-index: 1;
+}
+.free .free__recom-hero-slider-item {
+  position: relative;
+  z-index: 2;
+}/*# sourceMappingURL=free.css.map */

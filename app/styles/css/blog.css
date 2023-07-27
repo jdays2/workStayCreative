@@ -1,0 +1,12 @@
+.blog {
+  padding: 0rem 6rem 0rem;
+}
+.blog .header-block__sort {
+  margin: 0;
+  margin-left: auto;
+}
+.blog .sort-popup--show {
+  display: flex;
+  top: 9.2rem;
+  right: -1.9rem;
+}/*# sourceMappingURL=blog.css.map */

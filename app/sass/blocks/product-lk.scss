@@ -1,0 +1,88 @@
+.product-lk {
+    
+
+    &__title {
+        margin-bottom: 6rem;
+        font-family: 'Austin Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 7.3rem;
+        line-height: 96%;
+        letter-spacing: 0.02em;
+
+       
+    }
+
+    &__content {
+        background: #FFFFFF;
+        border-radius: 5.5rem;
+        padding: 6rem;
+        width: 100%;
+    }
+
+    &__content-title {
+        font-family: 'Austin Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.7rem;
+        line-height: 100% ;
+        letter-spacing: 0.02em;
+        color: #383742;
+        margin-bottom: 4rem;
+        strong {
+            display: block;
+            margin-right: 1rem;
+        }
+        display: flex;
+    }
+
+    &__content-faq-inner {
+        padding: 1rem 1.4rem;
+        border-radius: 2.5rem;
+        background: rgba(255, 180, 47, 0.30);
+        box-shadow: 8.595041275024414px 5.599999904632568px 28px 0px rgba(234, 235, 239, 0.80);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 38.2rem;
+        position: absolute;
+        right: 0;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        right: -27rem;
+        top: -1rem;
+        span {
+            display: block;
+        }
+    }
+
+    &__content-faq-inner--two {
+        right: -45rem;
+        max-width: 44rem;
+    }
+
+    &__content-faq {
+        display: flex;
+        position: relative;
+    }
+
+    &__content-faq-btn {
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        margin-top: 0.2rem;
+    }
+
+    &__title-min {
+        display: flex;
+        margin-bottom: 2.4rem;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.02em;
+        span {
+            display: block;
+            margin-right: 1rem;
+        }
+    }
+}

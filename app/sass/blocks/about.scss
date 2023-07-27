@@ -1,0 +1,313 @@
+.about {
+	padding: 0rem 6rem 18.6rem;
+
+	&__hero {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+
+		margin-bottom: 25.1rem;
+	}
+
+	&__slogan {
+		color: #383742;
+		font-size: 2rem;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 0.04rem;
+
+		padding: 1.3rem 2.8rem;
+		background-color: #fff;
+		border-radius: 100rem;
+	}
+
+	&__card-img-main {
+		position: absolute;
+		width: 100%;
+		z-index: 5;
+		width: 34rem;
+		bottom: 7.5rem;
+		height: 33rem;
+	}
+
+	&__card-img-border {
+		position: absolute;
+		z-index: 10;
+		top: 0rem;
+		left: 0rem;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__hero-part {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 5.5rem;
+	}
+
+	&__title {
+		color: #383742;
+		width: 70.7rem;
+		font-size: 7.3rem;
+		font-family: 'Austin Cyr';
+		font-style: normal;
+		font-weight: 700;
+		line-height: 7.5rem;
+		letter-spacing: 0.146rem;
+	}
+
+	&__subtitle {
+		width: 66.2rem;
+		color: #383742;
+		font-size: 2rem;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		line-height: 2.6rem;
+		opacity: 0.6;
+	}
+
+	&__hero-links {
+		display: flex;
+		align-items: center;
+		gap: 6rem;
+	}
+
+	&__link:first-child {
+		padding: 2.6rem 4rem;
+		border-radius: 100rem;
+		background: #de755e;
+		display: flex;
+		align-items: center;
+		gap: 5.6rem;
+
+		span {
+			color: #fff;
+			font-size: 2rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.04rem;
+		}
+
+		img {
+			width: 3.2rem;
+		}
+	}
+
+	&__link:last-child {
+		display: flex;
+		align-items: center;
+		gap: 2.5rem;
+
+		span {
+			color: rgba(56, 55, 66, 1);
+			font-size: 2rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.04rem;
+		}
+
+		img {
+			width: 3.2rem;
+		}
+	}
+
+	&__hero-img {
+		width: 87rem;
+		height: 49.6rem;
+		display: flex;
+		position: relative;
+		margin-top: 5.1rem;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	&__hero-icon {
+		position: absolute;
+		width: 25rem;
+		height: 25rem;
+
+		left: -7.3rem;
+		top: -6.3rem;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	&__slider-block {
+		display: flex;
+		flex-direction: column;
+		gap: 5.5rem;
+
+		.about__title {
+			width: 100%;
+			text-align: center;
+		}
+
+		.about__subtitle {
+			margin: 0 auto;
+			width: 83.4rem;
+			text-align: center;
+		}
+	}
+
+	&__slider-card {
+		padding: 3.4rem 3rem;
+		display: flex;
+		position: relative;
+		align-items: flex-start;
+		flex-direction: column;
+
+		min-width: 40.5rem;
+		height: 52rem;
+		border-radius: 5.5rem;
+		background-color: #fff;
+	}
+
+	&__card-head {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		justify-content: space-between;
+		margin-bottom: 1.2rem;
+		z-index: 11;
+	}
+
+	&__card-title {
+		color: #383742;
+		font-size: 2.2rem;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 0.11rem;
+		text-transform: uppercase;
+	}
+
+	&__card-icon {
+		width: 2.5rem;
+		height: 2.2rem;
+		cursor: pointer;
+		img {
+			width: 100%;
+		}
+	}
+
+	&__card-description {
+		color: #383742;
+		opacity: 0.8;
+		font-size: 2rem;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		line-height: 2.6rem;
+		z-index: 11;
+
+		margin-bottom: 27.7rem;
+	}
+
+	&__card-feature-tag {
+		color: #383742;
+		text-align: center;
+		font-size: 2rem;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+
+		padding: 1.7rem 2.4rem;
+		border-radius: 3rem;
+		background: #ffe9c1;
+		z-index: 11;
+	}
+
+	&__pagination {
+		margin-top: 6rem;
+	}
+
+	&__slider-block {
+		margin-bottom: 19.4rem;
+	}
+
+	&__principles-list {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5.5rem 4.3rem;
+		margin: 0 auto;
+		margin-bottom: 20.9rem;
+	}
+
+	&__principles-card {
+		padding: 6.5rem 6rem;
+		background: #fff;
+		border-radius: 5.5rem;
+		max-width: 87rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&__principles-icon {
+		width: 8.7rem;
+		height: 8.1rem;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+
+		span {
+			left: 3.3rem;
+			top: 3.5rem;
+			position: absolute;
+			color: #fff;
+			font-size: 1.6rem;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.032rem;
+		}
+	}
+
+	&__principles-card-title {
+		color: #383742;
+		font-size: 3.5rem;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		letter-spacing: 0.07rem;
+	}
+
+	&__principles-card-discription {
+		color: #383742;
+		font-size: 2rem;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		line-height: 2.6rem;
+	}
+
+	&__principles-discription {
+		color: #383742;
+		font-size: 2rem;
+		width: 83.4rem;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		line-height: 2.6rem;
+		margin-bottom: 5.5rem;
+	}
+}

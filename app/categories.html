@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./css/style.min.css" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Все категории</title>
+	</head>
+
+	<body>
+		@@include('./template/header.html')
+
+		<main>
+			<section class="categories">
+				<p class="categories__title">
+					Познакомьтесь с проектами художников креативного рынка ArtLovers
+				</p>
+
+				<div class="categories__hero">
+					<div class="categories__hero-left-side">
+						<p class="categories__hero-sub">
+							Великолепный дизайн за короткое время. Объедините усилия с
+							талантливыми дизайнерами, чтобы сделать ваши проекты выдающимися.
+						</p>
+
+						<div class="categories__people">
+							<div class="categories__people-container">
+								<a
+									href=""
+									class="categories__profile-img">
+									<img
+										src="./img/categories/profile-sample-img-1.png"
+										alt="" />
+								</a>
+
+								<a
+									href=""
+									class="categories__profile-img">
+									<img
+										src="./img/categories/profile-sample-img-2.png"
+										alt="" />
+								</a>
+
+								<a
+									href=""
+									class="categories__profile-img">
+									<img
+										src="./img/categories/profile-sample-img-3.png"
+										alt="" />
+								</a>
+							</div>
+
+							<p class="categories__people-title">Популярные авторы недели</p>
+						</div>
+					</div>
+
+					<div class="categories__hero-img">
+						<img
+							src="./img/categories/hero-image.png"
+							alt="" />
+					</div>
+
+					<div class="categories__hero-right-side">
+						<div class="categories__product-stats-wrapper">
+							<p class="categories__product-stats">
+								100%
+								<span>Креативность</span>
+							</p>
+
+							<p class="categories__product-stats">
+								1050
+								<span>Товаров</span>
+							</p>
+						</div>
+
+						<a
+							href=""
+							class="categories__hero-link">
+							<span class="categories__hero-year">/2022</span>
+
+							<div class="categories__product-info">
+								<div class="categories__product-img">
+									<img
+										src="./img/categories/profile-sample-img-4.png"
+										alt="" />
+								</div>
+
+								<span>ArtLovers-современный портал</span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				@@include('./template/popular-fonts.html')
+				@@include('./template/popular-graph.html')
+				@@include('./template/popular-photo.html')
+				@@include('./template/popular-vectors.html')
+				@@include('./template/popular-mocaps.html')
+				@@include('./template/author.html')
+			</section>
+		</main>
+		@@include('./template/footer.html')
+
+	</body>
+</html>
