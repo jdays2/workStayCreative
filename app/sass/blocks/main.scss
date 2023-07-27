@@ -1,232 +1,277 @@
 .main {
-    margin-bottom: 19rem;
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__big {
-        background: radial-gradient(31.24% 43.54% at 22.45% 44.83%, rgba(247, 228, 64, 0.6) 0%, rgba(246, 228, 64, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #DE755E;
-        border-radius: 5.5rem;
-        width: 96rem;
-        height: 61.9rem;
-        padding: 4rem;
-        position: relative;
-        margin-bottom: 3rem;
-    }
+	margin-bottom: 19rem;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__big {
+		background: radial-gradient(
+					31.24% 43.54% at 22.45% 44.83%,
+					rgba(247, 228, 64, 0.6) 0%,
+					rgba(246, 228, 64, 0) 100%
+				)
+				/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+			#de755e;
+		border-radius: 5.5rem;
+		width: 96rem;
+		height: 61.9rem;
+		padding: 4rem;
+		position: relative;
+		margin-bottom: 3rem;
+	}
 
-    &__big-title {
-        font-family: 'Austin Cyr';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 7.3rem;
-        line-height: 110% ;
-        width: 71.7rem;
-        letter-spacing: 0.02em;
-        color: #FFFFFF;
-        padding-bottom: 11.5rem;
-        position: relative;
-        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.4);
-        margin-bottom: 9.8rem;
+	&__big-title {
+		font-family: 'Austin Cyr';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 7.3rem;
+		line-height: 110%;
+		width: 71.7rem;
+		letter-spacing: 0.02em;
+		color: #ffffff;
+		padding-bottom: 11.5rem;
+		position: relative;
+		border-bottom: 0.1rem solid rgba(255, 255, 255, 0.4);
+		margin-bottom: 9.8rem;
+	}
 
+	&__big-title::before {
+		position: absolute;
+		content: '';
+		width: 5.3rem;
+		height: 5.3rem;
+		right: 6rem;
+		top: 1rem;
+		background-image: url(../img/main/icon1.svg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
 
-    }
+	&__big-image {
+		width: 25rem;
+		height: 25rem;
+		position: absolute;
+		top: 22.1rem;
+		right: -7rem;
+	}
 
-    &__big-title::before {
-        position: absolute;
-        content:'';
-        width: 5.3rem;
-        height: 5.3rem;
-        right: 6rem;
-        top: 1rem;
-        background-image: url(../img/main/icon1.svg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
+	&__big-text {
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 120%;
+		width: 59.5rem;
+		color: #ffffff;
+	}
 
-    &__big-image {
-        width: 25rem;
-        height: 25rem;
-        position: absolute;
-        top: 22.1rem;
-        right: -7rem;
-    }
+	&__small-inner {
+		background-image: url(../img/main/Union.svg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		display: flex;
 
-    &__big-text {
-        font-weight: 500;
-        font-size: 2rem;
-        line-height: 120%;
-        width: 59.5rem;
-        color: #FFFFFF;
-    }
+		width: 51.9rem;
+		height: 7.7rem;
+		padding-left: 1.6rem;
+		padding-top: 2.6rem;
+		padding-bottom: 2.6rem;
+	}
 
-    &__small-inner {
-        background-image: url(../img/main/Union.svg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        display: flex;
-        
-        width: 51.9rem;
-        height: 7.7rem;
-        padding-left: 1.6rem;
-        padding-top: 2.6rem;
-        padding-bottom: 2.6rem;
-    }
+	&__small {
+		width: 96rem;
+		display: flex;
+		justify-content: space-between;
+		height: 14.4rem;
+		background: #de755e;
+		border-radius: 10rem;
+		padding-top: 3.4rem;
+		padding-right: 3.6rem;
+		padding-bottom: 3.3rem;
+		padding-left: 3.8rem;
+	}
 
-    &__small {
-        width: 96rem;
-        display: flex;
-        justify-content: space-between;
-        height: 14.4rem;
-        background: #DE755E;
-        border-radius: 10rem;
-        padding-top: 3.4rem;
-        padding-right: 3.6rem;
-        padding-bottom: 3.3rem;
-        padding-left: 3.8rem;
-    }
+	&__small-svg,
+	&__small-photo,
+	&__small-text {
+		width: 16.9rem;
+		display: flex;
+		height: 7.7rem;
+		position: relative;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 2.5rem;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #ffffff;
+		padding-left: 3.5rem;
+		&::before {
+			position: absolute;
+			content: '';
+			width: 2.4rem;
+			height: 2.4rem;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			left: 0;
+		}
+	}
 
-    &__small-svg,
-    &__small-photo,
-    &__small-text {
-        width: 16.9rem;
-        display: flex;
-        height: 7.7rem;
-        position: relative;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 2.5rem;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        padding-left: 3.5rem;
-        &::before {
-            position: absolute;
-            content:'';
-            width: 2.4rem;
-            height: 2.4rem;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            left: 0;
+	&__small-svg {
+		margin-right: 4rem;
+		&::before {
+			background-image: url(../img/icon/vectors-icon.svg);
+		}
+	}
+
+	&__small-photo {
+		margin-right: 1.2rem;
+		&::before {
+			background-image: url(../img/icon/photo-icon.svg);
+		}
+	}
+
+	&__small-text {
+		&::before {
+			background-image: url(../img/icon/fonts-icon.svg);
+		}
+	}
+
+	&__white {
+		display: flex;
+		align-items: center;
+		width: 78rem;
+		height: 23.3rem;
+		background: #ffffff;
+		border-radius: 5.5rem;
+		padding-top: 1.67rem;
+		padding-bottom: 1.55rem;
+		position: relative;
+		padding-left: 2.9rem;
+	}
+
+	&__white-img-box {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&__white-border {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+
+		img {
+			width: 100%;
+			height: 100%;
+			-o-object-fit: contain;
+			object-fit: contain;
+		}
+
+        &--mobile {
+            display: none;
         }
-    }
+	}
 
-    &__small-svg {
-        margin-right: 4rem;
-        &::before {
-            background-image: url(../img/icon/vectors-icon.svg);
-        }
-    }
-
-    &__small-photo {
-        margin-right: 1.2rem;
-        &::before {
-            background-image: url(../img/icon/photo-icon.svg);
-        }
-    }
-
-    &__small-text {
-        &::before {
-            background-image: url(../img/icon/fonts-icon.svg);
-        }
-    }
-
-    &__white {
-        display: flex;
-        align-items: center;
-        width: 78rem;
-        height: 23.3rem;
-        background: #FFFFFF;
-        border-radius: 5.5rem;
-        padding-top: 1.67rem;
-        padding-bottom: 1.55rem;
-        padding-left: 2.9rem;
-    }
-
-    
-    &__white-image {
-        width: 37.2rem;
-        height: 20rem;
-        margin-right: 5.2rem;
-    }
-
-    &__white-text {
-        display: flex;
-        flex-direction: column;
-
-        strong {
-            display: block;
-            font-family: 'Austin Cyr';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 3.7rem;
-            line-height: 100% ;
-            letter-spacing: 0.02em;
-            margin-bottom: 1.2rem;
-        }
-
-        a {
-            display: block;
-            font-weight: 500;
-            font-size: 2rem;
-            line-height: 2.4rem;
-            letter-spacing: 0.02em;
-        }
-    }
-
-    &__swiper {
-        width: 78.1rem;
-        height: 53rem;
-        overflow: hidden;
-        margin-bottom: 3rem;
-    }
-
-    &__slide {
-        
-        display: block;
-        height: 53rem;
-        border-radius: 5.5rem;
-    }
-
-    &__slide-content {
-        width: 62.7rem;
-        max-width: 62.7rem;
-        height: 53rem;
-        display: block;
-        position: relative;
-        border-radius: 5.5rem;
-    }
-
-    &__slide-content-image {
+    &__white-img-box {
         width: 100%;
         height: 100%;
-        position: absolute;
-        z-index: 1;
-        img {
-            width: 100%;
-            height: 100%;
-            -o-object-fit: cover;
-               object-fit: cover;
-            border-radius: 5.5rem;
-
-        }
     }
 
-    &__slide-content-text {
-        width: 16.7rem;
-        height: 5.2rem;
-        border-radius: 10rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #fff;
-        position: absolute;
+	&__white-img {
+		width: 37.7rem;
+		height: 20.8rem;
+		z-index: 1;
+		position: relative;
+		top: 1.6rem;
+		left: 2.9rem;
+
+		img {
+			width: 100%;
+			height: 100%;
+			-o-object-fit: cover;
+			object-fit: cover;
+		}
+	}
+
+	&__white-text {
+		display: flex;
+		flex-direction: column;
+		margin-left: 45.4rem;
         z-index: 3;
-        left: 3rem;
-        top: 3rem;
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 2.4rem;
-        letter-spacing: 0.02em;
-    }
+
+		strong {
+			display: block;
+			font-family: 'Austin Cyr';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 3.7rem;
+			line-height: 100%;
+			letter-spacing: 0.02em;
+			margin-bottom: 1.2rem;
+		}
+
+		a {
+			display: block;
+			font-weight: 500;
+			font-size: 2rem;
+			line-height: 2.4rem;
+			letter-spacing: 0.02em;
+		}
+	}
+
+	&__swiper {
+		width: 78.1rem;
+		height: 53rem;
+		overflow: hidden;
+		margin-bottom: 3rem;
+	}
+
+	&__slide {
+		display: block;
+		height: 53rem;
+		border-radius: 5.5rem;
+	}
+
+	&__slide-content {
+		width: 62.7rem;
+		max-width: 62.7rem;
+		height: 53rem;
+		display: block;
+		position: relative;
+		border-radius: 5.5rem;
+	}
+
+	&__slide-content-image {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 1;
+		img {
+			width: 100%;
+			height: 100%;
+			-o-object-fit: cover;
+			object-fit: cover;
+			border-radius: 5.5rem;
+		}
+	}
+
+	&__slide-content-text {
+		width: 16.7rem;
+		height: 5.2rem;
+		border-radius: 10rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #fff;
+		position: absolute;
+		z-index: 3;
+		left: 3rem;
+		top: 3rem;
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 2.4rem;
+		letter-spacing: 0.02em;
+	}
 }
