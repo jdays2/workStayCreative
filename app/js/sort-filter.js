@@ -38,8 +38,11 @@ if (sortBtn) {
 
 //функция по смене изображений кнопок filter
 const changeIcon = (icon, newIcon) => {
-	newIcon.classList.toggle(filterBtnHiddenIcon);
-	icon.classList.toggle(filterBtnHiddenIcon);
+	let width = window.innerWidth;
+	if (width > 769) {
+		newIcon.classList.toggle(filterBtnHiddenIcon);
+		icon.classList.toggle(filterBtnHiddenIcon);
+	}
 };
 
 //range slider
@@ -82,66 +85,53 @@ if (priceSlider) {
 	priceSlider.noUiSlider.on('update', updatePriceOutput);
 }
 
-//показать, скрыть popUp filter
-if (filterBtn) {
-	filterBtn.addEventListener('click', () => {
-		changeIcon(filterBtnIcon, filterBtnActiveIcon);
+//функция по выключению модалки
+const removeFilterActiveClass = () => {
+	filterPopUp.classList.toggle(activeFilterPopUpClass);
 
-		//закрытие и 'применение' параметров
-		if (filterApplyBtn) {
-			filterApplyBtn.addEventListener('click', () => {
-				changeIcon(filterBtnIcon, filterBtnActiveIcon);
-				filterPopUp.classList.remove(activeFilterPopUpClass);
-			});
-		}
+};
 
-		if (filterResetBtn) {
-			filterResetBtn.addEventListener('click', () => {
-				priceSlider.noUiSlider.reset();
-			});
-		}
-
-		//закрытие при мобилке
-		const mobileFilterCloseBtn = document.querySelector(
-			'.filter-popup__close-btn',
-		);
-		if (mobileFilterCloseBtn) {
-			mobileFilterCloseBtn.addEventListener('click', () => {
-				changeIcon(filterBtnIcon, filterBtnActiveIcon);
-				filterPopUp.classList.remove(activeFilterPopUpClass);
-			});
-		}
-
-		filterPopUp.classList.toggle(activeFilterPopUpClass);
+//функция по закрытию sort
+const closeSortHandler = () => {
+	const width = window.innerWidth;
+	if (width > 769) {
 		sortBtn.forEach((btn) => {
 			btn.classList.toggle(sortBtnHideClass);
-		})
+		});
 		sortPopUp.forEach((element) => {
 			if (element.classList.contains(activeSortPopUpClass)) {
+				iconFlip();
 				element.classList.remove(activeSortPopUpClass);
 			}
 		});
+	}
+};
+
+//показать, скрыть popUp filter
+if (filterBtn) {
+	filterBtn.addEventListener('click', () => {
+		// changeIcon(filterBtnIcon, filterBtnActiveIcon);
+		removeFilterActiveClass()
+		closeSortHandler();
 	});
 }
 
-//закрытие и 'применение' параметров
+//закрытие
 if (filterApplyBtn) {
-	filterApplyBtn.addEventListener('click', () => {
-		changeIcon(filterBtnIcon, filterBtnActiveIcon);
-		filterPopUp.classList.remove(activeFilterPopUpClass);
-		sortBtn.classList.toggle(sortBtnHideClass);
-		if (sortPopUp.classList.contains(activeSortPopUpClass)) {
-			sortPopUp.classList.remove(activeSortPopUpClass);
-		}
+	filterApplyBtn.addEventListener('click', removeFilterActiveClass);
+}
+//сброс input
+if (filterResetBtn) {
+	filterResetBtn.addEventListener('click', () => {
+		priceSlider.noUiSlider.reset();
 	});
 }
-if (filterCloseBtn) {
-	filterCloseBtn.addEventListener('click', () => {
-		changeIcon(filterBtnIcon, filterBtnActiveIcon);
-		filterPopUp.classList.remove(activeFilterPopUpClass);
-		sortBtn.classList.toggle(sortBtnHideClass);
-		if (sortPopUp.classList.contains(activeSortPopUpClass)) {
-			sortPopUp.classList.remove(activeSortPopUpClass);
-		}
+
+//закрытие при мобилке
+const mobileFilterCloseBtn = document.querySelector('.filter-popup__close-btn');
+
+if (mobileFilterCloseBtn) {
+	mobileFilterCloseBtn.addEventListener('click', () => {
+		removeFilterActiveClass();
 	});
 }

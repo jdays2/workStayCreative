@@ -238,7 +238,7 @@
 		font-size: 2rem;
 		line-height: 2.5rem;
 		letter-spacing: 0.02em;
-    padding-right: 8.8rem;
+		padding-right: 8.8rem;
 	}
 
 	&__apply-icon {
@@ -330,7 +330,7 @@
 	display: block;
 }
 
-.filter-popup__features-list
+.filter-popup__type-list
 	li
 	input:checked
 	+ .filter-popup__type-item

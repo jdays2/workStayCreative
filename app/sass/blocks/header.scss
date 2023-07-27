@@ -656,7 +656,8 @@
 		z-index: -1;
 		max-height: 0rem;
 		overflow: hidden;
-		top: -15rem;
+		padding-top: 3rem;
+		top: -18rem;
 
 		ul {
 			overflow-y: scroll;
@@ -683,7 +684,7 @@
 
 	&__search-popup--show {
 		max-height: 100rem;
-		top: -11rem;
+    top: -12rem;
 	}
 
 	&__search-popup-item {

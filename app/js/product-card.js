@@ -232,7 +232,7 @@ closeBtn?.forEach((element) => {
 });
 
 //показ добавление в закладки modal
-bookmarksBtns?.forEach((element) => {
+bookmarksBtns.forEach((element) => {
 	element.addEventListener('click', (e) => {
 		if (e.currentTarget.id === 'add-to-bookmarks') {
 			addToBookmarksModal.classList.add(openModal);
