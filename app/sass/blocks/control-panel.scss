@@ -313,6 +313,10 @@
         border-right: 0.1rem solid #E0E1E7;
         margin-right: 2.5rem;
 
+        .mob {
+            display: none;
+        }
+
 
     }
 
@@ -327,5 +331,10 @@
         letter-spacing: 0.02em;
         color: #1B1818;
         width: 68rem;
+
+
+        .mob {
+            display: none;
+        }
     }
 }

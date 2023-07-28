@@ -99,49 +99,52 @@ swiper2.on('slideChange', function () {
 });
 
 //изменение активного элемента в выборе лицензии
-licensItems?.forEach((element) => {
-	let itemClass = element.classList;
+if (licensItems) {
+	licensItems.forEach((element) => {
+		let itemClass = element.classList;
 
-	const removePrevios = () => {
-		const ativeItem = licensList.querySelector('.' + activeLicensItemClass);
-		ativeItem.classList.remove(activeLicensItemClass);
-	};
+		const removePrevios = () => {
+			const ativeItem = licensList.querySelector('.' + activeLicensItemClass);
+			ativeItem.classList.remove(activeLicensItemClass);
+		};
 
-	element.addEventListener('click', () => {
-		if (!itemClass.contains(activeLicensItemClass)) {
-			removePrevios();
-			itemClass.add(activeLicensItemClass);
-		}
+		element.addEventListener('click', () => {
+			if (!itemClass.contains(activeLicensItemClass)) {
+				removePrevios();
+				itemClass.add(activeLicensItemClass);
+			}
+		});
 	});
-});
+}
 
 //смена отображения характеристик/описания и тд
-handlers?.forEach((element) => {
-	element.addEventListener('click', (e) => {
-		if (!e.target.classList.contains(activeHandlerClass)) {
-			const currentActive = document.querySelector('.' + activeHandlerClass);
-			const currentActiveBlock = document.querySelector('.' + activeBlock);
-			currentActive.classList.remove(activeHandlerClass);
-			element.classList.add(activeHandlerClass);
+if (handlers) {
+	handlers.forEach((element) => {
+		element.addEventListener('click', (e) => {
+			if (!e.target.classList.contains(activeHandlerClass)) {
+				const currentActive = document.querySelector('.' + activeHandlerClass);
+				const currentActiveBlock = document.querySelector('.' + activeBlock);
+				currentActive.classList.remove(activeHandlerClass);
+				element.classList.add(activeHandlerClass);
 
-			currentActiveBlock.classList.remove(activeBlock);
-			switch (e.target.id) {
-				case 'features':
-					featuresBlock.classList.add(activeBlock);
-					break;
-				case 'description':
-					descriptionBlock.classList.add(activeBlock);
-					break;
-				case 'get':
-					getBlock.classList.add(activeBlock);
-					break;
-				default:
-					break;
+				currentActiveBlock.classList.remove(activeBlock);
+				switch (e.target.id) {
+					case 'features':
+						featuresBlock.classList.add(activeBlock);
+						break;
+					case 'description':
+						descriptionBlock.classList.add(activeBlock);
+						break;
+					case 'get':
+						getBlock.classList.add(activeBlock);
+						break;
+					default:
+						break;
+				}
 			}
-		}
+		});
 	});
-});
-
+}
 //слайдер для других работ автора
 const anotherWorksSwiper = new Swiper('.another-works__swiper', {
 	slidesPerView: 1,
@@ -198,7 +201,6 @@ const rewieSwiper = new Swiper('.product-card__swiper', {
 });
 
 //логика появления pop-up для отзывов
-
 rewies?.forEach((element) => {
 	const toggleBtn = element.querySelector(
 		'.product-card__rewies-item-settings',

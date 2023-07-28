@@ -80,6 +80,7 @@
 			align-items: center;
 
 			background: #fff;
+			box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
 			border-radius: 1rem;
 			pointer-events: none;
 		}
@@ -292,11 +293,13 @@
 }
 
 .checker--active {
-	box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
 	img {
 		display: block;
 	}
+
 }
+
+
 
 .filter-popup__features-list input {
 	position: absolute;
@@ -345,3 +348,4 @@
 	.checker {
 	box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
 }
+
