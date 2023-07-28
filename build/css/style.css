@@ -10736,6 +10736,8 @@ main {
   padding: 3.2rem;
   z-index: 10;
   position: absolute;
+  -webkit-box-shadow: 3.7rem 3.5rem 8rem rgba(103, 110, 133, 0.2);
+          box-shadow: 3.7rem 3.5rem 8rem rgba(103, 110, 133, 0.2);
 }
 .sort-popup--show {
   display: -webkit-box;
@@ -10786,10 +10788,15 @@ main {
   display: block;
 }
 
+.sort-popup__item input:checked + .sort-popup__label .sort-popup__checker {
+  -webkit-box-shadow: 0.86rem 0.86rem 2rem rgba(103, 110, 133, 0.2);
+          box-shadow: 0.86rem 0.86rem 2rem rgba(103, 110, 133, 0.2);
+}
+
 .checker {
   width: 4rem;
   height: 4rem;
-  background: #E0E1E7;
+  background: #e0e1e7;
   border-radius: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10805,10 +10812,6 @@ main {
   display: none;
   width: 1.5rem;
   height: 1.5rem;
-}
-
-.checker--active img {
-  display: block;
 }
 
 .header-block {
@@ -15274,6 +15277,10 @@ input:checked ~ .contacts__question-item-content {
 .free .basic-card {
   width: 40.5rem;
 }
+.free .basic-card__price svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
 .free__pagination {
   position: absolute;
   left: 86rem;
@@ -15582,9 +15589,6 @@ input:checked ~ .contacts__question-item-content {
   line-height: normal;
   letter-spacing: 0.11rem;
   text-transform: uppercase;
-}
-.free .basic-card__price:hover {
-  background-color: #de755e;
 }
 .free__recom-item-text {
   margin-top: 3.2rem;
@@ -17154,6 +17158,8 @@ input:checked ~ .contacts__question-item-content {
   padding: 3.2rem;
   z-index: 10;
   position: absolute;
+  -webkit-box-shadow: 3.7rem 3.5rem 8rem rgba(103, 110, 133, 0.2);
+          box-shadow: 3.7rem 3.5rem 8rem rgba(103, 110, 133, 0.2);
 }
 .sort-popup--show {
   display: -webkit-box;
@@ -17204,10 +17210,15 @@ input:checked ~ .contacts__question-item-content {
   display: block;
 }
 
+.sort-popup__item input:checked + .sort-popup__label .sort-popup__checker {
+  -webkit-box-shadow: 0.86rem 0.86rem 2rem rgba(103, 110, 133, 0.2);
+          box-shadow: 0.86rem 0.86rem 2rem rgba(103, 110, 133, 0.2);
+}
+
 .checker {
   width: 4rem;
   height: 4rem;
-  background: #E0E1E7;
+  background: #e0e1e7;
   border-radius: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17223,10 +17234,6 @@ input:checked ~ .contacts__question-item-content {
   display: none;
   width: 1.5rem;
   height: 1.5rem;
-}
-
-.checker--active img {
-  display: block;
 }
 
 .header-block {
