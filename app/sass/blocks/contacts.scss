@@ -254,7 +254,6 @@
 		}
 	}
 
-
 	&__question-item-content {
 		display: flex;
 		flex-direction: column;
@@ -313,14 +312,14 @@
 		margin-top: 6rem;
 		margin-left: auto;
 		padding: 3rem 4rem;
-    gap: 2.5rem;
-    justify-content: space-between;
+		gap: 2.5rem;
+		justify-content: space-between;
 	}
 
 	.title {
 		.link {
 			margin-top: 3.1rem;
-	}
+		}
 	}
 }
 

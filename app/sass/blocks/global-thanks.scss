@@ -1,47 +1,44 @@
-.global-thanks  {
-   
-    &__box {
-        padding: 6rem 8rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:center;
-    }
+.global-thanks {
+	&__box {
+		padding: 6rem 8rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
-    &__icon {
-        width: 7.7rem;
-        height: 7.7rem;
-        margin-bottom: 3.3rem;
-    }
+	&__icon {
+		width: 7.7rem;
+		height: 7.7rem;
+		margin-bottom: 3.3rem;
+	}
 
-    &__title {
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        
-        strong {
-            display: block;
-            font-family: 'Austin Cyr';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 3.7rem;
-            line-height: 100%;
-            text-align: center;
-            letter-spacing: 0.02em;
-            color: #1B1818;
-        }
+	&__title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-        span {
-            display: block;
-            font-weight: 500;
-            font-size: 2rem;
-            line-height: 2.4rem;
-            text-align: center;
-            letter-spacing: 0.02em;
-            color: #A0A1A4;
-            margin-top: 2rem;
+		strong {
+			display: block;
+			font-family: 'Austin Cyr';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 3.7rem;
+			line-height: 100%;
+			text-align: center;
+			letter-spacing: 0.02em;
+			color: #1b1818;
+		}
 
-        }
-
-    }
+		span {
+			display: block;
+			font-weight: 500;
+			font-size: 2rem;
+			line-height: 2.4rem;
+			text-align: center;
+			letter-spacing: 0.02em;
+			color: #a0a1a4;
+			margin-top: 2rem;
+		}
+	}
 }

@@ -166,10 +166,6 @@
 			letter-spacing: 0.02em;
 			color: #fff;
 		}
-
-		&:hover {
-			background-color: #383742;
-		}
 	}
 
 	&__order-info {
@@ -479,5 +475,11 @@
 
 	.basic-card__price-ruble {
 		left: 0rem;
+	}
+}
+
+@media (hover: hover) {
+	.cart__favorites-btn:hover {
+		background-color: #383742;
 	}
 }

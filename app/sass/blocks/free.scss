@@ -277,7 +277,7 @@
 			bottom: 6rem;
 			z-index: 10;
 			left: 50%;
-  		transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
 		}
 	}
 
@@ -383,9 +383,8 @@
 				width: 61rem;
 				height: 40rem;
 				-o-object-fit: cover;
-				   object-fit: cover;
+				object-fit: cover;
 			}
-			
 
 			strong {
 				color: #383742;
@@ -562,6 +561,16 @@
 			min-height: -webkit-fit-content;
 			min-height: -moz-fit-content;
 			min-height: fit-content;
+		}
+	}
+}
+
+@media (hover: hover) {
+	.basic-card__price:hover {
+		svg {
+			path {
+				fill: white;
+			}
 		}
 	}
 }
