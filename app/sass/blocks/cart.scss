@@ -477,3 +477,9 @@
 		left: 0rem;
 	}
 }
+
+@media (hover: hover) {
+	.cart__favorites-btn:hover {
+		background-color: #383742;
+	}
+}
