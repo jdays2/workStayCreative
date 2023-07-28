@@ -112,43 +112,10 @@ if (licensItems) {
 			if (!itemClass.contains(activeLicensItemClass)) {
 				removePrevios();
 				itemClass.add(activeLicensItemClass);
-<<<<<<< HEAD
-=======
 			}
 		});
 	});
 }
-
-//смена отображения характеристик/описания и тд
-if (handlers) {
-	handlers.forEach((element) => {
-		element.addEventListener('click', (e) => {
-			if (!e.target.classList.contains(activeHandlerClass)) {
-				const currentActive = document.querySelector('.' + activeHandlerClass);
-				const currentActiveBlock = document.querySelector('.' + activeBlock);
-				currentActive.classList.remove(activeHandlerClass);
-				element.classList.add(activeHandlerClass);
-
-				currentActiveBlock.classList.remove(activeBlock);
-				switch (e.target.id) {
-					case 'features':
-						featuresBlock.classList.add(activeBlock);
-						break;
-					case 'description':
-						descriptionBlock.classList.add(activeBlock);
-						break;
-					case 'get':
-						getBlock.classList.add(activeBlock);
-						break;
-					default:
-						break;
-				}
->>>>>>> 79529a3d5ca3e5a97fceab99a1bf515ce8d54e1a
-			}
-		});
-	});
-}
-<<<<<<< HEAD
 //смена отображения характеристик/описания и тд
 if (handlers) {
 	handlers.forEach((element) => {
@@ -178,8 +145,6 @@ if (handlers) {
 	});
 }
 
-=======
->>>>>>> 79529a3d5ca3e5a97fceab99a1bf515ce8d54e1a
 //слайдер для других работ автора
 const anotherWorksSwiper = new Swiper('.another-works__swiper', {
 	slidesPerView: 1,
@@ -236,7 +201,6 @@ const rewieSwiper = new Swiper('.product-card__swiper', {
 });
 
 //логика появления pop-up для отзывов
-<<<<<<< HEAD
 if (rewies) {
 	rewies.forEach((element) => {
 		const toggleBtn = element.querySelector(
@@ -250,19 +214,6 @@ if (rewies) {
 				popUp.classList.toggle(rewiesPopUpShow);
 			}
 		});
-=======
-rewies?.forEach((element) => {
-	const toggleBtn = element.querySelector(
-		'.product-card__rewies-item-settings',
-	);
-	const popUp = element.querySelector('.product-card__settings-popup');
-	toggleBtn.addEventListener('click', () => {
-		console.log(window.screen.width);
-		const currentWidth = window.screen.width;
-		if (currentWidth < 769) {
-			popUp.classList.toggle(rewiesPopUpShow);
-		}
->>>>>>> 79529a3d5ca3e5a97fceab99a1bf515ce8d54e1a
 	});
 }
 

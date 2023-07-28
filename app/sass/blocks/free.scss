@@ -4,6 +4,13 @@
 
 	.basic-card {
 		width: 40.5rem;
+
+		&__price {
+			svg {
+				width: 2.4rem;
+				height: 2.4rem;
+			}
+		}
 	}
 
 	&__pagination {
@@ -342,10 +349,6 @@
 		line-height: normal;
 		letter-spacing: 0.11rem;
 		text-transform: uppercase;
-	}
-
-	.basic-card__price:hover {
-		background-color: #de755e;
 	}
 
 	&__recom-item-text {
