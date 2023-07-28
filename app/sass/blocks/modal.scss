@@ -1,25 +1,21 @@
 .modal {
 	background: rgba(56, 55, 66, 0.25);
+	display: none;
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
-	display: flex;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	min-height: 100vh;
+	height: 100%;
 	z-index: 100;
 	justify-content: center;
 	align-items: center;
-	opacity: 0;
-	pointer-events: none;
+	
+
 
 	&__wrapper {
 		position: relative;
-		width: -webkit-fit-content;
-		width: -moz-fit-content;
 		width: fit-content;
-		height: -webkit-fit-content;
-		height: -moz-fit-content;
 		height: fit-content;
 	}
 
@@ -87,8 +83,7 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: 2rem;
-		width: -webkit-fit-content;
-		width: -moz-fit-content;
+		
 		width: fit-content;
 	}
 
@@ -632,6 +627,7 @@
 
 .thanks-reg.active {
 	display: flex;
+	opacity: 1;
 }
 
 .thanks-reg {
@@ -763,6 +759,7 @@
 
 .art-modal.active {
 	display: block;
+	opacity: 1;
 }
 
 .art-modal::-webkit-scrollbar {
@@ -832,6 +829,7 @@
 
 .profile-market-modal.active {
 	display: flex;
+	opacity: 1;
 }
 
 .profile-user-modal {
@@ -936,6 +934,7 @@
 
 .profile-user-modal.active {
 	display: flex;
+	opacity: 1;
 }
 
 .profile-description-modal {
@@ -1001,6 +1000,7 @@
 
 .profile-description-modal.active {
 	display: flex;
+	opacity: 1;
 }
 
 .profile-description-modal-two {
@@ -1066,6 +1066,7 @@
 
 .profile-description-modal-two.active {
 	display: flex;
+	opacity: 1;
 }
 
 .profile-market-thanks {
@@ -1096,6 +1097,7 @@
 
 .profile-market-thanks.active {
 	display: flex;
+	opacity: 1;
 }
 
 .profile-user-thanks {
@@ -1126,6 +1128,7 @@
 
 .profile-user-thanks.active {
 	display: flex;
+	opacity: 1;
 }
 
 .del-modal {
@@ -1167,6 +1170,7 @@
 
 .del-modal.active {
 	display: flex;
+	opacity: 1;
 }
 
 .del-modal-user {
@@ -1257,6 +1261,7 @@
 
 .del-modal-user.active {
 	display: flex;
+	opacity: 1;
 }
 
 .cover-modal-error {
@@ -1319,6 +1324,7 @@
 
 .cover-modal-error.active {
 	display: flex;
+	opacity: 1;
 }
 
 .avatar-modal-error {
@@ -1381,6 +1387,7 @@
 
 .avatar-modal-error.active {
 	display: flex;
+	opacity: 1;
 }
 
 .cover-modal-thanks {
@@ -1411,6 +1418,7 @@
 
 .cover-modal-thanks.active {
 	display: flex;
+	opacity: 1;
 }
 
 .avatar-modal-thanks {
@@ -1441,6 +1449,7 @@
 
 .avatar-modal-thanks.active {
 	display: flex;
+	opacity: 1;
 }
 
 .cover-modal-del {
@@ -1473,6 +1482,7 @@
 
 .cover-modal-del.active {
 	display: flex;
+	opacity: 1;
 }
 
 .modal-thanks-r {
@@ -1503,4 +1513,5 @@
 
 .modal-thanks-r.active {
 	display: flex;
+	opacity: 1;
 }

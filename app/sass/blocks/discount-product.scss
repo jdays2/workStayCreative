@@ -1,0 +1,57 @@
+.discount-product {
+    margin-top: 4rem;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2.4rem;
+        strong {
+            display: block;
+            color:  #383742;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.4px;
+            margin-bottom: 0.4rem;
+        }
+
+        span {
+            color:  #A0A1A4;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+        }
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin-right: 1.2rem;
+        border-radius: 1rem;
+        border: 0.2rem solid  #DE755E;
+        width: 9.1rem;
+        height: 4.8rem;
+        color:  #DE755E;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        cursor: pointer;
+    }
+
+    &__box.active {
+        background: #DE755E;
+        color:#fff;
+    }
+
+    &__box:last-child {
+        margin-right: 0;
+    }
+}
