@@ -4644,6 +4644,12 @@
 	.blog {
 		padding: 0rem 3rem 0rem;
 
+		.content-block {
+			&__list {
+				width: 100%;
+			}
+		}
+
 		.header-block {
 			width: 100%;
 		}
@@ -4760,19 +4766,21 @@
 		height: 11rem;
 		gap: 0;
 
-		img {
-			width: 4.6rem;
-			height: 4.6rem;
-		}
-
 		span {
 			display: none;
 		}
 	}
 
+	.header-block__filter-img {
+		width: 4.6rem;
+		height: 4.6rem;
+	}
+
 	.basic-card {
 		width: 100%;
 		height: 79.4rem;
+		border-radius: 6rem;
+		overflow: hidden;
 		&__info {
 			height: 16.2rem;
 		}
@@ -4939,11 +4947,13 @@
 	}
 
 	.filter-popup {
-		z-index: 20;
+		z-index: 10;
 		width: 69rem;
-		position: static;
+		position: absolute;
 		border-radius: 6rem;
 		padding: 6rem 3rem 5rem;
+		left: 0;
+		top: 13.2rem;
 
 		&__wrapper--show {
 			width: 100%;
@@ -4963,7 +4973,7 @@
 			display: flex;
 			flex-direction: column;
 			overflow-x: scroll;
-			height: 50vh;
+			height: 110.4rem;
 			position: relative;
 		}
 
@@ -5009,8 +5019,8 @@
 
 		&__features-item button,
 		&__type-item button {
-			width: 8rem;
-			height: 8rem;
+			min-width: 8rem;
+			min-height: 8rem;
 			border-radius: 2rem;
 		}
 
@@ -5125,6 +5135,13 @@
 			img {
 				width: 2.572rem;
 				height: 2.572rem;
+			}
+		}
+
+		.checker {
+			img {
+				width: 2.8rem;
+				height: 3rem;
 			}
 		}
 	}
@@ -6044,6 +6061,10 @@
 			flex-direction: column;
 		}
 
+		&__reviews-slider {
+			width: 100%;
+		}
+
 		&__map {
 			display: flex;
 			order: 1;
@@ -6462,9 +6483,6 @@
 			justify-content: center;
 			margin-top: 4rem;
 		}
-		.basic-card__type {
-			width: 44.2rem;
-		}
 
 		&__reviews-add-btn {
 			position: absolute;
@@ -6742,9 +6760,17 @@
 		width: -webkit-fit-content !important;
 		width: -moz-fit-content !important;
 		width: fit-content !important;
-		margin: 0 auto;
+		margin: 0;
 		position: relative;
-		top: 61.5re;
+		top: 61.5rem;
+		left: 50% !important;
+		transform: translateX(-50%);
+
+		.pagination__fraction {
+			width: -webkit-fit-content;
+			width: -moz-fit-content;
+			width: fit-content;
+		}
 	}
 
 	.main {
@@ -10639,7 +10665,7 @@
 
 		&__socials {
 			gap: 3.2rem;
-			margin-bottom: -8.7rem
+			margin-bottom: -8.7rem;
 		}
 
 		&__socials-item {
@@ -10717,14 +10743,13 @@
 		&__logo {
 			img {
 				width: 17.955rem;
-    		height: 3.71rem;
+				height: 3.71rem;
 			}
 		}
 
 		&__nav-wrapper {
 			padding-bottom: 18.1rem;
 		}
-		
 	}
 
 	.pagination {
@@ -11230,7 +11255,7 @@
 			width: 44.8rem;
 		}
 	}
-	
+
 	.collections {
 		margin-bottom: 9rem;
 		.container {
@@ -13721,7 +13746,9 @@
 			top: 13.2rem;
 			border-radius: 4rem;
 			&__item {
-				gap: 2.4rem;
+				label {
+					gap: 2.4rem;
+				}
 			}
 
 			&__title {
@@ -13753,6 +13780,12 @@
 
 	.blog {
 		padding: 0rem 3rem 0rem;
+
+		.content-block {
+			&__list {
+				width: 100%;
+			}
+		}
 
 		.header-block {
 			width: 100%;
@@ -13820,7 +13853,7 @@
 
 	.header-block__buttons-wrapper {
 		width: 100%;
-		gap: 1rem;
+		gap: 0rem;
 	}
 
 	.header-block__wrapper {
@@ -13856,31 +13889,37 @@
 		}
 	}
 
+	.header__profile-bar--show {
+		display: none;
+	}
+
 	.header-block__filter {
 		width: 11rem;
 		height: 11rem;
 		gap: 0;
-
-		img {
-			width: 4.6rem;
-			height: 4.6rem;
-		}
 
 		span {
 			display: none;
 		}
 	}
 
+	.header-block__filter-img {
+		width: 4.6rem;
+		height: 4.6rem;
+	}
+
 	.basic-card {
 		width: 100%;
 		height: 79.4rem;
+		border-radius: 6rem;
+		overflow: hidden;
 
 		&__img {
 			margin-top: 15.03rem;
 		}
 
 		&__type {
-			width: 32.4rem;
+			width: 44.2rem;
 			height: 13rem;
 			font-weight: 400;
 			font-size: 2.8rem;
@@ -13954,202 +13993,6 @@
 
 			span {
 				font-size: 2.1rem;
-			}
-		}
-	}
-
-	.filter-popup {
-		z-index: 20;
-		width: 69rem;
-		position: static;
-		border-radius: 6rem;
-		padding: 6rem 3rem 5rem;
-
-		&__wrapper--show {
-			width: 100%;
-			height: 100vh;
-			z-index: 20;
-			padding-top: 19.2rem;
-			position: fixed;
-			background: rgba(56, 55, 66, 0.25);
-			-webkit-backdrop-filter: blur(2rem);
-			backdrop-filter: blur(2rem);
-			display: flex;
-		}
-
-		&__settings {
-			margin: 0 auto;
-			gap: 3rem;
-			display: flex;
-			flex-direction: column;
-			overflow-x: scroll;
-			height: 50vh;
-			position: relative;
-		}
-
-		&__price-value-wrapper {
-			margin-top: 1.8rem;
-			gap: 25rem;
-		}
-
-		&__type-item {
-			width: 16.8rem;
-			gap: 2.4rem;
-		}
-
-		&__type-list,
-		&__features-list {
-			width: 63rem;
-			padding: 4rem 3rem;
-			ul {
-				width: 100%;
-				// gap: 5rem 5.3rem;
-			}
-		}
-
-		&__type-list {
-			ul {
-				gap: 3rem;
-			}
-		}
-
-		&__features-item {
-			gap: 2.2rem;
-		}
-
-		&__features-list {
-			ul {
-				gap: 3rem 2rem;
-			}
-		}
-
-		&__features-item {
-			min-width: 27.4rem;
-		}
-
-		&__features-item button,
-		&__type-item button {
-			width: 8rem;
-			height: 8rem;
-			border-radius: 2rem;
-		}
-
-		&__features-item span,
-		&__type-item span {
-			font-weight: 400;
-			font-size: 2.8rem;
-			line-height: 4rem;
-		}
-
-		&__title {
-			font-weight: 700;
-			font-size: 2.8rem;
-			line-height: 3.4rem;
-			text-align: left;
-			margin-bottom: 4rem;
-		}
-
-		&__slider-wrapper {
-			padding: 4rem 3rem;
-		}
-
-		&__price-value {
-			width: 16rem;
-			height: 8rem;
-			border-radius: 3rem;
-			margin-top: 3rem;
-
-			font-family: 'Gilroy';
-			font-style: normal;
-			font-weight: 400;
-			font-size: 2.8rem;
-			line-height: 4rem;
-		}
-
-		&__features-list,
-		&__slider-wrapper,
-		&__type-list {
-			border-radius: 6rem;
-		}
-
-		.noUi-connects {
-			width: 57rem;
-		}
-
-		.noUi-handle-lower,
-		.noUi-handle-upper {
-			width: 3.6rem;
-			height: 3.6rem;
-			border: 0.4rem solid #fff;
-		}
-
-		.noUi-handle {
-			right: -2.7rem;
-			top: -1.7rem;
-		}
-
-		.noUi-handle-lower {
-			box-shadow: 0.86rem 0.86rem 4rem rgba(160, 161, 164, 0.3);
-		}
-
-		.noUi-handle-upper {
-			box-shadow: 0.86rem 0.86rem 4rem rgba(222, 117, 94, 0.3);
-		}
-
-		.noUi-base,
-		.noUi-connects {
-			height: 0.2rem;
-		}
-
-		&__buttons {
-			margin: 0;
-			margin-top: 5rem;
-			width: 100%;
-			gap: 0;
-			justify-content: space-between;
-		}
-
-		&__apply-btn {
-			width: 43rem;
-			height: 11rem;
-			gap: 3rem;
-
-			span {
-				font-weight: 700;
-				font-size: 2.8rem;
-				line-height: 3.4rem;
-			}
-
-			img {
-				width: 5rem;
-			}
-		}
-
-		&__reset-btn {
-			span {
-				font-weight: 700;
-				font-size: 2.8rem;
-				line-height: 3.4rem;
-				margin-right: 1rem;
-			}
-		}
-
-		&__close-btn {
-			display: flex;
-			position: absolute;
-			width: 11rem;
-			height: 11rem;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			border-radius: 100rem;
-			background-color: #fff;
-			top: 5.6rem;
-			right: 3rem;
-
-			img {
-				width: 2.572rem;
-				height: 2.572rem;
 			}
 		}
 	}
@@ -17490,13 +17333,14 @@
 			}
 		}
 
+
 		.sort-popup {
 			width: 69rem;
 			right: auto;
 			top: 26.2rem;
 			border-radius: 4rem;
-			&__item {
-				gap: 2.4rem;
+			&__label {
+				gap: 2.4rem !important;
 			}
 
 			&__title {
@@ -17506,6 +17350,7 @@
 				font-size: 2.8rem;
 				line-height: 4rem;
 				color: #383742;
+				display: block;
 			}
 
 			.checker {
@@ -17795,6 +17640,13 @@
 	.free {
 		padding: 0rem 3rem 0rem;
 
+		.content-block {
+			width: 100%;
+			&__list {
+				width: 100%;
+			}
+		}
+
 		&__recom-second-slider {
 			.free__recom-item-img {
 				height: 82.8rem;
@@ -18066,6 +17918,11 @@
 		align-items: flex-start;
 		width: 70rem;
 		flex-wrap: wrap;
+
+		&__filter-img--alter {
+			width: 1.286 * 2rem !important;
+			height: 1.286 * 2rem !important;
+		}
 	}
 
 	.header-block__buttons-wrapper {
@@ -18120,14 +17977,14 @@
 		height: 11rem;
 		gap: 0;
 
-		img {
-			width: 4.6rem;
-			height: 4.6rem;
-		}
-
 		span {
 			display: none;
 		}
+	}
+
+	.header-block__filter-img {
+		width: 4.6rem;
+		height: 4.6rem;
 	}
 
 	.control-panel {
@@ -18343,6 +18200,47 @@
 			.desk {
 				display: none;
 			}
+		}
+	}
+
+	.content-block {
+		gap: 6rem;
+		margin-bottom: 12rem;
+
+		&__list {
+			gap: 7rem;
+		}
+
+		&__item {
+			width: 100%;
+		}
+
+		&__pag-value {
+			span {
+				color: #383742;
+				font-family: 'Austin Cyr';
+				font-size: 2.8rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 3.675rem * 2;
+			}
+		}
+
+		&__pag-btns {
+			width: 18rem;
+		}
+
+		&__line {
+			width: 10rem;
+			height: 0.2rem;
+
+			&--vert {
+				width: 8rem
+			}
+		}
+
+		&__arrow-icon {
+			width: 5rem;
 		}
 	}
 }
