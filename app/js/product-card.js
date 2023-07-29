@@ -53,7 +53,7 @@ const activeLicensItemClass = 'product-card__price-license-item--active';
 const activeHandlerClass = 'product-card__title-item--active';
 const rewiesPopUpShow = 'product-card__settings-popup--show';
 const activeModalFormList = 'modal__form-popup-wrapper--active';
-const openModal = 'modal--open';
+const openModal = 'active';
 const activeModalInput = 'modal__form-input--list-active';
 
 //главный свайпер
@@ -175,6 +175,7 @@ const anotherWorksSwiper = new Swiper('.another-works__swiper', {
 const rewieSwiper = new Swiper('.product-card__swiper', {
 	spaceBetween: rem(2),
 	slidesPerView: 1,
+	slidesPerGroup: 1,
 	wrapperClass: 'product-card__swiper-wrapper',
 	slideClass: 'product-card__slide',
 	speed: 500,
@@ -190,6 +191,7 @@ const rewieSwiper = new Swiper('.product-card__swiper', {
 				nextEl: '.product-card__next',
 			},
 			slidesPerView: 3,
+			slidesPerGroup: 3,
 			pagination: {
 				el: '.product-card__fraction',
 				type: 'fraction',

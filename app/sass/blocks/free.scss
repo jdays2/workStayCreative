@@ -2,6 +2,13 @@
 	padding: 0rem 6rem 18.6rem;
 	overflow: hidden;
 
+	.content-block {
+		width: 100%;
+		&__list {
+			width: 102%;
+		}
+	}
+
 	.basic-card {
 		width: 40.5rem;
 
@@ -570,6 +577,8 @@
 
 @media (hover: hover) {
 	.basic-card__price:hover {
+		background-color: #de755e;
+
 		svg {
 			path {
 				fill: white;
