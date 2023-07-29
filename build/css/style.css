@@ -14005,6 +14005,7 @@ input:checked ~ .contacts__question-item-content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-right: auto;
 }
 .store__profile-status {
   color: #a0a1a4;
@@ -14570,6 +14571,7 @@ input:checked ~ .contacts__question-item-content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-right: auto;
 }
 .publick-profile__profile-status {
   color: #a0a1a4;
@@ -22691,6 +22693,49 @@ input:checked ~ .contacts__question-item-content {
   gap: 6.9rem;
   margin-bottom: 10rem;
 }
+.content-block--tight .content-block__list {
+  gap: 3rem;
+}
+.content-block__head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content-block__head-btn {
+  width: 7.6rem;
+  height: 7.7rem;
+  border-radius: 50%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content-block__head-btn svg {
+  width: 2.5rem;
+}
+.content-block__head-title {
+  color: #383742;
+  font-family: "Austin Cyr";
+  font-size: 3.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.7rem;
+  letter-spacing: 0.148rem;
+}
 .content-block__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22698,7 +22743,7 @@ input:checked ~ .contacts__question-item-content {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 6rem;
-  width: 100%;
+  width: 101.5%;
 }
 .content-block__item {
   width: -webkit-fit-content;
@@ -22769,6 +22814,42 @@ input:checked ~ .contacts__question-item-content {
 }
 .content-block__arrow-icon--last svg path {
   fill: rgb(160, 161, 164);
+}
+
+.follow-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.6rem 4rem;
+  background-color: #DE755E;
+  border-radius: 100rem;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 26.4rem;
+}
+.follow-btn__text {
+  display: none;
+  font-family: "Gilroy";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+  color: white;
+}
+.follow-btn__icon {
+  display: none;
+  width: 3.2rem;
+  height: 1.26rem;
+}
+.follow-btn .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media only all and (max-width: 48em) {
@@ -39026,6 +39107,9 @@ input:checked ~ .contacts__question-item-content {
   .free .content-block {
     width: 100%;
   }
+  .free .content-block--tight .content-block__list {
+    gap: 7rem;
+  }
   .free .content-block__list {
     width: 100%;
   }
@@ -39527,12 +39611,67 @@ input:checked ~ .contacts__question-item-content {
   .control-panel__faq-span .desk {
     display: none;
   }
+  .follow-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 3.8rem 17.1rem;
+    background-color: #de755e;
+    border-radius: 100rem;
+    width: 100%;
+  }
+  .follow-btn__text {
+    display: none;
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.056rem;
+  }
+  .follow-btn__icon {
+    display: none;
+    width: 5rem;
+    height: auto;
+  }
+  .follow-btn .active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .content-block {
     gap: 6rem;
     margin-bottom: 12rem;
   }
   .content-block__list {
     gap: 7rem;
+  }
+  .content-block__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 6rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .content-block__head-title {
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+  }
+  .content-block__head-btn {
+    width: 11rem;
+    height: 11rem;
+  }
+  .content-block__head-btn svg {
+    width: 5rem;
   }
   .content-block__item {
     width: 100%;
