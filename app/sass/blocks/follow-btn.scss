@@ -1,0 +1,30 @@
+.follow-btn {
+  display: flex;
+  padding: 2.6rem 4rem;
+  background-color: #DE755E;
+  border-radius: 100rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  width: 26.4rem;
+  
+  &__text {
+    display: none;
+    font-family: "Gilroy";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.04rem;
+    color: white;
+  }
+
+  &__icon {
+    display: none;
+    width: 3.2rem;
+    height: 1.26rem;
+  }
+
+  .active {
+    display: flex;
+  }
+}
