@@ -1,0 +1,77 @@
+.content-block {
+	display: flex;
+	flex-direction: column;
+	gap: 6.9rem;
+	margin-bottom: 10rem;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6rem;
+    width: 100%;
+	}
+
+	&__item {
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+		display: block;
+	}
+
+	&__pag {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__pag-value {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+
+		span {
+			color: #383742;
+			font-family: 'Austin Cyr';
+			font-size: 1.8rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 3.675rem;
+		}
+	}
+
+	&__line {
+		height: 0.15rem;
+		width: 6.3rem;
+		background: rgba(160, 161, 164, 0.3);
+
+		&--vert {
+			width: 4.6rem;
+			transform: rotate(90deg);
+		}
+	}
+
+	&__pag-btns {
+		display: flex;
+		width: 12rem;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__arrow-icon {
+		width: 3rem;
+		cursor: pointer;
+
+		&--last {
+			cursor: auto;
+			svg {
+				path {
+					fill: rgba(160, 161, 164, 1);
+				}
+			}
+		}
+	}
+}
