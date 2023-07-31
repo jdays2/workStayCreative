@@ -2624,6 +2624,33 @@
 			</div>
 		</div>
 
+		<!-- УНИВЕРСАЛЬНАЯ МОДАЛКА. класс "active" отвечает за показ модалки. Клик по
+		modal__close скрывает модалку. Иконка is-done-icon (галочка) - при одобрении или успешном
+		выполнении какого-то действия. Иконка exclamation-icon (восклицательный знак) - при проблеме, ошибке и тп.
+		-->
+		<div class="modal active modal--confirm-question">
+			<div class="modal__container">
+				<button class="modal__close">
+					<img
+						src="./img/icon/close.svg"
+						alt="" />
+				</button>
+				<div class="modal__box">
+					<div class="modal__icon">
+						<img
+							src="./img/icon/is-done-icon.svg"
+							alt="" />
+						<!-- <img
+							src="./img/icon/exclamation-icon.svg"
+							alt="" /> -->
+					</div>
+
+					<p class="modal__title">ЗАГОЛОВОК 1</p>
+					<p class="modal__subtitle">СОДЕРЖАНИЕ</p>
+				</div>
+			</div>
+		</div>
+
 		@@include('./template/footer.html')
 		<script src="./js/product-card.js"></script>
 	</body>

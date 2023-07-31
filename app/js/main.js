@@ -368,4 +368,23 @@ function addZero(num) {
 }
 
 
+//обработка клика по кнопке подписки
+const followBtns = document.querySelectorAll('.follow-btn');
+
+const followActiveClass = 'active';
+
+followBtns.forEach((elem) => {
+	const icons = elem.querySelectorAll('.follow-btn__icon');
+	const texts = elem.querySelectorAll('.follow-btn__text');
+	elem.addEventListener('click', () => {
+		icons.forEach((element) => {
+			element.classList.toggle(followActiveClass);
+		});
+		texts.forEach((element) => {
+			element.classList.toggle(followActiveClass);
+		});
+	});
+});
+
+
 
