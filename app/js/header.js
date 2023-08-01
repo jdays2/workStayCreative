@@ -1,4 +1,4 @@
-const shopBtn = document.querySelector('.header__shop-button');
+const regAlertBtn = document.querySelectorAll('.header__alert-reg-btn');
 const registerPopUp = document.querySelector('.header__register-alert');
 const profilePopUp = document.querySelector('.header__profile-bar');
 const infoPopUp = document.querySelector('.header__info');
@@ -51,8 +51,8 @@ const profileMobilePopUp = document.querySelector('.header__profile-wrapper');
 const profileMobilePopUpList = document.querySelector('.header__profile-links');
 
 const registerPopUpClass = 'header__register-alert--show';
-const shopBtnClass = 'header__store--show';
-const removeShopBtnClass = 'header__shop-button--remove';
+const regAlertBtnClass = 'header__store--show';
+const removeregAlertBtnClass = 'header__shop-button--remove';
 const profilePopUpClass = 'header__profile-bar--show';
 const infoPopupClass = 'header__info--show';
 const inputClass = 'header__search-input--reg';
@@ -75,20 +75,20 @@ const profileMobilePopUpActiveItem = 'header__profile-link--active';
 
 //показ serch-popup & переключение активной категории
 
-if(searchInputItemsPupUp) {
-searchInputItemsPupUp.forEach((element) => {
-	element.addEventListener('click', () => {
-		if (!element.classList.contains(searchItemPupUpActiveClass)) {
-			const currentItem = document.querySelectorAll(
-				'.' + searchItemPupUpActiveClass,
-			);
-			currentItem.forEach((el) => {
-				el.classList.remove(searchItemPupUpActiveClass);
-			});
-			element.classList.add(searchItemPupUpActiveClass);
-		}
+if (searchInputItemsPupUp) {
+	searchInputItemsPupUp.forEach((element) => {
+		element.addEventListener('click', () => {
+			if (!element.classList.contains(searchItemPupUpActiveClass)) {
+				const currentItem = document.querySelectorAll(
+					'.' + searchItemPupUpActiveClass,
+				);
+				currentItem.forEach((el) => {
+					el.classList.remove(searchItemPupUpActiveClass);
+				});
+				element.classList.add(searchItemPupUpActiveClass);
+			}
+		});
 	});
-});
 }
 
 headerSearchBtn?.addEventListener('click', () => {
@@ -100,14 +100,33 @@ mobileSearchInputPopUpBtn?.addEventListener('click', () => {
 
 //добавляем показ register-popup
 
-shopBtn?.addEventListener('click', () => {
+const modalHandler = () => {
 	if (window.innerWidth > 768) {
 		registerPopUp.classList.toggle(registerPopUpClass);
 	}
+};
+
+let isModalActive = false;
+
+regAlertBtn?.forEach((element) => {
+	element.addEventListener('click', () => {
+		event.stopPropagation()
+		modalHandler();
+		isModalActive = true;
+	});
 });
 
-const shopBtnMobile = document.querySelector('.header__shop-button--burger');
-shopBtnMobile?.addEventListener('click', () => {
+document.addEventListener('click', (e) => {
+	if (isModalActive && !registerPopUp.contains(e.target)) {
+		modalHandler();
+		isModalActive = false;
+	}
+});
+
+const regAlertBtnMobile = document.querySelector(
+	'.header__shop-button--burger',
+);
+regAlertBtnMobile?.addEventListener('click', () => {
 	regModal.classList.toggle('modal--active');
 });
 

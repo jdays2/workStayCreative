@@ -254,13 +254,13 @@
 		}
 	}
 
-
 	&__question-item-content {
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
-		height: 2.4rem;
+		max-height: 2.4rem;
 		overflow: hidden;
+		transition: 0.3s;
 
 		span {
 			color: #a0a1a4;
@@ -312,14 +312,14 @@
 		margin-top: 6rem;
 		margin-left: auto;
 		padding: 3rem 4rem;
-    gap: 2.5rem;
-    justify-content: space-between;
+		gap: 2.5rem;
+		justify-content: space-between;
 	}
 
 	.title {
 		.link {
 			margin-top: 3.1rem;
-	}
+		}
 	}
 }
 
@@ -332,7 +332,5 @@ input:checked + div label .contacts__question-icon {
 }
 
 input:checked ~ .contacts__question-item-content {
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
-	height: fit-content;
+	max-height: 100rem;
 }

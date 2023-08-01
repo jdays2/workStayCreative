@@ -264,7 +264,7 @@
 						alt="" />
 				</button>
 
-				<a class="header__shop-button">
+				<a class="header__shop-button header__alert-reg-btn">
 					<span>Открыть магазин</span>
 				</a>
 
@@ -280,7 +280,7 @@
 						alt="" />
 				</button>
 
-				<button class="header__like">
+				<button class="header__like header__alert-reg-btn">
 					<img
 						src="./img/header/heart.svg"
 						alt="" />
@@ -1275,8 +1275,6 @@
 	</div>
 </footer>
 
-
-
 <div class="modal thanks-reg">
 	<div class="modal__container">
 		<button class="modal__close thanks-reg__close">
@@ -1557,7 +1555,7 @@
 </div>
 
 <modal class="modal cover-modal">
-<div class="modal cover-modal" >
+    <div class="modal cover-modal" >
     <div class="modal__container cover-modal__container">
         <button class="modal__close cover-modal__close">
 
@@ -1569,12 +1567,11 @@
                         <div class="cover-modal__center-title">Выберите область для обложки профиля</div>
 
                         <canvas id="canvas" style="max-width: 100%;"></canvas>
-
-
-        </div>
+                     </div>
     </div>
 </modal>
 </div>
+
 <div class="modal cover-modal-error">
     <div class="modal__container cover-modal-error__container">
         <button class="cover-modal-error__prev">
@@ -1629,7 +1626,6 @@
     </div>
 </div>
 
-
 <div class="modal profile-description-modal-two">
     <div class="modal__container profile-description-modal-two__container">
         <button class="modal__close profile-description-modal-two__close">
@@ -1659,7 +1655,6 @@
         </div>
     </div>
 </div>
-
 
 <!-- аватао -->
 
@@ -1703,8 +1698,6 @@
     </div>
 </div>
 
-
-
 <div class="modal personal-information-thanks ">
     <div class="modal__container personal-information-thanks__container">
         <button class="modal__close personal-information-thanks__close">
@@ -1718,7 +1711,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="modal modal-follow">
     <div class="modal__container  modal-follow__container">
@@ -1803,7 +1795,6 @@
     </div>
 </div>
 
-
 <div class="modal thanks-reg">
     <div class="modal__container">
         <button class="modal__close thanks-reg__close">
@@ -1811,24 +1802,47 @@
     </div>
 </div>
 
-<modal class="modal cover-modal">
 <div class="modal cover-modal" >
     <div class="modal__container cover-modal__container">
         <button class="modal__close cover-modal__close">
+            <img src="./img/icon/close.svg" alt="">
+        </button>
+        <button class="cover-modal__block-prev">
+            <svg  viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z" fill="#383742"/>
+            </svg>    
+        </button>
+        <div class="cover-modal__content">
+            
+                
+                    <div class="cover-modal__center-one">
+                        <div class="cover-modal__center-one-image">
+                            <img src="./img/cover-modal/rafiki.svg" alt="">
+                        </div>
+                        <div class="cover-modal__center-one-title">
+                            Обложка профиля
+                        </div>
+                        
+                        <div class="dropzone">
+                            <div class="content">
+                                <input type="file" class="cover-modal__custom-file-input" id="cover-modal__upload-file">
+                                <label for="cover-modal__upload-file"></label>
+                                <label class="cover-modal__upload-btn" for="cover-modal__upload-file">
 
                             </div>
                         </div>
                     </div>
-                    <div class="cover-modal__center">
                     <div class="cover-modal__center" style="display: none;">
                         <div class="cover-modal__center-title">Выберите область для обложки профиля</div>
-
+                        
                         <canvas id="canvas" style="max-width: 100%;"></canvas>
-
-
+                        <button class="red-btn"><span>Сохронить</span></button>
+                    </div>
+                    
+                
+            
         </div>
     </div>
-</modal>
 </div>
 <div class="modal cover-modal-error">
     <div class="modal__container cover-modal-error__container">
@@ -1918,45 +1932,7 @@
 
 <!-- аватао -->
 
-<div class="modal avatar-modal "  >
-    <div class="modal__container avatar-modal__container">
-        <button class="modal__close avatar-modal__close">
-            <img src="./img/icon/close.svg" alt="">
-        </button>
-        <div class="avatar-modal__content">
 
-
-                    <div class="avatar-modal__center-one">
-                        <div class="avatar-modal__center-one-image">
-                            <img src="./img/icon/biguser.svg" alt="">
-                        </div>
-                        <div class="avatar-modal__center-one-title">
-                            Фото профиля
-                        </div>
-                        <div class="avatar-modal__center-one-text">
-                            Пользователям будет проще узнать вас, если вы загрузите свою настоящую фотографию. Вы можете загрузить изображение в формате JPG, GIF или PNG.
-                        </div>
-                        <div class="dropzone">
-                            <div class="content">
-                                <input type="file" class="avatar-modal__custom-file-input" id="avatar-modal__upload-file">
-                                <label class="avatar-modal__upload-file-span" for="avatar-modal__upload-file"><span>Выбрать файл</span></label>
-                                <label class="avatar-modal__upload-btn" for="avatar-modal__upload-file">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="avatar-modal__center" >
-                        <div class="avatar-modal__center-title">Выберите область для обложки профиля</div>
-
-                        <canvas id="canvas-avatar" style="max-width: 100%;"></canvas>
-                        <button class="red-btn"><span>Сохронить</span></button>
-                    </div>
-
-
-
-        </div>
-    </div>
-</div>
 
 
 
@@ -1967,11 +1943,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script> 
 <script src="./js/swiper-bundle.js"></script>
 <script src="./js/Jq-script.js"></script>
-<script src="./js/header.js"></script>
-<script src="./js/charts-script.js"></script>
-<script src="./js/blog.js"></script>
-<script src="./js/sort-filter.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/header.js"></script>
+<script src="./js/basic-card.js"></script>
+<script src="./js/charts-script.js"></script>
+<script src="./js/sort-filter.js"></script>
 <script src="./js/general-swiper.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.js"></script>
 <script src="./js/fonts.js"></script>
