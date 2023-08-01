@@ -5366,6 +5366,10 @@
 			margin-bottom: 6rem;
 		}
 
+		&__item-popup {
+			padding: 2rem 3.5rem;
+		}
+
 		&__item-popup--show {
 			position: static !important;
 			visibility: visible !important;
@@ -5387,8 +5391,8 @@
 		&__popup-item {
 			padding: 2rem 0rem;
 			p::before {
-				width: 4.4rem;
-				height: 4.4rem;
+				width: 3.4rem;
+				height: 3.4rem;
 				border: 0.8rem solid #fff;
 			}
 
@@ -5440,7 +5444,7 @@
 		&__list {
 			margin: 0;
 			width: 100%;
-			margin-bottom: 6rem;
+			margin-bottom: 8.5rem;
 		}
 
 		&__order {
@@ -5573,7 +5577,7 @@
 		&__order-info {
 			width: 100%;
 			border-radius: 6rem;
-			padding: 8.6rem 5.4rem;
+			padding: 9.5rem 5.7rem;
 		}
 
 		&__order-title {
@@ -5598,6 +5602,15 @@
 				line-height: 3.2rem;
 				letter-spacing: 0.02em;
 				font-weight: 500;
+
+				&::after {
+					content: "₽";
+					position: absolute;
+					font-size: 1.7rem;
+					top: -0.1rem;
+					font-weight: 500;
+					line-height: 100%;
+				}
 			}
 		}
 
@@ -5628,7 +5641,7 @@
 		}
 
 		&__order-link {
-			padding: 3rem 5.4rem 3.4rem;
+			padding: 4rem 5.4rem 3.4rem; 
 			border-radius: 5rem;
 			a {
 				height: 11rem;
@@ -14233,6 +14246,11 @@
 			margin-bottom: 6rem;
 		}
 
+		&__popup-item {
+			padding-top: 2.5rem;
+    	padding-bottom: 2.4rem;
+		}
+
 		&__counter {
 			font-weight: 700;
 			font-size: 5rem;
@@ -14244,7 +14262,7 @@
 		&__list {
 			margin: 0;
 			width: 100%;
-			margin-bottom: 6rem;
+			margin-bottom: 8.5rem;
 		}
 
 		&__order {
@@ -14255,7 +14273,7 @@
 		&__item {
 			padding: 2rem;
 			width: 100%;
-			border-radius: 6rem;
+			border-radius: 5rem;
 			position: relative;
 			z-index: 15;
 			right: 0rem;
@@ -14306,7 +14324,7 @@
 			font-size: 2.8rem;
 			line-height: 3.6rem;
 			margin: 0;
-			margin-top: 2.6rem;
+			margin-top: 0rem;
 			width: -webkit-fit-content;
 			width: -moz-fit-content;
 			width: fit-content;
@@ -14341,8 +14359,16 @@
 			.basic-card__price {
 				position: absolute;
 				right: -1rem;
-				bottom: 0rem;
+				bottom: -2.6rem;
 				min-width: 0;
+
+				&::after {
+					position: absolute;
+					font-size: 1.8rem;
+					right: -1.2rem;
+					top: 0.3rem;
+					line-height: 100%;
+				}
 			}
 		}
 
@@ -14373,7 +14399,7 @@
 		&__order-info {
 			width: 100%;
 			border-radius: 6rem;
-			padding: 8.6rem 5.4rem;
+			padding: 9.6rem 5.7rem;
 		}
 
 		&__order-title {
@@ -14385,10 +14411,10 @@
 
 		&__order-list {
 			border-radius: 5rem;
-			padding: 5.4rem 5.4rem 4.2rem;
+			padding: 6.4rem 4.1rem 4.2rem 5.5rem;
 
 			ul {
-				gap: 4.2rem;
+				gap: 4rem;
 				margin-bottom: 5rem;
 			}
 
@@ -14406,7 +14432,7 @@
 			margin-bottom: 4rem;
 			font-weight: 500;
 			font-size: 2.8rem;
-			line-height: 7.2rem;
+			line-height: 5.8rem;
 		}
 
 		&__order-summary-title {
@@ -14418,7 +14444,7 @@
 		&__order-item-name {
 			font-weight: 400;
 			font-size: 2.8rem;
-			line-height: 4rem;
+			line-height: 4rem !important;
 		}
 
 		&__order-item-price {
@@ -14428,7 +14454,7 @@
 		}
 
 		&__order-link {
-			padding: 3rem 5.4rem 3.4rem;
+			padding: 4rem 5.4rem 3.4rem; 
 			border-radius: 5rem;
 			a {
 				height: 11rem;
@@ -14484,15 +14510,19 @@
 			margin: 0;
 
 			.basic-card__price {
-				position: static;
+				position: relative;
 				right: auto;
 				bottom: auto;
 				min-width: auto;
 				display: flex;
 				flex-direction: row;
 
-				span {
-					left: 0;
+				&::after {
+					position: absolute;
+					font-size: 1.8rem;
+					right: -1.4rem;
+					top: 0.3rem;
+					line-height: 100%;
 				}
 			}
 
@@ -17333,7 +17363,6 @@
 			}
 		}
 
-
 		.sort-popup {
 			width: 69rem;
 			right: auto;
@@ -17642,6 +17671,13 @@
 
 		.content-block {
 			width: 100%;
+
+			&--tight {
+				.content-block__list {
+					gap: 7rem;
+				}
+			}
+
 			&__list {
 				width: 100%;
 			}
@@ -18203,12 +18239,64 @@
 		}
 	}
 
+	.follow-btn {
+		display: flex;
+		padding: 1.9 * 2rem 8.55 * 2rem;
+		background-color: #de755e;
+		border-radius: 100rem;
+		width: 100%;
+
+		&__text {
+			display: none;
+			color: #fff;
+			font-family: Gilroy;
+			font-size: 2.8rem;
+			font-style: normal;
+			font-weight: 700;
+			letter-spacing: 0.056rem;
+		}
+
+		&__icon {
+			display: none;
+			width: 5rem;
+			height: auto;
+		}
+
+		.active {
+			display: flex;
+		}
+	}
+
 	.content-block {
 		gap: 6rem;
 		margin-bottom: 12rem;
 
 		&__list {
 			gap: 7rem;
+		}
+
+		&__head {
+			display: flex;
+			flex-direction: column;
+			gap: 6rem;
+			align-items: flex-start;
+
+			&-title {
+				font-size: 5rem;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				letter-spacing: 0.1rem;
+			}
+
+			&-btn {
+				width: 11rem;
+				height: 11rem;
+
+				svg {
+					width: 5rem;
+				}
+			}
 		}
 
 		&__item {
@@ -18235,7 +18323,7 @@
 			height: 0.2rem;
 
 			&--vert {
-				width: 8rem
+				width: 8rem;
 			}
 		}
 

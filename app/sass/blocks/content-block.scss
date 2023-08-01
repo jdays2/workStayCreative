@@ -4,11 +4,48 @@
 	gap: 6.9rem;
 	margin-bottom: 10rem;
 
+	&--tight {
+		.content-block__list {
+			gap: 3rem;
+		}
+	}
+
+	&__head {
+		width: 100%;
+		display: flex;
+		gap: 7rem;
+		justify-content: flex-start;
+		align-items: center;
+
+		&-btn {
+			width: 7.6rem;
+			height: 7.7rem;
+			border-radius: 50%;
+			background-color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			svg {
+				width: 2.5rem;
+			}
+		}
+
+		&-title {
+			color: #383742;
+			font-family: 'Austin Cyr';
+			font-size: 3.7rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 3.7rem;
+			letter-spacing: 0.148rem;
+		}
+	}
+
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 6rem;
-    width: 100%;
+		width: 101.5%;
 	}
 
 	&__item {
