@@ -207,7 +207,7 @@ input[type="checkbox"], input[type="radio"] {
 @font-face {
   font-family: 'Gilroy';
   src: url("Gilroy-Bold.eot");
-  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("/fonts/Gilroy-Bold.eot") format("embedded-opentype"), url("/fonts/Gilroy-Bold.woff") format("woff"), url("/fonts/Gilroy-Bold.ttf") format("truetype");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy-Bold.eot") format("embedded-opentype"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
@@ -228,14 +228,14 @@ input[type="checkbox"], input[type="radio"] {
 @font-face {
   font-family: 'Gilroy';
   src: url("Gilroy-Semibold.eot");
-  src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url("../fonts/Gilroy-Semibold.eot") format("embedded-opentype"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("truetype");
+  src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url("../fonts/Gilroy-Semibold.eot") format("embedded-opentype"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: 'Gilroy';
   src: url("Gilroy-Medium.eot");
-  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("../fonts/Gilroy-Medium.eot") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("../fonts/Gilroy-Medium.eot") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
