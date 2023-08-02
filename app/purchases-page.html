@@ -14,13 +14,17 @@
 		<link
 			href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.css"
 			rel="stylesheet" />
+
 		<link
 			rel="stylesheet"
-			href="./css/style.min.css" />
+			href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
+			<link
+			rel="stylesheet"
+			href="./css/style.min.css" />
 		<title>Главная</title>
 	</head>
 
@@ -199,7 +203,7 @@
 													<img
 														src="./img/fonts/candle.svg"
 														alt=""
-														class="fonts__filter-img" />
+														class="header-block__filter-img" />
 													<img
 														src="./img/icon/close.svg"
 														alt=""
@@ -322,361 +326,340 @@
 												</ul>
 
 												<div
-													class="filter-popup__wrapper"
+													class="filter-popup"
 													id="filter-popup">
-													<div class="filter-popup">
-														<div class="filter-popup__settings">
-															<div class="filter-popup__slider-wrapper">
-																<p class="filter-popup__title">
-																	Ценовой диапазон
-																</p>
-																<div id="price-slider"></div>
-																<input
-																	type="hidden"
-																	id="min-price"
-																	name="min-price" />
-																<input
-																	type="hidden"
-																	id="max-price"
-																	name="max-price" />
+													<div class="filter-popup__settings">
+														<div class="filter-popup__slider-wrapper">
+															<p class="filter-popup__title">
+																Ценовой диапазон
+															</p>
+															<div id="price-slider"></div>
+															<input
+																type="hidden"
+																id="min-price"
+																name="min-price" />
+															<input
+																type="hidden"
+																id="max-price"
+																name="max-price" />
 
-																<div class="filter-popup__price-value-wrapper">
-																	<p
-																		class="filter-popup__price-value"
-																		id="min-price-value"></p>
-																	<p
-																		class="filter-popup__price-value"
-																		id="max-price-value"></p>
-																</div>
-															</div>
-
-															<div class="filter-popup__type-list">
-																<p class="filter-popup__title">Тип файла</p>
-																<ul>
-																	<li>
-																		<input
-																			type="checkbox"
-																			   
-																			id="type-1" />
-																		<label
-																			for="type-1"
-																			class="filter-popup__type-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>.3DM1</span>
-																		</label>
-																	</li>
-
-																	<li>
-																		<input
-																			type="checkbox"
-																			   
-																			id="type-2" />
-																		<label
-																			for="type-2"
-																			class="filter-popup__type-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>.3DM1</span>
-																		</label>
-																	</li>
-
-																	<li>
-																		<input
-																			type="checkbox"
-																			   
-																			id="type-3" />
-																		<label
-																			for="type-3"
-																			class="filter-popup__type-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>.3DM1</span>
-																		</label>
-																	</li>
-
-																	<li>
-																		<input
-																			type="checkbox"
-																			   
-																			id="type-4" />
-																		<label
-																			for="type-4"
-																			class="filter-popup__type-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>.3DM1</span>
-																		</label>
-																	</li>
-
-																	<li>
-																		<input
-																			type="checkbox"
-																			   
-																			id="type-5" />
-																		<label
-																			for="type-5"
-																			class="filter-popup__type-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>.3DM1</span>
-																		</label>
-																	</li>
-
-																	<li>
-																		<input
-																			type="checkbox"
-																			   
-																			id="type-6" />
-																		<label
-																			for="type-6"
-																			class="filter-popup__type-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>.3DM1</span>
-																		</label>
-																	</li>
-
-																	<li>
-																		<input
-																			type="checkbox"
-																			   
-																			id="type-7" />
-																		<label
-																			for="type-7"
-																			class="filter-popup__type-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>.3DM1</span>
-																		</label>
-																	</li>
-
-																	<li>
-																		<input
-																			type="checkbox"
-																			   
-																			id="type-8" />
-																		<label
-																			for="type-8"
-																			class="filter-popup__type-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>.3DM1</span>
-																		</label>
-																	</li>
-
-																	<li>
-																		<input
-																			type="checkbox"
-																			   
-																			id="type-9" />
-																		<label
-																			for="type-9"
-																			class="filter-popup__type-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>.3DM1</span>
-																		</label>
-																	</li>
-
-																	<li>
-																		<input
-																			type="checkbox"
-																			   
-																			id="type-10" />
-																		<label
-																			for="type-10"
-																			class="filter-popup__type-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>.3DM1</span>
-																		</label>
-																	</li>
-																</ul>
-															</div>
-
-															<div class="filter-popup__features-list">
-																<p class="filter-popup__title">
-																	Характеристики
-																</p>
-																<ul>
-																	<li>
-																		<input
-																			type="checkbox"
-																			name="features"
-																			id="features-1" />
-																		<label
-																			for="features-1"
-																			class="filter-popup__features-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>Вектор</span>
-																		</label>
-																	</li>
-
-																	<li>
-																		<input
-																			type="checkbox"
-																			name="features"
-																			id="features-2" />
-																		<label
-																			for="features-2"
-																			class="filter-popup__features-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>Мозаичное</span>
-																		</label>
-																	</li>
-
-																	<li>
-																		<input
-																			type="checkbox"
-																			name="features"
-																			id="features-3" />
-																		<label
-																			for="features-3"
-																			class="filter-popup__features-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>Растр</span>
-																		</label>
-																	</li>
-
-																	<li>
-																		<input
-																			type="checkbox"
-																			name="features"
-																			id="features-4" />
-																		<label
-																			for="features-4"
-																			class="filter-popup__features-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>тип</span>
-																		</label>
-																	</li>
-
-																	<li>
-																		<input
-																			type="checkbox"
-																			name="features"
-																			id="features-5" />
-																		<label
-																			for="features-5"
-																			class="filter-popup__features-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>Веб-шрифт</span>
-																		</label>
-																	</li>
-
-																	<li>
-																		<input
-																			type="checkbox"
-																			name="features"
-																			id="features-6" />
-																		<label
-																			for="features-6"
-																			class="filter-popup__features-item">
-																			<button class="checker">
-																				<img
-																					src="./img/icon/checker-icon.svg"
-																					alt="" />
-																			</button>
-
-																			<span>тип</span>
-																		</label>
-																	</li>
-																</ul>
+															<div class="filter-popup__price-value-wrapper">
+																<p
+																	class="filter-popup__price-value"
+																	id="min-price-value"></p>
+																<p
+																	class="filter-popup__price-value"
+																	id="max-price-value"></p>
 															</div>
 														</div>
 
-														<div class="filter-popup__buttons">
-															<label class="filter-popup__close-btn">
-																<input type="button" />
-																<img
-																	src="./img/icon/close.svg"
-																	alt="" />
-															</label>
+														<div class="filter-popup__type-list">
+															<p class="filter-popup__title">Тип файла</p>
+															<ul>
+																<li>
+																	<input
+																		type="checkbox"
+																		id="type-1" />
+																	<label
+																		for="type-1"
+																		class="filter-popup__type-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
 
-															<label class="filter-popup__apply-btn-wrapper">
-																<input
-																	value="Применить"
-																	type="button"
-																	class="filter-popup__apply-btn" />
-																<img
-																	class="filter-popup__apply-icon"
-																	src="./img/icon/right-arrow-icon-white.svg"
-																	alt="" />
-															</label>
+																		<span>.3DM1</span>
+																	</label>
+																</li>
 
-															<label>
-																<input
-																	type="button"
-																	class="filter-popup__reset-btn"
-																	value="Очистить" />
-															</label>
+																<li>
+																	<input
+																		type="checkbox"
+																		id="type-2" />
+																	<label
+																		for="type-2"
+																		class="filter-popup__type-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>.3DM1</span>
+																	</label>
+																</li>
+
+																<li>
+																	<input
+																		type="checkbox"
+																		id="type-3" />
+																	<label
+																		for="type-3"
+																		class="filter-popup__type-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>.3DM1</span>
+																	</label>
+																</li>
+
+																<li>
+																	<input
+																		type="checkbox"
+																		id="type-4" />
+																	<label
+																		for="type-4"
+																		class="filter-popup__type-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>.3DM1</span>
+																	</label>
+																</li>
+
+																<li>
+																	<input
+																		type="checkbox"
+																		id="type-5" />
+																	<label
+																		for="type-5"
+																		class="filter-popup__type-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>.3DM1</span>
+																	</label>
+																</li>
+
+																<li>
+																	<input
+																		type="checkbox"
+																		id="type-6" />
+																	<label
+																		for="type-6"
+																		class="filter-popup__type-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>.3DM1</span>
+																	</label>
+																</li>
+
+																<li>
+																	<input
+																		type="checkbox"
+																		id="type-7" />
+																	<label
+																		for="type-7"
+																		class="filter-popup__type-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>.3DM1</span>
+																	</label>
+																</li>
+
+																<li>
+																	<input
+																		type="checkbox"
+																		id="type-8" />
+																	<label
+																		for="type-8"
+																		class="filter-popup__type-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>.3DM1</span>
+																	</label>
+																</li>
+
+																<li>
+																	<input
+																		type="checkbox"
+																		id="type-9" />
+																	<label
+																		for="type-9"
+																		class="filter-popup__type-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>.3DM1</span>
+																	</label>
+																</li>
+
+																<li>
+																	<input
+																		type="checkbox"
+																		id="type-10" />
+																	<label
+																		for="type-10"
+																		class="filter-popup__type-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>.3DM1</span>
+																	</label>
+																</li>
+															</ul>
 														</div>
+
+														<div class="filter-popup__features-list">
+															<p class="filter-popup__title">Характеристики</p>
+															<ul>
+																<li>
+																	<input
+																		type="checkbox"
+																		name="features"
+																		id="features-1" />
+																	<label
+																		for="features-1"
+																		class="filter-popup__features-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>Вектор</span>
+																	</label>
+																</li>
+
+																<li>
+																	<input
+																		type="checkbox"
+																		name="features"
+																		id="features-2" />
+																	<label
+																		for="features-2"
+																		class="filter-popup__features-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>Мозаичное</span>
+																	</label>
+																</li>
+
+																<li>
+																	<input
+																		type="checkbox"
+																		name="features"
+																		id="features-3" />
+																	<label
+																		for="features-3"
+																		class="filter-popup__features-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>Растр</span>
+																	</label>
+																</li>
+
+																<li>
+																	<input
+																		type="checkbox"
+																		name="features"
+																		id="features-4" />
+																	<label
+																		for="features-4"
+																		class="filter-popup__features-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>тип</span>
+																	</label>
+																</li>
+
+																<li>
+																	<input
+																		type="checkbox"
+																		name="features"
+																		id="features-5" />
+																	<label
+																		for="features-5"
+																		class="filter-popup__features-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>Веб-шрифт</span>
+																	</label>
+																</li>
+
+																<li>
+																	<input
+																		type="checkbox"
+																		name="features"
+																		id="features-6" />
+																	<label
+																		for="features-6"
+																		class="filter-popup__features-item">
+																		<button class="checker">
+																			<img
+																				src="./img/icon/checker-icon.svg"
+																				alt="" />
+																		</button>
+
+																		<span>тип</span>
+																	</label>
+																</li>
+															</ul>
+														</div>
+													</div>
+
+													<div class="filter-popup__buttons">
+														<label class="filter-popup__apply-btn-wrapper">
+															<input
+																value="Применить"
+																type="button"
+																class="filter-popup__apply-btn" />
+															<img
+																class="filter-popup__apply-icon"
+																src="./img/icon/right-arrow-icon-white.svg"
+																alt="" />
+														</label>
+
+														<label>
+															<input
+																type="button"
+																class="filter-popup__reset-btn"
+																value="Очистить" />
+														</label>
 													</div>
 												</div>
 											</div>
