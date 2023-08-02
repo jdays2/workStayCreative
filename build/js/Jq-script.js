@@ -401,6 +401,98 @@ $(document).ready(function () {
 });
 
 
+jQuery(document).ready(function ($) {
+ 
+    var maxFileSize = 2 * 1024 * 1024; // (байт) Максимальный размер файла (2мб)
+    var queue = {};
+    var form = $('form#uploadImages');
+    var imagesList = $('#uploadImagesList');
+
+    var itemPreviewTemplate = imagesList.find('.item.template').clone();
+    itemPreviewTemplate.removeClass('template');
+    imagesList.find('.item.template').remove();
+
+
+    $('#addImages').on('change', function () {
+        var files = this.files;
+
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+
+            if ( !file.type.match(/image\/(jpeg|jpg|png|gif)/) ) {
+                alert( 'Фотография должна быть в формате jpg, png или gif' );
+                continue;
+            }
+
+            if ( file.size > maxFileSize ) {
+                alert( 'Размер фотографии не должен превышать 2 Мб' );
+                continue;
+            }
+
+            preview(files[i]);
+        }
+
+        this.value = '';
+    });
+
+    // Создание превью
+    function preview(file) {
+        var reader = new FileReader();
+        reader.addEventListener('load', function(event) {
+            var img = document.createElement('img');
+
+            var itemPreview = itemPreviewTemplate.clone();
+
+            itemPreview.find('.img-wrap img').attr('src', event.target.result);
+            itemPreview.data('id', file.name);
+
+            imagesList.append(itemPreview);
+
+            queue[file.name] = file;
+
+        });
+        reader.readAsDataURL(file);
+    }
+
+    // Удаление фотографий
+    imagesList.on('click', '.delete-link', function () {
+        var item = $(this).closest('.item'),
+            id = item.data('id');
+
+        delete queue[id];
+
+        item.remove();
+    });
+
+
+    // Отправка формы
+    form.on('submit', function(event) {
+
+        var formData = new FormData(this);
+
+        for (var id in queue) {
+            formData.append('images[]', queue[id]);
+        }
+
+        $.ajax({
+            url: $(this).attr('action'),
+            type: 'POST',
+            data: formData,
+            async: true,
+            success: function (res) {
+                alert(res)
+            },
+            cache: false,
+            contentType: false,
+            processData: false
+        });
+
+        return false;
+    });
+
+});
+
+
 var dt = new DataTransfer();
 
 $('.input-file input[type=file]').on('change', function(){
@@ -415,7 +507,7 @@ $('.input-file input[type=file]').on('change', function(){
 		$files_list.append(new_file_input);
 		dt.items.add(this.files.item(i));
 	};
-	this.files = dt.files;
+	// this.files = dt.files;
 });
 
 function removeFilesItem(target){
@@ -429,6 +521,12 @@ function removeFilesItem(target){
 	}
 	input[0].files = dt.files;  
 }
+
+
+
+$('.merchandise-ar__desk input:checkbox').click(function(){
+	$('.merchandise__checkbox-strong > b').html($('.merchandise-ar__desk input:checkbox:checked').length);
+});
 
 
 
@@ -462,24 +560,18 @@ if (uploadFile) {
             console.log(url);
             caman = Caman(canvas, url, function () {
 
-                //alert('file url: ' + url);
+                // alert('file url: ' + url);
 
                 URL.revokeObjectURL(url);
                 cropper = new Cropper(canvas, {
-
+                    
                     zoomable: false,
                     viewMode: 0,
                     background: false,
                     rotatable: true,
 
-
-
-
                 });
-
-
                 document.getElementsByClassName('cover-modal__center')[0].style.display = "block";
-
                 document.getElementsByClassName('cover-modal__center-one')[0].style.display = "none";
                 document.getElementsByClassName('cover-modal__block-prev')[0].style.display = "flex";
             });
@@ -507,6 +599,7 @@ let urlAvatar;
 const uploadFileAvatar = document.getElementById('avatar-modal__upload-file');
 let imgPreview = document.querySelector('#preImg');
 let imgPreviewTwo = document.querySelector('#preImgTwo');
+let removeBtnAva = document.querySelector('.avatar-modal__block-prev');
 
 if (uploadFileAvatar) {
     uploadFileAvatar.addEventListener('change', (e) => {
@@ -519,7 +612,7 @@ if (uploadFileAvatar) {
             fileNameAvatar = fileAvatar.name;
             readerAvatar.readAsDataURL(fileAvatar);
         }
-
+        
         readerAvatar.addEventListener('load', () => {
             urlAvatar = URL.createObjectURL(fileAvatar);
             console.log(urlAvatar);
@@ -528,6 +621,7 @@ if (uploadFileAvatar) {
             img.src = event.target.result;
             img.width = 330;
             img.height = 330;
+           
             camanAvatar = Caman(canvasAvatar, urlAvatar, function () {
 
                 //alert('file url: ' + url);
@@ -537,17 +631,18 @@ if (uploadFileAvatar) {
                     viewMode: 1,
                     dragMode: 'move',
                     aspectRatio: 1,
+                    
                     autoCropArea: 0.68,
                     center: false,
-                    zoomOnWheel: false,
-                    zoomOnTouch: false,
+                   
                     cropBoxMovable: false,
                     cropBoxResizable: false,
                     guides: false,
                     minContainerWidth: 305,
                     minContainerHeight: 305,
-                    minCropBoxWidth: 266,
-                    minCropBoxHeight: 266,
+                    maxContainerWidth: 305,
+                    minCropBoxWidth: 305,
+                    minCropBoxHeight: 305,
                     ready: function () {
                         croppable = true;
                     },
@@ -578,12 +673,21 @@ if (uploadFileAvatar) {
                 document.getElementsByClassName('avatar-modal__center')[0].style.display = "block";
                 document.getElementsByClassName('avatar-modal__center-one')[0].style.display = "none";
                 document.getElementsByClassName('avatar-modal__block-prev')[0].style.display = "flex";
+                
             });
             var uploadedImageURLAvatar = URL.createObjectURL(fileAvatar);
-
+          
+           
         });
     });
 }
+
+
+
+
+$('.avatar-modal__block-prev').click(  function() {
+    $('.avatar-modal__upload-file').val('');
+});
 
 
 
@@ -671,7 +775,6 @@ $(document).on('change', '.profile-password__checkbox > input[type=checkbox]', f
             $all.prop('indeterminate', true);
     }
 });
-
 
 
 
@@ -823,96 +926,7 @@ $(".product-lk__content-faq").each(function () {
 });
 
 
-jQuery(document).ready(function ($) {
- 
-    var maxFileSize = 2 * 1024 * 1024; // (байт) Максимальный размер файла (2мб)
-    var queue = {};
-    var form = $('form#uploadImages');
-    var imagesList = $('#uploadImagesList');
 
-    var itemPreviewTemplate = imagesList.find('.item.template').clone();
-    itemPreviewTemplate.removeClass('template');
-    imagesList.find('.item.template').remove();
-
-
-    $('#addImages').on('change', function () {
-        var files = this.files;
-
-        for (var i = 0; i < files.length; i++) {
-            var file = files[i];
-
-            if ( !file.type.match(/image\/(jpeg|jpg|png|gif)/) ) {
-                alert( 'Фотография должна быть в формате jpg, png или gif' );
-                continue;
-            }
-
-            if ( file.size > maxFileSize ) {
-                alert( 'Размер фотографии не должен превышать 2 Мб' );
-                continue;
-            }
-
-            preview(files[i]);
-        }
-
-        this.value = '';
-    });
-
-    // Создание превью
-    function preview(file) {
-        var reader = new FileReader();
-        reader.addEventListener('load', function(event) {
-            var img = document.createElement('img');
-
-            var itemPreview = itemPreviewTemplate.clone();
-
-            itemPreview.find('.img-wrap img').attr('src', event.target.result);
-            itemPreview.data('id', file.name);
-
-            imagesList.append(itemPreview);
-
-            queue[file.name] = file;
-
-        });
-        reader.readAsDataURL(file);
-    }
-
-    // Удаление фотографий
-    imagesList.on('click', '.delete-link', function () {
-        var item = $(this).closest('.item'),
-            id = item.data('id');
-
-        delete queue[id];
-
-        item.remove();
-    });
-
-
-    // Отправка формы
-    form.on('submit', function(event) {
-
-        var formData = new FormData(this);
-
-        for (var id in queue) {
-            formData.append('images[]', queue[id]);
-        }
-
-        $.ajax({
-            url: $(this).attr('action'),
-            type: 'POST',
-            data: formData,
-            async: true,
-            success: function (res) {
-                alert(res)
-            },
-            cache: false,
-            contentType: false,
-            processData: false
-        });
-
-        return false;
-    });
-
-});
 
 
 
@@ -998,4 +1012,42 @@ $(".edit-g__close").click(function () {
 
 $('.discount-product__box').click(function() {
     $(this).addClass('active').siblings().removeClass('active');
+});
+
+
+
+// var main = document.querySelector('.merchandise__nav > input[type="checkbox"]'),
+//     all = document.querySelectorAll('.merchandise-ar__desk > input[type="checkbox"]');
+
+// for(var i=0; i<all.length; i++) {  // 1 и 2 пункт задачи
+//     all[i].onclick = function() {
+//         var allChecked = document.querySelectorAll('.merchandise-ar__desk > input[type="checkbox"]:checked').length;
+//         main.checked = allChecked == all.length;
+//         main.indeterminate = allChecked > 0 && allChecked < all.length;
+//     }
+// }
+
+// main.onclick = function() {  // 3
+//     for(var i=0; i<all.length; i++) {
+//         all[i].checked = this.checked;
+//     }
+// }
+
+
+
+$(document).on('change', '.merchandise-ar > input[type=checkbox]', function () {
+    var $this = $(this), $chks = $(document.getElementsByName(this.name)), $all = $chks.filter(".chk-all");
+
+    if ($this.hasClass('chk-all')) {
+        $chks.prop('checked', $this.prop('checked'));
+    } else switch ($chks.filter(":checked").length) {
+        case +$all.prop('checked'):
+            $all.prop('checked', false).prop('indeterminate', false);
+            break;
+        case $chks.length - !!$this.prop('checked'):
+            $all.prop('checked', true).prop('indeterminate', false);
+            break;
+        default:
+            $all.prop('indeterminate', true);
+    }
 });

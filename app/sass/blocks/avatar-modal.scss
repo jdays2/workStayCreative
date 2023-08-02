@@ -124,20 +124,21 @@
     }
   
   
-  #canvas-avatar{
+  // #canvas-avatar{
    
-    width: 30.5rem!important;;
-    max-width: 30.5rem!important;
-    max-height: 30.5rem!important;
-    height: 30.5rem!important;
-    overflow: hidden;
+  //   width: 30.5rem!important;;
+  //   max-width: 30.5rem!important;
+  //   max-height: 30.5rem!important;
+  //   height: 30.5rem!important;
+  //   overflow: hidden;
     
-  }
+  // }
 
 
   .cropper-container {
    
   }
+
 
   
 
@@ -180,6 +181,13 @@
   .cropper-view-box,
   .cropper-face {
     border-radius: 50%;
+  }
+
+
+
+  &__center-block-canvas-avatar {
+    max-width: 40.5rem;
+    max-height: 40.5rem;
   }
   
   

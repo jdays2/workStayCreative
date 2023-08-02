@@ -61,7 +61,6 @@
         right: -1rem;
         top: -1rem;
         cursor: pointer;
-        display: none;
         &::before {
             position: absolute;
             content:'';
@@ -83,11 +82,7 @@
         margin-right: 2rem;
     }
 
-    .item:last-child {
-        .delete-link {
-            display: block;
-        }
-    }
+  
 
     
 
