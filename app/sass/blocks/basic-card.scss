@@ -1,15 +1,13 @@
 .basic-card {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 40.5rem;
 	height: 48rem;
 	overflow: hidden;
 	position: relative;
 	cursor: pointer;
 	overflow: hidden;
 	border-radius: 3rem;
-
-
 
 	&__discount-box {
 		display: block;
@@ -18,7 +16,7 @@
 		transition: 0.55s ease-in-out;
 		right: 2rem;
 		border-radius: 100rem;
-		z-index: 10;
+		z-index: 5;
 		background: #de755e;
 		padding: 1.3rem 3rem;
 		width: 11.6rem;
@@ -115,7 +113,6 @@
 			}
 		}
 	}
-
 
 	&__wrapper {
 		display: flex;
@@ -217,7 +214,7 @@
 
 	&__date {
 		color: #383742;
-		font-family: "Gilroy";
+		font-family: 'Gilroy';
 		font-size: 2rem;
 		font-style: normal;
 		font-weight: 500;
@@ -226,12 +223,12 @@
 		position: relative;
 		padding: 1.3rem 2.8rem;
 		border-radius: 100rem;
-		background: #FFF;
+		background: #fff;
 	}
 
 	&__rubles {
 		color: #999;
-		font-family: "Gilroy";
+		font-family: 'Gilroy';
 		font-size: 2rem;
 		font-style: normal;
 		font-weight: 700;
@@ -303,36 +300,36 @@
 	}
 
 	&__price--crossed {
-    	right: 1.4rem;
+		right: 1.4rem;
 		font-weight: 400;
 		font-size: 1.6rem;
 		line-height: 1.9rem;
 		color: #999999;
 		-webkit-text-decoration-line: line-through;
-		        text-decoration-line: line-through;
-    text-decoration-thickness: 0.1rem;
-    position: relative;
+		text-decoration-line: line-through;
+		text-decoration-thickness: 0.1rem;
+		position: relative;
 
 		span {
 			font-size: 1rem;
-      top: -0.5rem;
-      left: auto;
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
-      width: fit-content;
-      right: -0.65rem;
-      position: absolute;
+			top: -0.5rem;
+			left: auto;
+			width: -webkit-fit-content;
+			width: -moz-fit-content;
+			width: fit-content;
+			right: -0.65rem;
+			position: absolute;
 			text-decoration: none;
 		}
 	}
 
 	&--correct {
 		.basic-card__price {
-			background-color: #EFD1CB;
-			color: #DE755E;
-			
+			background-color: #efd1cb;
+			color: #de755e;
+
 			span {
-				color: #DE755E;
+				color: #de755e;
 			}
 		}
 	}
@@ -369,4 +366,30 @@
 		background-color: #383742;
 		color: #fff;
 	}
+}
+
+.basic-card__price--pink-backgraund {
+	background: #ffdbd4;
+	border-radius: 3rem;
+	min-width: 11.1rem;
+	height: 6rem;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.2rem;
+
+	span {
+		font-size: 1.3rem;
+		top: -0.5rem;
+		left: 0;
+	}
+
+	.basic-card__price-ruble {
+		left: 0rem;
+	}
+}
+
+.active-status {
+	background-color: #fff;
 }

@@ -1,7 +1,7 @@
 const sortBtn = document.querySelectorAll('#sort-btn');
 const filterBtn = document.querySelector('#filter-btn');
 const sortPopUp = document.querySelectorAll('.sort-popup');
-const filterPopUp = document.querySelector('.filter-popup__wrapper');
+const filterPopUp = document.querySelector('.filter-popup');
 const filterResetBtn = document.querySelector('.filter-popup__reset-btn');
 const filterApplyBtn = document.querySelector('.filter-popup__apply-btn');
 const filterBtnIcon = document.querySelector('.header-block__filter-img');
@@ -9,10 +9,9 @@ const filterBtnActiveIcon = document.querySelector(
 	'.header-block__filter-img--alter',
 );
 const sortBtnIcon = document.querySelector('.header-block__sort-btn-icon');
-const filterCloseBtn = document.querySelector('.filter-popup__close-btn');
 
 const activeSortPopUpClass = 'sort-popup--show';
-const activeFilterPopUpClass = 'filter-popup__wrapper--show';
+const activeFilterPopUpClass = 'filter-popup--show';
 const sortBtnHideClass = 'header-block__sort--hidden';
 const sortBtnIconFlipClass = 'header-block__sort-btn-icon--flip';
 const filterBtnHiddenIcon = 'header-block__filter-img--hidden';
@@ -38,11 +37,9 @@ if (sortBtn) {
 
 //функция по смене изображений кнопок filter
 const changeIcon = (icon, newIcon) => {
-	let width = window.innerWidth;
-	if (width > 769) {
-		newIcon.classList.toggle(filterBtnHiddenIcon);
-		icon.classList.toggle(filterBtnHiddenIcon);
-	}
+	console.log(icon, newIcon);
+	newIcon.classList.toggle(filterBtnHiddenIcon);
+	icon.classList.toggle(filterBtnHiddenIcon);
 };
 
 //range slider
@@ -88,30 +85,30 @@ if (priceSlider) {
 //функция по выключению модалки
 const removeFilterActiveClass = () => {
 	filterPopUp.classList.toggle(activeFilterPopUpClass);
-
 };
 
 //функция по закрытию sort
 const closeSortHandler = () => {
 	const width = window.innerWidth;
-	if (width > 769) {
-		sortBtn.forEach((btn) => {
-			btn.classList.toggle(sortBtnHideClass);
-		});
-		sortPopUp.forEach((element) => {
-			if (element.classList.contains(activeSortPopUpClass)) {
-				iconFlip();
-				element.classList.remove(activeSortPopUpClass);
-			}
-		});
+	if (width < 769) {
+		return;
 	}
+	sortBtn.forEach((btn) => {
+		btn.classList.toggle(sortBtnHideClass);
+	});
+	sortPopUp.forEach((element) => {
+		if (element.classList.contains(activeSortPopUpClass)) {
+			iconFlip();
+			element.classList.remove(activeSortPopUpClass);
+		}
+	});
 };
 
 //показать, скрыть popUp filter
 if (filterBtn) {
 	filterBtn.addEventListener('click', () => {
-		// changeIcon(filterBtnIcon, filterBtnActiveIcon);
-		removeFilterActiveClass()
+		changeIcon(filterBtnIcon, filterBtnActiveIcon);
+		removeFilterActiveClass();
 		closeSortHandler();
 	});
 }
