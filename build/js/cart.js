@@ -10,6 +10,7 @@ const modalOpenClass = 'modal__open';
 const moveItemClass = 'cart__item--move';
 const showItemInfoClass = 'cart__item-info--show';
 const activeModalItemClass = 'modal__item--active';
+const activeAnimationClass = 'active';
 
 //обработка удаления элемента при мобильном отображении + обработка 'hover'
 if (orderItems) {
@@ -23,8 +24,7 @@ if (orderItems) {
 				!e.target.classList.contains('cart__item-license') &&
 				!e.target.classList.contains('cart__item-info-icon')
 			) {
-				item.classList.add(moveItemClass);
-				if (itemInfo?.classList.contains(showItemInfoClass)) {
+				if (itemInfo && itemInfo.classList.contains(showItemInfoClass)) {
 					itemInfo.classList.remove(showItemInfoClass);
 				}
 			}
@@ -44,9 +44,9 @@ if (orderItems) {
 			});
 
 			itemInfoIcon.addEventListener('touchstart', () => {
+				item.classList.toggle(activeAnimationClass);
 				if (window.innerWidth < 769) {
 					if (item.classList.contains(moveItemClass)) {
-						item.classList.remove(moveItemClass);
 						return;
 					}
 					itemInfo.classList.toggle(showItemInfoClass);
@@ -69,36 +69,64 @@ if (cartItems) {
 	});
 }
 
-const activeAnimationClass = 'active';
-
 if (orderItems) {
 	orderItems.forEach((element) => {
 		const handleMobileSwipe = () => {
 			let touchStartX = 0;
 			let touchEndX = 0;
+			const minSwipeDistance = 60;
 
 			element.addEventListener('touchstart', (event) => {
 				touchStartX = event.touches[0].clientX;
+				touchEndX = 0;
 			});
 
 			element.addEventListener('touchmove', (event) => {
-				touchStartX = event.touches[0].clientX;
+				touchEndX = event.touches[0].clientX;
 			});
 
 			element.addEventListener('touchend', (event) => {
-				handleSwipe(element, event);
+				if (touchStartX !== 0 && touchEndX !== 0) {
+					handleSwipe(element, event);
+					console.log(touchStartX, touchEndX);
+				}
+				touchStartX = 0;
+				touchEndX = 0;
 			});
 
 			function handleSwipe(elem, event) {
 				const swipeDistance = touchEndX - touchStartX;
 				const item = elem.querySelector('.cart__item');
-				if (swipeDistance < 30) {
+
+				if (swipeDistance < -minSwipeDistance) {
 					if (
 						!event.target.classList.contains('cart__item-info-icon') &&
 						!event.target.classList.contains('cart__item-license')
 					) {
-						item.classList.toggle(moveItemClass);
-						item.classList.toggle(activeAnimationClass);
+						if (
+							!item.classList.contains(moveItemClass) &&
+							item.classList.contains(activeAnimationClass)
+						) {
+							console.log(swipeDistance);
+							item.classList.add(moveItemClass);
+							item.classList.remove(activeAnimationClass);
+						}
+					}
+				} else if (swipeDistance > minSwipeDistance) {
+					// Обработка свайпа вправо
+					// Добавьте здесь необходимые действия для свайпа вправо
+					if (
+						!event.target.classList.contains('cart__item-info-icon') &&
+						!event.target.classList.contains('cart__item-license')
+					) {
+						if (
+							item.classList.contains(moveItemClass) &&
+							!item.classList.contains(activeAnimationClass)
+						) {
+							console.log(swipeDistance);
+							item.classList.remove(moveItemClass);
+							item.classList.add(activeAnimationClass);
+						}
 					}
 				}
 			}
