@@ -17363,6 +17363,25 @@
 			}
 		}
 
+		&__buffer {
+			width: 100%;
+			border-radius: 11rem;
+			height: 11.4rem;
+			padding: 1.2rem;
+		}
+
+		&__buffer-icon {
+			width: 9rem;
+			height: 9rem;
+			margin-right: 2.4rem;
+		}
+
+		&__buffer-text {
+			padding-right: 0;
+			font-size: 2.8rem;
+			width: 52.4rem;
+		}
+
 		.sort-popup {
 			width: 69rem;
 			right: auto;

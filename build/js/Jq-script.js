@@ -1051,3 +1051,17 @@ $(document).on('change', '.merchandise-ar > input[type=checkbox]', function () {
             $all.prop('indeterminate', true);
     }
 });
+
+
+$(".basic-card__favor--link").click(function(event) {
+    event.preventDefault();
+    navigator.clipboard.writeText($(this).attr("href"));
+ });
+
+
+ $(".basic-card__favor--link").click(function() {
+    $('.lk-favorites__buffer').show();
+    setTimeout(function() {
+      $('.lk-favorites__buffer').hide();
+    }, 1000);
+  });
