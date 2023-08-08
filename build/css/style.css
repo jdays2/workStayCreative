@@ -29886,6 +29886,8 @@ input:checked ~ .contacts__question-item-content {
   .modal__wrapper {
     padding: 6rem 3rem;
     border-radius: 6rem; }
+  .modal__cart-item {
+    width: 100%; }
   .modal--order-alert .modale__image {
     width: 11rem;
     height: 11rem;
