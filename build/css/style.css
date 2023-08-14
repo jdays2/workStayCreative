@@ -216,9 +216,19 @@ input[type="checkbox"], input[type="radio"] {
   src: url("Gilroy-Black.eot");
   src: local("Gilroy Black"), local("Gilroy-Black"), url("../fonts/Gilroy-Black.eot") format("embedded-opentype"), url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.ttf") format("truetype");
   font-weight: 900;
+  font-style: normal;
+  font-family: 'Gilroy';
+  src: url("Gilroy-Black.eot");
+  src: local("Gilroy Black"), local("Gilroy-Black"), url("../fonts/Gilroy-Black.eot") format("embedded-opentype"), url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal; }
 
 @font-face {
+  font-family: 'Gilroy';
+  src: url("Gilroy-Light.eot");
+  src: local("Gilroy Light"), local("Gilroy-Light"), url("../fonts/Gilroy-Light.eot") format("embedded-opentype"), url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
   font-family: 'Gilroy';
   src: url("Gilroy-Light.eot");
   src: local("Gilroy Light"), local("Gilroy-Light"), url("../fonts/Gilroy-Light.eot") format("embedded-opentype"), url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("truetype");
@@ -244,9 +254,19 @@ input[type="checkbox"], input[type="radio"] {
   src: url("Gilroy-MediumItalic.eot");
   src: local("Gilroy Medium Italic"), local("Gilroy-MediumItalic"), url("../fonts/Gilroy-MediumItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-MediumItalic.woff2") format("woff2"), url("../fonts/Gilroy-MediumItalic.woff") format("woff"), url("../fonts/Gilroy-MediumItalic.ttf") format("truetype");
   font-weight: 500;
+  font-style: italic;
+  font-family: 'Gilroy';
+  src: url("Gilroy-MediumItalic.eot");
+  src: local("Gilroy Medium Italic"), local("Gilroy-MediumItalic"), url("../fonts/Gilroy-MediumItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-MediumItalic.woff2") format("woff2"), url("../fonts/Gilroy-MediumItalic.woff") format("woff"), url("../fonts/Gilroy-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
   font-style: italic; }
 
 @font-face {
+  font-family: 'Gilroy';
+  src: url("Gilroy-BlackItalic.eot");
+  src: local("Gilroy Black Italic"), local("Gilroy-BlackItalic"), url("../fonts/Gilroy-BlackItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-BlackItalic.woff2") format("woff2"), url("../fonts/Gilroy-BlackItalic.woff") format("woff"), url("../fonts/Gilroy-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
   font-family: 'Gilroy';
   src: url("Gilroy-BlackItalic.eot");
   src: local("Gilroy Black Italic"), local("Gilroy-BlackItalic"), url("../fonts/Gilroy-BlackItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-BlackItalic.woff2") format("woff2"), url("../fonts/Gilroy-BlackItalic.woff") format("woff"), url("../fonts/Gilroy-BlackItalic.ttf") format("truetype");
@@ -258,9 +278,19 @@ input[type="checkbox"], input[type="radio"] {
   src: url("Gilroy-UltraLight.eot");
   src: local("Gilroy UltraLight"), local("Gilroy-UltraLight"), url("../fonts/Gilroy-UltraLight.eot") format("embedded-opentype"), url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy-UltraLight.ttf") format("truetype");
   font-weight: 200;
+  font-style: normal;
+  font-family: 'Gilroy';
+  src: url("Gilroy-UltraLight.eot");
+  src: local("Gilroy UltraLight"), local("Gilroy-UltraLight"), url("../fonts/Gilroy-UltraLight.eot") format("embedded-opentype"), url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy-UltraLight.ttf") format("truetype");
+  font-weight: 200;
   font-style: normal; }
 
 @font-face {
+  font-family: 'Gilroy';
+  src: url("Gilroy-RegularItalic.eot");
+  src: local("Gilroy Regular Italic"), local("Gilroy-RegularItalic"), url("../fonts/Gilroy-RegularItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-RegularItalic.woff2") format("woff2"), url("../fonts/Gilroy-RegularItalic.woff") format("woff"), url("../fonts/Gilroy-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
   font-family: 'Gilroy';
   src: url("Gilroy-RegularItalic.eot");
   src: local("Gilroy Regular Italic"), local("Gilroy-RegularItalic"), url("../fonts/Gilroy-RegularItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-RegularItalic.woff2") format("woff2"), url("../fonts/Gilroy-RegularItalic.woff") format("woff"), url("../fonts/Gilroy-RegularItalic.ttf") format("truetype");
@@ -272,9 +302,19 @@ input[type="checkbox"], input[type="radio"] {
   src: url("Gilroy-SemiboldItalic.eot");
   src: local("Gilroy Semibold Italic"), local("Gilroy-SemiboldItalic"), url("../fonts/Gilroy-SemiboldItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-SemiboldItalic.woff2") format("woff2"), url("../fonts/Gilroy-SemiboldItalic.woff") format("woff"), url("../fonts/Gilroy-SemiboldItalic.ttf") format("truetype");
   font-weight: 600;
+  font-style: italic;
+  font-family: 'Gilroy';
+  src: url("Gilroy-SemiboldItalic.eot");
+  src: local("Gilroy Semibold Italic"), local("Gilroy-SemiboldItalic"), url("../fonts/Gilroy-SemiboldItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-SemiboldItalic.woff2") format("woff2"), url("../fonts/Gilroy-SemiboldItalic.woff") format("woff"), url("../fonts/Gilroy-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
   font-style: italic; }
 
 @font-face {
+  font-family: 'Gilroy';
+  src: url("Gilroy-HeavyItalic.eot");
+  src: local("Gilroy Heavy Italic"), local("Gilroy-HeavyItalic"), url("../fonts/Gilroy-HeavyItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-HeavyItalic.woff2") format("woff2"), url("../fonts/Gilroy-HeavyItalic.woff") format("woff"), url("../fonts/Gilroy-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
   font-family: 'Gilroy';
   src: url("Gilroy-HeavyItalic.eot");
   src: local("Gilroy Heavy Italic"), local("Gilroy-HeavyItalic"), url("../fonts/Gilroy-HeavyItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-HeavyItalic.woff2") format("woff2"), url("../fonts/Gilroy-HeavyItalic.woff") format("woff"), url("../fonts/Gilroy-HeavyItalic.ttf") format("truetype");
@@ -286,9 +326,19 @@ input[type="checkbox"], input[type="radio"] {
   src: url("Gilroy-Extrabold.eot");
   src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"), url("../fonts/Gilroy-Extrabold.eot") format("embedded-opentype"), url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.ttf") format("truetype");
   font-weight: 800;
+  font-style: normal;
+  font-family: 'Gilroy';
+  src: url("Gilroy-Extrabold.eot");
+  src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"), url("../fonts/Gilroy-Extrabold.eot") format("embedded-opentype"), url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.ttf") format("truetype");
+  font-weight: 800;
   font-style: normal; }
 
 @font-face {
+  font-family: 'Gilroy';
+  src: url("Gilroy-BoldItalic.eot");
+  src: local("Gilroy Bold Italic"), local("Gilroy-BoldItalic"), url("../fonts/Gilroy-BoldItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-BoldItalic.woff2") format("woff2"), url("../fonts/Gilroy-BoldItalic.woff") format("woff"), url("../fonts/Gilroy-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
   font-family: 'Gilroy';
   src: url("Gilroy-BoldItalic.eot");
   src: local("Gilroy Bold Italic"), local("Gilroy-BoldItalic"), url("../fonts/Gilroy-BoldItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-BoldItalic.woff2") format("woff2"), url("../fonts/Gilroy-BoldItalic.woff") format("woff"), url("../fonts/Gilroy-BoldItalic.ttf") format("truetype");
@@ -300,9 +350,19 @@ input[type="checkbox"], input[type="radio"] {
   src: url("Gilroy-UltraLightItalic.eot");
   src: local("Gilroy UltraLight Italic"), local("Gilroy-UltraLightItalic"), url("../fonts/Gilroy-UltraLightItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-UltraLightItalic.woff2") format("woff2"), url("../fonts/Gilroy-UltraLightItalic.woff") format("woff"), url("../fonts/Gilroy-UltraLightItalic.ttf") format("truetype");
   font-weight: 200;
+  font-style: italic;
+  font-family: 'Gilroy';
+  src: url("Gilroy-UltraLightItalic.eot");
+  src: local("Gilroy UltraLight Italic"), local("Gilroy-UltraLightItalic"), url("../fonts/Gilroy-UltraLightItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-UltraLightItalic.woff2") format("woff2"), url("../fonts/Gilroy-UltraLightItalic.woff") format("woff"), url("../fonts/Gilroy-UltraLightItalic.ttf") format("truetype");
+  font-weight: 200;
   font-style: italic; }
 
 @font-face {
+  font-family: 'Gilroy';
+  src: url("Gilroy-LightItalic.eot");
+  src: local("Gilroy Light Italic"), local("Gilroy-LightItalic"), url("../fonts/Gilroy-LightItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-LightItalic.woff2") format("woff2"), url("../fonts/Gilroy-LightItalic.woff") format("woff"), url("../fonts/Gilroy-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
   font-family: 'Gilroy';
   src: url("Gilroy-LightItalic.eot");
   src: local("Gilroy Light Italic"), local("Gilroy-LightItalic"), url("../fonts/Gilroy-LightItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-LightItalic.woff2") format("woff2"), url("../fonts/Gilroy-LightItalic.woff") format("woff"), url("../fonts/Gilroy-LightItalic.ttf") format("truetype");
@@ -314,6 +374,11 @@ input[type="checkbox"], input[type="radio"] {
   src: url("Gilroy-Heavy.eot");
   src: local("Gilroy Heavy"), local("Gilroy-Heavy"), url("../fonts/Gilroy-Heavy.eot") format("embedded-opentype"), url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("truetype");
   font-weight: 900;
+  font-style: normal;
+  font-family: 'Gilroy';
+  src: url("Gilroy-Heavy.eot");
+  src: local("Gilroy Heavy"), local("Gilroy-Heavy"), url("../fonts/Gilroy-Heavy.eot") format("embedded-opentype"), url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal; }
 
 @font-face {
@@ -321,9 +386,19 @@ input[type="checkbox"], input[type="radio"] {
   src: url("Gilroy-Thin.eot");
   src: local("Gilroy Thin"), local("Gilroy-Thin"), url("../fonts/Gilroy-Thin.eot") format("embedded-opentype"), url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("truetype");
   font-weight: 100;
+  font-style: normal;
+  font-family: 'Gilroy';
+  src: url("Gilroy-Thin.eot");
+  src: local("Gilroy Thin"), local("Gilroy-Thin"), url("../fonts/Gilroy-Thin.eot") format("embedded-opentype"), url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 100;
   font-style: normal; }
 
 @font-face {
+  font-family: 'Gilroy';
+  src: url("Gilroy-ThinItalic.eot");
+  src: local("Gilroy Thin Italic"), local("Gilroy-ThinItalic"), url("../fonts/Gilroy-ThinItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-ThinItalic.woff2") format("woff2"), url("../fonts/Gilroy-ThinItalic.woff") format("woff"), url("../fonts/Gilroy-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
   font-family: 'Gilroy';
   src: url("Gilroy-ThinItalic.eot");
   src: local("Gilroy Thin Italic"), local("Gilroy-ThinItalic"), url("../fonts/Gilroy-ThinItalic.eot") format("embedded-opentype"), url("../fonts/Gilroy-ThinItalic.woff2") format("woff2"), url("../fonts/Gilroy-ThinItalic.woff") format("woff"), url("../fonts/Gilroy-ThinItalic.ttf") format("truetype");
@@ -8426,6 +8501,69 @@ main {
   padding: 0rem 6rem 18.285rem;
   background-color: #eaebef;
   width: 100%; }
+  .cart__empty {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: -15rem; }
+    .cart__empty-img {
+      width: 47.2rem;
+      height: 47.2rem; }
+      .cart__empty-img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: contain;
+        object-fit: contain; }
+    .cart__empty-massage {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+      margin-bottom: 5.5rem; }
+      .cart__empty-massage strong {
+        color: #181818;
+        font-family: Austin Cyr;
+        font-size: 3.7rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.7rem;
+        /* 100% */
+        letter-spacing: 0.148px; }
+      .cart__empty-massage p {
+        color: #383742;
+        font-family: Gilroy;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.6rem; }
+    .cart__empty-btn {
+      padding: 2.7rem 5.2rem;
+      background-color: #de755e;
+      height: 7.9rem;
+      border-radius: 100rem; }
+      .cart__empty-btn span {
+        color: white;
+        color: #fff;
+        text-align: center;
+        font-family: Gilroy;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0.04rem; }
   .cart__title {
     font-family: 'Austin Cyr';
     font-style: normal;
@@ -14201,6 +14339,69 @@ input:checked ~ .contacts__question-item-content {
   padding: 0rem 6rem 18.285rem;
   background-color: #eaebef;
   width: 100%; }
+  .cart__empty {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: -15rem; }
+    .cart__empty-img {
+      width: 47.2rem;
+      height: 47.2rem; }
+      .cart__empty-img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: contain;
+        object-fit: contain; }
+    .cart__empty-massage {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+      margin-bottom: 5.5rem; }
+      .cart__empty-massage strong {
+        color: #181818;
+        font-family: Austin Cyr;
+        font-size: 3.7rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.7rem;
+        /* 100% */
+        letter-spacing: 0.148px; }
+      .cart__empty-massage p {
+        color: #383742;
+        font-family: Gilroy;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.6rem; }
+    .cart__empty-btn {
+      padding: 2.7rem 5.2rem;
+      background-color: #de755e;
+      height: 7.9rem;
+      border-radius: 100rem; }
+      .cart__empty-btn span {
+        color: white;
+        color: #fff;
+        text-align: center;
+        font-family: Gilroy;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0.04rem; }
   .cart__title {
     font-family: 'Austin Cyr';
     font-style: normal;
@@ -20564,6 +20765,96 @@ input:checked ~ .contacts__question-item-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+
+.fault {
+  padding: 0rem 6rem 11.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .fault__img {
+    width: 71.9rem;
+    height: 67.5rem; }
+    .fault__img img {
+      -o-object-fit: contain;
+      object-fit: contain;
+      width: 100%;
+      height: 100%; }
+  .fault__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .fault__head strong {
+      color: #de755e;
+      font-family: Austin Cyr;
+      font-size: 20rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 0.75;
+      letter-spacing: 0.4rem; }
+    .fault__head p {
+      color: #181818;
+      font-family: Austin Cyr;
+      font-size: 3.7rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 3.7rem;
+      letter-spacing: 0.074rem; }
+  .fault__content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5.5rem; }
+  .fault__message {
+    color: #383742;
+    font-family: Gilroy;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.6rem;
+    width: 47.4rem; }
+  .fault__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 6rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .fault__btn {
+    padding: 2.7rem 5.2rem;
+    background-color: #de755e;
+    height: 7.9rem;
+    border-radius: 100rem; }
+    .fault__btn span {
+      color: white;
+      color: #fff;
+      text-align: center;
+      font-family: Gilroy;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.04rem; }
 
 @media only all and (max-width: 48em) {
   html {
@@ -31291,6 +31582,31 @@ input:checked ~ .contacts__question-item-content {
         margin-right: 2rem; }
   .cart {
     padding: 0rem 3rem 9.8rem; }
+    .cart__empty {
+      margin-top: -1.2rem; }
+      .cart__empty-img {
+        width: 63.2rem;
+        height: 63.2rem;
+        margin-bottom: 6rem; }
+      .cart__empty-massage {
+        gap: 2rem;
+        margin-bottom: 6rem; }
+        .cart__empty-massage strong {
+          font-size: 5rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1;
+          letter-spacing: 0.1rem; }
+        .cart__empty-massage p {
+          width: 56.4rem;
+          font-size: 2.8rem;
+          letter-spacing: 0.056rem; }
+      .cart__empty-btn {
+        height: 11rem;
+        padding: 3.8rem 10.8rem; }
+        .cart__empty-btn span {
+          font-size: 2.8rem;
+          letter-spacing: 0.056rem; }
     .cart__title {
       font-weight: 700;
       font-size: 6rem;
@@ -34490,4 +34806,53 @@ input:checked ~ .contacts__question-item-content {
       .content-block__line--vert {
         width: 8rem; }
     .content-block__arrow-icon {
-      width: 5rem; } }
+      width: 5rem; }
+  .fault {
+    padding: 0rem 3rem 14rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 8.2rem; }
+    .fault__img {
+      width: 55.2rem;
+      height: 51.8rem; }
+    .fault__content-box {
+      gap: 2rem; }
+    .fault__head strong {
+      font-size: 26rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 67%;
+      letter-spacing: 2.6px; }
+    .fault__head p {
+      font-size: 5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.1rem; }
+    .fault__message {
+      width: 100%;
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: 0.056rem;
+      margin-bottom: 3rem; }
+    .fault__btns {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      gap: 5rem;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    .fault__btn {
+      padding: 3.8rem 15.6rem;
+      height: 11rem; }
+      .fault__btn span {
+        font-size: 2.8rem;
+        font-weight: 500;
+        letter-spacing: 0.056rem; } }
