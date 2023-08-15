@@ -30178,7 +30178,18 @@ input:checked ~ .contacts__question-item-content {
     padding: 6rem 3rem;
     border-radius: 6rem; }
   .modal__cart-item {
-    width: 100%; }
+    width: 100%;
+    gap: 3.3rem;
+    padding: 3rem; }
+  .modal__cart-item-content {
+    position: relative;
+    max-width: 35.6rem; }
+  .modal__cart-item-price {
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem; }
+  .modal__cart-item-remove {
+    display: none; }
   .modal--order-alert .modale__image {
     width: 11rem;
     height: 11rem;

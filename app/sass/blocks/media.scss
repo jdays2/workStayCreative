@@ -12308,7 +12308,26 @@
 
 		&__cart-item {
 			width: 100%;
+			gap: 3.3rem;
+			padding: 3rem;
+			
 		}
+
+		&__cart-item-content {
+			position: relative;
+			max-width: 35.6rem;
+		}
+
+		&__cart-item-price {
+			position: absolute;
+			bottom: 0rem;
+			right: 0rem;
+		}
+
+		&__cart-item-remove {
+			display: none;
+		}
+		
 
 		&--order-alert {
 			.modale__image {
