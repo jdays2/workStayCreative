@@ -21,6 +21,65 @@
 		height: fit-content;
 	}
 
+	&__notation {
+		position: absolute;
+		padding: 1.4rem 1.8rem;
+		background-color: white;
+		border-radius: 100rem;
+		right: 0;
+		top: -7rem;
+
+		span {
+			color: #383742;
+			font-family: Gilroy;
+			font-size: 2rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 1;
+			letter-spacing: 0.04rem;
+		}
+	}
+	&--product-det {
+		padding-right: 0;
+		padding-left: 0;
+		height: 100%;
+		.product-card {
+			background-color: #eaebef;
+			padding-top: 10rem;
+
+			&__other-products {
+				margin: 0;
+			}
+		}
+		.modal__close {
+			margin-right: 6rem;
+		}
+
+		.product-card__head {
+			display: flex;
+			align-items: flex-end;
+			gap: 1.2rem;
+
+			.explanation {
+				margin-bottom: 1.2rem
+			}
+		}
+
+		.product-card__head {
+			position: relative;
+		}
+
+		.title__words {
+			display: flex;
+			align-items: flex-end;
+			gap: 1.2rem;
+			.explanation {
+				margin-bottom: 1.2rem
+			}
+		};
+
+	}
+
 	&__cart-item {
 		padding: 1.2rem 1.7rem;
 		padding-right: 5.4rem;
@@ -41,7 +100,7 @@
 				height: 100%;
 				width: 100%;
 				-o-object-fit: contain;
-				   object-fit: contain;
+				object-fit: contain;
 			}
 		}
 
@@ -83,7 +142,16 @@
 	}
 
 	&.active {
-		display: flex;
+		display: block;
+		overflow-y: auto;
+		overflow-x: hidden;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		-ms-overflow-style: none; /* IE и Edge */
+		scrollbar-width: none; /* Firefox */
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 
 	&__hor-list {

@@ -632,16 +632,6 @@
 							</ul>
 						</div>
 
-						<btn
-							id="files-info"
-							class="product-card__preview-link">
-							<span>Предпросмотр файла</span>
-							<div class="product-card__preview-link-img">
-								<img
-									src="./img/product-card/slider-arrow-right.svg"
-									alt="" />
-							</div>
-						</btn>
 					</div>
 
 					<div class="product-card__content-right-side">
@@ -2158,9 +2148,9 @@
 					<ul class="modal__collection-list">
 						<li class="modal__collection-item">
 							<div class="modal__collection-item-img">
-								<img
+								<!-- <img
 									src="./img/product-card/collection-modal-sample.png"
-									alt="" />
+									alt="" /> -->
 							</div>
 							<p class="modal__collection-item-title">Графика</p>
 							<button class="modal__collection-item-btn">
@@ -2652,7 +2642,7 @@
 		</div>
 
 		<!-- модалка для добавлении в корзину -->
-		<div class="modal active modal--confirm-cart">
+		<div class="modal modal--confirm-cart">
 			<div class="modal__container">
 				<button class="modal__close">
 					<img
@@ -2705,6 +2695,8 @@
 				</div>
 			</div>
 		</div>
+
+		
 
 		@@include('./template/footer.html')
 		<script src="./js/product-card.js"></script>
