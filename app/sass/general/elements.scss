@@ -1,4 +1,3 @@
-
 main {
 	padding-top: 31.6rem;
 }
@@ -7,7 +6,7 @@ main {
 	display: flex;
 	width: 28.2rem;
 	height: 7.7rem;
-	background: #FFFFFF;
+	background: #ffffff;
 	border-radius: 10rem;
 	padding: 2.6rem 3rem;
 	span {
@@ -20,7 +19,7 @@ main {
 		padding-right: 5.2rem;
 		&::before {
 			position: absolute;
-			content:'';
+			content: '';
 			width: 3.2rem;
 			top: 0.8rem;
 			height: 1.2rem;
@@ -30,9 +29,7 @@ main {
 			background-size: 100% 100%;
 		}
 	}
-
 }
-
 
 .checkbox {
 	display: block;
@@ -43,9 +40,9 @@ main {
 	line-height: 2.4rem;
 	letter-spacing: 0.02em;
 	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 	padding-left: 5.6rem;
 	padding-top: 0.55rem;
 	input {
@@ -57,88 +54,123 @@ main {
 	}
 
 	a {
-		color:#DE755E;
+		color: #de755e;
 	}
-	
-  }
-  
-  .checkmark {
+}
+
+.checkmark {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 4rem;
 	height: 4rem;
-	background: #E0E1E7;
+	background: #e0e1e7;
 	border-radius: 1rem;
-	
-  }
- 
-  
+}
 
-  
-  .checkbox:hover input ~ .checkmark {
-	background: #E0E1E7;
-  }
-  
-  .checkbox input:checked ~ .checkmark {
-	
+.checkbox:hover input ~ .checkmark {
+	background: #e0e1e7;
+}
+
+.checkbox input:checked ~ .checkmark {
 	box-shadow: 8.59504px 8.59504px 20px rgba(56, 55, 66, 0.11);
-  }
+}
 
-
-
-  
-  .checkmark:after {
-	content: "";
+.checkmark:after {
+	content: '';
 	position: absolute;
 	display: none;
-  }
-  
-  .checkbox input:checked ~ .checkmark:after {
+}
+
+.checkbox input:checked ~ .checkmark:after {
 	display: block;
-  }
-  
-  .checkbox .checkmark:after {
+}
+
+.checkbox .checkmark:after {
 	position: absolute;
-	content:'';
+	content: '';
 	background-image: url(../img/icon/check.svg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	top: 50%;
 	right: 0;
 	transform: translate(-80%, -50%);
-	
+
 	width: 1.5rem;
 	height: 1.5rem;
-  }
+}
 
 .red-btn {
 	width: auto;
 	height: 7.7rem;
-	padding:2.5rem 7.5rem ;
-	background: #DE755E;
+	padding: 2.5rem 7.5rem;
+	background: #de755e;
 	border-radius: 10rem;
 	display: flex;
-    justify-content: center;
-    align-items:center;
+	justify-content: center;
+	align-items: center;
 	span {
 		font-weight: 700;
 		font-size: 2rem;
 		line-height: 2.5rem;
-		color:#fff;
+		color: #fff;
 		text-align: center;
 		letter-spacing: 0.02em;
 	}
 }
 
+.explanation {
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	display: flex;
+	gap: 1.2rem;
+	align-items: flex-end;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	svg {
+		height: 2rem;
+		width: 2rem;
+		cursor: pointer;
+		&:hover + .explanation__info {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+	
+
+	&__info {
+		transform: translateY(-1rem);
+		opacity: 0;
+		transition: 0.4s;
+
+		color: #383742;
+		font-family: Gilroy;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 2rem;
+
+		padding: 1rem 1.4rem;
+		border-radius: 2.5rem;
+		background-color: #fae3bd;
+		box-shadow: 8.595041275024414px 5.599999904632568px 28px 0px
+			rgba(234, 235, 239, 0.8);
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+	}
+	
+}
 
 .title {
 	display: flex;
 	justify-content: space-between;
-	align-items:center;
+	align-items: center;
 	position: relative;
 	margin-bottom: 4.5em;
-	
+
 	&__words {
 		span {
 			display: block;
@@ -161,8 +193,6 @@ main {
 		}
 	}
 
-	
-
 	.link {
 		margin-top: 1.1rem;
 	}
@@ -182,7 +212,7 @@ main {
 	position: relative;
 	&::before {
 		position: absolute;
-		content:'';
+		content: '';
 		width: 3.2rem;
 		height: 1rem;
 		background-image: url(../img/icon/arrownext.svg);
@@ -191,19 +221,16 @@ main {
 		right: 0;
 		top: 32%;
 	}
-	
 }
-
-
 
 .pagination {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	&__bullets {
-		width: -webkit-fit-content!important;
-		width: -moz-fit-content!important;
-		width: fit-content!important;
+		width: -webkit-fit-content !important;
+		width: -moz-fit-content !important;
+		width: fit-content !important;
 		display: flex;
 		align-items: center;
 		.swiper-pagination-bullet {
@@ -211,12 +238,12 @@ main {
 			height: 1.4rem;
 			background: rgba(43, 47, 54, 0.3);
 			-webkit-backdrop-filter: blur(25px);
-			        backdrop-filter: blur(25px);
+			backdrop-filter: blur(25px);
 			opacity: 1;
 		}
 
 		.swiper-pagination-bullet-active {
-			background: #2B2F36;
+			background: #2b2f36;
 			width: 1.4rem;
 			height: 1.4rem;
 		}
@@ -232,17 +259,16 @@ main {
 		svg {
 			width: 3.2rem;
 			height: 1.6rem;
-			
-			transition: transform .5s ease;
+
+			transition: transform 0.5s ease;
 		}
 
 		&:hover {
 			> svg {
-			  transform: translateX(0.2rem);
-			  transition: transform .5s ease;
+				transform: translateX(0.2rem);
+				transition: transform 0.5s ease;
 			}
 		}
-		
 	}
 
 	&__prev {
@@ -251,29 +277,24 @@ main {
 		padding-right: 3rem;
 		&::before {
 			position: absolute;
-			content:'';
+			content: '';
 			right: 0;
 			top: 0;
 			width: 0.14rem;
 			background: rgba(160, 161, 164, 0.3);
 			height: 4.6rem;
 			top: 50%;
-            transform: translate(0, -50%);
+			transform: translate(0, -50%);
 		}
 	}
-
-
-	
-
 
 	&__fraction {
 		position: initial;
 		width: 22.4rem;
 		display: flex;
 		font-size: 0em;
-		
-		
-		.swiper-pagination-total  {
+
+		.swiper-pagination-total {
 			display: block;
 			font-family: 'Austin Cyr';
 			font-style: normal;
@@ -281,10 +302,7 @@ main {
 			font-size: 2.2rem;
 			line-height: 167%;
 			color: #383742;
-			
-
 		}
-
 
 		.swiper-pagination-current {
 			font-family: 'Austin Cyr';
@@ -299,46 +317,35 @@ main {
 			margin-right: 4.1rem;
 			&::before {
 				position: absolute;
-				content:'';
+				content: '';
 				width: 9.1rem;
 				height: 0.15rem;
 				right: 0;
 				top: 50%;
 				transform: translate(0, -50%);
-				background:rgba(160, 161, 164, 0.3);
+				background: rgba(160, 161, 164, 0.3);
 			}
 		}
-
-
-
-		
-
 	}
 }
-
 
 .swiper-wrapper {
 	height: auto;
 }
 
-
 .select {
-	
 	position: relative;
 	width: 40.5rem;
 	height: 4.8rem;
-	background: #EAEBEF;
+	background: #eaebef;
 	border-radius: 1rem;
 	padding: 1.4rem 2.4rem;
 	&:hover {
-	   
-
 		.header__select-head {
 			color: #242424;
-			transition: 0.2s
+			transition: 0.2s;
 		}
 	}
-	
 }
 
 .select-head {
@@ -349,10 +356,7 @@ main {
 	line-height: 125%;
 	color: #000000;
 	cursor: pointer;
-   
 }
-
-
 
 .select-head::after {
 	width: 1rem;
@@ -365,7 +369,7 @@ main {
 	transform: translateY(50%);
 	content: '';
 	display: block;
-	transition: .2s ease-in;
+	transition: 0.2s ease-in;
 	top: 1.6rem;
 }
 
@@ -375,7 +379,7 @@ main {
 
 .select-list {
 	border-radius: 1rem;
-	
+
 	display: none;
 	position: absolute;
 	top: 100%;
@@ -388,7 +392,7 @@ main {
 	z-index: 2;
 	margin: 0;
 	padding: 0;
-	background: #EAECED;
+	background: #eaeced;
 	font-weight: 400;
 	font-size: 1.6rem;
 	line-height: 125%;
@@ -396,23 +400,21 @@ main {
 
 	-ms-scroll-chaining: none;
 
-	    overscroll-behavior: contain;
+	overscroll-behavior: contain;
 }
-
-
 
 .select-list .select-item {
 	position: relative;
 	padding: 1rem 1.5rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	
+
 	cursor: pointer;
 	list-style-type: none;
 	border-bottom: 0.1rem solid rgba(189, 191, 197, 0.4);
 	&::before {
 		position: absolute;
-		content:'';
+		content: '';
 		width: 2.4rem;
 		height: 1rem;
 		right: 2rem;
@@ -430,30 +432,26 @@ main {
 	background-color: rgba(224, 229, 231, 0.5);
 }
 
-
-
 .input-error {
 	margin-top: 0.7rem;
 	font-weight: 400;
 	font-size: 1.6rem;
 	line-height: 125%;
-	color: #DE755E;
+	color: #de755e;
 	width: 100%;
 	display: none;
 
 	a {
-		color:#383742;
+		color: #383742;
 	}
 }
 
-.input-error.active{
+.input-error.active {
 	display: block;
 }
 
-
-
-
 .input-error-active {
+<<<<<<< HEAD
 	background: #FFFFFF!important;
 	border: 0.2rem solid #DE755E!important;
 	color: #DE755E!important;
@@ -582,3 +580,10 @@ main {
 		background-color: none!important;
 	}
 }
+=======
+	background: #ffffff !important;
+	border: 0.2rem solid #de755e !important;
+	color: #de755e !important;
+	box-shadow: 8.59504px 8.59504px 20px rgba(222, 117, 94, 0.11) !important;
+}
+>>>>>>> 4df2cc39 (feat: add product-card example modal)

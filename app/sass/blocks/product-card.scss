@@ -8,6 +8,9 @@
 		line-height: 7rem;
 		letter-spacing: 0.02em;
 		color: #383742;
+	}
+
+	&__head {
 		margin-bottom: 3rem;
 	}
 
@@ -277,6 +280,56 @@
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 3.4rem;
+		overflow-y: scroll;
+		height: 25.9rem;
+    max-height: 25.9rem;
+		scrollbar-width: thin;
+		padding-right: 1rem;
+		::-webkit-scrollbar {
+			width: 0.4rem; 
+			opacity: 0.5;/* Ширина скроллбара */
+		}
+
+		::-webkit-scrollbar-thumb {
+			background-color: #8d8d8daf; /* Цвет ползунка скроллбара */
+			border-radius: 0.2rem;
+			opacity: 0.5; /* Закругление углов ползунка */
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+			background-color: #8d8d8daf; /* Цвет ползунка при наведении */
+		}
+
+		/* Стилизация трека (бара, по которому передвигается ползунок) */
+		::-webkit-scrollbar-track {
+			background-color: #f1f1f1; /* Цвет трека скроллбара */
+		}
+
+		::-webkit-scrollbar-track:hover {
+			background-color: #ddd; /* Цвет трека при наведении */
+		}
+
+		&::-webkit-scrollbar {
+			width: 0.4rem;
+			opacity: 0.5; /* Ширина скроллбара для Firefox */
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: #8d8d8daf; /* Цвет ползунка скроллбара для Firefox */
+			border-radius: 0.2rem;
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: #555; /* Цвет ползунка при наведении для Firefox */
+		}
+
+		&::-webkit-scrollbar-track {
+			background-color: #f1f1f1; /* Цвет трека скроллбара для Firefox */
+		}
+
+		&::-webkit-scrollbar-track:hover {
+			background-color: #ddd; /* Цвет трека при наведении для Firefox */
+		}
 	}
 
 	&__price-license-item {

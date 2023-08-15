@@ -6072,6 +6072,7 @@
 		&__head {
 			display: flex;
 			flex-direction: column;
+			margin-bottom: 2rem;
 		}
 
 		&__reviews-slider {
@@ -6095,7 +6096,7 @@
 		&__title {
 			display: flex;
 			order: 0;
-			margin-bottom: 2rem;
+			
 
 			font-size: 6rem;
 			line-height: 7.2rem;
@@ -6114,6 +6115,8 @@
 		&__main-content {
 			display: flex;
 			flex-direction: column;
+			position: relative;
+			margin-bottom: 12rem;
 		}
 
 		&__item-main-img {
@@ -6196,13 +6199,12 @@
 		}
 
 		&__description-box {
-			top: 291.5rem;
-			position: absolute;
+			margin-top: 134rem;
 		}
 
 		&__content-right-side {
 			width: 69rem;
-			top: 131rem;
+			top: 80rem;
 			position: absolute;
 		}
 
@@ -6481,7 +6483,6 @@
 		}
 
 		&__other-products {
-			margin-top: 210rem;
 			margin-bottom: 19.45rem;
 		}
 
@@ -12304,6 +12305,11 @@
 		&__wrapper {
 			padding: 6rem 3rem;
 			border-radius: 6rem;
+		}
+
+		&--product-det {
+			padding-left: 0rem;
+			padding-right: 0rem;
 		}
 
 		&__cart-item {
