@@ -111,4 +111,51 @@
 			}
 		}
 	}
+
+	&__empty {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		align-items: center;
+		margin-top: 8.8rem;
+		margin-bottom: 26rem;
+		&-img {
+			width: 44.8rem;
+			height: 36.9rem;
+
+			img {
+				-o-object-fit: cover;
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&-message {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+			text-align: center;
+			width: 50rem;
+		}
+
+		&-title {
+			color: #181818;
+			font-family: Austin Cyr;
+			font-size: 3.7rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 3.7rem; /* 100% */
+			letter-spacing: 0.074rem;
+		}
+
+		&-subtitle {
+			color: #383742;
+			font-family: Austin Cyr;
+			font-size: 2rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 2.6rem;
+		}
+	}
 }

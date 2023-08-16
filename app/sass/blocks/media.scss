@@ -18475,6 +18475,51 @@
 		&__arrow-icon {
 			width: 5rem;
 		}
+
+		&__empty {
+			display: flex;
+			flex-direction: column;
+			gap: 3rem;
+			align-items: center;
+			margin-top: 8.8rem;
+			margin-bottom: 26rem;
+			&-img {
+				width: 64rem;
+				height: 52.7rem;
+				img {
+					-o-object-fit: cover;
+					object-fit: cover;
+					width: 100%;
+					height: 100%;
+				}
+			}
+	
+			&-message {
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+				text-align: center;
+				width: 100%;
+				align-items: center;
+			}
+	
+			&-title {
+				font-size: 5rem;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				letter-spacing: 0.1rem;
+			}
+	
+			&-subtitle {
+				font-size: 2.8rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				letter-spacing: 0.056rem;
+				width: 52.2rem;
+			}
+		}
 	}
 
 	.fault {
