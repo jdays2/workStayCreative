@@ -22,6 +22,22 @@
             color: #000000;
             border: none;
 
+            &::-webkit-input-placeholder {
+                color: #000000;
+            }
+
+            &::-moz-placeholder {
+                color: #000000;
+            }
+
+            &:-ms-input-placeholder {
+                color: #000000;
+            }
+
+            &::-ms-input-placeholder {
+                color: #000000;
+            }
+
             &::placeholder {
                 color: #000000;
             }
