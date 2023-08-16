@@ -1172,21 +1172,48 @@
 								Если у вас есть какие-то вопросы, наши менеджеры помогут вам.
 							</span>
 						</div>
+
+						<!-- Что бы выделить поле ввода при ошибке,
+							вешаем класс input-error-active непосредственно на поле input/textarea.
+							Для показа сообщения добавляем к блоку (input-error) класс (active).
+							В этом блоке ссылки <a> будут черного цвета,
+							остальной текст ошибки оранжевый согласно дизайну.
+							Текст ошибки выводиться в этот же блок, в зависимости от типа ошибки.  -->
 						<div class="contacts__form-wrap">
 							<div class="contacts__form-inner">
 								<label for="">Имя Фамилия</label>
-								<input type="text" />
+								<input
+									class="input-error-active"
+									type="text" />
+								<div class="input-error active">
+									*Текст 1.
+									<a href="">Ссылка 1.</a>
+								</div>
 							</div>
 							<div class="contacts__form-inner">
 								<label for="">E-mail</label>
-								<input type="text" />
+								<input
+									type="email"
+									class="input-error-active" />
+								<div class="input-error active">
+									*Текст 1.
+									<a href="">Ссылка 1.</a>
+								</div>
 							</div>
 						</div>
 
 						<div class="contacts__form-wrap contacts__form-wrap--form">
 							<div class="contacts__form-inner">
 								<label for="">Ваш вопрос</label>
-								<textarea type="text"></textarea>
+								<textarea
+									class="input-error-active"
+									type="text">
+日本語</textarea
+								>
+								<div class="input-error active">
+									*Текст 1.
+									<a href="">Ссылка 1.</a>
+								</div>
 							</div>
 						</div>
 
@@ -1363,8 +1390,6 @@
 									</li>
 								</ul>
 							</div>
-
-
 						</div>
 						<div class="question-block">
 							<p class="question-block__questions-title">Вопросы?</p>
@@ -1372,7 +1397,9 @@
 								Сообщите нам, если вы столкнулись с проблемой или у вас есть
 								вопрос о вашем магазине
 							</p>
-							<a href="/" class="question-block__questions-btn">
+							<a
+								href="/"
+								class="question-block__questions-btn">
 								<span>Задать вопрос</span>
 								<div class="question-block__questions-btn-img">
 									<img

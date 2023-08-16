@@ -21,8 +21,136 @@
 		height: fit-content;
 	}
 
-	&.active {
+	&__notation {
+		position: absolute;
+		padding: 1.4rem 1.8rem;
+		background-color: white;
+		border-radius: 100rem;
+		right: 0;
+		top: -7rem;
+
+		span {
+			color: #383742;
+			font-family: Gilroy;
+			font-size: 2rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 1;
+			letter-spacing: 0.04rem;
+		}
+	}
+	&--product-det {
+		padding-right: 0;
+		padding-left: 0;
+		height: 100%;
+		.product-card {
+			background-color: #eaebef;
+			padding-top: 10rem;
+
+			&__other-products {
+				margin: 0;
+			}
+		}
+		.modal__close {
+			margin-right: 6rem;
+		}
+
+		.product-card__head {
+			display: flex;
+			align-items: flex-end;
+			gap: 1.2rem;
+
+			.explanation {
+				margin-bottom: 1.2rem
+			}
+		}
+
+		.product-card__head {
+			position: relative;
+		}
+
+		.title__words {
+			display: flex;
+			gap: 1.2rem;
+			.explanation {
+				margin-bottom: 1.2rem
+			}
+		};
+
+	}
+
+	&__cart-item {
+		padding: 1.2rem 1.7rem;
+		padding-right: 5.4rem;
 		display: flex;
+		align-items: center;
+		gap: 10.3rem;
+		border-radius: 3rem;
+		background: #eaebef;
+		width: 90.2rem;
+
+		&-img {
+			width: 19.4rem;
+			height: 13.8rem;
+			border-radius: 3rem;
+			overflow: hidden;
+
+			img {
+				height: 100%;
+				width: 100%;
+				-o-object-fit: contain;
+				object-fit: contain;
+			}
+		}
+
+		&-content {
+			display: flex;
+			flex-direction: column;
+			gap: 2.2rem;
+			width: 100%;
+			p {
+				color: #999;
+				font-family: Gilroy;
+				font-size: 2rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				letter-spacing: 0.04rem;
+			}
+		}
+
+		&-row {
+			display: flex;
+			width: 100%;
+			align-items: center;
+			justify-content: space-between;
+
+			color: #383742;
+			font-family: Gilroy;
+			font-size: 2.2rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.11rem;
+			text-transform: uppercase;
+		}
+		&-remove {
+			width: 2.1rem;
+			height: 2rem;
+		}
+	}
+
+	&.active {
+		display: block;
+		overflow-y: auto;
+		overflow-x: hidden;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		-ms-overflow-style: none; /* IE и Edge */
+		scrollbar-width: none; /* Firefox */
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 
 	&__hor-list {
@@ -124,6 +252,7 @@
 		width: -webkit-fit-content;
 		width: -moz-fit-content;
 		width: fit-content;
+		margin: 0 auto;
 	}
 
 	&__close {

@@ -90,13 +90,14 @@ if (searchInputItemsPupUp) {
 		});
 	});
 }
-
-headerSearchBtn?.addEventListener('click', () => {
-	searchInputPopUp.classList.toggle(searchPupUpShowClass);
-});
-mobileSearchInputPopUpBtn?.addEventListener('click', () => {
-	mobileSearchInputPopUp.classList.toggle(searchPupUpShowClass);
-});
+if (headerSearchBtn) {
+	headerSearchBtn.addEventListener('click', () => {
+		searchInputPopUp.classList.toggle(searchPupUpShowClass);
+	});
+	mobileSearchInputPopUpBtn?.addEventListener('click', () => {
+		mobileSearchInputPopUp.classList.toggle(searchPupUpShowClass);
+	});
+}
 
 //добавляем показ register-popup
 
@@ -107,14 +108,15 @@ const modalHandler = () => {
 };
 
 let isModalActive = false;
-
-regAlertBtn?.forEach((element) => {
-	element.addEventListener('click', () => {
-		event.stopPropagation()
-		modalHandler();
-		isModalActive = true;
+if (regAlertBtn) {
+	regAlertBtn.forEach((element) => {
+		element.addEventListener('click', (event) => {
+			event.stopPropagation();
+			modalHandler();
+			isModalActive = true;
+		});
 	});
-});
+}
 
 document.addEventListener('click', (e) => {
 	if (isModalActive && !registerPopUp.contains(e.target)) {
@@ -131,42 +133,49 @@ regAlertBtnMobile?.addEventListener('click', () => {
 });
 
 //закрыть store модалку
-regModalCloseBtn?.addEventListener('click', () => {
-	regModal.classList.toggle('modal--active');
-});
+if (regModalCloseBtn) {
+	regModalCloseBtn.addEventListener('click', () => {
+		regModal.classList.toggle('modal--active');
+	});
+}
 
 //показ profile-popup
-userBtn?.addEventListener('click', () => {
-	if (window.innerWidth > 768) {
-		profilePopUp.classList.toggle(profilePopUpClass);
-	} else {
-		profileMobilePopUp.classList.toggle(profileMobilePopUpShowClass);
-	}
-});
-
-profilePopUpCloseBtn?.addEventListener('click', () => {
-	profilePopUp.classList.remove(profilePopUpClass);
-});
+if (userBtn) {
+	userBtn.addEventListener('click', () => {
+		if (window.innerWidth > 768) {
+			profilePopUp.classList.toggle(profilePopUpClass);
+		} else {
+			profileMobilePopUp.classList.toggle(profileMobilePopUpShowClass);
+		}
+	});
+}
+if (profilePopUpCloseBtn) {
+	profilePopUpCloseBtn.addEventListener('click', () => {
+		profilePopUp.classList.remove(profilePopUpClass);
+	});
+}
 
 //открыть, закрыть информация popup, desktop and mobile
-infoBtn?.addEventListener('click', () => {
-	const currentWidth = window.innerWidth;
-	if (currentWidth > 768) {
-		if (categorysPopUp.classList.contains(categorysPopUpClass)) {
-			categorysPopUp.classList.remove(categorysPopUpClass);
+if (infoBtn) {
+	infoBtn.addEventListener('click', () => {
+		const currentWidth = window.innerWidth;
+		if (currentWidth > 768) {
+			if (categorysPopUp.classList.contains(categorysPopUpClass)) {
+				categorysPopUp.classList.remove(categorysPopUpClass);
 
-			const otherWrapper = categorysPopUpBnt.parentNode;
-			otherWrapper.classList.toggle(itemClass);
-			otherWrapper.classList.toggle(activeItemClass);
+				const otherWrapper = categorysPopUpBnt.parentNode;
+				otherWrapper.classList.toggle(itemClass);
+				otherWrapper.classList.toggle(activeItemClass);
+			}
+			const wrapper = infoBtn.parentNode;
+			wrapper.classList.toggle(itemClass);
+			wrapper.classList.toggle(activeItemClass);
+			infoPopUp.classList.toggle(infoPopupClass);
+			return;
 		}
-		const wrapper = infoBtn.parentNode;
-		wrapper.classList.toggle(itemClass);
-		wrapper.classList.toggle(activeItemClass);
-		infoPopUp.classList.toggle(infoPopupClass);
-		return;
-	}
-	mobileInfoPopUp.classList.add(burgerCategoryPopUpClass);
-});
+		mobileInfoPopUp.classList.add(burgerCategoryPopUpClass);
+	});
+}
 
 //добавлять active-status на Input
 let currentWidth = window.innerWidth;
@@ -199,66 +208,74 @@ if (currentWidth > 768) {
 }
 
 //показать, закрыть категории popup
-categorysPopUpBnt?.addEventListener('click', () => {
-	const currentWidth = window.innerWidth;
-	if (currentWidth > 768) {
-		if (infoPopUp.classList.contains(infoPopupClass)) {
-			infoPopUp.classList.remove(infoPopupClass);
+if (categorysPopUpBnt) {
+	categorysPopUpBnt.addEventListener('click', () => {
+		const currentWidth = window.innerWidth;
+		if (currentWidth > 768) {
+			if (infoPopUp.classList.contains(infoPopupClass)) {
+				infoPopUp.classList.remove(infoPopupClass);
 
-			const otherWrapper = infoBtn.parentNode;
-			otherWrapper.classList.toggle(itemClass);
-			otherWrapper.classList.toggle(activeItemClass);
+				const otherWrapper = infoBtn.parentNode;
+				otherWrapper.classList.toggle(itemClass);
+				otherWrapper.classList.toggle(activeItemClass);
+			}
+			const wrapper = categorysPopUpBnt.parentNode;
+			wrapper.classList.toggle(itemClass);
+			wrapper.classList.toggle(activeItemClass);
+			categorysPopUp.classList.toggle(categorysPopUpClass);
+			return;
+		} else {
+			mobileCategPopUp.classList.add(burgerCategoryPopUpClass);
 		}
-		const wrapper = categorysPopUpBnt.parentNode;
-		wrapper.classList.toggle(itemClass);
-		wrapper.classList.toggle(activeItemClass);
-		categorysPopUp.classList.toggle(categorysPopUpClass);
-		return;
-	} else {
-		mobileCategPopUp.classList.add(burgerCategoryPopUpClass);
-	}
-});
+	});
+}
 
 //расскрыть, закрыть список категорий в popup
-categorysTitle?.forEach((element) => {
-	element.addEventListener('click', () => {
-		const list = element.nextElementSibling;
-		list.classList.toggle(showParentListClass);
+if (categorysTitle) {
+	categorysTitle.forEach((element) => {
+		element.addEventListener('click', () => {
+			const list = element.nextElementSibling;
+			list.classList.toggle(showParentListClass);
+		});
 	});
-});
+}
 
 //открыть, закрыть бургер-меню
-burgerBtn?.addEventListener('click', () => {
-	header.classList.toggle('header--active');
-	const openPopUps = document.querySelectorAll('.burger__categ-item--show');
-	if (openPopUps) {
-		openPopUps.forEach((popup) => {
-			popup.classList.remove(burgerCategoryPopUpClass);
-		});
-	}
+if (burgerBtn) {
+	burgerBtn.addEventListener('click', () => {
+		header.classList.toggle('header--active');
+		const openPopUps = document.querySelectorAll('.burger__categ-item--show');
+		if (openPopUps) {
+			openPopUps.forEach((popup) => {
+				popup.classList.remove(burgerCategoryPopUpClass);
+			});
+		}
 
-	burgerBtn.classList.toggle(activeBurgerClass);
-	burgerNav.classList.toggle(showBurgerClass);
-});
+		burgerBtn.classList.toggle(activeBurgerClass);
+		burgerNav.classList.toggle(showBurgerClass);
+	});
+}
 
 //закрыть попап бургер-меню
-burgerPopUpBtn?.forEach((element) => {
-	element.addEventListener('click', () => {
-		const parent = element.closest('.burger__categ-item--show');
-		parent.classList.remove(burgerCategoryPopUpClass);
+if (burgerPopUpBtn) {
+	burgerPopUpBtn.forEach((element) => {
+		element.addEventListener('click', () => {
+			const parent = element.closest('.burger__categ-item--show');
+			parent.classList.remove(burgerCategoryPopUpClass);
+		});
 	});
-});
-
+}
 //открыть, закрыть search попап бургер-меню
-
-mobileSearchBtn?.addEventListener('click', () => {
-	mobileSearchPopUp.classList.add(mobileSerchPopUpClass);
-});
-
-mobileSearchPopUpCloseBtn?.addEventListener('click', () => {
-	mobileSearchPopUp.classList.remove(mobileSerchPopUpClass);
-});
-
+if (mobileSearchBtn) {
+	mobileSearchBtn.addEventListener('click', () => {
+		mobileSearchPopUp.classList.add(mobileSerchPopUpClass);
+	});
+}
+if (mobileSearchPopUpCloseBtn) {
+	mobileSearchPopUpCloseBtn.addEventListener('click', () => {
+		mobileSearchPopUp.classList.remove(mobileSerchPopUpClass);
+	});
+}
 //добавление тени для header при скроле
 window.addEventListener('scroll', () => {
 	if (window.scrollY > 0) {
@@ -269,22 +286,25 @@ window.addEventListener('scroll', () => {
 });
 
 //переключение активной вкладки
-profileMobilePopUpCloseBtn?.addEventListener('click', () => {
-	profileMobilePopUp.classList.toggle(profileMobilePopUpShowClass);
-});
+if (profileMobilePopUpCloseBtn) {
+	profileMobilePopUpCloseBtn.addEventListener('click', () => {
+		profileMobilePopUp.classList.toggle(profileMobilePopUpShowClass);
+	});
+}
 
 const items = profileMobilePopUpList.querySelectorAll('.header__profile-link');
-
-items?.forEach((element) => {
-	element.addEventListener('click', () => {
-		if (!element.classList.contains(profileMobilePopUpActiveItem)) {
-			const currentItem = document.querySelectorAll(
-				'.' + profileMobilePopUpActiveItem,
-			);
-			currentItem.forEach((el) => {
-				el.classList.remove(profileMobilePopUpActiveItem);
-			});
-			element.classList.add(profileMobilePopUpActiveItem);
-		}
+if (items) {
+	items.forEach((element) => {
+		element.addEventListener('click', () => {
+			if (!element.classList.contains(profileMobilePopUpActiveItem)) {
+				const currentItem = document.querySelectorAll(
+					'.' + profileMobilePopUpActiveItem,
+				);
+				currentItem.forEach((el) => {
+					el.classList.remove(profileMobilePopUpActiveItem);
+				});
+				element.classList.add(profileMobilePopUpActiveItem);
+			}
+		});
 	});
-});
+}

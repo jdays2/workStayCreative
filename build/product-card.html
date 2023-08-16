@@ -1731,16 +1731,6 @@
 							</ul>
 						</div>
 
-						<btn
-							id="files-info"
-							class="product-card__preview-link">
-							<span>Предпросмотр файла</span>
-							<div class="product-card__preview-link-img">
-								<img
-									src="./img/product-card/slider-arrow-right.svg"
-									alt="" />
-							</div>
-						</btn>
 					</div>
 
 					<div class="product-card__content-right-side">
@@ -3257,8 +3247,9 @@
 					<ul class="modal__collection-list">
 						<li class="modal__collection-item">
 							<div class="modal__collection-item-img">
+								<!-- изображение sample, если создаем новую коллекцию и в ней нет изображений -->
 								<img
-									src="./img/product-card/collection-modal-sample.png"
+									src="./img/product-card/sample-col.png"
 									alt="" />
 							</div>
 							<p class="modal__collection-item-title">Графика</p>
@@ -3287,12 +3278,10 @@
 					</ul>
 
 					<div class="modal__buttons">
-						<button class="modal__collection-item-btn">
-							<span>Сохранить</span>
-						</button>
+				
 
 						<button
-							class="modal__collections-create-btn"
+							class="modal__collection-item-btn"
 							id="create-new-collection">
 							<span>Создать новую коллекцию</span>
 						</button>
@@ -3727,7 +3716,7 @@
 		modal__close скрывает модалку. Иконка is-done-icon (галочка) - при одобрении или успешном
 		выполнении какого-то действия. Иконка exclamation-icon (восклицательный знак) - при проблеме, ошибке и тп.
 		-->
-		<div class="modal active modal--confirm-question">
+		<div class="modal modal--confirm-question">
 			<div class="modal__container">
 				<button class="modal__close">
 					<img
@@ -3749,6 +3738,63 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- модалка для добавлении в корзину -->
+		<div class="modal modal--confirm-cart">
+			<div class="modal__container">
+				<button class="modal__close">
+					<img
+						src="./img/icon/close.svg"
+						alt="" />
+				</button>
+				<div class="modal__box">
+					<div class="modal__icon">
+						<img
+							src="./img/icon/basket-icon-white.svg"
+							alt="" />
+					</div>
+
+					<p class="modal__title">Товар в корзине</p>
+
+					<div class="modal__cart-item">
+						<div class="modal__cart-item-img">
+							<img
+								src="./img/product-card/collection-modal-sample.png"
+								alt="" />
+						</div>
+						<div class="modal__cart-item-content">
+							<div class="modal__cart-item-row">
+								<span>Digital Ads-лицензия</span>
+								<span class="modal__cart-item-price">4500₽</span>
+								<div class="modal__cart-item-remove">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 21 20"
+										fill="none">
+										<path
+											d="M17.3338 16.2198C17.4035 16.2895 17.4587 16.3722 17.4964 16.4632C17.5342 16.5543 17.5536 16.6519 17.5536 16.7504C17.5536 16.849 17.5342 16.9465 17.4964 17.0376C17.4587 17.1286 17.4035 17.2114 17.3338 17.281C17.2641 17.3507 17.1814 17.406 17.0903 17.4437C16.9993 17.4814 16.9017 17.5008 16.8032 17.5008C16.7046 17.5008 16.607 17.4814 16.516 17.4437C16.4249 17.406 16.3422 17.3507 16.2725 17.281L10.0532 11.0607L3.83378 17.281C3.69305 17.4218 3.50217 17.5008 3.30315 17.5008C3.10413 17.5008 2.91326 17.4218 2.77253 17.281C2.6318 17.1403 2.55273 16.9494 2.55273 16.7504C2.55273 16.5514 2.6318 16.3605 2.77253 16.2198L8.99284 10.0004L2.77253 3.78104C2.6318 3.64031 2.55273 3.44944 2.55273 3.25042C2.55273 3.05139 2.6318 2.86052 2.77253 2.71979C2.91326 2.57906 3.10413 2.5 3.30315 2.5C3.50217 2.5 3.69305 2.57906 3.83378 2.71979L10.0532 8.94011L16.2725 2.71979C16.4133 2.57906 16.6041 2.5 16.8032 2.5C17.0022 2.5 17.193 2.57906 17.3338 2.71979C17.4745 2.86052 17.5536 3.05139 17.5536 3.25042C17.5536 3.44944 17.4745 3.64031 17.3338 3.78104L11.1135 10.0004L17.3338 16.2198Z"
+											fill="black" />
+									</svg>
+								</div>
+							</div>
+							<p>Продавец Vasiliy123</p>
+						</div>
+					</div>
+
+					<div class="modal__buttons">
+						<button class="modal__collection-item-btn">
+							<span>Перейти в корзину</span>
+						</button>
+
+						<button class="modal__collections-create-btn">
+							<span>Продолжить покупки</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
 
 		
 
