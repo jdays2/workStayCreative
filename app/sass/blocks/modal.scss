@@ -71,7 +71,6 @@
 
 		.title__words {
 			display: flex;
-			align-items: flex-end;
 			gap: 1.2rem;
 			.explanation {
 				margin-bottom: 1.2rem
@@ -253,6 +252,7 @@
 		width: -webkit-fit-content;
 		width: -moz-fit-content;
 		width: fit-content;
+		margin: 0 auto;
 	}
 
 	&__close {
