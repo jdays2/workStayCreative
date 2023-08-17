@@ -8,6 +8,7 @@ const registerCloseBtn = document.querySelector(
 const profilePopUpCloseBtn = document.querySelector(
 	'.header__profile-bar-button',
 );
+const resultsPopUp = document.querySelector('.header__results-popup');
 const regModal = document.querySelector('.header__store-modal');
 const regModalCloseBtn = document.querySelector('#register-modal-btn');
 const storeBtn = document.querySelector('.header__store');
@@ -69,7 +70,6 @@ const burgerCategoryPopUpClass = 'burger__categ-item--show';
 const mobileSerchPopUpClass = 'burger__search--show';
 const headerShadowClass = 'header__wrapper--scroll';
 const searchItemPupUpActiveClass = 'header__search-popup-item--active';
-const searchPupUpShowClass = 'header__search-popup--show';
 const profileMobilePopUpShowClass = 'header__profile-wrapper--show';
 const profileMobilePopUpActiveItem = 'header__profile-link--active';
 
@@ -91,12 +91,15 @@ if (searchInputItemsPupUp) {
 	});
 }
 if (headerSearchBtn) {
+	const activeClass = 'active';
 	headerSearchBtn.addEventListener('click', () => {
-		searchInputPopUp.classList.toggle(searchPupUpShowClass);
+		searchInputPopUp.classList.toggle(activeClass);
 	});
-	mobileSearchInputPopUpBtn?.addEventListener('click', () => {
-		mobileSearchInputPopUp.classList.toggle(searchPupUpShowClass);
-	});
+	if (mobileSearchInputPopUpBtn) {
+		mobileSearchInputPopUpBtn.addEventListener('click', () => {
+			mobileSearchInputPopUp.classList.toggle(activeClass);
+		});
+	}
 }
 
 //добавляем показ register-popup
@@ -306,5 +309,18 @@ if (items) {
 				element.classList.add(profileMobilePopUpActiveItem);
 			}
 		});
+	});
+}
+
+//показ результатов поиска
+if (input) {
+	const activeClass = 'active';
+	input.addEventListener('input', (e) => {
+		const element = e.target;
+		if (!!element.value) {
+			resultsPopUp.classList.add(activeClass);
+		} else {
+			resultsPopUp.classList.remove(activeClass);
+		}
 	});
 }
