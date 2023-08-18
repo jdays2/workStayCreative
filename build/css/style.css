@@ -9647,7 +9647,7 @@ main {
             justify-content: space-between;
     padding: 2.3rem 2.2rem;
     background-color: #fff;
-    border-radius: 3rem;
+    border-radius: 3rem 3rem 0 0;
     z-index: 3;
     height: 9.9rem; }
   .basic-card__price {
@@ -9741,12 +9741,28 @@ main {
       font-size: 2rem;
       line-height: 2.4rem;
       letter-spacing: 0.02em;
-      color: #999999; }
+      color: #999999;
+      width: 24rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
   .basic-card__img {
-    width: 100%;
+    width: 40.5rem;
+    height: 48rem;
+    border-radius: 3rem;
+    overflow: hidden;
     z-index: 2;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    top: 0;
+    position: relative;
     -webkit-transition: 0.55s ease-in-out;
     transition: 0.55s ease-in-out; }
+    .basic-card__img img {
+      -o-object-fit: cover;
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
   .basic-card__price--crossed {
     right: 1.4rem;
     font-weight: 400;
@@ -9775,7 +9791,7 @@ main {
 
 @media (hover: hover) {
   .basic-card:hover .basic-card__img {
-    margin-top: 9.7rem; }
+    top: 9.7rem; }
   .basic-card:hover .basic-card__discount-box {
     top: 11.7rem; }
   .basic-card:hover .basic-card__link img {
@@ -14627,9 +14643,9 @@ input:checked ~ .contacts__question-item-content {
       min-height: fit-content; }
 
 @media (hover: hover) {
-  .basic-card__price:hover {
+  .free .basic-card__price:hover {
     background-color: #de755e; }
-    .basic-card__price:hover svg path {
+    .free .basic-card__price:hover svg path {
       fill: white; } }
 
 .cart {
@@ -15506,7 +15522,7 @@ input:checked ~ .contacts__question-item-content {
             justify-content: space-between;
     padding: 2.3rem 2.2rem;
     background-color: #fff;
-    border-radius: 3rem;
+    border-radius: 3rem 3rem 0 0;
     z-index: 3;
     height: 9.9rem; }
   .basic-card__price {
@@ -15600,12 +15616,28 @@ input:checked ~ .contacts__question-item-content {
       font-size: 2rem;
       line-height: 2.4rem;
       letter-spacing: 0.02em;
-      color: #999999; }
+      color: #999999;
+      width: 24rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
   .basic-card__img {
-    width: 100%;
+    width: 40.5rem;
+    height: 48rem;
+    border-radius: 3rem;
+    overflow: hidden;
     z-index: 2;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    top: 0;
+    position: relative;
     -webkit-transition: 0.55s ease-in-out;
     transition: 0.55s ease-in-out; }
+    .basic-card__img img {
+      -o-object-fit: cover;
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
   .basic-card__price--crossed {
     right: 1.4rem;
     font-weight: 400;
@@ -15634,7 +15666,7 @@ input:checked ~ .contacts__question-item-content {
 
 @media (hover: hover) {
   .basic-card:hover .basic-card__img {
-    margin-top: 9.7rem; }
+    top: 9.7rem; }
   .basic-card:hover .basic-card__discount-box {
     top: 11.7rem; }
   .basic-card:hover .basic-card__link img {
@@ -24809,7 +24841,7 @@ input:checked ~ .contacts__question-item-content {
     width: 4.6rem;
     height: 4.6rem; }
   .basic-card {
-    width: 100%;
+    width: 69rem !important;
     height: 79.4rem;
     border-radius: 6rem;
     overflow: hidden; }
@@ -24868,7 +24900,10 @@ input:checked ~ .contacts__question-item-content {
       line-height: normal;
       letter-spacing: 0.064rem; }
     .basic-card__img {
-      margin-top: 15.03rem; }
+      margin-top: 15.03rem;
+      width: 100%;
+      border-radius: 6rem 6rem 0 0;
+      height: 55.88rem; }
     .basic-card__type {
       width: 44.2rem;
       height: 13rem;
@@ -34900,6 +34935,8 @@ input:checked ~ .contacts__question-item-content {
         font-weight: 500;
         line-height: 3.6rem;
         padding: 2.6rem 4.4rem; }
+      .free .basic-card__link span {
+        width: 42rem; }
       .free .basic-card__price {
         background-color: #de755e; }
         .free .basic-card__price svg {
