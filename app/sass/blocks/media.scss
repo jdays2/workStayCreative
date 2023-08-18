@@ -4773,7 +4773,7 @@
 	}
 
 	.basic-card {
-		width: 100%;
+		width: 69rem !important;
 		height: 79.4rem;
 		border-radius: 6rem;
 		overflow: hidden;
@@ -4855,6 +4855,9 @@
 
 		&__img {
 			margin-top: 15.03rem;
+			width: 100%;
+			border-radius: 6rem 6rem 0 0;
+			height: 55.88rem;
 		}
 
 		&__type {
@@ -18050,6 +18053,12 @@
 				font-weight: 500;
 				line-height: 3.6rem;
 				padding: 2.6rem 4.4rem;
+			}
+
+			&__link {
+				span {
+					width: 42rem;
+				}
 			}
 
 			&__price {

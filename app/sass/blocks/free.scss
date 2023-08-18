@@ -576,12 +576,14 @@
 }
 
 @media (hover: hover) {
-	.basic-card__price:hover {
-		background-color: #de755e;
+	.free {
+		.basic-card__price:hover {
+			background-color: #de755e;
 
-		svg {
-			path {
-				fill: white;
+			svg {
+				path {
+					fill: white;
+				}
 			}
 		}
 	}
