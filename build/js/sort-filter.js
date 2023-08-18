@@ -71,10 +71,10 @@ const updatePriceOutput = (values, handle) => {
 			minPointer.classList.remove('noUi-handle-lower--min');
 		}
 
-		minPriceOutput.textContent = Math.round(values[handle]);
+		minPriceOutput.value = Math.round(values[handle]) > 0  ? `${Math.round(values[handle])}₽` : '';
 	}
 	if (handle === 1) {
-		maxPriceOutput.textContent = Math.round(values[handle]);
+		maxPriceOutput.value = `${Math.round(values[handle])}₽`;
 	}
 };
 

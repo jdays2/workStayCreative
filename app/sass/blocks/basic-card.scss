@@ -264,6 +264,10 @@
 		line-height: 2.4rem;
 		letter-spacing: 0.02em;
 		color: #181818;
+		width: 23rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 	}
 
 	&__discription {

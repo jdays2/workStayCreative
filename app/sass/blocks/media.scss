@@ -4816,6 +4816,13 @@
 				}
 			}
 
+			&__title {
+				width: 42rem;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
 			.basic-card__discount-price {
 				strong {
 					font-size: 3rem;
@@ -4923,6 +4930,10 @@
 				font-weight: 500;
 				font-size: 2.8rem;
 				line-height: 3.2rem;
+				width: 43rem;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
 			}
 		}
 
