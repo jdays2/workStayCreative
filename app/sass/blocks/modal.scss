@@ -11,6 +11,14 @@
 	justify-content: center;
 	align-items: center;
 
+	&--full {
+		-webkit-backdrop-filter: none;
+		backdrop-filter: none;
+		background: #eaebef;
+		left: 0;
+		top: 0;
+	}
+
 	&__wrapper {
 		position: relative;
 		width: -webkit-fit-content;
@@ -61,7 +69,7 @@
 			gap: 1.2rem;
 
 			.explanation {
-				margin-bottom: 1.2rem
+				margin-bottom: 1.2rem;
 			}
 		}
 
@@ -73,10 +81,9 @@
 			display: flex;
 			gap: 1.2rem;
 			.explanation {
-				margin-bottom: 1.2rem
+				margin-bottom: 1.2rem;
 			}
-		};
-
+		}
 	}
 
 	&__cart-item {
