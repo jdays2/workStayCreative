@@ -3,9 +3,9 @@ const newsBlock = document.querySelector('#news-block');
 const storeBlock = document.querySelector('#store-block');
 
 const activePart = 'product-card__active-block';
-const activeClass = 'product-card__title-item--active';
 
 if (titleItems) {
+	const activeClass = 'product-card__title-item--active';
 	titleItems.forEach((element) => {
 		element.addEventListener('click', (e) => {
 			if (!e.target.classList.contains(activeClass)) {

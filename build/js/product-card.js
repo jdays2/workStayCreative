@@ -1,10 +1,7 @@
-const licensItems = document.querySelectorAll(
-	'.product-card__price-license-item',
-);
 const mainSliderItems = document.querySelectorAll(
 	'.product-card__item-main-img',
 );
-const licensList = document.querySelector('.product-card__price-license-list');
+
 const handlers = document.querySelectorAll(
 	'.product-card .product-card__title-item',
 );
@@ -49,7 +46,6 @@ const modalFiles = document.querySelector('.modal--files');
 const modalFilesBtn = document.querySelector('#files-info');
 
 const activeBlock = 'product-card__active-block';
-const activeLicensItemClass = 'product-card__price-license-item--active';
 const activeHandlerClass = 'product-card__title-item--active';
 const rewiesPopUpShow = 'product-card__settings-popup--show';
 const activeModalFormList = 'modal__form-popup-wrapper--active';
@@ -98,24 +94,6 @@ swiper2.on('slideChange', function () {
 	modalSwipper.slideTo(activeSlideIndex); // Перемещаем модальный свайпер к активному слайду
 });
 
-//изменение активного элемента в выборе лицензии
-if (licensItems) {
-	licensItems.forEach((element) => {
-		let itemClass = element.classList;
-
-		const removePrevios = () => {
-			const ativeItem = licensList.querySelector('.' + activeLicensItemClass);
-			ativeItem.classList.remove(activeLicensItemClass);
-		};
-
-		element.addEventListener('click', () => {
-			if (!itemClass.contains(activeLicensItemClass)) {
-				removePrevios();
-				itemClass.add(activeLicensItemClass);
-			}
-		});
-	});
-}
 //смена отображения характеристик/описания и тд
 if (handlers) {
 	handlers.forEach((element) => {
