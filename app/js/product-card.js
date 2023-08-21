@@ -238,6 +238,7 @@ if (closeBtn) {
 		});
 	});
 }
+
 //показ добавление в закладки modal
 if (bookmarksBtns) {
 	bookmarksBtns.forEach((element) => {

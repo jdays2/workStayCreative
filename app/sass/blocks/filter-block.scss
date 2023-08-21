@@ -62,6 +62,26 @@
 		display: flex;
 		flex-direction: column;
 		gap: 2.3rem;
+
+		&.active {
+			.filter-block__search {
+				display: block;
+			}
+
+			.filter-block__box-list {
+				max-height: 54.4rem;
+				overflow-y: auto;
+
+				&::-webkit-scrollbar {
+					width: 0.2rem;
+				}
+
+				&::-webkit-scrollbar-thumb {
+					border-radius: 0.3rem;
+					background: #d9d9d9;
+				}
+			}
+		}
 	}
 
 	&__red-btn {
@@ -91,13 +111,14 @@
 	&__search {
 		border-radius: 100rem;
 		background: #eaebef;
-		height: 6rem;
 		width: 100%;
+		height: 6rem;
 		padding: 2.1rem 2.5rem;
 		border: none;
 		outline: none;
+		display: none;
 
-		color: #a5a5a9;
+		color: #383742;
 		font-family: Gilroy;
 		font-size: 1.6rem;
 		font-style: normal;
@@ -110,6 +131,18 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1.6rem;
+		max-height: 26.4rem;
+		overflow-y: hidden;
+		padding-right: 1rem;
+		transition: max-height 0.4s;
+	}
+
+	&__close-text,
+	&__open-text {
+		display: none;
+		&.active {
+			display: inline-block;
+		}
 	}
 
 	&__box-item {
@@ -117,7 +150,6 @@
 		gap: 1.2rem;
 		align-items: center;
 		justify-content: flex-start;
-		cursor: pointer;
 
 		label {
 			display: flex;
@@ -136,17 +168,17 @@
 		display: none;
 	}
 
-	.filter-block__item {
+	.filter-block__box-item {
 		input:checked + .checker img {
-			display: block;
+			display: block !important;
+			
 		}
 	}
 
-	.filter-block__item
-		input:checked
-		+ .filter-block__label
-		.filter-block__checker {
-		box-shadow: 0.86rem 0.86rem 2rem rgba(103, 110, 133, 0.2);
+	.filter-block__box-item {
+		input:checked + .checker{
+			box-shadow: 0.86rem 0.86rem 2rem rgba(103, 110, 133, 0.2);
+		}
 	}
 
 	&__title {
@@ -157,6 +189,16 @@
 		font-weight: 700;
 		line-height: normal;
 		letter-spacing: 0.04rem;
+	}
+
+	&__item-title {
+		color: #383742;
+		font-family: Gilroy;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 2rem;
+		cursor: pointer;
 	}
 
 	&__white-btn {
@@ -186,7 +228,7 @@
 		background: #de755e;
 		box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.3);
 		border-radius: 50%;
-		cursor: default;
+		cursor: pointer;
 		width: 1.4rem;
 		height: 1.4rem;
 
