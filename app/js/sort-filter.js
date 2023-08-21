@@ -99,9 +99,9 @@ const closeSortHandler = () => {
 
 //обработка filter-block
 const filterItems = document.querySelectorAll('.filter-block__item');
-const activeClass = 'active';
 
 if (filterItems) {
+	const activeClass = 'active';
 	filterItems.forEach((item) => {
 		const showBtn = item.querySelector('.filter-block__white-btn');
 		const openText = showBtn?.querySelector('.filter-block__open-text');
@@ -153,15 +153,16 @@ if (resetBtn && inputs) {
 	});
 }
 
-//открытие страницы filter
+//открытие модалки filter
 const filterBtn = document.querySelector('#filter-btn');
 const filter = document.querySelector('.modal--filter');
 
-filterBtn.addEventListener('click', ()=> {
-	filter.classList.add(activeClass);
-})
- 
-//открытие детальной страницы filter
+if (filterBtn && filter) {
+	filterBtn.addEventListener('click', () => {
+		filter.classList.add(activeClass);
+	});
+}
+//открытие детальной модалки filter
 const filterDetBtns = document.querySelectorAll('#filter-det-btn');
 const filterDet = document.querySelector('.modal--filter-det');
 
@@ -172,4 +173,3 @@ if (filterDet && filterDetBtns) {
 		});
 	});
 }
-

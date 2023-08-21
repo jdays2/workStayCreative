@@ -1,14 +1,5 @@
 .my-collection {
     width: 100%;
-    .publick-profile__collection-item {
-        width: 40.5rem;
-        margin-right: 5rem;
-        margin-bottom: 6rem;
-    }
-
-    .publick-profile__collection-item:nth-child(3n) {
-        margin-right: 0;
-    }
 
     &__wrapper {
         display: flex;
