@@ -1601,8 +1601,8 @@ main {
     width: 38rem; }
   .header__register-alert {
     position: absolute;
-    top: -20.2rem;
     right: 6rem;
+    top: 11.8rem;
     z-index: 30;
     padding: 3.2rem 2.6rem;
     background-color: white;
@@ -1615,8 +1615,10 @@ main {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 2.4rem;
-    -webkit-transition: 0.6s ease;
-    transition: 0.6s ease; }
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
     .header__register-alert p {
       width: 40.6rem;
       font-family: 'Gilroy';
@@ -1626,6 +1628,9 @@ main {
       line-height: 2.4rem;
       letter-spacing: 0.02em;
       color: #383742; }
+    .header__register-alert.active {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%); }
   .header__register-alert-button {
     padding: 2.6rem 4.9rem;
     background-color: #de755e;

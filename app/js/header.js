@@ -104,29 +104,25 @@ if (headerSearchBtn) {
 
 //добавляем показ register-popup
 
-const modalHandler = () => {
-	if (window.innerWidth > 768) {
-		registerPopUp.classList.toggle(registerPopUpClass);
-	}
-};
-
-let isModalActive = false;
 if (regAlertBtn) {
 	regAlertBtn.forEach((element) => {
-		element.addEventListener('click', (event) => {
+		element.addEventListener('click', () => {
 			event.stopPropagation();
-			modalHandler();
-			isModalActive = true;
+			registerPopUp.classList.toggle('active');
+			document.addEventListener('click', removePopupHandler);
 		});
 	});
 }
 
-document.addEventListener('click', (e) => {
-	if (isModalActive && !registerPopUp.contains(e.target)) {
-		modalHandler();
-		isModalActive = false;
+const removePopupHandler = (e) => {
+	if (
+		registerPopUp.classList.contains('active') &&
+		!registerPopUp.contains(e.target)
+	) {
+		registerPopUp.classList.remove('active');
+		document.removeEventListener('click', removePopupHandler);
 	}
-});
+};
 
 const regAlertBtnMobile = document.querySelector(
 	'.header__shop-button--burger',
