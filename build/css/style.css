@@ -851,6 +851,9 @@ main {
     right: 0;
     top: 32%; }
 
+.item--hide {
+  display: none; }
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;

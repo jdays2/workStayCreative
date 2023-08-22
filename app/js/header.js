@@ -104,7 +104,7 @@ if (headerSearchBtn) {
 
 //добавляем показ register-popup
 
-if (regAlertBtn) {
+if (regAlertBtn && window.innerWidth > 768) {
 	regAlertBtn.forEach((element) => {
 		element.addEventListener('click', () => {
 			event.stopPropagation();
