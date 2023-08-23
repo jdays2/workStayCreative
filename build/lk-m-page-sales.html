@@ -7,6 +7,7 @@
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU" type="text/javascript"> </script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/air-datepicker.css">
 	<link rel="stylesheet" href="./css/style.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Главная</title>
@@ -1449,7 +1450,11 @@
             Продажи
         </div>
         <nav class="lk-sales__sale-nav">
-            <div class="lk-sales__sale-nav-date">12.03.2023 - 12.03.2023</div>
+            
+         
+                
+            <input class="lk-sales__sale-nav-date"  id="airdatepicker" type="text" placeholder="12.03.2023 - 12.03.2023"></input>
+          
             <select class="lk-sales__select" name="language">
                 <option disabled>Неделя</option>
                 <option value="365">Неделя</option>
@@ -2682,8 +2687,10 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.15/autosize.min.js'></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="./js/swiper-bundle.js"></script>
+<script src="./js/air-datepicker.js"></script>
 <script src="./js/Jq-script.js"></script>
 <script src="./js/main.js"></script>
+
 <script src="./js/header.js"></script>
 <script src="./js/basic-card.js"></script>
 <script src="./js/charts-script.js"></script>
