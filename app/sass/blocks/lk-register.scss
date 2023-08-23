@@ -489,6 +489,21 @@
         width: 56.4rem;
     }
 
+    input {
+        &:focus {
+            background: #FFFFFF;
+            border: 0.1rem solid #DE755E;
+            box-shadow: 8.59504px 8.59504px 20px rgba(222, 117, 94, 0.11);
+            border-radius: 1rem;
+            padding: 1.4rem 2.4rem;
+          
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 125%;
+            color: #000000;
+        }
+    }
+
     &__email-form {
         display: flex;
         flex-direction: column;
@@ -524,6 +539,10 @@
     &__right--m {
         padding-left: 5.2rem;
         padding: 5.2rem 5.2rem;
+    }
+
+    &__form-inner--password {
+        position: relative;
     }
 
 

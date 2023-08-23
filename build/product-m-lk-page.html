@@ -1436,8 +1436,9 @@
         <form action="" class="product-form">
             <div class="product-form__wrap">
                 <div class="product-form__inner">
-                    <div class="product-form__label-title" for="">
-                        <span>Название продукта</span>
+                   
+                    <div class="product-lk__title-min">
+                        <span>Добавьте описание продукта</span>
                         <div class="product-lk__content-faq">
                             <div class="product-lk__content-faq-btn">
                                 <svg  viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1446,12 +1447,11 @@
                                     <path d="M9.66737 13.3906H9.67637" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
-                            <div class="product-lk__content-faq-inner">
+                            <div class="product-lk__content-faq-inner ">
                                 <span>Рекомендации по названию</span>
                             </div>
                         </div>
                     </div>
-                    
                     <input type="text" placeholder="Шрифты с засечками">
                 </div>
                 
@@ -1480,7 +1480,7 @@
                     </div>
                 </div>
             </div>
-            <div class="product-lk__title-min">
+            <div class="product-lk__title-min product-lk__title-min--two">
                 <span>Цены на лицензии</span>
                 <div class="product-lk__content-faq">
                     <div class="product-lk__content-faq-btn">
@@ -1491,7 +1491,7 @@
                         </svg>
                     </div>
                     <div class="product-lk__content-faq-inner">
-                        <span>Рекомендации по названию</span>
+                        <span>Цена зависит от того, где размещена фотография</span>
                     </div>
                 </div>
             </div>
@@ -1515,9 +1515,22 @@
             </div>
         </form>
         <div class="discount-product">
-            <div class="discount-product__title">
+          
+            <div class="product-lk__title-min product-lk__title-min--discont">
                 <strong>Добавьте скидку на продукт</strong>
-                <span>Скидка будет видна на карточке продукта</span>
+                <p>Скидка будет видна на карточке продукта</и>
+                <div class="product-lk__content-faq">
+                    <div class="product-lk__content-faq-btn">
+                        <svg  viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.015625 10C0.015625 15.5228 4.49278 20 10.0156 20C15.5385 20 20.0156 15.5228 20.0156 10C20.0156 4.47715 15.5385 0 10.0156 0C4.49278 0 0.015625 4.47715 0.015625 10Z" fill="#DE755E"/>
+                            <path d="M9.6756 11V10.79C9.6756 10.11 10.0956 9.75002 10.5156 9.46002C10.9256 9.18002 11.3356 8.82003 11.3356 8.16003C11.3356 7.24003 10.5956 6.5 9.6756 6.5C8.7556 6.5 8.01562 7.24003 8.01562 8.16003" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.66737 13.3906H9.67637" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="product-lk__content-faq-inner">
+                        <span>Вы можете добавить скидку только после 72 часов с момента публикации</span>
+                    </div>
+                </div>
             </div>
             <div class="discount-product__inner">
                 <div class="discount-product__box">
@@ -1549,6 +1562,64 @@
                 </div>
                 <div class="discount-product__box">
                     60%
+                </div>
+            </div>
+        </div>
+        <div class="product-form__wrap">
+            <div class="product-form__inner">
+                <div class="product-lk__title-min">
+                    <span>Совместимость</span>
+                    <div class="product-lk__content-faq">
+                        <div class="product-lk__content-faq-btn">
+                            <svg  viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.015625 10C0.015625 15.5228 4.49278 20 10.0156 20C15.5385 20 20.0156 15.5228 20.0156 10C20.0156 4.47715 15.5385 0 10.0156 0C4.49278 0 0.015625 4.47715 0.015625 10Z" fill="#DE755E"/>
+                                <path d="M9.6756 11V10.79C9.6756 10.11 10.0956 9.75002 10.5156 9.46002C10.9256 9.18002 11.3356 8.82003 11.3356 8.16003C11.3356 7.24003 10.5956 6.5 9.6756 6.5C8.7556 6.5 8.01562 7.24003 8.01562 8.16003" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.66737 13.3906H9.67637" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="product-lk__content-faq-inner">
+                            <span>Рекомендации по названию</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="select">
+                    <input class="select-input" type="hidden" name="">
+                    <div class="select-head">Adobe Photoshop, Adobe Photoshop, Adobe Photoshop</div>
+                    <ul class="select-list">
+                        <li class="select-item">ИП</li>
+                        <li class="select-item">ООО</li>
+                    </ul>
+                </div>
+                <div class="product-form__des">
+                    *Поле необязательно для заполнения
+                </div>
+            </div>
+            <div class="product-form__inner">
+                <div class="product-lk__title-min product-lk__title-min--four">
+                    <span>Тип продукта</span>
+                    <div class="product-lk__content-faq">
+                        <div class="product-lk__content-faq-btn">
+                            <svg  viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.015625 10C0.015625 15.5228 4.49278 20 10.0156 20C15.5385 20 20.0156 15.5228 20.0156 10C20.0156 4.47715 15.5385 0 10.0156 0C4.49278 0 0.015625 4.47715 0.015625 10Z" fill="#DE755E"/>
+                                <path d="M9.6756 11V10.79C9.6756 10.11 10.0956 9.75002 10.5156 9.46002C10.9256 9.18002 11.3356 8.82003 11.3356 8.16003C11.3356 7.24003 10.5956 6.5 9.6756 6.5C8.7556 6.5 8.01562 7.24003 8.01562 8.16003" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.66737 13.3906H9.67637" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="product-lk__content-faq-inner">
+                            <span>Для чего предназначен ваш продукт</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="select">
+                    <input class="select-input" type="hidden" name="">
+                    <div class="select-head">Веб-шрифт</div>
+                    <ul class="select-list">
+                        <li class="select-item">ИП</li>
+                        <li class="select-item">ООО</li>
+                    </ul>
+                </div>
+                <div class="product-form__des">
+                    *Поле необязательно для заполнения
                 </div>
             </div>
         </div>
@@ -1598,7 +1669,7 @@
             </form>
         </div>
         <div class="product-m-loading">
-            <div class="product-lk__title-min">
+            <div class="product-lk__title-min product-lk__title-min--six">
                 <span>Загрузите продукт</span>
                 <div class="product-lk__content-faq">
                     <div class="product-lk__content-faq-btn">
@@ -1609,7 +1680,7 @@
                         </svg>
                     </div>
                     <div class="product-lk__content-faq-inner product-lk__content-faq-inner--two">
-                        <span>Вы можете добавлять до 8 фотографий в формате JPG, JPEG, PDF, PNG. Размер не больше 15 МБ</span>
+                        <span>Файлы должны быть в хорошем качестве</span>
                     </div>
                 </div>
             </div>
@@ -1623,7 +1694,7 @@
             </div> 
         </div>
         <div class="product-m-teg">
-            <div class="product-lk__title-min">
+            <div class="product-lk__title-min product-lk__title-min--seven">
                 <span>Добавьте тэги</span>
                 <div class="product-lk__content-faq">
                     <div class="product-lk__content-faq-btn">
@@ -1634,36 +1705,92 @@
                         </svg>
                     </div>
                     <div class="product-lk__content-faq-inner ">
-                        <span>Вы можете добавлять теги</span>
+                        <span>Тэги помогу пользователям быстрее найти ваш продукт</span>
                     </div>
                 </div>
             </div>
             <!--  --> 
+            <div class="product-m-teg__cashs">
+                <div class="product-m-teg__cash">
+                    шрифт без засечек
+                </div>
+                <div class="product-m-teg__cash">
+                    шрифт без засечек
+                </div>
+                <div class="product-m-teg__cash">
+                    декоративный шрифт
+                </div>
+                <div class="product-m-teg__cash">
+                    шрифт без засечек
+                </div>
+            </div>
             <div class="tag-area">
                
-                <input type="text" class="tag-input" id="tag-input" />
+                <input type="text" class="tag-input" id="tag-input" maxlength="50"  data-field="itemThree" />
                     <ul>
                     
                     </ul>
+            </div>
+
+            <div class="product-m-teg__numbers">
+                <div class="product-m-teg__numbers-quantity" data-field="targetThree">0</div>
+                <div class="product-m-teg__numbers-sum">
+                   /50
                 </div>
+            </div>
         </div>
         <div class="product-m-desk">
-            <div class="product-lk__title-min">
-                <span>Добавьте описание продукта</span>
-                <div class="product-lk__content-faq">
-                    <div class="product-lk__content-faq-btn">
-                        <svg  viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.015625 10C0.015625 15.5228 4.49278 20 10.0156 20C15.5385 20 20.0156 15.5228 20.0156 10C20.0156 4.47715 15.5385 0 10.0156 0C4.49278 0 0.015625 4.47715 0.015625 10Z" fill="#DE755E"/>
-                            <path d="M9.6756 11V10.79C9.6756 10.11 10.0956 9.75002 10.5156 9.46002C10.9256 9.18002 11.3356 8.82003 11.3356 8.16003C11.3356 7.24003 10.5956 6.5 9.6756 6.5C8.7556 6.5 8.01562 7.24003 8.01562 8.16003" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9.66737 13.3906H9.67637" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+
+            <div class="product-m-desk__wrapper">
+                <div class="product-lk__title-min product-lk__title-min--eight">
+                    <span>Добавьте описание продукта</span>
+                    <div class="product-lk__content-faq">
+                        <div class="product-lk__content-faq-btn">
+                            <svg  viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.015625 10C0.015625 15.5228 4.49278 20 10.0156 20C15.5385 20 20.0156 15.5228 20.0156 10C20.0156 4.47715 15.5385 0 10.0156 0C4.49278 0 0.015625 4.47715 0.015625 10Z" fill="#DE755E"/>
+                                <path d="M9.6756 11V10.79C9.6756 10.11 10.0956 9.75002 10.5156 9.46002C10.9256 9.18002 11.3356 8.82003 11.3356 8.16003C11.3356 7.24003 10.5956 6.5 9.6756 6.5C8.7556 6.5 8.01562 7.24003 8.01562 8.16003" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.66737 13.3906H9.67637" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="product-lk__content-faq-inner ">
+                            <span>Описание должно содержать краткую информацию о продукте</span>
+                        </div>
                     </div>
-                    <div class="product-lk__content-faq-inner ">
-                        <span>Вы можете добавлять теги</span>
+                </div>
+                <textarea name="" id="" class="product-m-desk__textarea" maxlength="250" data-field="itemTwo" ></textarea>
+                <div class="product-m-desk__numbers">
+                    <div class="product-m-desk__numbers-quantity" data-field="targetTwo">0</div>
+                    <div class="product-m-desk__numbers-sum">
+                       /250
                     </div>
                 </div>
             </div>
-            <textarea name="" id="" class="product-m-desk__textarea"></textarea>
+            <div class="product-m-desk__wrapper">
+                <div class="product-lk__title-min product-lk__title-min--nine">
+                    <span>Добавьте описание того, что получает пользователь</span>
+                    <div class="product-lk__content-faq">
+                        <div class="product-lk__content-faq-btn">
+                            <svg  viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.015625 10C0.015625 15.5228 4.49278 20 10.0156 20C15.5385 20 20.0156 15.5228 20.0156 10C20.0156 4.47715 15.5385 0 10.0156 0C4.49278 0 0.015625 4.47715 0.015625 10Z" fill="#DE755E"/>
+                                <path d="M9.6756 11V10.79C9.6756 10.11 10.0956 9.75002 10.5156 9.46002C10.9256 9.18002 11.3356 8.82003 11.3356 8.16003C11.3356 7.24003 10.5956 6.5 9.6756 6.5C8.7556 6.5 8.01562 7.24003 8.01562 8.16003" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.66737 13.3906H9.67637" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="product-lk__content-faq-inner ">
+                            <span>Конкретная информация о том, что содержит ваш продукт</span>
+                        </div>
+                    </div>
+                </div>
+                <textarea name="" id="" class="product-m-desk__textarea" maxlength="250" data-field="item"></textarea>
+                <div class="product-m-desk__numbers">
+                    <div class="product-m-desk__numbers-quantity" data-field="target">0</div>
+                    <div class="product-m-desk__numbers-sum">
+                       /250
+                    </div>
+                </div>
+            </div>
+
+           
             <div class="product-m-desk__btn">Предварительный просмотр</div>
             <div class="product-m-desk__btns">
                 <button class="red-btn"><span>Опубликовать</span></button>
@@ -3483,8 +3610,10 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.15/autosize.min.js'></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="./js/swiper-bundle.js"></script>
+<script src="./js/air-datepicker.js"></script>
 <script src="./js/Jq-script.js"></script>
 <script src="./js/main.js"></script>
+
 <script src="./js/header.js"></script>
 <script src="./js/basic-card.js"></script>
 <script src="./js/charts-script.js"></script>

@@ -6,6 +6,7 @@
         flex-direction: row-reverse;
         justify-content: flex-end;
         width: 100%;
+        flex-wrap: wrap;
 
        
     }
@@ -32,6 +33,7 @@
         background-image: url(../img/add-photo.svg);
         background-repeat: no-repeat;
         background-size: cover;
+        margin-bottom: 1rem;
     }
 
 
@@ -48,6 +50,7 @@
 
     #uploadImagesList {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .delete-link {
@@ -80,6 +83,7 @@
         width: 16.6rem;
         height: 16.6rem;
         margin-right: 2rem;
+        margin-bottom: 1rem;
     }
 
   

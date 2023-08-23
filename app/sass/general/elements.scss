@@ -580,3 +580,92 @@ main {
 		background-color: none!important;
 	}
 }
+
+
+
+.air-datepicker-body--day-name {
+	color: #383742;
+	font-family: 'Gilroy',sans-serif;
+	font-weight: 600;
+
+}
+
+
+.air-datepicker {
+	border-radius: 3rem;
+	background: #F6F7F8!important;
+	box-shadow: 2rem 1.5rem 4rem 0px rgba(0, 0, 0, 0.10);
+
+	&::after {
+		display: none;
+	}
+}
+
+
+.air-datepicker-global-container {
+	&::after {
+		display: none;
+	}
+	&::before {
+		display: none;
+	}
+}
+
+
+.air-datepicker--pointer {
+	display: none;
+}
+
+
+.air-datepicker-cell.-selected- {
+	background: rgba(222, 117, 94, 0.20)!important;
+	color: #DE755E!important;
+	font-weight: 600!important;
+}
+
+
+.air-datepicker-cell.-in-range- {
+	background: rgba(222, 117, 94, 0.20)!important;
+}
+
+.air-datepicker-cell.-range-to- {
+	background: rgba(222, 117, 94, 0.20)!important;
+	border: none!important;
+}
+
+
+.air-datepicker-cell.-current- {
+	color: #000!important;
+}
+
+
+.air-datepicker-nav--action {
+	&:hover {
+		background: none;
+	}
+}
+
+
+
+.password-control {
+	width: 2.5rem;
+	height: 2.5rem;
+	background-image: url(../img/eye.svg);
+	background-size: 100% 100%;
+	position: absolute;
+	z-index: 6;
+	top: 57%;
+    right: 2rem;
+}
+
+
+.password-control-two {
+	width: 2.5rem;
+	height: 2.5rem;
+	background-size: 100% 100%;
+	background-image: url(../img/eye.svg);
+	position: absolute;
+	z-index: 6;
+	top: 57%;
+    right: 2rem;
+}

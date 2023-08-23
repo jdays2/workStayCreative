@@ -296,7 +296,7 @@ $('.input-file input[type=file]').on('change', function () {
 		$files_list.append(new_file_input);
 		dt.items.add(this.files.item(i));
 	}
-	this.files = dt.files;
+	// this.files = dt.files;
 });
 
 function removeFilesItem(target) {
@@ -650,90 +650,7 @@ $('.product-lk__content-faq').each(function () {
 	});
 });
 
-jQuery(document).ready(function ($) {
-	var maxFileSize = 2 * 1024 * 1024; // (байт) Максимальный размер файла (2мб)
-	var queue = {};
-	var form = $('form#uploadImages');
-	var imagesList = $('#uploadImagesList');
 
-	var itemPreviewTemplate = imagesList.find('.item.template').clone();
-	itemPreviewTemplate.removeClass('template');
-	imagesList.find('.item.template').remove();
-
-	$('#addImages').on('change', function () {
-		var files = this.files;
-
-		for (var i = 0; i < files.length; i++) {
-			var file = files[i];
-
-			if (!file.type.match(/image\/(jpeg|jpg|png|gif)/)) {
-				alert('Фотография должна быть в формате jpg, png или gif');
-				continue;
-			}
-
-			if (file.size > maxFileSize) {
-				alert('Размер фотографии не должен превышать 2 Мб');
-				continue;
-			}
-
-			preview(files[i]);
-		}
-
-		this.value = '';
-	});
-
-	// Создание превью
-	function preview(file) {
-		var reader = new FileReader();
-		reader.addEventListener('load', function (event) {
-			var img = document.createElement('img');
-
-			var itemPreview = itemPreviewTemplate.clone();
-
-			itemPreview.find('.img-wrap img').attr('src', event.target.result);
-			itemPreview.data('id', file.name);
-
-			imagesList.append(itemPreview);
-
-			queue[file.name] = file;
-		});
-		reader.readAsDataURL(file);
-	}
-
-	// Удаление фотографий
-	imagesList.on('click', '.delete-link', function () {
-		var item = $(this).closest('.item'),
-			id = item.data('id');
-
-		delete queue[id];
-
-		item.remove();
-	});
-
-	// Отправка формы
-	form.on('submit', function (event) {
-		var formData = new FormData(this);
-
-		for (var id in queue) {
-			formData.append('images[]', queue[id]);
-		}
-
-		$.ajax({
-			url: $(this).attr('action'),
-			type: 'POST',
-			data: formData,
-			async: true,
-			success: function (res) {
-				alert(res);
-			},
-			cache: false,
-			contentType: false,
-			processData: false,
-		});
-
-		return false;
-	});
-});
 
 // $('.checkbox').click( function () {
 //     if (".checkbox > input[type='checkbox'] ").prop("checked") {
@@ -794,4 +711,168 @@ $('.notifications__item').click(function () {
 
 $('.discount-product__box').click(function () {
 	$(this).addClass('active').siblings().removeClass('active');
+});
+
+
+$('.merchandise-ar input:checkbox').click(function(){
+	$('.merchandise__checkbox-strong b').html($('.merchandise-ar input:checkbox:checked').length);
+});
+
+
+new AirDatepicker('#airdatepicker', {
+    range: true,
+    multipleDatesSeparator: ' - ',
+	
+	
+});
+
+
+function show_hide_password(target){
+	var input = document.getElementById('password-input');
+	if (input.getAttribute('type') == 'password') {
+		target.classList.add('view');
+		input.setAttribute('type', 'text');
+	} else {
+		target.classList.remove('view');
+		input.setAttribute('type', 'password');
+	}
+	return false;
+}
+
+
+
+function show_hide_passwordTwo(target){
+	var input = document.getElementById('password-input-two');
+	if (input.getAttribute('type') == 'password') {
+		target.classList.add('view');
+		input.setAttribute('type', 'text');
+	} else {
+		target.classList.remove('view');
+		input.setAttribute('type', 'password');
+	}
+	return false;
+}
+
+
+jQuery(document).ready(function ($) {
+ 
+    var maxFileSize = 2 * 1024 * 1024; // (байт) Максимальный размер файла (2мб)
+    var queue = {};
+    var form = $('form#uploadImages');
+    var imagesList = $('#uploadImagesList');
+
+    var itemPreviewTemplate = imagesList.find('.item.template').clone();
+    itemPreviewTemplate.removeClass('template');
+    imagesList.find('.item.template').remove();
+
+
+    $('#addImages').on('change', function () {
+        var files = this.files;
+
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+
+            if ( !file.type.match(/image\/(jpeg|jpg|png|gif)/) ) {
+                alert( 'Фотография должна быть в формате jpg, png или gif' );
+                continue;
+            }
+
+            if ( file.size > maxFileSize ) {
+                alert( 'Размер фотографии не должен превышать 2 Мб' );
+                continue;
+            }
+
+            preview(files[i]);
+        }
+
+        // this.value = '';
+		console.log(this.files);
+    });
+
+    // Создание превью
+    function preview(file) {
+        var reader = new FileReader();
+        reader.addEventListener('load', function(event) {
+            var img = document.createElement('img');
+
+            var itemPreview = itemPreviewTemplate.clone();
+
+            itemPreview.find('.img-wrap img').attr('src', event.target.result);
+            itemPreview.data('id', file.name);
+
+            imagesList.append(itemPreview);
+
+            queue[file.name] = file;
+
+        });
+        reader.readAsDataURL(file);
+    }
+
+    // Удаление фотографий
+    imagesList.on('click', '.delete-link', function () {
+        var item = $(this).closest('.item'),
+            id = item.data('id');
+
+        delete queue[id];
+
+        item.remove();
+    });
+
+
+    // Отправка формы
+    form.on('submit', function(event) {
+
+        var formData = new FormData(this);
+
+        for (var id in queue) {
+            formData.append('images[]', queue[id]);
+        }
+
+        $.ajax({
+            url: $(this).attr('action'),
+            type: 'POST',
+            data: formData,
+            async: true,
+            success: function (res) {
+                alert(res)
+            },
+            cache: false,
+            contentType: false,
+            processData: false
+        });
+
+        return false;
+    });
+
+});
+
+
+$(function () {
+	var target = $('[data-field="target"]');
+
+	$(document).on('input', '[data-field="item"]', function () {
+		var item = $(this);
+
+		target.html(item.val().length);
+	});
+});
+
+$(function () {
+	var target = $('[data-field="targetTwo"]');
+
+	$(document).on('input', '[data-field="itemTwo"]', function () {
+		var item = $(this);
+
+		target.html(item.val().length);
+	});
+});
+
+$(function () {
+	var target = $('[data-field="targetThree"]');
+
+	$(document).on('input', '[data-field="itemThree"]', function () {
+		var item = $(this);
+
+		target.html(item.val().length);
+	});
 });
