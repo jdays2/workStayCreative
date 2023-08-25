@@ -41,6 +41,26 @@
             color: #000000;
             border: none;
             resize: none;
+            &:focus {
+                border-radius: 1rem;
+				border: 0.1rem solid  #DE755E;
+				background:  #FFF;
+				color:#000000;
+				box-shadow: 8.595041275024414px 8.595041275024414px 20px 0px rgba(222, 117, 94, 0.11);
+                font-weight: 500;
+
+            }
+            
+			&:hover {
+				border-radius: 1rem;
+				border: 0.1rem solid  #DE755E;
+				background:  #FFF;
+				color:#000000;
+                font-weight: 500;
+
+				box-shadow: 8.595041275024414px 8.595041275024414px 20px 0px rgba(222, 117, 94, 0.11);
+
+			}
 
         }
 
@@ -55,7 +75,27 @@
             font-size: 1.6rem;
             line-height: 125%;
             color: #000000;
-            border: none;
+            border: 0.1rem solid  #EAEBEF;
+            &:focus {
+                border-radius: 1rem;
+				border: 0.1rem solid  #DE755E;
+				background:  #FFF;
+				color:#000000;
+				box-shadow: 8.595041275024414px 8.595041275024414px 20px 0px rgba(222, 117, 94, 0.11);
+                font-weight: 500;
+
+            }
+            
+			&:hover {
+				border-radius: 1rem;
+				border: 0.1rem solid  #DE755E;
+				background:  #FFF;
+				color:#000000;
+                font-weight: 500;
+
+				box-shadow: 8.595041275024414px 8.595041275024414px 20px 0px rgba(222, 117, 94, 0.11);
+
+			}
         }
     }
 
