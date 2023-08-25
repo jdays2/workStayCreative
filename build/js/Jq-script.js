@@ -387,30 +387,21 @@ if (uploadFileAvatar) {
 		readerAvatar.addEventListener('load', () => {
 			urlAvatar = URL.createObjectURL(fileAvatar);
 			console.log(urlAvatar);
-			let img = document.getElementById('canvas-avatar');
-			img.id = 'image';
-			img.src = event.target.result;
-			img.width = 330;
-			img.height = 330;
 			camanAvatar = Caman(canvasAvatar, urlAvatar, function () {
 				//alert('file url: ' + url);
 
 				URL.revokeObjectURL(urlAvatar);
 				cropperAvatar = new Cropper(canvasAvatar, {
-					viewMode: 1,
+					
 					dragMode: 'move',
 					aspectRatio: 1,
 					autoCropArea: 0.68,
 					center: false,
-					zoomOnWheel: false,
-					zoomOnTouch: false,
 					cropBoxMovable: false,
 					cropBoxResizable: false,
 					guides: false,
 					minContainerWidth: 305,
 					minContainerHeight: 305,
-					minCropBoxWidth: 266,
-					minCropBoxHeight: 266,
 					ready: function () {
 						croppable = true;
 					},
@@ -420,13 +411,46 @@ if (uploadFileAvatar) {
 					},
 
 					crop: function (event) {
-						let imgSrc = this.cropperAvatar
-							.getCroppedCanvas({})
-							.toDataURL('image/png');
+						let imgSrc = this.cropperAvatar.getCroppedCanvas({
+
+
+						}).toDataURL('image/png');
 						imgPreview.src = imgSrc;
 						imgPreviewTwo.src = imgSrc;
 					},
+
+
+					
 				});
+				function GetData(){
+					
+					cropperAvatar.getCroppedCanvas({
+					maxWidth: 4096,
+					maxHeight: 4096,
+					fillColor: '#fff',
+					imageSmoothingEnabled: true,
+					imageSmoothingQuality: 'high',
+				}).toBlob((blob) => {
+									
+					const formData = new FormData();
+										
+					formData.append('croppedImage', blob/*, 'example.png' */);
+					let config = {
+						headers:{'Content-Type':'multipart/form-data'}
+					} 
+		
+					this.$axios.post(flow_mission_UploadFile(),param,config)
+						.then((response)=>{ 
+							console.log(response)    
+						})
+						.catch((err)=>{
+							console.log(err)
+						})
+				})
+				}
+	
+				
+				
 
 				document.getElementsByClassName(
 					'avatar-modal__center',
@@ -439,7 +463,14 @@ if (uploadFileAvatar) {
 				)[0].style.display = 'flex';
 			});
 			var uploadedImageURLAvatar = URL.createObjectURL(fileAvatar);
+
+
+			
 		});
+
+
+		
+
 	});
 }
 
@@ -714,135 +745,111 @@ $('.discount-product__box').click(function () {
 });
 
 
-$('.merchandise-ar input:checkbox').click(function(){
+$('.merchandise-ar input:checkbox').click(function () {
 	$('.merchandise__checkbox-strong b').html($('.merchandise-ar input:checkbox:checked').length);
 });
 
 
 new AirDatepicker('#airdatepicker', {
-    range: true,
-    multipleDatesSeparator: ' - ',
-	
-	
+	range: true,
+	multipleDatesSeparator: ' - ',
+
+
 });
 
 
-function show_hide_password(target){
-	var input = document.getElementById('password-input');
-	if (input.getAttribute('type') == 'password') {
-		target.classList.add('view');
-		input.setAttribute('type', 'text');
-	} else {
-		target.classList.remove('view');
-		input.setAttribute('type', 'password');
-	}
-	return false;
-}
 
-
-
-function show_hide_passwordTwo(target){
-	var input = document.getElementById('password-input-two');
-	if (input.getAttribute('type') == 'password') {
-		target.classList.add('view');
-		input.setAttribute('type', 'text');
-	} else {
-		target.classList.remove('view');
-		input.setAttribute('type', 'password');
-	}
-	return false;
-}
 
 
 jQuery(document).ready(function ($) {
- 
-    var maxFileSize = 2 * 1024 * 1024; // (байт) Максимальный размер файла (2мб)
-    var queue = {};
-    var form = $('form#uploadImages');
-    var imagesList = $('#uploadImagesList');
 
-    var itemPreviewTemplate = imagesList.find('.item.template').clone();
-    itemPreviewTemplate.removeClass('template');
-    imagesList.find('.item.template').remove();
+	var maxFileSize = 2 * 1024 * 1024; // (байт) Максимальный размер файла (2мб)
+	var queue = {};
+	var form = $('form#uploadImages');
+	var imagesList = $('#uploadImagesList');
+
+	var itemPreviewTemplate = imagesList.find('.item.template').clone();
+	itemPreviewTemplate.removeClass('template');
+	imagesList.find('.item.template').remove();
 
 
-    $('#addImages').on('change', function () {
-        var files = this.files;
+	$('#addImages').on('change', function () {
+		var files = this.files;
 
-        for (var i = 0; i < files.length; i++) {
-            var file = files[i];
+		for (var i = 0; i < files.length; i++) {
+			var file = files[i];
 
-            if ( !file.type.match(/image\/(jpeg|jpg|png|gif)/) ) {
-                alert( 'Фотография должна быть в формате jpg, png или gif' );
-                continue;
-            }
+			if (!file.type.match(/image\/(jpeg|jpg|png|gif)/)) {
+				alert('Фотография должна быть в формате jpg, png или gif');
+				continue;
+			}
 
-            if ( file.size > maxFileSize ) {
-                alert( 'Размер фотографии не должен превышать 2 Мб' );
-                continue;
-            }
+			if (file.size > maxFileSize) {
+				alert('Размер фотографии не должен превышать 2 Мб');
+				continue;
+			}
 
-            preview(files[i]);
-        }
+			preview(files[i]);
+		}
 
-        // this.value = '';
+		// this.value = '';
 		console.log(this.files);
-    });
+	});
 
-    // Создание превью
-    function preview(file) {
-        var reader = new FileReader();
-        reader.addEventListener('load', function(event) {
-            var img = document.createElement('img');
+	// Создание превью
+	function preview(file) {
+		var reader = new FileReader();
+		reader.addEventListener('load', function (event) {
+			var img = document.createElement('img');
 
-            var itemPreview = itemPreviewTemplate.clone();
+			var itemPreview = itemPreviewTemplate.clone();
 
-            itemPreview.find('.img-wrap img').attr('src', event.target.result);
-            itemPreview.data('id', file.name);
+			itemPreview.find('.img-wrap img').attr('src', event.target.result);
+			itemPreview.data('id', file.name);
 
-            imagesList.append(itemPreview);
+			imagesList.append(itemPreview);
 
-            queue[file.name] = file;
+			queue[file.name] = file;
 
-        });
-        reader.readAsDataURL(file);
-    }
+		});
+		reader.readAsDataURL(file);
+	}
 
-    // Удаление фотографий
-    imagesList.on('click', '.delete-link', function () {
-        var item = $(this).closest('.item'),
-            id = item.data('id');
+	// Удаление фотографий
+	imagesList.on('click', '.delete-link', function () {
+		var item = $(this).closest('.item'),
+			id = item.data('id');
 
-        delete queue[id];
+		delete queue[id];
 
-        item.remove();
-    });
+		item.remove();
+	});
 
 
-    // Отправка формы
-    form.on('submit', function(event) {
+	// Отправка формы
+	form.on('submit', function (event) {
 
-        var formData = new FormData(this);
+		var formData = new FormData(this);
 
-        for (var id in queue) {
-            formData.append('images[]', queue[id]);
-        }
+		for (var id in queue) {
+			formData.append('images[]', queue[id]);
+		}
 
-        $.ajax({
-            url: $(this).attr('action'),
-            type: 'POST',
-            data: formData,
-            async: true,
-            success: function (res) {
-                alert(res)
-            },
-            cache: false,
-            contentType: false,
-            processData: false
-        });
+		$.ajax({
+			url: $(this).attr('action'),
+			type: 'POST',
+			data: formData,
+			async: true,
+			success: function (res) {
+				alert(res)
+			},
+			cache: false,
+			contentType: false,
+			processData: false
+		});
 
-        return false;
-    });
+		return false;
+	});
 
 });
 
@@ -875,4 +882,33 @@ $(function () {
 
 		target.html(item.val().length);
 	});
+});
+
+
+
+
+
+
+
+$(".password-control-two").on('click', function () {
+	if ($('#password-input-two').attr('type') == 'password') {
+		$(this).addClass('view');
+		$('#password-input-two').attr('type', 'text');
+	} else {
+		$(this).removeClass('view');
+		$('#password-input-two').attr('type', 'password');
+	}
+	return false;
+});
+
+
+$(".password-control").on('click', function () {
+	if ($('#password-input').attr('type') == 'password') {
+		$(this).addClass('view');
+		$('#password-input').attr('type', 'text');
+	} else {
+		$(this).removeClass('view');
+		$('#password-input').attr('type', 'password');
+	}
+	return false;
 });

@@ -650,7 +650,8 @@ main {
 .password-control {
 	width: 2.5rem;
 	height: 2.5rem;
-	background-image: url(../img/eye.svg);
+	
+	background-image: url(../img/eye-slash.svg);
 	background-size: 100% 100%;
 	position: absolute;
 	z-index: 6;
@@ -659,13 +660,22 @@ main {
 }
 
 
+.password-control.view {
+	background-image: url(../img/eye.svg);
+}
+
 .password-control-two {
 	width: 2.5rem;
 	height: 2.5rem;
 	background-size: 100% 100%;
-	background-image: url(../img/eye.svg);
+	background-image: url(../img/eye-slash.svg);
 	position: absolute;
 	z-index: 6;
 	top: 57%;
     right: 2rem;
+}
+
+
+.password-control-two .view {
+	background-image: url(../img/eye.svg);
 }
