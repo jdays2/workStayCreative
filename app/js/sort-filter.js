@@ -102,9 +102,8 @@ const closeSortHandler = () => {
 
 //обработка filter-block
 const filterItems = document.querySelectorAll('.filter-block__item');
-
+const activeClass = 'active';
 if (filterItems) {
-	const activeClass = 'active';
 	filterItems.forEach((item) => {
 		const showBtn = item.querySelector('.filter-block__white-btn');
 		const openText = showBtn?.querySelector('.filter-block__open-text');
