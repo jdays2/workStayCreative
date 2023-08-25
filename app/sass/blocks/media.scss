@@ -1765,6 +1765,26 @@
 		}
 	}
 
+	.lk-m {
+		input {
+			&:focus {
+				border-radius: 2rem;
+				padding: 2.8rem 4.8rem;
+				
+				font-size: 2.8rem;
+				line-height: 143%;
+			}
+
+			&:hover {
+				border-radius: 2rem;
+				padding: 2.8rem 4.8rem;
+				
+				font-size: 2.8rem;
+				line-height: 143%;
+			}
+		}
+	}
+
 	.checkmark {
 		position: absolute;
 		top: 0;
@@ -2038,6 +2058,9 @@
 			}
 		}
 
+
+	
+
 		&__forgot-password-form-btns {
 			display: flex;
 			justify-content: initial;
@@ -2075,6 +2098,26 @@
 				border-radius: 2rem;
 				padding: 2.8rem 4.8rem;
 				width: 100%;
+				font-size: 2.8rem;
+				line-height: 143%;
+			}
+		}
+
+
+
+		input {
+			&:focus {
+				border-radius: 2rem;
+				padding: 2.8rem 4.8rem;
+				
+				font-size: 2.8rem;
+				line-height: 143%;
+			}
+
+			&:hover {
+				border-radius: 2rem;
+				padding: 2.8rem 4.8rem;
+				
 				font-size: 2.8rem;
 				line-height: 143%;
 			}
@@ -3875,6 +3918,10 @@
 			line-height: 7.2rem;
 		}
 
+		&__form {
+			width: 100%;
+		}
+
 		&__form-wrap {
 			flex-direction: column;
 			margin-bottom: 0;
@@ -3898,17 +3945,35 @@
 				width: 100%;
 				font-size: 2.8rem;
 				line-height: 143%;
+				&:hover {
+					border-radius: 2rem;
+					padding: 2.8rem 4.8rem;
+					
+					font-size: 2.8rem;
+					line-height: 143%;
+				}
 			}
 
 			textarea {
 				width: 100%;
 				height: 47.2rem;
+				&:hover {
+					border-radius: 2rem;
+					padding: 2.8rem 4.8rem;
+					
+					font-size: 2.8rem;
+					line-height: 143%;
+				}
 			}
 		}
 
 		.red-btn {
 			width: 100%;
 		}
+	}
+
+	.personal-information-modal.actvie {
+		display: block;
 	}
 
 	.personal-information-thanks {
@@ -12033,6 +12098,25 @@
 			display: none;
 		}
 
+
+		input {
+			&:focus {
+				border-radius: 2rem;
+				padding: 2.8rem 4.8rem;
+				
+				font-size: 2.8rem;
+				line-height: 143%;
+			}
+
+			&:hover {
+				border-radius: 2rem;
+				padding: 2.8rem 4.8rem;
+				
+				font-size: 2.8rem;
+				line-height: 143%;
+			}
+		}
+
 		&__right {
 			width: 100%;
 			position: initial;
@@ -13216,6 +13300,10 @@
 		}
 	}
 
+	.personal-information-modal.active {
+		display: block;
+	}
+
 	.personal-information-thanks {
 		&__box {
 			width: 100%;
@@ -13381,6 +13469,25 @@
 
 		&__inner-left {
 			margin-right: 0;
+		}
+
+
+		input {
+			&:focus {
+				border-radius: 2rem;
+				padding: 2.8rem 4.8rem;
+				
+				font-size: 2.8rem;
+				line-height: 143%;
+			}
+
+			&:hover {
+				border-radius: 2rem;
+				padding: 2.8rem 4.8rem;
+				
+				font-size: 2.8rem;
+				line-height: 143%;
+			}
 		}
 
 		&__checkbox {
@@ -18930,5 +19037,15 @@
 
 	.header-block__filter {
 		display: flex;
+	}
+
+
+
+	.modal {
+		&__box {
+			gap: initial;
+			padding: 5rem 2rem;
+			width: 100%;
+		}
 	}
 }
