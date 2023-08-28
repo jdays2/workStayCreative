@@ -91,6 +91,17 @@
 		padding: 2.6rem 4rem;
 		background-color: #de755e;
 		border-radius: 100rem;
+		position: relative;
+
+		input {
+			width: 100%;
+			background-color: #de755e;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+		}
 
 		span {
 			color: #fff;
@@ -202,6 +213,16 @@
 	}
 
 	&__white-btn {
+		position: relative;
+		input {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+		}
+
 		span {
 			color: #de755e;
 			text-align: center;
