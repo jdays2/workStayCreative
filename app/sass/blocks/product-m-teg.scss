@@ -102,6 +102,14 @@
         line-height: normal;
         letter-spacing: 0.4px;
         margin-bottom: 1.2rem;
+        transition: 0.1s;
+        cursor: pointer;
+        &:hover {
+          background: rgba(222, 117, 94, 0.3);
+          color:  #DE755E;
+          transition: 0.1s;
+          border: 0.2rem solid rgba(222, 117, 94, 0.3);
+        }
       }
 
 

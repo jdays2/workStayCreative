@@ -750,10 +750,11 @@ $('.merchandise-ar input:checkbox').click(function () {
 });
 
 
-new AirDatepicker('#airdatepicker', {
+new AirDatepicker('#lk-m__calendar', {
 	range: true,
 	multipleDatesSeparator: ' - ',
-
+	visible: true,
+	inline: true
 
 });
 
@@ -912,3 +913,11 @@ $(".password-control").on('click', function () {
 	}
 	return false;
 });
+
+
+
+
+
+
+
+

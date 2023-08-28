@@ -1,3 +1,6 @@
+
+
+
 const sortBtn = document.querySelectorAll('#sort-btn');
 const sortPopUp = document.querySelectorAll('.sort-popup');
 const sortBtnIcon = document.querySelector('.header-block__sort-btn-icon');
