@@ -161,6 +161,7 @@ if (filterBtn && filter) {
 		filter.classList.add(activeClass);
 	});
 }
+
 //открытие детальной модалки filter
 const filterDetBtns = document.querySelectorAll('#filter-det-btn');
 const filterDet = document.querySelector('.modal--filter-det');

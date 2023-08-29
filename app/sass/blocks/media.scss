@@ -6146,6 +6146,8 @@
 		&__content-block {
 			gap: 2.8rem;
 			min-height: 30rem;
+			width: 100%;
+
 			p {
 				font-family: Gilroy;
 				font-size: 2.8rem;
@@ -6789,6 +6791,7 @@
 			font-weight: 500;
 			line-height: 4rem;
 			margin-bottom: 3rem;
+			height: 16rem;
 		}
 
 		&__rewies-item-head {
@@ -16205,6 +16208,7 @@
 			padding: 3rem;
 		}
 	}
+
 	.tem-col {
 		padding: 0rem 3rem 15rem;
 		margin-top: -7rem;
@@ -16215,17 +16219,11 @@
 			height: 81.6rem;
 		}
 
-		&__hero-img-generic {
-			display: none;
-		}
-
-		&__hero-img-mobile {
-			display: block;
-		}
-
 		&__hero-box {
 			width: 68.6rem;
 			height: 81.6rem;
+			margin-top: 4rem;
+			margin-bottom: 6rem;
 
 			strong {
 				font-size: 6rem;
