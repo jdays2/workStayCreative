@@ -703,7 +703,7 @@
 			/* Установить размеры */
 			width: 2rem;
 			height: 2rem;
-			padding: 0.7rem;
+			padding: 0.5rem;
 			/* Установить внешний вид кнопки */
 			border: 0.1rem solid rgba(222, 117, 94, 1);
 			border-radius: 50%;
@@ -714,12 +714,9 @@
 
 		.modal__form-popup-box input[type='radio']:checked::after {
 			content: '';
-			/* Установить размеры внутреннего круга */
-			width: 0.6rem;
-			height: 0.6rem;
-			/* Установить цвет внутреннего круга */
+			width: 1rem;
+			height: 1rem;
 			background-color: rgba(222, 117, 94, 1);
-			/* Установить позицию внутреннего круга */
 			position: absolute;
 			top: 50%;
 			left: 50%;
