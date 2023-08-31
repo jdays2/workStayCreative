@@ -18,6 +18,7 @@
         border-radius: 5.5rem;
         padding: 6rem;
         width: 100%;
+        position: relative;
     }
 
     &__content-title {
@@ -74,20 +75,43 @@
         margin-top: 0.2rem;
     }
 
-    &__title-min {
+   
+
+
+    .product-card__title {
         display: flex;
-        flex-direction: column;
-        width: fit-content;
-        margin-bottom: 2.4rem;
-        font-weight: 500;
-        font-size: 2rem;
-        line-height: 2.4rem;
-        letter-spacing: 0.02em;
-        position: relative;
-        padding-right: 2rem;
+        font-size: initial;
+        align-items: center;
+        margin-bottom: 1rem;
         span {
+            color:  #383742;
+            font-size: 2rem;
+            font-family: 'Gilroy';
+            width: auto;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.4px;
+            max-width: auto;
+            display: inline-block;
+        }
+    }
+
+    .explanation {
+        align-items: center;
+    }
+
+
+    .product-card__title-wrap {
+        strong {
             display: block;
-            margin-right: 1rem;
+            color:  #383742;
+            font-family: 'Gilroy',sans-serif;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.4px;
         }
 
         p {
@@ -100,62 +124,35 @@
         }
     }
 
-    &__title-min--discont {
-        .product-lk__content-faq {
-            right: 4rem;
-            top: -0.2rem;
-        }
 
+    &__moderation {
+        border-radius: 3rem;
+        background:  #EAEBEF;
+        position: absolute;
+        padding: 1.4rem 2.4rem;
+        top:  6rem;
+        right: 6rem;
+        span {
+            position: relative;
+            color:  #383742;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-left: 3.3rem;
+            &::before {
+                position: absolute;
+                content:'';
+                width: 2.4rem;
+                height: 2.4rem;
+                background-image: url(../img/redclock.svg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                left: 0;
+                top: 50%;
+                transform: translate(0,-50%);
 
-        .product-lk__content-faq-inner {
-            right: -42rem;
-            max-width: 38.2rem;
-        }
-    }
-
-    &__title-min--two {
-        .product-lk__content-faq-inner {
-            right: -45rem;
-            max-width: 44.2rem;
-        }
-    }
-
-
-    &__title-min--four {
-        .product-lk__content-faq-inner {
-            right: -35rem;
-            max-width: 44.2rem;
-        }
-    }
-
-    &__title-min--six {
-        .product-lk__content-faq-inner {
-            right: -38rem;
-            max-width: 44.2rem;
-        }
-    }
-
-    &__title-min--seven {
-        .product-lk__content-faq-inner {
-            right: -34rem;
-            max-width: 33.2rem;
-            top: -2.5rem;
-        }
-    }
-
-    &__title-min--eight {
-        .product-lk__content-faq-inner {
-            right: -36rem;
-            max-width: 35.2rem;
-            top: -2.5rem;
-        }
-    }
-
-    &__title-min--nine {
-        .product-lk__content-faq-inner {
-            right: -36rem;
-            max-width: 35.2rem;
-            top: -2.5rem;
+            }
         }
     }
 }

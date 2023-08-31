@@ -27,13 +27,12 @@ if (sortBtn) {
 
 //функция по смене изображений кнопок filter
 const changeIcon = (icon, newIcon) => {
-	console.log(icon, newIcon);
 	newIcon.classList.toggle(filterBtnHiddenIcon);
 	icon.classList.toggle(filterBtnHiddenIcon);
 };
 
 //range slider
-// Получаем все элементы слайдера на странице
+// Получаем все слайдера на странице
 const filterBlocks = document.querySelectorAll('.filter-block');
 
 // Проходим по каждому элементу слайдера
@@ -41,13 +40,14 @@ filterBlocks.forEach((element) => {
 	const priceSlider = element.querySelector('#price-slider');
 	const minValue = priceSlider?.getAttribute('data-min-value');
 	const maxValue = priceSlider?.getAttribute('data-max-value');
+	const startValue = priceSlider?.getAttribute('data-start-value');
 	const startPoint = priceSlider?.getAttribute('data-start-point');
-	const minPriceOutput = element.querySelector('#min-price-value');
-	const maxPriceOutput = element.querySelector('#max-price-value');
+	const minPriceOutput = document.querySelectorAll('#min-price-value');
+	const maxPriceOutput = document.querySelectorAll('#max-price-value');
 
 	if (priceSlider) {
 		noUiSlider.create(priceSlider, {
-			start: [0, +startPoint],
+			start: [+startValue, +startPoint],
 			connect: true,
 			range: {
 				min: +minValue,
@@ -57,21 +57,34 @@ filterBlocks.forEach((element) => {
 	}
 
 	const updatePriceOutput = (values, handle) => {
-		const minPointer = priceSlider.querySelector('.noUi-handle-lower');
+		const minPointer = priceSlider.querySelectorAll('.noUi-handle-lower');
 		if (handle === 0) {
 			if (parseInt(values[handle]) === 0) {
-				minPriceOutput.classList.add('filter-popup__price-value--min');
-				minPointer.classList.add('noUi-handle-lower--min');
+				minPriceOutput.forEach((e) =>
+					e.classList.add('filter-popup__price-value--min'),
+				);
+				minPointer.forEach((e) => {
+					e.classList.add('noUi-handle-lower--min');
+				});
 			} else {
-				minPriceOutput.classList.remove('filter-popup__price-value--min');
-				minPointer.classList.remove('noUi-handle-lower--min');
+				minPriceOutput.forEach((e) =>
+					e.classList.remove('filter-popup__price-value--min'),
+				);
+				minPointer.forEach((e) => {
+					e.classList.remove('noUi-handle-lower--min');
+				});
 			}
-
-			minPriceOutput.value =
-				Math.round(values[handle]) > 0 ? `${Math.round(values[handle])}₽` : '';
+			minPriceOutput.forEach((item) => {
+				item.value =
+					Math.round(values[handle]) > 0
+						? `${Math.round(values[handle])}₽`
+						: '';
+			});
 		}
 		if (handle === 1) {
-			maxPriceOutput.value = `${Math.round(values[handle])}₽`;
+			maxPriceOutput.forEach((item) => {
+				item.value = `${Math.round(values[handle])}₽`;
+			});
 		}
 	};
 
@@ -79,6 +92,7 @@ filterBlocks.forEach((element) => {
 		priceSlider.noUiSlider.on('update', updatePriceOutput);
 	}
 });
+
 
 //функция по закрытию sort
 const closeSortHandler = () => {

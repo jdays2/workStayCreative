@@ -277,7 +277,7 @@ const popularFontSwiper = new Swiper('.popular-fonts__swiper', {
 	},
 });
 
-const tagInput = document.querySelector(".tag-input");
+/*const tagInput = document.querySelector(".tag-input");
 const tagArea = document.querySelector(".tag-area");
 const ul = document.querySelector(".tag-area ul");
 const label = document.querySelector(".label");
@@ -360,7 +360,7 @@ function createTag(tag, index) {
   li.appendChild(span);
   ul.appendChild(li);
 }
-
+*/
 
 
 function addZero(num) {

@@ -16,6 +16,10 @@
 			rel="stylesheet" />
 		<link
 			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
+		<link
+			rel="stylesheet"
 			href="./css/air-datepicker.css" />
 		<link
 			rel="stylesheet"
@@ -235,6 +239,344 @@
 										Личный кабинет
 									</a>
 									<button class="m-sidebar__exit">Выйти</button>
+								</div>
+							</div>
+
+							<div
+								class="filter-block"
+								id="filter-block-sales">
+								<div class="filter-block__content">
+									<div class="filter-block__item">
+										<p class="filter-block__title">Ценовой диапазон</p>
+										<div class="filter-block__slider-wrapper">
+											<div
+												id="price-slider"
+											data-start-value="0"
+												data-start-point="4000"
+												data-min-value="0"
+												data-max-value="5000"></div>
+											<div class="filter-block__price-value-wrapper">
+												<input
+													class="filter-block__price-value"
+													id="min-price-value"
+													placeholder="0₽"
+													readonly />
+												<input
+													class="filter-block__price-value"
+													id="max-price-value"
+													readonly />
+											</div>
+										</div>
+									</div>
+									<div class="lk-m__calendar">
+										<div class="lk-m__calendar-title">Временной промежуток</div>
+										<input
+											type="text"
+											id="lk-m__calendar" />
+									</div>
+									<div class="filter-block__item active">
+										<p class="filter-block__title">Категории</p>
+
+										<!-- <input
+										type="text"
+										class="filter-block__search"
+										placeholder="Поиск" /> -->
+
+										<ul class="filter-block__box-list">
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">Новые</span>
+												</label>
+											</li>
+
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">Растр</span>
+												</label>
+											</li>
+
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+											<li class="filter-block__box-item">
+												<label class="filter-block__label">
+													<input type="checkbox" />
+
+													<div class="checker">
+														<img
+															src="./img/icon/checker-icon-black.svg"
+															alt="" />
+													</div>
+													<span class="filter-block__item-title">
+														Веб-шрифт
+													</span>
+												</label>
+											</li>
+										</ul>
+
+										<button class="filter-block__white-btn">
+											<span class="filter-block__open-text active">
+												Посмотреть все
+											</span>
+											<span class="filter-block__close-text">Свернуть</span>
+										</button>
+									</div>
+								</div>
+
+								<div class="filter-block__btns">
+									<button class="filter-block__red-btn">
+										<span>Применить</span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 33 15"
+											fill="none">
+											<path
+												d="M32.7071 8.20711C33.0976 7.81658 33.0976 7.18342 32.7071 6.79289L26.3431 0.428932C25.9526 0.0384078 25.3195 0.0384078 24.9289 0.428932C24.5384 0.819457 24.5384 1.45262 24.9289 1.84315L30.5858 7.5L24.9289 13.1569C24.5384 13.5474 24.5384 14.1805 24.9289 14.5711C25.3195 14.9616 25.9526 14.9616 26.3431 14.5711L32.7071 8.20711ZM0 8.5H32V6.5H0V8.5Z"
+												fill="white" />
+										</svg>
+									</button>
+
+									<button
+										class="filter-block__white-btn"
+										id="reset-filter">
+										<span>Очистить</span>
+									</button>
 								</div>
 							</div>
 						</div>

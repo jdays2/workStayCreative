@@ -16470,7 +16470,93 @@
 		}
 
 
+
+		&__moderation {
+			border-radius: 6rem;
+			background:  #EAEBEF;
+			padding: 2.8rem 4.8rem;
+			position: initial;
+			margin-bottom: 2rem;
+			span {
+				position: relative;
+				color:  #383742;
+				font-size: 3.2rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				padding-left: 6.6rem;
+				&::before {
+					position: absolute;
+					content:'';
+					width: 4.8rem;
+					height: 4.8rem;
+					background-image: url(../img/redclock.svg);
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+					left: 0;
+					top: 50%;
+					transform: translate(0,-50%);
+	
+				}
+			}
+		}
+
+
+		.product-card__title {
+			flex-direction: column;
+			align-items:initial;
+			margin-bottom: 3rem;
+			justify-content: flex-end;
+			gap: 0;
+			span {
+				font-size: 3rem;
+			}
+		}
+
+		.explanation {
+			align-items: flex-end;
+			margin-bottom: 0.5rem;
+			svg {
+				width: 4rem;
+				height: 4rem;
+			}
+
+			&__info {
+				padding: 2rem 2.8rem;
+				font-size: 2.8rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 4rem;
+				border-radius: 5rem;
+				z-index: 5;
+
+				br {
+					display: none;
+				}
+			}
+		}
+
+
+		.product-card__title-wrap {
+			order: 2;
+
+			strong {
+				font-size: 3rem;
+				margin-bottom: 1rem;
+			}
+
+			p {
+				font-size: 2.5rem;
+			}
+		}
+
+
 		
+	}
+
+
+	.discount-product {
+		margin-top: 0;
 	}
 
 	.product-lk-ad {
