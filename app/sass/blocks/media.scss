@@ -4366,6 +4366,15 @@
 			margin-bottom: 6rem;
 		}
 
+
+		&__pagination-page {
+			flex-wrap: wrap;
+		}
+
+		&__pagination-page-numbers {
+			width: 45%;
+		}
+
 		&__statistics-title {
 			font-weight: 700;
 			font-size: 5rem;
@@ -13720,6 +13729,73 @@
 			margin-bottom: 3rem;
 		}
 
+		&__pagination-page-numbers {
+			font-size: 3.2rem;
+		}
+
+
+		&__pagination-page-number-sum {
+			padding-right: 9.7rem;
+			&::before {
+				position: absolute;
+				content: '';
+				width: 8.3rem;
+				height: 0.3rem;
+				background: rgba(160,161,164,.3);
+				right: 0;
+				top: 50%;
+				-webkit-transform: translate(0,-50%);
+				transform: translate(0,-50%);
+			}
+		}
+
+
+		&__pagination-page-arrows {
+			width: 45%;
+			justify-content: flex-end;
+		}
+
+		&__pagination-page-arrow-prev, 
+		&__pagination-page-arrow-next {
+			svg {
+				width: 5rem;
+   				 height: 2rem;
+			}
+		}
+
+		&__pagination-page-inner {
+			
+			margin: 0 auto;
+			margin-top: 4rem;
+		}
+
+		&__pagination-page-link {
+			font-size: 3.2rem;
+			margin-right: 3rem;
+		}
+
+		&__pagination-page-wrap {
+			width: 10.8rem;
+			padding: 2.8rem 4.8rem;
+			border-radius: 2rem;
+			margin-right: 3rem;
+			color: #383742;
+			font-size: 2.4rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+		}
+
+		&__pagination-page-link-two {
+			font-size: 3.2rem;
+		}
+		
+
+
+
+	
+	
+
 		&__statistics-inner {
 			display: flex;
 			width: 100%;
@@ -16565,6 +16641,9 @@
 		&__wrap {
 			display: flex;
 			flex-direction: column;
+
+
+
 		}
 
 		&__one {
