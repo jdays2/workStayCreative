@@ -456,6 +456,141 @@
 		margin-top: 10rem;
 	}
 
+	&__pagination-page {
+		display: flex;
+		align-items:center;
+		margin-top: 6.2rem;
+	}
+	
+	&__pagination-page-arrow-prev {
+		padding-left: 3rem;
+		position: relative;
+	}
+
+	&__pagination-page-numbers {
+		display: flex;
+		font-family: 'Austin Cyr';
+		font-size: 1.8rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 204.167%; 
+		margin-right: 6.3rem;
+	}
+
+
+	&__pagination-page-number-sum {
+		color:  #DE755E;
+		padding-right: 7.7rem;
+		position: relative;
+		margin-right: 1.4rem;
+		&::before {
+			position: absolute;
+			content:'';
+			width: 6.3rem;
+			height: 0.15rem;
+			background: rgba(160, 161, 164, 0.30);
+			right: 0;
+			top: 50%;
+				transform: translate(0, -50%);
+		}
+
+	}
+
+	&__pagination-page-arrows {
+		display: flex;
+	}
+
+	&__pagination-page-arrow-prev {
+		cursor: pointer;
+		margin-right: 3rem;
+		position: relative;
+		padding-right: 3rem;
+		&::before {
+			position: absolute;
+			content: '';
+			right: 0;
+			top: 0;
+			width: 0.14rem;
+			background: rgba(160, 161, 164, 0.3);
+			height: 4.6rem;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+		svg {
+			width: 3.2rem;
+			height: 1.6rem;
+
+			transition: transform 0.5s ease;
+		}
+
+		&:hover {
+			> svg {
+				transform: translateX(-0.2rem);
+				transition: transform 0.5s ease;
+			}
+		}
+	}
+
+	
+	&__pagination-page-arrow-next {
+		cursor: pointer;
+		svg {
+			width: 3.2rem;
+			height: 1.6rem;
+
+			transition: transform 0.5s ease;
+		}
+
+		&:hover {
+			> svg {
+				transform: translateX(0.2rem);
+				transition: transform 0.5s ease;
+			}
+		}
+	}
+
+
+	&__pagination-page-link {
+		color:  #999;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 125%;
+		margin-right: 2rem; 
+	}
+
+	&__pagination-page-inner {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+	}
+
+	&__pagination-page-wrap {
+		display: flex;
+		width: 8.8rem;
+		padding: 1.4rem 2.4rem;
+		justify-content: center;
+		align-items: center;
+		border-radius: 1rem;
+		background:  #FFF;
+		margin-right: 2rem;
+
+		color:  #383742;
+		font-size: 1.8rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+
+	&__pagination-page-link-two {
+		color:  #DE755E;
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 0.4px;
+	}
+
 
 	
 
