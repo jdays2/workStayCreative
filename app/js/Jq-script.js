@@ -371,7 +371,6 @@ let urlAvatar;
 const uploadFileAvatar = document.getElementById('avatar-modal__upload-file');
 let imgPreview = document.querySelector('#preImg');
 let imgPreviewTwo = document.querySelector('#preImgTwo');
-
 if (uploadFileAvatar) {
 	uploadFileAvatar.addEventListener('change', (e) => {
 		const fileAvatar = document.getElementById('avatar-modal__upload-file')
@@ -387,6 +386,7 @@ if (uploadFileAvatar) {
 		readerAvatar.addEventListener('load', () => {
 			urlAvatar = URL.createObjectURL(fileAvatar);
 			console.log(urlAvatar);
+			var cropperAvatar = null;
 			camanAvatar = Caman(canvasAvatar, urlAvatar, function () {
 				//alert('file url: ' + url);
 
@@ -422,35 +422,7 @@ if (uploadFileAvatar) {
 
 					
 				});
-				function GetData(){
-					
-					cropperAvatar.getCroppedCanvas({
-					maxWidth: 4096,
-					maxHeight: 4096,
-					fillColor: '#fff',
-					imageSmoothingEnabled: true,
-					imageSmoothingQuality: 'high',
-				}).toBlob((blob) => {
-									
-					const formData = new FormData();
-										
-					formData.append('croppedImage', blob/*, 'example.png' */);
-					let config = {
-						headers:{'Content-Type':'multipart/form-data'}
-					} 
-		
-					this.$axios.post(flow_mission_UploadFile(),param,config)
-						.then((response)=>{ 
-							console.log(response)    
-						})
-						.catch((err)=>{
-							console.log(err)
-						})
-				})
-				}
-	
-				
-				
+						
 
 				document.getElementsByClassName(
 					'avatar-modal__center',
@@ -463,12 +435,29 @@ if (uploadFileAvatar) {
 				)[0].style.display = 'flex';
 			});
 			var uploadedImageURLAvatar = URL.createObjectURL(fileAvatar);
+			camanAvatar.cropper = cropperAvatar;
+			camanAvatar.getData = function(){
+						
+				cropperAvatar.getCroppedCanvas({
+					maxWidth: 4096,
+					maxHeight: 4096,
+					fillColor: '#fff',
+					imageSmoothingEnabled: true,
+					imageSmoothingQuality: 'high',
+				}).toBlob((blob) => { 
+					console.log(blob);
+					/*file = new File(blob);
+					filelist = new FileList();
+					filelist.add(file);
+					$("#input-to-ajax")[0].files = filelist;*/
 
+					//document.querySelector(".avatar-modal__save-btn").dispatchEvent(new CustomEvent("update")) - триггер события, проверка
+				})
+			}
+			document.querySelector('.avatar-modal__save-btn').addEventListener('update', camanAvatar.getData);
 
 			
 		});
-
-
 		
 
 	});
@@ -605,6 +594,7 @@ $('.lk-sales__select').each(function () {
 				let chooseItem = $(this).data('value');
 
 				$('select').val(chooseItem).attr('selected', 'selected');
+				$('select').trigger("change");
 				selectHead.text($(this).find('span').text());
 
 				selectList.slideUp(duration);

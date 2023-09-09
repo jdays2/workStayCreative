@@ -1,4 +1,5 @@
 .purchases {
+    margin-top: 10rem;
     &__section {
         display: flex;
         border-radius: 2rem;
@@ -44,5 +45,16 @@
 
     .sort-popup {
         top: 10rem;
+    }
+
+
+    .checkbox {
+        width: fit-content;
+    }
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -3rem;
     }
 }
