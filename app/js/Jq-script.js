@@ -446,10 +446,10 @@ if (uploadFileAvatar) {
 					imageSmoothingQuality: 'high',
 				}).toBlob((blob) => { 
 					console.log(blob);
-					/*file = new File(blob);
+					var fileBlob = new File([byteArrays], filename, {type: contentType, lastModified: Date.now()});
 					filelist = new FileList();
-					filelist.add(file);
-					$("#input-to-ajax")[0].files = filelist;*/
+					filelist.add(fileBlob);
+					$("#input-to-ajax")[0].files = filelist;
 
 					//document.querySelector(".avatar-modal__save-btn").dispatchEvent(new CustomEvent("update")) - триггер события, проверка
 				})
@@ -673,13 +673,7 @@ $('.product-lk__content-faq').each(function () {
 
 
 
-// $('.checkbox').click( function () {
-//     if (".checkbox > input[type='checkbox'] ").prop("checked") {
-//         $(".checkbox > input[type='checkbox']").removeAttr("checked");
-//       } else {
-//         $(".checkbox > input[type='checkbox']").attr("checked");
-//       }
-// });
+
 
 //  табы Начисления и документы
 
@@ -911,3 +905,48 @@ $(".password-control").on('click', function () {
 
 
 
+
+
+
+$(document).on(
+	'change',
+	'.checkbox-purchases > input[type=checkbox]',
+	function () {
+		var $this = $(this),
+			$chks = $(document.getElementsByName(this.name)),
+			$all = $chks.filter('.checkbox-purchases--all');
+
+		if ($this.hasClass('checkbox-purchases--all')) {
+			$chks.prop('checked', $this.prop('checked'));
+		} else
+			switch ($chks.filter(':checked').length) {
+				case +$all.prop('checked'):
+					$all.prop('checked', false).prop('indeterminate', false);
+					break;
+				case $chks.length - !!$this.prop('checked'):
+					$all.prop('checked', true).prop('indeterminate', false);
+					break;
+				default:
+					$all.prop('indeterminate', true);
+			}
+	},
+);
+
+
+ 
+
+
+
+
+
+jQuery(function($) {
+	$('.product-select__span').click(function() {
+		$(this).toggleClass('active');
+	  if ($(this).parent().find('.product-select__list').length) {
+		$(this).parent().find('.product-select__list').slideToggle(200); 
+  
+		return false;
+	  }
+  
+	});
+  });
