@@ -93,7 +93,6 @@ filterBlocks.forEach((element) => {
 	}
 });
 
-
 //функция по закрытию sort
 const closeSortHandler = () => {
 	const width = window.innerWidth;
@@ -117,27 +116,37 @@ const activeClass = 'active';
 if (filterItems) {
 	filterItems.forEach((item) => {
 		const showBtn = item.querySelector('.filter-block__white-btn');
-		const openText = showBtn?.querySelector('.filter-block__open-text');
-		const closeText = showBtn?.querySelector('.filter-block__close-text');
+
 		const list = item.querySelector('.filter-block__list');
 
 		if (showBtn) {
-			showBtn.addEventListener('click', () => {
+			showBtn.addEventListener('click', (e) => {
+				e.preventDefault();
 				let width = window.innerWidth;
 				if (width > 768) {
 					if (!item.classList.contains(activeClass)) {
 						item.classList.add(activeClass);
-						openText.classList.remove(activeClass);
-						closeText.classList.add(activeClass);
+						showBtn.value = 'Свернуть';
 					} else {
 						item.classList.remove(activeClass);
-						openText.classList.add(activeClass);
-						closeText.classList.remove(activeClass);
-						list.scrollTop = 0;
+						showBtn.value = 'Посмотреть все';
+						if (list) {
+							list.scrollTop = 0;
+						}
 					}
 				}
 			});
 		}
+	});
+}
+
+//закрытие фильтра детального при мобилке
+const closeFilterBtn = document.querySelector('#close-det-filter');
+const modal = document.querySelector('.modal--filter-det');
+if (closeFilterBtn && modal) {
+	const activeClass = 'active';
+	closeFilterBtn.addEventListener('click', () => {
+		modal.classList.remove(activeClass);
 	});
 }
 
