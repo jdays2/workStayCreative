@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU"
+			type="text/javascript"></script>
+		<link
+			rel="stylesheet"
+			href="./css/style.min.css" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Главная</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU" type="text/javascript"> </script>
-	<link rel="stylesheet" href="./css/style.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Главная</title>
-</head>
-
-<body>
-	<header class="header">
+	<body>
+		<header class="header">
 	<div class="header__wrapper">
 		<div class="header__head">
 			<button class="header__burger">
@@ -1200,97 +1209,121 @@
 	</div>
 </header>
 
-	
-	
-	<main>
-		<section class="lk-register">
-            <div class="container">
-                <div class="lk-register__wrapper">
-                    <div class="lk-register__left">
-                        <div class="lk-register__image">
-                            <img src="./img/willkommensfenster/img1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="lk-register__right">
-                      
-                        
-                        <div class="lk-register__content">
-                            <div class="lk-register__title">
-                                <strong>Создать учетную запись</strong>
-                                
-                            </div>
-                            <form action="" class="lk-register__form">
-                                <div class="lk-register__form-wrap">
-                                    <div class="lk-register__form-inner">
-                                        <label for="">Имя Фамилия</label>
-                                        <input type="text">
-                                        <div class="input-error">*Отсутствует заглавная буква</div>
-                                    </div>
-                                    <div class="lk-register__form-inner">
-                                        <label for="">Название профиля (канала)</label>
-                                        <input type="text">
-                                        <div class="input-error">*Отсутствует заглавная буква</div>
-                                    </div>
-                                </div>
-                                <div class="lk-register__form-wrap lk-register__form-wrap--type">
-                                    <div class="lk-register__form-inner lk-register__form-inner--type">
-                                        <label for="">Электронная почта</label>
-                                        <input type="text">
-                                        <div class="input-error">*Отсутствует заглавная буква</div>
-                                    </div>
-                                </div>
-                                <div class="lk-register__form-wrap">
-                                    <div class="lk-register__form-inner">
-                                        <label for="">Пароль</label>
-                                        <input type="password" id="password-input">
-										<button class="password-control "></button>
-                                        <div class="input-error">*Отсутствует заглавная буква</div>
-                                    </div>
-                                    <div class="lk-register__form-inner">
-                                        <label for="">Повторите пароль</label>
-                                        <input type="password" id="password-input-two">
-										<button class="password-control password-control-two"></button>
-                                        <div class="input-error">*Отсутствует заглавная буква</div>
-                                    </div>
-                                </div>
-                                <div class="lk-register__desk">
-                                    Не менее 8 символов. Пароль должен содержать хотя бы одно: заглавную букву, строчную букву,
-                                    цифру и символ
-                                </div>
-                                <div class="input-error">*Отсутствует заглавная буква</div>
-                            </form>
-                            <div class="lk-register__btns">
-                                <a href="/" class="red-btn"><span>Зарегестрироваться</span></a>
-                                <div class="lk-register__faq">
-                                    <span >Уже зарегестрированы? </span>
-                                    <a href="/">Войти</a>
-                                </div>
-                            </div>
-                            <div class="lk-register__policy">
-                                Нажимая на кнопку, вы соглашаетесь с <a href="/">Условиями обработки персональных данных</a>
-                            </div>
-                            <div class="lk-ex__content-title">Или продолжить с</div>
-                            <div class="lk-ex__social">
-                                <a href="/">
-                                  <img src="./img/icon/apple.svg" alt="">
-                                        
-                                </a>
-                                <a href="/">
-                                    <img src="./img/icon/vk.svg" alt="">
-                                </a>
-                                <a href="/">
-                                    <img src="./img/icon/google.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
-        </section>
+
+		<main>
+			<section class="lk-register">
+				<div class="container">
+					<div class="lk-register__wrapper">
+						<div class="lk-register__left">
+							<div class="lk-register__image">
+								<img
+									src="./img/willkommensfenster/img1.png"
+									alt="" />
+							</div>
+						</div>
+						<div class="lk-register__right">
+							<div class="lk-register__content">
+								<div class="lk-register__title">
+									<strong>Создать учетную запись</strong>
+								</div>
+								<form
+									action=""
+									class="lk-register__form">
+									<div class="lk-register__form-wrap">
+										<div class="lk-register__form-inner">
+											<label for="">Имя Фамилия</label>
+											<input type="text" />
+											<div class="input-error">
+												*Отсутствует заглавная буква
+											</div>
+										</div>
+										<div class="lk-register__form-inner">
+											<label for="">Название профиля (канала)</label>
+											<input type="text" />
+											<div class="input-error">
+												*Отсутствует заглавная буква
+											</div>
+										</div>
+									</div>
+									<div
+										class="lk-register__form-wrap lk-register__form-wrap--type">
+										<div
+											class="lk-register__form-inner lk-register__form-inner--type">
+											<label for="">Электронная почта</label>
+											<input type="text" />
+											<div class="input-error">
+												*Отсутствует заглавная буква
+											</div>
+										</div>
+									</div>
+									<div class="lk-register__form-wrap">
+										<div class="lk-register__form-inner">
+											<label for="">Пароль</label>
+											<input
+												type="password"
+												id="password-input" />
+											<span class="password-control"></span>
+											<div class="input-error">
+												*Отсутствует заглавная буква
+											</div>
+										</div>
+										<div class="lk-register__form-inner">
+											<label for="">Повторите пароль</label>
+											<input
+												type="password"
+												id="password-input" />
+											<span class="password-control"></span>
+											<div class="input-error">
+												*Отсутствует заглавная буква
+											</div>
+										</div>
+									</div>
+									<div class="lk-register__desk">
+										Не менее 8 символов. Пароль должен содержать хотя бы одно:
+										заглавную букву, строчную букву, цифру и символ
+									</div>
+									<div class="input-error">*Отсутствует заглавная буква</div>
+								</form>
+								<div class="lk-register__btns">
+									<a
+										href="#"
+										class="red-btn">
+										<span>Зарегестрироваться</span>
+									</a>
+									<div class="lk-register__faq">
+										<span>Уже зарегестрированы?</span>
+										<a href="#">Войти</a>
+									</div>
+								</div>
+								<div class="lk-register__policy">
+									Нажимая на кнопку, вы соглашаетесь с
+									<a href="#">Условиями обработки персональных данных</a>
+								</div>
+								<div class="lk-ex__content-title">Или продолжить с</div>
+								<div class="lk-ex__social">
+									<a href="#">
+										<img
+											src="./img/icon/apple.svg"
+											alt="" />
+									</a>
+									<a href="#">
+										<img
+											src="./img/icon/vk.svg"
+											alt="" />
+									</a>
+									<a href="#">
+										<img
+											src="./img/icon/google.svg"
+											alt="" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 		
-	</main>
-	
 
 <footer class="footer">
 	<div class="container">
@@ -2069,7 +2102,5 @@
 <script src="./js/fonts.js"></script>
 <script src="./js/product-card.js"></script>
 
-
-</body>
-
+	</body>
 </html>

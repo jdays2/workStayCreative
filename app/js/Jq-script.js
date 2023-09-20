@@ -291,7 +291,7 @@ $('.input-file input[type=file]').on('change', function () {
 			'<span class="input-file-list-name">' +
 			this.files.item(i).name +
 			'</span>' +
-			'<a href="/" onclick="removeFilesItem(this); return false;" class="input-file-list-remove">x</a>' +
+			'<a href="#" onclick="removeFilesItem(this); return false;" class="input-file-list-remove">x</a>' +
 			'</div>';
 		$files_list.append(new_file_input);
 		dt.items.add(this.files.item(i));
@@ -392,7 +392,6 @@ if (uploadFileAvatar) {
 
 				URL.revokeObjectURL(urlAvatar);
 				cropperAvatar = new Cropper(canvasAvatar, {
-					
 					dragMode: 'move',
 					aspectRatio: 1,
 					autoCropArea: 0.68,
@@ -411,18 +410,13 @@ if (uploadFileAvatar) {
 					},
 
 					crop: function (event) {
-						let imgSrc = this.cropperAvatar.getCroppedCanvas({
-
-
-						}).toDataURL('image/png');
+						let imgSrc = this.cropperAvatar
+							.getCroppedCanvas({})
+							.toDataURL('image/png');
 						imgPreview.src = imgSrc;
 						imgPreviewTwo.src = imgSrc;
 					},
-
-
-					
 				});
-						
 
 				document.getElementsByClassName(
 					'avatar-modal__center',
@@ -436,30 +430,32 @@ if (uploadFileAvatar) {
 			});
 			var uploadedImageURLAvatar = URL.createObjectURL(fileAvatar);
 			camanAvatar.cropper = cropperAvatar;
-			camanAvatar.getData = function(){
-						
-				cropperAvatar.getCroppedCanvas({
-					maxWidth: 4096,
-					maxHeight: 4096,
-					fillColor: '#fff',
-					imageSmoothingEnabled: true,
-					imageSmoothingQuality: 'high',
-				}).toBlob((blob) => { 
-					console.log(blob);
-					var fileBlob = new File([byteArrays], filename, {type: contentType, lastModified: Date.now()});
-					filelist = new FileList();
-					filelist.add(fileBlob);
-					$("#input-to-ajax")[0].files = filelist;
+			camanAvatar.getData = function () {
+				cropperAvatar
+					.getCroppedCanvas({
+						maxWidth: 4096,
+						maxHeight: 4096,
+						fillColor: '#fff',
+						imageSmoothingEnabled: true,
+						imageSmoothingQuality: 'high',
+					})
+					.toBlob((blob) => {
+						console.log(blob);
+						var fileBlob = new File([byteArrays], filename, {
+							type: contentType,
+							lastModified: Date.now(),
+						});
+						filelist = new FileList();
+						filelist.add(fileBlob);
+						$('#input-to-ajax')[0].files = filelist;
 
-					//document.querySelector(".avatar-modal__save-btn").dispatchEvent(new CustomEvent("update")) - триггер события, проверка
-				})
-			}
-			document.querySelector('.avatar-modal__save-btn').addEventListener('update', camanAvatar.getData);
-
-			
+						//document.querySelector(".avatar-modal__save-btn").dispatchEvent(new CustomEvent("update")) - триггер события, проверка
+					});
+			};
+			document
+				.querySelector('.avatar-modal__save-btn')
+				.addEventListener('update', camanAvatar.getData);
 		});
-		
-
 	});
 }
 
@@ -594,7 +590,7 @@ $('.lk-sales__select').each(function () {
 				let chooseItem = $(this).data('value');
 
 				$('select').val(chooseItem).attr('selected', 'selected');
-				$('select').trigger("change");
+				$('select').trigger('change');
 				selectHead.text($(this).find('span').text());
 
 				selectList.slideUp(duration);
@@ -671,10 +667,6 @@ $('.product-lk__content-faq').each(function () {
 	});
 });
 
-
-
-
-
 //  табы Начисления и документы
 
 $('.charges__item').click(function () {
@@ -728,26 +720,20 @@ $('.discount-product__box').click(function () {
 	$(this).addClass('active').siblings().removeClass('active');
 });
 
-
 $('.merchandise-ar input:checkbox').click(function () {
-	$('.merchandise__checkbox-strong b').html($('.merchandise-ar input:checkbox:checked').length);
+	$('.merchandise__checkbox-strong b').html(
+		$('.merchandise-ar input:checkbox:checked').length,
+	);
 });
-
 
 new AirDatepicker('#lk-m__calendar', {
 	range: true,
 	multipleDatesSeparator: ' - ',
 	visible: true,
-	inline: true
-
+	inline: true,
 });
 
-
-
-
-
 jQuery(document).ready(function ($) {
-
 	var maxFileSize = 2 * 1024 * 1024; // (байт) Максимальный размер файла (2мб)
 	var queue = {};
 	var form = $('form#uploadImages');
@@ -756,7 +742,6 @@ jQuery(document).ready(function ($) {
 	var itemPreviewTemplate = imagesList.find('.item.template').clone();
 	itemPreviewTemplate.removeClass('template');
 	imagesList.find('.item.template').remove();
-
 
 	$('#addImages').on('change', function () {
 		var files = this.files;
@@ -795,7 +780,6 @@ jQuery(document).ready(function ($) {
 			imagesList.append(itemPreview);
 
 			queue[file.name] = file;
-
 		});
 		reader.readAsDataURL(file);
 	}
@@ -810,10 +794,8 @@ jQuery(document).ready(function ($) {
 		item.remove();
 	});
 
-
 	// Отправка формы
 	form.on('submit', function (event) {
-
 		var formData = new FormData(this);
 
 		for (var id in queue) {
@@ -826,18 +808,16 @@ jQuery(document).ready(function ($) {
 			data: formData,
 			async: true,
 			success: function (res) {
-				alert(res)
+				alert(res);
 			},
 			cache: false,
 			contentType: false,
-			processData: false
+			processData: false,
 		});
 
 		return false;
 	});
-
 });
-
 
 $(function () {
 	var target = $('[data-field="target"]');
@@ -869,45 +849,6 @@ $(function () {
 	});
 });
 
-
-
-
-
-
-
-$(".password-control-two").on('click', function () {
-	if ($('#password-input-two').attr('type') == 'password') {
-		$(this).addClass('view');
-		$('#password-input-two').attr('type', 'text');
-	} else {
-		$(this).removeClass('view');
-		$('#password-input-two').attr('type', 'password');
-	}
-	return false;
-});
-
-
-$(".password-control").on('click', function () {
-	if ($('#password-input').attr('type') == 'password') {
-		$(this).addClass('view');
-		$('#password-input').attr('type', 'text');
-	} else {
-		$(this).removeClass('view');
-		$('#password-input').attr('type', 'password');
-	}
-	return false;
-});
-
-
-
-
-
-
-
-
-
-
-
 $(document).on(
 	'change',
 	'.checkbox-purchases > input[type=checkbox]',
@@ -932,21 +873,13 @@ $(document).on(
 	},
 );
 
-
- 
-
-
-
-
-
-jQuery(function($) {
-	$('.product-select__span').click(function() {
+jQuery(function ($) {
+	$('.product-select__span').click(function () {
 		$(this).toggleClass('active');
-	  if ($(this).parent().find('.product-select__list').length) {
-		$(this).parent().find('.product-select__list').slideToggle(200); 
-  
-		return false;
-	  }
-  
+		if ($(this).parent().find('.product-select__list').length) {
+			$(this).parent().find('.product-select__list').slideToggle(200);
+
+			return false;
+		}
 	});
-  });
+});

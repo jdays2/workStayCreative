@@ -61,7 +61,6 @@ const cleansingSlider = new Swiper('.popular-users__swiper', {
 	},
 });
 
-
 const popularGraphSwiper = new Swiper('.popular-graph__swiper', {
 	slidesPerView: 1,
 	speed: 500,
@@ -362,11 +361,9 @@ function createTag(tag, index) {
 }
 */
 
-
 function addZero(num) {
 	return num > 9 ? num : '0' + num;
 }
-
 
 //обработка клика по кнопке подписки
 const followBtns = document.querySelectorAll('.follow-btn');
@@ -386,12 +383,30 @@ followBtns.forEach((elem) => {
 	});
 });
 
+//контроль над input typePassword
+const passWrappers = document.querySelectorAll('.lk-register__form-inner');
 
-
-
-
-
-
-
-
-
+if (passWrappers) {
+	passWrappers.forEach((box) => {
+		const activeClass = 'active';
+		const input = box?.querySelector('#password-input');
+		const btn = box?.querySelector('.password-control');
+		if (input && btn) {
+			btn.addEventListener('click', (e) => {
+				e.preventDefault();
+				switch (input.type) {
+					case 'password':
+						input.type = 'text';
+						btn.classList.add(activeClass)
+						break;
+					case 'text':
+						input.type = 'password';
+						btn.classList.remove(activeClass)
+						break;
+					default:
+						break;
+				}
+			});
+		}
+	});
+}
