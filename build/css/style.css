@@ -3398,6 +3398,8 @@ main {
     overflow: hidden;
     z-index: 1;
     position: absolute; }
+  .lk-ex .lk-register__form-inner input {
+    width: 100%; }
   .lk-ex__right {
     width: 107rem;
     height: 101rem;
