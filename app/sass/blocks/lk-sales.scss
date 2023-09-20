@@ -95,6 +95,17 @@
 	&__statistics-box-arrow {
 		width: 1.6rem;
 		height: 1.2rem;
+
+		svg {
+			fill:#DE755E;
+		}
+	}
+
+	&__statistics-box-arrow.down {
+		transform: rotate(180deg);
+		svg {
+			fill: #FFB42F;
+		}
 	}
 
 	&__statistics-box-inner {

@@ -371,7 +371,6 @@ let urlAvatar;
 const uploadFileAvatar = document.getElementById('avatar-modal__upload-file');
 let imgPreview = document.querySelector('#preImg');
 let imgPreviewTwo = document.querySelector('#preImgTwo');
-
 if (uploadFileAvatar) {
 	uploadFileAvatar.addEventListener('change', (e) => {
 		const fileAvatar = document.getElementById('avatar-modal__upload-file')
@@ -387,6 +386,7 @@ if (uploadFileAvatar) {
 		readerAvatar.addEventListener('load', () => {
 			urlAvatar = URL.createObjectURL(fileAvatar);
 			console.log(urlAvatar);
+			var cropperAvatar = null;
 			camanAvatar = Caman(canvasAvatar, urlAvatar, function () {
 				//alert('file url: ' + url);
 
@@ -422,35 +422,7 @@ if (uploadFileAvatar) {
 
 					
 				});
-				function GetData(){
-					
-					cropperAvatar.getCroppedCanvas({
-					maxWidth: 4096,
-					maxHeight: 4096,
-					fillColor: '#fff',
-					imageSmoothingEnabled: true,
-					imageSmoothingQuality: 'high',
-				}).toBlob((blob) => {
-									
-					const formData = new FormData();
-										
-					formData.append('croppedImage', blob/*, 'example.png' */);
-					let config = {
-						headers:{'Content-Type':'multipart/form-data'}
-					} 
-		
-					this.$axios.post(flow_mission_UploadFile(),param,config)
-						.then((response)=>{ 
-							console.log(response)    
-						})
-						.catch((err)=>{
-							console.log(err)
-						})
-				})
-				}
-	
-				
-				
+						
 
 				document.getElementsByClassName(
 					'avatar-modal__center',
@@ -463,12 +435,29 @@ if (uploadFileAvatar) {
 				)[0].style.display = 'flex';
 			});
 			var uploadedImageURLAvatar = URL.createObjectURL(fileAvatar);
+			camanAvatar.cropper = cropperAvatar;
+			camanAvatar.getData = function(){
+						
+				cropperAvatar.getCroppedCanvas({
+					maxWidth: 4096,
+					maxHeight: 4096,
+					fillColor: '#fff',
+					imageSmoothingEnabled: true,
+					imageSmoothingQuality: 'high',
+				}).toBlob((blob) => { 
+					console.log(blob);
+					var fileBlob = new File([byteArrays], filename, {type: contentType, lastModified: Date.now()});
+					filelist = new FileList();
+					filelist.add(fileBlob);
+					$("#input-to-ajax")[0].files = filelist;
 
+					//document.querySelector(".avatar-modal__save-btn").dispatchEvent(new CustomEvent("update")) - триггер события, проверка
+				})
+			}
+			document.querySelector('.avatar-modal__save-btn').addEventListener('update', camanAvatar.getData);
 
 			
 		});
-
-
 		
 
 	});
@@ -605,6 +594,7 @@ $('.lk-sales__select').each(function () {
 				let chooseItem = $(this).data('value');
 
 				$('select').val(chooseItem).attr('selected', 'selected');
+				$('select').trigger("change");
 				selectHead.text($(this).find('span').text());
 
 				selectList.slideUp(duration);
@@ -683,13 +673,7 @@ $('.product-lk__content-faq').each(function () {
 
 
 
-// $('.checkbox').click( function () {
-//     if (".checkbox > input[type='checkbox'] ").prop("checked") {
-//         $(".checkbox > input[type='checkbox']").removeAttr("checked");
-//       } else {
-//         $(".checkbox > input[type='checkbox']").attr("checked");
-//       }
-// });
+
 
 //  табы Начисления и документы
 
@@ -921,3 +905,48 @@ $(".password-control").on('click', function () {
 
 
 
+
+
+
+$(document).on(
+	'change',
+	'.checkbox-purchases > input[type=checkbox]',
+	function () {
+		var $this = $(this),
+			$chks = $(document.getElementsByName(this.name)),
+			$all = $chks.filter('.checkbox-purchases--all');
+
+		if ($this.hasClass('checkbox-purchases--all')) {
+			$chks.prop('checked', $this.prop('checked'));
+		} else
+			switch ($chks.filter(':checked').length) {
+				case +$all.prop('checked'):
+					$all.prop('checked', false).prop('indeterminate', false);
+					break;
+				case $chks.length - !!$this.prop('checked'):
+					$all.prop('checked', true).prop('indeterminate', false);
+					break;
+				default:
+					$all.prop('indeterminate', true);
+			}
+	},
+);
+
+
+ 
+
+
+
+
+
+jQuery(function($) {
+	$('.product-select__span').click(function() {
+		$(this).toggleClass('active');
+	  if ($(this).parent().find('.product-select__list').length) {
+		$(this).parent().find('.product-select__list').slideToggle(200); 
+  
+		return false;
+	  }
+  
+	});
+  });

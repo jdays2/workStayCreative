@@ -1,111 +1,225 @@
 .purchases-box {
-   width: 100%;
-   margin-bottom: 1.5rem;
+   width: 40.5rem;
+   margin-bottom: 6rem;
    border-radius: 2rem;
    background: #fff;
    border-radius: 2rem;
    display: flex; 
-   justify-content: space-between;
-   align-items:center;
-   padding: 2rem 2.8rem;
+   flex-direction: column;
+   padding: 2.4rem 2.2rem;
+    margin-right: 6rem;
 
-   &__title {
-    display: none;
-   }
+    &__block {
+        display: flex;
+        align-items:center;
+        margin-bottom: 2rem;
+    }
 
-   &__inner {
-    display: flex;
-    align-items:center;
-   }
+    &__block-image {
+        display: flex;
+        align-items:center;
+    }
 
-   &__image {
-    width: 9.6rem;
-    height: 6.8rem;
-    margin-right: 2rem;
+    &__image {
+        width: 8rem;
+        height: 5rem;
+        border-radius: 1rem;
+        margin-right: 1rem;
         img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
             border-radius: 1rem;
         }
-   }
+    }
 
-   &__name {
-    color:  #181818;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.4px;
-   }
-
-   &__inner-wrap {
-    max-width: 22rem;
-   }
-
-   &__from {
-    color:  #999;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.4px;
-   }
-
-   &__date {
-        color:  #A0A1A4;
+    &__block-text {
+        color:  #181818;
+        font-family: 'Gilroy',sans-serif;
         font-size: 2rem;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0.4px;
-   }
+    }
 
-   &__price {
-        color:  #A0A1A4;
+
+    .checkbox {
+        
+        padding-left: 4.6rem;
+        padding-top: 3.55rem;
+    }
+
+    &__date {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        strong {
+            display: block;
+            font-family: 'Gilroy',sans-serif;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.4px;
+            color:  #A0A1A4;
+        }
+
+        span {
+            display: block;
+            color:  #A0A1A4;
+            font-family: 'Gilroy',sans-serif;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.4px;
+           
+        }
+    }
+
+    &__buyer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+        strong {
+            display: block;
+            font-family: 'Gilroy',sans-serif;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.4px;
+            color:  #A0A1A4;
+        }
+
+        span {
+            display: block;
+            color:  #A0A1A4;
+            font-family: 'Gilroy',sans-serif;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.4px;
+           
+        }
+    }
+
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        strong {
+            display: block;
+            font-family: 'Gilroy',sans-serif;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.4px;
+            color:  #A0A1A4;
+        }
+
+        span {
+            display: block;
+            color:  #A0A1A4;
+            font-family: 'Gilroy',sans-serif;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.4px;
+            padding-right: 1.2rem;
+            position: relative;
+            &::before {
+                position: absolute;
+                content:'₽';
+                font-size: 2rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.4px;
+                color:  #A0A1A4;
+                right: 0;
+            }
+        }
+    }
+
+
+    .separator {
+        flex-grow: 1;
+			border-bottom: 1px dotted #a0a1a4;
+			margin-left: 1rem;
+			margin-right: 1rem;
+			position: relative;
+			bottom: 0.7rem;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    &__views {
+        color: #A0A1A4;
         font-size: 2rem;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0.4px;
         position: relative;
-        padding-right: 0.8rem;
+        padding-left: 2.8rem;
         &::before {
             position: absolute;
-            content:'₽';
-            font-size: 1.2rem;
-            right: 0;
-
+            content:'';
+            width: 2.2rem;
+            height: 1.7rem;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            background-image: url(../img/control-panel/glass.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
         }
-   }
+    }
 
-   &__license {
-    color:  #A0A1A4;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.4px;
-   }
+    &__like {
+        color: #A0A1A4;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        position: relative;
+        padding-left: 2.8rem;
+        &::before {
+            position: absolute;
+            content:'';
+            width: 2.2rem;
+            height: 1.7rem;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            background-image: url(../img/control-panel/heat.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    }
 
-   &__law {
-    color:  #DE755E;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.4px;
-   }
+    &__edit {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    &__basket {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+}
 
 
-   &__messages {
-    width: 2.4rem;
-    height: 2.4rem;
-    display: block;
-   }
-
-   &__download {
-    width: 2.4rem;
-    height: 2.4rem;
-    display: block;
-   }
+.purchases-box:nth-child(3n) {
+    margin-right: 0;
 }

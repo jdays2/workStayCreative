@@ -48,6 +48,9 @@
         }
     }
 
+
+    
+
     &__label-title {
         font-weight: 500;
         font-size: 2rem;
@@ -92,4 +95,70 @@
     }
 
     
+}
+
+
+
+
+
+.product-select {
+    position: relative;
+  &__span {
+    
+    height: 4.8rem;
+    background: #EAEBEF;
+    border-radius: 1rem;
+    padding: 1.4rem 2.4rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 125%;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    &::before {
+        position: absolute;
+        content:'';
+        background-image: url(../img/icon/greytringle.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        right: 2rem;
+        width: 1rem;
+        height: 0.7rem;
+        top: 45%;
+        transition: 0.2s;
+        
+    }
+  }
+
+  &__list {
+    position: absolute;
+    border-radius: 2rem;
+    background:  #FFF;
+    box-shadow: 10px 10px 31px 0px rgba(160, 161, 164, 0.19);
+    width: 59.3rem;
+    z-index: 4;
+    padding: 3.2rem;
+    top: 116%;
+    display: none;
+
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+    .checkbox {
+        display: flex;
+        padding-top: 0.8rem;
+    }
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__span.active {
+    &::before {
+        transform:rotate(180deg);
+        transition: 0.2s;
+    }
+  }
 }
