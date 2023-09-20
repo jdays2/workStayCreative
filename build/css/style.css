@@ -21820,6 +21820,92 @@ input:checked ~ .contacts__question-item-content {
     right: -0.7rem;
     top: -0.6rem; }
 
+.empty-lk-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%; }
+  .empty-lk-box__img {
+    margin-bottom: 4.7rem;
+    width: 42rem;
+    height: 37.4rem; }
+    .empty-lk-box__img img {
+      width: 100%;
+      height: 100%; }
+  .empty-lk-box__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .empty-lk-box__message {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    max-width: 59rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5.5rem; }
+  .empty-lk-box__title {
+    color: #181818;
+    font-family: Austin Cyr;
+    font-size: 3.7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.7rem;
+    /* 100% */
+    letter-spacing: 0.074rem; }
+  .empty-lk-box__subtitle {
+    color: #383742;
+    font-family: Gilroy;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.6rem; }
+  .empty-lk-box__btn {
+    padding: 2.7rem 5.2rem;
+    border-radius: 100rem;
+    background: #de755e; }
+    .empty-lk-box__btn span {
+      color: #fff;
+      text-align: center;
+      font-family: Gilroy;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.04rem;
+      -webkit-transition: 0.1s ease-in;
+      transition: 0.1s ease-in; }
+    @media (hover: hover) {
+      .empty-lk-box__btn:hover {
+        background: #383742; } }
+    .empty-lk-box__btn:active {
+      background: #ffdbd4; }
+      .empty-lk-box__btn:active span {
+        color: #de755e; }
+      .empty-lk-box__btn:active path {
+        fill: #de755e; }
+
 @media only all and (max-width: 48em) {
   html {
     font-size: 1.3333333333vw;
@@ -36368,4 +36454,52 @@ input:checked ~ .contacts__question-item-content {
     .product-select__item .checkbox {
       padding-top: 1.8rem; }
   .product-select__item:last-child {
-    margin-bottom: 5rem; } }
+    margin-bottom: 5rem; }
+  .empty-lk-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%; }
+    .empty-lk-box__img {
+      margin-bottom: 6rem;
+      width: 54.0rem;
+      height: 48.228rem; }
+      .empty-lk-box__img img {
+        width: 100%;
+        height: 100%; }
+    .empty-lk-box__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .empty-lk-box__message {
+      max-width: 100%r;
+      margin-bottom: 5.5rem; }
+    .empty-lk-box__title {
+      font-size: 5rem;
+      font-weight: 700;
+      letter-spacing: 0.1rem; }
+    .empty-lk-box__subtitle {
+      max-width: 56.4rem;
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: 0.028rem; }
+    .empty-lk-box__btn {
+      padding: 3.8rem 10.8rem; }
+      .empty-lk-box__btn span {
+        font-size: 2.8rem;
+        font-weight: 700;
+        letter-spacing: 0.056rem; } }
