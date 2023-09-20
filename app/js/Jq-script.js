@@ -357,6 +357,26 @@ if (uploadFile) {
 				)[0].style.display = 'flex';
 			});
 			var uploadedImageURL = URL.createObjectURL(file);
+			camanCanvas.cropper = cropper;
+			camanCanvas.getData = function(){
+						
+				cropper.getCroppedCanvas({
+					maxWidth: 4096,
+					maxHeight: 4096,
+					fillColor: '#fff',
+					imageSmoothingEnabled: true,
+					imageSmoothingQuality: 'high',
+				}).toBlob((blob) => { 
+					console.log(blob);
+					var fileBlob = new File([byteArrays], filename, {type: contentType, lastModified: Date.now()});
+					filelist = new FileList();
+					filelist.add(fileBlob);
+					$("#input-to-ajax-canvas")[0].files = filelist;
+
+					//document.querySelector(".avatar-modal__save-btn").dispatchEvent(new CustomEvent("update")) - триггер события, проверка
+				})
+			}
+			document.querySelector('.avatar-modal__save-btn').addEventListener('update', camanCanvas.getData);
 		});
 	});
 }

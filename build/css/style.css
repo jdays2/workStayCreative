@@ -1246,6 +1246,9 @@ main {
 #input-to-ajax {
   visibility: hidden; }
 
+#input-to-ajax-canvas {
+  visibility: hidden; }
+
 .header {
   margin-bottom: 3rem;
   background-color: #fff;
