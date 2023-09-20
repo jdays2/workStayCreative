@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU"
+			type="text/javascript"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.css"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="./css/style.min.css" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Главная</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU" type="text/javascript"> </script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.css" rel="stylesheet">
-	<link rel="stylesheet" href="./css/style.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Главная</title>
-</head>
-
-<body>
-	<header class="header">
+	<body>
+		<header class="header">
 	<div class="header__wrapper">
 		<div class="header__head">
 			<button class="header__burger">
@@ -499,7 +510,7 @@
 			</nav>
 			<div class="header__info-content">
 				<a
-					href="#"
+					href="/"
 					class="collections__two">
 					<div class="collections__two-image">
 						<img
@@ -513,7 +524,7 @@
 				</a>
 
 				<a
-					href="#"
+					href="/"
 					class="collections__four">
 					<div class="collections__four-image">
 						<img
@@ -652,7 +663,7 @@
 
 			<div class="header__categorys-card">
 				<a
-					href="#"
+					href="/"
 					class="collections__three">
 					<div class="collections__three-image">
 						<img
@@ -1002,7 +1013,7 @@
 
 				<a
 					class="header__profile-link"
-					href="#">
+					href="/">
 					<span></span>
 
 					<svg
@@ -1028,7 +1039,7 @@
 
 				<a
 					class="header__profile-link"
-					href="#">
+					href="/">
 					<span></span>
 
 					<svg
@@ -1070,7 +1081,7 @@
 
 				<a
 					class="header__profile-link"
-					href="#">
+					href="/">
 					<span></span>
 
 					<svg
@@ -1089,7 +1100,7 @@
 
 				<a
 					class="header__profile-link"
-					href="#">
+					href="/">
 					<span></span>
 
 					<svg
@@ -1124,7 +1135,7 @@
 
 				<a
 					class="header__profile-link"
-					href="#">
+					href="/">
 					<span></span>
 
 					<svg
@@ -1201,204 +1212,317 @@
 	</div>
 </header>
 
-	
-	
-	<main>
-		<section class="lk-m">
-            <div class="container">
-				<div class="lk-m__mob-title">
-					Профиль
-				</div>
-                <div class="lk-m__wrapper">
-					<div class="lk-m__left">
-						<div class="m-sidebar">
-							<div class="m-sidebar__top">
-								<div class="m-sidebar__top-avatar">
-									<div class="m-sidebar__top-avatar-image">
-										<img src="./img/lk-m/anna.png" alt="">
+
+		<main>
+			<section class="lk-m">
+				<div class="container">
+					<div class="lk-m__mob-title">Профиль</div>
+					<div class="lk-m__wrapper">
+						<div class="lk-m__left">
+							<div class="m-sidebar">
+								<div class="m-sidebar__top">
+									<div class="m-sidebar__top-avatar">
+										<div class="m-sidebar__top-avatar-image">
+											<img
+												src="./img/lk-m/anna.png"
+												alt="" />
+										</div>
+										<div class="m-sidebar__top-avatar-star">
+											<img
+												src="./img/lk-m/starred.svg"
+												alt="" />
+										</div>
 									</div>
-									<div class="m-sidebar__top-avatar-star">
-										<img src="./img/lk-m/starred.svg" alt="">
+									<!-- ava -->
+									<div class="m-sidebar__top-inner">
+										<div class="m-sidebar__top-name">Алина Петрова</div>
+										<div class="m-sidebar__top-mail">Infooooooo@gmail.com</div>
 									</div>
 								</div>
-								<!-- ava -->
-								<div class="m-sidebar__top-inner">
-									<div class="m-sidebar__top-name">Алина Петрова</div>
-									<div class="m-sidebar__top-mail">Infooooooo@gmail.com</div>
+								<div class="m-sidebar__bottom">
+									<nav class="m-sidebar__lists">
+										<a
+											href="/"
+											class="m-sidebar__item m-sidebar__item--p active">
+											<div class="icon">
+												<svg
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11ZM12 21C15.866 21 19 19.2091 19 17C19 14.7909 15.866 13 12 13C8.13401 13 5 14.7909 5 17C5 19.2091 8.13401 21 12 21Z"
+														fill="#DE755E" />
+												</svg>
+											</div>
+											<div class="text">Профиль магазина</div>
+										</a>
+										<!-- li -->
+										<a
+											href="/"
+											class="m-sidebar__item m-sidebar__item--p">
+											<div class="icon">
+												<svg
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M18.1896 6.00291L15.6 2.55004C15.3514 2.21867 14.8813 2.15152 14.55 2.40004C14.2186 2.64857 14.1514 3.11867 14.4 3.45004L16.3124 6H7.68749L9.59996 3.45004C9.84848 3.11867 9.78133 2.64857 9.44996 2.40004C9.11859 2.15152 8.64848 2.21867 8.39996 2.55004L5.81025 6.00299C3.91215 6.07606 2.4048 7.48131 2.07031 9.25H21.9315C21.5969 7.48072 20.0886 6.07511 18.1896 6.00291ZM20.2829 18.808C19.903 20.6666 18.2815 22 16.4011 22H7.60066C5.7203 22 4.09876 20.6666 3.71893 18.808L2.08401 10.808C2.08006 10.7887 2.07625 10.7693 2.07258 10.75H21.9292C21.9255 10.7693 21.9217 10.7887 21.9178 10.808L20.2829 18.808ZM9 13.25C9.41421 13.25 9.75 13.5858 9.75 14L9.75 18C9.75 18.4142 9.41421 18.75 9 18.75C8.58579 18.75 8.25 18.4142 8.25 18L8.25 14C8.25 13.5858 8.58579 13.25 9 13.25ZM15.75 14C15.75 13.5858 15.4142 13.25 15 13.25C14.5858 13.25 14.25 13.5858 14.25 14V18C14.25 18.4142 14.5858 18.75 15 18.75C15.4142 18.75 15.75 18.4142 15.75 18V14Z"
+														fill="#A0A1A4" />
+												</svg>
+											</div>
+											<div class="text">Покупки</div>
+										</a>
+										<!-- li -->
+										<a
+											href="/"
+											class="m-sidebar__item m-sidebar__item--p">
+											<div class="icon">
+												<svg
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16 9.49084V20.8509C16 22.3009 14.96 22.9108 13.69 22.2108L9.76001 20.0208C9.34001 19.7908 8.65999 19.7908 8.23999 20.0208L4.31 22.2108C3.04 22.9108 2 22.3009 2 20.8509V9.49084C2 7.78084 3.39999 6.38086 5.10999 6.38086H12.89C14.6 6.38086 16 7.78084 16 9.49084Z"
+														fill="#A0A1A4" />
+													<path
+														d="M22.5 5.10999V16.47C22.5 17.92 21.46 18.53 20.19 17.83L16.5 15.77V8.98999C16.5 7.27999 15.1 5.88 13.39 5.88H8.5V5.10999C8.5 3.39999 9.89999 2 11.61 2H19.39C21.1 2 22.5 3.39999 22.5 5.10999Z"
+														fill="#A0A1A4" />
+												</svg>
+											</div>
+											<div class="text">Коллекции</div>
+										</a>
+										<!-- li -->
+										<a
+											class="m-sidebar__item m-sidebar__item--p"
+											data-tab="4">
+											<div class="icon">
+												<svg
+													viewBox="0 0 27 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M14.151 20.409C13.794 20.5303 13.206 20.5303 12.849 20.409C9.804 19.4079 3 15.2315 3 8.15281C3 5.02809 5.6145 2.5 8.838 2.5C10.749 2.5 12.4395 3.38989 13.5 4.76517C14.5605 3.38989 16.2615 2.5 18.162 2.5C21.3855 2.5 24 5.02809 24 8.15281C24 15.2315 17.196 19.4079 14.151 20.409Z"
+														fill="#A0A1A4" />
+												</svg>
+											</div>
+											<div class="text">Избранное</div>
+										</a>
+										<!-- li -->
+										<a
+											href="/"
+											class="m-sidebar__item m-sidebar__item--p">
+											<div class="icon">
+												<svg
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M7.23146 2H16.7689C18.5863 2 20.2206 3.24475 20.8955 5.14305L21.6535 7.27487C21.8829 7.92019 22.0415 8.61074 21.8742 9.27488C21.4778 10.8478 20.192 12 18.6669 12C16.8259 12 15.3335 10.3211 15.3335 8.25C15.3335 10.3211 13.8412 12 12.0002 12C10.1593 12 8.66687 10.3211 8.66687 8.25C8.66687 10.3211 7.17449 12 5.33354 12C3.80844 12 2.52257 10.8478 2.12622 9.27488C1.95887 8.61074 2.11747 7.92019 2.34692 7.27487L3.1049 5.14305C3.77985 3.24476 5.41411 2 7.23146 2ZM4 13.3002V17.9997C4 20.2088 5.79086 21.9997 8 21.9997H9V19.9998C9 18.3429 10.3431 16.9998 12 16.9998C13.6569 16.9998 15 18.3429 15 19.9998V21.9997H16C18.2091 21.9997 20 20.2088 20 17.9997V13.3003C19.5812 13.4295 19.1348 13.4997 18.6667 13.4997C17.3296 13.4997 16.1772 12.937 15.3334 12.0557C14.4896 12.937 13.3372 13.4997 12.0001 13.4997C10.6629 13.4997 9.51056 12.937 8.66674 12.0557C7.82292 12.937 6.67053 13.4997 5.3334 13.4997C4.86527 13.4997 4.41887 13.4295 4 13.3002Z"
+														fill="#A0A1A4" />
+												</svg>
+											</div>
+											<div class="text">Обновления магазинов</div>
+										</a>
+										<!-- li -->
+										<a
+											href="/"
+											class="m-sidebar__item m-sidebar__item--p">
+											<div class="icon">
+												<svg
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M12 3C8.77095 3 6.05382 5.49085 5.67964 8.79403L5.33476 11.8385C5.24906 12.595 4.94246 13.3069 4.45549 13.88C3.42209 15.0964 4.26081 17 5.83014 17H18.1699C19.7392 17 20.5779 15.0964 19.5445 13.88C19.0575 13.3069 18.7509 12.595 18.6652 11.8385L18.3204 8.79403C17.9462 5.49085 15.2291 3 12 3ZM14.9721 19.0715C14.5147 20.1992 13.3565 21 12 21C10.6435 21 9.48526 20.1992 9.02789 19.0715C9.00883 19.0245 9 18.974 9 18.9233C9 18.6895 9.18951 18.5 9.42329 18.5H14.5767C14.8105 18.5 15 18.6895 15 18.9233C15 18.974 14.9912 19.0245 14.9721 19.0715Z"
+														fill="#A0A1A4" />
+												</svg>
+											</div>
+											<div class="text">Уведомления</div>
+										</a>
+										<!-- li -->
+									</nav>
+									<a
+										href=""
+										class="m-sidebar__m-link">
+										Перейти в магазин
+									</a>
+									<button class="m-sidebar__exit">Выйти</button>
 								</div>
-							</div>
-							<div class="m-sidebar__bottom">
-								<ul class="m-sidebar__lists">
-									<li class="m-sidebar__item m-sidebar__item--p active">
-										<div class="icon">
-											<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11ZM12 21C15.866 21 19 19.2091 19 17C19 14.7909 15.866 13 12 13C8.13401 13 5 14.7909 5 17C5 19.2091 8.13401 21 12 21Z" fill="#DE755E"/>
-                                            </svg>
-										</div>
-										<div class="text">Профиль магазина</div>
-									</li>
-									<!-- li -->
-									<li class="m-sidebar__item m-sidebar__item--p" >
-										<div class="icon">
-											<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1896 6.00291L15.6 2.55004C15.3514 2.21867 14.8813 2.15152 14.55 2.40004C14.2186 2.64857 14.1514 3.11867 14.4 3.45004L16.3124 6H7.68749L9.59996 3.45004C9.84848 3.11867 9.78133 2.64857 9.44996 2.40004C9.11859 2.15152 8.64848 2.21867 8.39996 2.55004L5.81025 6.00299C3.91215 6.07606 2.4048 7.48131 2.07031 9.25H21.9315C21.5969 7.48072 20.0886 6.07511 18.1896 6.00291ZM20.2829 18.808C19.903 20.6666 18.2815 22 16.4011 22H7.60066C5.7203 22 4.09876 20.6666 3.71893 18.808L2.08401 10.808C2.08006 10.7887 2.07625 10.7693 2.07258 10.75H21.9292C21.9255 10.7693 21.9217 10.7887 21.9178 10.808L20.2829 18.808ZM9 13.25C9.41421 13.25 9.75 13.5858 9.75 14L9.75 18C9.75 18.4142 9.41421 18.75 9 18.75C8.58579 18.75 8.25 18.4142 8.25 18L8.25 14C8.25 13.5858 8.58579 13.25 9 13.25ZM15.75 14C15.75 13.5858 15.4142 13.25 15 13.25C14.5858 13.25 14.25 13.5858 14.25 14V18C14.25 18.4142 14.5858 18.75 15 18.75C15.4142 18.75 15.75 18.4142 15.75 18V14Z" fill="#A0A1A4"/>
-                                            </svg>
-										</div>
-										<div class="text">Покупки</div>
-									</li>
-									<!-- li -->
-									<li class="m-sidebar__item m-sidebar__item--p" >
-										<div class="icon">
-											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M16 9.49084V20.8509C16 22.3009 14.96 22.9108 13.69 22.2108L9.76001 20.0208C9.34001 19.7908 8.65999 19.7908 8.23999 20.0208L4.31 22.2108C3.04 22.9108 2 22.3009 2 20.8509V9.49084C2 7.78084 3.39999 6.38086 5.10999 6.38086H12.89C14.6 6.38086 16 7.78084 16 9.49084Z" fill="#A0A1A4"/>
-                                                <path d="M22.5 5.10999V16.47C22.5 17.92 21.46 18.53 20.19 17.83L16.5 15.77V8.98999C16.5 7.27999 15.1 5.88 13.39 5.88H8.5V5.10999C8.5 3.39999 9.89999 2 11.61 2H19.39C21.1 2 22.5 3.39999 22.5 5.10999Z" fill="#A0A1A4"/>
-                                            </svg>
-												
-										</div>
-										<div class="text">Коллекции</div>
-									</li>
-									<!-- li -->
-									<li class="m-sidebar__item m-sidebar__item--p" data-tab="4">
-										<div class="icon">
-											<svg  viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M14.151 20.409C13.794 20.5303 13.206 20.5303 12.849 20.409C9.804 19.4079 3 15.2315 3 8.15281C3 5.02809 5.6145 2.5 8.838 2.5C10.749 2.5 12.4395 3.38989 13.5 4.76517C14.5605 3.38989 16.2615 2.5 18.162 2.5C21.3855 2.5 24 5.02809 24 8.15281C24 15.2315 17.196 19.4079 14.151 20.409Z" fill="#A0A1A4"/>
-                                            </svg>
-										</div>
-										<div class="text">Избранное</div>
-									</li>
-									<!-- li -->
-									<li class="m-sidebar__item m-sidebar__item--p" >
-										<div class="icon">
-											<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.23146 2H16.7689C18.5863 2 20.2206 3.24475 20.8955 5.14305L21.6535 7.27487C21.8829 7.92019 22.0415 8.61074 21.8742 9.27488C21.4778 10.8478 20.192 12 18.6669 12C16.8259 12 15.3335 10.3211 15.3335 8.25C15.3335 10.3211 13.8412 12 12.0002 12C10.1593 12 8.66687 10.3211 8.66687 8.25C8.66687 10.3211 7.17449 12 5.33354 12C3.80844 12 2.52257 10.8478 2.12622 9.27488C1.95887 8.61074 2.11747 7.92019 2.34692 7.27487L3.1049 5.14305C3.77985 3.24476 5.41411 2 7.23146 2ZM4 13.3002V17.9997C4 20.2088 5.79086 21.9997 8 21.9997H9V19.9998C9 18.3429 10.3431 16.9998 12 16.9998C13.6569 16.9998 15 18.3429 15 19.9998V21.9997H16C18.2091 21.9997 20 20.2088 20 17.9997V13.3003C19.5812 13.4295 19.1348 13.4997 18.6667 13.4997C17.3296 13.4997 16.1772 12.937 15.3334 12.0557C14.4896 12.937 13.3372 13.4997 12.0001 13.4997C10.6629 13.4997 9.51056 12.937 8.66674 12.0557C7.82292 12.937 6.67053 13.4997 5.3334 13.4997C4.86527 13.4997 4.41887 13.4295 4 13.3002Z" fill="#A0A1A4"/>
-                                                </svg>
-                                                
-										</div>
-										<div class="text">Обновления магазинов</div>
-									</li>
-									<!-- li -->
-									<li class="m-sidebar__item m-sidebar__item--p" >
-										<div class="icon">
-											<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C8.77095 3 6.05382 5.49085 5.67964 8.79403L5.33476 11.8385C5.24906 12.595 4.94246 13.3069 4.45549 13.88C3.42209 15.0964 4.26081 17 5.83014 17H18.1699C19.7392 17 20.5779 15.0964 19.5445 13.88C19.0575 13.3069 18.7509 12.595 18.6652 11.8385L18.3204 8.79403C17.9462 5.49085 15.2291 3 12 3ZM14.9721 19.0715C14.5147 20.1992 13.3565 21 12 21C10.6435 21 9.48526 20.1992 9.02789 19.0715C9.00883 19.0245 9 18.974 9 18.9233C9 18.6895 9.18951 18.5 9.42329 18.5H14.5767C14.8105 18.5 15 18.6895 15 18.9233C15 18.974 14.9912 19.0245 14.9721 19.0715Z" fill="#A0A1A4"/>
-                                                </svg>
-										</div>
-										<div class="text">Уведомления</div>
-									</li>
-									<!-- li -->
-								</ul>
-								<a href="" class="m-sidebar__m-link">Перейти в магазин</a>
-								<button class="m-sidebar__exit">
-									Выйти
-								</button>
 							</div>
 						</div>
-					</div>
-                    
-					<div class="lk-m__right">
-						<div class="lk-m__content">
-                            <div class="lk-m__title">Профиль</div>
-                          
-                            <nav class="profile__nav-lists-nav">
-                                <ul class="profile__nav-lists">
-                                    <li class="profile__nav-lists-item active" data-tab="1">Личные данные</li>
-                                    <li class="profile__nav-lists-item" data-tab="2">Способы оплаты</li>
-                                    <li class="profile__nav-lists-item" data-tab="3">Сменить пароль</li>
-                                    <li class="profile__nav-lists-item" data-tab="4">Уведомления</li>
-                                    <li class="profile__nav-lists-item" data-tab="5">подписки</li>
-                                </ul>
-                            </nav>
-                          
-                            <div class="profile active" data-tab="1">
-                                <div class="profile__content">
-                                    <div class="profile__title">
-                                        Личные данные
-                                    </div>
-                                    <div class="profile-header">
-                                        <div class="profile-header__image">
-                                            <img src="./img/profile-header/bg.png" alt="">
-                                        </div>
-                                        <button class="profile-header__btn"><span>Изменить</span></button>
-                                        <ul class="profile-header__lists">
-                                            <div class="profile-header__item profile-header__item--replace">Заменить изображение</div>
-                                            <div class="profile-header__item profile-header__item--del">Удалить</div>
-                                        </ul>
-                                    </div>
-                                    <div class="profile-user">
-                                        <div class="profile-user__avatar">
-                                            <div class="profile-user__avatar-image">
-                                                <img src="./img/profile-user/avatar.svg" alt="">
-                                            </div>
-                                            <button class="profile-user__avatar-btn">
-                                                <svg  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8125 7.7812L14 12H12C7.58172 12 4 15.5817 4 20V34C4 38.4183 7.58172 42 12 42H36C40.4183 42 44 38.4183 44 34V20C44 15.5817 40.4183 12 36 12H34L31.1875 7.7812C30.4456 6.6684 29.1967 6 27.8593 6H20.1407C18.8033 6 17.5544 6.6684 16.8125 7.7812ZM30 27C30 30.3137 27.3137 33 24 33C20.6863 33 18 30.3137 18 27C18 23.6863 20.6863 21 24 21C27.3137 21 30 23.6863 30 27ZM24 14C25.1046 14 26 13.1046 26 12C26 10.8954 25.1046 10 24 10C22.8954 10 22 10.8954 22 12C22 13.1046 22.8954 14 24 14Z" fill="white"/>
-                                                </svg>
-                                            </button>
-                                            <ul class="profile-user__lists">
-                                                <div class="profile-user__item profile-user__item--replace">Заменить изображение</div>
-                                                <div class="profile-user__item profile-user__item--del">Удалить</div>
-                                            </ul>
-                                        </div>
-                                        <!--  -->
-                                        <div class="profile-user__block">
-                                            <div class="profile-user__name">CreativeFonts</div>
-                                            <div class="profile-user__inner">
-                                                <div class="profile-user__follower">5 Подписчиков</div>
-                                                <div class="profile-user__follows">10 Подписок</div>
-                                            </div>
-                                        </div>
-                                        <div class="profile-user__date">Дата регистрации: <span>04.03.2023</span></div>
-                                    </div>
-                                    <div class="profile-salesman">
-                                        <div class="profile-salesman__title">Персональная информация</div>
-                                        <div class="profile-salesman__content">
-                                            <div class="profile-salesman__info">
-                                                <span>Имя Фамилия</span>
-                                                <strong>Алина Петрова</strong>
-                                            </div>
-                                            <div class="profile-salesman__info">
-                                                <span>Название профиля</span>
-                                                <strong>Алина Петрова</strong>
-                                            </div>
-                                            <div class="profile-salesman__info">
-                                                <span>Ссылка на веб-сайт</span>
-                                                <strong>https://goo.gl/Zgquhg</strong>
-                                            </div>
-                                            <div class="profile-salesman__info">
-                                                <span>Электронная почта</span>
-                                                <strong>Infooooooo@gmail.com</strong>
-                                            </div>
-                                          
-                                           
-                                        </div>
-                                       
-                                        <div class="profile-salesman__text-desk">
-                                            <span>Описание</span>
-                                            <p>Я UI/UX веб-дизайнер с опытом работы более 8 лет. 
-                                                Разрабатываю дизайн сайтов для малого, среднего и крупного бизнеса. Работал в Яндекс. Практикум на факультете «Дизайнер интерфейсов». Веду блог, пишу статьи о дизайне, интернет маркетинге.</p>
-                                        </div>
-                                        <button class="profile-salesman__btn-two ">
-                                            <span>Изменить</span>
-                                        </button>
-                                    </div>
-                                    
-                                    <div class="profile__btns">
-                                        <div class="profile__del ">
-                                            Вы можете<button class="button--user">удалить свой профиль</button>
-                                        </div>
-                                        <a href="#" class="profile__btn-market">
-                                           <span> Открыть магазин</span>
-                                        </a>
-                                    </div>
-                                    
-                                </div>
-                             
-                            </div>
-                            <div class="profile " data-tab="2">
-                              
-                            </div>
-                            <div class="profile " data-tab="3">
-                                <div class="profile-password">
+
+						<div class="lk-m__right">
+							<div class="lk-m__content">
+								<div class="lk-m__title">Профиль</div>
+
+								<nav class="profile__nav-lists-nav">
+									<ul class="profile__nav-lists">
+										<li
+											class="profile__nav-lists-item active"
+											data-tab="1">
+											Личные данные
+										</li>
+										<li
+											class="profile__nav-lists-item"
+											data-tab="2">
+											Способы оплаты
+										</li>
+										<li
+											class="profile__nav-lists-item"
+											data-tab="3">
+											Сменить пароль
+										</li>
+										<li
+											class="profile__nav-lists-item"
+											data-tab="4">
+											Уведомления
+										</li>
+										<li
+											class="profile__nav-lists-item"
+											data-tab="5">
+											подписки
+										</li>
+									</ul>
+								</nav>
+
+								<div
+									class="profile active"
+									data-tab="1">
+									<div class="profile__content">
+										<div class="profile__title">Личные данные</div>
+										<div class="profile-header">
+											<div class="profile-header__image">
+												<img
+													src="./img/profile-header/bg.png"
+													alt="" />
+											</div>
+											<button class="profile-header__btn">
+												<span>Изменить</span>
+											</button>
+											<ul class="profile-header__lists">
+												<div
+													class="profile-header__item profile-header__item--replace">
+													Заменить изображение
+												</div>
+												<div
+													class="profile-header__item profile-header__item--del">
+													Удалить
+												</div>
+											</ul>
+										</div>
+										<div class="profile-user">
+											<div class="profile-user__avatar">
+												<div class="profile-user__avatar-image">
+													<img
+														src="./img/profile-user/avatar.svg"
+														alt="" />
+												</div>
+												<button class="profile-user__avatar-btn">
+													<svg
+														viewBox="0 0 48 48"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															fill-rule="evenodd"
+															clip-rule="evenodd"
+															d="M16.8125 7.7812L14 12H12C7.58172 12 4 15.5817 4 20V34C4 38.4183 7.58172 42 12 42H36C40.4183 42 44 38.4183 44 34V20C44 15.5817 40.4183 12 36 12H34L31.1875 7.7812C30.4456 6.6684 29.1967 6 27.8593 6H20.1407C18.8033 6 17.5544 6.6684 16.8125 7.7812ZM30 27C30 30.3137 27.3137 33 24 33C20.6863 33 18 30.3137 18 27C18 23.6863 20.6863 21 24 21C27.3137 21 30 23.6863 30 27ZM24 14C25.1046 14 26 13.1046 26 12C26 10.8954 25.1046 10 24 10C22.8954 10 22 10.8954 22 12C22 13.1046 22.8954 14 24 14Z"
+															fill="white" />
+													</svg>
+												</button>
+												<ul class="profile-user__lists">
+													<div
+														class="profile-user__item profile-user__item--replace">
+														Заменить изображение
+													</div>
+													<div
+														class="profile-user__item profile-user__item--del">
+														Удалить
+													</div>
+												</ul>
+											</div>
+											<!--  -->
+											<div class="profile-user__block">
+												<div class="profile-user__name">CreativeFonts</div>
+												<div class="profile-user__inner">
+													<div class="profile-user__follower">
+														5 Подписчиков
+													</div>
+													<div class="profile-user__follows">10 Подписок</div>
+												</div>
+											</div>
+											<div class="profile-user__date">
+												Дата регистрации:
+												<span>04.03.2023</span>
+											</div>
+										</div>
+										<div class="profile-salesman">
+											<div class="profile-salesman__title">
+												Персональная информация
+											</div>
+											<div class="profile-salesman__content">
+												<div class="profile-salesman__info">
+													<span>Имя Фамилия</span>
+													<strong>Алина Петрова</strong>
+												</div>
+												<div class="profile-salesman__info">
+													<span>Название профиля</span>
+													<strong>Алина Петрова</strong>
+												</div>
+												<div class="profile-salesman__info">
+													<span>Ссылка на веб-сайт</span>
+													<strong>https://goo.gl/Zgquhg</strong>
+												</div>
+												<div class="profile-salesman__info">
+													<span>Электронная почта</span>
+													<strong>Infooooooo@gmail.com</strong>
+												</div>
+											</div>
+
+											<div class="profile-salesman__text-desk">
+												<span>Описание</span>
+												<p>
+													Я UI/UX веб-дизайнер с опытом работы более 8 лет.
+													Разрабатываю дизайн сайтов для малого, среднего и
+													крупного бизнеса. Работал в Яндекс. Практикум на
+													факультете «Дизайнер интерфейсов». Веду блог, пишу
+													статьи о дизайне, интернет маркетинге.
+												</p>
+											</div>
+											<button class="profile-salesman__btn-two">
+												<span>Изменить</span>
+											</button>
+										</div>
+
+										<div class="profile__btns">
+											<div class="profile__del">
+												Вы можете
+												<button class="button--user">
+													удалить свой профиль
+												</button>
+											</div>
+											<a
+												href="/"
+												class="profile__btn-market">
+												<span>Открыть магазин</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div
+									class="profile"
+									data-tab="2"></div>
+								<div
+									class="profile"
+									data-tab="3">
+									<div class="profile-password">
     <div class="profile-password__content" >
         <div class="profile-password__title">
             <strong>Сменить пароль</strong>
@@ -1429,7 +1553,7 @@
             </div>
             <div class="profile-password__btns">
                 <button class="red-btn"><span>Сохранить пароль</span></button>
-                <a href="#">Забыли пароль?</a>
+                <a href="/">Забыли пароль?</a>
             </div>
         </form>
     </div>
@@ -1489,15 +1613,14 @@
         <button class="red-btn"><span>Сохранить</span></button>
     </div>
 </div>
-                            </div>
-                        </div>
+								</div>
+							</div>
+						</div>
 					</div>
-                </div>
-            </div>
-        </section>
+				</div>
+			</section>
+		</main>
 		
-	</main>
-	
 
 <footer class="footer">
 	<div class="container">
@@ -1505,7 +1628,7 @@
 			<div class="footer__socials-wrapper">
 				<a
 					class="footer__logo"
-					href="#">
+					href="/">
 					<img
 						src="./img/footer/logo-white-version.svg"
 						alt="" />
@@ -2276,7 +2399,5 @@
 <script src="./js/fonts.js"></script>
 <script src="./js/product-card.js"></script>
 
-
-</body>
-
+	</body>
 </html>

@@ -291,7 +291,7 @@ $('.input-file input[type=file]').on('change', function () {
 			'<span class="input-file-list-name">' +
 			this.files.item(i).name +
 			'</span>' +
-			'<a href="#" onclick="removeFilesItem(this); return false;" class="input-file-list-remove">x</a>' +
+			'<a href="/" onclick="removeFilesItem(this); return false;" class="input-file-list-remove">x</a>' +
 			'</div>';
 		$files_list.append(new_file_input);
 		dt.items.add(this.files.item(i));
