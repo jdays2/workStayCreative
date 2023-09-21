@@ -1,0 +1,87 @@
+.fault {
+	padding: 0rem 6rem 11.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__img {
+		width: 71.9rem;
+		height: 67.5rem;
+		img {
+			-o-object-fit: contain;
+			object-fit: contain;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__head {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+
+		strong {
+			color: #de755e;
+			font-family: Austin Cyr;
+			font-size: 20rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 0.75;
+			letter-spacing: 0.4rem;
+		}
+
+		p {
+			color: #181818;
+			font-family: Austin Cyr;
+			font-size: 3.7rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 3.7rem;
+			letter-spacing: 0.074rem;
+		}
+	}
+
+	&__content-box {
+		display: flex;
+		flex-direction: column;
+		gap: 5.5rem;
+	}
+
+	&__message {
+		color: #383742;
+		font-family: Gilroy;
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 2.6rem;
+		width: 47.4rem;
+	}
+
+	&__btns {
+		display: flex;
+		gap: 6rem;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		align-items: center;
+	}
+
+	&__btn {
+		padding: 2.7rem 5.2rem;
+		background-color: #de755e;
+		height: 7.9rem;
+		border-radius: 100rem;
+
+		span {
+			color: white;
+			color:  #fff;
+			text-align: center;
+			font-family: Gilroy;
+			font-size: 2rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.04rem;
+		}
+	}
+}

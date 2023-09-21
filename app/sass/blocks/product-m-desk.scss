@@ -26,6 +26,8 @@
         letter-spacing: 0.4px;
         margin-bottom: 5.2rem;
         display: block;
+        cursor: pointer;
+        width: fit-content;
     }
 
     &__btns {
@@ -35,5 +37,29 @@
         .red-btn {
             margin-right: 5.2rem;
         }
+    }
+
+    &__numbers {
+        display: flex;
+        color:  #A0A1A4;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%; 
+        position: absolute;
+        bottom: 5rem;
+        right: 1.8rem;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__numbers-quantity {
+        padding-right: 0.1rem;
+    }
+
+    &__numbers-sum {
+        padding-left: 0.1rem;
     }
 }

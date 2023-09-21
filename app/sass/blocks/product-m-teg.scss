@@ -1,10 +1,13 @@
 .product-m-teg {
     margin-top: 4rem;
-
+  position: relative;
     ul {
-        margin-block-start: 0;
-        margin-block-end: 0;
-        padding-inline-start: 0px;
+        -webkit-margin-before: 0;
+                margin-block-start: 0;
+        -webkit-margin-after: 0;
+                margin-block-end: 0;
+        -webkit-padding-start: 0px;
+                padding-inline-start: 0px;
       }
       
       li {
@@ -76,6 +79,62 @@
         right: 0;
         margin-left: 1.4rem;
       }
+
+
+      &__cashs {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      &__cash {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        height: 4.8rem;
+        border-radius: 1rem;
+        border: 0.2rem solid  #DE755E;
+        padding: 1.4rem 2.8rem;
+        margin-right: 1.2rem;
+        color:  #DE755E;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        margin-bottom: 1.2rem;
+        transition: 0.1s;
+        cursor: pointer;
+        &:hover {
+          background: rgba(222, 117, 94, 0.3);
+          color:  #DE755E;
+          transition: 0.1s;
+          border: 0.2rem solid rgba(222, 117, 94, 0.3);
+        }
+      }
+
+
+
+      &__numbers {
+        display: flex;
+        color:  #A0A1A4;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%; 
+        position: absolute;
+        top: 0;
+        right: 1.8rem;
+    }
+
+   
+
+    &__numbers-quantity {
+        padding-right: 0.1rem;
+    }
+
+    &__numbers-sum {
+        padding-left: 0.1rem;
+    }
       
     
       

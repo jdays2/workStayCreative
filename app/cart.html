@@ -27,10 +27,24 @@
 					<span class="cart__counter">3</span>
 				</p>
 				<div class="cart__order">
+					<!-- <div class="cart__empty">
+						<div class="cart__empty-img">
+							<img src="./img/cart/empty-img.png" alt="">
+						</div>
+						<div class="cart__empty-massage">
+							<strong>В корзине нет товаров</strong>
+							<p>Найдите то, что вам нужно в каталоге или при помощи поиска</p>
+						</div>
+
+						<div class="cart__empty-btn">
+							<span>Перейти в каталог</span>
+						</div>
+					</div> -->
+
 					<ul class="cart__list">
 						<li class="cart__product-item">
 							<div class="cart__item-wrapper">
-								<div class="cart__item">
+								<div class="cart__item active">
 									<button class="cart__item-remove">
 										<img
 											src="./img/cart/remove-icon.svg"
@@ -61,6 +75,20 @@
 											src="./img/cart/question-mark-icon.svg"
 											class="cart__item-info-icon"
 											alt="" />
+									</div>
+									<div class="cart__item-mobile-icon-wrapper">
+										<svg
+											class="cart__item-mobile-icon"
+											xmlns="http://www.w3.org/2000/svg"
+											width="9"
+											height="18"
+											viewBox="0 0 9 18"
+											fill="none">
+											<path
+												d="M5.92721 1.09706C5.97567 1.03243 6.02867 0.971333 6.08579 0.914214C7.1612 -0.161203 9 0.60045 9 2.12132V15.8902C9 17.4734 7.03032 18.202 6 17L1.35 10.8C0.55 9.73333 0.55 8.26667 1.35 7.2L5.92721 1.09706Z"
+												fill="#DE755E"
+												fill-opacity="0.2" />
+										</svg>
 									</div>
 								</div>
 								<button class="cart__item-mob-close-btn">
@@ -133,7 +161,7 @@
 
 						<li class="cart__product-item">
 							<div class="cart__item-wrapper">
-								<div class="cart__item">
+								<div class="cart__item active">
 									<button class="cart__item-remove">
 										<img
 											src="./img/cart/remove-icon.svg"
@@ -149,12 +177,25 @@
 											<span>Продавец Vasiliy123</span>
 										</p>
 										<button class="cart__item-license">App лицензия</button>
-										<div
-											class="cart__item-price-wrapper">
+										<div class="cart__item-price-wrapper">
 											<span class="cart__item-price basic-card__price">
 												4500
 											</span>
 										</div>
+									</div>
+									<div class="cart__item-mobile-icon-wrapper">
+										<svg
+											class="cart__item-mobile-icon"
+											xmlns="http://www.w3.org/2000/svg"
+											width="9"
+											height="18"
+											viewBox="0 0 9 18"
+											fill="none">
+											<path
+												d="M5.92721 1.09706C5.97567 1.03243 6.02867 0.971333 6.08579 0.914214C7.1612 -0.161203 9 0.60045 9 2.12132V15.8902C9 17.4734 7.03032 18.202 6 17L1.35 10.8C0.55 9.73333 0.55 8.26667 1.35 7.2L5.92721 1.09706Z"
+												fill="#DE755E"
+												fill-opacity="0.2" />
+										</svg>
 									</div>
 								</div>
 								<button class="cart__item-mob-close-btn">
@@ -222,7 +263,7 @@
 
 						<li class="cart__product-item">
 							<div class="cart__item-wrapper">
-								<div class="cart__item">
+								<div class="cart__item active">
 									<button class="cart__item-remove">
 										<img
 											src="./img/cart/remove-icon.svg"
@@ -238,12 +279,25 @@
 											<span>Продавец Vasiliy123</span>
 										</p>
 										<button class="cart__item-license">App лицензия</button>
-										<div
-											class="cart__item-price-wrapper">
+										<div class="cart__item-price-wrapper">
 											<span class="cart__item-price basic-card__price">
 												4500
 											</span>
 										</div>
+									</div>
+									<div class="cart__item-mobile-icon-wrapper">
+										<svg
+											class="cart__item-mobile-icon"
+											xmlns="http://www.w3.org/2000/svg"
+											width="9"
+											height="18"
+											viewBox="0 0 9 18"
+											fill="none">
+											<path
+												d="M5.92721 1.09706C5.97567 1.03243 6.02867 0.971333 6.08579 0.914214C7.1612 -0.161203 9 0.60045 9 2.12132V15.8902C9 17.4734 7.03032 18.202 6 17L1.35 10.8C0.55 9.73333 0.55 8.26667 1.35 7.2L5.92721 1.09706Z"
+												fill="#DE755E"
+												fill-opacity="0.2" />
+										</svg>
 									</div>
 								</div>
 								<button class="cart__item-mob-close-btn">
@@ -340,17 +394,15 @@
 							<div class="cart__order-summary">
 								<span class="cart__order-summary-title">Сумма к оплате</span>
 
-								
 								<span class="cart__order-list-price basic-card__price">
 									13000
 								</span>
-							
 							</div>
 						</div>
 
 						<div class="cart__order-link">
 							<div class="cart__break-line"></div>
-							<a href="#">Оформить заказ</a>
+							<a href="/">Оформить заказ</a>
 						</div>
 					</div>
 				</div>
@@ -375,16 +427,17 @@
 									</button>
 								</div>
 
-								<img
-									class="basic-card__img"
-									src="./img/basic-card/image 19452.png"
-									alt="" />
+								<div class="basic-card__img">
+									<img
+										src="./img/basic-card/image 19452.png"
+										alt="" />
+								</div>
 
 								<div class="basic-card__info">
 									<div class="basic-card__discription">
 										<p class="basic-card__title">Мега набор постеров</p>
 										<a
-											href="#"
+											href="/"
 											class="basic-card__link">
 											<span>От Wall art...</span>
 										</a>
@@ -418,16 +471,17 @@
 									</button>
 								</div>
 
-								<img
-									class="basic-card__img"
-									src="./img/basic-card/image 19452.png"
-									alt="" />
+								<div class="basic-card__img">
+									<img
+										src="./img/basic-card/image 19452.png"
+										alt="" />
+								</div>
 
 								<div class="basic-card__info">
 									<div class="basic-card__discription">
 										<p class="basic-card__title">Мега набор постеров</p>
 										<a
-											href="#"
+											href="/"
 											class="basic-card__link">
 											<span>От Wall art...</span>
 										</a>
@@ -461,16 +515,17 @@
 									</button>
 								</div>
 
-								<img
-									class="basic-card__img"
-									src="./img/basic-card/image 19452.png"
-									alt="" />
+								<div class="basic-card__img">
+									<img
+										src="./img/basic-card/image 19452.png"
+										alt="" />
+								</div>
 
 								<div class="basic-card__info">
 									<div class="basic-card__discription">
 										<p class="basic-card__title">Мега набор постеров</p>
 										<a
-											href="#"
+											href="/"
 											class="basic-card__link">
 											<span>От Wall art...</span>
 										</a>
@@ -504,16 +559,17 @@
 									</button>
 								</div>
 
-								<img
-									class="basic-card__img"
-									src="./img/basic-card/image 19452.png"
-									alt="" />
+								<div class="basic-card__img">
+									<img
+										src="./img/basic-card/image 19452.png"
+										alt="" />
+								</div>
 
 								<div class="basic-card__info">
 									<div class="basic-card__discription">
 										<p class="basic-card__title">Мега набор постеров</p>
 										<a
-											href="#"
+											href="/"
 											class="basic-card__link">
 											<span>От Wall art...</span>
 										</a>
@@ -533,29 +589,6 @@
 				</div>
 			</section>
 		</main>
-
-		<!-- //модалка если лецензия уже купленна-->
-		<!-- <div class="modal modal--order-alert">
-			<div class="modal__wrapper">
-				<button class="modal__close-btn">
-					<img
-						src="./img/icon/close.svg"
-						alt="" />
-				</button>
-
-				<button class="modal__close-btn modal__close-btn--unknown">
-					<img
-						src="./img/icon/left-arrow-black-icon.svg"
-						alt="" />
-				</button>
-				<img src="./img/icon/exclamation-icon.svg" class="modal__image" alt="">
-				<p class="modal__title">Лицензия Digital ADS  была куплена ранее</p>
-			
-				<button class="modal__button">
-					<span>Мои покупки</span>
-				</button>
-			</div>
-		</div>  -->
 		@@include('./template/footer.html')
 
 		<script src="./js/cart.js

@@ -496,9 +496,7 @@ input {
     // 1. Addresses appearance set to searchfield in S5, Chrome
     // 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
     &[type="search"] {
-        -webkit-appearance: textfield; // 1
-        -moz-box-sizing: content-box;
-        -webkit-box-sizing: content-box; // 2
+        -webkit-appearance: textfield; // 1 // 2
         box-sizing: content-box;
         
     	// Remove inner padding and search cancel button in Safari 5 and Chrome

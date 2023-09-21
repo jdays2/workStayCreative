@@ -25,6 +25,12 @@ body {
     color: #383742;
     background-color: #EAEBEF;
     background: #EAEBEF;
+
+    &::-webkit-scrollbar {
+        display: none;
+      }
+      scrollbar-width:none; 
+      scrollbar-color: #888 #f0f0f0;
 }
 
 input,

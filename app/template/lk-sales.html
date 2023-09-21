@@ -14,9 +14,9 @@
                     <div class="lk-sales__statistics-box-sum lk-sales__statistics-box-sum--rub">
                         200 000
                     </div>
-                    <div class="lk-sales__statistics-box-arrow">
+                    <div class="lk-sales__statistics-box-arrow down">
                         <svg  viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 1.39876e-06L13.9282 9L0.0717953 9L7 1.39876e-06Z" fill="#DE755E"/>
+                            <path d="M7 1.39876e-06L13.9282 9L0.0717953 9L7 1.39876e-06Z" />
                         </svg>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                     </div>
                     <div class="lk-sales__statistics-box-arrow">
                         <svg  viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 1.39876e-06L13.9282 9L0.0717953 9L7 1.39876e-06Z" fill="#DE755E"/>
+                            <path d="M7 1.39876e-06L13.9282 9L0.0717953 9L7 1.39876e-06Z" />
                         </svg>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="lk-sales__statistics-box-arrow">
                         <svg  viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 1.39876e-06L13.9282 9L0.0717953 9L7 1.39876e-06Z" fill="#DE755E"/>
+                            <path d="M7 1.39876e-06L13.9282 9L0.0717953 9L7 1.39876e-06Z" />
                         </svg>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                     </div>
                     <div class="lk-sales__statistics-box-arrow">
                         <svg  viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 1.39876e-06L13.9282 9L0.0717953 9L7 1.39876e-06Z" fill="#DE755E"/>
+                            <path d="M7 1.39876e-06L13.9282 9L0.0717953 9L7 1.39876e-06Z" />
                         </svg>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
         </nav>
         <div class="lk-sales__chart-wrap active" data-tab="1">
             <div class="lk-sales__chart" >
-                <canvas id="myChart" style="max-height: 100%; max-width: 100%;"></canvas>
+                <canvas id="myChart" style="max-height: 100%; max-width: 100%; "></canvas>
             </div>
             <div class="lk-sales__chart-wrap-inner">
                 <div class="lk-sales__chart-date">Последнее обновление в 12.30</div>
@@ -134,22 +134,138 @@
         
     </div>
     <div class="lk-sales__sale">
-        <div class="lk-sales__sale-title">
-            Продажи
+        
+        <div class="header-block__wrapper lk-sales__sale--header">
+            <div class="lk-sales__sale-title">
+                Продажи
+            </div>
+
+            <div class="header-block__buttons-wrapper ">
+                <button
+                    class="header-block__sort"
+                    id="sort-btn">
+                    <span>Неделя</span>
+                    <img
+                        src="./img/fonts/list-icon.svg"
+                        alt=""
+                        class="header-block__sort-btn-icon" />
+                </button>
+
+                <button class="header-block__filter" id="filter-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" fill="none">
+                        <path d="M7.1875 4.31234H6.94792V1.9165C6.94792 1.52359 6.62208 1.19775 6.22917 1.19775C5.83625 1.19775 5.51042 1.52359 5.51042 1.9165V4.31234H5.27083C3.74708 4.31234 2.875 5.18442 2.875 6.70817V12.4582C2.875 13.9819 3.74708 14.854 5.27083 14.854H5.51042V21.0832C5.51042 21.4761 5.83625 21.8019 6.22917 21.8019C6.62208 21.8019 6.94792 21.4761 6.94792 21.0832V14.854H7.1875C8.71125 14.854 9.58333 13.9819 9.58333 12.4582V6.70817C9.58333 5.18442 8.71125 4.31234 7.1875 4.31234Z" fill="#383742"/>
+                        <path d="M17.729 8.14567H17.4894V1.9165C17.4894 1.52359 17.1636 1.19775 16.7707 1.19775C16.3778 1.19775 16.0519 1.52359 16.0519 1.9165V8.14567H15.8123C14.2886 8.14567 13.4165 9.01775 13.4165 10.5415V16.2915C13.4165 17.8153 14.2886 18.6873 15.8123 18.6873H16.0519V21.0832C16.0519 21.4761 16.3778 21.8019 16.7707 21.8019C17.1636 21.8019 17.4894 21.4761 17.4894 21.0832V18.6873H17.729C19.2528 18.6873 20.1248 17.8153 20.1248 16.2915V10.5415C20.1248 9.01775 19.2528 8.14567 17.729 8.14567Z" fill="#383742"/>
+                        </svg>
+                </button>
+
+                <ul
+                    class="sort-popup"
+                    id="sort-popup">
+                    <li class="sort-popup__item">
+                        <input
+                            type="radio"
+                            name="sort"
+                            id="sort-new"
+                            checked />
+                        <label
+                            for="sort-new"
+                            class="sort-popup__label">
+                            <div class="sort-popup__checker checker checker">
+                                <img
+                                    src="./img/icon/checker-icon-black.svg"
+                                    alt="" />
+                            </div>
+                            <span class="sort-popup__title">Новые</span>
+                        </label>
+                    </li>
+
+                    <li class="sort-popup__item">
+                        <input
+                            type="radio"
+                            name="sort"
+                            id="sort-popular" />
+                        <label
+                            for="sort-popular"
+                            class="sort-popup__label">
+                            <div class="sort-popup__checker checker">
+                                <img
+                                    src="./img/icon/checker-icon-black.svg"
+                                    alt="" />
+                            </div>
+                            <span class="sort-popup__title">Самые популярные</span>
+                        </label>
+                    </li>
+
+                    <li class="sort-popup__item">
+                        <input
+                            type="radio"
+                            name="sort"
+                            id="sort-7days" />
+                        <label
+                            for="sort-7days"
+                            class="sort-popup__label">
+                            <div class="sort-popup__checker checker">
+                                <img
+                                    src="./img/icon/checker-icon-black.svg"
+                                    alt="" />
+                            </div>
+                            <span class="sort-popup__title">Последние 7 дней</span>
+                        </label>
+                    </li>
+
+                    <li class="sort-popup__item">
+                        <input
+                            type="radio"
+                            name="sort"
+                            id="sort-30days" />
+                        <label
+                            for="sort-30days"
+                            class="sort-popup__label">
+                            <div class="sort-popup__checker checker">
+                                <img
+                                    src="./img/icon/checker-icon-black.svg"
+                                    alt="" />
+                            </div>
+                            <span class="sort-popup__title">Последние 30 дней</span>
+                        </label>
+                    </li>
+
+                    <li class="sort-popup__item">
+                        <input
+                            type="radio"
+                            name="sort"
+                            id="sort-365days" />
+                        <label
+                            for="sort-365days"
+                            class="sort-popup__label">
+                            <div class="sort-popup__checker checker">
+                                <img
+                                    src="./img/icon/checker-icon-black.svg"
+                                    alt="" />
+                            </div>
+                            <span class="sort-popup__title">Последние 365 дней</span>
+                        </label>
+                    </li>
+
+                    <li class="sort-popup__item">
+                        <input
+                            type="radio"
+                            name="sort"
+                            id="sort-alltime" />
+                        <label
+                            for="sort-alltime"
+                            class="sort-popup__label">
+                            <div class="sort-popup__checker checker">
+                                <img
+                                    src="./img/icon/checker-icon-black.svg"
+                                    alt="" />
+                            </div>
+                            <span class="sort-popup__title">Все время</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <nav class="lk-sales__sale-nav">
-            <div class="lk-sales__sale-nav-date">12.03.2023 - 12.03.2023</div>
-            <select class="lk-sales__select" name="language">
-                <option disabled>Неделя</option>
-                <option value="365">Неделя</option>
-                <option value="120">День</option>
-                <option value="7">Месяц</option>
-                <option value="30">Год</option>
-            </select>
-            <button class="lk-sales__sale-filter-btn">
-                <span>Фильтры</span>
-            </button>
-        </nav>
         <div class="lk-sales__sale-points">
             
                 <div class="lk-sales__sale-item">Дата продажи</div>
@@ -434,17 +550,40 @@
                 </div>
             </article>
         </div>
+        <div class="lk-sales__pagination-page">
+            <div class="lk-sales__pagination-page-numbers">
+                <div class="lk-sales__pagination-page-number-sum">01</div>
+                <div class="lk-sales__pagination-page-number-total">16</div>
+            </div>
+            <div class="lk-sales__pagination-page-arrows">
+                <div class="lk-sales__pagination-page-arrow-prev">
+                    <svg  viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.292961 8.70711C-0.0975647 8.31658 -0.0975647 7.68342 0.292961 7.29289L6.65692 0.928932C7.04745 0.538408 7.68061 0.538408 8.07113 0.928932C8.46166 1.31946 8.46166 1.95262 8.07113 2.34315L2.41428 8L8.07113 13.6569C8.46166 14.0474 8.46166 14.6805 8.07113 15.0711C7.68061 15.4616 7.04745 15.4616 6.65692 15.0711L0.292961 8.70711ZM32.6189 9H1.00007V7H32.6189V9Z" fill="#383742"/>
+                    </svg>
+                </div>
+                <div class="lk-sales__pagination-page-arrow-next">
+                    <svg viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32.707 8.70711C33.0976 8.31658 33.0976 7.68342 32.707 7.29289L26.3431 0.928932C25.9526 0.538408 25.3194 0.538408 24.9289 0.928932C24.5383 1.31946 24.5383 1.95262 24.9289 2.34315L30.5857 8L24.9289 13.6569C24.5383 14.0474 24.5383 14.6805 24.9289 15.0711C25.3194 15.4616 25.9526 15.4616 26.3431 15.0711L32.707 8.70711ZM0.381104 9H31.9999V7H0.381104V9Z" fill="#383742"/>
+                        </svg>
+                </div>
+            </div>
+            <div class="lk-sales__pagination-page-inner">
+                <div class="lk-sales__pagination-page-link">Прейти на страницу</div>
+                <div class="lk-sales__pagination-page-wrap">1</div>
+                <div class="lk-sales__pagination-page-link-two">Перейти</div>
+            </div>
+        </div>
     </div>
     <div class="lk-sales__advice">
         <div class="lk-sales__advice-title">
             <div class="lk-sales__advice-word">Советы для вашего магазина </div>
-            <a href="#" class="link">Смотреть все</a>
+            <a href="/" class="link">Смотреть все</a>
         </div>
         <div class="lk-sales__advice-wrapper">
             <div class="lk-sales__advice-swiper swiper">
                 <div class="lk-sales__advice-swiper-wrapper swiper-wrapper">
                     <div class="lk-sales__advice-slide swiper-slide">
-                        <a href="#" class="advice-c">
+                        <a href="/" class="advice-c">
                             <div class="advice-c__block">
                                 <div class="advice-c__block-image">
                                     <img src="./img/advice/img1.png" alt="">
@@ -480,7 +619,7 @@
                         </a>
                     </div>
                     <div class="lk-sales__advice-slide swiper-slide">
-                        <a href="#" class="advice-c">
+                        <a href="/" class="advice-c">
                             <div class="advice-c__block">
                                 <div class="advice-c__block-image">
                                     <img src="./img/advice/img2.png" alt="">
@@ -517,7 +656,7 @@
                         </a>
                     </div>
                     <div class="lk-sales__advice-slide swiper-slide">
-                        <a href="#" class="advice-c">
+                        <a href="/" class="advice-c">
                             <div class="advice-c__block">
                                 <div class="advice-c__block-image">
                                     <img src="./img/advice/img3.png" alt="">
@@ -553,7 +692,7 @@
                         </a>
                     </div>
                     <div class="lk-sales__advice-slide swiper-slide">
-                        <a href="#" class="advice-c">
+                        <a href="/" class="advice-c">
                             <div class="advice-c__block">
                                 <div class="advice-c__block-image">
                                     <img src="./img/advice/img4.png" alt="">

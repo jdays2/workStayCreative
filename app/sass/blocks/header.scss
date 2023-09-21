@@ -4,7 +4,7 @@
 	border-radius: 0 0 3rem 3rem;
 	position: fixed;
 	width: 100%;
-	top: 0rem;	
+	top: 0rem;
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
 	height: fit-content;
@@ -18,6 +18,79 @@
 		&__mobile-bar,
 		&__search {
 			display: none;
+		}
+	}
+
+	&__results {
+		&-popup {
+			border-radius: 2rem;
+			background: #fff;
+			box-shadow: 1rem 1rem 3.1rem 0rem rgba(160, 161, 164, 0.19);
+			width: 42.5rem;
+			padding: 1.2rem 1.1rem 1.2rem 4.4rem;
+
+			position: absolute;
+			top: 100%;
+			right: 0;
+			z-index: 1;
+			opacity: 0;
+			transform: translateY(-6rem);
+			transition: 0.4s;
+
+			&.active {
+				opacity: 1;
+				transform: translateY(0rem);
+
+				.header__results-list {
+					max-height: 30rem;
+				}
+			}
+		}
+
+		&-empty {
+			color: #383742;
+			font-family: Gilroy;
+			font-size: 1.6rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			letter-spacing: 0.032rem;
+		}
+
+		&-list {
+			display: flex;
+			flex-direction: column;
+			gap: 1.9rem;
+			padding-top: 0.75rem;
+			padding-bottom: 0.75rem;
+			max-height: 0rem;
+			overflow-y: auto;
+
+			&::-webkit-scrollbar {
+				width: 0.2rem;
+				border-radius: 3px;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background-color: #d9d9d9;
+			}
+
+			&::-webkit-scrollbar-track {
+				background-color: transparent;
+			}
+		}
+
+		&-item {
+			span {
+				color: #383742;
+				font-family: Gilroy;
+				font-size: 1.6rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				letter-spacing: 0.064rem;
+				cursor: pointer;
+			}
 		}
 	}
 
@@ -198,6 +271,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		position: relative;
 
 		img {
 			width: 2.281rem;
@@ -213,6 +287,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		position: relative;
 
 		img {
 			width: 2.8rem;
@@ -225,6 +300,7 @@
 		background: #de755e;
 		border-radius: 100rem;
 		padding: 2.5rem 2.8rem;
+		position: relative;
 
 		span {
 			font-family: 'Gilroy';
@@ -251,10 +327,6 @@
 		transition: 0.6s ease;
 	}
 
-	&__buttons-bar--reg {
-		margin-right: 7.65rem;
-	}
-
 	&__modal {
 		position: fixed;
 		overflow: auto;
@@ -267,6 +339,10 @@
 		display: flex;
 	}
 
+	&__search-wrapper {
+		position: relative;
+	}
+
 	&__search {
 		display: flex;
 		align-items: center;
@@ -277,6 +353,11 @@
 		min-width: 67.1rem;
 		border: 0.1rem solid transparent;
 		color: #a5a5a9;
+		z-index: 2;
+
+		&.active {
+			box-shadow: 1rem 1rem 3.1rem rgba(160, 161, 164, 0.19);
+		}
 	}
 
 	&__search-button-wrapper {
@@ -325,8 +406,8 @@
 
 	&__register-alert {
 		position: absolute;
-		top: -20.2rem;
 		right: 6rem;
+		top: 11.8rem;
 		z-index: 30;
 		padding: 3.2rem 2.6rem;
 		background-color: white;
@@ -334,7 +415,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: 2.4rem;
-		transition: 0.6s ease;
+		transition: 0.4s ease;
+
+		transform: translateY(-100%);
 
 		p {
 			width: 40.6rem;
@@ -347,11 +430,10 @@
 
 			color: #383742;
 		}
-	}
 
-	&__register-alert--show {
-		top: 11.8rem;
-		box-shadow: 1rem 1rem 3.1rem rgba(160, 161, 164, 0.19);
+		&.active {
+			transform: translateY(0%);
+		}
 	}
 
 	&__register-alert-button {
@@ -649,22 +731,29 @@
 		padding-right: 1.1rem;
 		box-shadow: 1rem 1rem 3.1rem rgba(160, 161, 164, 0.19);
 		border-radius: 0 0 2rem 2rem;
-		transform: translateY(20.3rem);
 		position: absolute;
-		left: 6.3rem;
+		top: 100%;
+		left: 0;
+		z-index: 1;
+		opacity: 0;
+		transform: translateY(-6rem);
 		transition: 0.4s;
-		z-index: -1;
-		max-height: 0rem;
-		overflow: hidden;
-		padding-top: 3rem;
-		top: -18rem;
+
+		&.active {
+			opacity: 1;
+			transform: translateY(0rem);
+
+			ul {
+				max-height: 30rem;
+			}
+		}
 
 		ul {
 			overflow-y: scroll;
 			scrollbar-width: thin;
 			scrollbar-color: #d9d9d9 transparent;
-
-			height: 30rem;
+			transition: 0.4s;
+			max-height: 0rem;
 			width: 24.6rem;
 		}
 
@@ -684,7 +773,7 @@
 
 	&__search-popup--show {
 		max-height: 100rem;
-    top: -12rem;
+		top: -12rem;
 	}
 
 	&__search-popup-item {
@@ -733,4 +822,12 @@
 	box-shadow: 0.86rem 0.86rem 2rem rgba(222, 117, 94, 0.11);
 	border-radius: 100rem;
 	color: #000000;
+}
+
+@media (hover: hover) {
+	.header__results-item:hover {
+		span {
+			color: #de755e;
+		}
+	}
 }

@@ -61,7 +61,6 @@ const cleansingSlider = new Swiper('.popular-users__swiper', {
 	},
 });
 
-
 const popularGraphSwiper = new Swiper('.popular-graph__swiper', {
 	slidesPerView: 1,
 	speed: 500,
@@ -277,7 +276,7 @@ const popularFontSwiper = new Swiper('.popular-fonts__swiper', {
 	},
 });
 
-const tagInput = document.querySelector(".tag-input");
+/*const tagInput = document.querySelector(".tag-input");
 const tagArea = document.querySelector(".tag-area");
 const ul = document.querySelector(".tag-area ul");
 const label = document.querySelector(".label");
@@ -360,13 +359,11 @@ function createTag(tag, index) {
   li.appendChild(span);
   ul.appendChild(li);
 }
-
-
+*/
 
 function addZero(num) {
 	return num > 9 ? num : '0' + num;
 }
-
 
 //обработка клика по кнопке подписки
 const followBtns = document.querySelectorAll('.follow-btn');
@@ -386,95 +383,30 @@ followBtns.forEach((elem) => {
 	});
 });
 
+//контроль над input typePassword
+const passWrappers = document.querySelectorAll('.lk-register__form-inner');
 
-
-jQuery(document).ready(function ($) {
- 
-    var maxFileSize = 2 * 1024 * 1024; // (байт) Максимальный размер файла (2мб)
-    var queue = {};
-    var form = $('form#uploadImages');
-    var imagesList = $('#uploadImagesList');
-
-    var itemPreviewTemplate = imagesList.find('.item.template').clone();
-    itemPreviewTemplate.removeClass('template');
-    imagesList.find('.item.template').remove();
-
-
-    $('#addImages').on('change', function () {
-        var files = this.files;
-
-        for (var i = 0; i < files.length; i++) {
-            var file = files[i];
-
-            if ( !file.type.match(/image\/(jpeg|jpg|png|gif)/) ) {
-                alert( 'Фотография должна быть в формате jpg, png или gif' );
-                continue;
-            }
-
-            if ( file.size > maxFileSize ) {
-                alert( 'Размер фотографии не должен превышать 2 Мб' );
-                continue;
-            }
-
-            preview(files[i]);
-        }
-
-        this.value = '';
-    });
-
-    // Создание превью
-    function preview(file) {
-        var reader = new FileReader();
-        reader.addEventListener('load', function(event) {
-            var img = document.createElement('img');
-
-            var itemPreview = itemPreviewTemplate.clone();
-
-            itemPreview.find('.img-wrap img').attr('src', event.target.result);
-            itemPreview.data('id', file.name);
-
-            imagesList.append(itemPreview);
-
-            queue[file.name] = file;
-
-        });
-        reader.readAsDataURL(file);
-    }
-
-    // Удаление фотографий
-    imagesList.on('click', '.delete-link', function () {
-        var item = $(this).closest('.item'),
-            id = item.data('id');
-
-        delete queue[id];
-
-        item.remove();
-    });
-
-
-    // Отправка формы
-    form.on('submit', function(event) {
-
-        var formData = new FormData(this);
-
-        for (var id in queue) {
-            formData.append('images[]', queue[id]);
-        }
-
-        $.ajax({
-            url: $(this).attr('action'),
-            type: 'POST',
-            data: formData,
-            async: true,
-            success: function (res) {
-                alert(res)
-            },
-            cache: false,
-            contentType: false,
-            processData: false
-        });
-
-        return false;
-    });
-
-});
+if (passWrappers) {
+	passWrappers.forEach((box) => {
+		const activeClass = 'active';
+		const input = box?.querySelector('#password-input');
+		const btn = box?.querySelector('.password-control');
+		if (input && btn) {
+			btn.addEventListener('click', (e) => {
+				e.preventDefault();
+				switch (input.type) {
+					case 'password':
+						input.type = 'text';
+						btn.classList.add(activeClass)
+						break;
+					case 'text':
+						input.type = 'password';
+						btn.classList.remove(activeClass)
+						break;
+					default:
+						break;
+				}
+			});
+		}
+	});
+}

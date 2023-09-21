@@ -26,7 +26,10 @@
         font-size: 2rem;
         line-height: 2.4rem;
         letter-spacing: 0.02em;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         padding-left: 5.6rem;
         padding-top: 0.55rem;
         input {
@@ -101,7 +104,10 @@
         font-size: 2rem;
         line-height: 2.4rem;
         letter-spacing: 0.02em;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         padding-left: 5.6rem;
         padding-top: 0.55rem;
         input {
@@ -229,7 +235,10 @@
         height: 7.7rem;
         position: relative;
         cursor: pointer;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         font-weight: 700;
         font-size: 2rem;
         line-height: 2.5rem;
@@ -264,7 +273,10 @@
         width: 100%;
         z-index: 2;
         background: #fff;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
     }
     
     .new-select__list.on {
@@ -313,6 +325,18 @@
             font-weight: 500;
             line-height: normal;
             letter-spacing: 0.4px;
+            &::-webkit-input-placeholder {
+                color: rgba(160, 161, 164, 1);
+            }
+            &::-moz-placeholder {
+                color: rgba(160, 161, 164, 1);
+            }
+            &:-ms-input-placeholder {
+                color: rgba(160, 161, 164, 1);
+            }
+            &::-ms-input-placeholder {
+                color: rgba(160, 161, 164, 1);
+            }
             &::placeholder {
                 color: rgba(160, 161, 164, 1);
             }
