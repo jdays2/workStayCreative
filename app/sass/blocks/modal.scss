@@ -10,7 +10,7 @@
 	z-index: 100;
 	justify-content: center;
 	align-items: center;
-	
+
 	&--full {
 		-webkit-backdrop-filter: none;
 		backdrop-filter: none;
@@ -399,7 +399,99 @@
 			font-size: 1.6rem;
 			font-family: 'Gilroy';
 			line-height: 2rem;
+		}
+	}
 
+	&__form-select-list {
+		display: flex;
+		z-index: 10;
+		gap: 1.6rem;
+		width: 83.1rem;
+
+		align-items: center;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-left: 3.2rem;
+		padding-right: 3.2rem;
+		
+		background-color: #fff;
+		border-radius: 2rem;
+		box-shadow: 0.86rem 0.86rem 2rem 0rem rgba(56, 55, 66, 0.11);
+
+		position: absolute;
+		top: 10.6rem;
+		max-height: 0;
+		
+		height: 0;
+		overflow: hidden;
+		opacity: 0;
+		transition: max-height 0.4s ease-in-out, height 0.4s ease-in-out, opacity 0.1s ease-in;
+
+		&.active {
+			
+			max-height: 100rem;
+			height: -webkit-fit-content;
+			height: -moz-fit-content;
+			height: fit-content;
+			padding: 3.2rem 3.2rem 2.8rem;
+			opacity: 1;
+		}
+	}
+
+	&__form-select-item {
+		display: flex;
+		align-items: center;
+		gap: 1.2rem;
+		position: relative;
+		cursor: pointer;
+		margin: 0 !important;
+
+		.input-indicator {
+			width: 2.2rem;
+			height: 2.2rem;
+			max-width: 2.2rem;
+			max-height: 2.2rem;
+
+			&__item1 {
+				max-width: 100%;
+				max-height: 100%;
+			}
+
+			&__item2 {
+				width: 0.6rem;
+				height: 0.6rem;
+				max-width: 0.6rem;
+				max-height: 0.6rem;
+			}
+		}
+
+		input {
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			height: 0;
+			right: 0;
+		}
+
+		input:checked + .input-indicator {
+			.input-indicator__item1 {
+				stroke: #de755e;
+			}
+			.input-indicator__item2 {
+				fill: #de755e;
+			}
+		}
+
+		p {
+			cursor: pointer;
+
+			color: #383742;
+			font-family: Gilroy;
+			font-size: 1.6rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 2rem;
+			margin: 0;
 		}
 	}
 
@@ -492,6 +584,8 @@
 	}
 
 	&__form-input {
+		position: relative;
+
 		textarea {
 			border: none;
 			padding: 1.4rem 2.4rem;
@@ -504,8 +598,6 @@
 			font-size: 1.6rem;
 			font-family: 'Gilroy';
 			line-height: 2rem;
-
-			
 		}
 	}
 
@@ -660,68 +752,6 @@
 					background-image: url('../../img/product-card/modal-input-icon-gray.svg');
 				}
 			}
-		}
-
-		.modal__form-popup-box {
-			display: flex;
-			z-index: 10;
-			gap: 1.6rem;
-			width: 83.1rem;
-			align-items: center;
-			flex-direction: column;
-			align-items: flex-start;
-			padding: 3.2rem;
-			background-color: #fff;
-			border-radius: 2rem;
-			height: -webkit-fit-content;
-			height: -moz-fit-content;
-			height: fit-content;
-			box-shadow: 0.86rem 0.86rem 2rem 0rem rgba(56, 55, 66, 0.11);
-
-			div {
-				display: flex;
-				align-items: center;
-				gap: 1.2rem;
-			}
-
-			label {
-				margin: 0;
-				cursor: pointer;
-
-				font-size: 1.6rem;
-
-				font-weight: 400;
-				line-height: 2rem;
-			}
-		}
-
-		.modal__form-popup-box input[type='radio'] {
-			/* Скрыть оригинальные радиокнопки */
-			appearance: none;
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			/* Установить размеры */
-			width: 2rem;
-			height: 2rem;
-			padding: 0.5rem;
-			/* Установить внешний вид кнопки */
-			border: 0.1rem solid rgba(222, 117, 94, 1);
-			border-radius: 50%;
-			background-color: transparent;
-			/* Позиционирование внутреннего круга */
-			position: relative;
-		}
-
-		.modal__form-popup-box input[type='radio']:checked::after {
-			content: '';
-			width: 1rem;
-			height: 1rem;
-			background-color: rgba(222, 117, 94, 1);
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			border-radius: 50%;
 		}
 	}
 
@@ -1655,8 +1685,6 @@
 	display: flex;
 	opacity: 1;
 }
-
-
 
 .modal--confirm-question.active {
 	display: flex;

@@ -578,11 +578,14 @@
 
 	&__heart-popup {
 		top: 2.5rem;
-		width: 21.3rem;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
 		right: 10.5rem;
-		height: 4.8rem;
+		padding: 1.4rem 1.7rem;
 		position: absolute;
-		background: url('../../img/product-card/popup-background.svg');
+		background-color: #fff;
+		border-radius: 1.6rem;
 		background-size: 100%;
 
 		display: none;
@@ -596,32 +599,57 @@
 			font-weight: 400;
 			font-size: 1.6rem;
 			line-height: 2rem;
+			white-space: nowrap;
 
 			color: #383742;
 			box-shadow: 2rem 1.5rem 4rem rgba(103, 110, 133, 0.1);
+		}
+
+		&::after {
+			content: '';
+			width: 1.6rem;
+			height: 1.5rem;
+			z-index: 10;
+			background-color: #fff;
+			position: absolute;
+			right: -0.7rem;
+			transform: rotate(-45deg);
 		}
 	}
 
 	&__bookmarks-popup {
 		bottom: 2.5rem;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
 		right: 10.5rem;
-		width: 21.3rem;
-		height: 4.8rem;
+		padding: 1.4rem 1.7rem;
 		position: absolute;
-		background: url('../../img/product-card/popup-background.svg');
+		background-color: #fff;
+		border-radius: 1.6rem;
 		background-size: 100%;
 
 		display: none;
 		justify-content: center;
 		align-items: center;
+		&::after {
+			content: '';
+			width: 1.6rem;
+			height: 1.5rem;
+			z-index: 10;
+			background-color: #fff;
+			position: absolute;
+			right: -0.7rem;
+			transform: rotate(-45deg);
+		}
 
 		span {
-			margin-right: 0.9rem;
 			font-family: 'Gilroy';
 			font-style: normal;
 			font-weight: 400;
 			font-size: 1.6rem;
 			line-height: 2rem;
+			white-space: nowrap;
 
 			color: #383742;
 			box-shadow: 2rem 1.5rem 4rem rgba(103, 110, 133, 0.1);
@@ -1035,16 +1063,29 @@
 	}
 
 	&__settings-popup {
-		display: none;
-		justify-content: center;
 		width: -webkit-fit-content;
 		width: -moz-fit-content;
 		width: fit-content;
-		align-items: center;
-		border-radius: 1.5rem;
-		background: #fff;
-		box-shadow: 2rem 1.5rem 4rem 0rem rgba(103, 110, 133, 0.1);
+		padding: 1.4rem 1.7rem;
 		position: absolute;
+		background-color: #fff;
+		border-radius: 1.6rem;
+		background-size: 100%;
+
+		display: none;
+		justify-content: center;
+		align-items: center;
+		&::after {
+			content: '';
+			width: 1.6rem;
+			height: 1.5rem;
+			z-index: 10;
+			background-color: #fff;
+			position: absolute;
+			right: -0.7rem;
+			transform: rotate(-45deg);
+		}
+
 		top: -0.8rem;
 		left: -21rem;
 
@@ -1052,16 +1093,6 @@
 			display: flex;
 		}
 
-		&::after {
-			content: '';
-			width: 2rem;
-			height: 2.6rem;
-			background-size: contain;
-			position: absolute;
-			right: -1.95rem;
-			background-repeat: no-repeat;
-			background-image: url('../../img/product-card/popup-background-element.svg');
-		}
 
 		span {
 			display: block;
@@ -1069,7 +1100,6 @@
 			font-size: 1.6rem;
 			font-family: 'Gilroy';
 			line-height: 2rem;
-			padding: 1.4rem;
 			white-space: nowrap;
 		}
 	}

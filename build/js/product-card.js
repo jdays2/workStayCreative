@@ -28,7 +28,6 @@ const rewiesItemSettings = document.querySelectorAll(
 );
 const sendComplainBtn = document.querySelector('#send-complain');
 
-const modalFormList = document.querySelector('.modal__form-popup-wrapper');
 const getBlock = document.querySelector('.product-card__get-block');
 const featuresBlock = document.querySelector('.product-card__features-block');
 
@@ -292,27 +291,26 @@ if (sendFeedbackBtn) {
 }
 
 //показ списка для выбора конкретной жалобы (ее темы)
+const modalSelectList = document.querySelector('.modal__form-select-list');
 if (modalListBtn) {
+	const activeClass = 'active';
 	modalListBtn.addEventListener('click', () => {
 		modalInputElement.classList.toggle(activeModalInput);
-		modalFormList.classList.toggle(activeModalFormList);
+		modalSelectList.classList.toggle(activeClass);
 	});
 }
 //изменение placeholder для инпута modal, при выборе активной темы жалобы
-const radioButtons = document.querySelectorAll(
-	'.modal__form-popup-box input[type="radio"]',
-);
-
-if (radioButtons) {
-	radioButtons.forEach((radioButton) => {
-		radioButton.addEventListener('change', () => {
-			if (radioButton.checked) {
-				const labelText = radioButton.nextElementSibling.textContent.trim();
-				modalListBtn.placeholder = labelText;
-			}
+const modalSelectItems = modalSelectList.querySelectorAll('label');
+if (modalSelectItems) {
+	modalSelectItems.forEach((item) => {
+		const textContent = item.querySelector('p');
+		item.addEventListener('click', () => {
+			modalSelectList.classList.remove(activeClass);
+			modalListBtn.placeholder = textContent.textContent.replace(/\s+/g, ' ').trim();
 		});
 	});
 }
+
 //показ modal c отправкой жалобы
 if (rewiesItemSettings) {
 	rewiesItemSettings.forEach((element) => {
