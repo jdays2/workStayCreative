@@ -14095,7 +14095,7 @@ input:checked ~ .contacts__question-item-content {
     .publick-profile__pages-link span {
       color: #383742;
       font-size: 2rem;
-      font-family: "Gilroy";
+      font-family: 'Gilroy';
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -14136,6 +14136,12 @@ input:checked ~ .contacts__question-item-content {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    .publick-profile__content-block .publick-profile__collection-item {
+      padding: 2rem;
+      width: 40.5rem;
+      height: 34rem;
+      background-color: #fff;
+      border-radius: 3rem; }
   .publick-profile__item-info {
     color: #fff;
     font-size: 2rem;
@@ -14280,28 +14286,30 @@ input:checked ~ .contacts__question-item-content {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 3rem; }
+    margin-bottom: 1.5rem; }
     .publick-profile__item-head strong {
       color: #383742;
       font-size: 2.2rem;
-      font-family: "Gilroy";
+      font-family: 'Gilroy';
       font-style: normal;
       font-weight: 700;
       line-height: 2.6rem; }
     .publick-profile__item-head span {
-      color: #FFF;
+      color: #fff;
       font-size: 2rem;
-      font-family: "Gilroy";
+      font-family: 'Gilroy';
       font-style: normal;
       font-weight: 700;
       line-height: normal;
       letter-spacing: 0.04rem;
       padding: 0.5rem 2.2rem;
       border-radius: 3.6rem;
-      background: #DE755E; }
+      background: #de755e; }
   .publick-profile__collection-item {
     padding: 2rem;
-    background-color: #FFF;
+    width: 40.5rem;
+    height: 34rem;
+    background-color: #fff;
     border-radius: 3rem; }
 
 .tem-col {
@@ -21342,12 +21350,6 @@ input:checked ~ .contacts__question-item-content {
         flex-wrap: wrap;
     gap: 6rem; }
   .content-block__item {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     display: block; }
   .content-block__pag {
     width: 100%;
