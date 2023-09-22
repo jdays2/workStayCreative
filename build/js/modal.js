@@ -1,6 +1,7 @@
 const mainSliderItems = document.querySelectorAll(
 	'.product-card__item-main-img',
 );
+const allModals = document.querySelectorAll('.modal');
 const rewies = document.querySelectorAll('.product-card__rewies-item');
 const bookmarksBtns = document.querySelectorAll('#add-to-bookmarks');
 const sendFeedbackBtn = document.querySelector('#send-feedback');
@@ -20,7 +21,7 @@ const rewiesItemSettings = document.querySelectorAll(
 	'.product-card__rewies-item-settings',
 );
 const sendComplainBtn = document.querySelector('#send-complain');
-const modalFormList = document.querySelector('.modal__form-popup-wrapper');
+const modalFormList = document.querySelector('.modal__form-select-list');
 const closeBtn = document.querySelectorAll('.modal__close');
 const modalSlider = document.querySelector('.modal--slider');
 const modalInputElement = document.querySelector('.modal__form-input--list');
@@ -44,6 +45,38 @@ if (closeBtn) {
 			const parent = element.parentElement.parentElement;
 			parent.classList.remove(openModal);
 		});
+	});
+}
+
+//смежный обработчик закрытия модалки при клике вне ее контента. Обработчик блокировки скрола.
+if (allModals) {
+	allModals.forEach((modal) => {
+		modal.addEventListener('click', (e) => {
+			if (e.target === modal && modal.classList.contains('active')) {
+				modal.classList.remove('active');
+			}
+		});
+	});
+
+	function handleModalClassChanges(mutationsList, observer) {
+		mutationsList.forEach((mutation) => {
+			if (
+				mutation.type === 'attributes' &&
+				mutation.attributeName === 'class'
+			) {
+				const modal = mutation.target;
+				if (modal.classList.contains('active')) {
+					document.body.style.overflow = 'hidden';
+				} else {
+					document.body.style.overflow = 'auto';
+				}
+			}
+		});
+	}
+
+	allModals.forEach((modal) => {
+		const observer = new MutationObserver(handleModalClassChanges);
+		observer.observe(modal, { attributes: true });
 	});
 }
 
@@ -91,23 +124,25 @@ if (sendFeedbackBtn) {
 }
 
 //показ списка для выбора конкретной жалобы (ее темы)
-if (modalListBtn & modalFormList) {
+if (modalListBtn) {
+	const activeClass = 'active';
 	modalListBtn.addEventListener('click', () => {
 		modalInputElement.classList.toggle(activeModalInput);
-		modalFormList.classList.toggle(activeModalFormList);
+		modalFormList.classList.toggle(activeClass);
 	});
 }
 
 //изменение placeholder для инпута modal, при выборе активной темы жалобы
-const radioButtons = document.querySelectorAll(
-	'.modal__form-popup-box input[type="radio"]',
-);
+const selectItems = modalFormList.querySelectorAll('label');
 
-if (radioButtons) {
-	radioButtons.forEach((radioButton) => {
-		radioButton.addEventListener('change', () => {
-			if (radioButton.checked) {
-				const labelText = radioButton.nextElementSibling.textContent.trim();
+if (selectItems) {
+	const activeClass = 'active';
+	selectItems.forEach((item) => {
+		const input = item.querySelector('input');
+		input.addEventListener('input', () => {
+			if (input.checked) {
+				const message = item.querySelector('p');
+				const labelText = message.textContent.trim();
 				modalListBtn.placeholder = labelText;
 			}
 		});
@@ -170,7 +205,6 @@ if (rewies) {
 		);
 		const popUp = element.querySelector('.product-card__settings-popup');
 		toggleBtn.addEventListener('click', () => {
-			console.log(window.screen.width);
 			const currentWidth = window.screen.width;
 			if (currentWidth < 769) {
 				popUp.classList.toggle(rewiesPopUpShow);
