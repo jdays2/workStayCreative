@@ -13,19 +13,20 @@ const rewiesPopUpShow = 'product-card__settings-popup--show';
 
 //главный свайпер
 const swiper = new Swiper('.mySwiper', {
-	loop: true,
-	slidesPerView: 6,
+	slidesPerView: 'auto',
+	spaceBetween: rem(2),
 	watchSlidesProgress: true,
+	navigation: {
+		nextEl: '.product-card__arrow-right',
+		prevEl: '.product-card__arrow-left',
+	},
 });
 
 const swiper2 = new Swiper('.mySwiper2', {
 	loop: true,
 	slidesPerView: 1,
 	spaceBetween: rem(2),
-	navigation: {
-		nextEl: '.product-card__arrow-right',
-		prevEl: '.product-card__arrow-left',
-	},
+
 	thumbs: {
 		swiper: swiper,
 	},

@@ -73,6 +73,11 @@
 		background-color: #fff;
 		border-radius: 4rem;
 		position: relative;
+		margin: 0 auto;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		max-width: 118rem;
 	}
 	&__controll-swiper {
 		background-color: #fff;
@@ -1093,7 +1098,6 @@
 			display: flex;
 		}
 
-
 		span {
 			display: block;
 			color: #383742;
@@ -1205,5 +1209,17 @@
 
 	.product-card__rewies-item-settings:hover .product-card__settings-popup {
 		display: flex;
+	}
+}
+
+.mySwiper {
+	max-width: 100%;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	.swiper-slide {
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
 	}
 }

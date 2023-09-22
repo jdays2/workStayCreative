@@ -12397,6 +12397,11 @@ img {
   background-color: #fff;
   border-radius: 4rem;
   position: relative;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 118rem;
 }
 .product-card__controll-swiper {
   background-color: #fff;
@@ -13628,6 +13633,18 @@ img {
     display: flex;
   }
 }
+.mySwiper {
+  max-width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.mySwiper .swiper-slide {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .product-lk__title {
   margin-bottom: 6rem;
   font-family: "Austin Cyr";
@@ -19047,6 +19064,11 @@ img {
   background-color: #fff;
   border-radius: 4rem;
   position: relative;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 118rem;
 }
 .product-card__controll-swiper {
   background-color: #fff;
@@ -20278,6 +20300,18 @@ img {
     display: flex;
   }
 }
+.mySwiper {
+  max-width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.mySwiper .swiper-slide {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .product-lk__title {
   margin-bottom: 6rem;
   font-family: "Austin Cyr";
@@ -30570,6 +30604,10 @@ input:checked ~ .contacts__question-item-content {
   .product-card__controll-swiper-wrapper {
     padding: 2rem 2.4rem;
     border-radius: 5rem;
+    background-color: transparent;
+  }
+  .product-card__controll-swiper {
+    background-color: transparent;
   }
   .product-card__arrow-right, .product-card__arrow-left {
     opacity: 0;
