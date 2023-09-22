@@ -2715,6 +2715,7 @@
 		&__user-profile {
 			width: 63rem;
 			border-radius: 2rem;
+			margin-bottom: 5rem;
 		}
 
 		&__user-profile-img {
@@ -2725,6 +2726,7 @@
 		&__user-profile-data {
 			gap: 0.8rem;
 			align-items: flex-start;
+
 
 			span {
 				color: #383742;
@@ -2760,6 +2762,8 @@
 
 		&__score {
 			gap: 5.6rem;
+			margin-top: 5rem;
+			margin-bottom: 5rem;
 			span {
 				font-size: 2.8rem;
 				font-family: 'Gilroy';
@@ -14288,6 +14292,34 @@
 				font-size: 2.1rem;
 			}
 		}
+
+		&__add {
+			width: 44.6rem;
+			height: 13rem;
+
+			font-size: 2.8rem;
+		}
+
+		&__del {
+			width: 10.2rem;
+			height: 13rem;
+			border-radius: 6rem;
+
+			img {
+				width: 4.408rem;
+				height: 4.032rem;
+			}
+		}
+
+		&__edit {
+			width: 10.2rem;
+			height: 13rem;
+			border-radius: 6rem;
+			img {
+				width: 3.408rem;
+				height: 4.032rem;
+			}
+		}
 	}
 
 	.categories {
@@ -17747,40 +17779,6 @@
 	.fonts-lk {
 		&__wrapper {
 			width: 100%;
-
-			.basic-card {
-				width: 100%;
-				margin-right: 0;
-				margin-bottom: 7rem;
-			}
-
-			.basic-card__add {
-				width: 44.6rem;
-				height: 13rem;
-
-				font-size: 2.8rem;
-			}
-
-			.basic-card__del {
-				width: 10.2rem;
-				height: 13rem;
-				border-radius: 6rem;
-
-				img {
-					width: 3.408rem;
-					height: 3.032rem;
-				}
-			}
-
-			.basic-card__edit {
-				width: 10.2rem;
-				height: 13rem;
-				border-radius: 6rem;
-				img {
-					width: 3.408rem;
-					height: 4.032rem;
-				}
-			}
 		}
 
 		&__block-inner {
@@ -17821,40 +17819,6 @@
 	.lk-favorites {
 		&__wrapper {
 			width: 100%;
-
-			.basic-card {
-				width: 100%;
-				margin-right: 0;
-				margin-bottom: 7rem;
-			}
-
-			.basic-card__add {
-				width: 44.6rem;
-				height: 13rem;
-
-				font-size: 2.8rem;
-			}
-
-			.basic-card__del {
-				width: 10.2rem;
-				height: 13rem;
-				border-radius: 6rem;
-
-				img {
-					width: 3.408rem;
-					height: 3.032rem;
-				}
-			}
-
-			.basic-card__edit {
-				width: 10.2rem;
-				height: 13rem;
-				border-radius: 6rem;
-				img {
-					width: 3.408rem;
-					height: 4.032rem;
-				}
-			}
 		}
 
 		&__buffer {
@@ -19282,6 +19246,13 @@
 				margin: 0;
 				width: 50.4rem;
 			}
+		}
+	}
+
+	.rates {
+		&__icon {
+			width: 4.4rem;
+			height: 4.4rem;
 		}
 	}
 }

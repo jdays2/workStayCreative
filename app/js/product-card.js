@@ -234,48 +234,6 @@ if (createCollectionBtn) {
 	});
 }
 
-//
-const ratingStars = document.querySelectorAll('#modal-rating-star');
-
-let selectedRating = 0; // Переменная для хранения выбранного рейтинга
-
-// Добавляем обработчики событий для звезд
-if (ratingStars) {
-	ratingStars.forEach((star, index) => {
-		star.addEventListener('mouseover', () => {
-			// Выделяем звезды до текущей звезды включительно
-			for (let i = 0; i <= index; i++) {
-				ratingStars[i].classList.add('product-card__price-rating-item--full');
-			}
-		});
-
-		star.addEventListener('mouseout', () => {
-			// Убираем выделение со всех звезд
-			ratingStars.forEach((star) => {
-				star.classList.remove('product-card__price-rating-item--full');
-			});
-
-			// Выделяем звезды до выбранного рейтинга включительно
-			for (let i = 0; i < selectedRating; i++) {
-				ratingStars[i].classList.add('product-card__price-rating-item--full');
-			}
-		});
-
-		star.addEventListener('click', () => {
-			selectedRating = index + 1;
-
-			// Визуальное отображение выбранного рейтинга
-			ratingStars.forEach((star, i) => {
-				if (i <= index) {
-					star.classList.add('product-card__price-rating-item--full');
-				} else {
-					star.classList.remove('product-card__price-rating-item--full');
-				}
-			});
-		});
-	});
-}
-
 //показ модального окна с отзывом
 if (provideFeedbackBtn) {
 	provideFeedbackBtn.addEventListener('click', () => {

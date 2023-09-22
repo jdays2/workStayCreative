@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU"
+			type="text/javascript"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.css"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="./css/style.min.css" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Главная</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU" type="text/javascript"> </script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.css" rel="stylesheet">
-	<link rel="stylesheet" href="./css/style.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Главная</title>
-</head>
-
-<body>
-	<header class="header">
+	<body>
+		<header class="header">
 	<div class="header__wrapper">
 		<div class="header__head">
 			<button class="header__burger">
@@ -1217,394 +1228,494 @@
 	</div>
 </header>
 
-	
-	
-	<main>
-		<section class="lk-m">
-            <div class="container">
-				
-                <div class="lk-m__wrapper">
-					<div class="lk-m__left">
-						<div class="m-sidebar">
-							<div class="m-sidebar__top">
-								<div class="m-sidebar__top-avatar">
-									<div class="m-sidebar__top-avatar-image">
-										<img src="./img/lk-m/anna.png" alt="">
+
+		<main>
+			<section class="lk-m">
+				<div class="container">
+					<div class="lk-m__wrapper">
+						<div class="lk-m__left">
+							<div class="m-sidebar">
+								<div class="m-sidebar__top">
+									<div class="m-sidebar__top-avatar">
+										<div class="m-sidebar__top-avatar-image">
+											<img
+												src="./img/lk-m/anna.png"
+												alt="" />
+										</div>
+										<div class="m-sidebar__top-avatar-star">
+											<img
+												src="./img/lk-m/starred.svg"
+												alt="" />
+										</div>
 									</div>
-									<div class="m-sidebar__top-avatar-star">
-										<img src="./img/lk-m/starred.svg" alt="">
+									<!-- ava -->
+									<div class="m-sidebar__top-inner">
+										<div class="m-sidebar__top-name">Алина Петрова</div>
+										<div class="m-sidebar__top-mail">Infooooooo@gmail.com</div>
 									</div>
 								</div>
-								<!-- ava -->
-								<div class="m-sidebar__top-inner">
-									<div class="m-sidebar__top-name">Алина Петрова</div>
-									<div class="m-sidebar__top-mail">Infooooooo@gmail.com</div>
+								<div class="m-sidebar__bottom">
+									<nav class="m-sidebar__lists">
+										<a
+											href="/"
+											class="m-sidebar__item m-sidebar__item--p">
+											<div class="icon">
+												<svg
+													viewBox="0 0 24 25"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5ZM12 21.5C15.866 21.5 19 19.7091 19 17.5C19 15.2909 15.866 13.5 12 13.5C8.13401 13.5 5 15.2909 5 17.5C5 19.7091 8.13401 21.5 12 21.5Z"
+														fill="#A0A1A4" />
+												</svg>
+											</div>
+											<div class="text">Профиль магазина</div>
+										</a>
+
+										<a
+											href="/"
+											class="m-sidebar__item m-sidebar__item--p">
+											<div class="icon">
+												<svg
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M18.1896 6.00291L15.6 2.55004C15.3514 2.21867 14.8813 2.15152 14.55 2.40004C14.2186 2.64857 14.1514 3.11867 14.4 3.45004L16.3124 6H7.68749L9.59996 3.45004C9.84848 3.11867 9.78133 2.64857 9.44996 2.40004C9.11859 2.15152 8.64848 2.21867 8.39996 2.55004L5.81025 6.00299C3.91215 6.07606 2.4048 7.48131 2.07031 9.25H21.9315C21.5969 7.48072 20.0886 6.07511 18.1896 6.00291ZM20.2829 18.808C19.903 20.6666 18.2815 22 16.4011 22H7.60066C5.7203 22 4.09876 20.6666 3.71893 18.808L2.08401 10.808C2.08006 10.7887 2.07625 10.7693 2.07258 10.75H21.9292C21.9255 10.7693 21.9217 10.7887 21.9178 10.808L20.2829 18.808ZM9 13.25C9.41421 13.25 9.75 13.5858 9.75 14L9.75 18C9.75 18.4142 9.41421 18.75 9 18.75C8.58579 18.75 8.25 18.4142 8.25 18L8.25 14C8.25 13.5858 8.58579 13.25 9 13.25ZM15.75 14C15.75 13.5858 15.4142 13.25 15 13.25C14.5858 13.25 14.25 13.5858 14.25 14V18C14.25 18.4142 14.5858 18.75 15 18.75C15.4142 18.75 15.75 18.4142 15.75 18V14Z"
+														fill="#A0A1A4" />
+												</svg>
+											</div>
+											<div class="text">Покупки</div>
+										</a>
+
+										<a
+											href="/"
+											class="m-sidebar__item m-sidebar__item--p">
+											<div class="icon">
+												<svg
+													viewBox="0 0 24 25"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16 9.99084V21.3509C16 22.8009 14.96 23.4108 13.69 22.7108L9.76001 20.5208C9.34001 20.2908 8.65999 20.2908 8.23999 20.5208L4.31 22.7108C3.04 23.4108 2 22.8009 2 21.3509V9.99084C2 8.28084 3.39999 6.88086 5.10999 6.88086H12.89C14.6 6.88086 16 8.28084 16 9.99084Z"
+														fill="#A0A1A4" />
+													<path
+														d="M22.5 5.60999V16.97C22.5 18.42 21.46 19.03 20.19 18.33L16.5 16.27V9.48999C16.5 7.77999 15.1 6.38 13.39 6.38H8.5V5.60999C8.5 3.89999 9.89999 2.5 11.61 2.5H19.39C21.1 2.5 22.5 3.89999 22.5 5.60999Z"
+														fill="#A0A1A4" />
+												</svg>
+											</div>
+											<div class="text">Коллекции</div>
+										</a>
+
+										<a
+											href="/"
+											class="m-sidebar__item m-sidebar__item--p active"
+											data-tab="4">
+											<div class="icon">
+												<svg
+													viewBox="0 0 27 25"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M14.151 20.909C13.794 21.0303 13.206 21.0303 12.849 20.909C9.804 19.9079 3 15.7315 3 8.65281C3 5.52809 5.6145 3 8.838 3C10.749 3 12.4395 3.88989 13.5 5.26517C14.5605 3.88989 16.2615 3 18.162 3C21.3855 3 24 5.52809 24 8.65281C24 15.7315 17.196 19.9079 14.151 20.909Z"
+														fill="#DE755E" />
+												</svg>
+											</div>
+											<div class="text">Избранное</div>
+										</a>
+
+										<a
+											href="/"
+											class="m-sidebar__item m-sidebar__item--p">
+											<div class="icon">
+												<svg
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M7.23146 2H16.7689C18.5863 2 20.2206 3.24475 20.8955 5.14305L21.6535 7.27487C21.8829 7.92019 22.0415 8.61074 21.8742 9.27488C21.4778 10.8478 20.192 12 18.6669 12C16.8259 12 15.3335 10.3211 15.3335 8.25C15.3335 10.3211 13.8412 12 12.0002 12C10.1593 12 8.66687 10.3211 8.66687 8.25C8.66687 10.3211 7.17449 12 5.33354 12C3.80844 12 2.52257 10.8478 2.12622 9.27488C1.95887 8.61074 2.11747 7.92019 2.34692 7.27487L3.1049 5.14305C3.77985 3.24476 5.41411 2 7.23146 2ZM4 13.3002V17.9997C4 20.2088 5.79086 21.9997 8 21.9997H9V19.9998C9 18.3429 10.3431 16.9998 12 16.9998C13.6569 16.9998 15 18.3429 15 19.9998V21.9997H16C18.2091 21.9997 20 20.2088 20 17.9997V13.3003C19.5812 13.4295 19.1348 13.4997 18.6667 13.4997C17.3296 13.4997 16.1772 12.937 15.3334 12.0557C14.4896 12.937 13.3372 13.4997 12.0001 13.4997C10.6629 13.4997 9.51056 12.937 8.66674 12.0557C7.82292 12.937 6.67053 13.4997 5.3334 13.4997C4.86527 13.4997 4.41887 13.4295 4 13.3002Z"
+														fill="#A0A1A4" />
+												</svg>
+											</div>
+											<div class="text">Обновления магазинов</div>
+										</a>
+
+										<a
+											href="/"
+											class="m-sidebar__item m-sidebar__item--p">
+											<div class="icon">
+												<svg
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M12 3C8.77095 3 6.05382 5.49085 5.67964 8.79403L5.33476 11.8385C5.24906 12.595 4.94246 13.3069 4.45549 13.88C3.42209 15.0964 4.26081 17 5.83014 17H18.1699C19.7392 17 20.5779 15.0964 19.5445 13.88C19.0575 13.3069 18.7509 12.595 18.6652 11.8385L18.3204 8.79403C17.9462 5.49085 15.2291 3 12 3ZM14.9721 19.0715C14.5147 20.1992 13.3565 21 12 21C10.6435 21 9.48526 20.1992 9.02789 19.0715C9.00883 19.0245 9 18.974 9 18.9233C9 18.6895 9.18951 18.5 9.42329 18.5H14.5767C14.8105 18.5 15 18.6895 15 18.9233C15 18.974 14.9912 19.0245 14.9721 19.0715Z"
+														fill="#A0A1A4" />
+												</svg>
+											</div>
+											<div class="text">Уведомления</div>
+										</a>
+									</nav>
+									<a
+										href=""
+										class="m-sidebar__m-link">
+										Перейти в магазин
+									</a>
+									<button class="m-sidebar__exit">Выйти</button>
 								</div>
 							</div>
-							<div class="m-sidebar__bottom">
-								<nav class="m-sidebar__lists">
-									<a href="/" class="m-sidebar__item m-sidebar__item--p ">
-										<div class="icon">
-											<svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5ZM12 21.5C15.866 21.5 19 19.7091 19 17.5C19 15.2909 15.866 13.5 12 13.5C8.13401 13.5 5 15.2909 5 17.5C5 19.7091 8.13401 21.5 12 21.5Z" fill="#A0A1A4"/>
-                                                </svg>
-                                                
+						</div>
+
+						<div class="lk-m__right">
+							<div class="lk-favorites">
+								<div class="lk-favorites__buffer">
+									<div class="lk-favorites__buffer-icon">
+										<img
+											src="./img/donebuf.svg"
+											alt="" />
+									</div>
+									<div class="lk-favorites__buffer-text">
+										Ссылка на продукт скопирована в буфер обмена
+									</div>
+								</div>
+								<div class="lk-favorites__title">Понравившиеся товары</div>
+								<div class="header-block header-block--my-collection">
+									<div class="header-block__wrapper">
+										<div class="header-block__buttons-wrapper">
+											<button
+												class="header-block__sort"
+												id="sort-btn">
+												<span>Сначала новые</span>
+												<img
+													src="./img/fonts/list-icon.svg"
+													alt=""
+													class="header-block__sort-btn-icon" />
+											</button>
+
+											<ul class="sort-popup">
+												<li class="sort-popup__item">
+													<input
+														type="radio"
+														name="sort"
+														id="sort-new"
+														checked />
+													<label
+														for="sort-new"
+														class="sort-popup__label">
+														<div class="sort-popup__checker checker checker">
+															<img
+																src="./img/icon/checker-icon-black.svg"
+																alt="" />
+														</div>
+														<span class="sort-popup__title">Сначала новые</span>
+													</label>
+												</li>
+
+												<li class="sort-popup__item">
+													<input
+														type="radio"
+														name="sort"
+														id="sort-popular" />
+													<label
+														for="sort-popular"
+														class="sort-popup__label">
+														<div class="sort-popup__checker checker">
+															<img
+																src="./img/icon/checker-icon-black.svg"
+																alt="" />
+														</div>
+														<span class="sort-popup__title">
+															Самые популярные
+														</span>
+													</label>
+												</li>
+
+												<li class="sort-popup__item">
+													<input
+														type="radio"
+														name="sort"
+														id="sort-7days" />
+													<label
+														for="sort-7days"
+														class="sort-popup__label">
+														<div class="sort-popup__checker checker">
+															<img
+																src="./img/icon/checker-icon-black.svg"
+																alt="" />
+														</div>
+														<span class="sort-popup__title">
+															Последние 7 дней
+														</span>
+													</label>
+												</li>
+
+												<li class="sort-popup__item">
+													<input
+														type="radio"
+														name="sort"
+														id="sort-30days" />
+													<label
+														for="sort-30days"
+														class="sort-popup__label">
+														<div class="sort-popup__checker checker">
+															<img
+																src="./img/icon/checker-icon-black.svg"
+																alt="" />
+														</div>
+														<span class="sort-popup__title">
+															Последние 30 дней
+														</span>
+													</label>
+												</li>
+
+												<li class="sort-popup__item">
+													<input
+														type="radio"
+														name="sort"
+														id="sort-365days" />
+													<label
+														for="sort-365days"
+														class="sort-popup__label">
+														<div class="sort-popup__checker checker">
+															<img
+																src="./img/icon/checker-icon-black.svg"
+																alt="" />
+														</div>
+														<span class="sort-popup__title">
+															Последние 365 дней
+														</span>
+													</label>
+												</li>
+
+												<li class="sort-popup__item">
+													<input
+														type="radio"
+														name="sort"
+														id="sort-alltime" />
+													<label
+														for="sort-alltime"
+														class="sort-popup__label">
+														<div class="sort-popup__checker checker">
+															<img
+																src="./img/icon/checker-icon-black.svg"
+																alt="" />
+														</div>
+														<span class="sort-popup__title">Все время</span>
+													</label>
+												</li>
+											</ul>
+											<div class="store__input-wrapper">
+												<img
+													class="store__search-icon"
+													src="./img/header/search.svg"
+													alt="" />
+												<input
+													class="header__search-input store__search-input"
+													placeholder="Поиск"
+													type="text" />
+											</div>
 										</div>
-										<div class="text">Профиль магазина</div>
-									</li>
-									<!-- li -->
-									<a href="/" class="m-sidebar__item m-sidebar__item--p" >
-										<div class="icon">
-											<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1896 6.00291L15.6 2.55004C15.3514 2.21867 14.8813 2.15152 14.55 2.40004C14.2186 2.64857 14.1514 3.11867 14.4 3.45004L16.3124 6H7.68749L9.59996 3.45004C9.84848 3.11867 9.78133 2.64857 9.44996 2.40004C9.11859 2.15152 8.64848 2.21867 8.39996 2.55004L5.81025 6.00299C3.91215 6.07606 2.4048 7.48131 2.07031 9.25H21.9315C21.5969 7.48072 20.0886 6.07511 18.1896 6.00291ZM20.2829 18.808C19.903 20.6666 18.2815 22 16.4011 22H7.60066C5.7203 22 4.09876 20.6666 3.71893 18.808L2.08401 10.808C2.08006 10.7887 2.07625 10.7693 2.07258 10.75H21.9292C21.9255 10.7693 21.9217 10.7887 21.9178 10.808L20.2829 18.808ZM9 13.25C9.41421 13.25 9.75 13.5858 9.75 14L9.75 18C9.75 18.4142 9.41421 18.75 9 18.75C8.58579 18.75 8.25 18.4142 8.25 18L8.25 14C8.25 13.5858 8.58579 13.25 9 13.25ZM15.75 14C15.75 13.5858 15.4142 13.25 15 13.25C14.5858 13.25 14.25 13.5858 14.25 14V18C14.25 18.4142 14.5858 18.75 15 18.75C15.4142 18.75 15.75 18.4142 15.75 18V14Z" fill="#A0A1A4"/>
-                                            </svg>
-										</div>
-										<div class="text">Покупки</div>
-									</li>
-									<!-- li -->
-									<a href="/" class="m-sidebar__item m-sidebar__item--p " >
-										<div class="icon">
-											<svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M16 9.99084V21.3509C16 22.8009 14.96 23.4108 13.69 22.7108L9.76001 20.5208C9.34001 20.2908 8.65999 20.2908 8.23999 20.5208L4.31 22.7108C3.04 23.4108 2 22.8009 2 21.3509V9.99084C2 8.28084 3.39999 6.88086 5.10999 6.88086H12.89C14.6 6.88086 16 8.28084 16 9.99084Z" fill="#A0A1A4"/>
-                                                <path d="M22.5 5.60999V16.97C22.5 18.42 21.46 19.03 20.19 18.33L16.5 16.27V9.48999C16.5 7.77999 15.1 6.38 13.39 6.38H8.5V5.60999C8.5 3.89999 9.89999 2.5 11.61 2.5H19.39C21.1 2.5 22.5 3.89999 22.5 5.60999Z" fill="#A0A1A4"/>
-                                                </svg>
-												
-										</div>
-										<div class="text">Коллекции</div>
-									</li>
-									<!-- li -->
-									<a href="/" class="m-sidebar__item m-sidebar__item--p active" data-tab="4">
-										<div class="icon">
-											<svg  viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M14.151 20.909C13.794 21.0303 13.206 21.0303 12.849 20.909C9.804 19.9079 3 15.7315 3 8.65281C3 5.52809 5.6145 3 8.838 3C10.749 3 12.4395 3.88989 13.5 5.26517C14.5605 3.88989 16.2615 3 18.162 3C21.3855 3 24 5.52809 24 8.65281C24 15.7315 17.196 19.9079 14.151 20.909Z" fill="#DE755E"/>
-                                                </svg>
-										</div>
-										<div class="text">Избранное</div>
-									</li>
-									<!-- li -->
-									<a href="/" class="m-sidebar__item m-sidebar__item--p" >
-										<div class="icon">
-											<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.23146 2H16.7689C18.5863 2 20.2206 3.24475 20.8955 5.14305L21.6535 7.27487C21.8829 7.92019 22.0415 8.61074 21.8742 9.27488C21.4778 10.8478 20.192 12 18.6669 12C16.8259 12 15.3335 10.3211 15.3335 8.25C15.3335 10.3211 13.8412 12 12.0002 12C10.1593 12 8.66687 10.3211 8.66687 8.25C8.66687 10.3211 7.17449 12 5.33354 12C3.80844 12 2.52257 10.8478 2.12622 9.27488C1.95887 8.61074 2.11747 7.92019 2.34692 7.27487L3.1049 5.14305C3.77985 3.24476 5.41411 2 7.23146 2ZM4 13.3002V17.9997C4 20.2088 5.79086 21.9997 8 21.9997H9V19.9998C9 18.3429 10.3431 16.9998 12 16.9998C13.6569 16.9998 15 18.3429 15 19.9998V21.9997H16C18.2091 21.9997 20 20.2088 20 17.9997V13.3003C19.5812 13.4295 19.1348 13.4997 18.6667 13.4997C17.3296 13.4997 16.1772 12.937 15.3334 12.0557C14.4896 12.937 13.3372 13.4997 12.0001 13.4997C10.6629 13.4997 9.51056 12.937 8.66674 12.0557C7.82292 12.937 6.67053 13.4997 5.3334 13.4997C4.86527 13.4997 4.41887 13.4295 4 13.3002Z" fill="#A0A1A4"/>
-                                                </svg>
-                                                
-										</div>
-										<div class="text">Обновления магазинов</div>
-									</li>
-									<!-- li -->
-									<a href="/" class="m-sidebar__item m-sidebar__item--p" >
-										<div class="icon">
-											<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C8.77095 3 6.05382 5.49085 5.67964 8.79403L5.33476 11.8385C5.24906 12.595 4.94246 13.3069 4.45549 13.88C3.42209 15.0964 4.26081 17 5.83014 17H18.1699C19.7392 17 20.5779 15.0964 19.5445 13.88C19.0575 13.3069 18.7509 12.595 18.6652 11.8385L18.3204 8.79403C17.9462 5.49085 15.2291 3 12 3ZM14.9721 19.0715C14.5147 20.1992 13.3565 21 12 21C10.6435 21 9.48526 20.1992 9.02789 19.0715C9.00883 19.0245 9 18.974 9 18.9233C9 18.6895 9.18951 18.5 9.42329 18.5H14.5767C14.8105 18.5 15 18.6895 15 18.9233C15 18.974 14.9912 19.0245 14.9721 19.0715Z" fill="#A0A1A4"/>
-                                                </svg>
-										</div>
-										<div class="text">Уведомления</div>
-									</li>
-									<!-- li -->
-								</ul>
-								<a href="" class="m-sidebar__m-link">Перейти в магазин</a>
-								<button class="m-sidebar__exit">
-									Выйти
-								</button>
+									</div>
+								</div>
+								<div class="content-block__content-wrapper lk-favorites__wrapper">
+									<ul class="content-block__list">
+										<li class="content-block__item">
+											<div class="basic-card">
+												<div class="basic-card__wrapper">
+													<button class="basic-card__add">
+														Добавить в корзину
+													</button>
+													<a
+														href="https://qna.habr.com/q/217026"
+														class="basic-card__favor basic-card__favor--link">
+														<img
+															src="./img/basic-card/favor-icon.svg"
+															alt="" />
+													</a>
+
+													<button class="basic-card__del">
+														<img
+															src="./img/header/bag.svg"
+															alt="" />
+													</button>
+												</div>
+
+												<div class="basic-card__img">
+													<img
+														src="./img/basic-card/image 19452.png"
+														alt="" />
+												</div>
+
+												<div class="basic-card__info">
+													<div class="basic-card__discription">
+														<p class="basic-card__title">Мега набор постеров</p>
+														<a
+															href="/"
+															class="basic-card__link">
+															<span>От Wall art company or something...</span>
+														</a>
+													</div>
+													<span
+														class="basic-card__price basic-card__price--pink-backgraund">
+														4500
+														<span>₽</span>
+													</span>
+												</div>
+											</div>
+										</li>
+
+										<li class="content-block__item">
+											<div class="basic-card">
+												<div class="basic-card__wrapper">
+													<button class="basic-card__add">
+														Добавить в корзину
+													</button>
+													<a
+														href="https://qna.habr.com/q/217026"
+														class="basic-card__favor basic-card__favor--link">
+														<img
+															src="./img/basic-card/favor-icon.svg"
+															alt="" />
+													</a>
+
+													<button class="basic-card__del">
+														<img
+															src="./img/icon//basket-icon.svg"
+															alt="" />
+													</button>
+												</div>
+
+												<div class="basic-card__img">
+													<img
+														src="./img/basic-card/image 19452.png"
+														alt="" />
+												</div>
+
+												<div class="basic-card__info">
+													<div class="basic-card__discription">
+														<p class="basic-card__title">Мега набор постеров</p>
+														<a
+															href="/"
+															class="basic-card__link">
+															<span>От Wall art company or something...</span>
+														</a>
+													</div>
+													<span
+														class="basic-card__price basic-card__price--pink-backgraund">
+														4500
+														<span>₽</span>
+													</span>
+												</div>
+											</div>
+										</li>
+
+										<li class="content-block__item">
+											<div class="basic-card">
+												<div class="basic-card__wrapper">
+													<button class="basic-card__add">
+														Добавить в корзину
+													</button>
+													<a
+														href="https://qna.habr.com/q/217026"
+														class="basic-card__favor basic-card__favor--link">
+														<img
+															src="./img/basic-card/favor-icon.svg"
+															alt="" />
+													</a>
+
+													<button class="basic-card__del">
+														<img
+															src="./img/icon//basket-icon.svg"
+															alt="" />
+													</button>
+												</div>
+
+												<div class="basic-card__img">
+													<img
+														src="./img/basic-card/image 19452.png"
+														alt="" />
+												</div>
+
+												<div class="basic-card__info">
+													<div class="basic-card__discription">
+														<p class="basic-card__title">Мега набор постеров</p>
+														<a
+															href="/"
+															class="basic-card__link">
+															<span>От Wall art company or something...</span>
+														</a>
+													</div>
+													<span
+														class="basic-card__price basic-card__price--pink-backgraund">
+														4500
+														<span>₽</span>
+													</span>
+												</div>
+											</div>
+										</li>
+
+										<li class="content-block__item">
+											<div class="basic-card">
+												<div class="basic-card__wrapper">
+													<button class="basic-card__add">
+														Добавить в корзину
+													</button>
+													<a
+														href="https://qna.habr.com/q/217026"
+														class="basic-card__favor basic-card__favor--link">
+														<img
+															src="./img/basic-card/favor-icon.svg"
+															alt="" />
+													</a>
+
+													<button class="basic-card__del">
+														<img
+															src="./img/icon//basket-icon.svg"
+															alt="" />
+													</button>
+												</div>
+
+												<div class="basic-card__img">
+													<img
+														src="./img/basic-card/image 19452.png"
+														alt="" />
+												</div>
+
+												<div class="basic-card__info">
+													<div class="basic-card__discription">
+														<p class="basic-card__title">Мега набор постеров</p>
+														<a
+															href="/"
+															class="basic-card__link">
+															<span>От Wall art company or something...</span>
+														</a>
+													</div>
+													<span
+														class="basic-card__price basic-card__price--pink-backgraund">
+														4500
+														<span>₽</span>
+													</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
-                    
-					<div class="lk-m__right">
-						<div class="lk-favorites">
-                            <div class="lk-favorites__buffer">
-                                <div class="lk-favorites__buffer-icon">
-                                    <img src="./img/donebuf.svg" alt="">
-                                </div>
-                                <div class="lk-favorites__buffer-text">Ссылка на продукт скопирована в буфер обмена</div>
-                            </div>
-                            <div class="lk-favorites__title">Понравившиеся товары</div>
-                            <div class="header-block  header-block--my-collection">
-                                   
-                                <div class="header-block__wrapper">
-    
-    
-                                    <div class="header-block__buttons-wrapper">
-                                        <button class="header-block__sort" id="sort-btn">
-                                            <span>Сначала новые</span>
-                                            <img src="./img/fonts/list-icon.svg" alt=""
-                                                class="header-block__sort-btn-icon" />
-                                        </button>
-    
-                                        <ul class="sort-popup">
-                                            <li class="sort-popup__item">
-                                                <input type="radio" name="sort" id="sort-new" checked />
-                                                <label for="sort-new" class="sort-popup__label">
-                                                    <div class="sort-popup__checker checker checker">
-                                                        <img src="./img/icon/checker-icon-black.svg" alt="" />
-                                                    </div>
-                                                    <span class="sort-popup__title">Сначала новые</span>
-                                                </label>
-                                            </li>
-    
-                                            <li class="sort-popup__item">
-                                                <input type="radio" name="sort" id="sort-popular" />
-                                                <label for="sort-popular" class="sort-popup__label">
-                                                    <div class="sort-popup__checker checker">
-                                                        <img src="./img/icon/checker-icon-black.svg" alt="" />
-                                                    </div>
-                                                    <span class="sort-popup__title">Самые популярные</span>
-                                                </label>
-                                            </li>
-    
-                                            <li class="sort-popup__item">
-                                                <input type="radio" name="sort" id="sort-7days" />
-                                                <label for="sort-7days" class="sort-popup__label">
-                                                    <div class="sort-popup__checker checker">
-                                                        <img src="./img/icon/checker-icon-black.svg" alt="" />
-                                                    </div>
-                                                    <span class="sort-popup__title">Последние 7 дней</span>
-                                                </label>
-                                            </li>
-    
-                                            <li class="sort-popup__item">
-                                                <input type="radio" name="sort" id="sort-30days" />
-                                                <label for="sort-30days" class="sort-popup__label">
-                                                    <div class="sort-popup__checker checker">
-                                                        <img src="./img/icon/checker-icon-black.svg" alt="" />
-                                                    </div>
-                                                    <span class="sort-popup__title">Последние 30 дней</span>
-                                                </label>
-                                            </li>
-    
-                                            <li class="sort-popup__item">
-                                                <input type="radio" name="sort" id="sort-365days" />
-                                                <label for="sort-365days" class="sort-popup__label">
-                                                    <div class="sort-popup__checker checker">
-                                                        <img src="./img/icon/checker-icon-black.svg" alt="" />
-                                                    </div>
-                                                    <span class="sort-popup__title">Последние 365 дней</span>
-                                                </label>
-                                            </li>
-    
-                                            <li class="sort-popup__item">
-                                                <input type="radio" name="sort" id="sort-alltime" />
-                                                <label for="sort-alltime" class="sort-popup__label">
-                                                    <div class="sort-popup__checker checker">
-                                                        <img src="./img/icon/checker-icon-black.svg" alt="" />
-                                                    </div>
-                                                    <span class="sort-popup__title">Все время</span>
-                                                </label>
-                                            </li>
-                                        </ul>
-                                        <div class="store__input-wrapper">
-                                            <img class="store__search-icon" src="./img/header/search.svg" alt="" />
-                                            <input class="header__search-input store__search-input" placeholder="Поиск"
-                                                type="text" />
-                                        </div>
-                                        
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                            <div class="lk-favorites__wrapper">
-                              
-                                <div class="basic-card">
-                                    <div class="basic-card__wrapper">
-                                        <button class="basic-card__add">Добавить в корзину</button>
-                                        <a href="https://qna.habr.com/q/217023" class="basic-card__favor basic-card__favor--link">
-                                            <img
-                                                src="./img/basic-card/favor-icon.svg"
-                                                alt="" />
-                                        </a>
-    
-                                        <button class="basic-card__del">
-                                            <img src="./img/icon//basket-icon.svg" alt="">
-                                        </button>
-                                    </div>
-    
-                                    <img
-                                        class="basic-card__img"
-                                        src="./img/basic-card/image 19452.png"
-                                        alt="" />
-    
-                                    <div class="basic-card__info">
-                                        <div class="basic-card__discription">
-                                            <p class="basic-card__title">Мега набор постеров</p>
-                                            <a
-                                                href="/"
-                                                class="basic-card__link">
-                                                <img
-                                                    src="./img/basic-card/resurs-icon.svg"
-                                                    alt="" />
-                                                <span>От Wall art...</span>
-                                            </a>
-                                        </div>
-                                        <span
-                                            class="basic-card__price basic-card__price--pink-backgraund">
-                                            4500
-                                            <span>₽</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="basic-card">
-                                    <div class="basic-card__wrapper">
-                                        <button class="basic-card__add">Добавить в корзину</button>
-                                        <a href="https://qna.habr.com/q/217026" class="basic-card__favor basic-card__favor--link">
-                                            <img
-                                                src="./img/basic-card/favor-icon.svg"
-                                                alt="" />
-                                        </a>
-    
-                                        <button class="basic-card__del">
-                                            <img src="./img/icon//basket-icon.svg" alt="">
-                                        </button>
-                                    </div>
-    
-                                    <img
-                                        class="basic-card__img"
-                                        src="./img/basic-card/image 19452.png"
-                                        alt="" />
-    
-                                    <div class="basic-card__info">
-                                        <div class="basic-card__discription">
-                                            <p class="basic-card__title">Мега набор постеров</p>
-                                            <a
-                                                href="/"
-                                                class="basic-card__link">
-                                                <img
-                                                    src="./img/basic-card/resurs-icon.svg"
-                                                    alt="" />
-                                                <span>От Wall art...</span>
-                                            </a>
-                                        </div>
-                                        <span
-                                            class="basic-card__price basic-card__price--pink-backgraund">
-                                            4500
-                                            <span>₽</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="basic-card">
-                                    <div class="basic-card__wrapper">
-                                        <button class="basic-card__add">Добавить в корзину</button>
-                                        <a href="https://qna.habr.com/q/217023" class="basic-card__favor basic-card__favor--link">
-                                            <img
-                                                src="./img/basic-card/favor-icon.svg"
-                                                alt="" />
-                                        </a>
-    
-                                        <button class="basic-card__del">
-                                            <img src="./img/icon//basket-icon.svg" alt="">
-                                        </button>
-                                    </div>
-    
-                                    <img
-                                        class="basic-card__img"
-                                        src="./img/basic-card/image 19452.png"
-                                        alt="" />
-    
-                                    <div class="basic-card__info">
-                                        <div class="basic-card__discription">
-                                            <p class="basic-card__title">Мега набор постеров</p>
-                                            <a
-                                                href="/"
-                                                class="basic-card__link">
-                                                <img
-                                                    src="./img/basic-card/resurs-icon.svg"
-                                                    alt="" />
-                                                <span>От Wall art...</span>
-                                            </a>
-                                        </div>
-                                        <span
-                                            class="basic-card__price basic-card__price--pink-backgraund">
-                                            4500
-                                            <span>₽</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="basic-card">
-                                    <div class="basic-card__wrapper">
-                                        <button class="basic-card__add">Добавить в корзину</button>
-                                        <a href="https://qna.habr.com/q/217023" class="basic-card__favor basic-card__favor--link">
-                                            <img
-                                                src="./img/basic-card/favor-icon.svg"
-                                                alt="" />
-                                        </a>
-    
-                                        <button class="basic-card__del">
-                                            <img src="./img/icon//basket-icon.svg" alt="">
-                                        </button>
-                                    </div>
-    
-                                    <img
-                                        class="basic-card__img"
-                                        src="./img/basic-card/image 19452.png"
-                                        alt="" />
-    
-                                    <div class="basic-card__info">
-                                        <div class="basic-card__discription">
-                                            <p class="basic-card__title">Мега набор постеров</p>
-                                            <a
-                                                href="/"
-                                                class="basic-card__link">
-                                                <img
-                                                    src="./img/basic-card/resurs-icon.svg"
-                                                    alt="" />
-                                                <span>От Wall art...</span>
-                                            </a>
-                                        </div>
-                                        <span
-                                            class="basic-card__price basic-card__price--pink-backgraund">
-                                            4500
-                                            <span>₽</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="basic-card">
-                                    <div class="basic-card__wrapper">
-                                        <button class="basic-card__add">Добавить в корзину</button>
-                                        <a href="https://qna.habr.com/q/217023" class="basic-card__favor basic-card__favor--link">
-                                            <img
-                                                src="./img/basic-card/favor-icon.svg"
-                                                alt="" />
-                                        </a>
-    
-                                        <button class="basic-card__del">
-                                            <img src="./img/icon//basket-icon.svg" alt="">
-                                        </button>
-                                    </div>
-    
-                                    <img
-                                        class="basic-card__img"
-                                        src="./img/basic-card/image 19452.png"
-                                        alt="" />
-    
-                                    <div class="basic-card__info">
-                                        <div class="basic-card__discription">
-                                            <p class="basic-card__title">Мега набор постеров</p>
-                                            <a
-                                                href="/"
-                                                class="basic-card__link">
-                                                <img
-                                                    src="./img/basic-card/resurs-icon.svg"
-                                                    alt="" />
-                                                <span>От Wall art...</span>
-                                            </a>
-                                        </div>
-                                        <span
-                                            class="basic-card__price basic-card__price--pink-backgraund">
-                                            4500
-                                            <span>₽</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-					</div>
-                </div>
-            </div>
-        </section>
+				</div>
+			</section>
+		</main>
+
 		
-	</main>
-    
-	
 
 <footer class="footer">
 	<div class="container">
@@ -1959,6 +2070,7 @@
                             <div class="modal-follow__table-follows">5 Подписчиков</div>
                             <div class="modal-follow__table-follow">10 Подписок</div>
                         </div>
+                   
                     </div>
                     <button class="modal-follow__table-btn">Подписаться</button>
                 </div>
@@ -1971,7 +2083,7 @@
 <div class="modal thanks-reg">
     <div class="modal__container">
         <button class="modal__close thanks-reg__close">
-
+            
     </div>
 </div>
 <div class="modal cover-modal" >
@@ -2383,8 +2495,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.js"></script>
 <script src="./js/fonts.js"></script>
 <script src="./js/product-card.js"></script>
+<script src="./js/rates.js"></script>
 
- 
-</body>
-
+	</body>
 </html>
