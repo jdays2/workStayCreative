@@ -130,23 +130,23 @@ if (modalListBtn) {
 		modalInputElement.classList.toggle(activeModalInput);
 		modalFormList.classList.toggle(activeClass);
 	});
-}
 
-//изменение placeholder для инпута modal, при выборе активной темы жалобы
-const selectItems = modalFormList.querySelectorAll('label');
+	//изменение placeholder для инпута modal, при выборе активной темы жалобы
+	const selectItems = modalFormList.querySelectorAll('label');
 
-if (selectItems) {
-	const activeClass = 'active';
-	selectItems.forEach((item) => {
-		const input = item.querySelector('input');
-		input.addEventListener('input', () => {
-			if (input.checked) {
-				const message = item.querySelector('p');
-				const labelText = message.textContent.trim();
-				modalListBtn.placeholder = labelText;
-			}
+	if (selectItems) {
+		const activeClass = 'active';
+		selectItems.forEach((item) => {
+			const input = item.querySelector('input');
+			input.addEventListener('input', () => {
+				if (input.checked) {
+					const message = item.querySelector('p');
+					const labelText = message.textContent.trim();
+					modalListBtn.placeholder = labelText;
+				}
+			});
 		});
-	});
+	}
 }
 //показ modal c отправкой жалобы
 if (rewiesItemSettings) {

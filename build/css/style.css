@@ -10394,6 +10394,7 @@ main {
   width: 24.6rem;
   height: 17.5rem;
   margin-right: 4rem;
+  border-radius: 3rem;
 }
 .cart__item-description {
   font-family: "Gilroy";
@@ -11369,6 +11370,7 @@ main {
   position: relative;
   -webkit-transition: 0.55s ease-in-out;
   transition: 0.55s ease-in-out;
+  background-color: #fff;
 }
 .basic-card__img img {
   -o-object-fit: cover;
@@ -14243,6 +14245,10 @@ img {
   gap: 2.5rem;
   border-radius: 3rem;
   background: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
 }
 .question-block__questions-title {
   display: -webkit-box;
@@ -14513,11 +14519,13 @@ img {
 .contacts__question-img img {
   width: 100%;
 }
+.contacts__question-img--mobile {
+  display: none;
+}
 .contacts__question-list {
   padding: 6.5rem 6rem 2.2rem;
   border-radius: 5.5rem;
   background: #fff;
-  width: 102.5rem;
 }
 .contacts__question-title {
   color: #383742;
@@ -14608,16 +14616,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 6rem;
-}
-.contacts .question-block {
   width: 102.5rem;
-  margin-top: 6rem;
-  margin-left: auto;
-  padding: 3rem 4rem;
-  gap: 2.5rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .contacts .title .link {
   margin-top: 3.1rem;
@@ -17045,6 +17044,7 @@ input:checked ~ .contacts__question-item-content {
   width: 24.6rem;
   height: 17.5rem;
   margin-right: 4rem;
+  border-radius: 3rem;
 }
 .cart__item-description {
   font-family: "Gilroy";
@@ -18020,6 +18020,7 @@ input:checked ~ .contacts__question-item-content {
   position: relative;
   -webkit-transition: 0.55s ease-in-out;
   transition: 0.55s ease-in-out;
+  background-color: #fff;
 }
 .basic-card__img img {
   -o-object-fit: cover;
@@ -20894,6 +20895,10 @@ img {
   gap: 2.5rem;
   border-radius: 3rem;
   background: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
 }
 .question-block__questions-title {
   display: -webkit-box;
@@ -21164,11 +21169,13 @@ img {
 .contacts__question-img img {
   width: 100%;
 }
+.contacts__question-img--mobile {
+  display: none;
+}
 .contacts__question-list {
   padding: 6.5rem 6rem 2.2rem;
   border-radius: 5.5rem;
   background: #fff;
-  width: 102.5rem;
 }
 .contacts__question-title {
   color: #383742;
@@ -21259,16 +21266,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 6rem;
-}
-.contacts .question-block {
   width: 102.5rem;
-  margin-top: 6rem;
-  margin-left: auto;
-  padding: 3rem 4rem;
-  gap: 2.5rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .contacts .title .link {
   margin-top: 3.1rem;
@@ -24851,6 +24849,23 @@ input:checked ~ .contacts__question-item-content {
 .rates__icon.hover-active path {
   fill: #de755e;
   stroke: #de755e;
+}
+
+.loader {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  cursor: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.loader img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 @media only all and (max-width: 48em) {
@@ -30297,11 +30312,15 @@ input:checked ~ .contacts__question-item-content {
     letter-spacing: 0.1rem;
     margin-bottom: 4.5rem;
   }
+  .contacts__main-content {
+    width: 100%;
+  }
   .contacts__question-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
     gap: 7.13rem;
   }
   .contacts__question-img {
@@ -30310,6 +30329,10 @@ input:checked ~ .contacts__question-item-content {
         -ms-flex-order: 2;
             order: 2;
     margin: 0;
+    display: none;
+  }
+  .contacts__question-img--mobile {
+    display: block;
   }
   .contacts .question-block {
     padding: 6rem 9.6rem;
@@ -30337,7 +30360,7 @@ input:checked ~ .contacts__question-item-content {
   }
   .contacts__question-item-content {
     width: 100%;
-    height: 3.6rem;
+    min-height: 3.6rem;
     padding-bottom: 0rem;
   }
   .contacts__question-item-content p {
@@ -30345,7 +30368,6 @@ input:checked ~ .contacts__question-item-content {
     font-size: 2.8rem;
     font-family: "Gilroy";
     font-weight: 500;
-    line-height: 137%;
     padding-bottom: 0;
   }
   .contacts__question-item-content span {
@@ -30364,7 +30386,6 @@ input:checked ~ .contacts__question-item-content {
     margin: 0;
   }
   .question-block {
-    margin-top: 4.5rem;
     padding: 6rem 9.6rem;
     border-radius: 5rem;
     display: -webkit-box;
