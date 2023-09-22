@@ -7,11 +7,6 @@
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=3a00483f-b438-4df6-92d8-51c72bf2398d&lang=ru_RU" type="text/javascript"> </script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.css" rel="stylesheet">
-	<link
-	rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
-	<link rel="stylesheet" href="./css/air-datepicker.css">
 	<link rel="stylesheet" href="./css/style.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Главная</title>
@@ -1211,1183 +1206,555 @@
 	<main>
 		<section class="lk-m">
             <div class="container">
-				
+				<div class="lk-m__mob-title">
+					Профиль
+				</div>
                 <div class="lk-m__wrapper">
 					<div class="lk-m__left">
 						<div class="m-sidebar">
 							<div class="m-sidebar__top">
 								<div class="m-sidebar__top-avatar">
 									<div class="m-sidebar__top-avatar-image">
-										<img src="./img/lk-m/ava.png" alt="">
+										<img src="./img/lk-m/anna.png" alt="">
 									</div>
 									<div class="m-sidebar__top-avatar-star">
-										<img src="./img/lk-m/star.svg" alt="">
+										<img src="./img/lk-m/starred.svg" alt="">
 									</div>
 								</div>
 								<!-- ava -->
 								<div class="m-sidebar__top-inner">
-									<div class="m-sidebar__top-name">Название магазина</div>
+									<div class="m-sidebar__top-name">Алина Петрова</div>
 									<div class="m-sidebar__top-mail">Infooooooo@gmail.com</div>
 								</div>
 							</div>
 							<div class="m-sidebar__bottom">
 								<ul class="m-sidebar__lists">
-									<li class="m-sidebar__item ">
+									<li class="m-sidebar__item m-sidebar__item--p ">
 										<div class="icon">
-											<svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5ZM12 21.5C15.866 21.5 19 19.7091 19 17.5C19 15.2909 15.866 13.5 12 13.5C8.13401 13.5 5 15.2909 5 17.5C5 19.7091 8.13401 21.5 12 21.5Z" fill="#A0A1A4"/>
+											<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 14 19" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 8.5C9.20914 8.5 11 6.70914 11 4.5C11 2.29086 9.20914 0.5 7 0.5C4.79086 0.5 3 2.29086 3 4.5C3 6.70914 4.79086 8.5 7 8.5ZM7 18.5C10.866 18.5 14 16.7091 14 14.5C14 12.2909 10.866 10.5 7 10.5C3.13401 10.5 0 12.2909 0 14.5C0 16.7091 3.13401 18.5 7 18.5Z" fill="#A0A1A4"/>
                                                 </svg>
-												
 										</div>
 										<div class="text">Профиль магазина</div>
 									</li>
 									<!-- li -->
-									<li class="m-sidebar__item" >
+									<li class="m-sidebar__item m-sidebar__item--p active" >
 										<div class="icon">
 											<svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M5 10.5H7C9 10.5 10 9.5 10 7.5V5.5C10 3.5 9 2.5 7 2.5H5C3 2.5 2 3.5 2 5.5V7.5C2 9.5 3 10.5 5 10.5Z" fill="#A0A1A4"/>
-												<path d="M17 10.5H19C21 10.5 22 9.5 22 7.5V5.5C22 3.5 21 2.5 19 2.5H17C15 2.5 14 3.5 14 5.5V7.5C14 9.5 15 10.5 17 10.5Z" fill="#A0A1A4"/>
-												<path d="M17 22.5H19C21 22.5 22 21.5 22 19.5V17.5C22 15.5 21 14.5 19 14.5H17C15 14.5 14 15.5 14 17.5V19.5C14 21.5 15 22.5 17 22.5Z" fill="#A0A1A4"/>
-												<path d="M5 22.5H7C9 22.5 10 21.5 10 19.5V17.5C10 15.5 9 14.5 7 14.5H5C3 14.5 2 15.5 2 17.5V19.5C2 21.5 3 22.5 5 22.5Z" fill="#A0A1A4"/>
-											</svg>
-												
-										</div>
-										<div class="text">Панель управления</div>
-									</li>
-									<!-- li -->
-									<li class="m-sidebar__item active" >
-										<div class="icon">
-											<svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M22 6.5V8.92C22 10.5 21 11.5 19.42 11.5H16V4.51C16 3.4 16.91 2.5 18.02 2.5C19.11 2.51 20.11 2.95 20.83 3.67C21.55 4.4 22 5.4 22 6.5Z" fill="#FFB42F" stroke="#FFB42F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M2 7.5V21.5C2 22.33 2.94001 22.8 3.60001 22.3L5.31 21.02C5.71 20.72 6.27 20.76 6.63 21.12L8.28999 22.79C8.67999 23.18 9.32001 23.18 9.71001 22.79L11.39 21.11C11.74 20.76 12.3 20.72 12.69 21.02L14.4 22.3C15.06 22.79 16 22.32 16 21.5V4.5C16 3.4 16.9 2.5 18 2.5H7H6C3 2.5 2 4.29 2 6.5V7.5Z" fill="#FFB42F" stroke="#FFB42F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M6.25 10.5H11.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M9 13.25V7.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1896 6.50291L15.6 3.05004C15.3514 2.71867 14.8813 2.65152 14.55 2.90004C14.2186 3.14857 14.1514 3.61867 14.4 3.95004L16.3124 6.5H7.68749L9.59996 3.95004C9.84848 3.61867 9.78133 3.14857 9.44996 2.90004C9.11859 2.65152 8.64848 2.71867 8.39996 3.05004L5.81025 6.50299C3.91215 6.57606 2.4048 7.98131 2.07031 9.75H21.9315C21.5969 7.98072 20.0886 6.57511 18.1896 6.50291ZM20.2829 19.308C19.903 21.1666 18.2815 22.5 16.4011 22.5H7.60066C5.7203 22.5 4.09876 21.1666 3.71893 19.308L2.08401 11.308C2.08006 11.2887 2.07625 11.2693 2.07258 11.25H21.9292C21.9255 11.2693 21.9217 11.2887 21.9178 11.308L20.2829 19.308ZM9 13.75C9.41421 13.75 9.75 14.0858 9.75 14.5L9.75 18.5C9.75 18.9142 9.41421 19.25 9 19.25C8.58579 19.25 8.25 18.9142 8.25 18.5L8.25 14.5C8.25 14.0858 8.58579 13.75 9 13.75ZM15.75 14.5C15.75 14.0858 15.4142 13.75 15 13.75C14.5858 13.75 14.25 14.0858 14.25 14.5V18.5C14.25 18.9142 14.5858 19.25 15 19.25C15.4142 19.25 15.75 18.9142 15.75 18.5V14.5Z" fill="#DE755E"/>
                                                 </svg>
-												
 										</div>
-										<div class="text">Продажи</div>
+										<div class="text">Покупки</div>
 									</li>
 									<!-- li -->
-									<li class="m-sidebar__item" data-tab="4">
+									<li class="m-sidebar__item m-sidebar__item--p" >
 										<div class="icon">
-											<svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M2 2.5H3.74001C4.82001 2.5 5.67 3.43 5.58 4.5L4.75 14.46C4.61 16.09 5.89999 17.49 7.53999 17.49H18.19C19.63 17.49 20.89 16.31 21 14.88L21.54 7.38C21.66 5.72001 20.4 4.37 18.73 4.37H5.82001" fill="#A0A1A4"/>
-												<path d="M2 2.5H3.74001C4.82001 2.5 5.67 3.43 5.58 4.5L4.75 14.46C4.61 16.09 5.89999 17.49 7.53999 17.49H18.19C19.63 17.49 20.89 16.31 21 14.88L21.54 7.38C21.66 5.72 20.4 4.37 18.73 4.37H5.82001" stroke="#A0A1A4" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M16.25 22.5C16.9404 22.5 17.5 21.9404 17.5 21.25C17.5 20.5596 16.9404 20 16.25 20C15.5596 20 15 20.5596 15 21.25C15 21.9404 15.5596 22.5 16.25 22.5Z" fill="#A0A1A4" stroke="#A0A1A4" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M8.25 22.5C8.94036 22.5 9.5 21.9404 9.5 21.25C9.5 20.5596 8.94036 20 8.25 20C7.55964 20 7 20.5596 7 21.25C7 21.9404 7.55964 22.5 8.25 22.5Z" fill="#A0A1A4" stroke="#A0A1A4" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M9 8.5H21" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-												</svg>
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 9.49084V20.8509C16 22.3009 14.96 22.9108 13.69 22.2108L9.76001 20.0208C9.34001 19.7908 8.65999 19.7908 8.23999 20.0208L4.31 22.2108C3.04 22.9108 2 22.3009 2 20.8509V9.49084C2 7.78084 3.39999 6.38086 5.10999 6.38086H12.89C14.6 6.38086 16 7.78084 16 9.49084Z" fill="#A0A1A4"/>
+                                                <path d="M22.5 5.10999V16.47C22.5 17.92 21.46 18.53 20.19 17.83L16.5 15.77V8.98999C16.5 7.27999 15.1 5.88 13.39 5.88H8.5V5.10999C8.5 3.39999 9.89999 2 11.61 2H19.39C21.1 2 22.5 3.39999 22.5 5.10999Z" fill="#A0A1A4"/>
+                                            </svg>
 												
 										</div>
-										<div class="text">Продукты</div>
+										<div class="text">Коллекции</div>
 									</li>
 									<!-- li -->
-									<li class="m-sidebar__item" >
+									<li class="m-sidebar__item m-sidebar__item--p" data-tab="4">
 										<div class="icon">
-											<svg  viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M8.5 19.5H8C4 19.5 2 18.5 2 13.5V8.5C2 4.5 4 2.5 8 2.5H16C20 2.5 22 4.5 22 8.5V13.5C22 17.5 20 19.5 16 19.5H15.5C15.19 19.5 14.89 19.65 14.7 19.9L13.2 21.9C12.54 22.78 11.46 22.78 10.8 21.9L9.3 19.9C9.14 19.68 8.77 19.5 8.5 19.5Z" fill="#A0A1A4"/>
-												<path d="M15.9965 11.5H16.0054" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M11.9955 11.5H12.0045" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M7.99451 11.5H8.00349" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-												</svg>
-												
+											<svg  viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.151 20.409C13.794 20.5303 13.206 20.5303 12.849 20.409C9.804 19.4079 3 15.2315 3 8.15281C3 5.02809 5.6145 2.5 8.838 2.5C10.749 2.5 12.4395 3.38989 13.5 4.76517C14.5605 3.38989 16.2615 2.5 18.162 2.5C21.3855 2.5 24 5.02809 24 8.15281C24 15.2315 17.196 19.4079 14.151 20.409Z" fill="#A0A1A4"/>
+                                            </svg>
 										</div>
-										<div class="text">Реклама магазина</div>
+										<div class="text">Избранное</div>
 									</li>
 									<!-- li -->
-									<li class="m-sidebar__item" >
+									<li class="m-sidebar__item m-sidebar__item--p" >
 										<div class="icon">
-											<svg  viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M0 16.5V4.5C0 2.29086 1.79086 0.5 4 0.5H14C16.2091 0.5 18 2.29086 18 4.5V10.8431C18 11.1509 17.9645 11.455 17.8959 11.75H14C11.3766 11.75 9.25 13.8766 9.25 16.5V20.3959C8.95502 20.4645 8.65091 20.5 8.34315 20.5H4C1.79086 20.5 0 18.7091 0 16.5ZM10.75 19.6949C10.898 19.5833 11.039 19.461 11.1716 19.3284L16.8284 13.6716C16.961 13.539 17.0833 13.398 17.1949 13.25H14C12.2051 13.25 10.75 14.7051 10.75 16.5V19.6949ZM4.25 5.5C4.25 5.08579 4.58579 4.75 5 4.75H13C13.4142 4.75 13.75 5.08579 13.75 5.5C13.75 5.91421 13.4142 6.25 13 6.25H5C4.58579 6.25 4.25 5.91421 4.25 5.5ZM5 8.75C4.58579 8.75 4.25 9.08579 4.25 9.5C4.25 9.91421 4.58579 10.25 5 10.25H9C9.41421 10.25 9.75 9.91421 9.75 9.5C9.75 9.08579 9.41421 8.75 9 8.75H5Z" fill="#A0A1A4"/>
-												</svg>
+											<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.23146 2H16.7689C18.5863 2 20.2206 3.24475 20.8955 5.14305L21.6535 7.27487C21.8829 7.92019 22.0415 8.61074 21.8742 9.27488C21.4778 10.8478 20.192 12 18.6669 12C16.8259 12 15.3335 10.3211 15.3335 8.25C15.3335 10.3211 13.8412 12 12.0002 12C10.1593 12 8.66687 10.3211 8.66687 8.25C8.66687 10.3211 7.17449 12 5.33354 12C3.80844 12 2.52257 10.8478 2.12622 9.27488C1.95887 8.61074 2.11747 7.92019 2.34692 7.27487L3.1049 5.14305C3.77985 3.24476 5.41411 2 7.23146 2ZM4 13.3002V17.9997C4 20.2088 5.79086 21.9997 8 21.9997H9V19.9998C9 18.3429 10.3431 16.9998 12 16.9998C13.6569 16.9998 15 18.3429 15 19.9998V21.9997H16C18.2091 21.9997 20 20.2088 20 17.9997V13.3003C19.5812 13.4295 19.1348 13.4997 18.6667 13.4997C17.3296 13.4997 16.1772 12.937 15.3334 12.0557C14.4896 12.937 13.3372 13.4997 12.0001 13.4997C10.6629 13.4997 9.51056 12.937 8.66674 12.0557C7.82292 12.937 6.67053 13.4997 5.3334 13.4997C4.86527 13.4997 4.41887 13.4295 4 13.3002Z" fill="#A0A1A4"/>
+                                                </svg>
+                                                
 										</div>
-										<div class="text">Начисления и документы</div>
+										<div class="text">Обновления магазинов</div>
+									</li>
+									<!-- li -->
+									<li class="m-sidebar__item m-sidebar__item--p" >
+										<div class="icon">
+											<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C8.77095 3 6.05382 5.49085 5.67964 8.79403L5.33476 11.8385C5.24906 12.595 4.94246 13.3069 4.45549 13.88C3.42209 15.0964 4.26081 17 5.83014 17H18.1699C19.7392 17 20.5779 15.0964 19.5445 13.88C19.0575 13.3069 18.7509 12.595 18.6652 11.8385L18.3204 8.79403C17.9462 5.49085 15.2291 3 12 3ZM14.9721 19.0715C14.5147 20.1992 13.3565 21 12 21C10.6435 21 9.48526 20.1992 9.02789 19.0715C9.00883 19.0245 9 18.974 9 18.9233C9 18.6895 9.18951 18.5 9.42329 18.5H14.5767C14.8105 18.5 15 18.6895 15 18.9233C15 18.974 14.9912 19.0245 14.9721 19.0715Z" fill="#A0A1A4"/>
+                                                </svg>
+										</div>
+										<div class="text">Уведомления</div>
 									</li>
 									<!-- li -->
 								</ul>
-								<a href="" class="m-sidebar__cab-link">Личный кабинет</a>
+								<a href="" class="m-sidebar__m-link">Перейти в магазин</a>
 								<button class="m-sidebar__exit">
 									Выйти
-								</button>
-							</div>
-						</div>
-
-
-						<div class="filter-block" id="filter-block-sales">
-							<div class="filter-block__content">
-								<div class="filter-block__item">
-									<p class="filter-block__title">Ценовой диапазон</p>
-									<div class="filter-block__slider-wrapper">
-										<div
-											id="price-slider"
-											data-start-point="4000"
-											data-min-value="0"
-											data-max-value="5000"></div>
-										<div class="filter-block__price-value-wrapper">
-											<input
-												class="filter-block__price-value"
-												id="min-price-value"
-												placeholder="0₽"
-												readonly />
-											<input
-												class="filter-block__price-value"
-												id="max-price-value"
-												readonly />
-										</div>
-									</div>
-								</div>
-								<div class="lk-m__calendar">
-									<div class="lk-m__calendar-title">Временной промежуток</div>
-									<input type="text" id="lk-m__calendar">
-								</div>
-								<div class="filter-block__item active">
-									<p class="filter-block__title">Категории</p>
-
-									<!-- <input
-										type="text"
-										class="filter-block__search"
-										placeholder="Поиск" /> -->
-
-									<ul class="filter-block__box-list">
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Новые</span>
-											</label>
-										</li>
-
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Растр</span>
-											</label>
-										</li>
-
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-										<li class="filter-block__box-item">
-											<label class="filter-block__label">
-												<input type="checkbox" />
-
-												<div class="checker">
-													<img
-														src="./img/icon/checker-icon-black.svg"
-														alt="" />
-												</div>
-												<span class="filter-block__item-title">Веб-шрифт</span>
-											</label>
-										</li>
-									</ul>
-
-									<button class="filter-block__white-btn">
-										<span class="filter-block__open-text active">
-											Посмотреть все
-										</span>
-										<span class="filter-block__close-text">Свернуть</span>
-									</button>
-								</div>
-
-								
-							</div>
-
-							<div class="filter-block__btns">
-								<button class="filter-block__red-btn">
-									<span>Применить</span>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										viewBox="0 0 33 15"
-										fill="none">
-										<path
-											d="M32.7071 8.20711C33.0976 7.81658 33.0976 7.18342 32.7071 6.79289L26.3431 0.428932C25.9526 0.0384078 25.3195 0.0384078 24.9289 0.428932C24.5384 0.819457 24.5384 1.45262 24.9289 1.84315L30.5858 7.5L24.9289 13.1569C24.5384 13.5474 24.5384 14.1805 24.9289 14.5711C25.3195 14.9616 25.9526 14.9616 26.3431 14.5711L32.7071 8.20711ZM0 8.5H32V6.5H0V8.5Z"
-											fill="white" />
-									</svg>
-								</button>
-
-								<button
-									class="filter-block__white-btn"
-									id="reset-filter">
-									<span>Очистить</span>
 								</button>
 							</div>
 						</div>
 					</div>
                     
 					<div class="lk-m__right">
-						<div class="lk-sales">
-    <div class="lk-sales__title">
-        Продажи
-    </div>
-    <div class="lk-sales__statistics">
-        <div class="lk-sales__statistics-title">Статистика продаж</div>
-        <div class="lk-sales__statistics-inner">
-            <div class="lk-sales__statistics-box">
-                <div class="lk-sales__statistics-box-circle">
-                    <img src="./img/statistics/icon1.svg" alt="">
-                </div>
-                <div class="lk-sales__statistics-box-title">Общий доход</div>
-                <div class="lk-sales__statistics-box-inner">
-                    <div class="lk-sales__statistics-box-sum lk-sales__statistics-box-sum--rub">
-                        200 000
-                    </div>
-                    <div class="lk-sales__statistics-box-arrow down">
-                        <svg  viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 1.39876e-06L13.9282 9L0.0717953 9L7 1.39876e-06Z" />
-                        </svg>
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="lk-sales__statistics-box">
-                <div class="lk-sales__statistics-box-circle">
-                    <img src="./img/statistics/icon2.svg" alt="">
-                </div>
-                <div class="lk-sales__statistics-box-title">Прибыль</div>
-                <div class="lk-sales__statistics-box-inner">
-                    <div class="lk-sales__statistics-box-sum lk-sales__statistics-box-sum--rub">
-                        200 000
-                    </div>
-                    <div class="lk-sales__statistics-box-arrow">
-                        <svg  viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 1.39876e-06L13.9282 9L0.0717953 9L7 1.39876e-06Z" />
-                        </svg>
-                    </div>
-                </div>
-                
-            </div>
-
-
-            <div class="lk-sales__statistics-box">
-                <div class="lk-sales__statistics-box-circle">
-                    <img src="./img/statistics/icon3.svg" alt="">
-                </div>
-                <div class="lk-sales__statistics-box-title">Проданные продукты</div>
-                <div class="lk-sales__statistics-box-inner">
-                    <div class="lk-sales__statistics-box-sum">
-                        100 штук
-                    </div>
-                    <div class="lk-sales__statistics-box-arrow">
-                        <svg  viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 1.39876e-06L13.9282 9L0.0717953 9L7 1.39876e-06Z" />
-                        </svg>
-                    </div>
-                </div>
-                
-            </div>
-
-
-            <div class="lk-sales__statistics-box">
-                <div class="lk-sales__statistics-box-circle">
-                    <img src="./img/statistics/icon4.svg" alt="">
-                </div>
-                <div class="lk-sales__statistics-box-title">Коэффициент конверсии магазина</div>
-                <div class="lk-sales__statistics-box-inner">
-                    <div class="lk-sales__statistics-box-sum">
-                        9 %
-                    </div>
-                    <div class="lk-sales__statistics-box-arrow">
-                        <svg  viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 1.39876e-06L13.9282 9L0.0717953 9L7 1.39876e-06Z" />
-                        </svg>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <nav class="lk-sales__nav">
-            <div class="lk-sales__nav-wrap">
-                <ul class="lk-sales__lists">
-                    <li class="lk-sales__item active" data-tab="1">
-                        доход
-                    </li>
-                    <li class="lk-sales__item" data-tab="2">
-                        Прибыль
-                    </li>
-                    <li class="lk-sales__item" data-tab="3">
-                        Продажи
-                    </li>
-                    <li class="lk-sales__item" data-tab="4">
-                        Конверсия
-                    </li>
-                </ul>
-            </div>
-            <select class="lk-sales__select" name="language">
-                <option disabled>365 дней</option>
-                <option value="365">365 дней</option>
-                <option value="120">120 дней</option>
-                <option value="7">7 дней</option>
-                <option value="30">30 дней</option>
-            </select>
-        </nav>
-        <div class="lk-sales__chart-wrap active" data-tab="1">
-            <div class="lk-sales__chart" >
-                <canvas id="myChart" style="max-height: 100%; max-width: 100%; "></canvas>
-            </div>
-            <div class="lk-sales__chart-wrap-inner">
-                <div class="lk-sales__chart-date">Последнее обновление в 12.30</div>
-                <button class="lk-sales__chart-btn">
-                    <span>Обновить</span>
-                    <img src="./img/refresh-circle.svg" alt="">
-                </button>
-            </div>
-        </div>
-        <div class="lk-sales__chart-wrap" data-tab="2">
-            <div class="lk-sales__chart" >
-                <canvas id="myChartTwo" style="max-height: 100%; max-width: 100%;"></canvas>
-            </div>
-        </div>
-        <div class="lk-sales__chart-wrap " data-tab="3">
-            <div class="lk-sales__chart">
-                <canvas id="myChartThree" style="max-height: 100%; max-width: 100%;"></canvas>
-            </div>
-        </div>
-        <div class="lk-sales__chart-wrap " data-tab="4">
-            <div class="lk-sales__chart">
-                <canvas id="myChartFour" style="max-height: 100%; max-width: 100%;"></canvas>
-            </div>
-        </div>
-        
-    </div>
-    <div class="lk-sales__sale">
-        
-        <div class="header-block__wrapper lk-sales__sale--header">
-            <div class="lk-sales__sale-title">
-                Продажи
-            </div>
-
-            <div class="header-block__buttons-wrapper ">
-                <button
-                    class="header-block__sort"
-                    id="sort-btn">
-                    <span>Неделя</span>
-                    <img
-                        src="./img/fonts/list-icon.svg"
-                        alt=""
-                        class="header-block__sort-btn-icon" />
-                </button>
-
-                <button class="header-block__filter" id="filter-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" fill="none">
-                        <path d="M7.1875 4.31234H6.94792V1.9165C6.94792 1.52359 6.62208 1.19775 6.22917 1.19775C5.83625 1.19775 5.51042 1.52359 5.51042 1.9165V4.31234H5.27083C3.74708 4.31234 2.875 5.18442 2.875 6.70817V12.4582C2.875 13.9819 3.74708 14.854 5.27083 14.854H5.51042V21.0832C5.51042 21.4761 5.83625 21.8019 6.22917 21.8019C6.62208 21.8019 6.94792 21.4761 6.94792 21.0832V14.854H7.1875C8.71125 14.854 9.58333 13.9819 9.58333 12.4582V6.70817C9.58333 5.18442 8.71125 4.31234 7.1875 4.31234Z" fill="#383742"/>
-                        <path d="M17.729 8.14567H17.4894V1.9165C17.4894 1.52359 17.1636 1.19775 16.7707 1.19775C16.3778 1.19775 16.0519 1.52359 16.0519 1.9165V8.14567H15.8123C14.2886 8.14567 13.4165 9.01775 13.4165 10.5415V16.2915C13.4165 17.8153 14.2886 18.6873 15.8123 18.6873H16.0519V21.0832C16.0519 21.4761 16.3778 21.8019 16.7707 21.8019C17.1636 21.8019 17.4894 21.4761 17.4894 21.0832V18.6873H17.729C19.2528 18.6873 20.1248 17.8153 20.1248 16.2915V10.5415C20.1248 9.01775 19.2528 8.14567 17.729 8.14567Z" fill="#383742"/>
-                        </svg>
-                </button>
-
-                <ul
-                    class="sort-popup"
-                    id="sort-popup">
-                    <li class="sort-popup__item">
-                        <input
-                            type="radio"
-                            name="sort"
-                            id="sort-new"
-                            checked />
-                        <label
-                            for="sort-new"
-                            class="sort-popup__label">
-                            <div class="sort-popup__checker checker checker">
-                                <img
-                                    src="./img/icon/checker-icon-black.svg"
-                                    alt="" />
-                            </div>
-                            <span class="sort-popup__title">Новые</span>
-                        </label>
-                    </li>
-
-                    <li class="sort-popup__item">
-                        <input
-                            type="radio"
-                            name="sort"
-                            id="sort-popular" />
-                        <label
-                            for="sort-popular"
-                            class="sort-popup__label">
-                            <div class="sort-popup__checker checker">
-                                <img
-                                    src="./img/icon/checker-icon-black.svg"
-                                    alt="" />
-                            </div>
-                            <span class="sort-popup__title">Самые популярные</span>
-                        </label>
-                    </li>
-
-                    <li class="sort-popup__item">
-                        <input
-                            type="radio"
-                            name="sort"
-                            id="sort-7days" />
-                        <label
-                            for="sort-7days"
-                            class="sort-popup__label">
-                            <div class="sort-popup__checker checker">
-                                <img
-                                    src="./img/icon/checker-icon-black.svg"
-                                    alt="" />
-                            </div>
-                            <span class="sort-popup__title">Последние 7 дней</span>
-                        </label>
-                    </li>
-
-                    <li class="sort-popup__item">
-                        <input
-                            type="radio"
-                            name="sort"
-                            id="sort-30days" />
-                        <label
-                            for="sort-30days"
-                            class="sort-popup__label">
-                            <div class="sort-popup__checker checker">
-                                <img
-                                    src="./img/icon/checker-icon-black.svg"
-                                    alt="" />
-                            </div>
-                            <span class="sort-popup__title">Последние 30 дней</span>
-                        </label>
-                    </li>
-
-                    <li class="sort-popup__item">
-                        <input
-                            type="radio"
-                            name="sort"
-                            id="sort-365days" />
-                        <label
-                            for="sort-365days"
-                            class="sort-popup__label">
-                            <div class="sort-popup__checker checker">
-                                <img
-                                    src="./img/icon/checker-icon-black.svg"
-                                    alt="" />
-                            </div>
-                            <span class="sort-popup__title">Последние 365 дней</span>
-                        </label>
-                    </li>
-
-                    <li class="sort-popup__item">
-                        <input
-                            type="radio"
-                            name="sort"
-                            id="sort-alltime" />
-                        <label
-                            for="sort-alltime"
-                            class="sort-popup__label">
-                            <div class="sort-popup__checker checker">
-                                <img
-                                    src="./img/icon/checker-icon-black.svg"
-                                    alt="" />
-                            </div>
-                            <span class="sort-popup__title">Все время</span>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- <div class="lk-sales__sale-points">
-            
-                <div class="lk-sales__sale-item">Дата продажи</div>
-                <div class="lk-sales__sale-item">Товар</div>
-            
-            
-                <div class="lk-sales__sale-item">Цена</div>
-                <div class="lk-sales__sale-item">Доход</div>
-                <div class="lk-sales__sale-item">Комиссия</div>
-                <div class="lk-sales__sale-item">Покупатель</div>
-            
-        </div> -->
-        <div class="lk-sales__sale-wrapper">
-            <article class="sale-box">
-                <div class="sale-box__mob">
-                    <div class="sale-box__mob-block">
-                        <div class="sale-box__mob-image">
-                            <img src="./img/lk-m/miniimg.png" alt="">
-                        </div>
-                        <div class="sale-box__mob-name">Мега набор постеров</div>
-                    </div>
-                    <div class="sale-box__mob-info">
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Дата продажи</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">04.03.2023</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Цена</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">4500</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Доход</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-rub">7000</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Комиссия</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-rub">7000</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Покупатель</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">ivan980</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="sale-box__desk">
-                    <div class="sale-box__desk-date">04.03.2023</div>
-                    <div class="sale-box__desk-block">
-                        <div class="sale-box__desk-image">
-                            <img src="./img/lk-m/miniimg.png" alt="">
-                        </div>
-                        <div class="sale-box__desk-title">карточка лк продажи</div>
-                    </div>
-                    <div class="sale-box__desk-price">4500</div>
-                    <div class="sale-box__desk-price">7000</div>
-                    <div class="sale-box__desk-price">1400</div>
-                    <div class="sale-box__desk-name">ivan980</div>
-                </div> -->
-            </article>
-            <article class="sale-box">
-                <div class="sale-box__mob">
-                    <div class="sale-box__mob-block">
-                        <div class="sale-box__mob-image">
-                            <img src="./img/lk-m/miniimg.png" alt="">
-                        </div>
-                        <div class="sale-box__mob-name">Мега набор постеров</div>
-                    </div>
-                    <div class="sale-box__mob-info">
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Дата продажи</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">04.03.2023</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Цена</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">4500</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Доход</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-rub">7000</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Комиссия</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-rub">7000</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Покупатель</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">ivan980</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="sale-box__desk">
-                    <div class="sale-box__desk-date">04.03.2023</div>
-                    <div class="sale-box__desk-block">
-                        <div class="sale-box__desk-image">
-                            <img src="./img/lk-m/miniimg.png" alt="">
-                        </div>
-                        <div class="sale-box__desk-title">карточка лк продажи</div>
-                    </div>
-                    <div class="sale-box__desk-price">4500</div>
-                    <div class="sale-box__desk-price">7000</div>
-                    <div class="sale-box__desk-price">1400</div>
-                    <div class="sale-box__desk-name">ivan980</div>
-                </div> -->
-            </article>
-            <article class="sale-box">
-                <div class="sale-box__mob">
-                    <div class="sale-box__mob-block">
-                        <div class="sale-box__mob-image">
-                            <img src="./img/lk-m/miniimg.png" alt="">
-                        </div>
-                        <div class="sale-box__mob-name">Мега набор постеров</div>
-                    </div>
-                    <div class="sale-box__mob-info">
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Дата продажи</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">04.03.2023</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Цена</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">4500</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Доход</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-rub">7000</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Комиссия</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-rub">7000</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Покупатель</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">ivan980</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="sale-box__desk">
-                    <div class="sale-box__desk-date">04.03.2023</div>
-                    <div class="sale-box__desk-block">
-                        <div class="sale-box__desk-image">
-                            <img src="./img/lk-m/miniimg.png" alt="">
-                        </div>
-                        <div class="sale-box__desk-title">карточка лк продажи</div>
-                    </div>
-                    <div class="sale-box__desk-price">4500</div>
-                    <div class="sale-box__desk-price">7000</div>
-                    <div class="sale-box__desk-price">1400</div>
-                    <div class="sale-box__desk-name">ivan980</div>
-                </div> -->
-            </article>
-            <article class="sale-box">
-                <div class="sale-box__mob">
-                    <div class="sale-box__mob-block">
-                        <div class="sale-box__mob-image">
-                            <img src="./img/lk-m/miniimg.png" alt="">
-                        </div>
-                        <div class="sale-box__mob-name">Мега набор постеров</div>
-                    </div>
-                    <div class="sale-box__mob-info">
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Дата продажи</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">04.03.2023</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Цена</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">4500</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Доход</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-rub">7000</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Комиссия</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-rub">7000</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Покупатель</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">ivan980</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="sale-box__desk">
-                    <div class="sale-box__desk-date">04.03.2023</div>
-                    <div class="sale-box__desk-block">
-                        <div class="sale-box__desk-image">
-                            <img src="./img/lk-m/miniimg.png" alt="">
-                        </div>
-                        <div class="sale-box__desk-title">карточка лк продажи</div>
-                    </div>
-                    <div class="sale-box__desk-price">4500</div>
-                    <div class="sale-box__desk-price">7000</div>
-                    <div class="sale-box__desk-price">1400</div>
-                    <div class="sale-box__desk-name">ivan980</div>
-                </div> -->
-            </article>
-            <article class="sale-box">
-                <div class="sale-box__mob">
-                    <div class="sale-box__mob-block">
-                        <div class="sale-box__mob-image">
-                            <img src="./img/lk-m/miniimg.png" alt="">
-                        </div>
-                        <div class="sale-box__mob-name">Мега набор постеров</div>
-                    </div>
-                    <div class="sale-box__mob-info">
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Дата продажи</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">04.03.2023</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Цена</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">4500</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Доход</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-rub">7000</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Комиссия</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-rub">7000</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Покупатель</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">ivan980</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="sale-box__desk">
-                    <div class="sale-box__desk-date">04.03.2023</div>
-                    <div class="sale-box__desk-block">
-                        <div class="sale-box__desk-image">
-                            <img src="./img/lk-m/miniimg.png" alt="">
-                        </div>
-                        <div class="sale-box__desk-title">карточка лк продажи</div>
-                    </div>
-                    <div class="sale-box__desk-price">4500</div>
-                    <div class="sale-box__desk-price">7000</div>
-                    <div class="sale-box__desk-price">1400</div>
-                    <div class="sale-box__desk-name">ivan980</div>
-                </div> -->
-            </article>
-            <article class="sale-box">
-                <div class="sale-box__mob">
-                    <div class="sale-box__mob-block">
-                        <div class="sale-box__mob-image">
-                            <img src="./img/lk-m/miniimg.png" alt="">
-                        </div>
-                        <div class="sale-box__mob-name">Мега набор постеров</div>
-                    </div>
-                    <div class="sale-box__mob-info">
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Дата продажи</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">04.03.2023</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Цена</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">4500</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Доход</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-rub">7000</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Комиссия</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-rub">7000</span>
-                        </div>
-                        <div class="sale-box__mob-data">
-                            <span class="sale-box__mob-data-bold">Покупатель</span>
-                            <div class="separator"></div>
-                            <span class="sale-box__mob-data-medium">ivan980</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="sale-box__desk">
-                    <div class="sale-box__desk-date">04.03.2023</div>
-                    <div class="sale-box__desk-block">
-                        <div class="sale-box__desk-image">
-                            <img src="./img/lk-m/miniimg.png" alt="">
-                        </div>
-                        <div class="sale-box__desk-title">карточка лк продажи</div>
-                    </div>
-                    <div class="sale-box__desk-price">4500</div>
-                    <div class="sale-box__desk-price">7000</div>
-                    <div class="sale-box__desk-price">1400</div>
-                    <div class="sale-box__desk-name">ivan980</div>
-                </div> -->
-            </article>
-        </div>
-        <div class="lk-sales__pagination-page">
-            <div class="lk-sales__pagination-page-numbers">
-                <div class="lk-sales__pagination-page-number-sum">01</div>
-                <div class="lk-sales__pagination-page-number-total">16</div>
-            </div>
-            <div class="lk-sales__pagination-page-arrows">
-                <div class="lk-sales__pagination-page-arrow-prev">
-                    <svg  viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.292961 8.70711C-0.0975647 8.31658 -0.0975647 7.68342 0.292961 7.29289L6.65692 0.928932C7.04745 0.538408 7.68061 0.538408 8.07113 0.928932C8.46166 1.31946 8.46166 1.95262 8.07113 2.34315L2.41428 8L8.07113 13.6569C8.46166 14.0474 8.46166 14.6805 8.07113 15.0711C7.68061 15.4616 7.04745 15.4616 6.65692 15.0711L0.292961 8.70711ZM32.6189 9H1.00007V7H32.6189V9Z" fill="#383742"/>
-                    </svg>
-                </div>
-                <div class="lk-sales__pagination-page-arrow-next">
-                    <svg viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M32.707 8.70711C33.0976 8.31658 33.0976 7.68342 32.707 7.29289L26.3431 0.928932C25.9526 0.538408 25.3194 0.538408 24.9289 0.928932C24.5383 1.31946 24.5383 1.95262 24.9289 2.34315L30.5857 8L24.9289 13.6569C24.5383 14.0474 24.5383 14.6805 24.9289 15.0711C25.3194 15.4616 25.9526 15.4616 26.3431 15.0711L32.707 8.70711ZM0.381104 9H31.9999V7H0.381104V9Z" fill="#383742"/>
-                        </svg>
-                </div>
-            </div>
-            <div class="lk-sales__pagination-page-inner">
-                <div class="lk-sales__pagination-page-link">Прейти на страницу</div>
-                <div class="lk-sales__pagination-page-wrap">1</div>
-                <div class="lk-sales__pagination-page-link-two">Перейти</div>
-            </div>
-        </div>
-    </div>
-    <div class="lk-sales__advice">
-        <div class="lk-sales__advice-title">
-            <div class="lk-sales__advice-word">Советы для вашего магазина </div>
-            <a href="#" class="link">Смотреть все</a>
-        </div>
-        <div class="lk-sales__advice-wrapper">
-            <div class="lk-sales__advice-swiper swiper">
-                <div class="lk-sales__advice-swiper-wrapper swiper-wrapper">
-                    <div class="lk-sales__advice-slide swiper-slide">
-                        <a href="#" class="advice-c">
-                            <div class="advice-c__block">
-                                <div class="advice-c__block-image">
-                                    <img src="./img/advice/img1.png" alt="">
+						<div class="lk-m__content">
+                            <div class="lk-m__title">Мои покупки</div>
+                            <div class="header-block__wrapper lk-sales__sale--header">
+                                
+                                <div class="header-block__buttons-wrapper ">
+                                    <button
+                                        class="header-block__sort"
+                                        id="sort-btn">
+                                        <span>Показывать</span>
+                                        <img
+                                            src="./img/fonts/list-icon.svg"
+                                            alt=""
+                                            class="header-block__sort-btn-icon" />
+                                    </button>
+                    
+                                    <button class="header-block__filter" id="filter-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" fill="none">
+                                            <path d="M7.1875 4.31234H6.94792V1.9165C6.94792 1.52359 6.62208 1.19775 6.22917 1.19775C5.83625 1.19775 5.51042 1.52359 5.51042 1.9165V4.31234H5.27083C3.74708 4.31234 2.875 5.18442 2.875 6.70817V12.4582C2.875 13.9819 3.74708 14.854 5.27083 14.854H5.51042V21.0832C5.51042 21.4761 5.83625 21.8019 6.22917 21.8019C6.62208 21.8019 6.94792 21.4761 6.94792 21.0832V14.854H7.1875C8.71125 14.854 9.58333 13.9819 9.58333 12.4582V6.70817C9.58333 5.18442 8.71125 4.31234 7.1875 4.31234Z" fill="#383742"/>
+                                            <path d="M17.729 8.14567H17.4894V1.9165C17.4894 1.52359 17.1636 1.19775 16.7707 1.19775C16.3778 1.19775 16.0519 1.52359 16.0519 1.9165V8.14567H15.8123C14.2886 8.14567 13.4165 9.01775 13.4165 10.5415V16.2915C13.4165 17.8153 14.2886 18.6873 15.8123 18.6873H16.0519V21.0832C16.0519 21.4761 16.3778 21.8019 16.7707 21.8019C17.1636 21.8019 17.4894 21.4761 17.4894 21.0832V18.6873H17.729C19.2528 18.6873 20.1248 17.8153 20.1248 16.2915V10.5415C20.1248 9.01775 19.2528 8.14567 17.729 8.14567Z" fill="#383742"/>
+                                            </svg>
+                                    </button>
+                    
+                                    <ul
+                                        class="sort-popup"
+                                        id="sort-popup">
+                                        <li class="sort-popup__item">
+                                            <input
+                                                type="radio"
+                                                name="sort"
+                                                id="sort-new"
+                                                checked />
+                                            <label
+                                                for="sort-new"
+                                                class="sort-popup__label">
+                                                <div class="sort-popup__checker checker checker">
+                                                    <img
+                                                        src="./img/icon/checker-icon-black.svg"
+                                                        alt="" />
+                                                </div>
+                                                <span class="sort-popup__title">Новые</span>
+                                            </label>
+                                        </li>
+                    
+                                        <li class="sort-popup__item">
+                                            <input
+                                                type="radio"
+                                                name="sort"
+                                                id="sort-popular" />
+                                            <label
+                                                for="sort-popular"
+                                                class="sort-popup__label">
+                                                <div class="sort-popup__checker checker">
+                                                    <img
+                                                        src="./img/icon/checker-icon-black.svg"
+                                                        alt="" />
+                                                </div>
+                                                <span class="sort-popup__title">Самые популярные</span>
+                                            </label>
+                                        </li>
+                    
+                                        <li class="sort-popup__item">
+                                            <input
+                                                type="radio"
+                                                name="sort"
+                                                id="sort-7days" />
+                                            <label
+                                                for="sort-7days"
+                                                class="sort-popup__label">
+                                                <div class="sort-popup__checker checker">
+                                                    <img
+                                                        src="./img/icon/checker-icon-black.svg"
+                                                        alt="" />
+                                                </div>
+                                                <span class="sort-popup__title">Последние 7 дней</span>
+                                            </label>
+                                        </li>
+                    
+                                        <li class="sort-popup__item">
+                                            <input
+                                                type="radio"
+                                                name="sort"
+                                                id="sort-30days" />
+                                            <label
+                                                for="sort-30days"
+                                                class="sort-popup__label">
+                                                <div class="sort-popup__checker checker">
+                                                    <img
+                                                        src="./img/icon/checker-icon-black.svg"
+                                                        alt="" />
+                                                </div>
+                                                <span class="sort-popup__title">Последние 30 дней</span>
+                                            </label>
+                                        </li>
+                    
+                                        <li class="sort-popup__item">
+                                            <input
+                                                type="radio"
+                                                name="sort"
+                                                id="sort-365days" />
+                                            <label
+                                                for="sort-365days"
+                                                class="sort-popup__label">
+                                                <div class="sort-popup__checker checker">
+                                                    <img
+                                                        src="./img/icon/checker-icon-black.svg"
+                                                        alt="" />
+                                                </div>
+                                                <span class="sort-popup__title">Последние 365 дней</span>
+                                            </label>
+                                        </li>
+                    
+                                        <li class="sort-popup__item">
+                                            <input
+                                                type="radio"
+                                                name="sort"
+                                                id="sort-alltime" />
+                                            <label
+                                                for="sort-alltime"
+                                                class="sort-popup__label">
+                                                <div class="sort-popup__checker checker">
+                                                    <img
+                                                        src="./img/icon/checker-icon-black.svg"
+                                                        alt="" />
+                                                </div>
+                                                <span class="sort-popup__title">Все время</span>
+                                            </label>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="advice-c__inner">
-                                <div class="advice-c__image">
-                                    <img src="./img/advice/img1.png" alt="">
-                                    
-                                </div>
-                                <div class="advice-c__content">
-                                    <div class="advice-c__content-inner">
-                                        <div class="advice-c__content-face">
-                                            <div class="advice-c__content-face-img">
-                                                <img src="./img/advice/face.png" alt="">
+                            <div class="my-purchases">
+                                <div class="my-purchases__wrapper">
+                                    <article class="my-purchases-box">
+                                        <div class="my-purchases-box__block">
+                                            <div class="my-purchases-box__title">Товар</div>
+                                            <div class="my-purchases-box__inner">
+                                                <div class="my-purchases-box__image">
+                                                    <img src="./img/purchases/card.png" alt="">
+                                                </div>
+                                                <div class="my-purchases-box__text">
+                                                    <strong>Мега набор постеров</strong>
+                                                    <span>От Wall art...</span>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="advice-c__content-name">by Laura Busche</div>
-                                    </div>
-                                    <!-- inner -->
-                                    <div class="advice-c__title">
-                                        Представляем наш цвет сезона: голографично-сиренивый
-                                    </div>
-                                    <div class="advice-c__date">
-                                        Январь 14, 2023
-                                    </div>
-                                    <div class="advice-c__white">
-                                        <strong><b>2</b>мин</strong>
-                                        <span>на чтение</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="lk-sales__advice-slide swiper-slide">
-                        <a href="#" class="advice-c">
-                            <div class="advice-c__block">
-                                <div class="advice-c__block-image">
-                                    <img src="./img/advice/img2.png" alt="">
-                                </div>
-                            </div>
-                            <div class="advice-c__inner">
-                                <div class="advice-c__image">
-                                    <img src="./img/advice/img2.png" alt="">
-                                    
-                                </div>
-                                <div class="advice-c__content">
-                                    <div class="advice-c__content-inner">
-                                        <div class="advice-c__content-face">
-                                            <div class="advice-c__content-face-img">
-                                                <img src="./img/advice/face.png" alt="">
+                                        <div class="my-purchases-box__data">
+                                            <div class="my-purchases-box__date">
+                                                <div class="my-purchases-box__title">Дата покупки</div>
+                                                <strong>04.03.2023</strong>
+                                            </div>
+                                            <div class="my-purchases-box__price">
+                                                <div class="my-purchases-box__title">Цена</div>
+                                                <strong>4500</strong>
                                             </div>
                                         </div>
-                                        <div class="advice-c__content-name">by Laura Busche</div>
-                                    </div>
-                                    <!-- inner -->
-                                    <div class="advice-c__title">
-                                        Как превратить дизайн 
-                                        в потрясающий продукт
-                                    </div>
-                                    <div class="advice-c__date">
-                                        Январь 14, 2023
-                                    </div>
-                                    <div class="advice-c__white">
-                                        <strong><b>2</b>мин</strong>
-                                        <span>на чтение</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="lk-sales__advice-slide swiper-slide">
-                        <a href="#" class="advice-c">
-                            <div class="advice-c__block">
-                                <div class="advice-c__block-image">
-                                    <img src="./img/advice/img3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="advice-c__inner">
-                                <div class="advice-c__image">
-                                    <img src="./img/advice/img3.png" alt="">
-                                    
-                                </div>
-                                <div class="advice-c__content">
-                                    <div class="advice-c__content-inner">
-                                        <div class="advice-c__content-face">
-                                            <div class="advice-c__content-face-img">
-                                                <img src="./img/advice/face.png" alt="">
+                                        <div class="my-purchases-box__license">
+                                            <div class="my-purchases-box__title">Лицензия</div>
+                                            <strong>Частная лицензия</strong>
+                                        </div>
+                                        <div class="my-purchases-box__wrapper">
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Права</div>
+                                                <div class="my-purchases-box__doc">Договор</div>
+                                            </div>
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Отзывы</div>
+                                                <button class="my-purchases-box__message">
+                                                    <svg  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.66797 17.2927V9.31935C2.66797 5.63935 5.65464 2.66602 9.33464 2.66602H22.668C26.348 2.66602 29.3346 5.63935 29.3346 9.31935V18.626C29.3346 22.2927 26.348 25.266 22.668 25.266H20.668C20.2546 25.266 19.8546 25.466 19.6013 25.7994L17.6013 28.4527C16.7213 29.626 15.2813 29.626 14.4013 28.4527L12.4013 25.7994C12.188 25.506 11.708 25.266 11.3346 25.266H9.33464C5.65464 25.266 2.66797 22.2927 2.66797 18.626V17.2927Z" fill="#383742"/>
+                                                        <path d="M16.0013 16.0007C15.2546 16.0007 14.668 15.4007 14.668 14.6673C14.668 13.934 15.268 13.334 16.0013 13.334C16.7346 13.334 17.3346 13.934 17.3346 14.6673C17.3346 15.4007 16.748 16.0007 16.0013 16.0007Z" fill="white"/>
+                                                        <path d="M21.3333 16.0007C20.5867 16.0007 20 15.4007 20 14.6673C20 13.934 20.6 13.334 21.3333 13.334C22.0667 13.334 22.6667 13.934 22.6667 14.6673C22.6667 15.4007 22.08 16.0007 21.3333 16.0007Z" fill="white"/>
+                                                        <path d="M10.6654 16.0007C9.9187 16.0007 9.33203 15.4007 9.33203 14.6673C9.33203 13.934 9.93203 13.334 10.6654 13.334C11.3987 13.334 11.9987 13.934 11.9987 14.6673C11.9987 15.4007 11.412 16.0007 10.6654 16.0007Z" fill="white"/>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Скачать</div>
+                                                <a href="" download="" class="my-purchases-box__donwold">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" fill="none">
+                                                        <path d="M28 19V26C28 26.5304 27.7893 27.0391 27.4142 27.4142C27.0391 27.7893 26.5304 28 26 28H6C5.46957 28 4.96086 27.7893 4.58579 27.4142C4.21071 27.0391 4 26.5304 4 26V19C4 18.7348 4.10536 18.4804 4.29289 18.2929C4.48043 18.1054 4.73478 18 5 18C5.26522 18 5.51957 18.1054 5.70711 18.2929C5.89464 18.4804 6 18.7348 6 19V26H26V19C26 18.7348 26.1054 18.4804 26.2929 18.2929C26.4804 18.1054 26.7348 18 27 18C27.2652 18 27.5196 18.1054 27.7071 18.2929C27.8946 18.4804 28 18.7348 28 19ZM15.2925 19.7075C15.3854 19.8005 15.4957 19.8742 15.6171 19.9246C15.7385 19.9749 15.8686 20.0008 16 20.0008C16.1314 20.0008 16.2615 19.9749 16.3829 19.9246C16.5043 19.8742 16.6146 19.8005 16.7075 19.7075L21.7075 14.7075C21.8004 14.6146 21.8741 14.5043 21.9244 14.3829C21.9747 14.2615 22.0006 14.1314 22.0006 14C22.0006 13.8686 21.9747 13.7385 21.9244 13.6171C21.8741 13.4957 21.8004 13.3854 21.7075 13.2925C21.6146 13.1996 21.5043 13.1259 21.3829 13.0756C21.2615 13.0253 21.1314 12.9994 21 12.9994C20.8686 12.9994 20.7385 13.0253 20.6171 13.0756C20.4957 13.1259 20.3854 13.1996 20.2925 13.2925L17 16.5863V5C17 4.73478 16.8946 4.48043 16.7071 4.29289C16.5196 4.10536 16.2652 4 16 4C15.7348 4 15.4804 4.10536 15.2929 4.29289C15.1054 4.48043 15 4.73478 15 5V16.5863L11.7075 13.2925C11.5199 13.1049 11.2654 12.9994 11 12.9994C10.7346 12.9994 10.4801 13.1049 10.2925 13.2925C10.1049 13.4801 9.99944 13.7346 9.99944 14C9.99944 14.2654 10.1049 14.5199 10.2925 14.7075L15.2925 19.7075Z" fill="#383742"/>
+                                                        </svg>
+                                                </a>
                                             </div>
                                         </div>
-                                        <div class="advice-c__content-name">by Laura Busche</div>
-                                    </div>
-                                    <!-- inner -->
-                                    <div class="advice-c__title">
-                                        Руководство для начинающих по дизайну упаковки продукта
-                                    </div>
-                                    <div class="advice-c__date">
-                                        Январь 14, 2023
-                                    </div>
-                                    <div class="advice-c__white">
-                                        <strong><b>2</b>мин</strong>
-                                        <span>на чтение</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="lk-sales__advice-slide swiper-slide">
-                        <a href="#" class="advice-c">
-                            <div class="advice-c__block">
-                                <div class="advice-c__block-image">
-                                    <img src="./img/advice/img4.png" alt="">
-                                </div>
-                            </div>
-                            <div class="advice-c__inner">
-                                <div class="advice-c__image">
-                                    <img src="./img/advice/img4.png" alt="">
-                                    
-                                </div>
-                                <div class="advice-c__content">
-                                    <div class="advice-c__content-inner">
-                                        <div class="advice-c__content-face">
-                                            <div class="advice-c__content-face-img">
-                                                <img src="./img/advice/face.png" alt="">
+                                    </article>
+                                    <article class="my-purchases-box">
+                                        <div class="my-purchases-box__block">
+                                            <div class="my-purchases-box__title">Товар</div>
+                                            <div class="my-purchases-box__inner">
+                                                <div class="my-purchases-box__image">
+                                                    <img src="./img/purchases/card.png" alt="">
+                                                </div>
+                                                <div class="my-purchases-box__text">
+                                                    <strong>Мега набор постеров</strong>
+                                                    <span>От Wall art...</span>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="advice-c__content-name">by Laura Busche</div>
-                                    </div>
-                                    <!-- inner -->
-                                    <div class="advice-c__title">
-                                        коллекция шрифтов 
-                                        с засечками для создания элегантности
-                                    </div>
-                                    <div class="advice-c__date">
-                                        Январь 14, 2023
-                                    </div>
-                                    <div class="advice-c__white">
-                                        <strong><b>2</b>мин</strong>
-                                        <span>на чтение</span>
-                                    </div>
+                                        <div class="my-purchases-box__data">
+                                            <div class="my-purchases-box__date">
+                                                <div class="my-purchases-box__title">Дата покупки</div>
+                                                <strong>04.03.2023</strong>
+                                            </div>
+                                            <div class="my-purchases-box__price">
+                                                <div class="my-purchases-box__title">Цена</div>
+                                                <strong>4500</strong>
+                                            </div>
+                                        </div>
+                                        <div class="my-purchases-box__license">
+                                            <div class="my-purchases-box__title">Лицензия</div>
+                                            <strong>Частная лицензия</strong>
+                                        </div>
+                                        <div class="my-purchases-box__wrapper">
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Права</div>
+                                                <div class="my-purchases-box__doc">Договор</div>
+                                            </div>
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Отзывы</div>
+                                                <button class="my-purchases-box__message">
+                                                    <svg  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.66797 17.2927V9.31935C2.66797 5.63935 5.65464 2.66602 9.33464 2.66602H22.668C26.348 2.66602 29.3346 5.63935 29.3346 9.31935V18.626C29.3346 22.2927 26.348 25.266 22.668 25.266H20.668C20.2546 25.266 19.8546 25.466 19.6013 25.7994L17.6013 28.4527C16.7213 29.626 15.2813 29.626 14.4013 28.4527L12.4013 25.7994C12.188 25.506 11.708 25.266 11.3346 25.266H9.33464C5.65464 25.266 2.66797 22.2927 2.66797 18.626V17.2927Z" fill="#383742"/>
+                                                        <path d="M16.0013 16.0007C15.2546 16.0007 14.668 15.4007 14.668 14.6673C14.668 13.934 15.268 13.334 16.0013 13.334C16.7346 13.334 17.3346 13.934 17.3346 14.6673C17.3346 15.4007 16.748 16.0007 16.0013 16.0007Z" fill="white"/>
+                                                        <path d="M21.3333 16.0007C20.5867 16.0007 20 15.4007 20 14.6673C20 13.934 20.6 13.334 21.3333 13.334C22.0667 13.334 22.6667 13.934 22.6667 14.6673C22.6667 15.4007 22.08 16.0007 21.3333 16.0007Z" fill="white"/>
+                                                        <path d="M10.6654 16.0007C9.9187 16.0007 9.33203 15.4007 9.33203 14.6673C9.33203 13.934 9.93203 13.334 10.6654 13.334C11.3987 13.334 11.9987 13.934 11.9987 14.6673C11.9987 15.4007 11.412 16.0007 10.6654 16.0007Z" fill="white"/>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Скачать</div>
+                                                <a href="" download="" class="my-purchases-box__donwold">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" fill="none">
+                                                        <path d="M28 19V26C28 26.5304 27.7893 27.0391 27.4142 27.4142C27.0391 27.7893 26.5304 28 26 28H6C5.46957 28 4.96086 27.7893 4.58579 27.4142C4.21071 27.0391 4 26.5304 4 26V19C4 18.7348 4.10536 18.4804 4.29289 18.2929C4.48043 18.1054 4.73478 18 5 18C5.26522 18 5.51957 18.1054 5.70711 18.2929C5.89464 18.4804 6 18.7348 6 19V26H26V19C26 18.7348 26.1054 18.4804 26.2929 18.2929C26.4804 18.1054 26.7348 18 27 18C27.2652 18 27.5196 18.1054 27.7071 18.2929C27.8946 18.4804 28 18.7348 28 19ZM15.2925 19.7075C15.3854 19.8005 15.4957 19.8742 15.6171 19.9246C15.7385 19.9749 15.8686 20.0008 16 20.0008C16.1314 20.0008 16.2615 19.9749 16.3829 19.9246C16.5043 19.8742 16.6146 19.8005 16.7075 19.7075L21.7075 14.7075C21.8004 14.6146 21.8741 14.5043 21.9244 14.3829C21.9747 14.2615 22.0006 14.1314 22.0006 14C22.0006 13.8686 21.9747 13.7385 21.9244 13.6171C21.8741 13.4957 21.8004 13.3854 21.7075 13.2925C21.6146 13.1996 21.5043 13.1259 21.3829 13.0756C21.2615 13.0253 21.1314 12.9994 21 12.9994C20.8686 12.9994 20.7385 13.0253 20.6171 13.0756C20.4957 13.1259 20.3854 13.1996 20.2925 13.2925L17 16.5863V5C17 4.73478 16.8946 4.48043 16.7071 4.29289C16.5196 4.10536 16.2652 4 16 4C15.7348 4 15.4804 4.10536 15.2929 4.29289C15.1054 4.48043 15 4.73478 15 5V16.5863L11.7075 13.2925C11.5199 13.1049 11.2654 12.9994 11 12.9994C10.7346 12.9994 10.4801 13.1049 10.2925 13.2925C10.1049 13.4801 9.99944 13.7346 9.99944 14C9.99944 14.2654 10.1049 14.5199 10.2925 14.7075L15.2925 19.7075Z" fill="#383742"/>
+                                                        </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="my-purchases-box">
+                                        <div class="my-purchases-box__block">
+                                            <div class="my-purchases-box__title">Товар</div>
+                                            <div class="my-purchases-box__inner">
+                                                <div class="my-purchases-box__image">
+                                                    <img src="./img/purchases/card.png" alt="">
+                                                </div>
+                                                <div class="my-purchases-box__text">
+                                                    <strong>Мега набор постеров</strong>
+                                                    <span>От Wall art...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="my-purchases-box__data">
+                                            <div class="my-purchases-box__date">
+                                                <div class="my-purchases-box__title">Дата покупки</div>
+                                                <strong>04.03.2023</strong>
+                                            </div>
+                                            <div class="my-purchases-box__price">
+                                                <div class="my-purchases-box__title">Цена</div>
+                                                <strong>4500</strong>
+                                            </div>
+                                        </div>
+                                        <div class="my-purchases-box__license">
+                                            <div class="my-purchases-box__title">Лицензия</div>
+                                            <strong>Частная лицензия</strong>
+                                        </div>
+                                        <div class="my-purchases-box__wrapper">
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Права</div>
+                                                <div class="my-purchases-box__doc">Договор</div>
+                                            </div>
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Отзывы</div>
+                                                <button class="my-purchases-box__message">
+                                                    <svg  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.66797 17.2927V9.31935C2.66797 5.63935 5.65464 2.66602 9.33464 2.66602H22.668C26.348 2.66602 29.3346 5.63935 29.3346 9.31935V18.626C29.3346 22.2927 26.348 25.266 22.668 25.266H20.668C20.2546 25.266 19.8546 25.466 19.6013 25.7994L17.6013 28.4527C16.7213 29.626 15.2813 29.626 14.4013 28.4527L12.4013 25.7994C12.188 25.506 11.708 25.266 11.3346 25.266H9.33464C5.65464 25.266 2.66797 22.2927 2.66797 18.626V17.2927Z" fill="#383742"/>
+                                                        <path d="M16.0013 16.0007C15.2546 16.0007 14.668 15.4007 14.668 14.6673C14.668 13.934 15.268 13.334 16.0013 13.334C16.7346 13.334 17.3346 13.934 17.3346 14.6673C17.3346 15.4007 16.748 16.0007 16.0013 16.0007Z" fill="white"/>
+                                                        <path d="M21.3333 16.0007C20.5867 16.0007 20 15.4007 20 14.6673C20 13.934 20.6 13.334 21.3333 13.334C22.0667 13.334 22.6667 13.934 22.6667 14.6673C22.6667 15.4007 22.08 16.0007 21.3333 16.0007Z" fill="white"/>
+                                                        <path d="M10.6654 16.0007C9.9187 16.0007 9.33203 15.4007 9.33203 14.6673C9.33203 13.934 9.93203 13.334 10.6654 13.334C11.3987 13.334 11.9987 13.934 11.9987 14.6673C11.9987 15.4007 11.412 16.0007 10.6654 16.0007Z" fill="white"/>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Скачать</div>
+                                                <a href="" download="" class="my-purchases-box__donwold">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" fill="none">
+                                                        <path d="M28 19V26C28 26.5304 27.7893 27.0391 27.4142 27.4142C27.0391 27.7893 26.5304 28 26 28H6C5.46957 28 4.96086 27.7893 4.58579 27.4142C4.21071 27.0391 4 26.5304 4 26V19C4 18.7348 4.10536 18.4804 4.29289 18.2929C4.48043 18.1054 4.73478 18 5 18C5.26522 18 5.51957 18.1054 5.70711 18.2929C5.89464 18.4804 6 18.7348 6 19V26H26V19C26 18.7348 26.1054 18.4804 26.2929 18.2929C26.4804 18.1054 26.7348 18 27 18C27.2652 18 27.5196 18.1054 27.7071 18.2929C27.8946 18.4804 28 18.7348 28 19ZM15.2925 19.7075C15.3854 19.8005 15.4957 19.8742 15.6171 19.9246C15.7385 19.9749 15.8686 20.0008 16 20.0008C16.1314 20.0008 16.2615 19.9749 16.3829 19.9246C16.5043 19.8742 16.6146 19.8005 16.7075 19.7075L21.7075 14.7075C21.8004 14.6146 21.8741 14.5043 21.9244 14.3829C21.9747 14.2615 22.0006 14.1314 22.0006 14C22.0006 13.8686 21.9747 13.7385 21.9244 13.6171C21.8741 13.4957 21.8004 13.3854 21.7075 13.2925C21.6146 13.1996 21.5043 13.1259 21.3829 13.0756C21.2615 13.0253 21.1314 12.9994 21 12.9994C20.8686 12.9994 20.7385 13.0253 20.6171 13.0756C20.4957 13.1259 20.3854 13.1996 20.2925 13.2925L17 16.5863V5C17 4.73478 16.8946 4.48043 16.7071 4.29289C16.5196 4.10536 16.2652 4 16 4C15.7348 4 15.4804 4.10536 15.2929 4.29289C15.1054 4.48043 15 4.73478 15 5V16.5863L11.7075 13.2925C11.5199 13.1049 11.2654 12.9994 11 12.9994C10.7346 12.9994 10.4801 13.1049 10.2925 13.2925C10.1049 13.4801 9.99944 13.7346 9.99944 14C9.99944 14.2654 10.1049 14.5199 10.2925 14.7075L15.2925 19.7075Z" fill="#383742"/>
+                                                        </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="my-purchases-box">
+                                        <div class="my-purchases-box__block">
+                                            <div class="my-purchases-box__title">Товар</div>
+                                            <div class="my-purchases-box__inner">
+                                                <div class="my-purchases-box__image">
+                                                    <img src="./img/purchases/card.png" alt="">
+                                                </div>
+                                                <div class="my-purchases-box__text">
+                                                    <strong>Мега набор постеров</strong>
+                                                    <span>От Wall art...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="my-purchases-box__data">
+                                            <div class="my-purchases-box__date">
+                                                <div class="my-purchases-box__title">Дата покупки</div>
+                                                <strong>04.03.2023</strong>
+                                            </div>
+                                            <div class="my-purchases-box__price">
+                                                <div class="my-purchases-box__title">Цена</div>
+                                                <strong>4500</strong>
+                                            </div>
+                                        </div>
+                                        <div class="my-purchases-box__license">
+                                            <div class="my-purchases-box__title">Лицензия</div>
+                                            <strong>Частная лицензия</strong>
+                                        </div>
+                                        <div class="my-purchases-box__wrapper">
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Права</div>
+                                                <div class="my-purchases-box__doc">Договор</div>
+                                            </div>
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Отзывы</div>
+                                                <button class="my-purchases-box__message">
+                                                    <svg  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.66797 17.2927V9.31935C2.66797 5.63935 5.65464 2.66602 9.33464 2.66602H22.668C26.348 2.66602 29.3346 5.63935 29.3346 9.31935V18.626C29.3346 22.2927 26.348 25.266 22.668 25.266H20.668C20.2546 25.266 19.8546 25.466 19.6013 25.7994L17.6013 28.4527C16.7213 29.626 15.2813 29.626 14.4013 28.4527L12.4013 25.7994C12.188 25.506 11.708 25.266 11.3346 25.266H9.33464C5.65464 25.266 2.66797 22.2927 2.66797 18.626V17.2927Z" fill="#383742"/>
+                                                        <path d="M16.0013 16.0007C15.2546 16.0007 14.668 15.4007 14.668 14.6673C14.668 13.934 15.268 13.334 16.0013 13.334C16.7346 13.334 17.3346 13.934 17.3346 14.6673C17.3346 15.4007 16.748 16.0007 16.0013 16.0007Z" fill="white"/>
+                                                        <path d="M21.3333 16.0007C20.5867 16.0007 20 15.4007 20 14.6673C20 13.934 20.6 13.334 21.3333 13.334C22.0667 13.334 22.6667 13.934 22.6667 14.6673C22.6667 15.4007 22.08 16.0007 21.3333 16.0007Z" fill="white"/>
+                                                        <path d="M10.6654 16.0007C9.9187 16.0007 9.33203 15.4007 9.33203 14.6673C9.33203 13.934 9.93203 13.334 10.6654 13.334C11.3987 13.334 11.9987 13.934 11.9987 14.6673C11.9987 15.4007 11.412 16.0007 10.6654 16.0007Z" fill="white"/>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Скачать</div>
+                                                <a href="" download="" class="my-purchases-box__donwold">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" fill="none">
+                                                        <path d="M28 19V26C28 26.5304 27.7893 27.0391 27.4142 27.4142C27.0391 27.7893 26.5304 28 26 28H6C5.46957 28 4.96086 27.7893 4.58579 27.4142C4.21071 27.0391 4 26.5304 4 26V19C4 18.7348 4.10536 18.4804 4.29289 18.2929C4.48043 18.1054 4.73478 18 5 18C5.26522 18 5.51957 18.1054 5.70711 18.2929C5.89464 18.4804 6 18.7348 6 19V26H26V19C26 18.7348 26.1054 18.4804 26.2929 18.2929C26.4804 18.1054 26.7348 18 27 18C27.2652 18 27.5196 18.1054 27.7071 18.2929C27.8946 18.4804 28 18.7348 28 19ZM15.2925 19.7075C15.3854 19.8005 15.4957 19.8742 15.6171 19.9246C15.7385 19.9749 15.8686 20.0008 16 20.0008C16.1314 20.0008 16.2615 19.9749 16.3829 19.9246C16.5043 19.8742 16.6146 19.8005 16.7075 19.7075L21.7075 14.7075C21.8004 14.6146 21.8741 14.5043 21.9244 14.3829C21.9747 14.2615 22.0006 14.1314 22.0006 14C22.0006 13.8686 21.9747 13.7385 21.9244 13.6171C21.8741 13.4957 21.8004 13.3854 21.7075 13.2925C21.6146 13.1996 21.5043 13.1259 21.3829 13.0756C21.2615 13.0253 21.1314 12.9994 21 12.9994C20.8686 12.9994 20.7385 13.0253 20.6171 13.0756C20.4957 13.1259 20.3854 13.1996 20.2925 13.2925L17 16.5863V5C17 4.73478 16.8946 4.48043 16.7071 4.29289C16.5196 4.10536 16.2652 4 16 4C15.7348 4 15.4804 4.10536 15.2929 4.29289C15.1054 4.48043 15 4.73478 15 5V16.5863L11.7075 13.2925C11.5199 13.1049 11.2654 12.9994 11 12.9994C10.7346 12.9994 10.4801 13.1049 10.2925 13.2925C10.1049 13.4801 9.99944 13.7346 9.99944 14C9.99944 14.2654 10.1049 14.5199 10.2925 14.7075L15.2925 19.7075Z" fill="#383742"/>
+                                                        </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="my-purchases-box">
+                                        <div class="my-purchases-box__block">
+                                            <div class="my-purchases-box__title">Товар</div>
+                                            <div class="my-purchases-box__inner">
+                                                <div class="my-purchases-box__image">
+                                                    <img src="./img/purchases/card.png" alt="">
+                                                </div>
+                                                <div class="my-purchases-box__text">
+                                                    <strong>Мега набор постеров</strong>
+                                                    <span>От Wall art...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="my-purchases-box__data">
+                                            <div class="my-purchases-box__date">
+                                                <div class="my-purchases-box__title">Дата покупки</div>
+                                                <strong>04.03.2023</strong>
+                                            </div>
+                                            <div class="my-purchases-box__price">
+                                                <div class="my-purchases-box__title">Цена</div>
+                                                <strong>4500</strong>
+                                            </div>
+                                        </div>
+                                        <div class="my-purchases-box__license">
+                                            <div class="my-purchases-box__title">Лицензия</div>
+                                            <strong>Частная лицензия</strong>
+                                        </div>
+                                        <div class="my-purchases-box__wrapper">
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Права</div>
+                                                <div class="my-purchases-box__doc">Договор</div>
+                                            </div>
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Отзывы</div>
+                                                <button class="my-purchases-box__message">
+                                                    <svg  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.66797 17.2927V9.31935C2.66797 5.63935 5.65464 2.66602 9.33464 2.66602H22.668C26.348 2.66602 29.3346 5.63935 29.3346 9.31935V18.626C29.3346 22.2927 26.348 25.266 22.668 25.266H20.668C20.2546 25.266 19.8546 25.466 19.6013 25.7994L17.6013 28.4527C16.7213 29.626 15.2813 29.626 14.4013 28.4527L12.4013 25.7994C12.188 25.506 11.708 25.266 11.3346 25.266H9.33464C5.65464 25.266 2.66797 22.2927 2.66797 18.626V17.2927Z" fill="#383742"/>
+                                                        <path d="M16.0013 16.0007C15.2546 16.0007 14.668 15.4007 14.668 14.6673C14.668 13.934 15.268 13.334 16.0013 13.334C16.7346 13.334 17.3346 13.934 17.3346 14.6673C17.3346 15.4007 16.748 16.0007 16.0013 16.0007Z" fill="white"/>
+                                                        <path d="M21.3333 16.0007C20.5867 16.0007 20 15.4007 20 14.6673C20 13.934 20.6 13.334 21.3333 13.334C22.0667 13.334 22.6667 13.934 22.6667 14.6673C22.6667 15.4007 22.08 16.0007 21.3333 16.0007Z" fill="white"/>
+                                                        <path d="M10.6654 16.0007C9.9187 16.0007 9.33203 15.4007 9.33203 14.6673C9.33203 13.934 9.93203 13.334 10.6654 13.334C11.3987 13.334 11.9987 13.934 11.9987 14.6673C11.9987 15.4007 11.412 16.0007 10.6654 16.0007Z" fill="white"/>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Скачать</div>
+                                                <a href="" download="" class="my-purchases-box__donwold">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" fill="none">
+                                                        <path d="M28 19V26C28 26.5304 27.7893 27.0391 27.4142 27.4142C27.0391 27.7893 26.5304 28 26 28H6C5.46957 28 4.96086 27.7893 4.58579 27.4142C4.21071 27.0391 4 26.5304 4 26V19C4 18.7348 4.10536 18.4804 4.29289 18.2929C4.48043 18.1054 4.73478 18 5 18C5.26522 18 5.51957 18.1054 5.70711 18.2929C5.89464 18.4804 6 18.7348 6 19V26H26V19C26 18.7348 26.1054 18.4804 26.2929 18.2929C26.4804 18.1054 26.7348 18 27 18C27.2652 18 27.5196 18.1054 27.7071 18.2929C27.8946 18.4804 28 18.7348 28 19ZM15.2925 19.7075C15.3854 19.8005 15.4957 19.8742 15.6171 19.9246C15.7385 19.9749 15.8686 20.0008 16 20.0008C16.1314 20.0008 16.2615 19.9749 16.3829 19.9246C16.5043 19.8742 16.6146 19.8005 16.7075 19.7075L21.7075 14.7075C21.8004 14.6146 21.8741 14.5043 21.9244 14.3829C21.9747 14.2615 22.0006 14.1314 22.0006 14C22.0006 13.8686 21.9747 13.7385 21.9244 13.6171C21.8741 13.4957 21.8004 13.3854 21.7075 13.2925C21.6146 13.1996 21.5043 13.1259 21.3829 13.0756C21.2615 13.0253 21.1314 12.9994 21 12.9994C20.8686 12.9994 20.7385 13.0253 20.6171 13.0756C20.4957 13.1259 20.3854 13.1996 20.2925 13.2925L17 16.5863V5C17 4.73478 16.8946 4.48043 16.7071 4.29289C16.5196 4.10536 16.2652 4 16 4C15.7348 4 15.4804 4.10536 15.2929 4.29289C15.1054 4.48043 15 4.73478 15 5V16.5863L11.7075 13.2925C11.5199 13.1049 11.2654 12.9994 11 12.9994C10.7346 12.9994 10.4801 13.1049 10.2925 13.2925C10.1049 13.4801 9.99944 13.7346 9.99944 14C9.99944 14.2654 10.1049 14.5199 10.2925 14.7075L15.2925 19.7075Z" fill="#383742"/>
+                                                        </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="my-purchases-box">
+                                        <div class="my-purchases-box__block">
+                                            <div class="my-purchases-box__title">Товар</div>
+                                            <div class="my-purchases-box__inner">
+                                                <div class="my-purchases-box__image">
+                                                    <img src="./img/purchases/card.png" alt="">
+                                                </div>
+                                                <div class="my-purchases-box__text">
+                                                    <strong>Мега набор постеров</strong>
+                                                    <span>От Wall art...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="my-purchases-box__data">
+                                            <div class="my-purchases-box__date">
+                                                <div class="my-purchases-box__title">Дата покупки</div>
+                                                <strong>04.03.2023</strong>
+                                            </div>
+                                            <div class="my-purchases-box__price">
+                                                <div class="my-purchases-box__title">Цена</div>
+                                                <strong>4500</strong>
+                                            </div>
+                                        </div>
+                                        <div class="my-purchases-box__license">
+                                            <div class="my-purchases-box__title">Лицензия</div>
+                                            <strong>Частная лицензия</strong>
+                                        </div>
+                                        <div class="my-purchases-box__wrapper">
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Права</div>
+                                                <div class="my-purchases-box__doc">Договор</div>
+                                            </div>
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Отзывы</div>
+                                                <button class="my-purchases-box__message">
+                                                    <svg  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.66797 17.2927V9.31935C2.66797 5.63935 5.65464 2.66602 9.33464 2.66602H22.668C26.348 2.66602 29.3346 5.63935 29.3346 9.31935V18.626C29.3346 22.2927 26.348 25.266 22.668 25.266H20.668C20.2546 25.266 19.8546 25.466 19.6013 25.7994L17.6013 28.4527C16.7213 29.626 15.2813 29.626 14.4013 28.4527L12.4013 25.7994C12.188 25.506 11.708 25.266 11.3346 25.266H9.33464C5.65464 25.266 2.66797 22.2927 2.66797 18.626V17.2927Z" fill="#383742"/>
+                                                        <path d="M16.0013 16.0007C15.2546 16.0007 14.668 15.4007 14.668 14.6673C14.668 13.934 15.268 13.334 16.0013 13.334C16.7346 13.334 17.3346 13.934 17.3346 14.6673C17.3346 15.4007 16.748 16.0007 16.0013 16.0007Z" fill="white"/>
+                                                        <path d="M21.3333 16.0007C20.5867 16.0007 20 15.4007 20 14.6673C20 13.934 20.6 13.334 21.3333 13.334C22.0667 13.334 22.6667 13.934 22.6667 14.6673C22.6667 15.4007 22.08 16.0007 21.3333 16.0007Z" fill="white"/>
+                                                        <path d="M10.6654 16.0007C9.9187 16.0007 9.33203 15.4007 9.33203 14.6673C9.33203 13.934 9.93203 13.334 10.6654 13.334C11.3987 13.334 11.9987 13.934 11.9987 14.6673C11.9987 15.4007 11.412 16.0007 10.6654 16.0007Z" fill="white"/>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                            <div class="my-purchases-box__info">
+                                                <div class="my-purchases-box__title">Скачать</div>
+                                                <a href="" download="" class="my-purchases-box__donwold">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" fill="none">
+                                                        <path d="M28 19V26C28 26.5304 27.7893 27.0391 27.4142 27.4142C27.0391 27.7893 26.5304 28 26 28H6C5.46957 28 4.96086 27.7893 4.58579 27.4142C4.21071 27.0391 4 26.5304 4 26V19C4 18.7348 4.10536 18.4804 4.29289 18.2929C4.48043 18.1054 4.73478 18 5 18C5.26522 18 5.51957 18.1054 5.70711 18.2929C5.89464 18.4804 6 18.7348 6 19V26H26V19C26 18.7348 26.1054 18.4804 26.2929 18.2929C26.4804 18.1054 26.7348 18 27 18C27.2652 18 27.5196 18.1054 27.7071 18.2929C27.8946 18.4804 28 18.7348 28 19ZM15.2925 19.7075C15.3854 19.8005 15.4957 19.8742 15.6171 19.9246C15.7385 19.9749 15.8686 20.0008 16 20.0008C16.1314 20.0008 16.2615 19.9749 16.3829 19.9246C16.5043 19.8742 16.6146 19.8005 16.7075 19.7075L21.7075 14.7075C21.8004 14.6146 21.8741 14.5043 21.9244 14.3829C21.9747 14.2615 22.0006 14.1314 22.0006 14C22.0006 13.8686 21.9747 13.7385 21.9244 13.6171C21.8741 13.4957 21.8004 13.3854 21.7075 13.2925C21.6146 13.1996 21.5043 13.1259 21.3829 13.0756C21.2615 13.0253 21.1314 12.9994 21 12.9994C20.8686 12.9994 20.7385 13.0253 20.6171 13.0756C20.4957 13.1259 20.3854 13.1996 20.2925 13.2925L17 16.5863V5C17 4.73478 16.8946 4.48043 16.7071 4.29289C16.5196 4.10536 16.2652 4 16 4C15.7348 4 15.4804 4.10536 15.2929 4.29289C15.1054 4.48043 15 4.73478 15 5V16.5863L11.7075 13.2925C11.5199 13.1049 11.2654 12.9994 11 12.9994C10.7346 12.9994 10.4801 13.1049 10.2925 13.2925C10.1049 13.4801 9.99944 13.7346 9.99944 14C9.99944 14.2654 10.1049 14.5199 10.2925 14.7075L15.2925 19.7075Z" fill="#383742"/>
+                                                        </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="pagination lk-sales__advice-pagination">
-                <div class="pagination__bullets lk-sales__advice-bullets">
-    
-                </div>
-                
-            </div>
-        </div>
-    </div>
-   
-</div>
+                        </div>
 					</div>
                 </div>
             </div>

@@ -1,17 +1,20 @@
 .sale-box {
-    padding: 2rem 3.8rem;
-    margin-bottom: 1.5rem;
-    background: #FFFFFF;
+    width: 40.5rem;
+    margin-bottom: 6rem;
+    background: #fff;
     border-radius: 2rem;
-    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 2.4rem 2.2rem;
+    margin-right: 6rem;
     &__mob {
-        display: none;
+        display: block;
     }
 
     &__desk {
-        display: flex;
-        justify-content: space-between;
-        align-items:center;
+      display: none;
     }
 
     &__desk-block {
@@ -83,4 +86,88 @@
         color: #A0A1A4;
         text-align: left;
     }
+
+ 
+	&__desk {
+			display: none;
+	}
+
+	&__mob {
+			display: block;
+	}
+
+		&__mob-block {
+			display: flex;
+			align-items: center;
+			margin-bottom: 2rem;
+		}
+
+	&__mob-image {
+			width: 8rem;
+            height: 5rem;
+			margin-right: 2.2rem;
+			img {
+				width: 100%;
+				height: 100%;
+				border-radius: 2rem;
+			}
+	}
+
+		&__mob-name {
+			font-size: 2rem;
+			line-height: normal;
+            font-weight: 500;
+		}
+
+		&__mob-data {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 1rem;
+		}
+
+		&__mob-data:last-child {
+			margin-bottom: 0;
+		}
+
+		&__mob-data-bold {
+			font-weight: 700;
+			font-size: 2rem;
+		line-height: normal;
+			color: #a0a1a4;
+		}
+
+		&__mob-data-medium {
+			color: #a0a1a4;
+			font-size: 2rem;
+			line-height: normal;
+		}
+
+		&__mob-data-rub {
+			color: #a0a1a4;
+			font-size: 2rem;
+			line-height: normal;
+			padding-right: 1.3rem;
+			position: relative;
+			&::before {
+				position: absolute;
+				content: '₽';
+				right: 0rem;
+				top: 0rem;
+				font-size: 2rem;
+				color: #a0a1a4;
+			}
+		}
+
+        .separator {
+            flex-grow: 1;
+                border-bottom: 1px dotted #a0a1a4;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                position: relative;
+                bottom: 0.7rem;
+        }
+}
+
+.sale-box:nth-child(3n) {
+    margin-right: 0;
 }
