@@ -59,24 +59,26 @@ if (handlers) {
 	handlers.forEach((element) => {
 		element.addEventListener('click', (e) => {
 			if (!e.target.classList.contains(activeHandlerClass)) {
-				const currentActive = document.querySelector('.' + activeHandlerClass);
-				const currentActiveBlock = document.querySelector('.' + activeBlock);
+				const currentActive = document.querySelector(`.${activeHandlerClass}`);
+				const currentActiveBlock = document.querySelector(`.${activeBlock}`);
 				currentActive.classList.remove(activeHandlerClass);
 				element.classList.add(activeHandlerClass);
 
-				currentActiveBlock.classList.remove(activeBlock);
-				switch (e.target.id) {
-					case 'features':
-						featuresBlock.classList.add(activeBlock);
-						break;
-					case 'description':
-						descriptionBlock.classList.add(activeBlock);
-						break;
-					case 'get':
-						getBlock.classList.add(activeBlock);
-						break;
-					default:
-						break;
+				if (currentActiveBlock) {
+					currentActiveBlock.classList.remove(activeBlock);
+					switch (e.target.id) {
+						case 'features':
+							featuresBlock.classList.add(activeBlock);
+							break;
+						case 'description':
+							descriptionBlock.classList.add(activeBlock);
+							break;
+						case 'get':
+							getBlock.classList.add(activeBlock);
+							break;
+						default:
+							break;
+					}
 				}
 			}
 		});
