@@ -197,17 +197,43 @@ main {
 }
 
 .link {
-	font-weight: 700;
-	font-size: 2rem;
-	line-height: 2.4rem;
-	letter-spacing: 0.02em;
-	display: inline-block;
-	color: #383742;
+	display: flex;
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
 	height: fit-content;
-	padding-right: 5.5rem;
+	align-items: center;
 	position: relative;
+	gap: 2.5rem;
+	transition: 0.2s;
+
+	span {
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 2.4rem;
+		letter-spacing: 0.02em;
+		display: inline-block;
+		color: #383742;
+	}
+
+	svg {
+		width: 3.2rem;
+		height: auto;
+	}
+
+	&:hover {
+		@media (hover:hover) {
+			span {
+				color: #A0A1A4;
+			}
+
+			path {
+				fill: #A0A1A4;
+			}
+		}
+	}
+	&:active {
+		transform: scale(0.95);
+	}
 }
 
 .item--hide {

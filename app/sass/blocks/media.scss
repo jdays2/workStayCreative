@@ -8089,13 +8089,18 @@
 	}
 
 	.link {
-		font-size: 2.8rem;
-		line-height: 3.4rem;
-		padding-right: 7.8rem;
-		&::before {
+		gap: 2.8rem;
+		padding: 0;
+		span {
+			font-size: 2.8rem;
+			line-height: 3.4rem;
+			padding-right: 7.8rem;
+			padding: 0;
+			margin:0 !important;
+		}
+
+		svg {
 			width: 5rem;
-			height: 1.6rem;
-			top: 1rem;
 		}
 	}
 

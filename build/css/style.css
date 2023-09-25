@@ -944,17 +944,43 @@ main {
 }
 
 .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  gap: 2.5rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.link span {
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.4rem;
   letter-spacing: 0.02em;
   display: inline-block;
   color: #383742;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding-right: 5.5rem;
-  position: relative;
+}
+.link svg {
+  width: 3.2rem;
+  height: auto;
+}
+@media (hover: hover) {
+  .link:hover span {
+    color: #A0A1A4;
+  }
+  .link:hover path {
+    fill: #A0A1A4;
+  }
+}
+.link:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .item--hide {
@@ -1654,13 +1680,10 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.header__user img {
-  width: 1.7rem;
-  height: 2.3rem;
 }
 .header__store {
   background: #eaebef;
@@ -1675,10 +1698,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.header__store img {
-  width: 2.3rem;
-  height: 2.3rem;
 }
 .header__store--show {
   display: -webkit-box;
@@ -1701,10 +1720,6 @@ main {
           align-items: center;
   position: relative;
 }
-.header__like img {
-  width: 2.281rem;
-  height: 2.28rem;
-}
 .header__bag {
   width: 7.5rem;
   height: 7.5rem;
@@ -1720,10 +1735,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-}
-.header__bag img {
-  width: 2.8rem;
-  height: 2.8rem;
 }
 .header__shop-button {
   background: #de755e;
@@ -33176,14 +33187,18 @@ input:checked ~ .contacts__question-item-content {
     background: rgba(160, 161, 164, 0.3);
   }
   .link {
+    gap: 2.8rem;
+    padding: 0;
+  }
+  .link span {
     font-size: 2.8rem;
     line-height: 3.4rem;
     padding-right: 7.8rem;
+    padding: 0;
+    margin: 0 !important;
   }
-  .link::before {
+  .link svg {
     width: 5rem;
-    height: 1.6rem;
-    top: 1rem;
   }
   .title {
     -webkit-box-orient: vertical;

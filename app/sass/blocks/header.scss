@@ -252,12 +252,8 @@
 		background: #eaebef;
 		display: flex;
 		justify-content: center;
+		position: relative;
 		align-items: center;
-
-		img {
-			width: 1.7rem;
-			height: 2.3rem;
-		}
 	}
 
 	&__store {
@@ -269,11 +265,6 @@
 		display: none;
 		justify-content: center;
 		align-items: center;
-
-		img {
-			width: 2.3rem;
-			height: 2.3rem;
-		}
 	}
 
 	&__store--show {
@@ -289,11 +280,6 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
-
-		img {
-			width: 2.281rem;
-			height: 2.28rem;
-		}
 	}
 
 	&__bag {
@@ -306,10 +292,6 @@
 		align-items: center;
 		position: relative;
 
-		img {
-			width: 2.8rem;
-			height: 2.8rem;
-		}
 	}
 
 	&__shop-button {
