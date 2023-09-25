@@ -228,6 +228,23 @@
 		margin-right: 0;
 	}
 
+	&__header-icon-link {
+		background-color: #eaebef;
+		svg {
+			width: 2.6rem;
+			height: 2.6rem;
+		}
+
+		&:hover {
+			@media (hover: hover) {
+				background-color: #383742;
+				path {
+					fill: #fff;
+				}
+			}
+		}
+	}
+
 	&__user {
 		width: 7.5rem;
 		height: 7.5rem;
@@ -296,21 +313,27 @@
 	}
 
 	&__shop-button {
-		display: block;
 		background: #de755e;
 		border-radius: 100rem;
 		padding: 2.5rem 2.8rem;
 		position: relative;
+		height: 7.2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		span {
 			font-family: 'Gilroy';
 			font-style: normal;
 			font-weight: 700;
 			font-size: 2rem;
-			line-height: 2.5rem;
 			letter-spacing: 0.02em;
 			color: white;
+			display: block;
+			line-height: 2.4rem;
 		}
+
+		@include btnHover;
 	}
 
 	&__profile-wrapper {
@@ -451,6 +474,7 @@
 			letter-spacing: 0.02em;
 			color: #ffffff;
 		}
+		@include btnHover;
 	}
 
 	&__profile-bar {

@@ -434,6 +434,7 @@
 			font-weight: 700;
 			letter-spacing: 0.04rem;
 		}
+		@include btnHover
 	}
 
 	&__collection-add-btn {
@@ -449,6 +450,7 @@
 			font-weight: 700;
 			letter-spacing: 0.04rem;
 		}
+		@include btnHover
 	}
 
 	&__form-input {
@@ -596,6 +598,8 @@
 		span {
 			color: #383742;
 		}
+
+		@include grayBtnHover
 	}
 
 	&__icon {

@@ -1,34 +1,33 @@
+
+
 main {
 	padding-top: 31.6rem;
 }
 
 .all-btn {
 	display: flex;
-	width: 28.2rem;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
 	height: 7.7rem;
 	background: #ffffff;
 	border-radius: 10rem;
-	padding: 2.6rem 3rem;
+	padding: 2.7rem 4rem;
+	white-space: nowrap;
+	gap: 4.3rem;
 	span {
 		font-style: normal;
 		font-weight: 700;
 		font-size: 2rem;
-		line-height: 2.5rem;
 		letter-spacing: 0.02em;
 		position: relative;
-		padding-right: 5.2rem;
-		&::before {
-			position: absolute;
-			content: '';
-			width: 3.2rem;
-			top: 0.8rem;
-			height: 1.2rem;
-			right: 0;
-			background-image: url(../img/icon/arrownext.svg);
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
-		}
 	}
+
+	svg {
+		width: 3.2rem;
+	}
+
+	@include whiteBtnHover
 }
 
 .checkbox {
@@ -117,6 +116,7 @@ main {
 		text-align: center;
 		letter-spacing: 0.02em;
 	}
+	@include btnHover
 }
 
 .explanation {
@@ -208,17 +208,6 @@ main {
 	height: fit-content;
 	padding-right: 5.5rem;
 	position: relative;
-	&::before {
-		position: absolute;
-		content: '';
-		width: 3.2rem;
-		height: 1rem;
-		background-image: url(../img/icon/arrownext.svg);
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		right: 0;
-		top: 32%;
-	}
 }
 
 .item--hide {

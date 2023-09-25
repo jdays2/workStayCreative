@@ -1004,25 +1004,6 @@
 			}
 		}
 	}
-
-	.all-btn {
-		width: 40.8rem;
-		height: 11rem;
-		padding: 3.8rem 4rem;
-
-		span {
-			font-weight: 700;
-			font-size: 2.8rem;
-			line-height: 3.4rem;
-			letter-spacing: 0.02em;
-			padding-right: 9rem;
-			&::before {
-				width: 5rem;
-				height: 2rem;
-			}
-		}
-	}
-
 	.link {
 		font-size: 2.8rem;
 		line-height: 3.4rem;
@@ -2604,6 +2585,7 @@
 		&__collection-item {
 			width: 63rem;
 			flex-wrap: wrap;
+			height: 57rem;
 			gap: 4.2rem 0;
 			padding: 3rem;
 		}
@@ -3616,19 +3598,16 @@
 			position: initial;
 			width: 100%;
 			margin-top: 3rem;
-
+			gap:3rem;
 			height: 9.6rem;
 
 			span {
 				font-size: 2.8rem;
-				&::before {
-					width: 4rem;
-					height: 4rem;
+			}
 
-					top: 50%;
-					transform: translate(0, -50%);
-					right: 0;
-				}
+			svg {
+				width: 2.5rem;
+				height: 2.5rem;
 			}
 		}
 
@@ -3788,19 +3767,16 @@
 		&__btn-market {
 			position: initial;
 			width: 100%;
-
+			gap: 3rem;
 			height: 9.6rem;
 
 			span {
 				font-size: 2.8rem;
-				&::before {
-					width: 4rem;
-					height: 4rem;
+			}
 
-					top: 50%;
-					transform: translate(0, -50%);
-					right: 0;
-				}
+			svg {
+				width: 2.5rem;
+				height: 2.5rem;
 			}
 		}
 	}
@@ -5912,6 +5888,7 @@
 		}
 
 		&__form-inner {
+			width: 100%;
 			label {
 				font-size: 2.8rem;
 				font-family: 'Gilroy';
@@ -6436,7 +6413,7 @@
 			width: 11rem;
 			height: 11rem;
 
-			img {
+			svg {
 				width: 4.93rem;
 				height: 4.93rem;
 			}
@@ -7066,6 +7043,13 @@
 			}
 		}
 
+		&__header-icon-link {
+	
+			svg {
+				width: 4rem;
+				height: 4rem;
+			}
+		}
 		.burger__search {
 			.header__results {
 				&-popup {
@@ -8100,24 +8084,6 @@
 					transform: translate(0, -50%);
 					background: rgba(160, 161, 164, 0.3);
 				}
-			}
-		}
-	}
-
-	.all-btn {
-		width: 40.8rem;
-		height: 11rem;
-		padding: 3.8rem 4rem;
-
-		span {
-			font-weight: 700;
-			font-size: 2.8rem;
-			line-height: 3.4rem;
-			letter-spacing: 0.02em;
-			padding-right: 9rem;
-			&::before {
-				width: 5rem;
-				height: 2rem;
 			}
 		}
 	}
@@ -10073,6 +10039,7 @@
 			width: 100%;
 
 			label {
+				width: 100%;
 				font-size: 2.8rem;
 				line-height: 3.2rem;
 				margin-bottom: 2rem;
@@ -11031,18 +10998,17 @@
 	.all-btn {
 		width: 40.8rem;
 		height: 11rem;
-		padding: 3.8rem 4rem;
+		padding: 4rem;
 
 		span {
 			font-weight: 700;
 			font-size: 2.8rem;
 			line-height: 3.4rem;
 			letter-spacing: 0.02em;
-			padding-right: 9rem;
-			&::before {
-				width: 5rem;
-				height: 2rem;
-			}
+		}
+
+		svg {
+			width: 5rem;
 		}
 	}
 
@@ -15085,7 +15051,7 @@
 				letter-spacing: 0.056rem;
 			}
 
-			img {
+			svg {
 				width: 5rem;
 			}
 		}
@@ -15101,7 +15067,7 @@
 				letter-spacing: 0.056rem;
 			}
 
-			img {
+			svg {
 				width: 5rem;
 			}
 		}
@@ -17697,7 +17663,9 @@
 		}
 		.publick-profile__collection-item {
 			width: 100%;
+			height: 57rem;
 			margin-right: 0;
+
 		}
 
 		.sort-popup {

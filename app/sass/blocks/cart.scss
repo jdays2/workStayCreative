@@ -257,6 +257,8 @@
 			letter-spacing: 0.02em;
 			color: #fff;
 		}
+
+		@include btnHover
 	}
 
 	&__order-info {
@@ -451,6 +453,8 @@
 			line-height: 2.2rem;
 			letter-spacing: 0.02em;
 			color: #ffffff;
+
+			@include btnHover
 		}
 	}
 
@@ -587,12 +591,6 @@
 		border: 0rem;
 		background-color: inherit;
 		border-radius: 0%;
-	}
-}
-
-@media (hover: hover) {
-	.cart__favorites-btn:hover {
-		background-color: #383742;
 	}
 }
 

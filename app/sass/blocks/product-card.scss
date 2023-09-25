@@ -388,6 +388,7 @@
 			letter-spacing: 0.02em;
 			color: #ffffff;
 		}
+		@include btnHover
 	}
 
 	&__price-cart-btn {
@@ -399,10 +400,12 @@
 		border-radius: 100rem;
 		background-color: #e0e1e7;
 
-		img {
-			width: 2.93rem;
-			height: 2.93rem;
+		svg {
+			width: 2.6rem;
+			height: 2.6rem;
 		}
+
+		@include grayBtnHover
 	}
 
 	&__seller-box {
@@ -494,6 +497,7 @@
 			letter-spacing: 0.02em;
 			color: #383742;
 		}
+		@include grayBtnHover
 	}
 
 	&__seller-sub-btn {
@@ -524,6 +528,7 @@
 
 	&__seller-sub-btn--subscribed {
 		background-color: #383742;
+		@include darkBtnHover
 	}
 
 	&__seller-name {
@@ -862,6 +867,7 @@
 			font-weight: 700;
 			letter-spacing: 0.04rem;
 		}
+		@include btnHover
 	}
 
 	&__reviews-info {

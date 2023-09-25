@@ -403,13 +403,7 @@
 		display: none;
 		flex-direction: column;
 		
-		.publick-profile__collection-item {
-			padding: 2rem;
-			width: 40.5rem;
-			height: 34rem;
-			background-color: #fff;
-			border-radius: 3rem;
-		}
+		
 	}
 
 	&__item-info {
@@ -595,7 +589,6 @@
 	&__collection-item {
 		padding: 2rem;
 		width: 40.5rem;
-		height: 34rem;
 		background-color: #fff;
 		border-radius: 3rem;
 	}
