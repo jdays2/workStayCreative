@@ -11,6 +11,32 @@
 	justify-content: center;
 	align-items: center;
 
+	@-webkit-keyframes appearance {
+		0% {
+			transform: scale(0.6);
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	@keyframes appearance {
+		0% {
+			transform: scale(0.6);
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+
 	&--full {
 		-webkit-backdrop-filter: none;
 		backdrop-filter: none;
@@ -141,9 +167,20 @@
 			letter-spacing: 0.11rem;
 			text-transform: uppercase;
 		}
-		&-remove {
+
+		&-remove,
+		&-download {
 			width: 2.1rem;
 			height: 2rem;
+			cursor: pointer;
+
+			&:hover {
+				@media (hover: hover) {
+					path {
+						fill: #de755e;
+					}
+				}
+			}
 		}
 	}
 
@@ -153,10 +190,17 @@
 		overflow-x: hidden;
 		padding-top: 5rem;
 		padding-bottom: 5rem;
-		-ms-overflow-style: none; /* IE и Edge */
-		scrollbar-width: none; /* Firefox */
+		-ms-overflow-style: none;
+		scrollbar-width: none;
 		&::-webkit-scrollbar {
 			display: none;
+		}
+
+		.modal__container {
+			-webkit-animation: appearance;
+			animation: appearance;
+			-webkit-animation-duration: 0.35s;
+			animation-duration: 0.35s;
 		}
 	}
 
@@ -299,10 +343,10 @@
 	&__collection-list {
 		display: flex;
 		gap: 1.5rem;
-		max-height: 24rem;
+		max-height: 36rem;
 		flex-direction: column;
 		overflow-y: scroll;
-		padding-right: 0.5rem;
+		padding-right: 3rem;
 
 		&::-webkit-scrollbar {
 			width: 0.4rem;
@@ -324,24 +368,24 @@
 		}
 
 		&::-webkit-scrollbar-track:hover {
-			background-color: #de755e82; 
+			background-color: #de755e82;
 		}
 
 		&::-webkit-scrollbar {
-			width: 0.4rem; 
+			width: 0.4rem;
 		}
 
 		&::-webkit-scrollbar-thumb {
 			background-color: #de755e82;
-			border-radius: 0.4rem; 
+			border-radius: 0.4rem;
 		}
 
 		&::-webkit-scrollbar-thumb:hover {
-			background-color: #555; 
+			background-color: #555;
 		}
 
 		&::-webkit-scrollbar-track {
-			background-color: #fff9ee; 
+			background-color: #fff9ee;
 		}
 
 		&::-webkit-scrollbar-track:hover {

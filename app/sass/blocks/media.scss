@@ -2611,6 +2611,7 @@
 		&__collection-list {
 			gap: 3rem;
 			max-height: 71rem;
+			padding-right: 1rem
 		}
 
 		&__collection-item-title {
@@ -12505,7 +12506,6 @@
 			width: 100%;
 			gap: 3.3rem;
 			padding: 3rem;
-			margin-bottom: 5rem;
 		}
 
 		&__cart-item-content {
@@ -17795,14 +17795,19 @@
 			width: 100%;
 		}
 
+		&__block {
+			gap: 11rem
+		}
+
 		&__block-inner {
 			flex-direction: column;
 			align-items: initial;
+			gap: 2rem;
 		}
 
 		&__sum {
 			font-size: 2.8rem;
-			margin-top: 3.3rem;
+			
 			span {
 				padding-right: 1.6rem;
 				margin-right: 1rem;

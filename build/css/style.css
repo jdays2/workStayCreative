@@ -4363,6 +4363,34 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
+@-webkit-keyframes appearance {
+  0% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes appearance {
+  0% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 .modal--full {
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
@@ -4501,9 +4529,15 @@ main {
   letter-spacing: 0.11rem;
   text-transform: uppercase;
 }
-.modal__cart-item-remove {
+.modal__cart-item-remove, .modal__cart-item-download {
   width: 2.1rem;
   height: 2rem;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .modal__cart-item-remove:hover path, .modal__cart-item-download:hover path {
+    fill: #de755e;
+  }
 }
 .modal.active {
   display: block;
@@ -4511,11 +4545,17 @@ main {
   overflow-x: hidden;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  -ms-overflow-style: none; /* IE и Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .modal.active::-webkit-scrollbar {
   display: none;
+}
+.modal.active .modal__container {
+  -webkit-animation: appearance;
+  animation: appearance;
+  -webkit-animation-duration: 0.35s;
+  animation-duration: 0.35s;
 }
 .modal__hor-list {
   display: -webkit-box;
@@ -4668,13 +4708,13 @@ main {
   display: -ms-flexbox;
   display: flex;
   gap: 1.5rem;
-  max-height: 24rem;
+  max-height: 36rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-y: scroll;
-  padding-right: 0.5rem;
+  padding-right: 3rem;
 }
 .modal__collection-list::-webkit-scrollbar {
   width: 0.4rem;
@@ -23427,7 +23467,11 @@ input:checked ~ .contacts__question-item-content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 5.5rem;
+  gap: 10.8rem;
 }
 .fonts-lk__title {
   font-family: "Austin Cyr", sans-serif;
@@ -23436,7 +23480,7 @@ input:checked ~ .contacts__question-item-content {
   font-weight: 700;
   line-height: 7rem;
   letter-spacing: 1.46px;
-  margin-right: 15.6rem;
+  max-width: 49rem;
 }
 .fonts-lk__block-inner {
   display: -webkit-box;
@@ -23445,6 +23489,7 @@ input:checked ~ .contacts__question-item-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 15.8rem;
 }
 .fonts-lk__sum {
   color: #383742;
@@ -27594,6 +27639,7 @@ input:checked ~ .contacts__question-item-content {
   .modal__collection-list {
     gap: 3rem;
     max-height: 71rem;
+    padding-right: 1rem;
   }
   .modal__collection-item-title {
     font-size: 2.8rem;
@@ -36637,7 +36683,6 @@ input:checked ~ .contacts__question-item-content {
     width: 100%;
     gap: 3.3rem;
     padding: 3rem;
-    margin-bottom: 5rem;
   }
   .modal__cart-item-content {
     position: relative;
@@ -41500,6 +41545,9 @@ input:checked ~ .contacts__question-item-content {
   .fonts-lk__wrapper {
     width: 100%;
   }
+  .fonts-lk__block {
+    gap: 11rem;
+  }
   .fonts-lk__block-inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -41508,10 +41556,10 @@ input:checked ~ .contacts__question-item-content {
     -webkit-box-align: initial;
         -ms-flex-align: initial;
             align-items: initial;
+    gap: 2rem;
   }
   .fonts-lk__sum {
     font-size: 2.8rem;
-    margin-top: 3.3rem;
   }
   .fonts-lk__sum span {
     padding-right: 1.6rem;
