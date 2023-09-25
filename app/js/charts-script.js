@@ -5,6 +5,7 @@ const ctx = document.getElementById('myChart');
 var myPieChartDataForm = document.querySelector("#charts-values-profit");
 var myPieChart;
 function createMyPieChart(){
+    if(!myPieChartDataForm) return;
     if(myPieChart !== undefined) myPieChart.destroy(); 
     var myPieChartData = new FormData(myPieChartDataForm);
     var myPieChartDataLabels = [];
@@ -129,13 +130,12 @@ function createMyPieChart(){
 }
 
 createMyPieChart();
- 
-myPieChartDataForm.addEventListener("update", createMyPieChart);
+if(myPieChartDataForm) myPieChartDataForm.addEventListener("update", createMyPieChart);
 
 
 
 
-const ctxChartTwo = document.getElementById('myChartTwo').getContext('2d');
+const ctxChartTwo = document.getElementById('myChartTwo');
 const myChartLineTwo = new Chart(ctxChartTwo, {
     type: 'line',
 	
@@ -261,6 +261,7 @@ var myPieChartThreeDataForm = document.querySelector("#charts-values-sales");
 var myChartLineThree;
 
 function createMyChartLineThree(){
+    if(!myPieChartThreeDataForm) return;
     if(myChartLineThree !== undefined) myChartLineThree.destroy();
     var myPieChartThreeData = new FormData(myPieChartThreeDataForm);
     var myPieChartThreeDataLabels = [];
@@ -390,14 +391,14 @@ function createMyChartLineThree(){
 
 createMyChartLineThree();
  
-myPieChartThreeDataForm.addEventListener("update", createMyChartLineThree);
+if(myPieChartThreeDataForm) myPieChartThreeDataForm.addEventListener("update", createMyChartLineThree);
 
 const ctxChartFour = document.getElementById('myChartFour').getContext('2d');
 var myPieChartFourDataForm = document.querySelector("#charts-values-conversion");
 var myChartLineFour;
 
 function createMyChartLineFour(){
-    console.log("create");
+    if(!myPieChartFourDataForm) return;
     if(myChartLineFour !== undefined) myChartLineFour.destroy();
     var myPieChartFourData = new FormData(myPieChartFourDataForm);
     var myPieChartFourDataLabels = [];
@@ -523,4 +524,4 @@ function createMyChartLineFour(){
 
 createMyChartLineFour();
  
-myPieChartFourDataForm.addEventListener("update", createMyChartLineFour);
+if(myPieChartFourDataForm) myPieChartFourDataForm.addEventListener("update", createMyChartLineFour);
