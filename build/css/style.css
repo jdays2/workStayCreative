@@ -743,6 +743,9 @@ main {
   .all-btn:hover path {
     fill: #fff;
   }
+  .all-btn:active path {
+    fill: #DE755E;
+  }
 }
 .all-btn:active {
   background: rgb(255, 219, 212);
@@ -2848,6 +2851,11 @@ main {
   border-radius: 3rem;
   margin-right: 1rem;
 }
+@media (hover: hover) {
+  .cat-product__like:hover {
+    background: #FFF;
+  }
+}
 .cat-product__like span {
   position: relative;
   font-weight: 700;
@@ -2885,6 +2893,11 @@ main {
   border-radius: 3rem;
   margin-right: 1rem;
 }
+@media (hover: hover) {
+  .cat-product__views:hover {
+    background: #FFF;
+  }
+}
 .cat-product__views span {
   position: relative;
   font-weight: 700;
@@ -2920,6 +2933,11 @@ main {
   height: 7.7rem;
   background: #e0e1e7;
   border-radius: 3rem;
+}
+@media (hover: hover) {
+  .cat-product__arrow:hover {
+    background: #FFF;
+  }
 }
 .cat-product__arrow img {
   width: 3.2rem;
@@ -25724,6 +25742,9 @@ input:checked ~ .contacts__question-item-content {
   height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
+}
+.loader__parent {
+  position: relative;
 }
 
 @media only all and (max-width: 48em) {

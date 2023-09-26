@@ -122,6 +122,11 @@
 		background: #e0e1e7;
 		border-radius: 3rem;
 		margin-right: 1rem;
+		&:hover {
+			@media (hover:hover) {
+				background: #FFF;
+			}
+		}
 		span {
 			position: relative;
 			font-weight: 700;
@@ -153,6 +158,11 @@
 		background: #e0e1e7;
 		border-radius: 3rem;
 		margin-right: 1rem;
+		&:hover {
+			@media (hover:hover) {
+				background: #FFF;
+			}
+		}
 		span {
 			position: relative;
 			font-weight: 700;
@@ -183,6 +193,11 @@
 		height: 7.7rem;
 		background: #e0e1e7;
 		border-radius: 3rem;
+		&:hover {
+			@media (hover:hover) {
+				background: #FFF;
+			}
+		}
 
 		img {
 			width: 3.2rem;
