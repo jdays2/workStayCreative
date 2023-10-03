@@ -744,9 +744,9 @@ $('.notifications__item').click(function () {
 	content.addClass('active'); // 4
 });
 
-$('.discount-product__box').click(function () {
-	$(this).addClass('active').siblings().removeClass('active');
-});
+// $('.discount-product__box').click(function () {
+// 	$(this).addClass('active').siblings().removeClass('active');
+// });
 
 
 $('.merchandise-ar input:checkbox').click(function () {
@@ -765,9 +765,8 @@ new AirDatepicker('#lk-m__calendar', {
 
 
 
-
 jQuery(document).ready(function ($) {
-
+ 
 	var maxFileSize = 2 * 1024 * 1024; // (байт) Максимальный размер файла (2мб)
 	var queue = {};
 	var form = $('form#uploadImages');
@@ -784,27 +783,27 @@ jQuery(document).ready(function ($) {
 		for (var i = 0; i < files.length; i++) {
 			var file = files[i];
 
-			if (!file.type.match(/image\/(jpeg|jpg|png|gif)/)) {
-				alert('Фотография должна быть в формате jpg, png или gif');
+			if ( !file.type.match(/image\/(jpeg|jpg|png|gif)/) ) {
+				alert( 'Фотография должна быть в формате jpg, png или gif' );
 				continue;
 			}
 
-			if (file.size > maxFileSize) {
-				alert('Размер фотографии не должен превышать 2 Мб');
+			if ( file.size > maxFileSize ) {
+				alert( 'Размер фотографии не должен превышать 2 Мб' );
 				continue;
 			}
 
 			preview(files[i]);
 		}
 
-		// this.value = '';
-		console.log(this.files);
+		this.value = '';
+		
 	});
 
 	// Создание превью
 	function preview(file) {
 		var reader = new FileReader();
-		reader.addEventListener('load', function (event) {
+		reader.addEventListener('load', function(event) {
 			var img = document.createElement('img');
 
 			var itemPreview = itemPreviewTemplate.clone();
@@ -820,6 +819,9 @@ jQuery(document).ready(function ($) {
 		reader.readAsDataURL(file);
 	}
 
+
+	console.log(imagesList);
+
 	// Удаление фотографий
 	imagesList.on('click', '.delete-link', function () {
 		var item = $(this).closest('.item'),
@@ -832,7 +834,7 @@ jQuery(document).ready(function ($) {
 
 
 	// Отправка формы
-	form.on('submit', function (event) {
+	form.on('submit', function(event) {
 
 		var formData = new FormData(this);
 
@@ -857,7 +859,6 @@ jQuery(document).ready(function ($) {
 	});
 
 });
-
 
 $(function () {
 	var target = $('[data-field="target"]');
