@@ -358,25 +358,31 @@ if (uploadFile) {
 			});
 			var uploadedImageURL = URL.createObjectURL(file);
 			camanCanvas.cropper = cropper;
-			camanCanvas.getData = function(){
-						
-				cropper.getCroppedCanvas({
-					maxWidth: 4096,
-					maxHeight: 4096,
-					fillColor: '#fff',
-					imageSmoothingEnabled: true,
-					imageSmoothingQuality: 'high',
-				}).toBlob((blob) => { 
-					console.log(blob);
-					var fileBlob = new File([byteArrays], filename, {type: contentType, lastModified: Date.now()});
-					filelist = new FileList();
-					filelist.add(fileBlob);
-					$("#input-to-ajax-canvas")[0].files = filelist;
+			camanCanvas.getData = function () {
+				cropper
+					.getCroppedCanvas({
+						maxWidth: 4096,
+						maxHeight: 4096,
+						fillColor: '#fff',
+						imageSmoothingEnabled: true,
+						imageSmoothingQuality: 'high',
+					})
+					.toBlob((blob) => {
+						console.log(blob);
+						var fileBlob = new File([byteArrays], filename, {
+							type: contentType,
+							lastModified: Date.now(),
+						});
+						filelist = new FileList();
+						filelist.add(fileBlob);
+						$('#input-to-ajax-canvas')[0].files = filelist;
 
-					//document.querySelector(".avatar-modal__save-btn").dispatchEvent(new CustomEvent("update")) - триггер события, проверка
-				})
-			}
-			document.querySelector('.avatar-modal__save-btn').addEventListener('update', camanCanvas.getData);
+						//document.querySelector(".avatar-modal__save-btn").dispatchEvent(new CustomEvent("update")) - триггер события, проверка
+					});
+			};
+			document
+				.querySelector('.avatar-modal__save-btn')
+				.addEventListener('update', camanCanvas.getData);
 		});
 	});
 }
@@ -736,9 +742,9 @@ $('.notifications__item').click(function () {
 	content.addClass('active'); // 4
 });
 
-$('.discount-product__box').click(function () {
-	$(this).addClass('active').siblings().removeClass('active');
-});
+// $('.discount-product__box').click(function () {
+// 	$(this).addClass('active').siblings().removeClass('active');
+// });
 
 $('.merchandise-ar input:checkbox').click(function () {
 	$('.merchandise__checkbox-strong b').html(
@@ -782,8 +788,7 @@ jQuery(document).ready(function ($) {
 			preview(files[i]);
 		}
 
-		// this.value = '';
-		console.log(this.files);
+		this.value = '';
 	});
 
 	// Создание превью
@@ -803,6 +808,8 @@ jQuery(document).ready(function ($) {
 		});
 		reader.readAsDataURL(file);
 	}
+
+	console.log(imagesList);
 
 	// Удаление фотографий
 	imagesList.on('click', '.delete-link', function () {

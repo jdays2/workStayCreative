@@ -212,3 +212,39 @@ if (rewies) {
 		});
 	});
 }
+
+//модалка предпросмотра
+const previewBtn = document.querySelector('#product-m-desk__btn');
+const previewModal = document.querySelector('.modal--product-det');
+
+
+if (previewBtn) {
+	const activeClass = 'active';
+	console.log(previewBtn, previewModal);
+	previewBtn.addEventListener('click', () => {
+		console.log(previewBtn, previewModal);
+		alert('clicked!');
+		previewModal.classList.add(activeClass);
+
+		//cоздаем слайдера
+		const swiper = new Swiper('.mySwiper', {
+			slidesPerView: 'auto',
+			spaceBetween: rem(2),
+			watchSlidesProgress: true,
+			navigation: {
+				nextEl: '.product-card__arrow-right',
+				prevEl: '.product-card__arrow-left',
+			},
+		});
+
+		const swiper2 = new Swiper('.mySwiper2', {
+			loop: true,
+			slidesPerView: 1,
+			spaceBetween: rem(2),
+
+			thumbs: {
+				swiper: swiper,
+			},
+		});
+	});
+}

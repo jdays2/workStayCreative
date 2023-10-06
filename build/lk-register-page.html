@@ -2175,7 +2175,1008 @@
     </div>
 </div>
 
+		<!-- модалка с предварительным просмотром детальной страницы/карточки. Для открытия добавляем класс .active. Скрипты на странице не подключены, как только добавите к работающим скриптам в среду - все станет интерактивным. Если нет - пишите, звоните. -->
 
+		<div class="modal modal--product-det">
+			<div class="modal__container">
+				<button class="modal__close">
+					<img
+						src="./img/icon/close.svg"
+						alt="" />
+				</button>
+				<section class="product-card">
+					<div class="product-card__head">
+						<div class="product-card__title">
+							<span>Семейство шрифтов Seasons</span>
+							<div class="explanation">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 21"
+									fill="none">
+									<path
+										d="M0 10.002C0 15.5248 4.47715 20.002 10 20.002C15.5228 20.002 20 15.5248 20 10.002C20 4.47911 15.5228 0.00195312 10 0.00195312C4.47715 0.00195312 0 4.47911 0 10.002Z"
+										fill="#DE755E" />
+									<path
+										d="M9.65997 11.002V10.792C9.65997 10.112 10.08 9.75198 10.5 9.46198C10.91 9.18198 11.3199 8.82199 11.3199 8.16199C11.3199 7.24199 10.58 6.50195 9.65997 6.50195C8.73997 6.50195 8 7.24199 8 8.16199"
+										stroke="white"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M9.65566 13.3926H9.66466"
+										stroke="white"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								<p class="explanation__info">
+									Так Ваш товар будет выглядеть в карточке товара
+								</p>
+							</div>
+						</div>
+
+						<div class="modal__notation">
+							<span>Предварительный просмотр</span>
+						</div>
+					</div>
+
+				<div class="product-card__main-content">
+					<div class="product-card__content-left-side">
+						<div class="product-card__swipers-wrapper">
+							<div
+								style="
+									--swiper-navigation-color: #fff;
+									--swiper-pagination-color: #fff;
+								"
+								class="product-card__main-swiper swiper mySwiper2">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="product-card__item-main-img">
+											<div class="product-card__item-icons">
+												<!-- product-card__item-heart-icon--active необходим для выделения активной иконки, если элемент добавлен. -->
+												<div
+													class="product-card__item-heart-icon product-card__item-heart-icon--active">
+													<img
+														src="./img/icon/heart-icon.svg"
+														alt="" />
+												</div>
+
+												<button
+													class="product-card__item-bookmarks-icon"
+													id="add-to-bookmarks">
+													<img
+														src="./img/product-card/bookmarks-icon.svg"
+														alt="" />
+												</button>
+
+												<div class="product-card__heart-popup">
+													<span>Добавить в избранное</span>
+												</div>
+												<div class="product-card__bookmarks-popup">
+													<span>Добавить в закладки</span>
+												</div>
+
+												<svg
+													class="product-card__item-icon-backgraund"
+													viewBox="0 0 95 176"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M95 47C95 21.0426 73.9574 -9.19802e-07 48 -2.05444e-06L47 -2.09815e-06C21.0426 -3.23278e-06 -9.19806e-07 21.0426 -2.05444e-06 47C-2.57268e-06 58.8559 4.38982 69.6865 11.6327 77.9551C16.2588 83.2363 16.2588 92.7637 11.6327 98.0449C4.38982 106.313 -5.12053e-06 117.144 -5.63877e-06 129C-6.7734e-06 154.957 21.0426 176 47 176L48 176C73.9574 176 95 154.957 95 129C95 117.144 90.6102 106.314 83.3673 98.0449C78.7412 92.7637 78.7412 83.2363 83.3673 77.9551C90.6102 69.6865 95 58.8559 95 47Z"
+														fill="white"
+														fill-opacity="0.5" />
+												</svg>
+											</div>
+
+											<img
+												src="./img/product-card/card-item-sample-img.png"
+												id="main-slider-img" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="product-card__item-main-img">
+											<div class="product-card__item-icons">
+												<div class="product-card__item-heart-icon">
+													<img
+														src="./img/icon/heart-icon.svg"
+														alt="" />
+												</div>
+
+												<button
+													class="product-card__item-bookmarks-icon"
+													id="add-to-bookmarks">
+													<img
+														src="./img/product-card/bookmarks-icon.svg"
+														alt="" />
+												</button>
+
+												<div class="product-card__heart-popup">
+													<span>Добавить в избранное</span>
+												</div>
+												<div class="product-card__bookmarks-popup">
+													<span>Добавить в закладки</span>
+												</div>
+
+												<svg
+													class="product-card__item-icon-backgraund"
+													viewBox="0 0 95 176"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M95 47C95 21.0426 73.9574 -9.19802e-07 48 -2.05444e-06L47 -2.09815e-06C21.0426 -3.23278e-06 -9.19806e-07 21.0426 -2.05444e-06 47C-2.57268e-06 58.8559 4.38982 69.6865 11.6327 77.9551C16.2588 83.2363 16.2588 92.7637 11.6327 98.0449C4.38982 106.313 -5.12053e-06 117.144 -5.63877e-06 129C-6.7734e-06 154.957 21.0426 176 47 176L48 176C73.9574 176 95 154.957 95 129C95 117.144 90.6102 106.314 83.3673 98.0449C78.7412 92.7637 78.7412 83.2363 83.3673 77.9551C90.6102 69.6865 95 58.8559 95 47Z"
+														fill="white"
+														fill-opacity="0.5" />
+												</svg>
+											</div>
+											<img
+												src="./img/product-card/card-item-sample-img.png"
+												id="main-slider-img" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="product-card__item-main-img">
+											<div class="product-card__item-icons">
+												<div class="product-card__item-heart-icon">
+													<img
+														src="./img/icon/heart-icon.svg"
+														alt="" />
+												</div>
+
+												<button
+													class="product-card__item-bookmarks-icon"
+													id="add-to-bookmarks">
+													<img
+														src="./img/product-card/bookmarks-icon.svg"
+														alt="" />
+												</button>
+
+												<div class="product-card__heart-popup">
+													<span>Добавить в избранное</span>
+												</div>
+												<div class="product-card__bookmarks-popup">
+													<span>Добавить в закладки</span>
+												</div>
+
+												<svg
+													class="product-card__item-icon-backgraund"
+													viewBox="0 0 95 176"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M95 47C95 21.0426 73.9574 -9.19802e-07 48 -2.05444e-06L47 -2.09815e-06C21.0426 -3.23278e-06 -9.19806e-07 21.0426 -2.05444e-06 47C-2.57268e-06 58.8559 4.38982 69.6865 11.6327 77.9551C16.2588 83.2363 16.2588 92.7637 11.6327 98.0449C4.38982 106.313 -5.12053e-06 117.144 -5.63877e-06 129C-6.7734e-06 154.957 21.0426 176 47 176L48 176C73.9574 176 95 154.957 95 129C95 117.144 90.6102 106.314 83.3673 98.0449C78.7412 92.7637 78.7412 83.2363 83.3673 77.9551C90.6102 69.6865 95 58.8559 95 47Z"
+														fill="white"
+														fill-opacity="0.5" />
+												</svg>
+											</div>
+											<img
+												src="./img/product-card/card-item-sample-img.png"
+												id="main-slider-img" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="product-card__item-main-img">
+											<div class="product-card__item-icons">
+												<div class="product-card__item-heart-icon">
+													<img
+														src="./img/icon/heart-icon.svg"
+														alt="" />
+												</div>
+
+												<button
+													class="product-card__item-bookmarks-icon"
+													id="add-to-bookmarks">
+													<img
+														src="./img/product-card/bookmarks-icon.svg"
+														alt="" />
+												</button>
+
+												<div class="product-card__heart-popup">
+													<span>Добавить в избранное</span>
+												</div>
+												<div class="product-card__bookmarks-popup">
+													<span>Добавить в закладки</span>
+												</div>
+
+												<svg
+													class="product-card__item-icon-backgraund"
+													viewBox="0 0 95 176"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M95 47C95 21.0426 73.9574 -9.19802e-07 48 -2.05444e-06L47 -2.09815e-06C21.0426 -3.23278e-06 -9.19806e-07 21.0426 -2.05444e-06 47C-2.57268e-06 58.8559 4.38982 69.6865 11.6327 77.9551C16.2588 83.2363 16.2588 92.7637 11.6327 98.0449C4.38982 106.313 -5.12053e-06 117.144 -5.63877e-06 129C-6.7734e-06 154.957 21.0426 176 47 176L48 176C73.9574 176 95 154.957 95 129C95 117.144 90.6102 106.314 83.3673 98.0449C78.7412 92.7637 78.7412 83.2363 83.3673 77.9551C90.6102 69.6865 95 58.8559 95 47Z"
+														fill="white"
+														fill-opacity="0.5" />
+												</svg>
+											</div>
+											<img
+												src="./img/product-card/card-item-sample-img.png"
+												id="main-slider-img" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="product-card__item-main-img">
+											<div class="product-card__item-icons">
+												<div class="product-card__item-heart-icon">
+													<img
+														src="./img/icon/heart-icon.svg"
+														alt="" />
+												</div>
+
+												<button
+													class="product-card__item-bookmarks-icon"
+													id="add-to-bookmarks">
+													<img
+														src="./img/product-card/bookmarks-icon.svg"
+														alt="" />
+												</button>
+
+												<div class="product-card__heart-popup">
+													<span>Добавить в избранное</span>
+												</div>
+												<div class="product-card__bookmarks-popup">
+													<span>Добавить в закладки</span>
+												</div>
+
+												<svg
+													class="product-card__item-icon-backgraund"
+													viewBox="0 0 95 176"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M95 47C95 21.0426 73.9574 -9.19802e-07 48 -2.05444e-06L47 -2.09815e-06C21.0426 -3.23278e-06 -9.19806e-07 21.0426 -2.05444e-06 47C-2.57268e-06 58.8559 4.38982 69.6865 11.6327 77.9551C16.2588 83.2363 16.2588 92.7637 11.6327 98.0449C4.38982 106.313 -5.12053e-06 117.144 -5.63877e-06 129C-6.7734e-06 154.957 21.0426 176 47 176L48 176C73.9574 176 95 154.957 95 129C95 117.144 90.6102 106.314 83.3673 98.0449C78.7412 92.7637 78.7412 83.2363 83.3673 77.9551C90.6102 69.6865 95 58.8559 95 47Z"
+														fill="white"
+														fill-opacity="0.5" />
+												</svg>
+											</div>
+											<img
+												src="./img/product-card/card-item-sample-img.png"
+												id="main-slider-img" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="product-card__item-main-img">
+											<div class="product-card__item-icons">
+												<div class="product-card__item-heart-icon">
+													<img
+														src="./img/icon/heart-icon.svg"
+														alt="" />
+												</div>
+
+												<button
+													class="product-card__item-bookmarks-icon"
+													id="add-to-bookmarks">
+													<img
+														src="./img/product-card/bookmarks-icon.svg"
+														alt="" />
+												</button>
+
+												<div class="product-card__heart-popup">
+													<span>Добавить в избранное</span>
+												</div>
+												<div class="product-card__bookmarks-popup">
+													<span>Добавить в закладки</span>
+												</div>
+
+												<svg
+													class="product-card__item-icon-backgraund"
+													viewBox="0 0 95 176"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M95 47C95 21.0426 73.9574 -9.19802e-07 48 -2.05444e-06L47 -2.09815e-06C21.0426 -3.23278e-06 -9.19806e-07 21.0426 -2.05444e-06 47C-2.57268e-06 58.8559 4.38982 69.6865 11.6327 77.9551C16.2588 83.2363 16.2588 92.7637 11.6327 98.0449C4.38982 106.313 -5.12053e-06 117.144 -5.63877e-06 129C-6.7734e-06 154.957 21.0426 176 47 176L48 176C73.9574 176 95 154.957 95 129C95 117.144 90.6102 106.314 83.3673 98.0449C78.7412 92.7637 78.7412 83.2363 83.3673 77.9551C90.6102 69.6865 95 58.8559 95 47Z"
+														fill="white"
+														fill-opacity="0.5" />
+												</svg>
+											</div>
+											<img
+												src="./img/product-card/card-item-sample-img.png"
+												id="main-slider-img" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="product-card__item-main-img">
+											<div class="product-card__item-icons">
+												<div class="product-card__item-heart-icon">
+													<img
+														src="./img/icon/heart-icon.svg"
+														alt="" />
+												</div>
+
+												<button
+													class="product-card__item-bookmarks-icon"
+													id="add-to-bookmarks">
+													<img
+														src="./img/product-card/bookmarks-icon.svg"
+														alt="" />
+												</button>
+
+												<div class="product-card__heart-popup">
+													<span>Добавить в избранное</span>
+												</div>
+												<div class="product-card__bookmarks-popup">
+													<span>Добавить в закладки</span>
+												</div>
+
+												<svg
+													class="product-card__item-icon-backgraund"
+													viewBox="0 0 95 176"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M95 47C95 21.0426 73.9574 -9.19802e-07 48 -2.05444e-06L47 -2.09815e-06C21.0426 -3.23278e-06 -9.19806e-07 21.0426 -2.05444e-06 47C-2.57268e-06 58.8559 4.38982 69.6865 11.6327 77.9551C16.2588 83.2363 16.2588 92.7637 11.6327 98.0449C4.38982 106.313 -5.12053e-06 117.144 -5.63877e-06 129C-6.7734e-06 154.957 21.0426 176 47 176L48 176C73.9574 176 95 154.957 95 129C95 117.144 90.6102 106.314 83.3673 98.0449C78.7412 92.7637 78.7412 83.2363 83.3673 77.9551C90.6102 69.6865 95 58.8559 95 47Z"
+														fill="white"
+														fill-opacity="0.5" />
+												</svg>
+											</div>
+											<img
+												src="./img/product-card/card-item-sample-img.png"
+												id="main-slider-img" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="product-card__item-main-img">
+											<div class="product-card__item-icons">
+												<div class="product-card__item-heart-icon">
+													<img
+														src="./img/icon/heart-icon.svg"
+														alt="" />
+												</div>
+
+												<button
+													class="product-card__item-bookmarks-icon"
+													id="add-to-bookmarks">
+													<img
+														src="./img/product-card/bookmarks-icon.svg"
+														alt="" />
+												</button>
+
+												<div class="product-card__heart-popup">
+													<span>Добавить в избранное</span>
+												</div>
+												<div class="product-card__bookmarks-popup">
+													<span>Добавить в закладки</span>
+												</div>
+
+												<svg
+													class="product-card__item-icon-backgraund"
+													viewBox="0 0 95 176"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M95 47C95 21.0426 73.9574 -9.19802e-07 48 -2.05444e-06L47 -2.09815e-06C21.0426 -3.23278e-06 -9.19806e-07 21.0426 -2.05444e-06 47C-2.57268e-06 58.8559 4.38982 69.6865 11.6327 77.9551C16.2588 83.2363 16.2588 92.7637 11.6327 98.0449C4.38982 106.313 -5.12053e-06 117.144 -5.63877e-06 129C-6.7734e-06 154.957 21.0426 176 47 176L48 176C73.9574 176 95 154.957 95 129C95 117.144 90.6102 106.314 83.3673 98.0449C78.7412 92.7637 78.7412 83.2363 83.3673 77.9551C90.6102 69.6865 95 58.8559 95 47Z"
+														fill="white"
+														fill-opacity="0.5" />
+												</svg>
+											</div>
+											<img
+												src="./img/product-card/card-item-sample-img.png"
+												id="main-slider-img" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="product-card__item-main-img">
+											<div class="product-card__item-icons">
+												<div class="product-card__item-heart-icon">
+													<img
+														src="./img/icon/heart-icon.svg"
+														alt="" />
+												</div>
+
+												<button
+													class="product-card__item-bookmarks-icon"
+													id="add-to-bookmarks">
+													<img
+														src="./img/product-card/bookmarks-icon.svg"
+														alt="" />
+												</button>
+
+												<div class="product-card__heart-popup">
+													<span>Добавить в избранное</span>
+												</div>
+												<div class="product-card__bookmarks-popup">
+													<span>Добавить в закладки</span>
+												</div>
+
+												<svg
+													class="product-card__item-icon-backgraund"
+													viewBox="0 0 95 176"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M95 47C95 21.0426 73.9574 -9.19802e-07 48 -2.05444e-06L47 -2.09815e-06C21.0426 -3.23278e-06 -9.19806e-07 21.0426 -2.05444e-06 47C-2.57268e-06 58.8559 4.38982 69.6865 11.6327 77.9551C16.2588 83.2363 16.2588 92.7637 11.6327 98.0449C4.38982 106.313 -5.12053e-06 117.144 -5.63877e-06 129C-6.7734e-06 154.957 21.0426 176 47 176L48 176C73.9574 176 95 154.957 95 129C95 117.144 90.6102 106.314 83.3673 98.0449C78.7412 92.7637 78.7412 83.2363 83.3673 77.9551C90.6102 69.6865 95 58.8559 95 47Z"
+														fill="white"
+														fill-opacity="0.5" />
+												</svg>
+											</div>
+											<img
+												src="./img/product-card/card-item-sample-img.png"
+												id="main-slider-img" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="product-card__item-main-img">
+											<div class="product-card__item-icons">
+												<div class="product-card__item-heart-icon">
+													<img
+														src="./img/icon/heart-icon.svg"
+														alt="" />
+												</div>
+
+												<button
+													class="product-card__item-bookmarks-icon"
+													id="add-to-bookmarks">
+													<img
+														src="./img/product-card/bookmarks-icon.svg"
+														alt="" />
+												</button>
+
+												<div class="product-card__heart-popup">
+													<span>Добавить в избранное</span>
+												</div>
+												<div class="product-card__bookmarks-popup">
+													<span>Добавить в закладки</span>
+												</div>
+
+												<svg
+													class="product-card__item-icon-backgraund"
+													viewBox="0 0 95 176"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M95 47C95 21.0426 73.9574 -9.19802e-07 48 -2.05444e-06L47 -2.09815e-06C21.0426 -3.23278e-06 -9.19806e-07 21.0426 -2.05444e-06 47C-2.57268e-06 58.8559 4.38982 69.6865 11.6327 77.9551C16.2588 83.2363 16.2588 92.7637 11.6327 98.0449C4.38982 106.313 -5.12053e-06 117.144 -5.63877e-06 129C-6.7734e-06 154.957 21.0426 176 47 176L48 176C73.9574 176 95 154.957 95 129C95 117.144 90.6102 106.314 83.3673 98.0449C78.7412 92.7637 78.7412 83.2363 83.3673 77.9551C90.6102 69.6865 95 58.8559 95 47Z"
+														fill="white"
+														fill-opacity="0.5" />
+												</svg>
+											</div>
+											<img
+												src="./img/product-card/card-item-sample-img.png"
+												id="main-slider-img" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__controll-swiper-wrapper">
+								<div class="product-card__arrow-right">
+									<img
+										src="./img/product-card/slider-arrow-right.svg"
+										alt="" />
+								</div>
+
+								<div class="product-card__arrow-left">
+									<img
+										src="./img/product-card/slider-arrow-left.svg"
+										alt="" />
+								</div>
+								<div
+									thumbsSlider=""
+									class="swiper product-card__controll-swiper mySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="product-card__item-img">
+												<img
+													src="./img/product-card/card-item-sample-img.png" />
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="product-card__item-img">
+												<img
+													src="./img/product-card/card-item-sample-img.png" />
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="product-card__item-img">
+												<img
+													src="./img/product-card/card-item-sample-img.png" />
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="product-card__item-img">
+												<img
+													src="./img/product-card/card-item-sample-img.png" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card__description-box">
+							<div class="product-card__title-list">
+								<span
+									id="features"
+									class="product-card__title-item product-card__title-item--active">
+									Характеристики
+									<span></span>
+								</span>
+								<span
+									id="description"
+									class="product-card__title-item">
+									Описание
+									<span></span>
+								</span>
+								<span
+									id="get"
+									class="product-card__title-item">
+									Что вы получите
+									<span></span>
+								</span>
+							</div>
+
+							<div
+								class="product-card__features-block product-card__active-block">
+								<div class="product-card__content-block">
+									<p>
+										СТРОКА 1 СТРОКА 1 СТРОКА 1 СТРОКА 1СТРОКА 1СТРОКА 1СТРОКА
+										1СТРОКА 1 СТРОКА 1 СТРОКА 1 СТРОКА 1
+									</p>
+									<p>
+										СТРОКА 2 СТРОКА 2 СТРОКА 2СТРОКА 2 СТРОКА 2 СТРОКА 2СТРОКА 2
+										СТРОКА 2 СТРОКА 2
+									</p>
+									<p>СТРОКА 3 СТРОКА 3 СТРОКА 3СТРОКА 3</p>
+									<p>
+										СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА
+										4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА
+										4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4
+									</p>
+									<p>СТРОКА 5 СТРОКА 5 СТРОКА 5</p>
+								</div>
+							</div>
+
+							<div class="product-card__description-block">
+								<div class="product-card__content-block">
+									<p>
+										СТРОКА 1 СТРОКА 1 СТРОКА 1 СТРОКА 1СТРОКА 1СТРОКА 1СТРОКА
+										1СТРОКА 1 СТРОКА 1 СТРОКА 1 СТРОКА 1 А 4СТРОКА 4СТРОКА
+										4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА
+										4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА 4СТРОКА
+										4СТРОКА 4СТРОКА 4СТРОКА 4
+									</p>
+									<p>СТРОКА 5 СТРОКА 5 СТРОКА 5</p>
+								</div>
+							</div>
+
+							<div class="product-card__get-block">
+								<div class="product-card__content-block">
+									<p>
+										СТРОКА 1 СТРОКА 1 СТРОКА 1 СТРОКА 1СТРОКА 1СТРОКА 1СТРОКА
+										1СТРОКА 1 СТРОКА 1 СТРОКА 1 СТРОКА 1
+									</p>
+
+									<p>СТРОКА 5 СТРОКА 5 СТРОКА 5</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="product-card__content-right-side">
+						<div class="product-card__price-box">
+							<div class="product-card__price-head">
+								<div>
+									<p class="product-card__price-title">Seasons</p>
+									<span class="product-card__price-current-value">
+										4500
+										<span>₽</span>
+									</span>
+								</div>
+
+								<div>
+									<div class="product-card__price-rating">
+										<svg
+											class="product-card__price-rating-item product-card__price-rating-item--full"
+											viewBox="0 0 22 22"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
+												fill="#DE755E"
+												stroke="#DE755E"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+										<svg
+											class="product-card__price-rating-item product-card__price-rating-item--full"
+											viewBox="0 0 22 22"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
+												fill="#DE755E"
+												stroke="#DE755E"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+										<svg
+											class="product-card__price-rating-item product-card__price-rating-item--full"
+											viewBox="0 0 22 22"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
+												fill="#DE755E"
+												stroke="#DE755E"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+										<svg
+											class="product-card__price-rating-item product-card__price-rating-item--full"
+											viewBox="0 0 22 22"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
+												fill="#DE755E"
+												stroke="#DE755E"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+										<svg
+											class="product-card__price-rating-item"
+											viewBox="0 0 22 22"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
+												fill="#DE755E"
+												stroke="#DE755E"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</div>
+
+									<div class="product-card__feedback">
+										<div class="product-card__price-feedback-icon">
+											<img
+												src="./img/product-card/feedback-icon.svg"
+												alt="" />
+										</div>
+										<span>45 отзывов</span>
+									</div>
+								</div>
+							</div>
+
+							<ul class="product-card__price-license-list">
+								<li class="product-card__price-license-item">
+									<label>
+										<input
+											type="radio"
+											name="license"
+											checked />
+										<span class="product-card__price-circle"></span>
+										<span class="product-card__price-item-title">
+											Веб-лицензия
+										</span>
+										<span>2000₽</span>
+									</label>
+								</li>
+								<li class="product-card__price-license-item">
+									<label>
+										<input
+											type="radio"
+											name="license" />
+										<span class="product-card__price-circle"></span>
+										<span class="product-card__price-item-title">
+											Digital Ads-лицензия
+										</span>
+										<span>2000₽</span>
+									</label>
+								</li>
+								<li class="product-card__price-license-item">
+									<label>
+										<input
+											type="radio"
+											name="license" />
+										<span class="product-card__price-circle"></span>
+										<span class="product-card__price-item-title">
+											App-лицензия
+										</span>
+										<span>2000₽</span>
+									</label>
+								</li>
+								<li class="product-card__price-license-item">
+									<label>
+										<input
+											type="radio"
+											name="license" />
+										<span class="product-card__price-circle"></span>
+										<span class="product-card__price-item-title">
+											ePub-лицензия
+										</span>
+										<span>2000₽</span>
+									</label>
+								</li>
+							</ul>
+
+							<div class="product-card__price-buttons">
+								<button class="product-card__price-buy-btn">
+									<span>купить</span>
+								</button>
+								<button class="product-card__price-cart-btn">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 23 23"
+										fill="none">
+										<path
+											d="M18.4396 5.34827H18.0563L14.8171 2.1091C14.5584 1.85035 14.1367 1.85035 13.8684 2.1091C13.6096 2.36785 13.6096 2.78952 13.8684 3.05785L16.1588 5.34827H6.8438L9.13422 3.05785C9.39297 2.7991 9.39297 2.37743 9.13422 2.1091C8.87547 1.85035 8.4538 1.85035 8.18547 2.1091L4.95589 5.34827H4.57255C3.71005 5.34827 1.91797 5.34827 1.91797 7.8016C1.91797 8.73118 2.10964 9.34452 2.51214 9.74702C2.74214 9.9866 3.02005 10.1112 3.31714 10.1783C3.59505 10.2454 3.89214 10.2549 4.17964 10.2549H18.823C19.1201 10.2549 19.398 10.2358 19.6663 10.1783C20.4713 9.9866 21.0846 9.4116 21.0846 7.8016C21.0846 5.34827 19.2926 5.34827 18.4396 5.34827Z"
+											fill="#383742" />
+										<path
+											d="M18.8318 10.2534H4.17891C3.89141 10.2534 3.59432 10.2438 3.31641 10.1768L4.52391 17.5368C4.79224 19.1851 5.51099 21.0826 8.70224 21.0826H14.0785C17.3081 21.0826 17.8831 19.463 18.2281 17.6518L19.6752 10.1768C19.4068 10.2343 19.1193 10.2534 18.8318 10.2534ZM10.1685 16.4443C10.1685 16.818 9.87141 17.1151 9.49766 17.1151C9.12391 17.1151 8.82682 16.818 8.82682 16.4443V13.2818C8.82682 12.908 9.12391 12.6109 9.49766 12.6109C9.87141 12.6109 10.1685 12.908 10.1685 13.2818V16.4443ZM14.2702 16.4443C14.2702 16.818 13.9731 17.1151 13.5993 17.1151C13.2256 17.1151 12.9285 16.818 12.9285 16.4443V13.2818C12.9285 12.908 13.2256 12.6109 13.5993 12.6109C13.9731 12.6109 14.2702 12.908 14.2702 13.2818V16.4443Z"
+											fill="#383742" />
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="product-card__seller-box">
+							<div class="product-card__seller-head">
+								<div class="product-card__seller-photo">
+									<img
+										src="./img/product-card/seller-photo-img.png"
+										alt="" />
+								</div>
+
+								<p class="product-card__seller-name">Vasiliy123</p>
+
+								<div class="product-card__seller-stats">
+									<div>
+										<svg
+											class="product-card__price-rating-item product-card__price-rating-item--full"
+											viewBox="0 0 22 22"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12.7309 2.51014L14.4909 6.03014C14.7309 6.52014 15.3709 6.99014 15.9109 7.08014L19.1009 7.61014C21.1409 7.95014 21.6209 9.43014 20.1509 10.8901L17.6709 13.3701C17.2509 13.7901 17.0209 14.6001 17.1509 15.1801L17.8609 18.2501C18.4209 20.6801 17.1309 21.6201 14.9809 20.3501L11.9909 18.5801C11.4509 18.2601 10.5609 18.2601 10.0109 18.5801L7.02089 20.3501C4.88089 21.6201 3.58089 20.6701 4.14089 18.2501L4.85089 15.1801C4.98089 14.6001 4.75089 13.7901 4.33089 13.3701L1.85089 10.8901C0.390886 9.43014 0.860886 7.95014 2.90089 7.61014L6.09089 7.08014C6.62089 6.99014 7.26089 6.52014 7.50089 6.03014L9.26089 2.51014C10.2209 0.600137 11.7809 0.600137 12.7309 2.51014Z"
+												fill="#DE755E"
+												stroke="#DE755E"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+										<span class="product-card__seller-stats-value">4.8</span>
+									</div>
+									<div class="product-card__feedback">
+										<span>30 отзывов</span>
+									</div>
+								</div>
+
+								<p class="product-card__product-count">15 товаров</p>
+							</div>
+
+							<div class="product-card__seller-buttons">
+								<button class="product-card__seller-profile-btn">
+									<span>Профиль</span>
+								</button>
+								<!-- <button class="product-card__seller-sub-btn">
+									<span>Подписаться</span>
+								</button> -->
+
+								<!-- Состояние кнопки, если пользователь уже подписан или только что подписался -->
+								<button
+									class="product-card__seller-sub-btn product-card__seller-sub-btn--subscribed">
+									<span>Подписки</span>
+								</button>
+							</div>
+
+							<p class="product-card__seller-message">
+								Привет и спасибо, что заглянули! Меня зовут Елена, я дизайнер из
+								Эдинбурга. Я очень люблю то, чем занимаюсь, и всегда...
+							</p>
+						</div>
+					</div>
+				</div>
+
+					<div class="container product-card__other-products">
+						<div class="title">
+							<div class="title__words">
+								<strong>Другие работы автора</strong>
+								<div class="explanation">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 20 21"
+										fill="none">
+										<path
+											d="M0 10.002C0 15.5248 4.47715 20.002 10 20.002C15.5228 20.002 20 15.5248 20 10.002C20 4.47911 15.5228 0.00195312 10 0.00195312C4.47715 0.00195312 0 4.47911 0 10.002Z"
+											fill="#DE755E" />
+										<path
+											d="M9.65997 11.002V10.792C9.65997 10.112 10.08 9.75198 10.5 9.46198C10.91 9.18198 11.3199 8.82199 11.3199 8.16199C11.3199 7.24199 10.58 6.50195 9.65997 6.50195C8.73997 6.50195 8 7.24199 8 8.16199"
+											stroke="white"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M9.65566 13.3926H9.66466"
+											stroke="white"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									<p class="explanation__info">
+										Так Ваш товар будет выглядеть в каталоге
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="another-works__wrapper">
+							<div class="another-works__swiper swiper">
+								<div class="another-works__swiper-wrapper swiper-wrapper">
+									<div class="another-works__slide swiper-slide">
+										<div class="basic-card">
+											<div class="basic-card__wrapper">
+												<p class="basic-card__type">Шрифты с засечками</p>
+												<button class="basic-card__favor">
+													<img
+														src="./img/basic-card/favor-icon.svg"
+														alt="" />
+												</button>
+
+												<button class="basic-card__like">
+													<img
+														src="./img/basic-card/heart-icon.svg"
+														alt="" />
+												</button>
+											</div>
+
+											<img
+												class="basic-card__img"
+												src="./img/basic-card/image 19452.png"
+												alt="" />
+
+											<div class="basic-card__info">
+												<div class="basic-card__discription">
+													<p class="basic-card__title">Мега набор постеров</p>
+													<a
+														href="/"
+														class="basic-card__link">
+														<span>От Wall art...</span>
+													</a>
+												</div>
+												<span
+													class="basic-card__price basic-card__price--pink-backgraund">
+													4500
+													<span>₽</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="another-works__slide swiper-slide">
+										<div class="basic-card">
+											<div class="basic-card__wrapper">
+												<p class="basic-card__type">Шрифты с засечками</p>
+												<button class="basic-card__favor">
+													<img
+														src="./img/basic-card/favor-icon.svg"
+														alt="" />
+												</button>
+
+												<button class="basic-card__like">
+													<img
+														src="./img/basic-card/heart-icon.svg"
+														alt="" />
+												</button>
+											</div>
+
+											<img
+												class="basic-card__img"
+												src="./img/basic-card/image 19452.png"
+												alt="" />
+
+											<div class="basic-card__info">
+												<div class="basic-card__discription">
+													<p class="basic-card__title">Мега набор постеров</p>
+													<a
+														href="/"
+														class="basic-card__link">
+														<span>От Wall art...</span>
+													</a>
+												</div>
+												<span
+													class="basic-card__price basic-card__price--pink-backgraund">
+													4500
+													<span>₽</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="another-works__slide swiper-slide">
+										<div class="basic-card">
+											<div class="basic-card__wrapper">
+												<p class="basic-card__type">Шрифты с засечками</p>
+												<button class="basic-card__favor">
+													<img
+														src="./img/basic-card/favor-icon.svg"
+														alt="" />
+												</button>
+
+												<button class="basic-card__like">
+													<img
+														src="./img/basic-card/heart-icon.svg"
+														alt="" />
+												</button>
+											</div>
+
+											<img
+												class="basic-card__img"
+												src="./img/basic-card/image 19452.png"
+												alt="" />
+
+											<div class="basic-card__info">
+												<div class="basic-card__discription">
+													<p class="basic-card__title">Мега набор постеров</p>
+													<a
+														href="/"
+														class="basic-card__link">
+														<span>От Wall art...</span>
+													</a>
+												</div>
+												<span
+													class="basic-card__price basic-card__price--pink-backgraund">
+													4500
+													<span>₽</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="another-works__slide swiper-slide">
+										<div class="basic-card">
+											<div class="basic-card__wrapper">
+												<p class="basic-card__type">Шрифты с засечками</p>
+												<button class="basic-card__favor">
+													<img
+														src="./img/basic-card/favor-icon.svg"
+														alt="" />
+												</button>
+
+												<button class="basic-card__like">
+													<img
+														src="./img/basic-card/heart-icon.svg"
+														alt="" />
+												</button>
+											</div>
+
+											<img
+												class="basic-card__img"
+												src="./img/basic-card/image 19452.png"
+												alt="" />
+
+											<div class="basic-card__info">
+												<div class="basic-card__discription">
+													<p class="basic-card__title">Мега набор постеров</p>
+													<a
+														href="/"
+														class="basic-card__link">
+														<span>От Wall art...</span>
+													</a>
+												</div>
+												<span
+													class="basic-card__price basic-card__price--pink-backgraund">
+													4500
+													<span>₽</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pagination another-works__pagination">
+							<div class="pagination__bullets another-works__bullets"></div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
 
 
 
@@ -2184,7 +3185,6 @@
 
 
 <script src="./js/jquery-3.5.1.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.15/autosize.min.js'></script>
