@@ -13402,6 +13402,9 @@ img {
 .product-card__item-heart-icon img {
   width: 2rem;
 }
+.product-card__item-heart-icon--active {
+  background-color: #fff !important;
+}
 .product-card__item-bookmarks-icon {
   top: 9rem;
   right: 0.9rem;
@@ -20372,6 +20375,9 @@ img {
 }
 .product-card__item-heart-icon img {
   width: 2rem;
+}
+.product-card__item-heart-icon--active {
+  background-color: #fff !important;
 }
 .product-card__item-bookmarks-icon {
   top: 9rem;
@@ -31558,9 +31564,6 @@ input:checked ~ .contacts__question-item-content {
     border-radius: 4rem;
     background: #e0e1e7;
   }
-  .product-card__item-heart-icon {
-    background: #fff;
-  }
   .product-card__item-heart-icon img {
     width: 3.4rem;
   }
@@ -31989,6 +31992,7 @@ input:checked ~ .contacts__question-item-content {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 17rem;
+    gap: 2.9rem;
   }
   .product-card__tags-title {
     font-size: 6rem;
