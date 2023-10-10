@@ -325,7 +325,7 @@ if (uploadFile) {
 		const file = document.getElementById('cover-modal__upload-file').files[0];
 		console.log(file);
 		const reader = new FileReader();
-
+		let fileName = '';
 		if (file) {
 			fileName = file.name;
 			reader.readAsDataURL(file);
@@ -343,6 +343,14 @@ if (uploadFile) {
 					viewMode: 0,
 					background: false,
 					rotatable: true,
+
+					ready: function () {
+						croppable = true;
+					},
+					
+					ready: function (event) {
+						this.cropper = cropper;
+					},
 				});
 
 				document.getElementsByClassName(
@@ -358,25 +366,32 @@ if (uploadFile) {
 			});
 			var uploadedImageURL = URL.createObjectURL(file);
 			camanCanvas.cropper = cropper;
-			camanCanvas.getData = function(){
+			camanCanvas.getData = function () {
+				cropper
+					.getCroppedCanvas({
+						maxWidth: 4096,
+						maxHeight: 4096,
+						fillColor: '#fff',
+						imageSmoothingEnabled: true,
+						imageSmoothingQuality: 'high',
+					})
+					.toBlob((blob) => {
+						console.log(fileName);
+						console.log(blob);
+						var fileBlob = new File([blob], fileName, {
+							type: blob.type,
+							lastModified: Date.now(),
+						});
+						var dt = new DataTransfer();
+						dt.items.add(fileBlob);
+						var filelist = dt.files;
+						$('#input-to-ajax-canvas')[0].files = filelist;
 						
-				cropper.getCroppedCanvas({
-					maxWidth: 4096,
-					maxHeight: 4096,
-					fillColor: '#fff',
-					imageSmoothingEnabled: true,
-					imageSmoothingQuality: 'high',
-				}).toBlob((blob) => { 
-					console.log(blob);
-					var fileBlob = new File([byteArrays], filename, {type: contentType, lastModified: Date.now()});
-					filelist = new FileList();
-					filelist.add(fileBlob);
-					$("#input-to-ajax-canvas")[0].files = filelist;
-
-					//document.querySelector(".avatar-modal__save-btn").dispatchEvent(new CustomEvent("update")) - триггер события, проверка
-				})
-			}
-			document.querySelector('.avatar-modal__save-btn').addEventListener('update', camanCanvas.getData);
+					});
+			};
+			document
+				.querySelector('.avatar-modal__save-btn')
+				.addEventListener('update', camanCanvas.getData);
 		});
 	});
 }
@@ -397,7 +412,7 @@ if (uploadFileAvatar) {
 			.files[0];
 		console.log(fileAvatar);
 		const readerAvatar = new FileReader();
-
+		let fileNameAvatar = "";
 		if (fileAvatar) {
 			fileNameAvatar = fileAvatar.name;
 			readerAvatar.readAsDataURL(fileAvatar);
@@ -412,9 +427,10 @@ if (uploadFileAvatar) {
 
 				URL.revokeObjectURL(urlAvatar);
 				cropperAvatar = new Cropper(canvasAvatar, {
-					
 					dragMode: 'move',
 					aspectRatio: 1,
+					autoCrop: true,
+					preview: "",
 					autoCropArea: 0.68,
 					center: false,
 					cropBoxMovable: false,
@@ -425,25 +441,26 @@ if (uploadFileAvatar) {
 					ready: function () {
 						croppable = true;
 					},
-
+					
 					ready: function (event) {
 						this.cropperAvatar = cropperAvatar;
 					},
 
 					crop: function (event) {
-						let imgSrc = this.cropperAvatar.getCroppedCanvas({
-
-
-						}).toDataURL('image/png');
+						if(!this.cropperAvatar) this.cropperAvatar = cropperAvatar;
+						let imgSrc = this.cropperAvatar
+							
+							.getCroppedCanvas({})
+							.toDataURL('image/png');
 						imgPreview.src = imgSrc;
 						imgPreviewTwo.src = imgSrc;
-					},
-
-
-					
-				});
 						
-
+					},
+				});
+				
+				// cropperAvatar.options.ready();
+				// cropperAvatar.options.crop();
+				//console.log(cropperAvatar);
 				document.getElementsByClassName(
 					'avatar-modal__center',
 				)[0].style.display = 'block';
@@ -456,30 +473,35 @@ if (uploadFileAvatar) {
 			});
 			var uploadedImageURLAvatar = URL.createObjectURL(fileAvatar);
 			camanAvatar.cropper = cropperAvatar;
-			camanAvatar.getData = function(){
-						
-				cropperAvatar.getCroppedCanvas({
-					maxWidth: 4096,
-					maxHeight: 4096,
-					fillColor: '#fff',
-					imageSmoothingEnabled: true,
-					imageSmoothingQuality: 'high',
-				}).toBlob((blob) => { 
-					console.log(blob);
-					var fileBlob = new File([byteArrays], filename, {type: contentType, lastModified: Date.now()});
-					filelist = new FileList();
-					filelist.add(fileBlob);
-					$("#input-to-ajax")[0].files = filelist;
+			camanAvatar.getData = function () {
+				cropperAvatar
+					.getCroppedCanvas({
+						maxWidth: 4096,
+						maxHeight: 4096,
+						fillColor: '#fff',
+						imageSmoothingEnabled: true,
+						imageSmoothingQuality: 'high',
+					})
+					.toBlob((blob) => {
+						console.log(fileNameAvatar);
+						console.log(blob);
+						var fileBlob = new File([blob], fileNameAvatar, {
+							type: blob.type,
+							lastModified: Date.now(),
+						});
+						var dt = new DataTransfer();
+						dt.items.add(fileBlob);
+						var filelist = dt.files;
+						$('#input-to-ajax')[0].files = filelist;
+						document.querySelector("#input-to-ajax").dispatchEvent(new CustomEvent("upload"));
 
-					//document.querySelector(".avatar-modal__save-btn").dispatchEvent(new CustomEvent("update")) - триггер события, проверка
-				})
-			}
-			document.querySelector('.avatar-modal__save-btn').addEventListener('update', camanAvatar.getData);
-
-			
+						//document.querySelector(".avatar-modal__save-btn").dispatchEvent(new CustomEvent("update")) - триггер события, проверка
+					});
+			};
+			document
+				.querySelector('.avatar-modal__save-btn')
+				.addEventListener('update', camanAvatar.getData);
 		});
-		
-
 	});
 }
 
@@ -614,7 +636,7 @@ $('.lk-sales__select').each(function () {
 				let chooseItem = $(this).data('value');
 
 				$('select').val(chooseItem).attr('selected', 'selected');
-				$('select').trigger("change");
+				$('select').trigger('change');
 				selectHead.text($(this).find('span').text());
 
 				selectList.slideUp(duration);
@@ -691,10 +713,6 @@ $('.product-lk__content-faq').each(function () {
 	});
 });
 
-
-
-
-
 //  табы Начисления и документы
 
 $('.charges__item').click(function () {
@@ -748,25 +766,20 @@ $('.notifications__item').click(function () {
 // 	$(this).addClass('active').siblings().removeClass('active');
 // });
 
-
 $('.merchandise-ar input:checkbox').click(function () {
-	$('.merchandise__checkbox-strong b').html($('.merchandise-ar input:checkbox:checked').length);
+	$('.merchandise__checkbox-strong b').html(
+		$('.merchandise-ar input:checkbox:checked').length,
+	);
 });
-
 
 new AirDatepicker('#lk-m__calendar', {
 	range: true,
 	multipleDatesSeparator: ' - ',
 	visible: true,
-	inline: true
-
+	inline: true,
 });
 
-
-
-
 jQuery(document).ready(function ($) {
- 
 	var maxFileSize = 2 * 1024 * 1024; // (байт) Максимальный размер файла (2мб)
 	var queue = {};
 	var form = $('form#uploadImages');
@@ -776,20 +789,19 @@ jQuery(document).ready(function ($) {
 	itemPreviewTemplate.removeClass('template');
 	imagesList.find('.item.template').remove();
 
-
 	$('#addImages').on('change', function () {
 		var files = this.files;
 
 		for (var i = 0; i < files.length; i++) {
 			var file = files[i];
 
-			if ( !file.type.match(/image\/(jpeg|jpg|png|gif)/) ) {
-				alert( 'Фотография должна быть в формате jpg, png или gif' );
+			if (!file.type.match(/image\/(jpeg|jpg|png|gif)/)) {
+				alert('Фотография должна быть в формате jpg, png или gif');
 				continue;
 			}
 
-			if ( file.size > maxFileSize ) {
-				alert( 'Размер фотографии не должен превышать 2 Мб' );
+			if (file.size > maxFileSize) {
+				alert('Размер фотографии не должен превышать 2 Мб');
 				continue;
 			}
 
@@ -797,13 +809,12 @@ jQuery(document).ready(function ($) {
 		}
 
 		this.value = '';
-		
 	});
 
 	// Создание превью
 	function preview(file) {
 		var reader = new FileReader();
-		reader.addEventListener('load', function(event) {
+		reader.addEventListener('load', function (event) {
 			var img = document.createElement('img');
 
 			var itemPreview = itemPreviewTemplate.clone();
@@ -814,11 +825,9 @@ jQuery(document).ready(function ($) {
 			imagesList.append(itemPreview);
 
 			queue[file.name] = file;
-
 		});
 		reader.readAsDataURL(file);
 	}
-
 
 	console.log(imagesList);
 
@@ -832,10 +841,8 @@ jQuery(document).ready(function ($) {
 		item.remove();
 	});
 
-
 	// Отправка формы
-	form.on('submit', function(event) {
-
+	form.on('submit', function (event) {
 		var formData = new FormData(this);
 
 		for (var id in queue) {
@@ -848,16 +855,15 @@ jQuery(document).ready(function ($) {
 			data: formData,
 			async: true,
 			success: function (res) {
-				alert(res)
+				alert(res);
 			},
 			cache: false,
 			contentType: false,
-			processData: false
+			processData: false,
 		});
 
 		return false;
 	});
-
 });
 
 $(function () {
@@ -890,45 +896,6 @@ $(function () {
 	});
 });
 
-
-
-
-
-
-
-$(".password-control-two").on('click', function () {
-	if ($('#password-input-two').attr('type') == 'password') {
-		$(this).addClass('view');
-		$('#password-input-two').attr('type', 'text');
-	} else {
-		$(this).removeClass('view');
-		$('#password-input-two').attr('type', 'password');
-	}
-	return false;
-});
-
-
-$(".password-control").on('click', function () {
-	if ($('#password-input').attr('type') == 'password') {
-		$(this).addClass('view');
-		$('#password-input').attr('type', 'text');
-	} else {
-		$(this).removeClass('view');
-		$('#password-input').attr('type', 'password');
-	}
-	return false;
-});
-
-
-
-
-
-
-
-
-
-
-
 $(document).on(
 	'change',
 	'.checkbox-purchases > input[type=checkbox]',
@@ -953,21 +920,13 @@ $(document).on(
 	},
 );
 
-
- 
-
-
-
-
-
-jQuery(function($) {
-	$('.product-select__span').click(function() {
+jQuery(function ($) {
+	$('.product-select__span').click(function () {
 		$(this).toggleClass('active');
-	  if ($(this).parent().find('.product-select__list').length) {
-		$(this).parent().find('.product-select__list').slideToggle(200); 
-  
-		return false;
-	  }
-  
+		if ($(this).parent().find('.product-select__list').length) {
+			$(this).parent().find('.product-select__list').slideToggle(200);
+
+			return false;
+		}
 	});
-  });
+});
