@@ -325,7 +325,7 @@ if (uploadFile) {
 		const file = document.getElementById('cover-modal__upload-file').files[0];
 		console.log(file);
 		const reader = new FileReader();
-
+		let fileName = '';
 		if (file) {
 			fileName = file.name;
 			reader.readAsDataURL(file);
@@ -343,6 +343,14 @@ if (uploadFile) {
 					viewMode: 0,
 					background: false,
 					rotatable: true,
+
+					ready: function () {
+						croppable = true;
+					},
+
+					ready: function (event) {
+						this.cropper = cropper;
+					},
 				});
 
 				document.getElementsByClassName(
@@ -368,16 +376,16 @@ if (uploadFile) {
 						imageSmoothingQuality: 'high',
 					})
 					.toBlob((blob) => {
+						console.log(fileName);
 						console.log(blob);
-						var fileBlob = new File([byteArrays], filename, {
-							type: contentType,
+						var fileBlob = new File([blob], fileName, {
+							type: blob.type,
 							lastModified: Date.now(),
 						});
-						filelist = new FileList();
-						filelist.add(fileBlob);
+						var dt = new DataTransfer();
+						dt.items.add(fileBlob);
+						var filelist = dt.files;
 						$('#input-to-ajax-canvas')[0].files = filelist;
-
-						//document.querySelector(".avatar-modal__save-btn").dispatchEvent(new CustomEvent("update")) - триггер события, проверка
 					});
 			};
 			document
@@ -403,7 +411,7 @@ if (uploadFileAvatar) {
 			.files[0];
 		console.log(fileAvatar);
 		const readerAvatar = new FileReader();
-
+		let fileNameAvatar = '';
 		if (fileAvatar) {
 			fileNameAvatar = fileAvatar.name;
 			readerAvatar.readAsDataURL(fileAvatar);
@@ -420,6 +428,8 @@ if (uploadFileAvatar) {
 				cropperAvatar = new Cropper(canvasAvatar, {
 					dragMode: 'move',
 					aspectRatio: 1,
+					autoCrop: true,
+					preview: '',
 					autoCropArea: 0.68,
 					center: false,
 					cropBoxMovable: false,
@@ -436,7 +446,9 @@ if (uploadFileAvatar) {
 					},
 
 					crop: function (event) {
+						if (!this.cropperAvatar) this.cropperAvatar = cropperAvatar;
 						let imgSrc = this.cropperAvatar
+
 							.getCroppedCanvas({})
 							.toDataURL('image/png');
 						imgPreview.src = imgSrc;
@@ -444,6 +456,9 @@ if (uploadFileAvatar) {
 					},
 				});
 
+				// cropperAvatar.options.ready();
+				// cropperAvatar.options.crop();
+				//console.log(cropperAvatar);
 				document.getElementsByClassName(
 					'avatar-modal__center',
 				)[0].style.display = 'block';
@@ -466,14 +481,19 @@ if (uploadFileAvatar) {
 						imageSmoothingQuality: 'high',
 					})
 					.toBlob((blob) => {
+						console.log(fileNameAvatar);
 						console.log(blob);
-						var fileBlob = new File([byteArrays], filename, {
-							type: contentType,
+						var fileBlob = new File([blob], fileNameAvatar, {
+							type: blob.type,
 							lastModified: Date.now(),
 						});
-						filelist = new FileList();
-						filelist.add(fileBlob);
+						var dt = new DataTransfer();
+						dt.items.add(fileBlob);
+						var filelist = dt.files;
 						$('#input-to-ajax')[0].files = filelist;
+						document
+							.querySelector('#input-to-ajax')
+							.dispatchEvent(new CustomEvent('upload'));
 
 						//document.querySelector(".avatar-modal__save-btn").dispatchEvent(new CustomEvent("update")) - триггер события, проверка
 					});
