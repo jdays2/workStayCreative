@@ -2730,6 +2730,9 @@ main {
   width: 100%;
   height: 100%;
   top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .cat-product__img {
   position: absolute;
@@ -11931,6 +11934,8 @@ main {
 .checker {
   width: 4rem;
   height: 4rem;
+  min-width: 4rem;
+  min-height: 4rem;
   background: #e0e1e7;
   border-radius: 1rem;
   display: -webkit-box;
@@ -18905,6 +18910,8 @@ input:checked ~ .contacts__question-item-content {
 .checker {
   width: 4rem;
   height: 4rem;
+  min-width: 4rem;
+  min-height: 4rem;
   background: #e0e1e7;
   border-radius: 1rem;
   display: -webkit-box;
@@ -43624,5 +43631,11 @@ input:checked ~ .contacts__question-item-content {
   }
   .item--hide {
     display: none;
+  }
+  .checker {
+    width: 8rem;
+    height: 8rem;
+    min-width: 8rem;
+    min-height: 8rem;
   }
 }
