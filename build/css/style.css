@@ -986,10 +986,6 @@ main {
           transform: scale(0.95);
 }
 
-.item--hide {
-  display: none;
-}
-
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43625,5 +43621,8 @@ input:checked ~ .contacts__question-item-content {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.056rem;
+  }
+  .item--hide {
+    display: none;
   }
 }
