@@ -42,8 +42,8 @@ filterBlocks.forEach((element) => {
 	const maxValue = priceSlider?.getAttribute('data-max-value');
 	const startValue = priceSlider?.getAttribute('data-start-value');
 	const startPoint = priceSlider?.getAttribute('data-start-point');
-	const minPriceOutput = document.querySelectorAll('#min-price-value');
-	const maxPriceOutput = document.querySelectorAll('#max-price-value');
+	const minPriceOutput = document.querySelectorAll('.filter-block__price-value.min-price');
+	const maxPriceOutput = document.querySelectorAll('.filter-block__price-value.max-price');
 
 	if (priceSlider) {
 		noUiSlider.create(priceSlider, {

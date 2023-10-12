@@ -18527,6 +18527,10 @@
 
 		&__wrap {
 			flex-direction: column;
+			height: -webkit-fit-content;
+			height: -moz-fit-content;
+			height: fit-content;
+			gap: 7.2rem;
 		}
 
 		&__tab {
@@ -18751,6 +18755,10 @@
 	.content-block {
 		gap: 6rem;
 		margin-bottom: 12rem;
+
+		&__content {
+			gap: 0;
+		}
 
 		&__list {
 			gap: 7rem;
