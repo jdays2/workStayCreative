@@ -1,5 +1,5 @@
 .control-panel {
-
+    width: 133.4rem;
 
     &__banner {
         width: 133.4rem;
@@ -290,6 +290,7 @@
     &__advice-swiper {
         width: 100%;
         overflow: hidden;
+        max-width: 100%;
     }
 
     &__faq {
@@ -337,4 +338,6 @@
             display: none;
         }
     }
+
+    
 }
