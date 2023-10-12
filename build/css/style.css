@@ -16883,6 +16883,7 @@ input:checked ~ .contacts__question-item-content {
 }
 .publick-profile__collection-item {
   padding: 2rem;
+  min-height: 34rem;
   width: 40.5rem;
   background-color: #fff;
   border-radius: 3rem;
