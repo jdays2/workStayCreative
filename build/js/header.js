@@ -148,7 +148,7 @@ if (userBtn) {
 		if (window.innerWidth > 768) {
 			profilePopUp.classList.toggle(profilePopUpClass);
 		} else {
-			profileMobilePopUp.classList.toggle(profileMobilePopUpShowClass);
+			if(profileMobilePopUp) profileMobilePopUp.classList.toggle(profileMobilePopUpShowClass);
 		}
 	});
 }
