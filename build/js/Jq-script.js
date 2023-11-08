@@ -237,6 +237,21 @@ $(document).ready(function () {
 		});
 	});
 
+
+	$(document).mouseup(function (e) {
+		var container = $(".profile-user__lists");
+		if (container.has(e.target).length === 0){
+			container.hide();
+		}
+	});
+
+	$(document).mouseup(function (e) {
+		var container = $(".profile-header__lists");
+		if (container.has(e.target).length === 0){
+			container.hide();
+		}
+	});
+
 	$('.profile-user').each(function () {
 		let more = $(this).find('.profile-user__avatar-btn');
 		let hide = $(this).find('.profile-user__lists');
