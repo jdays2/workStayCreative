@@ -3,6 +3,7 @@ const modalItems = document.querySelectorAll('.modal__item');
 const modalList = document.querySelector('.modal__list');
 const closeModalBtn = document.querySelector('.modal__close-btn');
 const openModalBtn = document.querySelectorAll('.cart__item-license');
+const modal = document.querySelector('.modal');
 const cartItems = document.querySelectorAll('.cart__product-item');
 
 const modalOpenClass = 'modal__open';

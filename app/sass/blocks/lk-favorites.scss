@@ -1,68 +1,143 @@
 .lk-favorites {
-	position: relative;
+    position: relative;
 
-	&__buffer {
-		display: none;
+    &__buffer {
+        display: none;
+        
+        justify-content: space-between;
+        align-items:center;
+        width: 59.8rem;
+        height: 7.2rem;
+        border-radius: 5.5rem;
+        background:  #DE755E;
+        padding: 0 0.8rem;
+        position: absolute;
+        top: -10rem;
+        right: 0;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
 
-		justify-content: space-between;
-		align-items: center;
-		width: 59.8rem;
-		height: 7.2rem;
-		border-radius: 5.5rem;
-		background: #de755e;
-		padding: 0 0.8rem;
-		position: absolute;
-		top: -10rem;
-		right: 0;
-		padding-top: 0.8rem;
-		padding-bottom: 0.8rem;
-	}
+    &__buffer-icon {
+        width: 5.6rem;
+        height: 5.6rem;
+        margin-right: 2rem;
+        display: inline-block;
+    }
 
-	&__buffer-icon {
-		width: 5.6rem;
-		height: 5.6rem;
-		margin-right: 2rem;
-		display: inline-block;
-	}
+    &__buffer-text {
+        color:  #FFF;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        padding-right: 1.6rem;
+        display: inline-block;
+        position: relative;
+    top: -2.1rem;
+    }
 
-	&__buffer-text {
-		color: #fff;
-		font-size: 2rem;
-		font-style: normal;
-		font-weight: 500;
-		line-height: normal;
-		letter-spacing: 0.4px;
-		padding-right: 1.6rem;
-		display: inline-block;
-		position: relative;
-		top: -2.1rem;
-	}
+    .sort-popup {
+        top: 10rem;
+    }
+    
+    
+    &__title {
+        color: #383742;
+        margin-bottom: 5.5rem;
+        font-family: 'Austin Cyr';
+        font-size: 7.3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 95.89%;
+        letter-spacing: 1.46px;
+    }
 
-	.sort-popup {
-		top: 10rem;
-	}
 
-	&__title {
-		color: #383742;
-		margin-bottom: 5.5rem;
-		font-family: 'Austin Cyr';
-		font-size: 7.3rem;
-		font-style: normal;
-		font-weight: 700;
-		line-height: 95.89%;
-		letter-spacing: 1.46px;
-	}
 
-	&__wrapper {
-		display: flex;
-		flex-wrap: wrap;
+  
+   
 
-		.basic-card__price {
-			color: #383742;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        .basic-card {
+            width: 40.5rem;
+            margin-bottom: 6rem;
+            margin-right: 5rem;
+        }
 
-			span {
-				color: #383742;
-			}
-		}
-	}
+        .basic-card:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        .basic-card__price {
+            color:#383742;
+
+            span {
+                color:#383742;
+            }
+        }
+
+        .basic-card__add {
+            width: 24.8rem;
+            height: 7.9rem;
+            border-radius: 100rem;
+            color:#383742;
+            background: #E0E1E7;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.4px;
+            transition: all 0.2s;
+            &:hover {
+                transition: all 0.2s;
+                color:#fff;
+                background:  #383742;
+            }
+
+        }
+
+        .basic-card__del {
+            width: 6rem;
+            height: 7.7rem;
+           
+            border-radius: 100rem;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background:rgba(224, 225, 231, 1);
+            img {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+
+
+        .basic-card__edit {
+            width: 6rem;
+            height: 7.7rem;
+           
+            border-radius: 100rem;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background:rgba(224, 225, 231, 1);
+            img {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+
+
+       
+    }
+
+
+    
 }

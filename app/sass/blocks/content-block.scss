@@ -47,13 +47,6 @@
 		gap: 6rem;
 	}
 
-	&__content-wrapper {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-    min-width: 100%;
-	}
-
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
@@ -61,6 +54,12 @@
 	}
 
 	&__item {
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
 		display: block;
 	}
 
@@ -69,115 +68,51 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-top: 6rem;
+	}
 
-		&-controls {
-			display: flex;
-			align-items: center;
-			gap: 2.5rem;
-		}
+	&__pag-value {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
 
-		&-right-side {
-			display: flex;
-			gap: 2rem;
-			align-items: center;
-			width: -webkit-fit-content;
-			width: -moz-fit-content;
-			width: fit-content;
-
-			span {
-				color: #999;
-				font-family: Gilroy;
-				font-size: 1.6rem;
-				font-style: normal;
-				font-weight: 500;
-				line-height: 2rem;
-			}
-		}
-
-		&-value {
-			padding: 1.4rem 1.4rem;
-			border-radius: 1rem;
-			background-color: #fff;
-			width: 8.8rem;
-			text-align: center;
-			border: none;
-			outline: none;
-
+		span {
 			color: #383742;
-			font-family: Gilroy;
+			font-family: 'Austin Cyr';
 			font-size: 1.8rem;
 			font-style: normal;
 			font-weight: 500;
-			line-height: normal;
+			line-height: 3.675rem;
 		}
+	}
 
-		&-redirect {
-			span {
-				color: #de755e;
-				text-align: center;
-				font-family: Gilroy;
-				font-size: 2rem;
-				font-style: normal;
-				font-weight: 700;
-				line-height: normal;
-				letter-spacing: 0.04rem;
-			}
+	&__line {
+		height: 0.15rem;
+		width: 6.3rem;
+		background: rgba(160, 161, 164, 0.3);
+
+		&--vert {
+			width: 4.6rem;
+			transform: rotate(90deg);
 		}
+	}
 
-		&-left-side {
-			display: flex;
-			width: -webkit-fit-content;
-			width: -moz-fit-content;
-			width: fit-content;
-			gap: 6rem;
-			align-items: center;
-		}
+	&__pag-btns {
+		display: flex;
+		width: 12rem;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-		&-links-wrap {
-			display: flex;
-			width: -webkit-fit-content;
-			width: -moz-fit-content;
-			width: fit-content;
-			gap: 1.4rem;
-			align-items: center;
-		}
+	&__arrow-icon {
+		width: 3rem;
+		cursor: pointer;
 
-		&-link {
-			span {
-				color: #383742;
-				font-family: Austin Cyr;
-				font-size: 1.8rem;
-				font-style: normal;
-				font-weight: 500;
-				line-height: 3.675rem;
-			}
-
-			&.active {
-				span {
-					color: #de755e;
+		&--last {
+			cursor: auto;
+			svg {
+				path {
+					fill: rgba(160, 161, 164, 1);
 				}
-			}
-		}
-
-		&-hor-line {
-			height: 2rem;
-			svg {
-				width: 6.3rem;
-				height: 0.2rem;
-			}
-		}
-
-		&-btn {
-			svg {
-				width: 3.3rem;
-				height: 1.6rem;
-			}
-		}
-		&-line {
-			svg {
-				width: 0.2rem;
-				height: 4.6rem;
 			}
 		}
 	}
@@ -226,29 +161,6 @@
 			font-style: normal;
 			font-weight: 500;
 			line-height: 2.6rem;
-		}
-	}
-}
-
-@media (hover: hover) {
-	.content-block__pag-btn:hover {
-		svg {
-			transform: scale(1.1);
-		}
-		path {
-			fill: rgba(160, 161, 164, 1);
-		}
-	}
-
-	.content-block__pag-btn:active {
-		svg {
-			transform: scale(0.9);
-		}
-	}
-
-	.content-block__pag-link:hover {
-		span {
-			color: #de755e;
 		}
 	}
 }

@@ -174,7 +174,6 @@
 		width: 24.6rem;
 		height: 17.5rem;
 		margin-right: 4rem;
-		border-radius: 3rem;
 	}
 
 	&__item-description {
@@ -257,8 +256,6 @@
 			letter-spacing: 0.02em;
 			color: #fff;
 		}
-
-		@include btnHover
 	}
 
 	&__order-info {
@@ -453,8 +450,6 @@
 			line-height: 2.2rem;
 			letter-spacing: 0.02em;
 			color: #ffffff;
-
-			@include btnHover
 		}
 	}
 
@@ -516,7 +511,7 @@
 		right: 17.5rem;
 		z-index: 10;
 		opacity: 0;
-		box-shadow: 2rem 1.5rem 4rem 1.4rem rgba(103,110,133,.1);
+		box-shadow: 2rem 1.5rem 4rem 0rem rgba(103, 110, 133, 0.1);
 
 		input {
 			position: absolute;
@@ -591,6 +586,12 @@
 		border: 0rem;
 		background-color: inherit;
 		border-radius: 0%;
+	}
+}
+
+@media (hover: hover) {
+	.cart__favorites-btn:hover {
+		background-color: #383742;
 	}
 }
 

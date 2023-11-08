@@ -18,8 +18,6 @@
 		width: 100%;
 		height: 100%;
 		top: 0;
-		left: 50%;
-		transform: translateX(-50%);
 	}
 
 	&__img {
@@ -30,13 +28,6 @@
 		left: 50%;
 		transform: translate(-50%);
 		top: 4.7rem;
-
-		img {
-			width: 100%;
-			height: 100%;
-			-o-object-fit: cover;
-			object-fit: cover;
-		}
 	}
 
 	&__border {
@@ -44,12 +35,6 @@
 		height: 100%;
 		position: absolute;
 		z-index: 2;
-		img {
-			width: 100%;
-			height: 100%;
-			-o-object-fit: contain;
-			   object-fit: contain;
-		}
 	}
 
 	&__number {
@@ -71,7 +56,7 @@
 		letter-spacing: 0.02em;
 		right: 3.5rem;
 		top: 0;
-		z-index: 4;
+        z-index: 4;
 		color: #de755e;
 	}
 
@@ -137,11 +122,6 @@
 		background: #e0e1e7;
 		border-radius: 3rem;
 		margin-right: 1rem;
-		&:hover {
-			@media (hover: hover) {
-				background: #fff;
-			}
-		}
 		span {
 			position: relative;
 			font-weight: 700;
@@ -173,11 +153,6 @@
 		background: #e0e1e7;
 		border-radius: 3rem;
 		margin-right: 1rem;
-		&:hover {
-			@media (hover: hover) {
-				background: #fff;
-			}
-		}
 		span {
 			position: relative;
 			font-weight: 700;
@@ -208,11 +183,6 @@
 		height: 7.7rem;
 		background: #e0e1e7;
 		border-radius: 3rem;
-		&:hover {
-			@media (hover: hover) {
-				background: #fff;
-			}
-		}
 
 		img {
 			width: 3.2rem;

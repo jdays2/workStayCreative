@@ -92,19 +92,11 @@
 			font-weight: 700;
 			line-height: normal;
 			letter-spacing: 0.04rem;
-			white-space: nowrap;
 		}
 
-		svg {
+		img {
 			width: 3.2rem;
-			height: auto;
 		}
-
-		path {
-			fill: #fff;
-		}
-
-		@include btnHover;
 	}
 
 	&__link:last-child {
@@ -120,16 +112,10 @@
 			font-weight: 700;
 			line-height: normal;
 			letter-spacing: 0.04rem;
-			white-space: nowrap;
 		}
 
-		svg {
+		img {
 			width: 3.2rem;
-			height: auto;
-		}
-
-		path {
-			fill: #383742;
 		}
 	}
 

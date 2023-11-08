@@ -212,16 +212,13 @@
 		img {
 			width: 100%;
 		}
-
-		&--mobile {
-			display: none;
-		}
 	}
 
 	&__question-list {
 		padding: 6.5rem 6rem 2.2rem;
 		border-radius: 5.5rem;
 		background: #fff;
+		width: 102.5rem;
 	}
 
 	&__question-title {
@@ -310,7 +307,15 @@
 		display: flex;
 		flex-direction: column;
 		gap: 6rem;
-		width: 102.5rem
+	}
+
+	.question-block {
+		width: 102.5rem;
+		margin-top: 6rem;
+		margin-left: auto;
+		padding: 3rem 4rem;
+		gap: 2.5rem;
+		justify-content: space-between;
 	}
 
 	.title {

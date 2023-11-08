@@ -91,17 +91,6 @@
 		padding: 2.6rem 4rem;
 		background-color: #de755e;
 		border-radius: 100rem;
-		position: relative;
-
-		input {
-			width: 100%;
-			background-color: #de755e;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			opacity: 0;
-		}
 
 		span {
 			color: #fff;
@@ -109,33 +98,13 @@
 			font-size: 2rem;
 			font-style: normal;
 			font-weight: 700;
-			line-height: 1;
+			line-height: normal;
 			letter-spacing: 0.04rem;
-			transition: 0.1s ease-in;
 		}
 
 		svg {
 			width: 3.3rem;
 			height: 1.5rem;
-		}
-
-		@media (hover: hover) {
-			
-			&:hover {
-				background: #383742;
-			}
-		}
-
-		&:active {
-			background: rgba(255, 219, 212, 1);
-
-			span {
-				color: rgba(222, 117, 94, 1);
-			}
-
-			path {
-				fill: rgba(222, 117, 94, 1);
-			}
 		}
 	}
 
@@ -168,6 +137,14 @@
 		transition: max-height 0.4s;
 	}
 
+	&__close-text,
+	&__open-text {
+		display: none;
+		&.active {
+			display: inline-block;
+		}
+	}
+
 	&__box-item {
 		display: flex;
 		gap: 1.2rem;
@@ -194,11 +171,12 @@
 	.filter-block__box-item {
 		input:checked + .checker img {
 			display: block !important;
+			
 		}
 	}
 
 	.filter-block__box-item {
-		input:checked + .checker {
+		input:checked + .checker{
 			box-shadow: 0.86rem 0.86rem 2rem rgba(103, 110, 133, 0.2);
 		}
 	}
@@ -224,29 +202,15 @@
 	}
 
 	&__white-btn {
-		position: relative;
-		color: #de755e;
-		text-align: center;
-		font-family: Gilroy;
-		font-size: 2rem;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-		letter-spacing: 0.04rem;
-		text-align: left;
-		outline: none;
-		border: none;
-		background-color: transparent;
-		transition: 0.1s ease-in;
-
-		@media (hover: hover) {
-			&:hover {
-				color: #383742;
-			}
-		}
-
-		&:active {
-			color: #ffdbd4;
+		span {
+			color: #de755e;
+			text-align: center;
+			font-family: Gilroy;
+			font-size: 2rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.04rem;
 		}
 	}
 

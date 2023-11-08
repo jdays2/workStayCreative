@@ -7,8 +7,6 @@
   align-items: center;
   justify-content: space-between;
   width: 26.4rem;
-
-  @include btnHover;
   
   &__text {
     display: none;

@@ -7,9 +7,9 @@ const collectionsBlock = document.querySelector('#collections-block');
 const likedBlock = document.querySelector('#liked-block');
 
 const activePart = 'product-card__active-block';
+const activeClass = 'product-card__title-item--active';
 
 if (titles) {
-	const activeClass = 'product-card__title-item--active';
 	titles.forEach((element) => {
 		element.addEventListener('click', (e) => {
 			if (!e.target.classList.contains(activeClass)) {
