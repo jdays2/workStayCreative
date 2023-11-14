@@ -1600,34 +1600,44 @@
             </div>
             <div class="discount-product__inner">
                 <div class="discount-product__box">
-                    10%
+                    <input id="discount-product__box-radio-1" type="radio" name="radio" value="1" checked>
+                    <label for="discount-product__box-radio-1" class="discount-product__box-label">10%</label>
                 </div>
                 <div class="discount-product__box">
-                    15%
+                    <input id="discount-product__box-radio-2" type="radio" name="radio" value="2">
+                    <label for="discount-product__box-radio-2" class="discount-product__box-label">15%</label>
                 </div>
                 <div class="discount-product__box">
-                    20%
+                    <input id="discount-product__box-radio-3" type="radio" name="radio" value="3">
+                    <label for="discount-product__box-radio-3" class="discount-product__box-label">20%</label>
                 </div>
                 <div class="discount-product__box">
-                    25%
+                    <input id="discount-product__box-radio-4" type="radio" name="radio" value="4">
+                    <label for="discount-product__box-radio-4" class="discount-product__box-label">25%</label>
                 </div>
                 <div class="discount-product__box">
-                    30%
+                    <input id="discount-product__box-radio-5" type="radio" name="radio" value="5">
+                    <label for="discount-product__box-radio-5" class="discount-product__box-label">30%</label>
                 </div>
                 <div class="discount-product__box">
-                    35%
+                    <input id="discount-product__box-radio-6" type="radio" name="radio" value="6">
+                    <label for="discount-product__box-radio-6" class="discount-product__box-label">35%</label>
                 </div>
                 <div class="discount-product__box">
-                    40%
+                    <input id="discount-product__box-radio-7" type="radio" name="radio" value="7">
+                    <label for="discount-product__box-radio-7" class="discount-product__box-label">40%</label>
                 </div>
                 <div class="discount-product__box">
-                    45%
+                    <input id="discount-product__box-radio-8" type="radio" name="radio" value="8">
+                    <label for="discount-product__box-radio-8" class="discount-product__box-label">45%</label>
                 </div>
                 <div class="discount-product__box">
-                    50%
+                    <input id="discount-product__box-radio-9" type="radio" name="radio" value="9">
+                    <label for="discount-product__box-radio-9" class="discount-product__box-label">50%</label>
                 </div>
                 <div class="discount-product__box">
-                    60%
+                    <input id="discount-product__box-radio-10" type="radio" name="radio" value="10">
+                    <label for="discount-product__box-radio-10" class="discount-product__box-label">60%</label>
                 </div>
             </div>
         </div>
@@ -1836,21 +1846,24 @@
             
                
 
-                <label class="input-file">
+                <label class="input-file-products">
                     <input type="file" id="addImages"  multiple="">
                          
                    
                 </label>
             
                 <input type="hidden" name="azaza" value="zazaza">
-            
-                <ul id="uploadImagesList">
+                <div class="template-wrap">
                     <li class="item template">
                         <span class="img-wrap">
                             <img src="image.jpg" alt="">
                         </span>
                         <span class="delete-link" title="Удалить">Удалить</span>
                     </li>
+                </div>
+                <ul id="uploadImagesList">
+
+                   
                 </ul>
             
                 <div class="clear"></div>
@@ -2050,7 +2063,7 @@
             <div class="product-m-desk__btn">Предварительный просмотр</div>
             <div class="product-m-desk__btns">
                 <button class="red-btn"><span>Опубликовать</span></button>
-                <a href="/" class="link">Сохранить черновик</a>
+                <a href="#" class="link">Сохранить черновик</a>
             </div>
         </div>
     </div>
