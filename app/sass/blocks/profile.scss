@@ -92,6 +92,7 @@
         align-items:center;
         background: #E0E1E7;
         border-radius: 11rem;
+        gap: 4rem;
 
         span {
             position: relative;
@@ -101,20 +102,18 @@
             line-height: 2.4rem;
             letter-spacing: 0.02em;
             color: #383742;
-            padding-right: 6.4rem;
-            &::before {
-                position: absolute;
-                content:'';
-                width: 2.4rem;
-                height: 2.4rem;
-                background-image: url(../img/lk-m/basketblack.svg);
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
-                right: 0;
-            }
         }
+
+        svg {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+
+        @include grayBtnHover
     }
 
+        
+    
 }
 
 .profile.active {

@@ -10,7 +10,33 @@
 	z-index: 100;
 	justify-content: center;
 	align-items: center;
-	
+
+	@-webkit-keyframes appearance {
+		0% {
+			transform: scale(0.6);
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	@keyframes appearance {
+		0% {
+			transform: scale(0.6);
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+
 	&--full {
 		-webkit-backdrop-filter: none;
 		backdrop-filter: none;
@@ -141,9 +167,20 @@
 			letter-spacing: 0.11rem;
 			text-transform: uppercase;
 		}
-		&-remove {
+
+		&-remove,
+		&-download {
 			width: 2.1rem;
 			height: 2rem;
+			cursor: pointer;
+
+			&:hover {
+				@media (hover: hover) {
+					path {
+						fill: #de755e;
+					}
+				}
+			}
 		}
 	}
 
@@ -153,10 +190,17 @@
 		overflow-x: hidden;
 		padding-top: 5rem;
 		padding-bottom: 5rem;
-		-ms-overflow-style: none; /* IE и Edge */
-		scrollbar-width: none; /* Firefox */
+		-ms-overflow-style: none;
+		scrollbar-width: none;
 		&::-webkit-scrollbar {
 			display: none;
+		}
+
+		.modal__container {
+			-webkit-animation: appearance;
+			animation: appearance;
+			-webkit-animation-duration: 0.35s;
+			animation-duration: 0.35s;
 		}
 	}
 
@@ -299,17 +343,53 @@
 	&__collection-list {
 		display: flex;
 		gap: 1.5rem;
-		max-height: 24rem;
+		max-height: 36rem;
 		flex-direction: column;
 		overflow-y: scroll;
-		scrollbar-width: none;
+		padding-right: 3rem;
 
 		&::-webkit-scrollbar {
-			display: none;
+			width: 0.4rem;
+			right: 2rem;
+			padding-right: 2rem;
 		}
 
-		&::-moz-scrollbar {
-			display: none;
+		&::-webkit-scrollbar-thumb {
+			background-color: #de755e82;
+			border-radius: 0.4rem;
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: #eaebef;
+		}
+
+		&::-webkit-scrollbar-track {
+			background-color: #de755e82;
+		}
+
+		&::-webkit-scrollbar-track:hover {
+			background-color: #de755e82;
+		}
+
+		&::-webkit-scrollbar {
+			width: 0.4rem;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: #de755e82;
+			border-radius: 0.4rem;
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: #555;
+		}
+
+		&::-webkit-scrollbar-track {
+			background-color: #fff9ee;
+		}
+
+		&::-webkit-scrollbar-track:hover {
+			background-color: #ddd;
 		}
 	}
 
@@ -354,6 +434,7 @@
 			font-weight: 700;
 			letter-spacing: 0.04rem;
 		}
+		@include btnHover
 	}
 
 	&__collection-add-btn {
@@ -369,6 +450,7 @@
 			font-weight: 700;
 			letter-spacing: 0.04rem;
 		}
+		@include btnHover
 	}
 
 	&__form-input {
@@ -399,7 +481,99 @@
 			font-size: 1.6rem;
 			font-family: 'Gilroy';
 			line-height: 2rem;
+		}
+	}
 
+	&__form-select-list {
+		display: flex;
+		z-index: 10;
+		gap: 1.6rem;
+		width: 83.1rem;
+
+		align-items: center;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-left: 3.2rem;
+		padding-right: 3.2rem;
+
+		background-color: #fff;
+		border-radius: 2rem;
+		box-shadow: 0.86rem 0.86rem 2rem 0rem rgba(56, 55, 66, 0.11);
+
+		position: absolute;
+		top: 10.6rem;
+		max-height: 0;
+
+		height: 0;
+		overflow: hidden;
+		opacity: 0;
+		transition: max-height 0.4s ease-in-out, height 0.4s ease-in-out,
+			opacity 0.1s ease-in;
+
+		&.active {
+			max-height: 100rem;
+			height: -webkit-fit-content;
+			height: -moz-fit-content;
+			height: fit-content;
+			padding: 3.2rem 3.2rem 2.8rem;
+			opacity: 1;
+		}
+	}
+
+	&__form-select-item {
+		display: flex;
+		align-items: center;
+		gap: 1.2rem;
+		position: relative;
+		cursor: pointer;
+		margin: 0 !important;
+
+		.input-indicator {
+			width: 2.2rem;
+			height: 2.2rem;
+			max-width: 2.2rem;
+			max-height: 2.2rem;
+
+			&__item1 {
+				max-width: 100%;
+				max-height: 100%;
+			}
+
+			&__item2 {
+				width: 0.6rem;
+				height: 0.6rem;
+				max-width: 0.6rem;
+				max-height: 0.6rem;
+			}
+		}
+
+		input {
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			height: 0;
+			right: 0;
+		}
+
+		input:checked + .input-indicator {
+			.input-indicator__item1 {
+				stroke: #de755e;
+			}
+			.input-indicator__item2 {
+				fill: #de755e;
+			}
+		}
+
+		p {
+			cursor: pointer;
+
+			color: #383742;
+			font-family: Gilroy;
+			font-size: 1.6rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 2rem;
+			margin: 0;
 		}
 	}
 
@@ -424,6 +598,8 @@
 		span {
 			color: #383742;
 		}
+
+		@include grayBtnHover
 	}
 
 	&__icon {
@@ -492,6 +668,8 @@
 	}
 
 	&__form-input {
+		position: relative;
+
 		textarea {
 			border: none;
 			padding: 1.4rem 2.4rem;
@@ -504,8 +682,6 @@
 			font-size: 1.6rem;
 			font-family: 'Gilroy';
 			line-height: 2rem;
-
-			
 		}
 	}
 
@@ -660,71 +836,6 @@
 					background-image: url('../../img/product-card/modal-input-icon-gray.svg');
 				}
 			}
-		}
-
-		.modal__form-popup-box {
-			display: flex;
-			z-index: 10;
-			gap: 1.6rem;
-			width: 83.1rem;
-			align-items: center;
-			flex-direction: column;
-			align-items: flex-start;
-			padding: 3.2rem;
-			background-color: #fff;
-			border-radius: 2rem;
-			height: -webkit-fit-content;
-			height: -moz-fit-content;
-			height: fit-content;
-			box-shadow: 0.86rem 0.86rem 2rem 0rem rgba(56, 55, 66, 0.11);
-
-			div {
-				display: flex;
-				align-items: center;
-				gap: 1.2rem;
-			}
-
-			label {
-				margin: 0;
-				cursor: pointer;
-
-				font-size: 1.6rem;
-
-				font-weight: 400;
-				line-height: 2rem;
-			}
-		}
-
-		.modal__form-popup-box input[type='radio'] {
-			/* Скрыть оригинальные радиокнопки */
-			appearance: none;
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			/* Установить размеры */
-			width: 2rem;
-			height: 2rem;
-			padding: 0.7rem;
-			/* Установить внешний вид кнопки */
-			border: 0.1rem solid rgba(222, 117, 94, 1);
-			border-radius: 50%;
-			background-color: transparent;
-			/* Позиционирование внутреннего круга */
-			position: relative;
-		}
-
-		.modal__form-popup-box input[type='radio']:checked::after {
-			content: '';
-			/* Установить размеры внутреннего круга */
-			width: 0.6rem;
-			height: 0.6rem;
-			/* Установить цвет внутреннего круга */
-			background-color: rgba(222, 117, 94, 1);
-			/* Установить позицию внутреннего круга */
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			border-radius: 50%;
 		}
 	}
 
@@ -1154,8 +1265,12 @@
 
 	&__wrap {
 		display: flex;
+		width: 83rem;
 		justify-content: space-between;
-		margin-bottom: 4rem;
+
+		.profile-market-modal__textarea {
+			width: 100%;
+		}
 	}
 
 	&__wrap:last-child {
@@ -1177,6 +1292,7 @@
 		margin-right: 0;
 		width: 100%;
 		label {
+			max-width: 63.5rem;
 			font-size: 2rem;
 			line-height: 2.4rem;
 			letter-spacing: 0.02em;
@@ -1658,8 +1774,6 @@
 	display: flex;
 	opacity: 1;
 }
-
-
 
 .modal--confirm-question.active {
 	display: flex;

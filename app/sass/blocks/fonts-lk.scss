@@ -1,165 +1,89 @@
 .fonts-lk {
-    &__block {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 5.5rem;
-    }
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 5.5rem;
+		gap: 10.8rem
+	}
 
-    &__title {
-        font-family: 'Austin Cyr',sans-serif;
-        font-size: 7.3rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 7rem;
-        letter-spacing: 1.46px;
-        margin-right: 15.6rem;
-    }
+	&__title {
+		font-family: 'Austin Cyr', sans-serif;
+		font-size: 7.3rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 7rem;
+		letter-spacing: 1.46px;
+    max-width: 49rem;
+	}
 
-    &__block-inner {
-        display: flex;
-        align-items: center;
-    }
+	&__block-inner {
+		display: flex;
+		align-items: center;
+		gap: 15.8rem
+	}
 
-    &__sum {
-        color:  #383742;
-        font-size: 2rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.4px;
-        display: flex;
-       
-        span {
-            display: block;
-            position: relative;
-            margin-right: 0.8rem;
-            padding-right: 1.2rem;
-            &::before {
-                position: absolute;
-                content:'';
-                width: 0.4rem;
-                height: 0.4rem;
-                background: #383742;
-                border-radius: 50%;
-                right: 0;
-                top: 50%;
-            }
-        }
+	&__sum {
+		color: #383742;
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: 0.4px;
+		display: flex;
 
-        span:last-child {
-            padding-right: 0;
-            &::before {
-                display: none;
-            }
-        }
-    }
+		span {
+			display: block;
+			position: relative;
+			margin-right: 0.8rem;
+			padding-right: 1.2rem;
+			&::before {
+				position: absolute;
+				content: '';
+				width: 0.4rem;
+				height: 0.4rem;
+				background: #383742;
+				border-radius: 50%;
+				right: 0;
+				top: 50%;
+			}
+		}
 
-    &__edit {
-        display: flex;
-        align-items:center;
-        justify-content: space-between;
-        border-radius: 9.6rem;
-        background:  #FFF;
-        width: 29.3rem;
-        height: 7.6rem;
-        padding: 2.6rem 4rem;
-        span {
-            color: #383742;
-            font-size: 2rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: 0.4px;
-        }
+		span:last-child {
+			padding-right: 0;
+			&::before {
+				display: none;
+			}
+		}
+	}
 
-        img {
-            width: 2.4rem;
-            height: 2.4rem;
-            margin-top: 0.2rem;
-        }
-    }
+	&__edit {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: 9.6rem;
+		background: #fff;
+		width: 29.3rem;
+		height: 7.6rem;
+		padding: 2.6rem 4rem;
+		span {
+			color: #383742;
+			font-size: 2rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.4px;
+		}
 
-    &__wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        .basic-card {
-            width: 40.5rem;
-            margin-bottom: 6rem;
-            margin-right: 5rem;
-        }
+		img {
+			width: 2.4rem;
+			height: 2.4rem;
+			margin-top: 0.2rem;
+		}
+	}
 
-        .basic-card:nth-child(3n) {
-            margin-right: 0;
-        }
-
-        .basic-card__price {
-            color:#383742;
-
-            span {
-                color:#383742;
-            }
-        }
-
-        .basic-card__add {
-            width: 24.8rem;
-            height: 7.9rem;
-            border-radius: 100rem;
-            color:#383742;
-            background: #E0E1E7;
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            font-size: 2rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: 0.4px;
-            transition: all 0.2s;
-            &:hover {
-                transition: all 0.2s;
-                color:#fff;
-                background:  #383742;
-            }
-
-        }
-
-        .basic-card__del {
-            width: 6rem;
-            height: 7.7rem;
-           
-            border-radius: 100rem;
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            background:rgba(224, 225, 231, 1);
-            img {
-                width: 2.4rem;
-                height: 2.4rem;
-            }
-        }
-
-
-        .basic-card__edit {
-            width: 6rem;
-            height: 7.7rem;
-           
-            border-radius: 100rem;
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            background:rgba(224, 225, 231, 1);
-            img {
-                width: 2.4rem;
-                height: 2.4rem;
-            }
-        }
-
-
-       
-    }
-
-  
-
-
-    
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }

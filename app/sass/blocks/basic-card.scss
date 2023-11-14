@@ -29,7 +29,6 @@
 		line-height: normal;
 		letter-spacing: 0.04rem;
 	}
-
 	&--discount {
 		.basic-card__discription {
 			height: -webkit-fit-content;
@@ -145,7 +144,9 @@
 
 	&__favor,
 	&__like,
-	&__share {
+	&__share,
+	&__del,
+	&__edit {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -169,10 +170,46 @@
 		}
 	}
 
+	&__del {
+		img {
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+	}
+
 	&__share {
 		img {
 			width: 2.262rem;
 			height: 2.4rem;
+		}
+	}
+
+	&__edit {
+		img {
+			width: 2.4rem;
+			height: 2.4rem;
+		}
+	}
+
+	&__add {
+		width: 24.8rem;
+		height: 7.9rem;
+		border-radius: 100rem;
+		color: #383742;
+		background: #e0e1e7;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 0.4px;
+		transition: all 0.2s;
+		&:hover {
+			transition: all 0.2s;
+			color: #fff;
+			background: #383742;
 		}
 	}
 
@@ -265,9 +302,9 @@
 		letter-spacing: 0.02em;
 		color: #181818;
 		width: 23rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	&__discription {
@@ -311,14 +348,14 @@
 		top: 0;
 		position: relative;
 		transition: 0.55s ease-in-out;
+		background-color: #fff;
 
 		img {
 			-o-object-fit: cover;
-			   object-fit: cover;
+			object-fit: cover;
 			width: 100%;
 			height: 100%;
 		}
-
 	}
 
 	&__price--crossed {
@@ -384,9 +421,17 @@
 		background-color: #fff;
 	}
 
+	.basic-card__del:hover {
+		background-color: #fff;
+	}
+
 	.basic-card__type:hover {
 		background-color: #383742;
 		color: #fff;
+	}
+
+	.basic-card__edit:hover {
+		background-color: #fff;
 	}
 }
 
