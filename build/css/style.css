@@ -11461,7 +11461,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 40.5rem;
-  height: 48rem;
+  height: 40.5rem;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -11801,7 +11801,7 @@ main {
 }
 .basic-card__img {
   width: 40.5rem;
-  height: 48rem;
+  height: 40.5rem;
   border-radius: 3rem;
   overflow: hidden;
   z-index: 2;
@@ -18504,7 +18504,7 @@ input:checked ~ .contacts__question-item-content {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 40.5rem;
-  height: 48rem;
+  height: 40.5rem;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -18844,7 +18844,7 @@ input:checked ~ .contacts__question-item-content {
 }
 .basic-card__img {
   width: 40.5rem;
-  height: 48rem;
+  height: 40.5rem;
   border-radius: 3rem;
   overflow: hidden;
   z-index: 2;
@@ -30378,7 +30378,7 @@ input:checked ~ .contacts__question-item-content {
   }
   .basic-card {
     width: 69rem !important;
-    height: 79.4rem;
+    height: 84.06rem !important;
     border-radius: 6rem;
     overflow: hidden;
   }
@@ -30455,7 +30455,7 @@ input:checked ~ .contacts__question-item-content {
     margin-top: 15.03rem;
     width: 100%;
     border-radius: 6rem 6rem 0 0;
-    height: 55.88rem;
+    height: 70.6rem;
   }
   .basic-card__type {
     width: 44.2rem;
